@@ -23,8 +23,8 @@ import "./App.css";
 function App() {
   return (
     <div className="help_container">
+      <Searchbar />
       <div className="wrapper">
-        <Searchbar />
         <Leftsidenav />
         <ScrollToTop />
         <Routes>

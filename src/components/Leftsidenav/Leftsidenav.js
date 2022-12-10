@@ -20,7 +20,7 @@ export const Leftsidenav = () => {
   const estate = useRef();
   const data = useRef();
   const location = useLocation();
-  const pathName = location.pathname;
+  // const pathName = location.pathname;
   // if (pathName === "/") {
   //   intro.classList.add("active");
   // } else {
