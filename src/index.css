@@ -1,0 +1,29 @@
+@font-face {
+  font-family: euclid;
+  src: url(assets/fonts/Euclid\ Circular\ B\ Regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: euclid;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: euclid;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
