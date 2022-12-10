@@ -8,7 +8,6 @@ import listing3 from "../../assets/images/listing3.png";
 import listing4 from "../../assets/images/listing4.png";
 import listing5 from "../../assets/images/listing5.png";
 import listing6 from "../../assets/images/listing6.png";
-import "./Createlisting.css";
 import { BsExclamationCircle } from "react-icons/bs";
 import { SlArrowRight } from "react-icons/sl";
 
