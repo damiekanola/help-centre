@@ -12,7 +12,6 @@ import id from "../../assets/images/select_id.png";
 import settings from "../../assets/images/settings.png";
 import edit from "../../assets/images/edit.png";
 import details from "../../assets/images/fill_details.png";
-import "./setup.css";
 import { SlArrowRight } from "react-icons/sl";
 
 export const Fisrttimesetup = () => {
