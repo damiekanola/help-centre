@@ -82,8 +82,8 @@ export const Veergedata = () => {
           learning.
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="ml">
+      <Box pt="80px" id="ml">
+        <Text className="content_head">
           MACHINE LEARNING, DEEP LEARNING & AI
         </Text>
         <Text className="content">
@@ -117,10 +117,8 @@ export const Veergedata = () => {
           in house — for unmatched accuracy and cutting-edge automation.
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="matters">
-          WHY VEERGE MATTERS
-        </Text>
+      <Box pt="80px" id="matters">
+        <Text className="content_head">WHY VEERGE MATTERS</Text>
         <Text className="content">
           The Real estate world rewards risk-takers, but that doesn't imply
           property developers should take advantage of every risky opportunity.
@@ -153,10 +151,8 @@ export const Veergedata = () => {
           <Image src={customer} mt="30px" mx="auto" />
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="data">
-          WHY MIGRATE DATA TO VEERGE
-        </Text>
+      <Box pt="80px" id="data">
+        <Text className="content_head">WHY MIGRATE DATA TO VEERGE</Text>
         <Text className="content">
           We’ve rounded up the most prominent benefits of migrating your data to
           Veerge:

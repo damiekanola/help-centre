@@ -98,10 +98,8 @@ export const Introtoveerge = () => {
           </Text>
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="engagement">
-          SYSTEM OF ENGAGEMENT
-        </Text>
+      <Box pt="80px" id="engagement">
+        <Text className="content_head">SYSTEM OF ENGAGEMENT</Text>
         <Text className="content">
           This is the interface between users and the business, it's powerful
           because it controls the end-user interactions. It’s an operating model
@@ -130,10 +128,8 @@ export const Introtoveerge = () => {
           expect.
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="intelligence">
-          SYSTEM OF INTELLIGENCE
-        </Text>
+      <Box pt="80px" id="intelligence">
+        <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
         <Text className="content">
           <Text className="content" mb="20px">
             <b>AI+ Your business =Endless possibilities.</b>
@@ -230,10 +226,8 @@ export const Introtoveerge = () => {
           </ol>
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="trust">
-          SYSTEM OF TRUST
-        </Text>
+      <Box pt="80px" id="trust">
+        <Text className="content_head">SYSTEM OF TRUST</Text>
         <Text className="content">
           In this era of cloud computing and on-demand data, there isn’t much
           room left for using manual entry spreadsheets. Nonetheless, real
@@ -295,7 +289,7 @@ export const Introtoveerge = () => {
           </Text>
         </Text>
       </Box>
-      <Box marginTop="50px" id="conclusion">
+      <Box pt="80px" id="conclusion">
         <Text className="content_head">CONCLUSION</Text>
         <Text className="content">
           The future of real estate is through digital, structured and automated
