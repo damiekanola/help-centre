@@ -82,8 +82,8 @@ export const Fractionalestate = () => {
           for transactional processing, and serve as the property identifier.
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="asset">
+      <Box pt="80px" id="asset">
+        <Text className="content_head">
           ASSET MANAGEMENT COMPANY’S USE CASE
         </Text>
         <Text className="content">
@@ -108,10 +108,8 @@ export const Fractionalestate = () => {
           however, can make these types of investments possible.
         </Text>
       </Box>
-      <Box marginTop="50px">
-        <Text className="content_head" id="new">
-          THE NEW WAY
-        </Text>
+      <Box pt="80px" id="new">
+        <Text className="content_head">THE NEW WAY</Text>
         <Text className="content">
           The concept of fractionalisation offers the ability to unlock
           investment opportunities for individuals and organisations, while
