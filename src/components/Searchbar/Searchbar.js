@@ -1,10 +1,23 @@
-import { Flex, Input } from "@chakra-ui/react";
+import {
+  Flex,
+  Input,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalOverlay,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
 import { GrHomeRounded } from "react-icons/gr";
+import { MdSubdirectoryArrowLeft } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { searchData } from "./data";
+import "./Search.css";
 export const Searchbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex
       maxW="1440px"
@@ -40,7 +53,6 @@ export const Searchbar = () => {
         </Link>
       </Flex>
       <form>
-        {" "}
         <Flex
           direction="row"
           align="center"
@@ -59,13 +71,65 @@ export const Searchbar = () => {
             fontSize="12px"
             lineHeight="15px"
             color="#606060"
+            onClick={onOpen}
+            _focusVisible={{
+              border: "none",
+            }}
           />
-          <button type="submit">
-            {" "}
-            <CiSearch style={{ width: "25px", height: "25px" }} />
-          </button>
+          <CiSearch style={{ width: "25px", height: "25px" }} />
         </Flex>
       </form>
+      <Modal onClose={onClose} isOpen={isOpen} motionPreset="slideInBottom">
+        <ModalOverlay bg="rgba(0,0,0,0.2)" />
+        <ModalContent>
+          <ModalBody>
+            <Flex direction="row" align="center">
+              <CiSearch style={{ width: "25px", height: "25px" }} />
+              <Input
+                placeholder="Search the docs"
+                type="text"
+                border="none"
+                FontWeight="400"
+                fontSize="12px"
+                lineHeight="15px"
+                color="#606060"
+                onClick={onOpen}
+                _focusVisible={{
+                  border: "none",
+                }}
+              />
+            </Flex>
+
+            {searchData.map((data) => {
+              const { route, searchQuery } = data;
+              return (
+                <Flex
+                  direction="column"
+                  rowGap="4px"
+                  justify="center"
+                  align="center"
+                  mt="20px"
+                  width="400px"
+                >
+                  <Link to={route} className="a__">
+                    <Flex
+                      direction="row"
+                      justify="space-between"
+                      className="link__"
+                      px="15px"
+                      align="center"
+                    >
+                      <Text>{searchQuery}</Text>
+
+                      <MdSubdirectoryArrowLeft />
+                    </Flex>
+                  </Link>
+                </Flex>
+              );
+            })}
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </Flex>
   );
 };
