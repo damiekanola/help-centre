@@ -4,8 +4,7 @@ import React from "react";
 export const Header = () => {
   return (
     <Flex
-      maxW="1740px"
-      m="0 auto"
+      maxW="1440px"
       w="100%"
       px="78px"
       height="82px"
