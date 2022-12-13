@@ -134,7 +134,7 @@ export const Inspections = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/first_time_setup" style={{ color: "#5d5fef" }}>
                 How do i set up my account for the first time?
               </a>
             </Flex>
@@ -149,7 +149,7 @@ export const Inspections = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/Verified_whats_next" style={{ color: "#5d5fef" }}>
                 My account has been verified, what next?
               </a>
             </Flex>
@@ -163,7 +163,7 @@ export const Inspections = () => {
               alignItems="center"
             >
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_online_store" style={{ color: "#5d5fef" }}>
                 How to create an online store
               </a>
             </Flex>

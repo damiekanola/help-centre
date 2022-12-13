@@ -76,20 +76,20 @@ export const Introtoveerge = () => {
           <Text marginTop="20px">
             Values are delivered in three core areas:{" "}
             <a
-              href="/"
+              href="#engagement"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               {" "}
               system of engagement,
             </a>
             <a
-              href="/"
+              href="#intelligence"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               system of intelligence,
             </a>{" "}
             <a
-              href="/"
+              href="#trust"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               {" "}
@@ -319,27 +319,24 @@ export const Introtoveerge = () => {
         >
           <Box minH="64px" borderBottom="0.3px solid #000000">
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
-              {" "}
-              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <SlArrowRight style={{ color: "#5d5fef" }} />
+              <a href="/fisrt_time_setup" style={{ color: "#5d5fef" }}>
                 How do i set up my account for the first time?
               </a>
             </Flex>
           </Box>
           <Box minH="64px" borderBottom="0.3px solid #000000">
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
-              {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/Verified_whats_next" style={{ color: "#5d5fef" }}>
                 My account has been verified, what next?
               </a>
             </Flex>
           </Box>
           <Box minH="64px">
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
-              {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/users_experience" style={{ color: "#5d5fef" }}>
                 What’s the user end-to-end experience like?
               </a>
             </Flex>

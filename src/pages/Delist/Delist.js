@@ -118,7 +118,7 @@ export const Delist = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_listing" style={{ color: "#5d5fef" }}>
                 How do i create a listing
               </a>
             </Flex>
@@ -133,7 +133,7 @@ export const Delist = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_unit" style={{ color: "#5d5fef" }}>
                 How to create a unit
               </a>
             </Flex>
@@ -148,7 +148,7 @@ export const Delist = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_online_store" style={{ color: "#5d5fef" }}>
                 How to create an online store
               </a>
             </Flex>
