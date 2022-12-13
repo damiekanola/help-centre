@@ -79,7 +79,6 @@ export const Introtoveerge = () => {
               href="#engagement"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
-              {" "}
               system of engagement,
             </a>
             <a
@@ -87,18 +86,17 @@ export const Introtoveerge = () => {
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               system of intelligence,
-            </a>{" "}
+            </a>
             <a
               href="#trust"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
-              {" "}
               system of trust.
             </a>
           </Text>
         </Text>
       </Box>
-      <Box pt="80px" id="engagement">
+      <Box pt="140px" id="engagement">
         <Text className="content_head">SYSTEM OF ENGAGEMENT</Text>
         <Text className="content">
           This is the interface between users and the business, it's powerful

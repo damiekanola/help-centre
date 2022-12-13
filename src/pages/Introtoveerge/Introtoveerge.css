@@ -4,6 +4,8 @@
   margin-right: 282px;
   margin-left: 337px;
   padding: 70px 100px;
+  position: absolute;
+  top: 140px;
 }
 .head_ {
   font-family: euclid;
@@ -52,8 +54,8 @@
   height: fit-content;
   max-width: 282px;
   width: 100%;
-  position: fixed; 
-  top: 67px;
+  position: fixed;
+  top: 149px;
   right: 0;
   overflow-x: hidden;
   padding-top: 82px;

@@ -22,7 +22,8 @@ export const Searchbar = () => {
   const [query, setQuery] = useState("");
   return (
     <Flex
-      maxW="1440px"
+      maxW="1740px"
+      m="0 auto"
       w="100%"
       px="78px"
       height="67px"
@@ -30,6 +31,7 @@ export const Searchbar = () => {
       justify="space-between"
       align="center"
       position="fixed"
+      top="82px"
       zIndex="1"
       bg="#ffffff"
       boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"

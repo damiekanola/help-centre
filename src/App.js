@@ -18,11 +18,13 @@ import { Createunit } from "./pages/Createunit/Createunit";
 import { Agents } from "./pages/Agents/Agents";
 import { Fractionasset } from "./pages/Fractionasset/Fractionasset";
 import { Searchbar } from "./components/Searchbar/Searchbar";
+import { Header } from "./components/Header/Header";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 function App() {
   return (
     <div className="help_container">
+      <Header/>
       <Searchbar />
       <div className="wrapper">
         <Leftsidenav />
