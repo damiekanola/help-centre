@@ -22,8 +22,7 @@ export const Searchbar = () => {
   const [query, setQuery] = useState("");
   return (
     <Flex
-      maxW="1740px"
-      m="0 auto"
+      maxW="1440px"
       w="100%"
       px="78px"
       height="67px"
