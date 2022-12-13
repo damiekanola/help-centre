@@ -76,20 +76,20 @@ export const Introtoveerge = () => {
           <Text marginTop="20px">
             Values are delivered in three core areas:{" "}
             <a
-              href="/"
+              href="#engagement"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               {" "}
               system of engagement,
             </a>
             <a
-              href="/"
+              href="#intelligence"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               system of intelligence,
             </a>{" "}
             <a
-              href="/"
+              href="#trust"
               style={{ color: "#8486f2", textDecoration: "underline" }}
             >
               {" "}
