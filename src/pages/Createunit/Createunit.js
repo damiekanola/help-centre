@@ -150,7 +150,7 @@ export const Createunit = () => {
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/fractionalize_asset" style={{ color: "#5d5fef" }}>
                 How do i fractionalise a unit
               </a>
             </Flex>
@@ -159,7 +159,7 @@ export const Createunit = () => {
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/delist" style={{ color: "#5d5fef" }}>
                 How to delist a listing from online store
               </a>
             </Flex>
@@ -168,7 +168,7 @@ export const Createunit = () => {
             <Flex direction="row" columnGap="33px" pl="30px" mt="22px">
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/archive_unit" style={{ color: "#5d5fef" }}>
                 How to archive a unit
               </a>
             </Flex>

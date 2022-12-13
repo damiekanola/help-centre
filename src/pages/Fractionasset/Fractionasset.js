@@ -258,7 +258,7 @@ export const Fractionasset = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/fractionalize_asset" style={{ color: "#5d5fef" }}>
                 How do i fractionalise a unit
               </a>
             </Flex>
@@ -273,7 +273,7 @@ export const Fractionasset = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/delist" style={{ color: "#5d5fef" }}>
                 How to delist a listing from online store
               </a>
             </Flex>
@@ -288,7 +288,7 @@ export const Fractionasset = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_online_store" style={{ color: "#5d5fef" }}>
                 How to create an online store
               </a>
             </Flex>

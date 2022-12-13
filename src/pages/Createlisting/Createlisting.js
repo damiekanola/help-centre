@@ -351,7 +351,7 @@ export const Createlisting = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/create_unit" style={{ color: "#5d5fef" }}>
                 How do I create allocations
               </a>
             </Flex>
@@ -366,7 +366,7 @@ export const Createlisting = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/delist" style={{ color: "#5d5fef" }}>
                 How to delist a listing from online store
               </a>
             </Flex>
@@ -381,7 +381,7 @@ export const Createlisting = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/" style={{ color: "#5d5fef" }}>
+              <a href="/archive_unit" style={{ color: "#5d5fef" }}>
                 How to archive a unit
               </a>
             </Flex>

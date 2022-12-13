@@ -52,8 +52,7 @@
   height: fit-content;
   max-width: 282px;
   width: 100%;
-  position: fixed;
-  z-index: 0.5;
+  position: fixed; 
   top: 67px;
   right: 0;
   overflow-x: hidden;

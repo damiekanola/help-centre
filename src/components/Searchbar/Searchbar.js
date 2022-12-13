@@ -8,7 +8,7 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
 import { GrHomeRounded } from "react-icons/gr";
@@ -17,7 +17,9 @@ import { CiSearch } from "react-icons/ci";
 import { searchData } from "./data";
 import "./Search.css";
 export const Searchbar = () => {
+  const scrollBehavior = "inside";
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [query, setQuery] = useState("");
   return (
     <Flex
       maxW="1440px"
@@ -79,7 +81,12 @@ export const Searchbar = () => {
           <CiSearch style={{ width: "25px", height: "25px" }} />
         </Flex>
       </form>
-      <Modal onClose={onClose} isOpen={isOpen} motionPreset="slideInBottom">
+      <Modal
+        onClose={onClose}
+        isOpen={isOpen}
+        motionPreset="slideInBottom"
+        scrollBehavior={scrollBehavior}
+      >
         <ModalOverlay bg="rgba(0,0,0,0.2)" />
         <ModalContent>
           <ModalBody>
@@ -97,36 +104,48 @@ export const Searchbar = () => {
                 _focusVisible={{
                   border: "none",
                 }}
+                onChange={(event) => setQuery(event.target.value)}
               />
             </Flex>
 
-            {searchData.map((data) => {
-              const { route, searchQuery } = data;
-              return (
-                <Flex
-                  direction="column"
-                  rowGap="4px"
-                  justify="center"
-                  align="center"
-                  mt="20px"
-                  width="400px"
-                >
-                  <Link to={route} className="a__">
-                    <Flex
-                      direction="row"
-                      justify="space-between"
-                      className="link__"
-                      px="15px"
-                      align="center"
-                    >
-                      <Text>{searchQuery}</Text>
+            {searchData
+              .filter((data) => {
+                if (query === "") {
+                  return null;
+                } else if (
+                  data.searchQuery.toLowerCase().includes(query.toLowerCase())
+                ) {
+                  return data;
+                }
+              })
+              .map((data) => {
+                const { route, searchQuery, topic } = data;
+                return (
+                  <Flex
+                    direction="column"
+                    rowGap="4px"
+                    justify="center"
+                    align="center"
+                    mt="20px"
+                    width="400px"
+                  >
+                    <Link to={route} className="a__">
+                      <Flex
+                        direction="row"
+                        justify="space-between"
+                        className="link__"
+                        px="15px"
+                        align="center"
+                        onClick={onClose}
+                      >
+                        <Text>{topic}</Text>
 
-                      <MdSubdirectoryArrowLeft />
-                    </Flex>
-                  </Link>
-                </Flex>
-              );
-            })}
+                        <MdSubdirectoryArrowLeft />
+                      </Flex>
+                    </Link>
+                  </Flex>
+                );
+              })}
           </ModalBody>
         </ModalContent>
       </Modal>
