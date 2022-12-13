@@ -205,7 +205,7 @@ export const Fractionasset = () => {
           Whatever your use case is, veerge has you covered.
         </Text>
       </Box>
-      <Text className="head_" pt="100px" id="frac">
+      <Text className="head_" pt="150px" id="frac">
         HOW USERS BUY FRACTIONS
       </Text>
       <Box>

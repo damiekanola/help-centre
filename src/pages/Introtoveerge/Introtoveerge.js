@@ -96,7 +96,7 @@ export const Introtoveerge = () => {
           </Text>
         </Text>
       </Box>
-      <Box pt="140px" id="engagement">
+      <Box pt="150px" id="engagement">
         <Text className="content_head">SYSTEM OF ENGAGEMENT</Text>
         <Text className="content">
           This is the interface between users and the business, it's powerful
@@ -126,7 +126,7 @@ export const Introtoveerge = () => {
           expect.
         </Text>
       </Box>
-      <Box pt="80px" id="intelligence">
+      <Box pt="150px" id="intelligence">
         <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
         <Text className="content">
           <Text className="content" mb="20px">
@@ -224,7 +224,7 @@ export const Introtoveerge = () => {
           </ol>
         </Text>
       </Box>
-      <Box pt="80px" id="trust">
+      <Box pt="150px" id="trust">
         <Text className="content_head">SYSTEM OF TRUST</Text>
         <Text className="content">
           In this era of cloud computing and on-demand data, there isn’t much
@@ -287,7 +287,7 @@ export const Introtoveerge = () => {
           </Text>
         </Text>
       </Box>
-      <Box pt="80px" id="conclusion">
+      <Box pt="150px" id="conclusion">
         <Text className="content_head">CONCLUSION</Text>
         <Text className="content">
           The future of real estate is through digital, structured and automated

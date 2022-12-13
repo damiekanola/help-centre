@@ -82,7 +82,7 @@ export const Veergedata = () => {
           learning.
         </Text>
       </Box>
-      <Box pt="80px" id="ml">
+      <Box pt="150px" id="ml">
         <Text className="content_head">
           MACHINE LEARNING, DEEP LEARNING & AI
         </Text>
@@ -117,7 +117,7 @@ export const Veergedata = () => {
           in house — for unmatched accuracy and cutting-edge automation.
         </Text>
       </Box>
-      <Box pt="80px" id="matters">
+      <Box pt="150px" id="matters">
         <Text className="content_head">WHY VEERGE MATTERS</Text>
         <Text className="content">
           The Real estate world rewards risk-takers, but that doesn't imply
@@ -151,7 +151,7 @@ export const Veergedata = () => {
           <Image src={customer} mt="30px" mx="auto" />
         </Text>
       </Box>
-      <Box pt="80px" id="data">
+      <Box pt="150px" id="data">
         <Text className="content_head">WHY MIGRATE DATA TO VEERGE</Text>
         <Text className="content">
           We’ve rounded up the most prominent benefits of migrating your data to
