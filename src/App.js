@@ -21,11 +21,14 @@ import { Searchbar } from "./components/Searchbar/Searchbar";
 import { Header } from "./components/Header/Header";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
+import { Show } from "@chakra-ui/react";
 function App() {
   return (
     <div className="help_container">
-      <Header/>
-      <Searchbar />
+      <Header />
+      <Show breakpoint="(min-width: 769px)">
+        <Searchbar />
+      </Show>
       <div className="wrapper">
         <Leftsidenav />
         <ScrollToTop />
