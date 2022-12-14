@@ -16,6 +16,7 @@ import { Leftsidenav } from "../Leftsidenav/Leftsidenav";
 import { Searchbar } from "../Searchbar/Searchbar";
 import logo from "../../assets/images/veergelogo.png";
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
@@ -24,9 +25,10 @@ export const Header = () => {
       <Show breakpoint="(min-width: 769px)">
         <Flex
           direction="row"
-          justify="space-between" 
+          justify="space-between"
           m="0 auto"
           w="100%"
+          maxW="1500px"
           px="78px"
           height="82px"
           position="fixed"
@@ -35,7 +37,10 @@ export const Header = () => {
           align="center"
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Image src={logo} />
+          <Link to="/">
+            {" "}
+            <Image src={logo} />
+          </Link>
         </Flex>
       </Show>
       <Show breakpoint="(max-width: 768px)">
@@ -43,6 +48,9 @@ export const Header = () => {
           direction="row"
           justify="space-between"
           maxW="770px"
+          w="100%"
+          position="fixed"
+          zIndex="1"
           m="0 auto"
           px="20px"
           height="72px"
@@ -50,7 +58,10 @@ export const Header = () => {
           align="center"
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Image src={logo} />
+          <Link to="/">
+            {" "}
+            <Image src={logo} />
+          </Link>
           <GiHamburgerMenu onClick={onOpen} style={{ color: "#ffffff" }} />
 
           <Drawer

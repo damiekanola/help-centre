@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import insight from "../../assets/images/insight.png";
@@ -17,42 +17,44 @@ export const Veergedata = () => {
   };
   return (
     <div className="main" id="real">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#real">Overview</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#ml">ML, DL & AI </a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#matters">Why Veerge Matters</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#data">Why Data Migration</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq">FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="/">Intro to Veerge</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#real">Overview</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#ml">ML, DL & AI </a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#matters">Why Veerge Matters</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#data">Why Data Migration</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq">FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="/">Intro to Veerge</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="fractional_real_estate">Fractional Real Estate</Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />{" "}
-          <Link to="users_experience">User’s End-To-End Experience</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="fractional_real_estate">Fractional Real Estate</Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />{" "}
+            <Link to="users_experience">User’s End-To-End Experience</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">VEERGE & DATA ANALYTICS </Text>
       <Text className="publish">Published: November 10, 2022</Text>
       <Box>

@@ -1,4 +1,4 @@
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import React, { useState } from "react";
@@ -18,32 +18,34 @@ export const Verified = () => {
   };
   return (
     <div className="main" id="verified">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#verified">Verified, What Next?</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq"> FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="fisrt_time_setup">First time setup</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#verified">Verified, What Next?</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="fisrt_time_setup">First time setup</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="">Topic 5</Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" /> <Link to="">Subtopic 2</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="">Topic 5</Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" /> <Link to="">Subtopic 2</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">VERIFIED, WHAT NEXT?</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box>

@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Image, useToast } from "@chakra-ui/react";
+import { Box, Text, Flex, Image, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import React, { useState } from "react";
@@ -16,43 +16,45 @@ export const Introtoveerge = () => {
 
   return (
     <div className="main" id="veerge">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#veerge"> What is Veerge</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#engagement">System of engagement</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#intelligence">System of Intelligence</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#trust">System of Trust</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#conclusion">Conclusion</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq"> FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} />
-          <Link to="fisrt_time_setup">First time setup</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#veerge"> What is Veerge</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#engagement">System of engagement</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#intelligence">System of Intelligence</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#trust">System of Trust</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#conclusion">Conclusion</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} />
+            <Link to="fisrt_time_setup">First time setup</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} /> <Link to="">Topic 5</Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} /> <Link to="">Subtopic 2</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} /> <Link to="">Topic 5</Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} /> <Link to="">Subtopic 2</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">INTRO TO VEERGE</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box>

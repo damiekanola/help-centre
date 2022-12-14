@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import online1 from "../../assets/images/online1.png";
@@ -19,35 +19,38 @@ export const Onlinestore = () => {
   };
   return (
     <div className="main" id="store">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#store">How to create an online store</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq"> FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="/">Intro to Veerge</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#store">How to create an online store</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="/">Intro to Veerge</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="fractional_real_estate">
-            Understanding Fractional Real estate{" "}
-          </Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />{" "}
-          <Link to="veerge_and_data">Veerge & Data analytics</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="fractional_real_estate">
+              Understanding Fractional Real estate{" "}
+            </Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />{" "}
+            <Link to="veerge_and_data">Veerge & Data analytics</Link>
+          </Flex>
+        </div>
+      </Show>
+
       <Text className="head_">HOW TO CREATE AN ONLINE STORE</Text>
       <Text className="publish">Published: November 03, 2022</Text>
 
