@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import { SlArrowRight } from "react-icons/sl";
@@ -14,42 +14,44 @@ export const Fractionalestate = () => {
   };
   return (
     <div className="main" id="real">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#real">Overview</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#asset"> Asset Management </a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#old">Old Way of Project Financing</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#new"> The New Way</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq">FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="/">Intro to Veerge</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#real">Overview</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#asset"> Asset Management </a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#old">Old Way of Project Financing</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#new"> The New Way</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq">FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="/">Intro to Veerge</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="veerge_and_data">Veerge & Data analytics</Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />{" "}
-          <Link to="users_experience">User’s End-To-End Experience</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="veerge_and_data">Veerge & Data analytics</Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />{" "}
+            <Link to="users_experience">User’s End-To-End Experience</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">UNDERSTANDING FRACTIONAL REAL ESTATE </Text>
       <Text className="publish">Published: November 09, 2022</Text>
       <Box>

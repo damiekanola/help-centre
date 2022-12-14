@@ -27,6 +27,7 @@ export const Searchbar = () => {
         <Flex
           w="100%"
           px="78px"
+          maxW="1500px"
           height="67px"
           direction="row"
           justify="space-between"
@@ -124,7 +125,7 @@ export const Searchbar = () => {
                     }
                   })
                   .map((data) => {
-                    const { route, searchQuery, topic } = data;
+                    const { route, topic } = data;
                     return (
                       <Flex
                         direction="column"
@@ -161,7 +162,7 @@ export const Searchbar = () => {
           <Flex
             direction="row"
             align="center"
-            maxW="300px"
+            maxW="320px"
             h="43px"
             bg="#F5F5F5"
             border=" 1px solid #E4E4E4"
@@ -192,7 +193,7 @@ export const Searchbar = () => {
           scrollBehavior={scrollBehavior}
         >
           <ModalOverlay bg="rgba(0,0,0,0.2)" />
-          <ModalContent>
+          <ModalContent w={{ base: "370px", md: "500px" }}>
             <ModalBody>
               <Flex direction="row" align="center">
                 <CiSearch style={{ width: "25px", height: "25px" }} />
@@ -223,7 +224,7 @@ export const Searchbar = () => {
                   }
                 })
                 .map((data) => {
-                  const { route, searchQuery, topic } = data;
+                  const { route, topic } = data;
                   return (
                     <Flex
                       direction="column"
@@ -231,7 +232,7 @@ export const Searchbar = () => {
                       justify="center"
                       align="center"
                       mt="20px"
-                      width="400px"
+                      width="320px"
                     >
                       <Link to={route} className="a__">
                         <Flex

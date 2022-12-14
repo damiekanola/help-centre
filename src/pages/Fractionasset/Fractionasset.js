@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import asset1 from "../../assets/images/asset1.png";
@@ -20,36 +20,38 @@ export const Fractionasset = () => {
   };
   return (
     <div className="main" id="asset">
-      <div class="rightsidenav">
-        <Text className="article_text">In this article</Text>
-        <ul className={style}>
-          <li onClick={handleClick}>
-            <a href="#asset">How to fractionalise an asset</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#frac"> How users buy fractions</a>
-          </li>
-          <li onClick={handleClick}>
-            <a href="#faq"> FAQs</a>
-          </li>
-        </ul>
-        <Text className="article_text" mt="60px">
-          Related Content
-        </Text>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="">Intro to Veerge</Link>
-        </Flex>
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#asset">How to fractionalise an asset</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#frac"> How users buy fractions</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="">Intro to Veerge</Link>
+          </Flex>
 
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />
-          <Link to="">Understanding Fractional Real estate </Link>
-        </Flex>
-        <Flex columnGap="20px">
-          <Image src={file} h="18px" w="14px" />{" "}
-          <Link to="">Veerge & Data analytics</Link>
-        </Flex>
-      </div>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="">Understanding Fractional Real estate </Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />{" "}
+            <Link to="">Veerge & Data analytics</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">HOW TO FRACTIONALISE AN ASSET</Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box>

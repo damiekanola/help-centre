@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import end1 from "../../assets/images/end1.png";
@@ -22,6 +22,7 @@ export const Usersexperience = () => {
   };
   return (
     <div className="main" id="experience">
+    <Show breakpoint="(min-width: 769px)">
       <div class="rightsidenav">
         <Text className="article_text">In this article</Text>
         <ul className={style}>
@@ -50,7 +51,7 @@ export const Usersexperience = () => {
           <Image src={file} h="18px" w="14px" />{" "}
           <Link to="veerge_and_data">Veerge & Data analytics</Link>
         </Flex>
-      </div>
+      </div></Show>
       <Text className="head_">USER’S END-TO-END EXPERIENCE</Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box>

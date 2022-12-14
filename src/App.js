@@ -30,7 +30,9 @@ function App() {
         <Searchbar />
       </Show>
       <div className="wrapper">
-        <Leftsidenav />
+        <Show breakpoint="(min-width: 769px)">
+          <Leftsidenav />
+        </Show>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Introtoveerge />} />
