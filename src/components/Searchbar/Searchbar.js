@@ -25,7 +25,6 @@ export const Searchbar = () => {
     <>
       <Show breakpoint="(min-width: 769px)">
         <Flex
-          maxW="1440px"
           w="100%"
           px="78px"
           height="67px"

@@ -24,8 +24,7 @@ export const Header = () => {
       <Show breakpoint="(min-width: 769px)">
         <Flex
           direction="row"
-          justify="space-between"
-          maxW="1440px"
+          justify="space-between" 
           m="0 auto"
           w="100%"
           px="78px"
