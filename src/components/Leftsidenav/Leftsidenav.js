@@ -1,4 +1,4 @@
-import { Show, Text } from "@chakra-ui/react";
+import { Box, Show, Text } from "@chakra-ui/react";
 import { useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Leftsidenav.css";
@@ -103,7 +103,7 @@ export const Leftsidenav = () => {
   // }
   return (
     //   Side navigation
-    <>
+    <Box overflowY='visible'>
       <Show breakpoint="(max-width: 768px)">
         <div class="leftsidenav">
           <ul>
@@ -231,6 +231,6 @@ export const Leftsidenav = () => {
           </ul>
         </div>
       </Show>
-    </>
+    </Box>
   );
 };
