@@ -57,7 +57,6 @@ export const Verified = () => {
           it has been verified. This is where you start migrating your business
           processes to Veerge.
         </Text>
-        <Image src={addprop} mt="30px" mx="auto" />
       </Box>
       <Box marginTop="50px">
         <Text className="content_head">STEP 1</Text>
@@ -74,6 +73,7 @@ export const Verified = () => {
           </a>{" "}
           to list a property.
         </Text>
+        <Image src={addprop} mt="30px" mx="auto" />
       </Box>
       <Box marginTop="50px">
         <Text className="content_head">STEP 2</Text>

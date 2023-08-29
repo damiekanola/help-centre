@@ -57,31 +57,33 @@ export const Fractionalestate = () => {
       <Box>
         <Text className="content_head">OVERVIEW</Text>
         <Text className="content">
-          The investment market for real estate, while immense, has been
-          dominated by a relatively closed network of firms and organizations
-          able to shoulder big, chunky, illiquid investments. It is also
-          hindered by a significant amount of transactional friction and
-          opacity. While there have been improvements in the digital age –
-          especially as it relates to information flow and transaction set up
-          and completion – we are only at the initial few steps in terms of
-          digitization. There is still a significant amount of improvement that
-          can be made in real estate when it comes to the use of digital
-          technology and the representation of physical assets in digital forms.
-          This advancement will be driven largely by the digital securitization
-          of real estate properties (also known as “Fractionalisation”) and
-          improved transaction processing that make it easier to buy and sell
-          properties and/or shares of properties, process revenue streams, and
-          record and perfect property transactions. The future of real estate is
-          one where purchases and investments become much more liquid, much more
-          available, and far more easily documented and managed. These changes
-          will be driven largely by technology and as a result, the benefits
-          will open up markets for new investors and let a greater number of
-          parties manage ownership, liquidity, and risk much more effectively.
-          One of the benefits of Veerge, is that it offers a way to buy and sell
-          properties in more granular pieces. A property, for example, can be
-          divided into individual investment units each identified as a
-          fraction. These fractions will identify ownership, provide a mechanism
-          for transactional processing, and serve as the property identifier.
+          <Text as='p'>
+            The investment market for real estate is vast, but historically, it has been dominated by a closed network of firms and organizations capable of handling large, illiquid investments. However, the tides are changing, and the future of real estate looks more promising and engaging than ever before.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            In the past, the real estate market faced challenges due to transactional friction and a lack of transparency. But with the advent of the digital age, there have been significant improvements in information flow and transaction processes. We have taken some initial steps towards digitization, but there is still immense potential for growth in the industry.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            Enter the game-changer: digital securitization of real estate properties, also known as "Fractionalisation." This exciting concept not only unlocks previously inaccessible investment opportunities for individuals and organizations but also paves the way for lower fees and costs typically associated with real estate transactions.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            Picture this: a developer, armed with the power of Veerge, launches a development project like never before. Instead of the traditional model with a small stake and multiple sources of funding, the developer can now divide the property holding into a staggering number of pieces – say, 100,000 fractions. These fractions are then made available for investors to purchase and own.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            Each fractional owner gains a unique stake in the property development, holding ownership rights to a specific fraction, such as 1/100,000th of the entire project. As the project progresses, investors have two enticing options. They can hold onto their fractions until the project reaches completion, at which point they can exchange their fractions for ownership of a unit in the building. Alternatively, if they see their fractions as purely financial investments, they can sell them to other investors through a marketplace. As the project nears completion and its future cash flow becomes less risky, the value of the fractions is expected to increase, providing attractive opportunities for profit.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            The beauty of technology-driven fractionalisation is its ability to eliminate delays, high costs, and middlemen that typically burden real estate transactions. With smart contracts as the backbone, the entire process can be automated, and payments can be executed instantly. These smart contracts act as self-executing agreements that write, authenticate, and audit transactions in real-time. All parties involved have access to clear instructions and dependencies, ensuring that payments are only executed when conditions are met. This heightened transparency reduces disputes and potential fraud, fostering a trustworthy and secure environment for all investors.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            Furthermore, the benefits of fractionalisation become even more profound when viewed across cities, states, and countries. By establishing a common language for real estate property registration and securitization, and providing mechanisms for digital purchases, the cumbersome overhead and specialized knowledge required to participate in real estate transactions worldwide are significantly reduced.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            The true magic of this technological leap is that transactions are no longer bound by business hours or holiday cutoff times – they happen 24/7. Additionally, confirmations take only minutes, adding speed and efficiency to the investment process.
+          </Text>
+          <Text as='p' marginTop='20px'>
+            Imagine a world where real estate investment becomes more inclusive, efficient, and liquid. Thanks to fractionalisation and cutting-edge technology like Veerge, this future is closer than ever. Embrace the transformative power of fractional ownership and ride the wave of a more engaging and accessible real estate market. The possibilities are boundless, and the time to seize them is now. Welcome to the future of real estate investment!
+          </Text>
         </Text>
       </Box>
       <Box pt="150px" id="asset">

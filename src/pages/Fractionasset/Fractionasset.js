@@ -52,7 +52,7 @@ export const Fractionasset = () => {
           </Flex>
         </div>
       </Show>
-      <Text className="head_">HOW TO FRACTIONALISE AN ASSET</Text>
+      <Text className="head_">HOW TO FRACTIONALISE AN PROPERTY</Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box>
         <Text className="content_head">STEP 1</Text>
