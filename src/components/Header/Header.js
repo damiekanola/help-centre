@@ -26,12 +26,14 @@ export const Header = () => {
         <Flex
           direction="row"
           justify="space-between"
-          m="0 auto"
-          w="100%"
-          maxW="1500px"
+          // m="0 auto"
+          w="full"
           px="78px"
           height="82px"
           position="fixed"
+          top='0'
+          left='0'
+          right='0'
           zIndex="1"
           bg="#191919"
           align="center"

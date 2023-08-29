@@ -27,7 +27,6 @@ export const Searchbar = () => {
         <Flex
           w="100%"
           px="78px"
-          maxW="1500px"
           height="67px"
           direction="row"
           justify="space-between"
