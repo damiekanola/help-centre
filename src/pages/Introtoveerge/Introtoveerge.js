@@ -1,65 +1,84 @@
-import { Box, Text, Flex, Image, useToast, Show } from "@chakra-ui/react";
+import { Box, Text, Flex, Image, useToast, Show, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import React, { useState } from "react";
 import "./Introtoveerge.css";
 import { SlArrowRight } from "react-icons/sl";
+
+
 export const Introtoveerge = () => {
   const toast = useToast();
   const [style, setStyle] = useState("navigation_");
-  const [isActive, setIsActive] = useState(" ");
-  const handleClick = () => {
-    console.log("you just clicked me");
-    setStyle("bluenav");
-    isActive() ? setIsActive("active") : setIsActive(" ");
+  const [active, setActive] = useState("veerge");
+  const handleClick = (id) => {
+    console.log(id);
+    // setStyle("bluenav");
+    setActive(id)
   };
+
+  const articleContent = [
+    { id: 'veerge', title: 'Overview of Veerge?' },
+    { id: 'engagement', title: 'System of engagement' },
+    { id: 'trust', title: 'System of Trust' },
+    { id: 'intelligence', title: 'System of Intelligence' },
+    { id: 'conclusion', title: 'Conclusion' },
+    { id: 'faq', title: 'Questions & Replies' },
+  ]
 
   return (
     <div className="main" id="veerge">
       <Show breakpoint="(min-width: 769px)">
-        <div class="rightsidenav">
+        <Box position={'fixed'} min-height='751px' left='0' w='100%' maxW={'282px'} pl='40px' h='20px !important' >
+          {/* <Box overflowY={'scroll'}> */}
           <Text className="article_text">In this article</Text>
-          <ul className={style}>
-            <li onClick={handleClick}>
-              <a href="#veerge"> What is Veerge</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#engagement">System of engagement</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#intelligence">System of Intelligence</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#trust">System of Trust</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#conclusion">Conclusion</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#faq"> FAQs</a>
-            </li>
-          </ul>
-          <Text className="article_text" mt="60px">
-            Related Content
-          </Text>
-          <Flex columnGap="20px">
-            <Image src={file} />
-            <Link to="fisrt_time_setup">First time setup</Link>
+          <Flex mt='20px' direction={'column'} align={'stretch'}>
+            {articleContent.map((content, i) => (
+              <Flex
+                key={i} cursor={'pointer'}
+                onClick={() => handleClick(content.id)}
+                borderLeft={i !== articleContent.length - 1 && '1px solid #E4E4E4'}
+                pb='25px' justify='flex-start' align='flex-start'>
+                <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#E4E4E4'} />
+                <Text
+                  maxW={'80%'}
+                  mt='-5px'
+                  ml='20px'
+                  fontSize={'14px'}
+                  fontWeight={active === content.id ? 500 : 400}
+                  color={active === content.id ? '#4545FE' : '#191919'}
+                >
+                  <a href={`#${content.id}`}>
+                    {content?.title}
+                  </a>
+                </Text>
+              </Flex>
+            ))}
           </Flex>
 
-          <Flex columnGap="20px">
-            <Image src={file} /> <Link to="">Topic 5</Link>
-          </Flex>
-          <Flex columnGap="20px">
-            <Image src={file} /> <Link to="">Subtopic 2</Link>
-          </Flex>
-        </div>
+          <Text className="article_text" mt="40px">
+            Related Content
+          </Text>
+          <VStack mt='20px' spacing={'17px'} align='stretch'>
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to="/fisrt_time_setup">First time setup</Link>
+            </Flex>
+
+            <Flex columnGap="20px">
+              <Image src={file} /> <Link to="/approved_whats_next">Approved, what next?</Link>
+            </Flex>
+            <Flex columnGap="20px">
+              <Image src={file} /> <Link to="/terms">Terms of service</Link>
+            </Flex>
+          </VStack>
+          {/* </Box> */}
+        </Box>
       </Show>
       <Text className="head_">INTRO TO VEERGE</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box>
         <Text className="content_head" id="veerge">
-          WHAT IS VEERGE?
+          OVERVIEW OF VEERGE?
         </Text>
         <Text className="content" lineHeight={'25px'}>
           <Text as='p'>
@@ -81,9 +100,13 @@ export const Introtoveerge = () => {
             Additionally, Veerge empowers businesses to find answers to pressing questions,
             predict future trends, and gain a comprehensive understanding of how to improve their approach.
           </Text>
+
+          <Text as='p' marginTop="20px">
+            Values are delivered in three core areas: System of engagement, system of intelligence & system of trust.
+          </Text>
         </Text>
       </Box>
-      <Box pt="150px" id="engagement">
+      <Box pt="30px" id="engagement">
         <Text className="content_head">SYSTEM OF ENGAGEMENT</Text>
         <Text className="content">
           <Text as='p'>
@@ -118,7 +141,7 @@ export const Introtoveerge = () => {
         </Text>
       </Box>
 
-      <Box pt="150px" id="trust">
+      <Box pt="30px" id="trust">
         <Text className="content_head">SYSTEM OF TRUST</Text>
         <Text className="content">
           <Text as='p'>
@@ -145,10 +168,10 @@ export const Introtoveerge = () => {
         </Text>
       </Box>
 
-      <Box pt="150px" id="intelligence">
+      <Box pt="30px" id="intelligence">
         <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
         <Text className="content">
-          <Text as='p' marginTop='20px' fontWeight={600}>
+          <Text as='p' fontWeight={600}>
             AI+ Your business = Limitless possibilities.
           </Text>
           <Text as='p' marginTop='20px'>
@@ -166,10 +189,10 @@ export const Introtoveerge = () => {
         </Text>
       </Box>
 
-      <Box pt="150px" id="intelligence">
+      <Box pt="30px" id="conclusion">
         <Text className="content_head">CONCLUSION</Text>
         <Text className="content">
-          <Text as='p' marginTop='20px'>
+          <Text as='p'>
             In order to meet changing customer expectations and deliver a consistent, end-to-end omnichannel customer experience, the future of real estate lies in digital, structured, and automated channels. Adopting this approach enables businesses to power their operations with everything needed to prioritise the customer, align teams and technology, and plan strategies for growth.
             Veerge offers a peerless automated solution that enables businesses to segment customers based on specific values, create content and listings, track customer behaviour, and reduce marketing costs while making smarter decisions. The use of data, rather than assumptions or gut feelings, allows for more informed decision-making and an increased focus on sales, leading to higher revenue. With Veerge, businesses can identify the hottest prospects and close more deals.
             The benefits of this new approach extend beyond sales and marketing, with the ability to provide a more transparent and efficient way of tracking assets and managing contracts through the use of smart contracts. By leveraging technology to automate tasks and reduce inefficiencies, businesses can move toward a more modern, forward-thinking approach and stay ahead of the curve. Veerge has the potential to transform the real estate industry and position businesses for success in the twenty-first century.

@@ -114,7 +114,7 @@ export const Leftsidenav = () => {
               <Link to="/fisrt_time_setup">First Time Setup</Link>
             </li>
             <li className="list" ref={verified}>
-              <Link to="/Verified_whats_next">Verified, What Next?</Link>
+              <Link to="/approved_whats_next">Verified, What Next?</Link>
             </li>
             <li className="list" ref={store}>
               <Link to="/create_online_store">
@@ -178,7 +178,7 @@ export const Leftsidenav = () => {
               <Link to="/fisrt_time_setup">First Time Setup</Link>
             </li>
             <li className="list" ref={verified}>
-              <Link to="/Verified_whats_next">Verified, What Next?</Link>
+              <Link to="/approved_whats_next">Verified, What Next?</Link>
             </li>
             <li className="list" ref={store}>
               <Link to="/create_online_store">

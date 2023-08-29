@@ -6,15 +6,18 @@
     position: relative;
     top: 50px;
   }
+
   .head_ {
     font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: 0.13em;
+    /* letter-spacing: 0.13em; */
     color: #000000;
+    text-transform: uppercase;
   }
+
   .publish {
     font-family: euclid;
     font-style: normal;
@@ -32,10 +35,13 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.10em;
     color: #000000;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    text-transform: uppercase;
   }
+
   .content {
     max-width: 621px;
     font-family: euclid;
@@ -45,9 +51,11 @@
     line-height: 160%;
     color: #000000;
   }
+
   /* The sidebar menu */
   .rightsidenav {
-    height: fit-content;
+    overflow-y: scroll;
+    height: 100%;
     max-width: 282px;
     width: 100%;
     overflow-x: hidden;
@@ -66,6 +74,7 @@
   .rightsidenav Link:hover {
     color: #f1f1f1;
   }
+
   .article_text {
     font-family: euclid;
     font-style: normal;
@@ -87,7 +96,8 @@
     /* bullets */
     content: url("../../assets/icons/bullet.png");
     position: absolute;
-    left: 2px; /*adjust manually*/
+    left: 2px;
+    /*adjust manually*/
     top: 0px;
   }
 
@@ -103,12 +113,14 @@
 
   ul.navigation_ li:first-child:before {
     /* first li's line */
-    top: 8px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+    top: 8px;
+    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.navigation_ li:last-child:before {
     /* last li's line */
-    height: 8px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+    height: 8px;
+    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 
   ul.bluenav li {
@@ -123,7 +135,8 @@
     /* bullets */
     content: url("../../assets/icons/bullet_active.png ");
     position: absolute;
-    left: 2px; /*adjust manually*/
+    left: 2px;
+    /*adjust manually*/
     top: 0px;
   }
 
@@ -139,14 +152,17 @@
 
   ul.bluenav li:first-child:before {
     /* first li's line */
-    top: 8px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+    top: 8px;
+    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.bluenav li:last-child:before {
     /* last li's line */
-    height: 8px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+    height: 8px;
+    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 }
+
 @media only screen and (min-width: 769px) {
   .main {
     max-width: 821px;
@@ -155,20 +171,23 @@
     margin-left: 337px;
     padding: 70px 100px;
     margin: 0 auto;
-    position:relative;
-    top:100px
+    position: relative;
+    top: 100px
   }
+
   .head_ {
     font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 41px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.10em;
     color: #000000;
     padding-bottom: 15px;
     margin-top: 70px;
+    text-transform: uppercase;
   }
+
   .publish {
     font-family: euclid;
     font-style: normal;
@@ -186,10 +205,13 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.10em;
     color: #000000;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    text-transform: uppercase;
   }
+
   .content {
     max-width: 621px;
     font-family: euclid;
@@ -199,15 +221,17 @@
     line-height: 160%;
     color: #000000;
   }
+
   /* The sidebar menu */
   .rightsidenav {
+    overflow-y: scroll;
     min-height: 751px;
-    height: fit-content;
+    height: 200px;
     max-width: 282px;
     width: 100%;
     position: fixed;
-    top: 149px;
-    right: 0;
+    /* top: 149px; */
+    left: 0;
     overflow-x: hidden;
     padding-top: 82px;
     background: #ffffff;
@@ -227,6 +251,7 @@
   .rightsidenav Link:hover {
     color: #f1f1f1;
   }
+
   .article_text {
     font-family: euclid;
     font-style: normal;
@@ -248,7 +273,8 @@
     /* bullets */
     content: url("../../assets/icons/bullet.png");
     position: absolute;
-    left: 2px; /*adjust manually*/
+    left: 2px;
+    /*adjust manually*/
     top: 0px;
   }
 
@@ -264,12 +290,14 @@
 
   ul.navigation_ li:first-child:before {
     /* first li's line */
-    top: 8px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+    top: 8px;
+    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.navigation_ li:last-child:before {
     /* last li's line */
-    height: 8px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+    height: 8px;
+    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 
   ul.bluenav li {
@@ -284,7 +312,8 @@
     /* bullets */
     content: url("../../assets/icons/bullet_active.png ");
     position: absolute;
-    left: 2px; /*adjust manually*/
+    left: 2px;
+    /*adjust manually*/
     top: 0px;
   }
 
@@ -300,11 +329,13 @@
 
   ul.bluenav li:first-child:before {
     /* first li's line */
-    top: 8px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+    top: 8px;
+    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.bluenav li:last-child:before {
     /* last li's line */
-    height: 8px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+    height: 8px;
+    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 }

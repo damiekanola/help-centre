@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Leftsidenav } from "./components/Leftsidenav/Leftsidenav";
+import { Homepage } from "./pages/Homepage/Homepage";
 import { Introtoveerge } from "./pages/Introtoveerge/Introtoveerge";
 import { Fisrttimesetup } from "./pages/Firsttimesetup/Firsttimesetup";
 import { Verified } from "./pages/Verified/Verified";
@@ -22,22 +23,27 @@ import { Header } from "./components/Header/Header";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 import { Show } from "@chakra-ui/react";
+import { Approved } from "./pages/Approved/Approved";
+import { Ticketing } from "./pages/Ticketing/Ticketing";
 function App() {
   return (
     <div className="help_container">
       <Header />
-      <Show breakpoint="(min-width: 769px)">
+      <Show pb='100px' breakpoint="(min-width: 769px)">
         <Searchbar />
       </Show>
       <div className="wrapper">
-        <Show breakpoint="(min-width: 769px)">
+        {/* <Show breakpoint="(min-width: 769px)">
           <Leftsidenav />
-        </Show>
+        </Show> */}
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Introtoveerge />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/into_to_veerge" element={<Introtoveerge />} />
           <Route path="/fisrt_time_setup" element={<Fisrttimesetup />} />
           <Route path="/Verified_whats_next" element={<Verified />} />
+          <Route path="/approved_whats_next" element={<Approved />} />
+          <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/create_listing" element={<Createlisting />} />
           <Route path="/delist" element={<Delist />} />
           <Route path="/inspections" element={<Inspections />} />
