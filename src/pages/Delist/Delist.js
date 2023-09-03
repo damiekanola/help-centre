@@ -1,104 +1,204 @@
-import React from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
-import delist1 from '../../assets/images/delist-1.png';
-import delist2 from '../../assets/images/delist-2.png';
-import delist3 from '../../assets/images/delist-3.png';
-import delist4 from '../../assets/images/delist-4.png';
-import delist5 from '../../assets/images/delist-5.png';
-import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
-import RightNav from "../../components/Listings/RightNav";
-import LeftNav from "../../components/Leftsidenav/Leftsidenav";
-import Helpful from "../../components/Faq/Helpful";
+import React, { useState } from "react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import file from "../../assets/icons/file.png";
+import delist1 from "../../assets/images/delist1.svg";
+import delist2 from "../../assets/images/delist2.svg";
+import delist3 from "../../assets/images/delist3.svg";
+import delist4 from "../../assets/images/delist4.svg";
+import { SlArrowRight } from "react-icons/sl";
 
 export const Delist = () => {
   const toast = useToast();
-
-  const articleContent = [
-    { id: 'how_to', title: 'How to fractionalise an asset' },
-    { id: 'questions', title: 'Questions & Replies' },
-  ]
-
-  const questions = [
-    {
-      name: 'David J.',
-      date: 'Jun 25, 2023',
-      content: " If I delist a listing, will existing subscribers still have access to it on their application?",
-      replies: [
-        "Hello David, yes, existing subscribers will still have access to the delisted listing on their application. However, non-subscribers won't have access to it by default. The only way non-subscribers can gain access to the delisted listing is through methods such as receiving a private offer, being granted private access, or receiving a shared private link."
-      ]
-    }
-  ]
-
-
-
+  const [style, setStyle] = useState("navigation_");
+  const [isActive, setIsActive] = useState(" ");
+  const handleClick = () => {
+    console.log("you just clicked me");
+    setStyle("bluenav");
+    isActive() ? setIsActive("active") : setIsActive(" ");
+  };
   return (
-    <div className="main" id="how_to">
-      <LeftNav articleContent={articleContent} />
-      <RightNav />
-      <Text className="head_">HOW TO DELIST A LISTING</Text>
+    <div className="main" id="delist">
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#delist">How to delist a listing</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="/">Intro to Veerge</Link>
+          </Flex>
+
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="fractional_real_estate">
+              Understanding Fractional Real estate{" "}
+            </Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />{" "}
+            <Link to="veerge_and_data">Veerge & Data analytics</Link>
+          </Flex>
+        </div>
+      </Show>
+      <Text className="head_">HOW TO DELIST A LISTING </Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box>
-        <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
-            Delisting a listing involves removing it from public visibility within the application and converting it into a private offering. Here's how you can accomplish this:
-          </Text>
+        <Text className="content_head" mt="36px">
+          STEP 1
         </Text>
-      </Box>
-      <Box>
-        <Text className="content_head">STEP 1</Text>
         <Text className="content">
-          Start by navigating to the "Listings" section.
+          The first step is to go to listings and select the dropdown button
+          beside transactions
         </Text>
 
-        <Image src={delist1} mt="30px" mx="auto" w='full' />
+        <Image src={delist1} mt="30px" mx="auto" />
       </Box>
       <Box>
-        <Text className="content_head" mt="30px">
+        <Text className="content_head" mt="70px">
           STEP 2
         </Text>
         <Text className="content">
-          Locate the dropdown menu situated at the top right corner of the listings page.
+          Click on the make listings private button
         </Text>
 
-        <Image src={delist2} mt="30px" mx="auto" w='full' />
+        <Image src={delist2} mt="30px" mx="auto" />
       </Box>
       <Box>
-        <Text className="content_head" mt="40px">
+        <Text className="content_head" mt="70px">
           STEP 3
         </Text>
         <Text className="content">
-          From the dropdown options, choose "Make Private." This action initiates the process of delisting.
+          You will be asked if you are sure; Kindly select yes.
         </Text>
-        <Image src={delist3} mt="30px" mx="auto" w='full' />
+
+        <Image src={delist3} mt="30px" mx="auto" />
       </Box>
       <Box>
-        <Text className="content_head" mt="40px">
+        <Text className="content_head" mt="70px">
           STEP 4
         </Text>
         <Text className="content">
-          At this point, you might be prompted to an invitation screen. This step is optional and is particularly useful when you plan to grant private access to a select group of exclusive buyers. If applicable, proceed to the next step; otherwise, you can skip this part.
+          You will be prompted to a screen to send an invitation (This step is
+          optional). We are aware that in some cases the listing might be
+          getting delisted from the online store, however you intend to give
+          private access to some exclusive buyers (That’s where the step is
+          applicable).
         </Text>
-
-        <Image src={delist4} mt="30px" mx="auto" w='full' />
-      </Box>
-      <Box>
-        <Text className="content_head" mt="40px">
-          STEP 5
+        <Text className="content" mt="0px">
+          Kindly input all emails or select users from the recommendations if
+          necessary and proceed. If not, kindly skip this process.
         </Text>
-        <Text className="content">
-          If you choose to proceed with invitations, input the relevant email addresses or select users from the provided recommendations. These invitations will grant the chosen individuals exclusive access to the delisted listing. If invitations aren't necessary, you can simply skip this step.
-        </Text>
-        <Image src={delist5} mt="30px" mx="auto" w='full' />
-        <Text className="content">
-          By following these steps, you can effectively delist a listing, making it private and restricting access to a select audience, either through private invitations or by maintaining it exclusively offline. This versatile approach ensures that you have control over the visibility and accessibility of your listings, tailored to your specific marketing and business strategies.
-        </Text>
+        <Image src={delist4} mt="30px" mx="auto" />
       </Box>
 
-
-      <QuestionsAndReplies questions={questions} />
-
-      <Helpful />
-
+      <Box marginTop="50px" id="faq">
+        <Text className="content_head">FAQs</Text>
+        <Flex
+          maxW="621px"
+          minH="192px"
+          borderRadius="5px"
+          border="0.3px solid #000000"
+          direction="column"
+        >
+          <Box minH="64px" borderBottom="0.3px solid #000000">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
+              <a href="/create_listing" style={{ color: "#5d5fef" }}>
+                How do i create a listing
+              </a>
+            </Flex>
+          </Box>
+          <Box minH="64px" borderBottom="0.3px solid #000000">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />
+              <a href="/create_unit" style={{ color: "#5d5fef" }}>
+                How to create a unit
+              </a>
+            </Flex>
+          </Box>
+          <Box minH="64px">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
+              <a href="/create_online_store" style={{ color: "#5d5fef" }}>
+                How to create an online store
+              </a>
+            </Flex>
+          </Box>
+        </Flex>
+      </Box>
+      <Box marginTop="70px" textAlign="right">
+        <Text className="content_head">Was this helpful?</Text>
+        <Flex direction="row" justifyContent="flex-end" maxW="451px">
+          <Text
+            borderRight="1px solid #5d5fef"
+            color="#5d5fef"
+            pr="8px"
+            cursor="pointer"
+            onClick={() =>
+              toast({
+                position: "bottom-center",
+                isClosable: true,
+                render: () => (
+                  <Box color="white" p={3} bg="#000000">
+                    Thank you for your feedback.
+                  </Box>
+                ),
+              })
+            }
+          >
+            Yes
+          </Text>{" "}
+          <Text
+            color="#5d5fef"
+            pl="8px"
+            cursor="pointer"
+            onClick={() =>
+              toast({
+                position: "bottom-center",
+                isClosable: true,
+                render: () => (
+                  <Box color="white" p={3} bg="#000000">
+                    Thank you for your feedback.
+                  </Box>
+                ),
+              })
+            }
+          >
+            No
+          </Text>
+        </Flex>
+      </Box>
     </div>
   );
 };

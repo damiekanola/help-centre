@@ -8,14 +8,15 @@ import allo2 from "../../assets/images/allo2.png";
 import publish_rec from "../../assets/images/publish_rec.png";
 import "./Approved.css";
 import { SlArrowRight } from "react-icons/sl";
-import LeftNav from "../../components/Leftsidenav/Leftsidenav";
-import aminat from '../../assets/images/aminat.png';
-import daniel from '../../assets/images/daniel.svg'
-import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
-import Helpful from "../../components/Faq/Helpful";
-
 export const Approved = () => {
   const toast = useToast();
+  const [style, setStyle] = useState("navigation_");
+  const [active, setActive] = useState("approved");
+  const handleClick = (id) => {
+    console.log(id);
+    // setStyle("bluenav");
+    setActive(id)
+  };
 
   const articleContent = [
     { id: 'approved', title: 'Approved, What Next??' },
@@ -24,35 +25,58 @@ export const Approved = () => {
     { id: 'questions', title: 'Questions & Replies' },
   ]
 
-  const questions = [
-    {
-      image: daniel,
-      name: 'Daniel G.',
-      date: 'Jun 20,2023',
-      content: "I invited team members before creating development projects, I hope I didnt disrupt anything? We have about 20 developments project (Past + Present). So,I did that to split between the invited team members, can that still work?",
-      replies: [
-        `Hello Daniel,
-        Your initiative, is a valid approach, and it can indeed be effective. However, it's essential to ensure that each team member has the necessary permissions to create listings. To confirm this, please navigate to the "Manage Roles" section, where you can verify their access levels and adjust them accordingly. This way, you'll be able to maintain a smooth workflow and make the most of your 20
-        development projects, both past and present.`
-      ]
-    },
-    {
-      image: aminat,
-      name: 'Aminat A.',
-      date: 'May 06,2023',
-      content: "What happens if I create an application and migrate my client base before adding listings?",
-      replies: [
-        `Hello, 
-        It's crucial to adhere to the following sequence of steps. If you migrate your client base before adding development projects, you won't be able to associate the properties that your clients purchased prior to the migration with Veerge. 
-        Consequently, when your clients sign up, their property portfolios will appear empty. To rectify this issue, I recommend scheduling an appointment with our support team for assistance in resolving this matter.`
-      ]
-    },
-  ]
-
-
   return (
     <div className="main" id="verified">
-      <LeftNav articleContent={articleContent} />
+      <Show breakpoint="(min-width: 769px)">
+        <Box position={'fixed'} min-height='751px' left='0' w='100%' maxW={'282px'} pl='40px' h='20px !important' >
+          {/* <Box overflowY={'scroll'}> */}
+          <Text className="article_text">In this article</Text>
+          <Flex mt='20px' direction={'column'} align={'stretch'}>
+            {articleContent.map((content, i) => (
+              <Flex
+                key={i} cursor={'pointer'}
+                onClick={() => handleClick(content.id)}
+                borderLeft={i !== articleContent.length - 1 && '1px solid #E4E4E4'}
+                pb='25px' justify='flex-start' align='flex-start'>
+                <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#E4E4E4'} />
+                <Text
+                  maxW={'80%'}
+                  mt='-5px'
+                  ml='20px'
+                  fontSize={'14px'}
+                  fontWeight={active === content.id ? 500 : 400}
+                  color={active === content.id ? '#4545FE' : '#191919'}
+                >
+                  <a href={`#${content.id}`}>
+                    {content?.title}
+                  </a>
+                </Text>
+              </Flex>
+            ))}
+          </Flex>
+
+          <Text className="article_text" mt="40px">
+            Related Content
+          </Text>
+          <VStack mt='20px' spacing={'17px'} align='stretch'>
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to="/fisrt_time_setup">Intro to veerge</Link>
+            </Flex>
+
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to="/approved_whats_next">Veerge Plus</Link>
+            </Flex>
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to="/terms">How are you protected</Link>
+            </Flex>
+          </VStack>
+          {/* </Box> */}
+        </Box>
+      </Show>
+
       <Text className="head_">APPROVED, WHAT NEXT?</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box id='approved'>
@@ -217,10 +241,48 @@ export const Approved = () => {
         </Box>
 
 
-        <QuestionsAndReplies questions={questions} />
-
-
-        <Helpful />
+        <Box marginTop="70px" textAlign="right">
+          <Text className="content_head">Was this helpful?</Text>
+          <Flex direction="row" justifyContent="flex-end" maxW="451px">
+            <Text
+              borderRight="1px solid #5d5fef"
+              color="#5d5fef"
+              pr="8px"
+              cursor="pointer"
+              onClick={() =>
+                toast({
+                  position: "bottom-center",
+                  isClosable: true,
+                  render: () => (
+                    <Box color="white" p={3} bg="#000000">
+                      Thank you for your feedback.
+                    </Box>
+                  ),
+                })
+              }
+            >
+              Yes
+            </Text>{" "}
+            <Text
+              color="#5d5fef"
+              pl="8px"
+              cursor="pointer"
+              onClick={() =>
+                toast({
+                  position: "bottom-center",
+                  isClosable: true,
+                  render: () => (
+                    <Box color="white" p={3} bg="#000000">
+                      Thank you for your feedback.
+                    </Box>
+                  ),
+                })
+              }
+            >
+              No
+            </Text>
+          </Flex>
+        </Box>
       </Box>
 
     </div>

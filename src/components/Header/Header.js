@@ -12,6 +12,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Leftsidenav } from "../Leftsidenav/Leftsidenav";
 import { Searchbar } from "../Searchbar/Searchbar";
 import logo from "../../assets/images/veergelogo.png";
 import React, { useRef } from "react";
@@ -87,6 +88,7 @@ export const Header = () => {
                   Help Center
                 </Text>
                 <Searchbar />
+                <Leftsidenav />
               </DrawerBody>
             </DrawerContent>
           </Drawer>
