@@ -4,11 +4,17 @@ import file from "../../assets/icons/file.png";
 import React, { useState } from "react";
 import "./Introtoveerge.css";
 import { SlArrowRight } from "react-icons/sl";
-import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 
 
 export const Introtoveerge = () => {
   const toast = useToast();
+  const [style, setStyle] = useState("navigation_");
+  const [active, setActive] = useState("veerge");
+  const handleClick = (id) => {
+    console.log(id);
+    // setStyle("bluenav");
+    setActive(id)
+  };
 
   const articleContent = [
     { id: 'veerge', title: 'Overview of Veerge?' },
@@ -21,7 +27,53 @@ export const Introtoveerge = () => {
 
   return (
     <div className="main" id="veerge">
-      <LeftNav articleContent={articleContent} />
+      <Show breakpoint="(min-width: 769px)">
+        <Box position={'fixed'} min-height='751px' left='0' w='100%' maxW={'282px'} pl='40px' h='20px !important' >
+          {/* <Box overflowY={'scroll'}> */}
+          <Text className="article_text">In this article</Text>
+          <Flex mt='20px' direction={'column'} align={'stretch'}>
+            {articleContent.map((content, i) => (
+              <Flex
+                key={i} cursor={'pointer'}
+                onClick={() => handleClick(content.id)}
+                borderLeft={i !== articleContent.length - 1 && '1px solid #E4E4E4'}
+                pb='25px' justify='flex-start' align='flex-start'>
+                <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#E4E4E4'} />
+                <Text
+                  maxW={'80%'}
+                  mt='-5px'
+                  ml='20px'
+                  fontSize={'14px'}
+                  fontWeight={active === content.id ? 500 : 400}
+                  color={active === content.id ? '#4545FE' : '#191919'}
+                >
+                  <a href={`#${content.id}`}>
+                    {content?.title}
+                  </a>
+                </Text>
+              </Flex>
+            ))}
+          </Flex>
+
+          <Text className="article_text" mt="40px">
+            Related Content
+          </Text>
+          <VStack mt='20px' spacing={'17px'} align='stretch'>
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to="/fisrt_time_setup">First time setup</Link>
+            </Flex>
+
+            <Flex columnGap="20px">
+              <Image src={file} /> <Link to="/approved_whats_next">Approved, what next?</Link>
+            </Flex>
+            <Flex columnGap="20px">
+              <Image src={file} /> <Link to="/terms">Terms of service</Link>
+            </Flex>
+          </VStack>
+          {/* </Box> */}
+        </Box>
+      </Show>
       <Text className="head_">INTRO TO VEERGE</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box>
