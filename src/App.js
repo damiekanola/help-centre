@@ -1,11 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Leftsidenav } from "./components/Leftsidenav/Leftsidenav";
 import { Homepage } from "./pages/Homepage/Homepage";
 import { Introtoveerge } from "./pages/Introtoveerge/Introtoveerge";
 import { Fisrttimesetup } from "./pages/Firsttimesetup/Firsttimesetup";
 import { Verified } from "./pages/Verified/Verified";
-import { Createlisting } from "./pages/Createlisting/Createlisting";
+import { Changelisting } from "./pages/Changelisting/Changelisting";
 import { Fractionalestate } from "./pages/Fractionalestate/Fractionalestate";
 import { Veergedata } from "./pages/Veergedata/Veergedata";
 import { Onlinestore } from "./pages/Onlinestore/Onlinestore";
@@ -25,6 +24,8 @@ import "./App.css";
 import { Show } from "@chakra-ui/react";
 import { Approved } from "./pages/Approved/Approved";
 import { Ticketing } from "./pages/Ticketing/Ticketing";
+import { Listings } from "./pages/Linstings/Listings";
+import { Createlisting } from "./pages/Createlisting/Createlisting";
 function App() {
   return (
     <div className="help_container">
@@ -33,33 +34,33 @@ function App() {
         <Searchbar />
       </Show>
       <div className="wrapper">
-        {/* <Show breakpoint="(min-width: 769px)">
-          <Leftsidenav />
-        </Show> */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/into_to_veerge" element={<Introtoveerge />} />
           <Route path="/fisrt_time_setup" element={<Fisrttimesetup />} />
-          <Route path="/Verified_whats_next" element={<Verified />} />
+          {/* <Route path="/Verified_whats_next" element={<Verified />} /> */}
           <Route path="/approved_whats_next" element={<Approved />} />
           <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/create_listing" element={<Createlisting />} />
+          <Route path="/change_listing" element={<Changelisting />} />
+          <Route path="listings" element={<Listings />} />
           <Route path="/delist" element={<Delist />} />
-          <Route path="/inspections" element={<Inspections />} />
-          <Route path="/change_contact" element={<Changecontact />} />
-          <Route
+          {/* <Route path="/inspections" element={<Inspections />} />
+          <Route path="/change_contact" element={<Changecontact />} /> */}
+          {/* <Route
             path="/fractional_real_estate"
             element={<Fractionalestate />}
-          />
-          <Route path="/veerge_and_data" element={<Veergedata />} />
-          <Route path="/create_online_store" element={<Onlinestore />} />
+          /> */}
+          {/* <Route path="/veerge_and_data" element={<Veergedata />} />
+          <Route path="/create_online_store" element={<Onlinestore />} /> */}
           <Route path="/archive_unit" element={<Archiveunit />} />
+          <Route path="/change_listing" element={<Changelisting />} />
           <Route path="/create_unit" element={<Createunit />} />
-          <Route path="/agents_signup" element={<Agents />} />
           <Route path="/fractionalize_asset" element={<Fractionasset />} />
+          {/* <Route path="/agents_signup" element={<Agents />} />
           <Route path="/create_client_account" element={<Clientaccount />} />
-          <Route path="/users_experience" element={<Usersexperience />} />
+          <Route path="/users_experience" element={<Usersexperience />} /> */}
         </Routes>
       </div>
     </div>

@@ -1,344 +1,196 @@
-import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import file from "../../assets/icons/file.png";
-import asset1 from "../../assets/images/asset1.png";
-import asset2 from "../../assets/images/asset2.png";
-import asset3 from "../../assets/images/asset3.png";
-import asset4 from "../../assets/images/asset4.png";
-import asset5 from "../../assets/images/asset5.png";
-import { SlArrowRight } from "react-icons/sl";
+import React from "react";
+import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
+import { ink } from "react-router-dom";
+import fractionalize1 from '../../assets/images/fractionalize-1.png';
+import fractionalize2 from '../../assets/images/fractionalize-2.png';
+import fractionalize3 from '../../assets/images/fractionalize-3.png';
+import fractionalize4 from '../../assets/images/fractionalize-4.png';
+import fractionalize5 from '../../assets/images/fractionalize-5.png';
+import fractionalize6 from '../../assets/images/fractionalize-6.png';
+import fractionalize7 from '../../assets/images/fractionalize-7.png';
+import fractionalize8 from '../../assets/images/fractionalize-8.png';
+import fractionalize9 from '../../assets/images/fractionalize-9.png';
+import fractionalize10 from '../../assets/images/fractionalize-10.png';
+import fractionalize11 from '../../assets/images/fractionalize-11.png';
+import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
+import RightNav from "../../components/Listings/RightNav";
+import LeftNav from "../../components/Leftsidenav/Leftsidenav";
+import Helpful from "../../components/Faq/Helpful";
 
 export const Fractionasset = () => {
   const toast = useToast();
-  const [style, setStyle] = useState("navigation_");
-  const [isActive, setIsActive] = useState(" ");
-  const handleClick = () => {
-    console.log("you just clicked me");
-    setStyle("bluenav");
-    isActive() ? setIsActive("active") : setIsActive(" ");
-  };
-  return (
-    <div className="main" id="asset">
-      <Show breakpoint="(min-width: 769px)">
-        <div class="rightsidenav">
-          <Text className="article_text">In this article</Text>
-          <ul className={style}>
-            <li onClick={handleClick}>
-              <a href="#asset">How to fractionalise an asset</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#frac"> How users buy fractions</a>
-            </li>
-            <li onClick={handleClick}>
-              <a href="#faq"> FAQs</a>
-            </li>
-          </ul>
-          <Text className="article_text" mt="60px">
-            Related Content
-          </Text>
-          <Flex columnGap="20px">
-            <Image src={file} h="18px" w="14px" />
-            <Link to="">Intro to Veerge</Link>
-          </Flex>
 
-          <Flex columnGap="20px">
-            <Image src={file} h="18px" w="14px" />
-            <Link to="">Understanding Fractional Real estate </Link>
-          </Flex>
-          <Flex columnGap="20px">
-            <Image src={file} h="18px" w="14px" />{" "}
-            <Link to="">Veerge & Data analytics</Link>
-          </Flex>
-        </div>
-      </Show>
-      <Text className="head_">HOW TO FRACTIONALISE AN PROPERTY</Text>
+  const articleContent = [
+    { id: 'how_to', title: 'How to fractionalise an asset' },
+    { id: 'questions', title: 'Questions & Replies' },
+  ]
+
+  const questions = [
+    {
+      name: 'Grace C.',
+      date: 'Jun 25, 2023',
+      content: "How do I increase the price per fraction?",
+      replies: [
+        " Hello Grace, You can't directly adjust the price per fraction independently. When you increase the outright price of the unit, the price per fraction will automatically adjust accordingly. Any change you make to the outright price will be reflected in the price per fraction as well. If you have any further questions, feel free to ask."
+      ]
+    },
+    {
+      name: 'Peters G.',
+      date: 'Jun 25, 2023',
+      content: "I am trying to fractionalise a separate unit, but the only one I can fractionalise is the one I already fractionalised.",
+      replies: [
+        " Hello Peters, In this situation, you might need to reach out to our support team for assistance. Please note that you can only fractionalise a certain unit type, and while you can fractionalise multiple quantities of that unit type, you cannot fractionalise multiple different unit types simultaneously. For example, if you have a project with 10 2-bedroom units and 5 3-bedroom units, you can fractionalise either the 2-bedroom units or the 3-bedroom units, but not both at the same time. You can also fractionalise multiple quantities of the SAME unit type. If you encounter any challenges, our support team can guide you through the process and provide additional assistance"
+      ]
+    },
+    {
+      name: 'Daniella W.',
+      date: 'Jun 25, 2023',
+      content: "How does allocation work in the case of fractional ownership?",
+      replies: [
+        "Hello Daniella, In the case of fractional ownership, the allocation process involves manual assignment by the admin. This means that the admin of the project will need to allocate specific units to the fractional co-owners from the 'Manage Allocation' section. If you have any questions or need assistance with this process, please don't hesitate to reach out to our support team. We're here to help!"
+      ]
+    }
+  ]
+
+
+
+  return (
+    <div className="main" id="how_to">
+      <LeftNav articleContent={articleContent} />
+      <RightNav />
+      <Text className="head_">FRACTIONALISING A PROPERTY</Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box>
-        <Text className="content_head">STEP 1</Text>
-
-        <Text>
-          Go to the listings information page and select the unit you intend to
-          fractionalize
+        <Text className="content" lineHeight={'25px'}>
+          <Text as='p'>
+            Let's explore the process of fractionalizing a unit into smaller segments, catering to individuals with lower purchasing power.
+          </Text>
+          <Text as='p' mt='20px' cursor={'pointer'} color={'#5d5fef'}>
+            Click here to learn more about fractional Real estate
+          </Text>
+          <Text as='p' mt='20px'>
+            Consider the scenario where you decide to fractionalize a 1-bedroom flat and offer each fraction at 50,000.00 Naira. These are the steps to follow
+          </Text>
         </Text>
       </Box>
-
       <Box>
-        <Text className="content_head" mt="40px">
+        <Text className="content_head">STEP 1</Text>
+        <Text className="content">
+          Begin by going to the specific listing.
+        </Text>
+
+        <Image src={fractionalize1} mt="30px" mx="auto" w='full' />
+      </Box>
+      <Box>
+        <Text className="content_head" mt="30px">
           STEP 2
         </Text>
         <Text className="content">
-          Click on the top right button beside transactions and select
-          fractionalise.
+          Locate the particular unit you intend to fractionalize.
         </Text>
-        <Image src={asset1} mt="30px" mx="auto" />
+
+        <Image src={fractionalize2} mt="30px" mx="auto" w='full' />
       </Box>
       <Box>
         <Text className="content_head" mt="40px">
           STEP 3
         </Text>
         <Text className="content">
-          Then select the number of units you want to fractionalise.
-          <ul style={{ paddingLeft: "20px" }}>
-            <li>
-              {" "}
-              Input price per fraction (The price you want to sell a fraction
-              for).
-            </li>
-            <li> The first thing you do here is;</li>
-          </ul>
+          Open the unit dropdown menu on the left-hand side.
         </Text>
-        <Text className="content" mt="30px">
-          <b>
-            i.e Let’s say the apartment complex has ten 2-bedrooms and you
-            intend to fractionalise three 2-bedrooms and sell at N10,000 per
-            fraction. The price per fraction will be N10,000 and the number of
-            units will be three. The total number of fractions will be
-            automatically filled once you have filled the first fields.
-          </b>
-        </Text>
-        <Image src={asset2} mt="20px" mx="auto" />
+        <Image src={fractionalize3} mt="30px" mx="auto" w='full' />
       </Box>
       <Box>
         <Text className="content_head" mt="40px">
           STEP 4
         </Text>
         <Text className="content">
-          <ul style={{ paddingLeft: "20px" }}>
-            <li>
-              Strategy is the first selection to be made here, there is
-              buy-to-flip and buy to hold
-            </li>
-          </ul>
+          Scroll through the options and select "Fractionalise." This will prompt a new screen to appear.
         </Text>
-        <Box
-          maxW="624px"
-          minH="99px"
-          bg="#D9D9D9"
-          borderRadius="10px"
-          pl="20px"
-          mt="15px"
-          pt="10px"
-        >
-          <Text className="content">
-            If you have created unit numbering or unit allocations, you will be
-            prompted to select the units you want to remove from archive.
-            Kindly, check the boxes and proceed
-          </Text>
-        </Box>
-        <Text className="content" mt="20px">
-          <ul style={{ paddingLeft: "20px" }}>
-            <li>
-              Holding period is the next field to be filled (How long do you
-              want the asset to be held for?)
-            </li>
-            <li> Capital structure is the next selection to be made</li>
-          </ul>
-        </Text>
-        <Box
-          maxW="624px"
-          minH="99px"
-          bg="#D9D9D9"
-          borderRadius="10px"
-          pl="20px"
-          mt="20px"
-        >
-          <Text className="content" pt="15px">
-            Equity is the most selected, it’s quite easy for potential buyers to
-            understand, if it’s going to be a mix of debt and equity or
-            mezzanine,{" "}
-            <a href="/" style={{ color: "#4545fe" }}>
-              kindly contact support
-            </a>
-          </Text>
-        </Box>
-        <Text className="content" mt="21px">
-          <ul style={{ paddingLeft: "20px" }}>
-            <li>
-              If you want the asset to be insured by the veerge’s insurance
-              partner (Allianz insurance), kindly check the box and you will
-              receive a message from Allianz
-            </li>
-            <li>
-              {" "}
-              If it’s an asset that will cashflow, kindly enable dividend
-            </li>
-          </ul>
-        </Text>
-        <Image src={asset3} mt="30px" mx="auto" />
+
+        <Image src={fractionalize4} mt="30px" mx="auto" w='full' />
       </Box>
       <Box>
         <Text className="content_head" mt="40px">
           STEP 5
         </Text>
         <Text className="content">
-          If you enable dividends, there are more fields to fill;
-          <ul style={{ paddingLeft: "20px", marginTop: "10px" }}>
-            <li> fill in the name of the property management company</li>
-            <li>
-              {" "}
-              What’s the dividend payout type (Will the dividend be paid weekly,
-              monthly, quarterly or annually)
-            </li>
-            <li> Dividend commencement date</li>
-            <li> Upload the investor’s packet</li>
-          </ul>
+          On the new screen, input the price per fraction. For instance, in this scenario, the price per fraction could be set at 50,000.00 Naira.
         </Text>
-        <Image src={asset4} mt="30px" mx="auto" />
+
+        <Image src={fractionalize5} mt="30px" mx="auto" w='full' />
       </Box>
       <Box>
         <Text className="content_head" mt="40px">
           STEP 6
         </Text>
         <Text className="content">
-          The last step where you add partners involved
+          Since you are fractionalizing only one unit, set the quantity to one.
         </Text>
-        <Text className="content" mt="20px">
-          An example is an asset management company or trustee management
-          company that will be holding the deed or title documents when the
-          project has been fully sold.
-        </Text>
-        <Text className="content" mt="20px">
-          There are other exclusive use cases you might have to contact support
-          for. An example is if you want to give access to an asset management
-          company or the project has to be insured with a separate insurance
-          company and you want funds to be disbursed automatically to the
-          insurance company, you might need to contact support for this.
-          Whatever your use case is, veerge has you covered.
-        </Text>
+        <Image src={fractionalize6} mt="30px" mx="auto" w='full' />
       </Box>
-      <Text className="head_" pt="150px" id="frac">
-        HOW USERS BUY FRACTIONS
-      </Text>
+
       <Box>
         <Text className="content_head" mt="40px">
-          STEP 1
-        </Text>
-        <Text className="content">Users login to their account</Text>
-      </Box>
-      <Box>
-        <Text className="content_head" mt="40px">
-          STEP 2
+          STEP 7
         </Text>
         <Text className="content">
-          If the project is fractionalized, users will see fractionalized tag on
-          the listing’s summary on the dashboard
+          Next, move on to the strategy section. Choose between the two available strategies: "Buy to Flip" or "Buy to Hold."
+          <Text as='span' color='#5d5fef' cursor={'pointer'}>Click here to read about “Buy to Flip” & “Buy to Hold”</Text>
         </Text>
-        <Image src={asset5} mt="30px" mx="auto" w="100%" />
+        <Image src={fractionalize7} mt="30px" mx="auto" w='full' />
       </Box>
+
+
       <Box>
         <Text className="content_head" mt="40px">
-          STEP 3
+          STEP 8
         </Text>
         <Text className="content">
-          The user will click on buy fractions and inputs the the quantity of
-          fractions to be purchased
+          For the deal structure, select "Equity." This choice indicates that all fractional owners hold ownership stakes. Given that this is a "Buy to Flip" strategy, dividends are unlikely.
         </Text>
-        <Text className="content" mt="20px">
-          <b>
-            Schedule a demo call for an explainer of how to automate dividend
-            payment and liquidate an asset
-          </b>
+        <Image src={fractionalize8} mt="30px" mx="auto" w='full' />
+      </Box>
+
+
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 9
+        </Text>
+        <Text className="content">
+          Proceed to upload the investor packet, ensuring that all relevant information is included.
+        </Text>
+        <Image src={fractionalize9} mt="30px" mx="auto" w='full' />
+      </Box>
+
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 10
+        </Text>
+        <Text className="content">
+          List the stakeholders involved. In this instance, stakeholder names might include Legal Partner - Frezlars, Financial Partner - Sterling Bank, and potentially other parties such as Asset Management or Insurance Companies.
+        </Text>
+        <Image src={fractionalize10} mt="30px" mx="auto" w='full' />
+      </Box>
+
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 11
+        </Text>
+        <Text className="content">
+          Complete the process by reviewing the fractional summary, ensuring that all details are accurate and aligned with your intentions.
+        </Text>
+        <Image src={fractionalize11} mt="30px" mx="auto" w='full' />
+        <Text className="content">
+          By following these steps, you can effectively fractionalize a unit, making property ownership accessible to a wider range of individuals. The granular approach of fractionalization, accompanied by strategic decision-making, can contribute to a more inclusive and versatile real estate offering.
         </Text>
       </Box>
-      <Box marginTop="50px" id="faq">
-        <Text className="content_head">FAQs</Text>
-        <Flex
-          maxW="621px"
-          minH="192px"
-          borderRadius="5px"
-          border="0.3px solid #000000"
-          direction="column"
-        >
-          <Box minH="64px" borderBottom="0.3px solid #000000">
-            <Flex
-              direction="row"
-              columnGap="33px"
-              pl="30px"
-              mt="22px"
-              alignItems="center"
-            >
-              {" "}
-              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/fractionalize_asset" style={{ color: "#5d5fef" }}>
-                How do i fractionalise a unit
-              </a>
-            </Flex>
-          </Box>
-          <Box minH="64px" borderBottom="0.3px solid #000000">
-            <Flex
-              direction="row"
-              columnGap="33px"
-              pl="30px"
-              mt="22px"
-              alignItems="center"
-            >
-              {" "}
-              <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/delist" style={{ color: "#5d5fef" }}>
-                How to delist a listing from online store
-              </a>
-            </Flex>
-          </Box>
-          <Box minH="64px">
-            <Flex
-              direction="row"
-              columnGap="33px"
-              pl="30px"
-              mt="22px"
-              alignItems="center"
-            >
-              {" "}
-              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/create_online_store" style={{ color: "#5d5fef" }}>
-                How to create an online store
-              </a>
-            </Flex>
-          </Box>
-        </Flex>
-      </Box>
-      <Box marginTop="70px" textAlign="right">
-        <Text className="content_head">Was this helpful?</Text>
-        <Flex direction="row" justifyContent="flex-end" maxW="451px">
-          <Text
-            borderRight="1px solid #5d5fef"
-            color="#5d5fef"
-            pr="8px"
-            cursor="pointer"
-            onClick={() =>
-              toast({
-                position: "bottom-center",
-                isClosable: true,
-                render: () => (
-                  <Box color="white" p={3} bg="#000000">
-                    Thank you for your feedback.
-                  </Box>
-                ),
-              })
-            }
-          >
-            Yes
-          </Text>{" "}
-          <Text
-            color="#5d5fef"
-            pl="8px"
-            cursor="pointer"
-            onClick={() =>
-              toast({
-                position: "bottom-center",
-                isClosable: true,
-                render: () => (
-                  <Box color="white" p={3} bg="#000000">
-                    Thank you for your feedback.
-                  </Box>
-                ),
-              })
-            }
-          >
-            No
-          </Text>
-        </Flex>
-      </Box>
+
+
+      <QuestionsAndReplies questions={questions} />
+
+      <Helpful />
+
     </div>
   );
 };

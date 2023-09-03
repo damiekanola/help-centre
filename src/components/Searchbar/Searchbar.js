@@ -10,7 +10,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdSubdirectoryArrowLeft } from "react-icons/md";
@@ -18,9 +18,33 @@ import { CiSearch } from "react-icons/ci";
 import { searchData } from "./data";
 import "./Search.css";
 export const Searchbar = () => {
+  const location = useLocation()
   const scrollBehavior = "inside";
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [query, setQuery] = useState("");
+
+  const handleCurrentRoute = () => {
+    switch (location.pathname) {
+      case '/into_to_veerge':
+        return 'Intro to veerge';
+      case '/fisrt_time_setup':
+        return 'First time setup';
+      case '/approved_whats_next':
+        return 'Approved, what next?';
+      case '/ticketing':
+        return 'Ticketing';
+      case '/create_listing':
+        return 'Create listing';
+      case '/listings':
+        return 'Listings';
+      case '/create_unit':
+        return 'Create unit';
+
+      default:
+        return 'Intro to veerge';
+    }
+  }
+
   return (
     <>
       <Show breakpoint="(min-width: 769px)">
@@ -54,7 +78,7 @@ export const Searchbar = () => {
                 lineHeight: "18px",
               }}
             >
-              First time setup
+              {handleCurrentRoute()}
             </Link>
           </Flex>
           <form>
@@ -64,7 +88,7 @@ export const Searchbar = () => {
               maxW="300px"
               h="43px"
               bg="#F5F5F5"
-              border=" 1px solid #E4E4E4"
+              border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
               pr="5px"
             >
@@ -164,7 +188,7 @@ export const Searchbar = () => {
             maxW="320px"
             h="43px"
             bg="#F5F5F5"
-            border=" 1px solid #E4E4E4"
+            border=" 1px solid #C3C4FC"
             borderRadius=" 12px"
             pr="5px"
             mt="20px"
