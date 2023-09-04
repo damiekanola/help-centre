@@ -4,13 +4,6 @@ import { Link } from 'react-router-dom'
 import file from "../../assets/icons/file.png";
 
 const LeftNav = ({ articleContent }) => {
-  const [active, setActive] = useState("overview");
-  const handleClick = (id) => {
-    console.log(id);
-    // setStyle("bluenav");
-    setActive(id)
-  };
-
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
@@ -37,17 +30,17 @@ const LeftNav = ({ articleContent }) => {
           {articleContent.map((content, i) => (
             <Flex
               key={i} cursor={'pointer'}
-              onClick={() => handleClick(content.id)}
+              // onClick={() => handleClick(content.id)}
               borderLeft={i !== articleContent.length - 1 && '1px solid #C3C4FC'}
               pb='25px' justify='flex-start' align='flex-start'>
-              <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#C3C4FC'} />
+              <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#C3C4FC'} />
               <Text
                 maxW={'80%'}
                 mt='-5px'
                 ml='20px'
                 fontSize={'14px'}
-                fontWeight={active === content.id ? 500 : 400}
-                color={active === content.id ? '#4545FE' : '#191919'}
+                fontWeight={content.check ? 500 : 400}
+                color={content.check ? '#4545FE' : '#191919'}
               >
                 <a href={`#${content.id}`}>
                   {content?.title}
