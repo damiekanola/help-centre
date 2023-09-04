@@ -5,34 +5,10 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./Introtoveerge.css";
 import { SlArrowRight } from "react-icons/sl";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
-// import { useIsInViewport } from "../../utils/useOnScreen/useOnScreen";
 
 
 export const Introtoveerge = () => {
   const toast = useToast();
-
-
-  const veergeRef = useRef(null)
-  const engagementRef = useRef(null);
-  const trustRef = useRef(null)
-  const intelligenceRef = useRef(null)
-  const conclusionRef = useRef(null)
-  // const faqRef = useRef(null)
-
-  const veergeCheck = useIsInViewport(veergeRef);
-  const engagementCheck = useIsInViewport(engagementRef);
-  const trustCheck = useIsInViewport(trustRef)
-  const intelligenceCheck = useIsInViewport(intelligenceRef)
-  const conclusionCheck = useIsInViewport(conclusionRef)
-  // const faqCheck = useIsInViewport(faqRef)
-
-
-
-
-
-
-
-
 
   const articleContent = [
     { check: veergeCheck, id: 'veerge', title: 'Overview of Veerge?' },
@@ -49,7 +25,7 @@ export const Introtoveerge = () => {
   // console.log('isVisible', isVisible)
 
   return (
-    <div className="main">
+    <div className="main" id="veerge">
       <LeftNav articleContent={articleContent} />
       <Text className="head_">INTRO TO VEERGE</Text>
       <Text className="publish">Published: November 23, 2022</Text>

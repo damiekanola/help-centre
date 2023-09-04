@@ -1,428 +1,437 @@
-import { Box, Text, Flex, Image, useToast, Show, VStack, OrderedList, ListItem, UnorderedList } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { Box, Text, Image, Flex, useToast, Show } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
-import React, { useState } from "react";
-import RightNav from "../../components/Listings/RightNav";
-import create1 from '../../assets/images/create-listing-1.png'
-import create2 from '../../assets/images/create-listing-2.png'
-import create3 from '../../assets/images/create-listing-3.png'
-import create4 from '../../assets/images/create-listing-4.png'
-import create5 from '../../assets/images/create-listing-5.png'
-import LeftNav from "../../components/Leftsidenav/Leftsidenav";
-import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
-import Helpful from "../../components/Faq/Helpful";
-
+import listing1 from "../../assets/images/listing1.png";
+import listing2 from "../../assets/images/listing2.png";
+import listing3 from "../../assets/images/listing3.png";
+import listing4 from "../../assets/images/listing4.png";
+import listing5 from "../../assets/images/listing5.png";
+import listing6 from "../../assets/images/listing6.png";
+import { BsExclamationCircle } from "react-icons/bs";
+import { SlArrowRight } from "react-icons/sl";
 
 export const Createlisting = () => {
   const toast = useToast();
-
-  const articleContent = [
-    { id: 'overview', title: 'Overview' },
-    { id: 'what_you_need', title: 'What you need to know' },
-    { id: 'steps', title: 'Steps' },
-    { id: 'questions', title: 'Questions & Replies' },
-  ]
-
-  const questions = [
-    {
-      name: 'Manuel G.',
-      date: 'Jun 07, 2023',
-      content: "I reduced the quantity of the unit because we didn't want to have everything on the application.",
-      replies: [
-        "Hi Manuel, it's important to approach this differently. If you wish to control the units visible on the application, the best practice is to archive the specific quantity of units you want to exclude. For example, if your development project has 100 units and you prefer not to display 30 of them, you should archive those 30 units. This approach is more transparent for potential buyers. By archiving units, you ensure that those not for immediate sale won't mislead potential buyers who might expect a different total quantity available for purchase. This way, you can maintain a clear and accurate representation of your project's offerings on the application. If you need further guidance, feel free to reach out for assistance."
-      ]
-    }
-  ]
-
-
+  const [style, setStyle] = useState("navigation_");
+  const [isActive, setIsActive] = useState(" ");
+  const handleClick = () => {
+    console.log("you just clicked me");
+    setStyle("bluenav");
+    isActive() ? setIsActive("active") : setIsActive(" ");
+  };
   return (
-    <div className="main" id="overview">
-      <LeftNav articleContent={articleContent} />
-      <RightNav />
+    <div className="main" id="listing">
+      <Show breakpoint="(min-width: 769px)">
+        <div class="rightsidenav">
+          <Text className="article_text">In this article</Text>
+          <ul className={style}>
+            <li onClick={handleClick}>
+              <a href="#listing">How to create a listing</a>
+            </li>
+            <li onClick={handleClick}>
+              <a href="#faq"> FAQs</a>
+            </li>
+          </ul>
+          <Text className="article_text" mt="60px">
+            Related Content
+          </Text>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="/">Intro to Veerge</Link>
+          </Flex>
+
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="fractional_real_estate">
+              Understanding Fractional Real estate
+            </Link>
+          </Flex>
+          <Flex columnGap="20px">
+            <Image src={file} h="18px" w="14px" />
+            <Link to="veerge_and_data">Veerge & Data analytics</Link>
+          </Flex>
+        </div>
+      </Show>
       <Text className="head_">HOW TO CREATE A LISTING</Text>
-      <Text className="publish">Published: November 23, 2022</Text>
+      <Text className="publish">Published: November 24, 2022</Text>
       <Box>
-        <Text className="content_head" id="overview">
-          CREATING A MULTI-FAMILY OR A GATED COMMUNITY LISTING
-        </Text>
-        <Text className="content" lineHeight={'25px'}>
-          <Text as='p' marginTop="20px">
-            Let's delve into the captivating world of a development project named <b>"Barrio Logan,”</b> comprising an impressive array of 51 units. Among these are 10 units of 1-bedroom flats, 5 units of 1-bedroom lofts, 30 units of 2-bedroom flats, 5 units of 3-bedroom residences, and a prestigious penthouse, with the threshold offer beginning at an impressive 450 million.
-          </Text>
-          <Text as='p' marginTop="20px">
-            This remarkable undertaking is nestled in the heart of Kofo Abayomi, Victoria Island, Lagos, radiating luxury and allure.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Now, let's navigate the intricate web of pricing, where the vision of owning a piece of <b>"Barrio Logan"</b> comes to life:
-          </Text>
-        </Text>
-      </Box>
-      <Box pt="30px" id="listings">
-        <Text className="
-        ">
-          <OrderedList>
-            <ListItem>
-              <Text fontWeight={600} mt='20px'>1-Bedroom Flat:</Text>
-              <UnorderedList>
-                <ListItem>Outright Price: 65 million</ListItem>
-                <ListItem>3-Month Payment Plan:</ListItem>
-                <ListItem>Initial Deposit: 25 million</ListItem>
-                <ListItem>Followed by 15 million every month for 3 months</ListItem>
-                <ListItem>Total Payment: 70 million</ListItem>
-                <ListItem>6-Month Payment Plan:</ListItem>
-                <UnorderedList>
-                  <ListItem>Initial Deposit: 25 million</ListItem>
-                  <ListItem>Followed by 24 million every 3 months</ListItem>
-                  <ListItem>Total Payment: 73 million</ListItem>
-                </UnorderedList>
-              </UnorderedList>
-            </ListItem>
-
-            <ListItem>
-              <Text fontWeight={600} mt='20px'>1-Bedroom Loft:</Text>
-              <UnorderedList>
-                <ListItem>Outright Price: 75 million</ListItem>
-                <ListItem>3-Month Payment Plan:</ListItem>
-                <UnorderedList>
-                  <ListItem>Initial Deposit: 35 million</ListItem>
-                  <ListItem>Spread the remaining payment within 3 months</ListItem>
-                  <ListItem>Total Price: 80 million</ListItem>
-                </UnorderedList>
-              </UnorderedList>
-            </ListItem>
-
-            <ListItem>
-              <Text fontWeight={600} mt='20px'>2-Bedroom Flat:</Text>
-              <UnorderedList>
-                <ListItem>Outright Price: 100 million</ListItem>
-                <ListItem>12-month (1-Year) Payment Plan:</ListItem>
-                <UnorderedList>
-                  <ListItem>Initial Deposit: 25 million</ListItem>
-                  <ListItem>15 million after 3 months</ListItem>
-                  <ListItem>10 million after 2 months</ListItem>
-                  <ListItem>30 million after 4 months</ListItem>
-                  <ListItem>40 million after 3 months</ListItem>
-                  <ListItem>Total Price: 110 million</ListItem>
-                </UnorderedList>
-              </UnorderedList>
-            </ListItem>
-
-            <ListItem>
-              <Text fontWeight={600} mt='20px'>3-Bedroom:</Text>
-              <UnorderedList>
-                <ListItem>Outright Price: 120 million</ListItem>
-                <ListItem>3-Month Payment Plan:</ListItem>
-                <UnorderedList>
-                  <ListItem>Initial Payment: 60 million</ListItem>
-                  <ListItem>Payment spread over 3 months, no interest</ListItem>
-                </UnorderedList>
-              </UnorderedList>
-            </ListItem>
-
-            <ListItem>
-              <Text mt='20px'>
-                As for the pinnacle of grandeur—the penthouse—a veil of mystery shrouds the price, creating an air of anticipation. The development company invites offers from discerning individuals, fostering an atmosphere of exclusivity and negotiation.
-              </Text>
-            </ListItem>
-          </OrderedList>
-        </Text>
-      </Box>
-      <Box pt="30px" id="what_you_need">
-        <Text className="content_head">WHAT YOU NEED TO KNOW</Text>
-        <Text className="content" mt='20px'>
-          <Text as='p'>
-            To navigate the workings on Veerge, let's embark on a journey of clarity. It's important to note that this process is the same for estates and residential gated communities.
-          </Text>
-          <Text as='p' marginTop="20px">
-            For the <b>one-bedroom flat,</b> the 3-month or 6-month payment plans, these are called Quick Payment Plans. This is because you'll be making the same payment regularly over a set time.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Moving to the <b>1-bedroom loft,</b> the 3-month payment plan is a bit more flexible but still falls under the Quick Payment Plan category. It gives you some leeway in payment timing.
-          </Text>
-          <Text as='p' marginTop="20px">
-            The <b>2-bedroom flat</b> takes a different approach. Its payment plan doesn't follow the same pattern, so we call it a Custom Payment Plan. Payments happen at different times and amounts, tailored to the situation.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Now, onto the <b>3-bedroom—</b>it's still in the Quick Payment Plan category. This keeps things simple and efficient.
-          </Text>
-          <Text as='p' marginTop="20px">
-            But the penthouse stands apart. It doesn't fit neatly into any category. Instead, it's open to offers, and you can customize the payment plan based on what works best for different buyers.
-          </Text>
-        </Text>
-      </Box>
-
-      <Box pt="30px" id="steps">
-        <Text className="content_head">HOW TO GET STARTED</Text>
         <Text className="content_head">STEP 1</Text>
+
+        <Text>
+          Click on the new listing button on the top part of your screen.
+        </Text>
+        <Image src={listing1} mt="30px" mx="auto" />
+      </Box>
+
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 2
+        </Text>
         <Text className="content">
-          <Text as='p'>
-            In the listing overview section, you'll need to provide the following details:
+          Fill in the following information
+          <ul style={{ paddingLeft: "20px" }}>
+            <li>
+              Listing name (E.g Beverly hills Estate, Victoria Apartment complex
+              etc){" "}
+            </li>
+            <li>Select land Title (C of O) </li>
+            <li>Land size in (sqm) </li>
+            <li>Select the country where the property is being developed </li>
+            <li>
+              Select the construction status (How far have you gone with the
+              construction?){" "}
+            </li>
+            <li>If prompted, fill in the start date and end date </li>
+            <li>Address of the property </li>
+            <li>Location landmark (An example is Ikeja GRA, Lagos) </li>
+            <li>
+              Longitude and latitude (You can find it on
+              https://www.latlong.net){" "}
+            </li>
+            <li>Select property type </li>
+            <li>
+              Description of the property (This shouldn’t be more than 500
+              characters)
+            </li>
+            <li>Add the youtube link of your listing</li>
+            <li>
+              Upload images of the property (It shouldn’t be more than 10)
+            </li>
+          </ul>
+        </Text>
+        <Image src={listing2} mt="30px" mx="auto" />
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 3(i)
+        </Text>
+        <Flex
+          direction="row"
+          columnGap="8px"
+          maxW="624px"
+          minH="68px"
+          bg="#d9d9d9"
+          borderRadius="10px"
+          pt="10px"
+          pl="15px"
+        >
+          <BsExclamationCircle style={{ width: "40px", height: "40px" }} />
+          <Text>
+            This is only applicable for properties that have subtypes (e.g
+            commercial, estate/Gated community, apartment complexes or parcel of
+            land)
           </Text>
-
-          <OrderedList>
-            <ListItem><b>Listing Name:</b> This is the name of the property, in this case, "Barrio Logan."</ListItem>
-            <ListItem><b>Select Land Title:</b> Choose the land title type, such as "C of O" (Certificate of Occupancy).</ListItem>
-            <ListItem><b>Select Property Type:</b> Indicate the type of property, like "Apartment Complex," "Estate," or "Residential Community."</ListItem>
-            <ListItem><b>Land Size (sqm):</b> Specify the size of the land in square meters.</ListItem>
-            <ListItem><b>Country:</b> Select the country where the property is being developed, in this case, "Nigeria."</ListItem>
-            <ListItem><b>Construction Status:</b> Choose the current construction status, for example, "Pre Construction."</ListItem>
-            <ListItem><b>Start Date and End Date:</b> Fill in the estimated start and end dates of the development.</ListItem>
-            <ListItem><b>Address:</b> Provide the full address of the property.</ListItem>
-            <ListItem><b>Location Landmark:</b> Identify a prominent landmark near the property's location, such as "Victoria Island, Lagos."</ListItem>
-            <ListItem><b>Longitude and Latitude:</b> Retrieve these coordinates from https://www.latlong.net. (Learn more about how to get this information.)</ListItem>
-            <ListItem><b>Description of the Property:</b> Summarize the property in 1,200 characters or less, highlighting its key features and selling points.</ListItem>
-            <ListItem><b>YouTube Link (Optional):</b> If available, you can add a YouTube video link showcasing the property.</ListItem>
-            <ListItem><b>Project Brochure:</b> Upload the project brochure containing detailed information about the property.</ListItem>
-            <ListItem><b>Upload Images:</b> Provide up to 10 images of the property, showcasing its various aspects and features.</ListItem>
-          </OrderedList>
-
-          <Image src={create1} mt="30px" mx="auto" w='full' />
+        </Flex>
+        <Text className="content" mt="21px">
+          Fill in the following information:
+          <ul style={{ paddingLeft: "20px" }}>
+            <li>
+              Unit title (E.g Luxury penthouse, 3 bedroom flat, 1 bedroom loft
+              etc)
+            </li>
+            <li>Unit Price (Select the currency and input amount)</li>
+            <li>Number of bedrooms (If prompted) </li>
+            <li>
+              Unit Quantity (How many of this unit type exist in the property)
+            </li>
+            <li>Unit size (in sqm) </li>
+            <li>Upload images</li>{" "}
+          </ul>
+        </Text>
+        <Text className="content" mt="21px">
+          <b>
+            N.B if you want potential buyers to enquire before getting an offer,
+            you can check the “Don’t display price” box.
+          </b>
+        </Text>
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 3(ii)
+        </Text>
+        <Flex
+          direction="row"
+          columnGap="8px"
+          maxW="624px"
+          minH="68px"
+          bg="#d9d9d9"
+          borderRadius="10px"
+          pt="10px"
+          pl="15px"
+        >
+          <BsExclamationCircle style={{ width: "40px", height: "40px" }} />
+          <Text>
+            This is only applicable for properties that don’t have subtype (e.g
+            Single family homes, a duplex, a portion of land etc)
+          </Text>
+        </Flex>
+        <Text className="content" mt="21px">
+          Fill in the following information:
+          <ul style={{ paddingLeft: "20px" }}>
+            <li>Number of bedrooms</li>
+            <li>unit size (in sqm) </li>
+            <li>Unit price </li>
+          </ul>
+        </Text>
+        <Text className="content" mt="21px">
+          <b>
+            N.B if you want potential buyers to enquire before getting an offer,
+            you can check the “Don’t display price” box.
+          </b>
         </Text>
       </Box>
 
-      <Box pt="30px" id="allocations">
-        <Text className="content_head">STEP 2</Text>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 4(i)
+        </Text>
         <Text className="content">
-          <Text as='p'>
-            This is the part where you fill units information. in this case the units are 1 bedroom flat, one bedroom loft, 2-bedroom flat, 3 bedroom and the pent house.
-          </Text>
-
-          <Box>
-            <Box mt='20px' fontWeight={600}>
-              <Text fontSize={'16px'}>STEP 2 (i)</Text>
-              <Text>Lets begin with the 1 bedroom flat. We will fill the:</Text>
-            </Box>
-
-            <OrderedList>
-              <ListItem><b>Unit Title:</b> Fill in "1 Bedroom Flat."</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Input the size of the unit in square meters.</ListItem>
-              <ListItem><b>Number of Bedrooms:</b> Indicate the number of bedrooms (1 bedroom).</ListItem>
-              <ListItem><b>Unit Quantity:</b> Enter the total number of units (10 units).</ListItem>
-              <ListItem><b>Unit Price:</b> Enter the outright unit price (65 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-              <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement specific to this unit.</ListItem>
-              <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
-            </OrderedList>
-
-            <UnorderedList>
-              <ListItem>
-                <Text fontWeight={600} mt='20px'>Next, proceed to the payment plan:</Text>
-                <OrderedList>
-                  <ListItem>Select "Add Payment Plan."</ListItem>
-                  <ListItem>Choose "Quick Payment Plan."</ListItem>
-                </OrderedList>
-              </ListItem>
-              <ListItem>
-                <Text fontWeight={600} mt='20px'>For the 3-month payment plan:</Text>
-                <OrderedList>
-                  <ListItem>Set the duration as 3 months.</ListItem>
-                  <ListItem>Initial deposit: 25 million.</ListItem>
-                  <ListItem>Instalment payment: 15 million.</ListItem>
-                  <ListItem>Payment frequency: Monthly.</ListItem>
-                  <ListItem>Upload the purchase agreement for the 3-month payment plan.</ListItem>
-                  <ListItem>The purchase price will be automatically calculated and should match 70 million.</ListItem>
-                </OrderedList>
-              </ListItem>
-              <ListItem>
-                <Text fontWeight={600} mt='20px'>For the 6-month payment plan:</Text>
-                <OrderedList>
-                  <ListItem>Select "Add Plan."</ListItem>
-                  <ListItem>Set the duration as 6 months.</ListItem>
-                  <ListItem>Initial deposit: 25 million.</ListItem>
-                  <ListItem>Instalment payment: 24 million.</ListItem>
-                  <ListItem>Payment frequency: Quarterly.</ListItem>
-                  <ListItem>Upload the purchase agreement for the 6-month payment plan.</ListItem>
-                </OrderedList>
-              </ListItem>
-            </UnorderedList>
-          </Box>
-
-          <Image src={create2} mt="30px" mx="auto" w='full' />
-
-          <Box mt='20px'>
-            <Text fontWeight={600} fontSize={'16px'}>STEP 2 (ii)</Text>
-
-            <Text as='p' mt='20px'>
-              We will then add another Unit by clicking on the Add unit button
-            </Text>
-            <Text as='p' mt='20px'>
-              This is the one bedroom loft with a flexible payment plan
-            </Text>
-
-            <OrderedList mt='20px'>
-              <ListItem><b>Unit Title:</b> Enter "1 Bedroom Loft."</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-              <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (1 bedroom).</ListItem>
-              <ListItem><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
-              <ListItem><b>Unit Price:</b> Enter the unit price (75 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-              <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-              <ListItem><b>Upload Unit Images:</b> Provide images highlighting this unit.</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the payment plan:</Text>
-            <OrderedList>
-              <ListItem>Select "Add Payment Plan."</ListItem>
-              <ListItem>Choose "Quick Payment Plan."</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the 3-month flexible payment plan:</Text>
-            <OrderedList>
-              <ListItem>Set the duration as 3 months.</ListItem>
-              <ListItem>Initial deposit: 35 million.</ListItem>
-              <ListItem>Payment frequency: Flexible.</ListItem>
-              <ListItem>Upload the purchase agreement for the 3-month flexible payment plan.</ListItem>
-              <ListItem>The purchase price will be 80 million.</ListItem>
-            </OrderedList>
-          </Box>
-
-          <Box mt='20px'>
-            <Text fontWeight={600} fontSize={'16px'}>STEP 2 (iii)</Text>
-
-            <Text as='p' mt='20px'>
-              There are still 3 more units left so we will add another Unit by clicking on the Add unit butto
-            </Text>
-            <Text as='p' mt='20px'>
-              This will be the 2 bedroom flat with a flexible payment plan
-            </Text>
-
-            <OrderedList mt='20px'>
-              <ListItem><b>Unit Title:</b> Enter "2 Bedroom Flat."</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-              <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (2 bedroom).</ListItem>
-              <ListItem><b>Unit Quantity:</b> Fill in the quantity (30 units).</ListItem>
-              <ListItem><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-              <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-              <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the payment plan:</Text>
-            <OrderedList>
-              <ListItem>Select "Add Payment Plan."</ListItem>
-              <ListItem>Choose "Custom Payment Plan."</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the 12-month payment plan:</Text>
-            <OrderedList>
-              <ListItem>Set the duration as 12 months.</ListItem>
-              <ListItem>Initial deposit: 25 million.</ListItem>
-              <ListItem>Add instalment: 15 million after 3 months.</ListItem>
-              <ListItem>Add instalment: 10 million after 2 months.</ListItem>
-              <ListItem>Add instalment: 30 million after 4 months.</ListItem>
-              <ListItem>Add instalment: 40 million after 3 months.</ListItem>
-              <ListItem>Upload the purchase agreement for this unit.</ListItem>
-            </OrderedList>
-          </Box>
-
-
-          <Box mt='20px'>
-            <Text fontWeight={600} fontSize={'16px'}>STEP 2 (iv)</Text>
-
-            <Text as='p' mt='20px'>
-              This will be the 3 bedroom with a flexible payment plan
-            </Text>
-
-            <OrderedList mt='20px'>
-              <ListItem><b>Unit Title:</b> Enter "3 Bedroom Flat."</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-              <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (3 bedroom).</ListItem>
-              <ListItem><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
-              <ListItem><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-              <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-              <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the payment plan:</Text>
-            <OrderedList>
-              <ListItem>Select "Add Payment Plan."</ListItem>
-              <ListItem>Choose "Quick Payment Plan."</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>For the 3-month flexible payment plan:</Text>
-            <OrderedList>
-              <ListItem>Set the duration as 3 months.</ListItem>
-              <ListItem>Initial deposit: 60 million.</ListItem>
-              <ListItem>Payment frequency: Flexible.</ListItem>
-              <ListItem>The purchase price will be 120 million.</ListItem>
-              <ListItem>Upload the purchase agreement for the 3-month flexible payment plan.</ListItem>
-            </OrderedList>
-          </Box>
-
-          <Box mt='20px'>
-            <Text fontWeight={600} fontSize={'16px'}>STEP 2 (v)</Text>
-
-            <Text as='p' mt='20px'>
-              This will be the prestigious penthouse with a no-interest payment plan
-            </Text>
-
-            <OrderedList mt='20px'>
-              <ListItem><b>Unit Title:</b> Enter "Penthouse."</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-              <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-              <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (4 bedrooms).</ListItem>
-              <ListItem><b>Unit Quantity:</b> Fill in the quantity (1 unit).</ListItem>
-              <ListItem><b>Unit Price:</b> Enter the unit price (450 million) and uncheck the "Price will be displayed" box.</ListItem>
-              <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-              <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
-            </OrderedList>
-
-            <Text mt='20px'>After this, select "Proceed," which will guide you to a new page.</Text>
-          </Box>
-          <Image src={create3} mt="30px" mx="auto" w='full' />
+          Let’s look at this case study; You have a property for sale with
+          payment plan options, and it goes as thus. “Pay 20% now and a certain
+          percentage weekly, monthly, quarterly or annually”. The manual payment
+          plan is the best feature for this use case.
+          <ul style={{ paddingLeft: "20px", marginTop: "21px" }}>
+            <li>First, you have to select the duration </li>
+            <li>Input initial deposit </li>
+            <li>
+              Select payment frequency (There are options like weekly, monthly,
+              quarterly, annually or flexible){" "}
+            </li>
+          </ul>
+        </Text>
+        <Text className="content" mt="21px">
+          <b>
+            N.B Flexible means they can make payments of any amount, anytime and
+            wouldn’t be in default as long as it’s within the payment plan
+            period.
+          </b>
+          <ul style={{ paddingLeft: "20px", marginTop: "21px" }}>
+            <li>Fill in the instalment payment </li>
+            <li>
+              You can add another payment plan if you want more. E.g when the
+              first payment plan you created was a 3-month payment plan and you
+              want to also create a 6-month payment plan.{" "}
+            </li>
+          </ul>
         </Text>
       </Box>
 
-
-      <Box pt="30px" id="allocations">
-        <Text className="content_head">STEP 3</Text>
-        <Text className="content" mt='20px'>
-          <Text as='p'>
-            Now, let's proceed to include all the amenities of your development project. It's a straightforward process:
-          </Text>
-          <OrderedList>
-            <ListItem>
-              Select All Amenities: We willSimply click on each amenity that applies to the project.
-            </ListItem>
-          </OrderedList>
-          <Image src={create4} mt="30px" mx="auto" w='full' />
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 4(ii)
+        </Text>
+        <Text className="content">
+          Let’s look at this case study; You have a property for sale with
+          payment plan options, and it goes as thus. “Pay 20% initial deposit
+          and 30% after 4 months, 15 % 2 months after the second payment, and
+          35% as the last payment”. A custom payment plan works perfectly for
+          this
+          <ul style={{ paddingLeft: "20px", marginTop: "21px" }}>
+            <li>First, you have to select the duration </li>
+            <li>Input initial deposit </li>
+            <li>input the next payment </li>
+            <li>select the due period (After 3 months) </li>
+            <li>You can add another instalment till it’s completed </li>
+            <li>
+              You can add another payment plan if you want more e.g the first
+              payment plan you created was a 6-month payment plan and you want
+              to also create a 9-month payment plan
+            </li>
+          </ul>
         </Text>
       </Box>
-
-      <Box pt="30px" id="allocations">
-        <Text className="content_head">STEP 4</Text>
-        <Text className="content" mt='20px'>
-          <Text as='p'>
-            On this page, you'll find a comprehensive summary of all the steps you've completed thus far. However, there are a couple more crucial tasks left: adding contact persons for the project and specifying the commissions for both the internal sales team and registered external agents.
-          </Text>
-          <OrderedList>
-            <ListItem>
-              <b>Contact Persons:</b> Navigate to the "Contact Person" section and select the relevant individuals from your teams.
-            </ListItem>
-            <ListItem>
-              <b>Commissions:</b>Move on to the "Commission" section and input the respective percentages for both internal sales team and external registered agents. If no commission is applicable, simply enter zero.
-            </ListItem>
-          </OrderedList>
-
-          <Image src={create5} mt="30px" mx="auto" w='full' />
-
-          <Text as='p'>
-            Once you've accomplished these steps, you're ready to take the final step: publishing the listing publicly.
-            Publishing it publicly means that it will become visible on the application for users to see. However, if you prefer not to have it displayed, you can choose to publish it privately.
-          </Text>
-
-          <Text as='p' mt='20px'>
-            At this juncture, the listing is now live and active.
-          </Text>
-
-          <Text as='p' mt='20px'>
-            The subsequent step will involve creating allocations specific to this listing.
-          </Text>
-
-          <Text mt='20px' cursor={'pointer'} color='#4545FE'>How to create an allocation</Text>
-
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 5
+        </Text>
+        <Text className="content">
+          This is the point where closing costs are added (i.e. Development
+          levy, legal fees etc)
+          <ul style={{ paddingLeft: "20px" }}>
+            <li>Fill in the title of the fee and input the amount </li>
+            <li>You can also add more fees </li>
+          </ul>
         </Text>
       </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 6
+        </Text>
+        <Text className="content">
+          This is where you upload documents and contracts associated with the
+          property. It could be brochure, payment plan document (If prompted),
+          and outright document{" "}
+        </Text>
+        <Text className="content" mt="21px">
+          <b>
+            N.B This is the document potential buyers will see during the
+            purchase of the property{" "}
+          </b>
+        </Text>
+        <Image src={listing3} mt="30px" mx="auto" />
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 7
+        </Text>
+        <Text className="content">
+          This is where you select amenities, does the property have a pool? a
+          cinema? a spa etc., (Select every amenity the property has)
+        </Text>
+        <Image src={listing4} mt="30px" mx="auto" />
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 8
+        </Text>
+        <Text className="content">
+          Select the contact person (This is the person you want them to call
+          for enquiries or questions related to the listings)
+        </Text>
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 9
+        </Text>
+        <Text className="content">
+          This is where you enable commission on sales i.e. when an agent sells,
+          what commission will the agent earn for selling, (This could either be
+          manual or Smart.
+        </Text>
+        <Flex
+          direction="row"
+          columnGap="8px"
+          maxW="624px"
+          minH="68px"
+          bg="#d9d9d9"
+          borderRadius="10px"
+          pt="10px"
+          pl="15px"
+          mt="21px"
+        >
+          <BsExclamationCircle style={{ width: "40px", height: "40px" }} />
+          <Text>
+            Manual means the development company does the settlement manually,
+            while smart means the commission process is automated.
+          </Text>
+        </Flex>
 
-      <QuestionsAndReplies questions={questions} />
-      <Helpful />
+        <Image src={listing5} mt="30px" mx="auto" />
+      </Box>
+      <Box>
+        <Text className="content_head" mt="40px">
+          STEP 10
+        </Text>
+        <Text className="content">
+          This is where the listing gets published, clients can either publish
+          on the Online webstore or make it a private listing. A private listing
+          is a listing that people can only view when they use the invitation
+          link.
+        </Text>
+        <Text className="content" mt="21px">
+          <b>This is what the listing looks like on the webstore</b>
+        </Text>
+        <Image src={listing6} mt="30px" mx="auto" />
+      </Box>
+      <Box marginTop="50px" id="faq">
+        <Text className="content_head">FAQs</Text>
+        <Flex
+          maxW="621px"
+          minH="192px"
+          borderRadius="5px"
+          border="0.3px solid #000000"
+          direction="column"
+        >
+          <Box minH="64px" borderBottom="0.3px solid #000000">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
+              <a href="/create_unit" style={{ color: "#5d5fef" }}>
+                How do I create allocations
+              </a>
+            </Flex>
+          </Box>
+          <Box minH="64px" borderBottom="0.3px solid #000000">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />
+              <a href="/delist" style={{ color: "#5d5fef" }}>
+                How to delist a listing from online store
+              </a>
+            </Flex>
+          </Box>
+          <Box minH="64px">
+            <Flex
+              direction="row"
+              columnGap="33px"
+              pl="30px"
+              mt="22px"
+              alignItems="center"
+            >
+              {" "}
+              <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
+              <a href="/archive_unit" style={{ color: "#5d5fef" }}>
+                How to archive a unit
+              </a>
+            </Flex>
+          </Box>
+        </Flex>
+      </Box>
+      <Box marginTop="70px">
+        <Text className="content_head">Was this helpful?</Text>
+        <Flex direction="row">
+          <Text
+            borderRight="1px solid #5d5fef"
+            color="#5d5fef"
+            pr="8px"
+            cursor="pointer"
+            onClick={() =>
+              toast({
+                position: "bottom-center",
+                isClosable: true,
+                render: () => (
+                  <Box color="white" p={3} bg="#000000">
+                    Thank you for your feedback.
+                  </Box>
+                ),
+              })
+            }
+          >
+            Yes
+          </Text>{" "}
+          <Text
+            color="#5d5fef"
+            pl="8px"
+            cursor="pointer"
+            onClick={() =>
+              toast({
+                position: "bottom-center",
+                isClosable: true,
+                render: () => (
+                  <Box color="white" p={3} bg="#000000">
+                    Thank you for your feedback.
+                  </Box>
+                ),
+              })
+            }
+          >
+            No
+          </Text>
+        </Flex>
+      </Box>
     </div>
   );
 };
