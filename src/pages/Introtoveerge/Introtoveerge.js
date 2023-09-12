@@ -5,33 +5,23 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./Introtoveerge.css";
 import { SlArrowRight } from "react-icons/sl";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
-// import { useIsInViewport } from "../../utils/useOnScreen/useOnScreen";
+import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 
 
 export const Introtoveerge = () => {
   const toast = useToast();
-
 
   const veergeRef = useRef(null)
   const engagementRef = useRef(null);
   const trustRef = useRef(null)
   const intelligenceRef = useRef(null)
   const conclusionRef = useRef(null)
-  // const faqRef = useRef(null)
 
   const veergeCheck = useIsInViewport(veergeRef);
   const engagementCheck = useIsInViewport(engagementRef);
   const trustCheck = useIsInViewport(trustRef)
   const intelligenceCheck = useIsInViewport(intelligenceRef)
   const conclusionCheck = useIsInViewport(conclusionRef)
-  // const faqCheck = useIsInViewport(faqRef)
-
-
-
-
-
-
-
 
 
   const articleContent = [
@@ -40,13 +30,7 @@ export const Introtoveerge = () => {
     { check: trustCheck, id: 'trust', title: 'System of Trust' },
     { check: intelligenceCheck, id: 'intelligence', title: 'System of Intelligence' },
     { check: conclusionCheck, id: 'conclusion', title: 'Conclusion' },
-    { id: 'faq', title: 'Questions & Replies' },
   ]
-
-  // const ref = useRef(null)
-  // const isVisible = useOnScreen(ref)
-
-  // console.log('isVisible', isVisible)
 
   return (
     <div className="main">
@@ -193,24 +177,3 @@ export const Introtoveerge = () => {
 
 
 
-function useIsInViewport(ref) {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting),
-      ),
-    [],
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [ref, observer]);
-
-  return isIntersecting;
-}

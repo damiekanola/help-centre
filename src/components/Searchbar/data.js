@@ -20,13 +20,13 @@ export const searchData = [
     topic: "How to set up a veerge account",
   },
   {
-    route: "/create_listing",
+    route: "/listings/create_listing",
     searchQuery: "Listings create how to",
     topic: "How to create listings",
   },
 
   {
-    route: "/create_unit",
+    route: "/listings/create_unit",
     searchQuery: "Allocation unit create how to",
     topic: "How to create unit allocations",
   },
@@ -36,7 +36,7 @@ export const searchData = [
     topic: "How create client account",
   },
   {
-    route: "/archive_unit",
+    route: "/listings/archive_unit",
     searchQuery: "Archive how to",
     topic: "How to archive unit ",
   },
@@ -46,7 +46,7 @@ export const searchData = [
     topic: "How to sign up as an agent",
   },
   {
-    route: "/fractionalize_asset#frac",
+    route: "/listings/fractionalize_asset#frac",
     searchQuery: "Fraction how to",
     topic: "How users buy fractions",
   },

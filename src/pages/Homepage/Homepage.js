@@ -20,14 +20,21 @@ export const Homepage = () => {
               borderRadius={'16px'}
               shadow={'md'}
               as={motion.div}
-              // maxWidth={'272px'}
               mx={'auto'}
               w='100%'
               cursor={"pointer"}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Image borderTopRightRadius={'16px'} borderTopLeftRadius={'16px'} w='full' src={detail.img} h='auto' />
+              <Box
+                borderTopRightRadius={'16px'}
+                borderTopLeftRadius={'16px'}
+                w='full' bgImage={detail.img}
+                h='200px' p='14px'
+              >
+                <Text fontSize={'10px'} color={detail.color}>SAAS</Text>
+                <Text mt='8px' fontSize={'20px'} fontWeight={500} color={detail.color}>{detail.title}</Text>
+              </Box>
               <Box px='16px' py='12px'>
                 {handleTagType(detail.tag)}
                 <HStack spacing={'8px'} align={'center'} mt='10px' fontSize={'10px'}>

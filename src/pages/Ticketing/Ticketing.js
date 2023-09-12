@@ -7,15 +7,10 @@ import alloc from "../../assets/images/alloc.png";
 import publish_rec from "../../assets/images/publish_rec.png";
 import "./Ticketing.css";
 import { SlArrowRight } from "react-icons/sl";
+import LeftNav from "../../components/Leftsidenav/Leftsidenav";
+import Helpful from "../../components/Faq/Helpful";
 export const Ticketing = () => {
   const toast = useToast();
-  const [style, setStyle] = useState("navigation_");
-  const [active, setActive] = useState("Ticketing");
-  const handleClick = (id) => {
-    console.log(id);
-    // setStyle("bluenav");
-    setActive(id)
-  };
 
   const articleContent = [
     { id: 'ticketing', title: 'A ticketing system serves as an indispensable tool within the realm' },
@@ -30,55 +25,7 @@ export const Ticketing = () => {
 
   return (
     <div className="main" id="verified">
-      <Show breakpoint="(min-width: 769px)">
-        <Box position={'fixed'} min-height='751px' left='0' w='100%' maxW={'282px'} pl='40px' h='20px !important' >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text className="article_text">In this article</Text>
-          <Flex mt='20px' direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                key={i} cursor={'pointer'}
-                onClick={() => handleClick(content.id)}
-                borderLeft={i !== articleContent.length - 1 && '1px solid #E4E4E4'}
-                pb='25px' justify='flex-start' align='flex-start'>
-                <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#E4E4E4'} />
-                <Text
-                  maxW={'80%'}
-                  mt='-5px'
-                  ml='20px'
-                  fontSize={'14px'}
-                  fontWeight={active === content.id ? 500 : 400}
-                  color={active === content.id ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-
-          <Text className="article_text" mt="40px">
-            Related Content
-          </Text>
-          <VStack mt='20px' spacing={'17px'} align='stretch'>
-            <Flex columnGap="20px">
-              <Image src={file} />
-              <Link to="/fisrt_time_setup">First time setup</Link>
-            </Flex>
-
-            <Flex columnGap="20px">
-              <Image src={file} />
-              <Link to="/ticketing">Approved, what next?</Link>
-            </Flex>
-            <Flex columnGap="20px">
-              <Image src={file} />
-              <Link to="/terms">Terms of service</Link>
-            </Flex>
-          </VStack>
-          {/* </Box> */}
-        </Box>
-      </Show>
+      <LeftNav articleContent={articleContent} />
 
       <Text className="head_">A ticketing system serves as an indispensable tool within the realm</Text>
       <Text className="publish">Published: November 23, 2022</Text>
@@ -165,48 +112,8 @@ export const Ticketing = () => {
         </Box>
 
 
-        <Box marginTop="70px" textAlign="right">
-          <Text className="content_head">Was this helpful?</Text>
-          <Flex direction="row" justifyContent="flex-end" maxW="451px">
-            <Text
-              borderRight="1px solid #5d5fef"
-              color="#5d5fef"
-              pr="8px"
-              cursor="pointer"
-              onClick={() =>
-                toast({
-                  position: "bottom-center",
-                  isClosable: true,
-                  render: () => (
-                    <Box color="white" p={3} bg="#000000">
-                      Thank you for your feedback.
-                    </Box>
-                  ),
-                })
-              }
-            >
-              Yes
-            </Text>{" "}
-            <Text
-              color="#5d5fef"
-              pl="8px"
-              cursor="pointer"
-              onClick={() =>
-                toast({
-                  position: "bottom-center",
-                  isClosable: true,
-                  render: () => (
-                    <Box color="white" p={3} bg="#000000">
-                      Thank you for your feedback.
-                    </Box>
-                  ),
-                })
-              }
-            >
-              No
-            </Text>
-          </Flex>
-        </Box>
+        <Helpful />
+
       </Box>
 
     </div>
