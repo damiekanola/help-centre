@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Box, Text, Image, Flex, useToast, Show, VStack } from "@chakra-ui/react";
+import React, { useRef, useState } from "react";
+import { Box, Text, Image, Flex, useToast, Show, VStack, Divider } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import reg from "../../assets/images/reg.png";
@@ -7,82 +7,127 @@ import email from "../../assets/images/verify_email.png";
 import pass_setup from "../../assets/images/pass_setup.png";
 import account_setup from "../../assets/images/account_setup.png";
 import phone from "../../assets/images/phone_verification.png";
-import pending from "../../assets/images/pending_appr.png";
 import id from "../../assets/images/select_id.png";
-import settings from "../../assets/images/settings.png";
 import edit from "../../assets/images/edit.png";
 import details from "../../assets/images/fill_details.png";
-import { SlArrowRight } from "react-icons/sl";
+import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
+import LeftNav from "../../components/Leftsidenav/Leftsidenav";
+import peters from '../../assets/images/peters-pic.png';
+import farouk from '../../assets/images/farouk.png';
+import fatima from '../../assets/images/fateemah.png'
+import mobolaji from '../../assets/images/mobolaji.png'
+import Helpful from "../../components/Faq/Helpful";
+import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 
 export const Fisrttimesetup = () => {
   const toast = useToast();
-  const [style, setStyle] = useState("navigation_");
-  const [active, setActive] = useState("account");
-  const handleClick = (id) => {
-    console.log(id);
-    // setStyle("bluenav");
-    setActive(id)
-  };
+
+  const accountRef = useRef(null)
+  const stepsRef = useRef(null);
+  const questionsRef = useRef(null)
+
+  const accountCheck = useIsInViewport(accountRef);
+  const stepsCheck = useIsInViewport(stepsRef);
+  const questionsCheck = useIsInViewport(questionsRef)
+
 
   const articleContent = [
-    { id: 'account', title: 'First Time Setup' },
-    { id: 'steps', title: 'Steps' },
-    { id: 'questions', title: 'Questions & Replies' },
+    { check: accountCheck, id: 'account', title: 'First Time Setup' },
+    { check: stepsCheck, id: 'steps', title: 'Steps' },
+    { check: questionsCheck, id: 'questions', title: 'Questions & Replies' },
+  ]
+
+
+  const questions = [
+    {
+      image: peters,
+      name: 'Peters T.',
+      date: 'Jun 15,2023',
+      content: "Why am I not getting OTP?",
+      replies: [
+        `Hello,
+        There could be multiple factors contributing to your lack of receiving an OTP (One-Time Password):
+        
+         Correct Information: Ensure that you have accurately entered your phone number during the registration process. Double-check for any potential typos or errors.
+        
+        Network Issues: Delays in receiving OTPs may arise due to network related problems. Verify your network connectivity and attempt the process again.
+        
+        Server Delays: The service responsible for providing the OTP might be encountering technical complications or delays. These delays might be the result of server disruptions or high levels of user traffic.
+        
+        Device Issues: If you are using a device that experiences difficulties in receiving messages—such as an older phone or a device with limited storage—it could impede the delivery of OTPs.
+        
+        Mobile Carrier Issues: In instances where you are not receiving OTPs via SMS, it is plausible that your mobile carrier is facing problems with message delivery.
+        
+        As an alternative, consider exploring the option of utilizing voice OTPs, which can offer an alternative approach to authentication.`
+      ]
+    },
+    {
+      image: fatima,
+      name: 'Fateemah S.',
+      date: 'Jun 02,2023',
+      content: "It’s been a week and my account still hasn’t been approved, do I need to provide more information?",
+      replies: [
+        `Hello,
+        We wanted to inform you that your account approval is pending due to an ongoing review process. Typically, this review process takes around 3 days to complete. However, please understand that if there are any complexities in verifying the provided information, the process might extend beyond this timeframe. 
+        Rest assured that we are diligently working through this process. If there's a need for additional information, we will promptly reach out to you.`
+      ]
+    },
+    {
+      name: 'Tracy K.',
+      date: 'May 28,2023',
+      content: "My application was rejected ?? Is there any reason for that?",
+      replies: [
+        `Hello,
+        We understand that you may have questions about the recent rejection of your application. The reasons for rejection could stem from a few factors. These might include challenges in verifying the status of your property development company, the possibility that the individual who created the account lacked the authority to enter agreements on behalf of the company, or discrepancies in the
+        information provided.
+        If you have received a rejection email, the specific reason for the rejection should have been detailed within that communication. We encourage you to review the email for further clarification on the decision. If you require any assistance or have additional inquiries, please don't hesitate to reach out to our support team. We're here to help address any concerns you may have.
+        Thank you for your understanding.`
+      ]
+    },
+    {
+      image: mobolaji,
+      name: 'Mobolaji F.',
+      date: 'May 12,2023',
+      content: 'My Listings, User, dashboard and other applications are not working? How do I make them work?????',
+      replies: [
+        `Hello,
+      Access to this feature is currently unavailable as your account is pending approval. Once your account has been approved, you will be able to select a subscription of your choice. This will grant you access to the features you are seeking.
+      Thank you for your patience and we look forward to having you fully onboarded.`
+      ]
+    },
+    {
+      name: 'Samuel G.',
+      date: 'May 08,2023',
+      content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
+      replies: [
+        `Hello,
+      If you're currently experiencing this issue, it's possible that your application has been rejected. Please review the email associated with your registration – you should find the reason for the rejection explained there. If you require any assistance or wish to contest the decision, please don't hesitate to get in touch with our support team.
+      Thank you for your understanding and cooperation.`
+      ]
+    },
+    {
+      image: farouk,
+      name: 'Farouk I.',
+      date: 'May 05,2023',
+      content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
+      replies: [
+        `Hello,
+        Upon the approval of your account and your selection of a subscription tier, you will be able to create your application. Please note that the Basic and Premium tiers grant access solely to the web application. 
+        On the other hand, Veerge Plus subscriptions provide access to either mobile applications, web applications, or both, depending on your preference.
+        Thank you for your interest, and we're excited to have you on board.`
+      ]
+    }
   ]
 
   return (
     <div className="main">
-      <Show breakpoint="(min-width: 769px)">
-        <Box position={'fixed'} min-height='751px' left='0' w='100%' maxW={'282px'} pl='40px' h='20px !important' >
-          <Text className="article_text">In this article</Text>
-          <Flex mt='20px' direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                key={i} cursor={'pointer'}
-                onClick={() => handleClick(content.id)}
-                borderLeft={i !== articleContent.length - 1 && '1px solid #E4E4E4'}
-                pb='25px' justify='flex-start' align='flex-start'>
-                <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={active === content.id ? '#4545FE' : '#E4E4E4'} />
-                <Text
-                  maxW={'80%'}
-                  mt='-5px'
-                  ml='20px'
-                  fontSize={'14px'}
-                  fontWeight={active === content.id ? 500 : 400}
-                  color={active === content.id ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-
-          <Text className="article_text" mt="40px">
-            Related Content
-          </Text>
-          <VStack mt='20px' spacing={'17px'} align='stretch'>
-            <Flex columnGap="20px">
-              <Image src={file} />
-              <Link to="/into_to_veerge">Intro to veerge</Link>
-            </Flex>
-
-            <Flex columnGap="20px">
-              <Image src={file} /> <Link to="/approved_whats_next">Approved, what next?</Link>
-            </Flex>
-            <Flex columnGap="20px">
-              <Image src={file} /> <Link to="/terms">Terms of service</Link>
-            </Flex>
-          </VStack>
-        </Box>
-      </Show>
+      <LeftNav articleContent={articleContent} />
 
       <Text className="head_">
         FIRST TIME SETUP
       </Text>
       <Text className="publish">Published: November 23, 2022</Text>
-      <Box pt="30px" id="account">
+      <Box pt="30px" id="account" ref={accountRef}>
         <Text className="content_head">SETTING UP A VEERGE ACCOUNT</Text>
         <Text className="content">
           Creating a Veerge account is free, easy and can be done in a few
@@ -105,7 +150,7 @@ export const Fisrttimesetup = () => {
         </Text>
       </Box>
 
-      <Box id="steps">
+      <Box id="steps" ref={stepsRef}>
         <Box>
           <Text className="content_head">
             STEP 1
@@ -224,51 +269,12 @@ export const Fisrttimesetup = () => {
         </Box>
       </Box>
 
-      <Box pt="30px" id="questions">
+      <Box ref={questionsRef}>
+        <QuestionsAndReplies questions={questions} />
       </Box>
 
-      <Box marginTop="50px">
-        <Text className="content_head">Was this helpful?</Text>
-        <Flex direction="row">
-          <Text
-            borderRight="1px solid #5d5fef"
-            color="#5d5fef"
-            pr="8px"
-            cursor="pointer"
-            onClick={() =>
-              toast({
-                position: "bottom-center",
-                isClosable: true,
-                render: () => (
-                  <Box color="white" p={3} bg="#000000">
-                    Thank you for your feedback.
-                  </Box>
-                ),
-              })
-            }
-          >
-            Yes
-          </Text>
-          <Text
-            color="#5d5fef"
-            pl="8px"
-            cursor="pointer"
-            onClick={() =>
-              toast({
-                position: "bottom-center",
-                isClosable: true,
-                render: () => (
-                  <Box color="white" p={3} bg="#000000">
-                    Thank you for your feedback.
-                  </Box>
-                ),
-              })
-            }
-          >
-            No
-          </Text>
-        </Flex>
-      </Box>
+      <Helpful />
+
     </div>
   );
 };

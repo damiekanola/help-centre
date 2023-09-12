@@ -241,7 +241,7 @@ export const Veergedata = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/fractionalize_asset" style={{ color: "#5d5fef" }}>
+              <a href="/listings/fractionalize_asset" style={{ color: "#5d5fef" }}>
                 How do I fractionalise an asset
               </a>
             </Flex>
@@ -256,7 +256,7 @@ export const Veergedata = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />
-              <a href="/archive_unit" style={{ color: "#5d5fef" }}>
+              <a href="/listings/archive_unit" style={{ color: "#5d5fef" }}>
                 How do i archive a unit
               </a>
             </Flex>
@@ -271,7 +271,7 @@ export const Veergedata = () => {
             >
               {" "}
               <SlArrowRight style={{ color: "#5d5fef" }} />{" "}
-              <a href="/fractionalize_asset" style={{ color: "#5d5fef" }}>
+              <a href="/listings/fractionalize_asset" style={{ color: "#5d5fef" }}>
                 How do i send an offer
               </a>
             </Flex>

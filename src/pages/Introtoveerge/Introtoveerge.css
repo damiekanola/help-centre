@@ -42,14 +42,30 @@
     text-transform: uppercase;
   }
 
+  .content_subhead {
+    min-height: 30px;
+    font-family: euclid;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0;
+    color: #000000;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-transform: capitalize;
+  }
+
   .content {
     max-width: 621px;
     font-family: euclid;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 160%;
     color: #000000;
+    letter-spacing: 0;
+    text-transform: capitalize;
   }
 
   /* The sidebar menu */
@@ -212,14 +228,30 @@
     text-transform: uppercase;
   }
 
+  .content_subhead {
+    min-height: 30px;
+    font-family: euclid;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0;
+    color: #000000;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-transform: capitalize;
+  }
+
   .content {
     max-width: 621px;
     font-family: euclid;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 160%;
     color: #000000;
+    letter-spacing: 0;
+    text-transform: capitalize;
   }
 
   /* The sidebar menu */

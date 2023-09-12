@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import file from "../../assets/icons/file.png";
 
-const LeftNav = ({ articleContent }) => {
+export const Leftsidenav = ({ articleContent }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
@@ -72,4 +72,4 @@ const LeftNav = ({ articleContent }) => {
   )
 }
 
-export default LeftNav
+export default Leftsidenav
