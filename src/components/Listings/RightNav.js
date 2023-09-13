@@ -20,7 +20,7 @@ const RightNav = () => {
           },
           '&::-webkit-scrollbar-thumb': {
             borderRadius: '10',
-            bg: `#333`,
+            bg: `transparent`,
           },
         }}
       >

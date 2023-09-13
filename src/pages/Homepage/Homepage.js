@@ -53,16 +53,6 @@ export const Homepage = () => {
         ))}
       </SimpleGrid>
 
-      <Center w='full'>
-        <Button
-          mt='30px' mx='auto' bg='#4545FE1A'
-          borderRadius='8px' px='18px' py='9px'
-          leftIcon={<MdArrowDownward color='#4545FE' size={25} />}
-        >
-          <Text fontSize={'18px'} fontWeight={500} color='#4545FE'>Load more</Text>
-        </Button>
-      </Center>
-
     </Box>
   )
 }

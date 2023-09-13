@@ -7,7 +7,9 @@ export const Leftsidenav = ({ articleContent }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        position={'fixed'} h='65%'
+        bg='#F9FAFB'
+        boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
+        position={'fixed'} h='70vh'
         overflowY={'scroll'} left='0'
         w='100%' maxW={'282px'} pl='40px'
         pb='50px'
@@ -20,7 +22,7 @@ export const Leftsidenav = ({ articleContent }) => {
           },
           '&::-webkit-scrollbar-thumb': {
             borderRadius: '10',
-            bg: `#333`,
+            bg: `transparent`,
           },
         }}
       >

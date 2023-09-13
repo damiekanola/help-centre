@@ -1,56 +1,39 @@
 import { Box, Text, Image, Flex, useToast, Show, VStack, OrderedList, ListItem } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import file from "../../assets/icons/file.png";
-import React, { useState } from "react";
-import addprop from "../../assets/images/addprop.png";
-import alloc from "../../assets/images/alloc.png";
-import publish_rec from "../../assets/images/publish_rec.png";
+import React, { useRef, useState } from "react";
 import "./Ticketing.css";
-import { SlArrowRight } from "react-icons/sl";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../components/Faq/Helpful";
+import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 export const Ticketing = () => {
-  const toast = useToast();
+
+  const overviewRef = useRef(null)
+  const perksRef = useRef(null)
+
+  const overviewCheck = useIsInViewport(overviewRef);
+  const perksCheck = useIsInViewport(perksRef)
+
 
   const articleContent = [
-    { id: 'ticketing', title: 'A ticketing system serves as an indispensable tool within the realm' },
-    { id: 'perks', title: 'Perks of a ticketing system tailored for property development companies' },
-    { id: 'elevates', title: 'Elevates the customer experience' },
-    { id: 'amplifies', title: 'Amplifies team productivity' },
-    { id: 'expedites', title: 'Expedites issue resolution ' },
-    { id: 'cost', title: 'Cost reduction and heightened customer retention' },
-    { id: 'enhances', title: 'Enhances project transparency and collaboration' },
-    { id: 'efficient', title: 'Efficient resource allocation and workload management' },
+    { check: overviewCheck, id: 'overview', title: 'Overview of Ticketing system' },
+    { check: perksCheck, id: 'perks', title: 'Perks of a ticketing system tailored for property development companies' },
   ]
 
   return (
     <div className="main" id="verified">
       <LeftNav articleContent={articleContent} />
 
-      <Text className="head_">A ticketing system serves as an indispensable tool within the realm</Text>
+      <Text className="head_">Veerge’s ticketing system</Text>
       <Text className="publish">Published: November 23, 2022</Text>
-      <Box>
-        <Text className="content_head">
-          MY ACCOUNT HAS BEEN Ticketing WHAT NEXT?
-        </Text>
+      <Box id='overview' ref={overviewRef}>
         <Text className="content">
           <Text as='p' marginTop="20px">
-            A ticketing system serves as an indispensable tool within the realm of property development companies. It functions as a central hub for managing various aspects of their operations, enabling them to navigate the complexities of property development with heightened efficiency and precision.
+            A ticketing system serves as an indispensable tool within the realm of property development companies. It functions as a central hub for managing various aspects of their operations, enabling them to navigate the complexities of property development with heightened efficiency and precision. For property development firms that encompass a service component, the ticketing system takes on a crucial role in facilitating the orchestrated flow of tasks. From addressing customer inquiries about properties to resolving issues that may arise during construction or post-construction phases, the system ensures that every task is recorded, tracked, and effectively managed.
           </Text>
           <Text as='p' marginTop="20px">
-            For property development firms that encompass a service component, the ticketing system takes on a crucial role in facilitating the orchestrated flow of tasks. From addressing customer inquiries about properties to resolving issues that may arise during construction or post-construction phases, the system ensures that every task is recorded, tracked, and effectively managed
+            One of the system's key benefits is its capacity to handle bottlenecks that might emerge during the property development lifecycle. Whether it's a delay in obtaining permits, a shortage of construction materials, or unexpected challenges during the building process, the ticketing system acts as a virtual control center, streamlining communication and coordination among various teams and departments. Moreover, as property development companies often engage with both external stakeholders (potential buyers, investors, regulatory bodies) and internal teams (architects, engineers, contractors), the ticketing system proves invaluable in managing interactions across these diverse fronts. It captures inquiries from potential buyers seeking information about properties, tracks the progress of construction-related tasks, and ensures that all parties involved are on the same page.
           </Text>
           <Text as='p' marginTop="20px">
-            One of the system's key benefits is its capacity to handle bottlenecks that might emerge during the property development lifecycle. Whether it's a delay in obtaining permits, a shortage of construction materials, or unexpected challenges during the building process, the ticketing system acts as a virtual control center, streamlining communication and coordination among various teams and departments.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Moreover, as property development companies often engage with both external stakeholders (potential buyers, investors, regulatory bodies) and internal teams (architects, engineers, contractors), the ticketing system proves invaluable in managing interactions across these diverse fronts. It captures inquiries from potential buyers seeking information about properties, tracks the progress of construction-related tasks, and ensures that all parties involved are on the same page.
-          </Text>
-          <Text as='p' marginTop="20px">
-            In the fast-paced environment of property development, the need for effective communication and task management is particularly pronounced. The ticketing system excels in this regard by providing a structured framework to handle customer inquiries, service requests, and project-related tasks. This structured approach prevents important matters from falling through the cracks and minimizes the risk of misunderstandings or missed deadlines.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Without a doubt, the property development landscape can be characterized by sudden spikes in activity. For instance, upon the launch of a new property offering, a flood of inquiries might pour in. During such periods, the ticketing system becomes a critical asset, preventing overwhelming customer support teams and ensuring that every inquiry receives proper attention.
+            In the fast-paced environment of property development, the need for effective communication and task management is particularly pronounced. The ticketing system excels in this regard by providing a structured framework to handle customer inquiries, service requests, and project-related tasks. This structured approach prevents important matters from falling through the cracks and minimizes the risk of misunderstandings or missed deadlines. Without a doubt, the property development landscape can be characterized by sudden spikes in activity. For instance, upon the launch of a new property offering, a flood of inquiries might pour in. During such periods, the ticketing system becomes a critical asset, preventing overwhelming customer support teams and ensuring that every inquiry receives proper attention.
           </Text>
           <Text as='p' marginTop="20px">
             While some property development companies might attempt to manage inquiries and tasks through email correspondence, this approach often proves inadequate. Emails lack the built-in functionalities that a ticketing system offers, such as detailed progress tracking, automated task assignment, and seamless collaboration among team members. The ticketing system's advanced capabilities significantly enhance the efficiency and effectiveness of managing property-related operations.
@@ -60,7 +43,7 @@ export const Ticketing = () => {
 
 
 
-      <Box>
+      <Box id='perks' ref={perksRef}>
         <Text className="content_head">
           Perks of a Ticketing System
         </Text>
@@ -105,6 +88,15 @@ export const Ticketing = () => {
         <Box marginTop="50px">
           <Text fontWeight={500} mt='20px'>
             <b>5. Enhances Project Transparency and Collaboration</b>
+          </Text>
+          <Text className="content">
+            In property development, managing resources efficiently is paramount to project success. A ticketing system plays a pivotal role in this aspect by providing a clear overview of ongoing tasks, pending requests, and resource availability. This enables development companies to allocate resources judiciously, preventing overloading of certain teams while optimizing the utilization of specialized skills. Workload distribution becomes streamlined, ensuring that teams operate at peak performance levels without undue stress or resource bottlenecks. The combined prowess of these tailored perks elevates a ticketing system beyond being a mere tool and positions it as a strategic asset for property development companies, fostering excellence, collaboration, and streamlined operations.
+          </Text>
+        </Box>
+
+        <Box marginTop="50px">
+          <Text fontWeight={500} mt='20px'>
+            <b>6.Efficient Resource Allocation and Workload Management</b>
           </Text>
           <Text className="content">
             In property development, managing resources efficiently is paramount to project success. A ticketing system plays a pivotal role in this aspect by providing a clear overview of ongoing tasks, pending requests, and resource availability. This enables development companies to allocate resources judiciously, preventing overloading of certain teams while optimizing the utilization of specialized skills. Workload distribution becomes streamlined, ensuring that teams operate at peak performance levels without undue stress or resource bottlenecks. The combined prowess of these tailored perks elevates a ticketing system beyond being a mere tool and positions it as a strategic asset for property development companies, fostering excellence, collaboration, and streamlined operations.

@@ -1,5 +1,5 @@
 import { Box, Text, Flex, Image, useToast, Show, VStack, OrderedList, ListItem, UnorderedList } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, use, useSearchParams } from "react-router-dom";
 import file from "../../../assets/icons/file.png";
 import React, { useRef, useState } from "react";
 import RightNav from "../../../components/Listings/RightNav";
@@ -17,7 +17,9 @@ import Blocker from "../../../components/blocker";
 
 export const Createlisting = () => {
   const toast = useToast();
-  const toView = false
+  const [searchParams, setSearchParams] = useSearchParams();
+  const toView = searchParams.get('isrestricted') === 'true'
+  console.log('toView', toView)
 
   const overviewRef = useRef(null)
   const what_you_needRef = useRef(null);

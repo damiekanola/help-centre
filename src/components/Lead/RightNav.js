@@ -7,7 +7,10 @@ const LeadRightNav = () => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        position={'fixed'} h='65%'
+        bg='#F9FAFB'
+        boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
+        position={'fixed'} h='fit-content'
+        maxH={'70vh'}
         overflowY={'scroll'} right='0'
         w='100%' maxW={'282px'} pl='40px'
         pb='50px'

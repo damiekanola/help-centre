@@ -7,7 +7,7 @@ const QuestionsAndReplies = ({ questions }) => {
   const colors = ['#FF9103', '#1D6169', '#4545FE']
   return (
     <Box pt="30px" id="questions">
-      <Box border='0.3px solid #1e1e1e' borderRadius={'5px'}>
+      <Box border='0.3px solid #CBCBCB' bg='#F9F9F9' borderRadius={'5px'}>
         <Flex align='center' gap='10px' px='15px' py='20px'>
           <Image src={comment} />
           <Text>Questions and replies</Text>
@@ -27,7 +27,7 @@ const QuestionsAndReplies = ({ questions }) => {
                 <Text color={'#1C1D2C'} fontSize={'16px'} fontWeight={600}>
                   {question?.name}
                 </Text>
-                <Text color={'#A5A1A1'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
+                <Text color={'#000'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
                   {question?.date}
                 </Text>
               </VStack>
@@ -38,12 +38,14 @@ const QuestionsAndReplies = ({ questions }) => {
                 <>
                   <Box mt='16px'>
                     <Flex gap='10px' align={'center'}>
-                      <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
+                      <Center borderRadius={'full'} bg='#000' w='38px' h='38px'>
+                        <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
+                      </Center>
                       <VStack align={'stretch'} w='70%'>
                         <Text color={'#1C1D2C'} fontSize={'16px'} fontWeight={600}>
                           Veerge Support
                         </Text>
-                        <Text color={'#A5A1A1'} fontSize={'12px'} fontWeight={400} noOfLines={1}>
+                        <Text color={'#000'} fontSize={'12px'} fontWeight={400} noOfLines={1}>
                           Jun 15,2023
                         </Text>
                       </VStack>
