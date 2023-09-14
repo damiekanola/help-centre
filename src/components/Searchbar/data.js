@@ -1,6 +1,6 @@
 export const searchData = [
   {
-    route: "/ ",
+    route: "/into_to_veerge",
     searchQuery: "Introduction veerge system",
     topic: "Intro to Veerge",
   },

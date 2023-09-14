@@ -69,9 +69,10 @@ export const Terms = () => {
           </Text>
         </Text>
       </Box>
-      <OrderedList className="content">
-        <ListItem className="content_head" id='account_terms' ref={account_termsRef}>
-          <Text>Account Terms</Text>
+
+      <OrderedList className="content" fontSize={'24px'} fontWeight={'600'}>
+        <ListItem id='account_terms' ref={account_termsRef}>
+          <Text className="content_head">Account Terms</Text>
           <OrderedList className="content">
             <ListItem>
               To access and use the Services, you must register for a Veerge account ("Account"). To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Veerge reserves the right to reject your application for an Account or cancel an existing Account, at our sole discretion, for any reason.
@@ -106,8 +107,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='account_activation' ref={account_activationRef}>
-          <Text>Account Activation</Text>
+        <ListItem id='account_activation' ref={account_activationRef}>
+          <Text className="content_head">Account Activation</Text>
           <Text className="content_subhead">2.1  Veerge Owner </Text>
           <OrderedList className="content">
             <ListItem>
@@ -138,8 +139,8 @@ export const Terms = () => {
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='veerge' ref={veergeRef}>
-          <Text >Veerge Rights</Text>
+        <ListItem id='veerge' ref={veergeRef}>
+          <Text className="content_head" >Veerge Rights</Text>
           <OrderedList className="content">
             <ListItem>
               The Services offer a range of features and functionalities. However, not all Services or features will be available to all Property development companies at all times, and we are under no obligation to make any Services or features available in any jurisdiction. We reserve the right to modify the Services or any part thereof for any reason, without prior notice and at any time.
@@ -162,8 +163,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='your' ref={yourRef}>
-          <Text>Your Responsibilities</Text>
+        <ListItem id='your' ref={yourRef}>
+          <Text className="content_head">Your Responsibilities</Text>
           <OrderedList className="content">
             <ListItem>
               You acknowledge and agree to provide public-facing contact information, a refund policy, and fulfilment timelines on your Web application.
@@ -183,8 +184,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='payment' ref={paymentRef}>
-          <Text>Payment of Fees and Taxes</Text>
+        <ListItem id='payment' ref={paymentRef}>
+          <Text className="content_head">Payment of Fees and Taxes</Text>
           <OrderedList className="content">
             <ListItem>
               We bill subscription fees and charge on a monthly basis. However, we may bill you more frequently if we suspect fraudulent activity or a risk of non-payment. You are responsible for paying the applicable fees and charges for using the Services as described on the Veerge Site. Payments must be made using one of the payment methods supported by Veerge. You agree to pay all amounts without setoff, counterclaim, deduction, or withholding. Fees and charges for new Services or features will be effective when we post updated fees and charges on the Veerge Site, unless otherwise stated in a notice. We may increase or add new fees and charges for any existing Services you are using by providing at least 30 days' prior notice. Late payments may be subject to interest at a rate of 1.5% per month (or the highest rate permitted by law, if lower).
@@ -216,8 +217,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='confident' ref={confidentRef}>
-          <Text>Confidentiality</Text>
+        <ListItem id='confident' ref={confidentRef}>
+          <Text className="content_head">Confidentiality</Text>
           <OrderedList className="content">
             <ListItem>
               “Confidential Information” will include, but will not be limited to, any and all information associated with a party’s business and not publicly known, including specific business information, technical processes and formulas, software, customer lists, prospective customer lists, names, addresses and other information regarding customers and prospective customers, designs, sales, costs (including any relevant processing fees), price lists, and other unpublished financial information, business plans and marketing data, and any other confidential and proprietary information, whether or not marked as confidential or proprietary. Veerge’s Confidential Information includes all information that you receive relating to us, or to the Services, that is not known to the general public including information related to our security program and practices.
@@ -228,8 +229,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='limitation' ref={limitationRef}>
-          <Text>Limitation of Liability and Indemnification</Text>
+        <ListItem id='limitation' ref={limitationRef}>
+          <Text className="content_head">Limitation of Liability and Indemnification</Text>
           <OrderedList className="content">
             <ListItem>
               You expressly understand and agree that, to the extent permitted by applicable laws, Veerge will not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses arising out of or relating to the use of or inability to use the Service or these Terms of Service (however arising, including negligence).
@@ -258,8 +259,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='intellectual' ref={intellectualRef}>
-          <Text>Intellectual Property and Your Materials</Text>
+        <ListItem id='intellectual' ref={intellectualRef}>
+          <Text className="content_head">Intellectual Property and Your Materials</Text>
           <Text className="content_subhead">8.1. Your Materials</Text>
           <OrderedList className="content">
             <ListItem>
@@ -289,29 +290,29 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='beta' ref={betaRef} >
-          <Text>Beta Services</Text>
+        <ListItem id='beta' ref={betaRef} >
+          <Text className="content_head">Beta Services</Text>
           <Text className="content">
             From time to time, Veerge may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all property development companies (“Beta Services”). Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Veerge will provide to you prior to your use of the Beta Services. Such Beta Services and all associated conversations and materials relating thereto will be considered Veerge Confidential Information and subject to the confidentiality provisions in this agreement. Without limiting the generality of the foregoing, you agree that you will not make any public statements or otherwise disclose your participation in the Beta Services without Veerge’s prior written consent. Veerge makes no representations or warranties that the Beta Services will function. Veerge may discontinue the Beta Services at any time in its sole discretion. Veerge will have no liability for any harm or damage arising out of or in connection with a Beta Service. The Beta Services may not work in the same way as a final version. Veerge may change or not release a final or commercial version of a Beta Service in our sole discretion
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='feedback' ref={feedbackRef}>
-          <Text>Feedback and Reviews</Text>
+        <ListItem id='feedback' ref={feedbackRef}>
+          <Text className="content_head">Feedback and Reviews</Text>
           <Text className="content">
             Veerge welcomes any ideas and/or suggestions regarding improvements or additions to the Services. Under no circumstances will any disclosure of any idea, suggestion or related material or any review of the Services, Third Party Services or any Third Party Provider (collectively, “Feedback”) to Veerge be subject to any obligation of confidentiality or expectation of compensation. By submitting Feedback to Veerge (whether submitted directly to Veerge or posted on any Veerge hosted forum or page), you waive any and all rights in the Feedback and that Veerge is free to implement and use the Feedback if desired, as provided by you or as modified by Veerge, without obtaining permission or license from you or from any third party. Any reviews of a Third Party Service or Third Party Provider that you submit to Veerge must be accurate to the best of your knowledge, and must not be illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties or objectionable. Veerge reserves the right (but not the obligation) to remove or edit Feedback of Third Party Services or Third Party Providers, but does not regularly inspect posted Feedback.
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='privacy' ref={privacyRef}>
-          <Text>Privacy Policy</Text>
+        <ListItem id='privacy' ref={privacyRef}>
+          <Text className="content_head">Privacy Policy</Text>
           <Text className="content">
             Veerge is firmly committed to protecting the privacy of your personal information and the personal information of your customers. By using the Service, you acknowledge and agree that Veerge’s collection, usage and disclosure of this personal information is governed by our Privacy Policy.
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='terms' ref={termsRef}>
-          <Text>Term and Termination</Text>
+        <ListItem id='terms' ref={termsRef}>
+          <Text className="content_head">Term and Termination</Text>
           <OrderedList className="content">
             <ListItem>
               The term of these Terms of Service will begin on the date of your completed registration for use of a Service and continue until terminated by us or by you, as provided below (the “Term”).
@@ -348,8 +349,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='modification' ref={modificationRef}>
-          <Text>Modifications</Text>
+        <ListItem id='modification' ref={modificationRef}>
+          <Text className="content_head">Modifications</Text>
           <OrderedList className="content">
             <ListItem>
               We reserve the right, in our sole and absolute discretion, to update or change any portion of the Terms of Service at any time. We will provide you with reasonable advance notice of changes to the Terms of Service that materially adversely affect your use of the Services or your rights under the Terms of Service by sending an email to the Primary Email Address, providing notice through the Veerge administrative console, or by similar means. However, Veerge may make changes that materially adversely affect your use of the Services or your rights under the Terms of Service at any time and with immediate effect (i) for legal, regulatory, fraud and abuse prevention, or security reasons; or (ii) to restrict products or activities that we deem unsafe, inappropriate, or offensive. Unless we indicate otherwise in our notice (if applicable), any changes to the Terms of Service will be effective immediately upon posting of such updated terms at this location. Your continued access to or use of the Services after we provide such notice, if applicable, or after we post such updated terms, constitutes your acceptance of the changes and consent to be bound by the Terms of Service as amended. If you do not agree to the amended Terms of Service, you must stop accessing and using the Services.
@@ -360,8 +361,8 @@ export const Terms = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='general' ref={generalRef}>
-          <Text>General Conditions</Text>
+        <ListItem id='general' ref={generalRef}>
+          <Text className="content_head">General Conditions</Text>
           <OrderedList className="content">
             <ListItem>
               The Terms of Service, including the documents it incorporates by reference, constitute the entire agreement between you and Veerge and govern your use of the Services and your Account, superseding any prior agreements between you and Veerge (including, but not limited to, any prior versions of the Terms of Service).

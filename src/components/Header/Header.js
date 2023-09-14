@@ -41,6 +41,7 @@ export const Header = () => {
           <Link to="/">
             {" "}
             <Image src={logo} />
+            <Text fontSize={'12px'} color='#fff'>Powered by Myxellia</Text>
           </Link>
         </Flex>
       </Show>

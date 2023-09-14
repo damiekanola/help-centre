@@ -83,7 +83,7 @@ export const Searchbar = () => {
             </Link>{" "}
             <SlArrowRight />
             <Link
-              to="fisrt_time_setup"
+              to="/"
               style={{
                 textDecoration: "none",
                 href: "fisrt_time_setup",
@@ -106,9 +106,10 @@ export const Searchbar = () => {
               bg="#F5F5F5"
               border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
-              pr="5px"
+              px="10px"
+              onClick={onOpen} cursor={'pointer'}
             >
-              <Input
+              {/* <Input
                 placeholder="Search for a topic"
                 type="text"
                 border="none"
@@ -120,7 +121,7 @@ export const Searchbar = () => {
                 _focusVisible={{
                   border: "none",
                 }}
-              />
+              /> */}
               <CiSearch style={{ width: "25px", height: "25px" }} />
             </Flex>
           </form>
@@ -206,10 +207,11 @@ export const Searchbar = () => {
             bg="#F5F5F5"
             border=" 1px solid #C3C4FC"
             borderRadius=" 12px"
-            pr="5px"
+            px="10px"
             mt="20px"
+            onClick={onOpen} cursor={'pointer'}
           >
-            <Input
+            {/* <Input
               placeholder="Search for a topic"
               type="text"
               border="none"
@@ -221,7 +223,7 @@ export const Searchbar = () => {
               _focusVisible={{
                 border: "none",
               }}
-            />
+            /> */}
             <CiSearch style={{ width: "25px", height: "25px" }} />
           </Flex>
         </form>
