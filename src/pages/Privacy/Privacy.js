@@ -38,6 +38,20 @@ export const Privacy = () => {
 
 
 
+  const headStyle = {
+    minHeight: '30px',
+    fontFamily: 'euclid',
+    fontStyle: 'normal',
+    fontWeight: '600',
+    fontSize: '16px',
+    lineHeight: '30px',
+    // letterSpacing: '0.10em',
+    color: '#000000',
+    paddingBottom: '40px',
+    // textTransform: 'uppercase',
+  }
+
+
   return (
     <div className="main">
       <LeftNav articleContent={articleContent} />
@@ -45,8 +59,8 @@ export const Privacy = () => {
       <Text className="head_">PRIVACY POLICY</Text>
       <Text className="publish">Last updated on: May 23, 2022</Text>
       <OrderedList className="content">
-        <ListItem className="content_head" id='introduction' ref={introductionRef}>
-          <Text>INTRODUCTION</Text>
+        <ListItem style={headStyle} id='introduction' ref={introductionRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>INTRODUCTION</Text>
           <Text className="content">
             At Veerge, our mission is to enhance the Real Estate industry for everyone involved. This Privacy Policy outlines how we collect, use, and share personal information concerning various individuals associated with Veerge. These include:
           </Text>
@@ -69,8 +83,8 @@ export const Privacy = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='our_values' ref={our_valuesRef}>
-          <Text>Our Values</Text>
+        <ListItem style={headStyle} id='our_values' ref={our_valuesRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Our Values</Text>
           <Text className="content">
             At Veerge, we prioritize trust and commit to handling your information responsibly. Three core values guide our approach to information and privacy:
           </Text>
@@ -87,8 +101,8 @@ export const Privacy = () => {
           </OrderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='why_we' ref={why_weRef}>
-          <Text>Why We Process Your Information</Text>
+        <ListItem style={headStyle} id='why_we' ref={why_weRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Why We Process Your Information</Text>
           <Text className="content">
             We process your information when fulfilling contractual obligations, such as processing subscription payments for using the Veerge platform. We or our affiliates may also use your personal information for business-related purposes, including:
           </Text>
@@ -123,8 +137,8 @@ export const Privacy = () => {
           </UnorderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='your_rights' ref={your_rightsRef}>
-          <Text>Your Rights Over Your Information</Text>
+        <ListItem style={headStyle} id='your_rights' ref={your_rightsRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Your Rights Over Your Information</Text>
           <Text className="content">
             We believe you should have access to and control over your personal information, regardless of your location. Depending on how you utilize Veerge, you may have rights to:
           </Text>
@@ -145,30 +159,30 @@ export const Privacy = () => {
           </UnorderedList>
         </ListItem>
 
-        <ListItem className="content_head" id='retention' ref={retentionRef}>
-          <Text>Retention of Your Information</Text>
+        <ListItem style={headStyle} id='retention' ref={retentionRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Retention of Your Information</Text>
           <Text className="content">
             We retain your personal data only for as long as necessary to fulfill the purposes for which we collected it. To determine the appropriate retention period, we consider factors such as the nature, sensitivity, and volume of personal data, potential risks associated with unauthorized use or disclosure, the purposes of processing, the availability of alternative means to achieve these purposes, and relevant legal requirements. We also retain and utilize your personal information as necessary to comply with legal obligations, resolve disputes, and enforce our policies. If you cease using our services or delete your account, we will delete your information or anonymize it in an aggregated format.
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='our_user' ref={our_userRef}>
-          <Text>Our Use of Machine Learning</Text>
+        <ListItem style={headStyle} id='our_user' ref={our_userRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Our Use of Machine Learning</Text>
           <Text className="content">
             To support property development companies utilizing Veerge, we employ techniques like machine learning to enhance our services. In these instances, either a human is involved in the process, making it partially automated, or machine learning is used in ways that do not have significant legal effects.
           </Text>
         </ListItem>
 
-        <ListItem className="content_head" id='protection' ref={protectionRef}>
-          <Text>Protection of Your Information</Text>
+        <ListItem style={headStyle} id='protection' ref={protectionRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Protection of Your Information</Text>
           <Text className="content">
             Our teams work tirelessly to protect your information and ensure the security and integrity of our platform. We subject our data storage and financial information processing systems to independent audits. However, it's important to note that no method of transmission over the Internet or electronic storage can guarantee 100% security. While we strive to safeguard your personal information, absolute security cannot be guaranteed.
           </Text>
         </ListItem>
 
 
-        <ListItem className="content_head" id='contacting' ref={contactingRef}>
-          <Text>Contacting Us</Text>
+        <ListItem style={headStyle} id='contacting' ref={contactingRef}>
+          <Text my='20px' style={{ textTransform: 'capitalize' }}>Contacting Us</Text>
           <Text className="content">
             If you have any questions, requests, or complaints regarding the processing of your personal information, please don't hesitate to contact Veerge Support. For concerns specifically related to how a property development company processes your personal information, we recommend reaching out directly to the respective property development company or referring to their privacy policy. It's important to note that when interacting with Veerge-powered applications, the property development company serves as the data controller, while we act as a processor on their behalf. We are committed to assisting property development companies in fulfilling their legal obligations by providing the necessary tools and addressing their inquiries.
           </Text>
