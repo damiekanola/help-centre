@@ -10,7 +10,7 @@ import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
 import Helpful from "../../components/Faq/Helpful";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 
-export const Approved = () => {
+const Approved = () => {
   const toast = useToast();
 
   const approvedRef = useRef(null)
@@ -56,10 +56,16 @@ export const Approved = () => {
     },
   ]
 
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to veerge' },
+    { link: "/", text: 'Veerge Plus' },
+    { link: "/", text: 'How are you protected' }
+  ]
+
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Text className="head_">APPROVED, WHAT NEXT?</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <Box id='approved' ref={approvedRef}>
@@ -234,3 +240,5 @@ export const Approved = () => {
     </div>
   );
 };
+
+export default Approved

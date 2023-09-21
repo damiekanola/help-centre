@@ -20,8 +20,9 @@ import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import HideUnsubscribed from "../../../hoc/Hidefull";
 
-export const Changelisting = () => {
+const Changelisting = () => {
   const toast = useToast();
 
   const how_toRef = useRef(null)
@@ -55,11 +56,15 @@ export const Changelisting = () => {
     }
   ]
 
-
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: "/", text: 'Understanding Fractional Real estate ' },
+    { link: "/", text: 'Veerge & Data analytics' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">HOW TO CHANGE A LISTING INFORMATION</Text>
       <Text className="publish">Published: November 24, 2022</Text>
@@ -256,3 +261,5 @@ export const Changelisting = () => {
     </div>
   );
 };
+
+export default HideUnsubscribed(Changelisting)

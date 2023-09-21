@@ -1,16 +1,27 @@
-import React from 'react';
-import Blocker from '../components/blocker';
+import React, { useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { Center, Spinner } from '@chakra-ui/react';
 
-function Hide(Component) {
+function HideUnsubscribed(Component) {
   const HideComp = () => {
-    const toView = false;
+    const [searchParams, setSearchParams] = useSearchParams();
+    const toView = searchParams.get('isrestricted') === 'true';
+    const navigate = useNavigate()
+
+    useEffect(() => {
+      if (!toView) {
+        navigate('/listings/create_listing')
+      }
+    }, [toView])
 
     return (
       <div>
         {toView ? (
           <Component />
         ) : (
-          <Blocker />
+          <Center w='full' h='full'>
+            <Spinner />
+          </Center>
         )}
       </div>
     )
@@ -19,4 +30,4 @@ function Hide(Component) {
 };
 
 
-export default Hide
+export default HideUnsubscribed

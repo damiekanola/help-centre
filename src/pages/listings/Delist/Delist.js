@@ -10,8 +10,9 @@ import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import HideUnsubscribed from "../../../hoc/Hidefull";
 
-export const Delist = () => {
+const Delist = () => {
   const toast = useToast();
 
   const how_toRef = useRef(null)
@@ -22,7 +23,7 @@ export const Delist = () => {
 
 
   const articleContent = [
-    { check: how_toCheck, id: 'how_to', title: 'How to fractionalise an asset' },
+    { check: how_toCheck, id: 'how_to', title: 'How to delist a listing' },
     { check: questionsCheck, id: 'questions', title: 'Questions & Replies' },
   ]
 
@@ -32,16 +33,25 @@ export const Delist = () => {
       date: 'Jun 25, 2023',
       content: " If I delist a listing, will existing subscribers still have access to it on their application?",
       replies: [
-        "Hello David, yes, existing subscribers will still have access to the delisted listing on their application. However, non-subscribers won't have access to it by default. The only way non-subscribers can gain access to the delisted listing is through methods such as receiving a private offer, being granted private access, or receiving a shared private link."
+        <Box>
+          <p> Hello David,</p>
+          <p>
+            yes, existing subscribers will still have access to the delisted listing on their application. However, non-subscribers won't have access to it by default. The only way non-subscribers can gain access to the delisted listing is through methods such as receiving a private offer, being granted private access, or receiving a shared private link.
+          </p>
+        </Box>
       ]
     }
   ]
 
-
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: "/listings/create_listing", text: 'How to create a listing' },
+    { link: "/", text: 'Veerge & Data analytics' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">HOW TO DELIST A LISTING</Text>
       <Text className="publish">Published: November 24, 2022</Text>
@@ -111,3 +121,5 @@ export const Delist = () => {
     </div>
   );
 };
+
+export default HideUnsubscribed(Delist)

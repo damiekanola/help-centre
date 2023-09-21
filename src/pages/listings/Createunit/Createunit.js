@@ -14,8 +14,9 @@ import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import HideUnsubscribed from "../../../hoc/Hidefull";
 
-export const Createunit = () => {
+const Createunit = () => {
 
   const how_toRef = useRef(null)
   const stepsRef = useRef(null)
@@ -38,7 +39,16 @@ export const Createunit = () => {
       date: 'Jun 07, 2023',
       content: "I tried to create an allocation, but it redirected me to the archive page. Any suggestions",
       replies: [
-        "Hello Dhaval,This situation may have arisen due to the unit being archived before initiating the allocation step. To address this, follow these steps:Check the boxes of the specific units you intend to archive.Complete the archiving process.It's important to note that during the initial archiving, you didn't get to choose the exact units you wanted to archive. For instance, if there are 10 units under a category and you archived 5, you didn't specify whether it should be units Flat 1 to Flat 5 or Flat 5 to Flat 10. The screen prompt you encountered is designed to help you precisely select the units you wish to remove from archive.Should you require further assistance, don't hesitate to schedule a meeting with our support team. We're here to help!"
+        <Box>
+          <Text> Hello Dhaval,</Text>
+          <Text mt='20px'>This situation may have arisen due to the unit being archived before initiating the allocation step.  To address this, follow these steps:</Text>
+          <Text mt='20px'>
+            Check the boxes of the specific units you intend to archive.Complete the archiving process.It's important to note that during the initial archiving, you didn't get to choose the exact units you wanted to archive. For instance, if there are 10 units under a category and you archived 5, you didn't specify whether it should be units Flat 1 to Flat 5 or Flat 5 to Flat 10. The screen prompt you encountered is designed to help you precisely select the units you wish to remove from archive.
+          </Text>
+          <Text mt='20px'>
+            Should you require further assistance, don't hesitate to schedule a meeting with our support team. We're here to help!
+          </Text>
+        </Box>
       ]
     }
   ]
@@ -169,3 +179,5 @@ export const Createunit = () => {
     </div>
   );
 };
+
+export default HideUnsubscribed(Createunit)

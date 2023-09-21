@@ -5,7 +5,7 @@ import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 
 
-export const Overview = () => {
+const Overview = () => {
   const toast = useToast();
 
   const overviewRef = useRef(null)
@@ -163,3 +163,5 @@ export const Overview = () => {
     </div>
   );
 };
+
+export default Overview

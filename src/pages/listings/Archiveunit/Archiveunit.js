@@ -17,8 +17,9 @@ import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import HideUnsubscribed from "../../../hoc/Hidefull";
 
-export const Archiveunit = () => {
+const Archiveunit = () => {
   const toast = useToast();
 
 
@@ -43,16 +44,29 @@ export const Archiveunit = () => {
       date: 'Jun 25, 2023',
       content: "I tried to archive units, but I didn't get the allocation prompt.",
       replies: [
-        "Hello David,This situation might occur if allocations haven't been established yet for the specific units. The allocation prompt is typically presented during the creation of allocations. If you haven't reached that step, you might not encounter the prompt.Should you require further assistance or encounter any issues, please don't hesitate to reach out to our support team. We're here to help!"
+        <Box>
+          <Text>Hello David,</Text>
+          <Text mt='20px'>
+            This situation might occur if allocations haven't been established yet for the specific units. The allocation prompt is typically presented during the creation of allocations. If you haven't reached that step, you might not encounter the prompt.
+          </Text>
+          <Text mt='20px'>
+            Should you require further assistance or encounter any issues, please don't hesitate to reach out to our support team. We're here to help!
+          </Text>
+        </Box >
       ]
     }
   ]
 
 
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: "/", text: 'Understanding Fractional Real estate ' },
+    { link: "/", text: 'Veerge & Data analytics' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Box id="how_to" ref={how_toRef}>
         <Text className="head_">HOW TO ARCHIVE A UNIT</Text>
@@ -190,3 +204,5 @@ export const Archiveunit = () => {
     </div>
   );
 };
+
+export default HideUnsubscribed(Archiveunit)
