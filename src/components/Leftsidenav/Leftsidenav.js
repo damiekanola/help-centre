@@ -3,7 +3,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import file from "../../assets/icons/file.png";
 
-export const Leftsidenav = ({ articleContent }) => {
+const sample = [
+  { link: '/fisrt_time_setup', text: 'First time setup' },
+  { link: "/approved_whats_next", text: 'Approved, what next?' },
+  { link: "/terms", text: 'Terms of service' }
+]
+export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
+
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
@@ -32,7 +38,6 @@ export const Leftsidenav = ({ articleContent }) => {
           {articleContent.map((content, i) => (
             <Flex
               key={i} cursor={'pointer'}
-              // onClick={() => handleClick(content.id)}
               borderLeft={i !== articleContent.length - 1 && '1px solid #C3C4FC'}
               pb='25px' justify='flex-start' align='flex-start'>
               <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#C3C4FC'} />
@@ -56,17 +61,12 @@ export const Leftsidenav = ({ articleContent }) => {
           Related Content
         </Text>
         <VStack mt='20px' spacing={'17px'} align='stretch'>
-          <Flex columnGap="20px">
-            <Image src={file} />
-            <Link to="/fisrt_time_setup">First time setup</Link>
-          </Flex>
-
-          <Flex columnGap="20px">
-            <Image src={file} /> <Link to="/approved_whats_next">Approved, what next?</Link>
-          </Flex>
-          <Flex columnGap="20px">
-            <Image src={file} /> <Link to="/terms">Terms of service</Link>
-          </Flex>
+          {relatedContent.map(content => (
+            <Flex columnGap="20px">
+              <Image src={file} />
+              <Link to={content.link}>{content.text}</Link>
+            </Flex>
+          ))}
         </VStack>
         {/* </Box> */}
       </Box>

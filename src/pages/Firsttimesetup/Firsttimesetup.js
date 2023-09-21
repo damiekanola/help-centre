@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Box, Text, Image, Flex, useToast, Show, VStack, Divider } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, useToast, Show, VStack, Divider, OrderedList, ListItem } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import file from "../../assets/icons/file.png";
 import reg from "../../assets/images/reg.png";
@@ -45,20 +45,38 @@ export const Fisrttimesetup = () => {
       date: 'Jun 15,2023',
       content: "Why am I not getting OTP?",
       replies: [
-        `Hello,
-        There could be multiple factors contributing to your lack of receiving an OTP (One-Time Password):
-        
-         Correct Information: Ensure that you have accurately entered your phone number during the registration process. Double-check for any potential typos or errors.
-        
-        Network Issues: Delays in receiving OTPs may arise due to network related problems. Verify your network connectivity and attempt the process again.
-        
-        Server Delays: The service responsible for providing the OTP might be encountering technical complications or delays. These delays might be the result of server disruptions or high levels of user traffic.
-        
-        Device Issues: If you are using a device that experiences difficulties in receiving messages—such as an older phone or a device with limited storage—it could impede the delivery of OTPs.
-        
-        Mobile Carrier Issues: In instances where you are not receiving OTPs via SMS, it is plausible that your mobile carrier is facing problems with message delivery.
-        
-        As an alternative, consider exploring the option of utilizing voice OTPs, which can offer an alternative approach to authentication.`
+        <Box>
+          <Text>
+            Hello,
+            There could be multiple factors contributing to your lack of receiving an OTP (One-Time Password):
+          </Text>
+
+          <OrderedList>
+            <ListItem mt='20px'>
+              <b>Correct Information:</b> Ensure that you have accurately entered your phone number during the registration process. Double-check for any potential typos or errors.
+            </ListItem>
+            <ListItem mt='20px'>
+              <b>Network Issues:</b> Delays in receiving OTPs may arise due to network related problems. Verify your network connectivity and attempt the process again.
+            </ListItem>
+            <ListItem mt='20px'>
+              <b>Server Delays:</b> The service responsible for providing the OTP might be encountering technical complications or delays. These delays might be the result of server disruptions or high levels of user traffic.
+            </ListItem>
+            <ListItem mt='20px'>
+              <b>Device Issues:</b> If you are using a device that experiences difficulties in receiving messages—such as an older phone or a device with limited storage—it could impede the delivery of OTPs.
+            </ListItem>
+            <ListItem mt='20px'>
+              <b>Mobile Carrier Issues:</b> In instances where you are not receiving OTPs via SMS, it is plausible that your mobile carrier is facing problems with message delivery.
+            </ListItem>
+          </OrderedList>
+          <Text mt='20px'>
+            As an alternative, consider exploring the option of utilizing voice OTPs, which can offer an alternative approach to authentication.
+          </Text>
+
+
+
+
+
+        </Box>
       ]
     },
     {

@@ -15,11 +15,10 @@ import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 import Blocker from "../../../components/blocker";
 
 
-export const Createlisting = () => {
+const Createlisting = () => {
   const toast = useToast();
   const [searchParams, setSearchParams] = useSearchParams();
   const toView = searchParams.get('isrestricted') === 'true'
-  console.log('toView', toView)
 
   const overviewRef = useRef(null)
   const what_you_needRef = useRef(null);
@@ -441,3 +440,5 @@ export const Createlisting = () => {
     </Box>
   );
 };
+
+export default Createlisting

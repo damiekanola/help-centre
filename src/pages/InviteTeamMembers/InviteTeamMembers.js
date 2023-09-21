@@ -43,11 +43,16 @@ export const InviteTeamMembers = () => {
     }
   ]
 
-
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Veerge: The new era of real estate' },
+    { link: "/", text: 'Veerge Plus' },
+    { link: "/", text: 'How you are protected' },
+    { link: "/", text: 'Why Veerge instead of building?' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">INVITE TEAM MEMBERS</Text>
       <Text className="publish">Published: November 24, 2022</Text>

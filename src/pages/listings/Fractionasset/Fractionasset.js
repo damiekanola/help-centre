@@ -17,8 +17,9 @@ import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import HideUnsubscribed from "../../../hoc/Hidefull";
 
-export const Fractionasset = () => {
+const Fractionasset = () => {
   const toast = useToast();
 
 
@@ -40,7 +41,12 @@ export const Fractionasset = () => {
       date: 'Jun 25, 2023',
       content: "How do I increase the price per fraction?",
       replies: [
-        " Hello Grace, You can't directly adjust the price per fraction independently. When you increase the outright price of the unit, the price per fraction will automatically adjust accordingly. Any change you make to the outright price will be reflected in the price per fraction as well. If you have any further questions, feel free to ask."
+        <Box>
+          <p>Hello Grace,</p>
+          <p>
+            You can't directly adjust the price per fraction independently. When you increase the outright price of the unit, the price per fraction will automatically adjust accordingly. Any change you make to the outright price will be reflected in the price per fraction as well. If you have any further questions, feel free to ask.
+          </p>
+        </Box>
       ]
     },
     {
@@ -48,7 +54,12 @@ export const Fractionasset = () => {
       date: 'Jun 25, 2023',
       content: "I am trying to fractionalise a separate unit, but the only one I can fractionalise is the one I already fractionalised.",
       replies: [
-        " Hello Peters, In this situation, you might need to reach out to our support team for assistance. Please note that you can only fractionalise a certain unit type, and while you can fractionalise multiple quantities of that unit type, you cannot fractionalise multiple different unit types simultaneously. For example, if you have a project with 10 2-bedroom units and 5 3-bedroom units, you can fractionalise either the 2-bedroom units or the 3-bedroom units, but not both at the same time. You can also fractionalise multiple quantities of the SAME unit type. If you encounter any challenges, our support team can guide you through the process and provide additional assistance"
+        <Box>
+          <p> Hello Peters, </p>
+          <p>
+            In this situation, you might need to reach out to our support team for assistance. Please note that you can only fractionalise a certain unit type, and while you can fractionalise multiple quantities of that unit type, you cannot fractionalise multiple different unit types simultaneously. For example, if you have a project with 10 2-bedroom units and 5 3-bedroom units, you can fractionalise either the 2-bedroom units or the 3-bedroom units, but not both at the same time. You can also fractionalise multiple quantities of the SAME unit type. If you encounter any challenges, our support team can guide you through the process and provide additional assistance"
+          </p>
+        </Box>
       ]
     },
     {
@@ -56,16 +67,25 @@ export const Fractionasset = () => {
       date: 'Jun 25, 2023',
       content: "How does allocation work in the case of fractional ownership?",
       replies: [
-        "Hello Daniella, In the case of fractional ownership, the allocation process involves manual assignment by the admin. This means that the admin of the project will need to allocate specific units to the fractional co-owners from the 'Manage Allocation' section. If you have any questions or need assistance with this process, please don't hesitate to reach out to our support team. We're here to help!"
+        <Box>
+          <p>Hello Daniella, </p>
+          <p>
+            In the case of fractional ownership, the allocation process involves manual assignment by the admin. This means that the admin of the project will need to allocate specific units to the fractional co-owners from the 'Manage Allocation' section. If you have any questions or need assistance with this process, please don't hesitate to reach out to our support team. We're here to help!
+          </p>
+        </Box>
       ]
     }
   ]
 
-
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: "/", text: 'Understanding Fractional Real estate ' },
+    { link: "/", text: 'Veerge & Data analytics' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">FRACTIONALISING A PROPERTY</Text>
       <Text className="publish">Published: November 24, 2022</Text>
@@ -204,3 +224,5 @@ export const Fractionasset = () => {
     </div>
   );
 };
+
+export default HideUnsubscribed(Fractionasset)
