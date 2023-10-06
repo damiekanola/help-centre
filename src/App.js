@@ -23,6 +23,7 @@ import { HomeOwnersPacket } from "./pages/lead&account/HomeOwnersPacket/HomeOwne
 import { InviteTeamMembers } from "./pages/InviteTeamMembers/InviteTeamMembers";
 import { Terms } from "./pages/Terms/Terms";
 import { Privacy } from "./pages/Privacy/Privacy";
+import { Blog } from "./pages/Blog/Blog";
 function App() {
   return (
     <div className="help_container">
@@ -36,21 +37,12 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/into_to_veerge" element={<Introtoveerge />} />
           <Route path="/fisrt_time_setup" element={<Fisrttimesetup />} />
-          {/* <Route path="/Verified_whats_next" element={<Verified />} /> */}
           <Route path="/approved_whats_next" element={<Approved />} />
           <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/listings/create_listing" element={<Createlisting />} />
           <Route path="/listings/change_listing" element={<Changelisting />} />
           <Route path="/listings/overview" element={<Overview />} />
           <Route path="/listings/delist" element={<Delist />} />
-          {/* <Route path="/inspections" element={<Inspections />} /> */}
-          {/* <Route path="/change_contact" element={<Changecontact />} /> */}
-          {/* <Route
-            path="/fractional_real_estate"
-            element={<Fractionalestate />}
-          /> */}
-          {/* <Route path="/veerge_and_data" element={<Veergedata />} /> */}
-          {/* <Route path="/create_online_store" element={<Onlinestore />} /> */}
           <Route path="/listings/archive_unit" element={<Archiveunit />} />
           <Route path="/listings/create_unit" element={<Createunit />} />
           <Route path="/listings/fractionalize_asset" element={<Fractionasset />} />
@@ -60,9 +52,10 @@ function App() {
           <Route path="/invite_team_members" element={<InviteTeamMembers />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-          {/* <Route path="/agents_signup" element={<Agents />} /> */}
-          {/* <Route path="/create_client_account" element={<Clientaccount />} /> */}
-          {/* <Route path="/users_experience" element={<Usersexperience />} /> */}
+          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Privacy />} />
+          <Route path="/blog" element={<Privacy />} />
+          <Route path="/blog" element={<Privacy />} /> */}
         </Routes>
       </div>
     </div>

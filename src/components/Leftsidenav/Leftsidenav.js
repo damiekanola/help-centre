@@ -62,7 +62,7 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
         </Text>
         <VStack mt='20px' spacing={'17px'} align='stretch'>
           {relatedContent.map(content => (
-            <Flex columnGap="20px">
+            <Flex columnGap="20px" align={'center'}>
               <Image src={file} />
               <Link to={content.link}>{content.text}</Link>
             </Flex>
