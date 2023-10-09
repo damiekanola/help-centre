@@ -1,11 +1,11 @@
 import { Box, Flex, Text, useToast } from '@chakra-ui/react'
 import React from 'react'
 
-const Helpful = () => {
+const Helpful = ({ noMarginTop }) => {
   const toast = useToast();
 
   return (
-    <Flex direction={'column'} align={'flex-end'} w='full' marginTop="70px">
+    <Flex direction={'column'} align={'flex-end'} w='full' marginTop={noMarginTop ? "0" : "70px"}>
       <Text textAlign={'right'} className="content_head">Was this helpful?</Text>
       <Flex direction="row">
         <Text

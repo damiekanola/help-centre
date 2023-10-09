@@ -24,6 +24,18 @@ import { InviteTeamMembers } from "./pages/InviteTeamMembers/InviteTeamMembers";
 import { Terms } from "./pages/Terms/Terms";
 import { Privacy } from "./pages/Privacy/Privacy";
 import { Blog } from "./pages/Blog/Blog";
+import Transforming_business from "./pages/Blog/transforming_business";
+import Inventory from "./pages/Blog/inventory";
+import Revenue_recognition from "./pages/Blog/revenue_recognition";
+import Lead_management from "./pages/Blog/lead_management";
+import A_letter from "./pages/Blog/a_letter";
+import Understanding_fraction from "./pages/Blog/understanding_fraction";
+import Smart_payment from "./pages/Blog/smart_payment";
+import Fractional_ownership from "./pages/Blog/fractional_ownership";
+import New_era from "./pages/Blog/new_era";
+import Veerge_data from "./pages/Blog/veerge_data";
+import Why_veerge from "./pages/Blog/why_veerge";
+
 function App() {
   return (
     <div className="help_container">
@@ -53,9 +65,17 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/blog" element={<Blog />} />
-          {/* <Route path="/blog" element={<Privacy />} />
-          <Route path="/blog" element={<Privacy />} />
-          <Route path="/blog" element={<Privacy />} /> */}
+          <Route path="/blog/transforming_business" element={<Transforming_business />} />
+          <Route path="/blog/inventory" element={<Inventory />} />
+          <Route path="/blog/revenue_recognition" element={<Revenue_recognition />} />
+          <Route path="/blog/lead_management" element={<Lead_management />} />
+          <Route path="/blog/a_letter" element={<A_letter />} />
+          <Route path="/blog/understanding_fraction" element={<Understanding_fraction />} />
+          <Route path="/blog/smart_payment" element={<Smart_payment />} />
+          <Route path="/blog/fractional_ownership" element={<Fractional_ownership />} />
+          <Route path="/blog/new_era" element={<New_era />} />
+          <Route path="/blog/veerge_data" element={<Veerge_data />} />
+          <Route path="/blog/why_veerge" element={<Why_veerge />} />
         </Routes>
       </div>
     </div>
