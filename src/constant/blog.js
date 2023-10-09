@@ -16,7 +16,7 @@ export const blogDataRead = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/new_era'
     },
     {
         img: why_veerge,
@@ -24,7 +24,7 @@ export const blogDataRead = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/why_veerge'
     },
     {
         img: veergeNDdata,
@@ -32,7 +32,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/veerge_data'
     },
     {
         img: fractional_ownership,
@@ -40,7 +40,7 @@ export const blogDataRead = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/fractional_ownership'
     },
     {
         img: fractional_ownership,
@@ -48,7 +48,7 @@ export const blogDataRead = [
         type: 'Industry Insight',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/understanding_fraction'
     },
     {
         img: letter_from_CEO,
@@ -56,7 +56,7 @@ export const blogDataRead = [
         type: 'Culture',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/a_letter'
     },
     {
         img: lead_management,
@@ -64,7 +64,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/lead_management'
     },
     {
         img: a_ticketing_system,
@@ -72,7 +72,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/transforming_business'
     },
     {
         img: inventory_management,
@@ -80,7 +80,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/inventory'
     },
     {
         img: revenue_recognition,
@@ -88,7 +88,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/revenue_recognition'
     },
     {
         img: smart_payment,
@@ -96,7 +96,7 @@ export const blogDataRead = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/smart_payment'
     },
 ]
 
@@ -107,7 +107,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/smart_payment'
     },
     {
         img: veergeNDdata,
@@ -123,7 +123,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/revenue_recognition'
     },
     {
         img: lead_management,
@@ -131,7 +131,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/lead_management'
     },
     {
         img: a_ticketing_system,
@@ -139,7 +139,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/transforming_business'
     },
     {
         img: inventory_management,
@@ -147,7 +147,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/inventory'
     },
     {
         img: new_era,
@@ -155,7 +155,7 @@ export const blogDataRecent = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/new_era'
     },
     {
         img: why_veerge,
@@ -163,7 +163,7 @@ export const blogDataRecent = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/why_veerge'
     },
     {
         img: fractional_ownership,
@@ -171,7 +171,7 @@ export const blogDataRecent = [
         type: 'Peaks',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/fractional_ownership'
     },
     {
         img: fractional_ownership,
@@ -179,7 +179,7 @@ export const blogDataRecent = [
         type: 'Industry Insight',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/understanding_fraction'
     },
     {
         img: letter_from_CEO,
@@ -187,6 +187,6 @@ export const blogDataRecent = [
         type: 'Culture',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/a_letter'
     },
 ]
