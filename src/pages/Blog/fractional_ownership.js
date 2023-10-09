@@ -6,22 +6,23 @@ import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import fractional_ownership from '../../assets/images/blog/fractional_ownership.png';
-import fractional_img from '../../assets/images/blog/fractional_img.png';
+import fractional_animation from '../../assets/images/blog/fractional_animation.gif';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Fractional_ownership = () => {
   const navigate = useNavigate();
-  const a_ticketRef = useRef(null);
-  const perksRef = useRef(null);
+  const overviewRef = useRef(null);
+  const howRef = useRef(null);
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
-  const perksCheck = useIsInViewport(perksRef)
+  const a_ticketCheck = useIsInViewport(overviewRef);
+  const howCheck = useIsInViewport(howRef)
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Overview' },
-    { check: perksCheck, id: 'perks', title: 'How fractional works the Veerge way' },
+    { check: a_ticketCheck, id: 'overview', title: 'Overview' },
+    { check: howCheck, id: 'how_fractional', title: 'How fractional works the Veerge way' },
   ]
 
   return (
@@ -94,58 +95,15 @@ const Fractional_ownership = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' fontWeight={500} fontSize={'20px'} color='#000'>Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='10px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={overviewRef} id='overview'>
             <Text>
               Real estate, the golden ticket to wealth building, continues to entice investors seeking stability amidst the unpredictable stock market. But here’s the catch: for many young adults, the dream of owning property seems to drift further away as property prices soar higher than their incomes. Enter the hero of the hour: <b>Fractional ownership in real estate.</b>
             </Text>
@@ -156,8 +114,8 @@ const Fractional_ownership = () => {
               Imagine this: a luxurious property worth a jaw-dropping 1 million dollars. Now, let’s slice it up into bite-sized portions of 100,000 shares, making each share a mere $10. Suddenly, individuals with limited financial firepower can hop on board and snatch up a fraction of the property that fits within their budget and investment capacity. It’s like a gateway opening up to a world of opportunities, where more people can ride the wave of value appreciation and revel in the cash flow generated over time.
             </Text>
           </Box>
-          <Image mt='13px' mb='20px' src={fractional_img} h='auto' w='full' />
-          <Box ref={perksRef}>
+          <Image mt='13px' mb='20px' src={fractional_animation} h='auto' w='full' />
+          <Box ref={howRef} id='how_fractional'>
             <Text mt='30px'>
               Now, let’s clear up a couple of misconceptions that might be floating around. First, let’s not mistake fractional ownership for REITs (Real Estate Investment Trusts). Sure, REITs offer a way to dip your toes into the real estate pool, but they might not fully satisfy your specific objectives. Why? Well, for starters, the options for traded-REITs that provide exposure to residential real estate are as scarce as finding a unicorn. The prices of REITs are also highly sensitive to interest rate fluctuations and overall market sentiment. So you have to say goodbye to one of the most appealing aspects of real estate investing: the low correlation and diversification it brings to your portfolio. To also distinguish fractional ownership from those timeshare shenanigans: When you buy a timeshare, you’re essentially buying the right to use a property for a limited time each year. But the catch is you don’t actually own a piece of the property itself, You don’t get to savor the sweet taste of appreciation or bask in the glory of rental income when the property sits idle during your unused time. Someone else holds the keys to ownership and all you have is a mere usage right. So, fractional real estate ownership is like having your cake and eating it too! because you not only get a slice of the property but also enjoy your fair share of the income and profits it generates.
             </Text>

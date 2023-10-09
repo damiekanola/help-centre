@@ -7,20 +7,21 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import inventory_management from '../../assets/images/blog/inventory_management.png';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Inventory = () => {
   const navigate = useNavigate();
-  const a_ticketRef = useRef(null);
-  const perksRef = useRef(null);
+  const overviewRef = useRef(null);
+  const benefitRef = useRef(null);
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
-  const perksCheck = useIsInViewport(perksRef)
+  const overviewCheck = useIsInViewport(overviewRef);
+  const benefitCheck = useIsInViewport(benefitRef)
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Overview' },
-    { check: perksCheck, id: 'perks', title: 'Benefits of this system' },
+    { check: overviewCheck, id: 'overview', title: 'Overview' },
+    { check: benefitCheck, id: 'benefit', title: 'Benefits of this system' },
   ]
 
 
@@ -88,66 +89,23 @@ const Inventory = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' fontWeight={500} fontSize={'20px'} color='#000'>Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='10px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={overviewRef} id='overview'>
             <Text>
               Inventory management forms the cornerstone of efficient operations in any business, a principle that holds equally true for property development companies. The domain of property development is renowned for its intricate and continually evolving nature. It encompasses a wide spectrum of variables, ranging from initial design and meticulous planning to the finer aspects of marketing and eventual sales. Amidst this complexity, a pivotal factor emerges, one with the potential to profoundly influence the success of a property development enterprise – the adept management of unit types.
             </Text>
-            <Text mt='30px' ref={perksRef}>
+            <Text mt='30px'>
               Prominent property development corporations frequently grapple with the challenge of overselling, a predicament stemming from various factors. This issue underscores the need for a strategic intervention that addresses the nuances of unit inventory management. Veerge’s inventory management system, acts as the digital backbone for property developers. This system effectively oversees and controls the availability, allocation, and sales of different unit types. Tailored to the industry's unique requirements, it offers a range of benefits that contribute to streamlined operations and favourable outcomes.
             </Text>
           </Box>
-          <Box ref={perksRef}>
+          <Box ref={benefitRef} id='benefit'>
             <Text mt='30px' fontWeight={600} fontSize={'36px'} color='#000'>
               Benefits of this system
             </Text>
