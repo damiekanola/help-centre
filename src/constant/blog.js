@@ -115,7 +115,7 @@ export const blogDataRecent = [
         type: 'Features',
         readTime: '5mins read',
         datePosted: 'Jul 5, 2023',
-        path: '/new_era'
+        path: '/blog/veerge_data'
     },
     {
         img: revenue_recognition,
