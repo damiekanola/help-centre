@@ -7,20 +7,21 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import revenue_recognition from '../../assets/images/blog/revenue_recognition.png';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Revenue_recognition = () => {
   const navigate = useNavigate();
-  const a_ticketRef = useRef(null);
-  const perksRef = useRef(null);
+  const overviewRef = useRef(null);
+  const benefitRef = useRef(null);
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
-  const perksCheck = useIsInViewport(perksRef)
+  const overviewCheck = useIsInViewport(overviewRef);
+  const benefitCheck = useIsInViewport(benefitRef)
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Overview' },
-    { check: perksCheck, id: 'perks', title: 'Benefits' },
+    { check: overviewCheck, id: 'overview', title: 'Overview' },
+    { check: benefitCheck, id: 'benefit', title: 'Benefits' },
   ]
 
 
@@ -89,63 +90,20 @@ const Revenue_recognition = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' fontWeight={500} fontSize={'20px'} color='#000'>Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='10px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={overviewRef} id='overview'>
             <Text>
               Let's be frank – revenue is the lifeblood of your business's success. Without it, your organization simply cannot thrive. While generating profits can be an arduous task, monitoring and managing those earnings can present an even greater challenge. Grasping your income and comprehending your financial standing demands effort and a firm grasp of a fundamental accounting principle: revenue recognition. Navigating the intricacies of revenue recognition can undoubtedly become bewildering at times. This is where Veerge's innovative revenue recognition solution steps in, tailored specifically to empower property development firms in precisely and efficiently handling the intricate process of identifying and documenting revenue derived from sales or services rendered. Revenue recognition serves as a bedrock accounting concept, dictating the timing and methodology for recognizing revenue within a company's financial statements. Veerge's revenue recognition solution holds pivotal significance due to several compelling factors:
             </Text>
           </Box>
-          <Box ref={perksRef}>
+          <Box ref={benefitRef} id='benefit'>
             <Box mt='30px'>
               <Text fontWeight={600} fontSize={'20px'} color='#000'>1. Precise financial reporting </Text>
               <Text>

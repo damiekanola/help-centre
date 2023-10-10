@@ -7,23 +7,24 @@ import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const New_era = () => {
   const navigate = useNavigate()
-  const a_ticketRef = useRef(null)
-  const perksRef = useRef(null)
+  const idea_forRef = useRef(null)
+  const what_isRef = useRef(null)
   const how_doesRef = useRef(null)
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
-  const perksCheck = useIsInViewport(perksRef)
-  const how_doesCheck = useIsInViewport(how_doesRef)
+  const idea_forCheck = useIsInViewport(idea_forRef);
+  const what_isCheck = useIsInViewport(what_isRef);
+  const how_doesCheck = useIsInViewport(how_doesRef);
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Idea for innovation' },
-    { check: perksCheck, id: 'perks', title: 'What is Veerge?' },
-    { check: how_doesCheck, id: 'perks', title: 'How does Veerge deliver those values effectively' },
+    { check: idea_forCheck, id: 'idea_for', title: 'Idea for innovation' },
+    { check: what_isCheck, id: 'what_is', title: 'What is Veerge?' },
+    { check: how_doesCheck, id: 'how_does', title: 'How does Veerge deliver those values effectively' },
   ]
 
 
@@ -94,58 +95,15 @@ const New_era = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' className="article_text">Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='6px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={idea_forRef} id='idea_for'>
             <Text>
               A few years ago, we took a daring leap of faith, embarking on an extraordinary journey to establish our very own IT business solution company. Little did we know that this decision would lead us on a thrilling roller coaster ride, brimming with exhilarating challenges and triumphant moments. But you know what? We wouldn’t trade this adventure for anything else in the world.
             </Text>
@@ -187,7 +145,7 @@ const New_era = () => {
               While there are various software options available in the market, these software are not specifically tailored to address the unique needs of property development companies. That’s precisely why we have developed Veerge — a cutting-edge software designed exclusively for property development companies. Property development companies will forever remain the heart & soul of Veerge.
             </Text>
           </Box>
-          <Box ref={perksRef}>
+          <Box ref={what_isRef} id='what_is'>
             <Text mt='30px' fontWeight={600} fontSize={'36px'}>
               What is Veerge?
             </Text>
@@ -199,7 +157,7 @@ const New_era = () => {
               associated with running the company at that level.
             </Text>
           </Box>
-          <Box ref={how_doesRef}>
+          <Box ref={how_doesRef} id='how_does'>
             <Text mt='30px' fontWeight={600} fontSize={'36px'}>
               How does Veerge deliver these values effectively?
             </Text>

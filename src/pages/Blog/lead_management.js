@@ -7,20 +7,21 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import lead_management from '../../assets/images/blog/lead_management.png';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Lead_management = () => {
   const navigate = useNavigate();
-  const a_ticketRef = useRef(null);
-  const perksRef = useRef(null);
+  const overviewRef = useRef(null);
+  const benefitRef = useRef(null);
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
-  const perksCheck = useIsInViewport(perksRef)
+  const overviewCheck = useIsInViewport(overviewRef);
+  const benefitCheck = useIsInViewport(benefitRef)
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Overview' },
-    { check: perksCheck, id: 'perks', title: 'Benefits of this system' },
+    { check: overviewCheck, id: 'overview', title: 'Overview' },
+    { check: benefitCheck, id: 'benefit', title: 'Benefits of this system' },
   ]
 
 
@@ -95,66 +96,23 @@ const Lead_management = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' fontWeight={500} fontSize={'20px'} color='#000'>Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='10px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={overviewRef} id='overview'>
             <Text>
               Imagine diving into the fascinating world of leads in property development—it's like embarking on a multifaceted adventure. Small property development businesses often find themselves grappling with an array of manual methods, scattered spreadsheets, and a whirlwind of documents. These tools are meant to safeguard vital customer data and choreograph the intricate journey of leads, but here's the twist: they're not only vulnerable to occasional human hiccups but can also turn into major speed bumps, especially when you're trying to grow beyond your initial customer circle.
             </Text>
-            <Text mt='30px' ref={perksRef}>
+            <Text mt='30px'>
               Ah, the trusty spreadsheets—good enough for a few leads, right? But as your leads start doing their own version of multiplication, these tools fall short faster than a sprinter running a marathon. As your property portfolio blossoms, you need something that scales, something that doesn't just manage leads but seamlessly transforms them into devoted subscribers.
             </Text>
           </Box>
-          <Box ref={perksRef}>
+          <Box ref={benefitRef} id='benefit'>
             <Text mt='30px' fontWeight={600} fontSize={'20px'} color='#000'>
               Enter the star of the show: a scalable lead management system.
             </Text>

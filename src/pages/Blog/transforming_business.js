@@ -7,6 +7,7 @@ import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import { useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Transforming_business = () => {
@@ -19,7 +20,7 @@ const Transforming_business = () => {
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'A ticket system serves as an indispensable tool within the realm' },
+    { check: a_ticketCheck, id: 'a_ticket', title: 'A ticket system serves as an indispensable tool within the realm' },
     { check: perksCheck, id: 'perks', title: 'Perks of a Ticketing System' },
   ]
 
@@ -88,69 +89,26 @@ const Transforming_business = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' className="article_text">Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='6px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={a_ticketRef} id='a_ticket'>
             <Text>
               A Ticketing system on veerge is a central hub for managing various aspects of the operations of a development company, enabling them to navigate the complexities with heightened efficiency and precision. For firms that encompass a service component, the ticketing system takes on a crucial role in facilitating the orchestrated flow of tasks. From addressing customer inquiries about properties to resolving issues that may arise during construction or post-construction phases, the system ensures that every task is recorded, tracked, and effectively managed.
             </Text>
             <Text mt='30px'>
               One of the system's key benefits is its capacity to handle bottlenecks that might emerge during the property development lifecycle. Whether it's a delay in obtaining permits, a shortage of construction materials, or unexpected challenges during the building process, the ticketing system acts as a virtual control center, streamlining communication and coordination among various teams and departments. Moreover, as property development companies often engage with both external stakeholders (potential buyers, investors, regulatory bodies) and internal teams (architects, engineers, contractors), the ticketing system proves invaluable in managing interactions across these diverse fronts. It captures inquiries from potential buyers seeking information about properties, tracks the progress of construction-related tasks, and ensures that all parties involved are on the same page.
             </Text>
-            <Text mt='30px' ref={perksRef}>
+            <Text mt='30px'>
               In the fast-paced environment, the need for effective communication and task management is particularly pronounced. The ticketing system excels in this regard by providing a structured framework to handle customer inquiries, service requests, and project-related tasks. This structured approach prevents important matters from falling through the cracks and minimizes the risk of misunderstandings or missed deadlines. Without a doubt, the property development landscape can be characterized by sudden spikes in activity. For instance, upon the launch of a new property offering, a flood of inquiries might pour in. During such periods, the ticketing system becomes a critical asset, preventing overwhelming customer support teams and ensuring that every inquiry receives proper attention. While some property development companies might attempt to manage inquiries and tasks through email correspondence, this approach often proves inadequate. Emails lack the built-in functionalities that a ticketing system offers, such as detailed progress tracking, automated task assignment, and seamless collaboration among team members. The ticketing system's advanced capabilities significantly enhance the efficiency and effectiveness of managing property-related operations.
             </Text>
           </Box>
-          <Box ref={perksRef}>
+          <Box ref={perksRef} id='perks'>
             <Text mt='30px' fontWeight={600} fontSize={'36px'} color='#000'>
               Perks of a Ticketing System
             </Text>

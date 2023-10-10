@@ -7,26 +7,27 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import why_veerge from '../../assets/images/blog/why_veerge_instead.png';
 import { Link, useNavigate } from 'react-router-dom';
+import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Why_veerge = () => {
   const navigate = useNavigate();
-  const a_ticketRef = useRef(null);
+  const why_veergeRef = useRef(null);
   const ourMissionRef = useRef(null);
   const ourValueRef = useRef(null);
   const ourCultureRef = useRef(null);
 
-  const a_ticketCheck = useIsInViewport(a_ticketRef);
+  const why_veergeCheck = useIsInViewport(why_veergeRef);
   const ourMissionCheck = useIsInViewport(ourMissionRef)
   const ourValueCheck = useIsInViewport(ourValueRef)
   const ourCultureCheck = useIsInViewport(ourCultureRef)
 
 
   const articleContent = [
-    { check: a_ticketCheck, id: 'how_to', title: 'Why Veerge' },
-    { check: ourMissionCheck, id: 'how_to', title: 'Our Mission' },
-    { check: ourValueCheck, id: 'how_to', title: 'Our Value' },
-    { check: ourCultureCheck, id: 'how_to', title: 'Our Culture' },
+    { check: why_veergeCheck, id: 'why_veerge', title: 'Why Veerge' },
+    { check: ourMissionCheck, id: 'our_mission', title: 'Our Mission' },
+    { check: ourValueCheck, id: 'our_value', title: 'Our Value' },
+    { check: ourCultureCheck, id: 'our_culture', title: 'Our Culture' },
   ]
 
   return (
@@ -95,58 +96,15 @@ const Why_veerge = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'} position={'relative'}>
+      <Box px={'78px'}>
 
-        <Box
-          bg='#F9FAFB'
-          boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-          position={'absolute'}
-          overflowY={'scroll'} top='-100px'
-          w='100%' h='fit-content' maxW={'256px'}
-          p='32px 20px'
-          __css={{
-            '&::-webkit-scrollbar': {
-              w: '1',
-            },
-            '&::-webkit-scrollbar-track': {
-              w: '6',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              borderRadius: '10',
-              bg: `transparent`,
-            },
-          }}
-        >
-          {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' fontWeight={500} fontSize={'20px'} color='#000'>Table of Content</Text>
-          <Flex direction={'column'} align={'stretch'}>
-            {articleContent.map((content, i) => (
-              <Flex
-                w='full' my='10px'
-                key={i} cursor={'pointer'}
-                justify='space-between' align='flex-start'>
-                <Box w='5px' h='5px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#606060'} />
-                <Text
-                  w={'90%'}
-                  mt='-5px'
-                  fontSize={'14px'}
-                  fontWeight={content.check ? 500 : 400}
-                  color={content.check ? '#4545FE' : '#191919'}
-                >
-                  <a href={`#${content.id}`}>
-                    {content?.title}
-                  </a>
-                </Text>
-              </Flex>
-            ))}
-          </Flex>
-        </Box>
+        <BlogLeftNav articleContent={articleContent} />
 
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
         <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
-          <Box ref={a_ticketRef}>
+          <Box ref={why_veergeRef} id='why_veerge'>
             <Text fontWeight={600} fontSize={'36px'} color='#000'>
               WHY VEERGE?
             </Text>
@@ -173,7 +131,7 @@ const Why_veerge = () => {
               This service-oriented architecture (SOA) enables services to evolve independently, reducing side effects and fostering seamless integration within our technology. Veerge's technology comprises nearly 100 software services that work in harmony to provide functionalities like recommendations, fulfilment, and inventory tracking. For example, constructing a personalized detail page for a user on Matador seamlessly interacts with 200 to 300 services, resulting in a highly tailored experience for the customer.We do not sell software; rather, we embark on a collaborative journey with your company to navigate the future of technology. Currently, we have an all-star team, and it would be an absolute pleasure to serve you.
             </Text>
           </Box>
-          <Box ref={ourMissionRef} mt='30px'>
+          <Box ref={ourMissionRef} mt='30px' id='our_mission'>
             <Text fontWeight={600} fontSize={'36px'} color='#000'>
               Our Mission
             </Text>
@@ -193,7 +151,7 @@ const Why_veerge = () => {
               By aligning profitability with social consciousness, we aim to demonstrate that business success and societal well-being are not mutually exclusive. Our dedication to this balance is at the core of our values, guiding our decisions and actions as we work towards our mission of democratizing real estate for all.
             </Text>
           </Box>
-          <Box ref={ourValueRef} mt='30px'>
+          <Box ref={ourValueRef} mt='30px' id='our_value'>
             <Text fontWeight={600} fontSize={'36px'} color='#000'>
               Our Values
             </Text>
@@ -286,7 +244,7 @@ const Why_veerge = () => {
               </ListItem>
             </OrderedList>
           </Box>
-          <Box ref={ourCultureRef} mt='30px'>
+          <Box ref={ourCultureRef} mt='30px' id='our_culture'>
             <Text fontWeight={600} fontSize={'36px'} color='#000'>
               Our Culture
             </Text>
