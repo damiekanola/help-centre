@@ -35,6 +35,7 @@ import Fractional_ownership from "./pages/Blog/fractional_ownership";
 import New_era from "./pages/Blog/new_era";
 import Veerge_data from "./pages/Blog/veerge_data";
 import Why_veerge from "./pages/Blog/why_veerge";
+import { Usersexperience } from "./pages/Usersexperience/Usersexperience";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="/lead/send_an_offer" element={<SendAnOffer />} />
           <Route path="/lead/home_owners_packet" element={<HomeOwnersPacket />} />
           <Route path="/invite_team_members" element={<InviteTeamMembers />} />
+          <Route path="/users_experience" element={<Usersexperience />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/blog" element={<Blog />} />
