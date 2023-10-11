@@ -1,7 +1,9 @@
 import { Box, Center, Divider, Flex, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import comment from '../../assets/icons/comment-icon.svg';
+import comment_white from '../../assets/icons/comment-icon-white.svg';
 import veerge_support from '../../assets/icons/veerge_support.svg';
+import veerge_support_white from '../../assets/icons/veerge_support-white.svg';
 
 const QuestionsAndReplies = ({ questions, white }) => {
   const colors = ['#FF9103', '#1D6169', '#4545FE']
@@ -9,7 +11,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
     <Box pt="30px" id="questions">
       <Box border={white ? '0.3px solid #2E2E32' : '0.3px solid #CBCBCB'} bg={white ? '#0D0D0D' : '#F9F9F9'} borderRadius={'5px'}>
         <Flex align='center' gap='10px' px='15px' py='20px'>
-          <Image src={comment} />
+          {white ? <Image src={comment_white} /> : <Image src={comment} />}
           <Text>Questions and replies</Text>
         </Flex>
         <Divider w='full' />
@@ -42,9 +44,15 @@ const QuestionsAndReplies = ({ questions, white }) => {
                 <>
                   <Box mt='16px'>
                     <Flex gap='10px' align={'center'}>
-                      <Center borderRadius={'full'} bg='#000' w='38px' h='38px'>
-                        <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
-                      </Center>
+                      {white ? (
+                        <Center borderRadius={'full'} bg='#fff' w='38px' h='38px'>
+                          <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support_white} />
+                        </Center>
+                      ) : (
+                        <Center borderRadius={'full'} bg='#000' w='38px' h='38px'>
+                          <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
+                        </Center>
+                      )}
                       <VStack align={'stretch'} w='70%'>
                         <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontWeight={600}>
                           Veerge Support
