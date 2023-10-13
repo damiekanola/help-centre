@@ -62,6 +62,8 @@ export const Searchbar = () => {
         return 'Invite team members'
       case '/users_experience':
         return 'End to end experience'
+      case '/veerge_plus':
+        return 'Veerge plus'
       case "/blog":
       case "/blog/transforming_business":
       case "/blog/inventory":

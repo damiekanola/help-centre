@@ -36,6 +36,7 @@ import New_era from "./pages/Blog/new_era";
 import Veerge_data from "./pages/Blog/veerge_data";
 import Why_veerge from "./pages/Blog/why_veerge";
 import { Usersexperience } from "./pages/Usersexperience/Usersexperience";
+import { VeergePlus } from "./pages/VeergePlus/VeergePlus";
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
           <Route path="/blog/new_era" element={<New_era />} />
           <Route path="/blog/veerge_data" element={<Veerge_data />} />
           <Route path="/blog/why_veerge" element={<Why_veerge />} />
+          <Route path="/veerge_plus" element={<VeergePlus />} />
         </Routes>
       </div>
     </div>
