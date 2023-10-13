@@ -247,11 +247,11 @@ export const Usersexperience = () => {
               </video> */}
             </Box >
           </Text >
+          <Box w='60%' mx='auto'>
+            <QuestionsAndReplies white questions={questions} />
+          </Box>
         </Box >
 
-        <Box >
-          <QuestionsAndReplies white questions={questions} />
-        </Box>
 
         <Helpful white />
 
