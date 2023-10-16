@@ -12,7 +12,7 @@ export const Blog = () => {
   const readScollToRef = useRef();
 
   return (
-    <Box w='full' pt='250px' pb='50px'>
+    <Box w='full' pt='160px' pb='50px'>
       <Box w='85%' mx='auto'>
         <Flex borderBottom={'1px solid #CBCBCB'} w='full' px='19px' align={'center'} justify={'space-between'} mb='30px'>
           <Text fontSize={'36px'} fontWeight={600} mb='20px' color='#191919'>Most Read</Text>

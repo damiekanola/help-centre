@@ -1,5 +1,6 @@
 import {
   Flex,
+  Image,
   Input,
   Modal,
   ModalBody,
@@ -12,16 +13,20 @@ import {
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
-import { GrHomeRounded } from "react-icons/gr";
-import { MdSubdirectoryArrowLeft } from "react-icons/md";
-import { CiSearch } from "react-icons/ci";
+import { GrHome, GrHomeOption, GrHomeRounded } from "react-icons/gr";
+import { MdHome, MdSubdirectoryArrowLeft } from "react-icons/md";
+import { CiHome, CiSearch } from "react-icons/ci";
 import { searchData } from "./data";
 import "./Search.css";
+import home_svg from '../../assets/icons/home.svg'
+
 export const Searchbar = () => {
   const location = useLocation()
   const scrollBehavior = "inside";
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [query, setQuery] = useState("");
+
+  const isWHite = location.pathname === '/users_experience'
 
   const handleCurrentRoute = () => {
     switch (location.pathname) {
@@ -55,6 +60,29 @@ export const Searchbar = () => {
         return 'Home owners\'s packet'
       case '/invite_team_members':
         return 'Invite team members'
+      case '/users_experience':
+        return 'End to end experience'
+      case '/veerge_plus':
+        return 'Veerge plus'
+      case '/application_guide':
+        return 'What is the difference between Basic & Custom app ?'
+      case '/agent/portal':
+        return 'Veerge Premier Agent Portal'
+      case '/agent/process':
+        return 'Veerge Premier Agent Portal'
+      case "/blog":
+      case "/blog/transforming_business":
+      case "/blog/inventory":
+      case "/blog/revenue_recognition":
+      case "/blog/lead_management":
+      case "/blog/a_letter":
+      case "/blog/understanding_fraction":
+      case "/blog/smart_payment":
+      case "/blog/fractional_ownership":
+      case "/blog/new_era":
+      case "/blog/veerge_data":
+      case "/blog/why_veerge":
+        return 'Blog'
 
       default:
         return 'Help Centre';
@@ -74,20 +102,21 @@ export const Searchbar = () => {
           position="fixed"
           top="82px"
           zIndex="1"
-          bg="#ffffff"
+          bg={isWHite ? "#0D0D0D" : "#ffffff"}
+          borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
             <Link to="/">
-              <GrHomeRounded />
+              {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
             </Link>{" "}
-            <SlArrowRight />
+            <SlArrowRight color={isWHite ? "#fff" : "#0D0D0D"} />
             <Link
               to="/"
               style={{
                 textDecoration: "none",
                 href: "fisrt_time_setup",
-                color: "#5D5FEF",
+                color: isWHite ? "#fff" : "#5D5FEF",
                 fontStyle: "normal",
                 fontWeight: "400",
                 fontSize: "14px",
@@ -103,7 +132,7 @@ export const Searchbar = () => {
               align="center"
               maxW="300px"
               h="43px"
-              bg="#F5F5F5"
+              bg="transparent"
               border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
               px="10px"
@@ -122,7 +151,7 @@ export const Searchbar = () => {
                   border: "none",
                 }}
               /> */}
-              <CiSearch style={{ width: "25px", height: "25px" }} />
+              <CiSearch color={isWHite ? "#fff" : "#0D0D0D"} style={{ width: "25px", height: "25px" }} />
             </Flex>
           </form>
           <Modal

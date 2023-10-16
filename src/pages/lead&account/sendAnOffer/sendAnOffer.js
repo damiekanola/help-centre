@@ -11,8 +11,9 @@ import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 import LeadRightNav from "../../../components/Lead/RightNav";
+import HideLeadUnsubscribed from "../../../hoc/HidefullLead";
 
-export const SendAnOffer = () => {
+const SendAnOffer = () => {
 
   const how_toRef = useRef(null)
   const stepsRef = useRef(null)
@@ -149,3 +150,5 @@ export const SendAnOffer = () => {
     </div>
   );
 };
+
+export default HideLeadUnsubscribed(SendAnOffer)

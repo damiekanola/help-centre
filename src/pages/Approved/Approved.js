@@ -9,6 +9,7 @@ import daniel from '../../assets/images/daniel.svg'
 import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
 import Helpful from "../../components/Faq/Helpful";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
+import { Link } from "react-router-dom";
 
 const Approved = () => {
   const toast = useToast();
@@ -216,15 +217,17 @@ const Approved = () => {
           <Text className="content">
             <Text as='p' marginTop="20px">
               Gather the whole ensemble – extend invitations to team members spanning every echelon, from directors and sales personnel to marketing experts. Precision is key: ensure you meticulously assign relevant roles to each invitee. And if, by chance, the role you seek isn't within our predefined options, rest assured there's a solution if you are an esteemed
-              <Text color='#4545FE' as='span'> Veerge Plus subscriber</Text>, you possess the privilege of tailored role customization. A simple liaison with our support team opens the door to this possibility.
+              <Link to='/veerge_plus'>
+                <Text color='#4545FE' as='span'> Veerge Plus subscriber</Text>
+              </Link>, you possess the privilege of tailored role customization. A simple liaison with our support team opens the door to this possibility.
             </Text>
             <Text as='p' marginTop="20px">
               Roles aren't just labels; they're gateways to distinct views. Each role unlocks a unique view sculpted to align with their respective responsibilities. We've ingrained role-based access control into our core, meticulously shaping it to cater to the separation of concerns
             </Text>
             <Text as='p' marginTop="20px">
               Having journeyed through these four steps, your Veerge experience is now in full bloom, primed to fuel your property development journey. Should you find yourself in need of any assistance along this path, please don't hesitate to reach out to our dedicated
-              <Text color='#4545FE' as='span'> support</Text>. We're here to ensure your Journey with Veerge is seamless and successful. Your success is our priority, and our
-              <Text color='#4545FE' as='span'> support</Text> team is eager to guide you every step of the way.
+              <a href='/'><Text color='#4545FE' as='span'> support</Text></a>. We're here to ensure your Journey with Veerge is seamless and successful. Your success is our priority, and our
+              <a href='/'><Text color='#4545FE' as='span'> support</Text></a> team is eager to guide you every step of the way.
             </Text>
           </Text>
         </Box>

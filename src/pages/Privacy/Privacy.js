@@ -40,7 +40,6 @@ export const Privacy = () => {
 
   const headStyle = {
     minHeight: '30px',
-    fontFamily: 'euclid',
     fontStyle: 'normal',
     fontWeight: '600',
     fontSize: '16px',

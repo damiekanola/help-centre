@@ -6,6 +6,7 @@ import creatingAn from '../assets/images/home/creating_an_account.png'
 import invitingTeam from '../assets/images/home/inviting_team.png'
 import webApplication from '../assets/images/home/web_application.png'
 import tickets from '../assets/images/home/tickets.png'
+import veergePlus from '../assets/images/home/veerge_plus.png'
 
 const data = [
     {
@@ -64,7 +65,7 @@ const data = [
     },
     {
         img: webApplication,
-        title: 'WEB APPLICATION SET-UP',
+        title: 'END-TO-END EXPERIENCE',
         color: 'white',
         tag: 'Intermediate',
         readTime: '5 mins read',
@@ -79,6 +80,24 @@ const data = [
         readTime: '5 mins read',
         datePosted: 'Jul 20,2023',
         path: '/ticketing'
+    },
+    {
+        img: veergePlus,
+        title: 'VEERGE PLUS',
+        color: 'black',
+        tag: 'Intermediate',
+        readTime: '5 mins read',
+        datePosted: 'Jul 20,2023',
+        path: '/veerge_plus'
+    },
+    {
+        img: introToVeerge,
+        title: 'AGENT GUIDE',
+        color: 'black',
+        tag: 'Intermediate',
+        readTime: '6 mins read',
+        datePosted: 'Jul 20,2023',
+        path: '/agent/portal'
     },
 ]
 

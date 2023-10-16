@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Text, Image, Flex, useToast, Show, VStack } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import file from "../../../assets/icons/file.png";
 import createLead1 from '../../../assets/images/create-lead/create-lead-account-1.png';
 import createLead2 from '../../../assets/images/create-lead/create-lead-account-2.png';
@@ -26,8 +26,11 @@ import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 import LeadRightNav from "../../../components/Lead/RightNav";
+import Blocker from "../../../components/blocker";
 
 export const CreateLeadAccount = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const toView = searchParams.get('isrestricted') === 'true'
 
   const how_toRef = useRef(null)
   const stepsRef = useRef(null)
@@ -61,217 +64,208 @@ export const CreateLeadAccount = () => {
     <div className="main">
       <LeftNav articleContent={articleContent} />
       <LeadRightNav />
-      <Text className="head_">Create aN ACCOUNT</Text>
-      <Text className="publish">Published: November 24, 2022</Text>
-      <Box id="how_to" ref={how_toRef}>
-        <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
-            Lead management serves as the cornerstone of the sales process, providing the crucial framework for nurturing potential leads aligned with your target audience. Guiding these prospects through the various stages of the lead lifecycle demands a systematic approach, characterized by swift follow-ups, meticulous segmentation, and the precise delegation of leads to the appropriate sales representatives. The essence lies in maintaining impeccably timed interactions that resonate with the lead's journey.
-          </Text>
-          <Text as='p' marginTop="20px">
-            Typically, the majority of leads poised on the brink of conversion will comprise individuals who have registered on your platform, be it through mobile or web applications. Nevertheless, there will be instances where leads are acquired externally and require manual entry.
-          </Text>
-          <Text as='p' marginTop="20px">
-            In such cases, the following procedural steps are indispensable:
-          </Text>
-        </Text>
-      </Box>
-      <Box id="steps" ref={stepsRef}>
-        <Box>
-          <Text className="content_head">STEP 1</Text>
-          <Text className="content">
-            Begin by navigating to the designated "Users" section within the system
-          </Text>
-
-          <Image src={createLead1} mt="30px" mx="auto" w='full' />
-        </Box>
-        <Box>
-          <Text className="content_head" mt="30px">
-            STEP 2
-          </Text>
-          <Text className="content">
-            Initiate the lead logging process by selecting the "Create Account" option.
-          </Text>
-
-          <Image src={createLead2} mt="30px" mx="auto" w='full' />
-        </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 3
-          </Text>
-          <Text className="content">
-            Populate the requisite lead information fields with accurate data
-          </Text>
-          <Image src={createLead3} mt="30px" mx="auto" w='full' />
-        </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 4
-          </Text>
-          <Text className="content">
-            Enhance the lead's profile by appending relevant supplementary details or notes.
-          </Text>
-
-          <Image src={createLead4} mt="30px" mx="auto" w='full' />
-        </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 5
-          </Text>
-          <Text className="content">
-            Confirm the lead account's creation by clicking "Create Lead Account."
-          </Text>
-
-          {/* <Image src={createLead5} mt="30px" mx="auto" w='full' /> */}
-        </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 6
-          </Text>
-          <Text className="content">
-            Conclude the process, ensuring meticulous recording of the lead's particulars and associated notes.
-          </Text>
-          {/* <Image src={createLead6} mt="30px" mx="auto" w='full' /> */}
-          <Text className="content">
-            In parallel scenarios where clients make property purchases external to the
-            application, the onboarding process presents distinct requirements. One
-            frequent scenario involves new entrants to the Veerge platform, particularly
-            property development firms aiming to integrate their existing clientele. For such
-            scenarios, a specialized set of steps is vital:
+      <Box position={'relative'}>
+        <Text className="head_">Create aN ACCOUNT</Text>
+        <Text className="publish">Published: November 24, 2022</Text>
+        <Box id="how_to" ref={how_toRef}>
+          <Text className="content" lineHeight={'25px'}>
+            <Text as='p'>
+              Lead management serves as the cornerstone of the sales process, providing the crucial framework for nurturing potential leads aligned with your target audience. Guiding these prospects through the various stages of the lead lifecycle demands a systematic approach, characterized by swift follow-ups, meticulous segmentation, and the precise delegation of leads to the appropriate sales representatives. The essence lies in maintaining impeccably timed interactions that resonate with the lead's journey.
+            </Text>
+            <Text as='p' marginTop="20px">
+              Typically, the majority of leads poised on the brink of conversion will comprise individuals who have registered on your platform, be it through mobile or web applications. Nevertheless, there will be instances where leads are acquired externally and require manual entry.
+            </Text>
+            <Text as='p' marginTop="20px">
+              In such cases, the following procedural steps are indispensable:
+            </Text>
           </Text>
         </Box>
 
 
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 1
-          </Text>
-          <Text className="content">
-            Commence by accessing the user management interface.
-          </Text>
-          <Image src={createLeadS1} mt="30px" mx="auto" w='full' />
+        <Box id="steps" ref={stepsRef}>
+          <Box>
+            <Text className="content_head">STEP 1</Text>
+            <Text className="content">
+              Begin by navigating to the designated "Users" section within the system
+            </Text>
+
+            <Image src={createLead1} mt="30px" mx="auto" w='full' />
+          </Box>
+          <Box display={toView ? 'block' : 'none'}>
+            <Box>
+              <Text className="content_head" mt="30px">
+                STEP 2
+              </Text>
+              <Text className="content">
+                Initiate the lead logging process by selecting the "Create Account" option.
+              </Text>
+
+              <Image src={createLead2} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 3
+              </Text>
+              <Text className="content">
+                Populate the requisite lead information fields with accurate data
+              </Text>
+              <Image src={createLead3} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 4
+              </Text>
+              <Text className="content">
+                Enhance the lead's profile by appending relevant supplementary details or notes.
+              </Text>
+
+              <Image src={createLead4} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 5
+              </Text>
+              <Text className="content">
+                Confirm the lead account's creation by clicking "Create Lead Account."
+              </Text>
+
+              {/* <Image src={createLead5} mt="30px" mx="auto" w='full' /> */}
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 6
+              </Text>
+              <Text className="content">
+                Conclude the process, ensuring meticulous recording of the lead's particulars and associated notes.
+              </Text>
+              {/* <Image src={createLead6} mt="30px" mx="auto" w='full' /> */}
+              <Text className="content">
+                In parallel scenarios where clients make property purchases external to the
+                application, the onboarding process presents distinct requirements. One
+                frequent scenario involves new entrants to the Veerge platform, particularly
+                property development firms aiming to integrate their existing clientele. For such
+                scenarios, a specialized set of steps is vital:
+              </Text>
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 1
+              </Text>
+              <Text className="content">
+                Commence by accessing the user management interface.
+              </Text>
+              <Image src={createLeadS1} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 2
+              </Text>
+              <Text className="content">
+                Activate the account creation procedure by selecting the "Create Account" option
+              </Text>
+              <Image src={createLeadS2} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 3
+              </Text>
+              <Text className="content">
+                Populate essential fields, encompassing name, phone number, and optionally, a profile picture. Ensure the accuracy of the provided email.
+              </Text>
+              <Image src={createLeadS3} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 4
+              </Text>
+              <Text className="content">
+                Progress to the property assignment phase by clicking on "Assign Property."
+              </Text>
+              <Image src={createLeadS4} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 5
+              </Text>
+              <Text className="content">
+                Identify the relevant listing and unit to be allocated to the user
+              </Text>
+              <Image src={createLeadS5} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 6
+              </Text>
+              <Text className="content">
+                Detail the transaction specifics, discerning between outright payments and payment plans. For outright payments, input a single transaction on the day of completion. For payment plans, record each instalment individually, including the
+                initial deposit and subsequent payments.
+              </Text>
+              <Image src={createLeadS6} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 7
+              </Text>
+              <Text className="content">
+                Account for pending payments by enumerating due dates and corresponding amounts.
+              </Text>
+              <Image src={createLeadS7} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 8
+              </Text>
+              <Text className="content">
+                Attach the purchase agreement to the account, solidifying the transaction.
+              </Text>
+              <Image src={createLeadS8} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 9
+              </Text>
+              <Text className="content">
+                If the account owner possesses multiple properties, append further units as necessary.
+              </Text>
+              <Image src={createLeadS9} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 10
+              </Text>
+              <Text className="content">
+                Execute the allocation phase, aligning specific units with the respective account holder.
+              </Text>
+              <Image src={createLeadS10} mt="30px" mx="auto" w='full' />
+            </Box>
+            <Box>
+              <Text className="content_head" mt="40px">
+                STEP 11
+              </Text>
+              <Text className="content">
+                Finalize the process, culminating in the successful assignment of units and completion of the transaction.
+              </Text>
+              <Image src={createLeadS11} mt="30px" mx="auto" w='full' />
+              <Text className="content">
+                In both lead management and property acquisition scenarios, meticulous
+                attention to detail and adherence to the prescribed steps are imperative for
+                ensuring accuracy, enhancing user experience, and optimizing sales efficacy
+              </Text>
+            </Box>
+
+          </Box>
         </Box>
 
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 2
-          </Text>
-          <Text className="content">
-            Activate the account creation procedure by selecting the "Create Account" option
-          </Text>
-          <Image src={createLeadS2} mt="30px" mx="auto" w='full' />
+        <Box display={toView ? 'block' : 'none'}>
+          <Box id='questions' ref={questionsRef}>
+            <QuestionsAndReplies questions={questions} />
+          </Box>
+          <Helpful />
         </Box>
 
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 3
-          </Text>
-          <Text className="content">
-            Populate essential fields, encompassing name, phone number, and optionally, a profile picture. Ensure the accuracy of the provided email.
-          </Text>
-          <Image src={createLeadS3} mt="30px" mx="auto" w='full' />
-        </Box>
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 4
-          </Text>
-          <Text className="content">
-            Progress to the property assignment phase by clicking on "Assign Property."
-          </Text>
-          <Image src={createLeadS4} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 5
-          </Text>
-          <Text className="content">
-            Identify the relevant listing and unit to be allocated to the user
-          </Text>
-          <Image src={createLeadS5} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 6
-          </Text>
-          <Text className="content">
-            Detail the transaction specifics, discerning between outright payments and payment plans. For outright payments, input a single transaction on the day of completion. For payment plans, record each instalment individually, including the
-            initial deposit and subsequent payments.
-          </Text>
-          <Image src={createLeadS6} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 7
-          </Text>
-          <Text className="content">
-            Account for pending payments by enumerating due dates and corresponding amounts.
-          </Text>
-          <Image src={createLeadS7} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 8
-          </Text>
-          <Text className="content">
-            Attach the purchase agreement to the account, solidifying the transaction.
-          </Text>
-          <Image src={createLeadS8} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 9
-          </Text>
-          <Text className="content">
-            If the account owner possesses multiple properties, append further units as necessary.
-          </Text>
-          <Image src={createLeadS9} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 10
-          </Text>
-          <Text className="content">
-            Execute the allocation phase, aligning specific units with the respective account holder.
-          </Text>
-          <Image src={createLeadS10} mt="30px" mx="auto" w='full' />
-        </Box>
-
-
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 11
-          </Text>
-          <Text className="content">
-            Finalize the process, culminating in the successful assignment of units and completion of the transaction.
-          </Text>
-          <Image src={createLeadS11} mt="30px" mx="auto" w='full' />
-          <Text className="content">
-            In both lead management and property acquisition scenarios, meticulous
-            attention to detail and adherence to the prescribed steps are imperative for
-            ensuring accuracy, enhancing user experience, and optimizing sales efficacy
-          </Text>
-        </Box>
-
+        {!toView && <Blocker />}
       </Box>
 
-      <Box id='questions' ref={questionsRef}>
-        <QuestionsAndReplies questions={questions} />
-      </Box>
-
-      <Helpful />
     </div>
   );
 };

@@ -8,8 +8,9 @@ import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 import LeadRightNav from "../../../components/Lead/RightNav";
+import HideLeadUnsubscribed from "../../../hoc/HidefullLead";
 
-export const HomeOwnersPacket = () => {
+const HomeOwnersPacket = () => {
 
   const how_toRef = useRef(null)
   const stepsRef = useRef(null)
@@ -248,3 +249,5 @@ export const HomeOwnersPacket = () => {
     </div>
   );
 };
+
+export default HideLeadUnsubscribed(HomeOwnersPacket)

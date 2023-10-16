@@ -424,7 +424,9 @@ const Createlisting = () => {
                 The subsequent step will involve creating allocations specific to this listing.
               </Text>
 
-              <Text mt='20px' cursor={'pointer'} color='#4545FE'>How to create an allocation</Text>
+              <Link to='/listings/create_unit'>
+                <Text mt='20px' cursor={'pointer'} color='#4545FE'>How to create an allocation</Text>
+              </Link>
 
             </Text>
           </Box>
