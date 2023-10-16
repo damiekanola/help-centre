@@ -1,11 +1,47 @@
 @font-face {
+  font-family: euclid-light;
+  src: url(assets/fonts/Euclid\ Circular\ B\ Light.ttf);
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: euclid-medium;
+  src: url(assets/fonts/Euclid\ Circular\ B\ Medium.ttf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: euclid-semibold;
+  src: url(assets/fonts/Euclid\ Circular\ B\ SemiBold.ttf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: euclid-bold;
+  src: url(assets/fonts/Euclid\ Circular\ B\ Bold.ttf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;
-  font-family: euclid;
+  font-family: euclid-medium, euclid-light, euclid, euclid-semibold, euclid-bold;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
@@ -14,15 +50,6 @@ body {
   scroll-behavior: smooth !important;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: euclid;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

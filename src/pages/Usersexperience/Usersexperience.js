@@ -17,6 +17,7 @@ import { Box, Text } from "@chakra-ui/react";
 // import end15 from "../../assets/videos/endtoend15.mov";
 import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
 import Helpful from "../../components/Faq/Helpful";
+import { Link } from "react-router-dom";
 
 export const Usersexperience = () => {
 
@@ -50,15 +51,6 @@ export const Usersexperience = () => {
           marginTop: '70px'
         }}
       >
-        {/* 
-        max-width: 621px;
-        font-family: euclid;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 160%;
-        color: #191919; */}
-
         <Box mx='auto' w='95%' >
           <Text color='#FFF' lineHeight={'25px'}>
             <Box w='60%' mx='auto'>
@@ -122,7 +114,8 @@ export const Usersexperience = () => {
                 <source src={end5} />
               </video> */}
               <Text as='p' fontWeight={300} mt='30px'>
-                All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating <Text color='#56C3CE' as='span'>a dedicated ticket.</Text>
+                All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
+                <Text color='#56C3CE' as='span'>a dedicated ticket.</Text>
               </Text>
               {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
                 <source src={end6} />
@@ -222,9 +215,11 @@ export const Usersexperience = () => {
               {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
                 <source src={end13} />
               </video> */}
-              <Text as='p' fontWeight={300} mt='60px' color='#56C3CE' cursor={'pointer'}>
-                Click here to read more about Fractional Real Estate
-              </Text>
+              <Link to='/listings/fractionalize_asset'>
+                <Text as='p' fontWeight={300} mt='60px' color='#56C3CE' cursor={'pointer'}>
+                  Click here to read more about Fractional Real Estate
+                </Text>
+              </Link>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>

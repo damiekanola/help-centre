@@ -18,8 +18,8 @@ import { Show } from "@chakra-ui/react";
 import Approved from "./pages/Approved/Approved";
 import { Ticketing } from "./pages/Ticketing/Ticketing";
 import { CreateLeadAccount } from "./pages/lead&account/Createaccount/Createaccount";
-import { SendAnOffer } from "./pages/lead&account/sendAnOffer/sendAnOffer";
-import { HomeOwnersPacket } from "./pages/lead&account/HomeOwnersPacket/HomeOwnersPacket";
+import SendAnOffer from "./pages/lead&account/sendAnOffer/sendAnOffer";
+import HomeOwnersPacket from "./pages/lead&account/HomeOwnersPacket/HomeOwnersPacket";
 import { InviteTeamMembers } from "./pages/InviteTeamMembers/InviteTeamMembers";
 import { Terms } from "./pages/Terms/Terms";
 import { Privacy } from "./pages/Privacy/Privacy";
@@ -37,6 +37,9 @@ import Veerge_data from "./pages/Blog/veerge_data";
 import Why_veerge from "./pages/Blog/why_veerge";
 import { Usersexperience } from "./pages/Usersexperience/Usersexperience";
 import { VeergePlus } from "./pages/VeergePlus/VeergePlus";
+import { AgentPortal } from "./pages/Agents/Portal/portal";
+import { AgentProcess } from "./pages/Agents/AgentProcess/AgentProcess";
+import { ApplicationGuide } from "./pages/ApplicationGuide/ApplicationGuide";
 
 function App() {
   return (
@@ -63,6 +66,8 @@ function App() {
           <Route path="/lead/create_account" element={<CreateLeadAccount />} />
           <Route path="/lead/send_an_offer" element={<SendAnOffer />} />
           <Route path="/lead/home_owners_packet" element={<HomeOwnersPacket />} />
+          <Route path="/agent/portal" element={<AgentPortal />} />
+          <Route path="/agent/process" element={<AgentProcess />} />
           <Route path="/invite_team_members" element={<InviteTeamMembers />} />
           <Route path="/users_experience" element={<Usersexperience />} />
           <Route path="/terms" element={<Terms />} />
@@ -80,6 +85,7 @@ function App() {
           <Route path="/blog/veerge_data" element={<Veerge_data />} />
           <Route path="/blog/why_veerge" element={<Why_veerge />} />
           <Route path="/veerge_plus" element={<VeergePlus />} />
+          <Route path="/application_guide" element={<ApplicationGuide />} />
         </Routes>
       </div>
     </div>

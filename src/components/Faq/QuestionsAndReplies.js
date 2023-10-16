@@ -25,7 +25,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
                   {question?.name[0]}
                 </Center>
               )}
-              <VStack align={'stretch'} w='70%'>
+              <VStack align={'stretch'} w='70%' spacing={'2px'}>
                 <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontWeight={600}>
                   {question?.name}
                 </Text>
@@ -37,8 +37,8 @@ const QuestionsAndReplies = ({ questions, white }) => {
             <Text mt='17px' fontSize={'12px'} color={'#191919'}>{question?.content}</Text>
             <Box
               mt='22px' ml={white ? '0px' : '15px'}
-              p={white && '9.469px 7.575px 0px 13.256px'}
-              bg={white && '#171717'} borderRadius={white && ' 7.575px'}
+              p={'9.469px 7.575px 0px 13.256px'}
+              bg={white ? '#171717' : '#F5F5F5'} borderRadius={white && ' 7.575px'}
             >
               {question?.replies?.map(reply => (
                 <>
@@ -53,7 +53,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
                           <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
                         </Center>
                       )}
-                      <VStack align={'stretch'} w='70%'>
+                      <VStack align={'stretch'} w='70%' spacing={'2px'}>
                         <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontWeight={600}>
                           Veerge Support
                         </Text>
@@ -70,7 +70,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
           </Box>
         ))}
       </Box>
-    </Box>
+    </Box >
   )
 }
 

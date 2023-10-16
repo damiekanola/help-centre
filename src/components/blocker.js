@@ -6,9 +6,10 @@ const Blocker = () => {
   return (
     <Box
       maxH='463px' h='75vh' pt='100px'
-      pb='30px' w='full'
+      pb='30px' w='120%'
       bg='linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, #FFF 29.25%)'
       position={'absolute'} bottom={'0px'}
+      left='-70px'
     >
       <Flex direction={'column'} justify={'space-between'} align={'center'} mx='auto' w='60%' h='full'>
         <Flex direction={'column'} gap='15px' align={'center'}>

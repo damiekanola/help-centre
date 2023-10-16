@@ -64,6 +64,12 @@ export const Searchbar = () => {
         return 'End to end experience'
       case '/veerge_plus':
         return 'Veerge plus'
+      case '/application_guide':
+        return 'What is the difference between Basic & Custom app ?'
+      case '/agent/portal':
+        return 'Veerge Premier Agent Portal'
+      case '/agent/process':
+        return 'Veerge Premier Agent Portal'
       case "/blog":
       case "/blog/transforming_business":
       case "/blog/inventory":

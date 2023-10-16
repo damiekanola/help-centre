@@ -90,6 +90,15 @@ const data = [
         datePosted: 'Jul 20,2023',
         path: '/veerge_plus'
     },
+    {
+        img: introToVeerge,
+        title: 'AGENT GUIDE',
+        color: 'black',
+        tag: 'Intermediate',
+        readTime: '6 mins read',
+        datePosted: 'Jul 20,2023',
+        path: '/agent/portal'
+    },
 ]
 
 export default data;

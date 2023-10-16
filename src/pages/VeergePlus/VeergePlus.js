@@ -7,6 +7,7 @@ import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 // import LeadRightNav from "../../components/Lead/RightNav";
 import veergePlus1 from '../../assets/images/veerge_plus1.png';
 import infoIcon from '../../assets/icons/info.svg'
+import { Link } from "react-router-dom";
 
 export const VeergePlus = () => {
 
@@ -58,7 +59,7 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Personalize More, Retain More, Move Fast, Never Stop
           </Text>
-          <Text mt='20px' as='p' fontWeight={500}>
+          <Text mt='20px' as='p' fontWeight={400}>
             Veerge Plus is the ultimate real estate cloud-based infrastructure designed to help you reach more potential buyers, convert and retain them, and scale your business rapidly.
           </Text>
         </Box>
@@ -66,7 +67,7 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Optimized for Performance
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             With Veerge Plus, you can move fast and innovate even faster. Stay ahead of the competition by being the first to market with new features and responding to shifting trends in real time. Veerge Plus provides you with an entire ecosystem of apps and services that support your growth.
           </Text>
         </Box>
@@ -74,7 +75,7 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Migrate and Launch with Ease
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             Launching your application store on Veerge is a breeze. The platform is customizable and user-friendly, allowing you to migrate and launch your app quickly. Ship new campaigns, channels, customizations, and experiments at a rapid pace, and iterate daily to stay ahead. Automate repetitive and high-performing workflows across your systems and create tailored solutions for your business through the specialized app and partner ecosystem.
           </Text>
         </Box>
@@ -82,7 +83,7 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Built-In Security and Insights
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             Veerge Plus prioritizes security, compliance, data encryption, fraud protection, and bot protection. Rest assured that your business and customer data will always be secure. Gain holistic data and insights with detailed reporting across all channels, empowering you to make data-driven decisions. Additionally, enjoy an impressive average uptime of 99.98% across channels.
           </Text>
         </Box>
@@ -90,7 +91,7 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Committed to Support
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             We believe in providing exceptional support to our users.
             <UnorderedList>
               <ListItem>
@@ -113,36 +114,38 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Channels
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             Veerge offers multiple channels to enhance your real estate business:
-            <OrderedList mt='30px'>
-              <ListItem>
+            <OrderedList>
+              <ListItem mt='30px'>
                 <b>Veerge Portal:</b> A user-friendly web portal where you can manage all your business operations. It provides a comprehensive overview of your revenue, an advanced inventory management system, and a leads management system. The Veerge Portal serves as the infrastructure to balance day-to-day business activities with long-term business strategies.
               </ListItem>
-              <ListItem>
+              <ListItem mt='30px'>
                 <b>Agent Portal:</b> A dedicated platform designed specifically for agents. It allows them to track leads, manage client interactions, and streamline their real estate operations. Additionally, agents can use the Agent Portal to track commissions earned.
               </ListItem>
-              <ListItem>
+              <ListItem mt='30px'>
                 <b>Mobile App:</b> Veerge's mobile app acts as a bridge between your offerings and your customers' expectations. It serves as a convergence point where buyers and offerings seamlessly coexist. The mobile app provides a personalized experience tailored to each buyer's unique needs throughout their home ownership journey.
               </ListItem>
             </OrderedList>
           </Text>
-          <Image mt='30px' src={veergePlus1} w='full' />
-          <Text mt='20px' cursor={'pointer'} color='#4545FE'>Click here to read more</Text>
+          <Image mt='50px' src={veergePlus1} w='full' />
+          <Link to='/'>
+            <Text mt='20px' cursor={'pointer'} color='#4545FE'>Click here to read more</Text>
+          </Link>
         </Box>
 
         <Box mb='50px' id="pricing" ref={pricingRef}>
           <Text fontSize={'24px'} fontWeight={600}>
             Pricing and Cost Breakdown
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             Veerge offers various pricing options to cater to different business needs and budgets. Here's a breakdown of the costs:
 
             <OrderedList mt='30px'>
               <ListItem>
                 <Text><b>Mobile App Theme and Integration Cost: </b></Text>
                 <Text>
-                  This cost covers the theme of the mobile app and its integration. The total cost is $7,200.00, which is a one-time fee. However, Veerge provides discounts for payment plans. You can avail a 5% discount by making two payments, or a 10% discount for an upfront payment. If paid monthly, the cost will be $600 per month for a year.
+                  This cost covers the theme of the mobile app and its integration. The total cost is <b>$7,200.</b>00, which is a one-time fee. However, Veerge provides discounts for payment plans. You can avail a 5% discount by making two payments, or a 10% discount for an upfront payment. If paid monthly, the cost will be $600 per month for a year.
                 </Text>
               </ListItem>
             </OrderedList>
@@ -153,14 +156,16 @@ export const VeergePlus = () => {
                 Theme fee is a one time payment,
               </Text>
             </Flex>
-            <Text color='#4545FE' cursor={'pointer'}>Click here to read more on themes</Text>
+            <Link to='/'>
+              <Text color='#4545FE' cursor={'pointer'}>Click here to read more on themes</Text>
+            </Link>
             <Text mt='30px'><b>1. Subscription:</b></Text>
             <UnorderedList pl='10px'>
               <ListItem>
                 <b>Tier 1:</b> The basic subscription tier costs <b>$750.00</b>. It provides all the necessary technical resources to support your real estate business operations. This tier includes ongoing support, updates for the Veerge Portal and Agent Portal, and 24/7 technical assistance to ensure smooth functioning.
               </ListItem>
               <ListItem mt='20px'>
-                <b>Tier 2:</b> Priced at <b> $900.00</b>, Tier 2 includes everything in Tier 1, along with updates for the licensed mobile app theme. Whenever a new feature or design enhancement is released for the mobile app, it is immediately integrated. Tier 2 also offers load balancers, multi-region architecture, autoscaling, fully dedicated support, and insights for expansion opportunities. It supports unlimited staff accounts without additional costs.
+                <b>Tier 2:</b> Priced at <b> $900.</b>00, Tier 2 includes everything in Tier 1, along with updates for the licensed mobile app theme. Whenever a new feature or design enhancement is released for the mobile app, it is immediately integrated. Tier 2 also offers load balancers, multi-region architecture, autoscaling, fully dedicated support, and insights for expansion opportunities. It supports unlimited staff accounts without additional costs.
                 <Text mt='20px'>
                   Note: Tier 1 already covers updates and new features for the Veerge Portal and Agent Portal, while Tier 2 covers updates specifically for the licensed mobile app theme.
                 </Text>
@@ -204,13 +209,13 @@ export const VeergePlus = () => {
           <Text fontSize={'24px'} fontWeight={600}>
             Getting started with Veerge
           </Text>
-          <Text as='p' fontWeight={500}>
+          <Text as='p' fontWeight={400}>
             Getting started with Veerge is simple and straightforward. Follow these steps to begin your journey:
             <OrderedList>
               <ListItem mt='30px'>
                 <Text><b>Sign up for a Free Trial: </b></Text>
                 <Text>
-                  Visit <Text color='#4545FE' cursor={'pointer'}>veerge.myxellia.io</Text> and register for a free trial. This will grant you access to the platform, enabling you to test the application, make design decisions, and explore its features. It's an opportunity to familiarize yourself with Veerge before committing to an active monthly plan.
+                  Visit <a href='https://veerge.myxellia.io'><Text color='#4545FE' cursor={'pointer'}>veerge.myxellia.io</Text></a> and register for a free trial. This will grant you access to the platform, enabling you to test the application, make design decisions, and explore its features. It's an opportunity to familiarize yourself with Veerge before committing to an active monthly plan.
                 </Text>
               </ListItem>
               <ListItem mt='30px'>
