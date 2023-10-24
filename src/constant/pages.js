@@ -7,6 +7,8 @@ import invitingTeam from '../assets/images/home/inviting_team.png'
 import webApplication from '../assets/images/home/web_application.png'
 import tickets from '../assets/images/home/tickets.png'
 import veergePlus from '../assets/images/home/veerge_plus.png'
+import protectedImg from '../assets/images/home/protected.png'
+import themes from '../assets/images/home/themes.png'
 
 const data = [
     {
@@ -91,13 +93,22 @@ const data = [
         path: '/veerge_plus'
     },
     {
-        img: introToVeerge,
-        title: 'AGENT GUIDE',
+        img: themes,
+        title: 'VEERGE THEMES',
         color: 'black',
         tag: 'Intermediate',
         readTime: '6 mins read',
-        datePosted: 'Jul 20,2023',
-        path: '/agent/portal'
+        datePosted: 'Aug 12, 2023',
+        path: '/'
+    },
+    {
+        img: protectedImg,
+        title: 'HOW ARE YOU PROTECTED',
+        color: 'black',
+        tag: 'Intermediate',
+        readTime: '6 mins read',
+        datePosted: 'Sep 29, 2023',
+        path: '/'
     },
 ]
 

@@ -8,29 +8,29 @@
   }
 
   .head_ {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
-    /* letter-spacing: 0.13em; */
+    letter-spacing: 0.13em;
     color: #000000;
     text-transform: uppercase;
   }
 
   .publish {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #606060;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   .content_head {
     min-height: 30px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -44,7 +44,7 @@
 
   .content_subhead {
     min-height: 30px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -58,7 +58,7 @@
 
   .content {
     max-width: 621px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -77,7 +77,7 @@
     flex-direction: column;
     row-gap: 27px;
     padding-left: 30px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -90,7 +90,7 @@
   }
 
   .article_text {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -190,7 +190,7 @@
   }
 
   .head_ {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -203,18 +203,18 @@
   }
 
   .publish {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #606060;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   .content_head {
     min-height: 30px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -228,7 +228,7 @@
 
   .content_subhead {
     min-height: 30px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -242,7 +242,7 @@
 
   .content {
     max-width: 621px;
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -268,7 +268,7 @@
     row-gap: 27px;
     padding-left: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02);
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -281,7 +281,7 @@
   }
 
   .article_text {
-    /* font-family: euclid; */
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

@@ -17,8 +17,8 @@ export const handleTagType = (type) => {
       );
     case 'Intermediate':
       return (
-        <Box w='fit-content' bg='#12D8A01A' borderRadius='full' px='8px' py='2px'>
-          <Text fontSize={'10px'} fontWeight={300} color='#12D8A0' mx='auto'>Intermediate</Text>
+        <Box w='fit-content' bg='#E7FBF5' borderRadius='full' px='8px' py='2px'>
+          <Text fontSize={'10px'} fontWeight={300} color='#064B38' mx='auto'>Intermediate</Text>
         </Box>
       );
 

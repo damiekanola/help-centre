@@ -36,7 +36,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
             </Flex>
             <Text mt='17px' fontSize={'12px'} color={'#191919'}>{question?.content}</Text>
             <Box
-              mt='22px' ml={white ? '0px' : '15px'}
+              mt='22px'
               p={'9.469px 7.575px 0px 13.256px'}
               bg={white ? '#171717' : '#F5F5F5'} borderRadius={white && ' 7.575px'}
             >
