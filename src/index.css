@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: euclid-medium, euclid-light, euclid, euclid-semibold, euclid-bold;
+  font-family: euclid-medium, euclid-light, euclid, euclid-semibold, euclid-bold !important;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;

@@ -16,6 +16,7 @@ export const Homepage = () => {
         {data.map(detail => (
           <Link to={detail.path || ''}>
             <Box
+              h='343px'
               maxH={'911px'}
               borderRadius={'16px'}
               shadow={'md'}
@@ -30,7 +31,7 @@ export const Homepage = () => {
                 borderTopRightRadius={'16px'}
                 borderTopLeftRadius={'16px'}
                 w='full' bgImage={detail.img}
-                h='200px' p='14px'
+                h='272.2px' p='14px'
               >
                 <Text fontSize={'10px'} color={detail.color}>SAAS</Text>
                 <Text mt='8px' fontSize={'20px'} fontWeight={500} color={detail.color}>{detail.title}</Text>
