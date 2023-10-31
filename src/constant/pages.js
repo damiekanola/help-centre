@@ -94,12 +94,12 @@ const data = [
     },
     {
         img: themes,
-        title: 'VEERGE THEMES',
-        color: 'black',
+        title: 'THEMES',
+        color: 'white',
         tag: 'Intermediate',
         readTime: '6 mins read',
         datePosted: 'Aug 12, 2023',
-        path: '/'
+        path: '/veerge_themes'
     },
     {
         img: protectedImg,
@@ -108,7 +108,7 @@ const data = [
         tag: 'Intermediate',
         readTime: '6 mins read',
         datePosted: 'Sep 29, 2023',
-        path: '/'
+        path: '/how_protected'
     },
 ]
 
