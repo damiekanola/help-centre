@@ -40,6 +40,8 @@ import { VeergePlus } from "./pages/VeergePlus/VeergePlus";
 import { AgentPortal } from "./pages/Agents/Portal/portal";
 import { AgentProcess } from "./pages/Agents/AgentProcess/AgentProcess";
 import { ApplicationGuide } from "./pages/ApplicationGuide/ApplicationGuide";
+import { VeergeThemes } from "./pages/VeergeThemes/VeergeThemes";
+import { Protected } from "./pages/Protected/Protected";
 
 function App() {
   return (
@@ -86,6 +88,8 @@ function App() {
           <Route path="/blog/why_veerge" element={<Why_veerge />} />
           <Route path="/veerge_plus" element={<VeergePlus />} />
           <Route path="/application_guide" element={<ApplicationGuide />} />
+          <Route path="/veerge_themes" element={<VeergeThemes />} />
+          <Route path="/how_protected" element={<Protected />} />
         </Routes>
       </div>
     </div>
