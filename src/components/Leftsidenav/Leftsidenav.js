@@ -16,7 +16,7 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
         fontFamily='euclid'
         bg='#F9FAFB'
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-        position={'fixed'} h='70vh'
+        position={'fixed'} h='fit-content' maxH='70vh'
         overflowY={'scroll'} left='0'
         w={'23%'} px='30px'
         pb='50px'

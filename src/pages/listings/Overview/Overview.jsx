@@ -32,9 +32,16 @@ const Overview = () => {
     { check: inspectionsCheck, id: 'inspections', title: 'Inspections' },
   ]
 
+  const relatedContent = [
+    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: "/blog/understanding_fraction", text: 'Understanding Fractional Real estate ' },
+    { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
+  ]
+
+
   return (
     <div className="main" id="overview">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">LISTINGS</Text>
       <Text className="publish">Published: November 23, 2022</Text>

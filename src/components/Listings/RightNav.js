@@ -8,7 +8,7 @@ const RightNav = () => {
     <Show breakpoint="(min-width: 769px)">
       <Box
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-        position={'fixed'} h='65%'
+        position={'fixed'} h='fit-content' maxH='70vh'
         overflowY={'scroll'} right='0'
         w={'23%'} px='30px'
         pb='50px' fontFamily={'euclid-light'}

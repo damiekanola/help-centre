@@ -31,12 +31,11 @@ export const ApplicationGuide = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge the new era of real estate' },
-    { link: "/", text: 'Veerge Theme' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: '/blog/new_era', text: 'Veerge the new era of real estate' },
+    { link: "/veerge_themes", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
-
 
   const cellStyle = { height: '86px', textAlign: 'center', border: '1px solid #919191' }
 

@@ -48,10 +48,10 @@ export const InviteTeamMembers = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge: The new era of real estate' },
-    { link: "/", text: 'Veerge Plus' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: '/blog/new_era', text: 'Veerge: The new era of real estate' },
+    { link: "/veerge_plus", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
 
   return (

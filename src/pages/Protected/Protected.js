@@ -20,10 +20,9 @@ export const Protected = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge the new era of real estate' },
-    { link: "/", text: 'Veerge Theme' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: "/veerge_plus", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
 
   return (
