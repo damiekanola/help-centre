@@ -37,12 +37,11 @@ export const Fisrttimesetup = () => {
     { check: questionsCheck, id: 'questions', title: 'Questions & Replies' },
   ]
 
-
   const questions = [
     {
       image: peters,
       name: 'Peters T.',
-      date: 'Jun 15,2023',
+      date: 'Jun 15, 2023',
       content: "Why am I not getting OTP?",
       replies: [
         <Box>
@@ -82,7 +81,7 @@ export const Fisrttimesetup = () => {
     {
       image: fatima,
       name: 'Fateemah S.',
-      date: 'Jun 02,2023',
+      date: 'Jun 02, 2023',
       content: "It’s been a week and my account still hasn’t been approved, do I need to provide more information?",
       replies: [
         `Hello,
@@ -92,7 +91,7 @@ export const Fisrttimesetup = () => {
     },
     {
       name: 'Tracy K.',
-      date: 'May 28,2023',
+      date: 'May 28, 2023',
       content: "My application was rejected ?? Is there any reason for that?",
       replies: [
         `Hello,
@@ -105,7 +104,7 @@ export const Fisrttimesetup = () => {
     {
       image: mobolaji,
       name: 'Mobolaji F.',
-      date: 'May 12,2023',
+      date: 'May 12, 2023',
       content: 'My Listings, User, dashboard and other applications are not working? How do I make them work?????',
       replies: [
         `Hello,
@@ -115,7 +114,7 @@ export const Fisrttimesetup = () => {
     },
     {
       name: 'Samuel G.',
-      date: 'May 08,2023',
+      date: 'May 08, 2023',
       content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
       replies: [
         `Hello,
@@ -126,7 +125,7 @@ export const Fisrttimesetup = () => {
     {
       image: farouk,
       name: 'Farouk I.',
-      date: 'May 05,2023',
+      date: 'May 05, 2023',
       content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
       replies: [
         `Hello,
@@ -137,9 +136,16 @@ export const Fisrttimesetup = () => {
     }
   ]
 
+  const relatedContent = [
+    { link: "/approved_whats_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' },
+    { link: "/privacy", text: 'Privacy policy' }
+  ]
+
+
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
 
       <Text className="head_">
         FIRST TIME SETUP
@@ -175,7 +181,7 @@ export const Fisrttimesetup = () => {
           </Text>
           <Text className="content">
             To begin, click on the provided
-            <a href="/" style={{ color: "#8486f2" }}>  link  </a>
+            <a href="https://veerge.myxellia.io/auth/onboarding" style={{ color: "#8486f2" }}>  link  </a>
             . You'll be asked to provide the following information:
             <ul style={{ paddingLeft: "20px" }}>
               <li>Your legal full name (we'll require proof for verification purposes).</li>
@@ -189,7 +195,7 @@ export const Fisrttimesetup = () => {
             STEP 2
           </Text>
           <Text className="content">
-            You'll receive an email from   <a href="/" style={{ color: "#8486f2" }}>  no-reply@myxellia.io  </a>. This email will contain an OTP (One-Time Password).
+            You'll receive an email from   <span style={{ color: "#8486f2" }}>  no-reply@myxellia.io  </span>. This email will contain an OTP (One-Time Password).
             Please enter the OTP provided in the email to verify your email address. Click on "Verify" once you've entered the OTP.
           </Text>
           <Image src={email} mt="30px" mx="auto" />

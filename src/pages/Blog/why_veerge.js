@@ -53,7 +53,7 @@ const Why_veerge = () => {
 
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
               Why Veerge instead of Building
             </Text>
             <Text mt='15px' fontWeight={300} color='#191919' w='80%' alignSelf={'center'} fontSize='14px'>
@@ -103,9 +103,9 @@ const Why_veerge = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box ref={why_veergeRef} id='why_veerge'>
-            <Text fontWeight={600} fontSize={'36px'} color='#000'>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
               WHY VEERGE?
             </Text>
 
@@ -132,7 +132,7 @@ const Why_veerge = () => {
             </Text>
           </Box>
           <Box ref={ourMissionRef} mt='30px' id='our_mission'>
-            <Text fontWeight={600} fontSize={'36px'} color='#000'>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
               Our Mission
             </Text>
             <Text>
@@ -152,7 +152,7 @@ const Why_veerge = () => {
             </Text>
           </Box>
           <Box ref={ourValueRef} mt='30px' id='our_value'>
-            <Text fontWeight={600} fontSize={'36px'} color='#000'>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
               Our Values
             </Text>
             <Text mt='30px'>
@@ -160,84 +160,84 @@ const Why_veerge = () => {
             </Text>
 
             <OrderedList mt='30px'>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Safety First:
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     The reliability of our platform takes precedence over all else, so that we can be there for our customers when they need us the most.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We relentlessly protect our customers' security and privacy, and we only share with our counterparties what they need to fulfill our customers' financial needs, nothing more.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We build safeguards and provide education so that our customers are in the best position to succeed.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We have high-quality, timely customer support, and when things aren't right, we fix them.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We work closely with regulators and lawmakers to protect our customers and the broader system.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We speak simply, plainly, and truthfully, even if it's not what others want to hear.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We hold ourselves and our colleagues to the highest ethical standards.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Participation is Power:
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We aim to give everyone access to the real estate system, regardless of their background or bank account balance. That's why we have a product that was designed from the ground up for small accounts.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We reflect the world around us and we elevate and embrace all voices. We foster an environment where everyone feels included and empowered.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Radical Customer Focus:
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We exist to make our customers happy. From the early days, we have prioritized getting direct customer feedback on what we were building. Talking to our customers forms the kernel of the product development process we have today.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We listen with empathy, ask questions, and critically evaluate our work by how valuable our customers find it.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We never stop asking how we can make our product better, and we never settle for "good enough."
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We listen to our colleagues, and we start from a place of believing they are capable and well-intentioned.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   First Principles Thinking:
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We make bold bets and challenge the status quo. Our foundation is in art, science, and pure mathematics, and we have a deep appreciation for the scientific process.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We develop hypotheses and design experiments to test them. We reduce complex problems to their constituent bits.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We debate vigorously and change our minds when confronted with the right evidence.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We bravely do what's right, even when it's scary and hasn't been done before.
                   </ListItem>
-                  <ListItem>
+                  <ListItem fontFamily={'euclid-light'}>
                     We treat our company like a product and aim to get better every single day.
                   </ListItem>
                 </UnorderedList>
@@ -245,106 +245,106 @@ const Why_veerge = () => {
             </OrderedList>
           </Box>
           <Box ref={ourCultureRef} mt='30px' id='our_culture'>
-            <Text fontWeight={600} fontSize={'36px'} color='#000'>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
               Our Culture
             </Text>
             <Text mt='30px'>
-              We believe that any success at Myxellia comes from two things: our people and our culture. We believe that brilliant people operating in a great culture will produce the best outcome.
+              <b>We believe that any success at Myxellia comes from two things:</b> our people and our culture. We believe that brilliant people operating in a great culture will produce the best outcome.
             </Text>
 
             <OrderedList mt='30px'>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Never Settle:
                 </Text>
-                <Text fontWeight={500} fontSize={'14px'}>
+                <Text fontFamily={'euclid-light'} fontSize={'14px'}>
                   We constantly push, rethink, and rework to get 10x further from where we are now. We aren't afraid to be ambitious, and we're always looking for the next big thing
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
-                    Shoot for the moon: Relentlessly push to become number one. Look for ways to disrupt, scale, and reinvent. Come up with ideas that are new, better, and unique. Be creative - iterate, simplify, move beyond the traditional way. Connect the dots from different areas, industries, and products. Vigorously set ambitious, bold, and rational goals to guide your way.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Shoot for the moon:</b> Relentlessly push to become number one. Look for ways to disrupt, scale, and reinvent. Come up with ideas that are new, better, and unique. Be creative - iterate, simplify, move beyond the traditional way. Connect the dots from different areas, industries, and products. Vigorously set ambitious, bold, and rational goals to guide your way.
                   </ListItem>
-                  <ListItem>
-                    Push the envelope: Constantly change your lens. Challenge solutions from all angles to deliver the best. Run toward critique to advance it even further. Recognize and celebrate those who challenge the status quo for the better. Pull at every thread. Don't just meet the ask; go above and beyond when solving a problem and never leave loose ends.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Push the envelope:</b> Constantly change your lens. Challenge solutions from all angles to deliver the best. Run toward critique to advance it even further. Recognize and celebrate those who challenge the status quo for the better. Pull at every thread. Don't just meet the ask; go above and beyond when solving a problem and never leave loose ends.
                   </ListItem>
-                  <ListItem>
-                    Jump in with both feet: Enjoy the challenge, celebrate achievements, and have fun. Show initiative, inspire others. Enjoy taking on stretch assignments even if they're outside of your core responsibilities. Share optimism and confidence. Remain positive and energized when facing adversity.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Jump in with both feet:</b> Enjoy the challenge, celebrate achievements, and have fun. Show initiative, inspire others. Enjoy taking on stretch assignments even if they're outside of your core responsibilities. Share optimism and confidence. Remain positive and energized when facing adversity.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Dream Team:
                 </Text>
-                <Text fontWeight={500} fontSize={'14px'}>
+                <Text fontFamily={'euclid-light'} fontSize={'14px'}>
                   We believe the key to winning is building diverse, lean teams of brilliant go-getters who break down barriers.
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
-                    Elite athletes only: We don't settle for players who are just good. We are like a professional sports team. We hire, develop, retain elite athletes and place them in the right spots to win. We always choose to be a smaller team of brilliant people rather than a larger team with some average players in it.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Elite athletes only:</b> We don't settle for players who are just good. We are like a professional sports team. We hire, develop, retain elite athletes and place them in the right spots to win. We always choose to be a smaller team of brilliant people rather than a larger team with some average players in it.
                   </ListItem>
-                  <ListItem>
-                    Ship, shipmates, self: Work together - it's the only way the company can move forward. Forge a shared vision. Support each other individually and professionally, across teams and departments. Even if it's not in your KPIs or goals. Be inclusive, approachable, and interested in your colleagues' work, especially if they need your help or expertise.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Ship, shipmates, self:</b> Work together - it's the only way the company can move forward. Forge a shared vision. Support each other individually and professionally, across teams and departments. Even if it's not in your KPIs or goals. Be inclusive, approachable, and interested in your colleagues' work, especially if they need your help or expertise.
                   </ListItem>
-                  <ListItem>
-                    Be radically honest, direct, and respectful: Feedback should be necessary, clear, direct, and professional. Always say what needs to be said. Build on the feedback you receive. Step up, speak up, encourage others to do the same. Be respectful at all times. Find the best tone of voice, time, and situation to provide feedback.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Be radically honest, direct, and respectful:</b> Feedback should be necessary, clear, direct, and professional. Always say what needs to be said. Build on the feedback you receive. Step up, speak up, encourage others to do the same. Be respectful at all times. Find the best tone of voice, time, and situation to provide feedback.
                   </ListItem>
-                  <ListItem>
-                    Never compromise on talent: Make hiring decisions thoughtfully. Take the time to find the perfect fit. The quality and diversity of our talent define our successes. Provide mentoring, coaching, opportunities, and support to help your team thrive. Award the best. Act on underperformance promptly. Monitor it, sort it, and remedy it.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Never compromise on talent:</b> Make hiring decisions thoughtfully. Take the time to find the perfect fit. The quality and diversity of our talent define our successes. Provide mentoring, coaching, opportunities, and support to help your team thrive. Award the best. Act on underperformance promptly. Monitor it, sort it, and remedy it.
                   </ListItem>
-                  <ListItem>
-                    Lead by doing: Roll up your sleeves and get into the weeds of the work. Get to know the nitty-gritty, ins-and-outs of your team to help guide everyone to success. Enable others to achieve their goals - celebrate when they've done well and give credit where credit is due. Accept responsibility when things go wrong. Work quickly to make things right.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Lead by doing:</b> Roll up your sleeves and get into the weeds of the work. Get to know the nitty-gritty, ins-and-outs of your team to help guide everyone to success. Enable others to achieve their goals - celebrate when they've done well and give credit where credit is due. Accept responsibility when things go wrong. Work quickly to make things right.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Think Deeper:
                 </Text>
-                <Text fontWeight={500} fontSize={'14px'}>
+                <Text fontFamily={'euclid-light'} fontSize={'14px'}>
                   We believe logic, reason, and common sense prevail over everything else in decision-making. We dive deep until we get to atoms. If we don't know something, we bet, collect the data, and reiterate
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
-                    Start with "WHY?": Think before executing - articulate your problem, probe into it. Is it a real problem? Challenge others to do the same. Seek data to support decision-making. If data is not available, be transparent that you're making an instinctual recommendation. Dive deep into the root cause. Solve from the first principles. Question experience, data, and assumptions. Always ask, "Is that true?" and "Why?". Constantly challenge your analysis, sense-check, look from every angle, and be prepared to revisit the proposed solution or initial problem.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Start with "WHY?":</b> Think before executing - articulate your problem, probe into it. Is it a real problem? Challenge others to do the same. Seek data to support decision-making. If data is not available, be transparent that you're making an instinctual recommendation. Dive deep into the root cause. Solve from the first principles. Question experience, data, and assumptions. Always ask, "Is that true?" and "Why?". Constantly challenge your analysis, sense-check, look from every angle, and be prepared to revisit the proposed solution or initial problem.
                   </ListItem>
-                  <ListItem>
-                    Never lose 'North': Always think beyond the task at hand, keeping the bigger picture in mind. Think several steps ahead. (e.g., Will our solution create more problems? What will the next problem be once we solve this one?). Look for ways to create scalable frameworks and tools to increase the impact. Avoid 'analysis paralysis' so that we move toward solutions. Focus on the outcome and continue checking your compass along the way (i.e., Are we still going in the right direction?). If not, take courage to start from scratch.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Never lose 'North':</b> Always think beyond the task at hand, keeping the bigger picture in mind. Think several steps ahead. (e.g., Will our solution create more problems? What will the next problem be once we solve this one?). Look for ways to create scalable frameworks and tools to increase the impact. Avoid 'analysis paralysis' so that we move toward solutions. Focus on the outcome and continue checking your compass along the way (i.e., Are we still going in the right direction?). If not, take courage to start from scratch.
                   </ListItem>
-                  <ListItem>
-                    Be open-minded - listen, probe, adjust: Invite criticism and alternative views to tackle problems better. Constantly challenge assumptions in your thinking. Do not follow any previously agreed-upon approach blindly. Take turns speaking and listening. Consider all feedback regardless of the person's title. There is no place for politics in Myxellia. Think through your recommendation, don't say "yes" or "no" too quickly.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Be open-minded - listen, probe, adjust:</b> Invite criticism and alternative views to tackle problems better. Constantly challenge assumptions in your thinking. Do not follow any previously agreed-upon approach blindly. Take turns speaking and listening. Consider all feedback regardless of the person's title. There is no place for politics in Myxellia. Think through your recommendation, don't say "yes" or "no" too quickly.
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Get it Done:
                 </Text>
-                <Text fontWeight={500} fontSize={'14px'}>
+                <Text fontFamily={'euclid-light'} fontSize={'14px'}>
                   We believe that ideas are great, but execution is everything. That's why respect at Myxellia comes from sweat and stretch.
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
-                    Commit and execute: Bring a can-do attitude at all times. Keep calm when facing challenging work. Unblock roadblocks. Break walls. Persevere until the project is finished. Completion is a must. And then iterate. Deliver on commitments, instill trust in your go-getter attitude.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Commit and execute:</b> Bring a can-do attitude at all times. Keep calm when facing challenging work. Unblock roadblocks. Break walls. Persevere until the project is finished. Completion is a must. And then iterate. Deliver on commitments, instill trust in your go-getter attitude.
                   </ListItem>
-                  <ListItem>
-                    Act like an owner: Own your work and the tasks required end-to-end. Look for answers and solutions, not excuses. Assume full responsibility and accountability beyond your role or over expectations. Don't wait for guidance, self-direct. It is never "someone else's job or problem."
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Act like an owner:</b> Own your work and the tasks required end-to-end. Look for answers and solutions, not excuses. Assume full responsibility and accountability beyond your role or over expectations. Don't wait for guidance, self-direct. It is never "someone else's job or problem."
                   </ListItem>
                 </UnorderedList>
               </ListItem>
-              <ListItem fontWeight={600} fontSize={'16px'} mt='30px'>
+              <ListItem fontFamily='euclid-semibold' fontSize={'16px'} mt='30px'>
                 <Text>
                   Deliver Wow:
                 </Text>
-                <Text fontWeight={500} fontSize={'14px'}>
+                <Text fontFamily={'euclid-light'} fontSize={'14px'}>
                   We believe that everything we do should solve our customers' needs. To create awe and inspire, we pay attention to every single detail.
                 </Text>
                 <UnorderedList fontWeight={400} fontSize={'14px'}>
-                  <ListItem>
-                    Put customers first: Put yourself in the shoes of the customer (external or internal) and understand how they are using the product or process, be curious. Focus on and think through every single detail. Don't ship anything unless it's ready, fully-baked, tested, and reviewed.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Put customers first:</b> Put yourself in the shoes of the customer (external or internal) and understand how they are using the product or process, be curious. Focus on and think through every single detail. Don't ship anything unless it's ready, fully-baked, tested, and reviewed.
                   </ListItem>
-                  <ListItem>
-                    Keep it simple: Simplify everything - minimize any friction for the customer. Save time for your customers, your manager, and your stakeholders. Make decisions on what to build and what to kill. Use language everyone can easily understand. Extract the essence. Lead with the most important information. Bottom line up front.
+                  <ListItem fontFamily={'euclid-light'}>
+                    <b>Keep it simple: </b> Simplify everything - minimize any friction for the customer. Save time for your customers, your manager, and your stakeholders. Make decisions on what to build and what to kill. Use language everyone can easily understand. Extract the essence. Lead with the most important information. Bottom line up front.
                   </ListItem>
                 </UnorderedList>
               </ListItem>

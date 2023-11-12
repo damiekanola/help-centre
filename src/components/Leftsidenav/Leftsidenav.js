@@ -13,11 +13,12 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
+        fontFamily='euclid'
         bg='#F9FAFB'
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         position={'fixed'} h='70vh'
         overflowY={'scroll'} left='0'
-        w='100%' maxW={'282px'} pl='40px'
+        w={'23%'} px='30px'
         pb='50px'
         __css={{
           '&::-webkit-scrollbar': {
@@ -42,12 +43,10 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
               pb='25px' justify='flex-start' align='flex-start'>
               <Box ml='-5px' w='10px' h='10px' borderRadius={'full'} bg={content.check ? '#4545FE' : '#C3C4FC'} />
               <Text
-                maxW={'80%'}
-                mt='-5px'
-                ml='20px'
+                maxW={'80%'} mt='-5px' ml='20px'
                 fontSize={'14px'}
                 fontWeight={content.check ? 500 : 400}
-                color={content.check ? '#4545FE' : '#191919'}
+                color={content.check ? '#4545FE' : '#606060'}
               >
                 <a href={`#${content.id}`}>
                   {content?.title}
@@ -60,11 +59,13 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
         <Text className="article_text" mt="40px">
           Related Content
         </Text>
-        <VStack mt='20px' spacing={'17px'} align='stretch'>
+        <VStack fontFamily='euclid' mt='20px' spacing={'17px'} align='stretch'>
           {relatedContent.map(content => (
             <Flex columnGap="20px" align={'center'}>
               <Image src={file} />
-              <Link to={content.link}>{content.text}</Link>
+              <Link to={content.link}>
+                <Text color='#606060' fontFamily={'euclid'}>{content.text}</Text>
+              </Link>
             </Flex>
           ))}
         </VStack>

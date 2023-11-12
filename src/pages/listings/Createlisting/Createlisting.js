@@ -54,7 +54,7 @@ const Createlisting = () => {
     <Box className="main" >
       <LeftNav articleContent={articleContent} />
       <RightNav />
-      <Box position={'relative'}>
+      <Box>
         <Text className="head_">HOW TO CREATE A LISTING</Text>
         <Text className="publish">Published: November 23, 2022</Text>
         <Box id="overview" ref={overviewRef}>
@@ -75,7 +75,7 @@ const Createlisting = () => {
           <Text className="" mt='30px'>
             <OrderedList>
               <ListItem>
-                <Text fontWeight={600} mt='20px'>1-Bedroom Flat:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Flat:</Text>
                 <UnorderedList>
                   <ListItem>Outright Price: 65 million</ListItem>
                   <ListItem>3-Month Payment Plan:</ListItem>
@@ -92,7 +92,7 @@ const Createlisting = () => {
               </ListItem>
 
               <ListItem>
-                <Text fontWeight={600} mt='20px'>1-Bedroom Loft:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Loft:</Text>
                 <UnorderedList>
                   <ListItem>Outright Price: 75 million</ListItem>
                   <ListItem>3-Month Payment Plan:</ListItem>
@@ -105,7 +105,7 @@ const Createlisting = () => {
               </ListItem>
 
               <ListItem>
-                <Text fontWeight={600} mt='20px'>2-Bedroom Flat:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>2-Bedroom Flat:</Text>
                 <UnorderedList>
                   <ListItem>Outright Price: 100 million</ListItem>
                   <ListItem>12-month (1-Year) Payment Plan:</ListItem>
@@ -121,7 +121,7 @@ const Createlisting = () => {
               </ListItem>
 
               <ListItem>
-                <Text fontWeight={600} mt='20px'>3-Bedroom:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>3-Bedroom:</Text>
                 <UnorderedList>
                   <ListItem>Outright Price: 120 million</ListItem>
                   <ListItem>3-Month Payment Plan:</ListItem>
@@ -201,7 +201,7 @@ const Createlisting = () => {
               </Text>
 
               <Box>
-                <Box mt='20px' fontWeight={600}>
+                <Box mt='20px' fontFamily='euclid-semibold'>
                   <Text fontSize={'16px'}>STEP 2 (i)</Text>
                   <Text>Lets begin with the 1 bedroom flat. We will fill the:</Text>
                 </Box>
@@ -218,14 +218,14 @@ const Createlisting = () => {
 
                 <UnorderedList>
                   <ListItem>
-                    <Text fontWeight={600} mt='20px'>Next, proceed to the payment plan:</Text>
+                    <Text fontFamily='euclid-semibold' mt='20px'>Next, proceed to the payment plan:</Text>
                     <OrderedList>
                       <ListItem>Select "Add Payment Plan."</ListItem>
                       <ListItem>Choose "Quick Payment Plan."</ListItem>
                     </OrderedList>
                   </ListItem>
                   <ListItem>
-                    <Text fontWeight={600} mt='20px'>For the 3-month payment plan:</Text>
+                    <Text fontFamily='euclid-semibold' mt='20px'>For the 3-month payment plan:</Text>
                     <OrderedList>
                       <ListItem>Set the duration as 3 months.</ListItem>
                       <ListItem>Initial deposit: 25 million.</ListItem>
@@ -236,7 +236,7 @@ const Createlisting = () => {
                     </OrderedList>
                   </ListItem>
                   <ListItem>
-                    <Text fontWeight={600} mt='20px'>For the 6-month payment plan:</Text>
+                    <Text fontFamily='euclid-semibold' mt='20px'>For the 6-month payment plan:</Text>
                     <OrderedList>
                       <ListItem>Select "Add Plan."</ListItem>
                       <ListItem>Set the duration as 6 months.</ListItem>
@@ -252,7 +252,7 @@ const Createlisting = () => {
               <Image src={create2} mt="30px" mx="auto" w='full' />
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>STEP 2 (ii)</Text>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (ii)</Text>
 
                 <Text as='p' mt='20px'>
                   We will then add another Unit by clicking on the Add unit button
@@ -288,7 +288,7 @@ const Createlisting = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>STEP 2 (iii)</Text>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iii)</Text>
 
                 <Text as='p' mt='20px'>
                   There are still 3 more units left so we will add another Unit by clicking on the Add unit butto
@@ -327,7 +327,7 @@ const Createlisting = () => {
 
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>STEP 2 (iv)</Text>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iv)</Text>
 
                 <Text as='p' mt='20px'>
                   This will be the 3 bedroom with a flexible payment plan
@@ -360,7 +360,7 @@ const Createlisting = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>STEP 2 (v)</Text>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (v)</Text>
 
                 <Text as='p' mt='20px'>
                   This will be the prestigious penthouse with a no-interest payment plan
@@ -437,8 +437,8 @@ const Createlisting = () => {
           <Helpful />
         </Box>
 
-        {!toView && <Blocker />}
       </Box>
+      {!toView && <Blocker />}
     </Box>
   );
 };

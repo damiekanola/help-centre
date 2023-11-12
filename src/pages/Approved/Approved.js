@@ -36,7 +36,7 @@ const Approved = () => {
     {
       image: daniel,
       name: 'Daniel G.',
-      date: 'Jun 20,2023',
+      date: 'Jun 20, 2023',
       content: "I invited team members before creating development projects, I hope I didnt disrupt anything? We have about 20 developments project (Past + Present). So,I did that to split between the invited team members, can that still work?",
       replies: [
         `Hello Daniel,
@@ -47,7 +47,7 @@ const Approved = () => {
     {
       image: aminat,
       name: 'Aminat A.',
-      date: 'May 06,2023',
+      date: 'May 06, 2023',
       content: "What happens if I create an application and migrate my client base before adding listings?",
       replies: [
         `Hello, 
@@ -59,8 +59,8 @@ const Approved = () => {
 
   const relatedContent = [
     { link: '/into_to_veerge', text: 'Intro to veerge' },
-    { link: "/", text: 'Veerge Plus' },
-    { link: "/", text: 'How are you protected' }
+    { link: "/veerge_plus", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How are you protected' }
   ]
 
 
@@ -80,7 +80,7 @@ const Approved = () => {
           <Text as='p' marginTop="20px">
             The subsequent step involves choosing a subscription tier that aligns with your specific preferences. Should you require guidance during this selection process, please don't hesitate to reach out to our support team for assistance.
           </Text>
-          <Text as='p' marginTop="20px" fontWeight={600}>
+          <Text as='p' marginTop="20px" fontFamily='euclid-semibold'>
             Please be aware that your subscription charges are automatically deducted from your wallet at each billing cycle.
           </Text>
           <Text as='p' marginTop="20px">
@@ -99,32 +99,32 @@ const Approved = () => {
           <Text as='p' marginTop="20px">
             The subsequent step involves choosing a subscription tier that aligns with your specific preferences. Should you require guidance during this selection process, please don't hesitate to reach out to our support team for assistance.
           </Text>
-          <Text as='p' marginTop="20px" fontWeight={600}>
+          <Text as='p' marginTop="20px" fontFamily='euclid-semibold'>
             Here are the key steps and considerations involved:
           </Text>
           <Text as='p' marginTop="20px">
             <OrderedList>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Assessment and Planning:</Text> Understand the current software landscape of the business, including the applications and services being used, their functionalities, and any integrations. Identify the goals of the migration, such as reducing IT overhead, improving scalability, or enhancing user experience.
+                <Text as='span' fontFamily='euclid-semibold'>Assessment and Planning:</Text> Understand the current software landscape of the business, including the applications and services being used, their functionalities, and any integrations. Identify the goals of the migration, such as reducing IT overhead, improving scalability, or enhancing user experience.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Testing:</Text> Thoroughly test Veerge and its applications and their integrations to identify and resolve any issues before the full migration.
+                <Text as='span' fontFamily='euclid-semibold'>Testing:</Text> Thoroughly test Veerge and its applications and their integrations to identify and resolve any issues before the full migration.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Pilot Phase:</Text> Consider conducting a pilot phase where a smaller group of users can test the new SaaS setup in a controlled environment. This helps to uncover any potential problems and gather feedback for improvements.
+                <Text as='span' fontFamily='euclid-semibold'>Pilot Phase:</Text> Consider conducting a pilot phase where a smaller group of users can test the new SaaS setup in a controlled environment. This helps to uncover any potential problems and gather feedback for improvements.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Data Migration:</Text> Plan the migration of data from legacy systems to Veerge. This involves transferring existing data to the new SaaS solution and ensuring data integrity and security during th
+                <Text as='span' fontFamily='euclid-semibold'>Data Migration:</Text> Plan the migration of data from legacy systems to Veerge. This involves transferring existing data to the new SaaS solution and ensuring data integrity and security during th
                 e process.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Customization and Configuration:</Text> Customize Veerge to align with your business processes and requirements. Configure settings, user permissions, and any integrations with other systems.
+                <Text as='span' fontFamily='euclid-semibold'>Customization and Configuration:</Text> Customize Veerge to align with your business processes and requirements. Configure settings, user permissions, and any integrations with other systems.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Training and Change Management:</Text> Provide training to employees on how to use the new SaaS applications effectively. Manage the change by communicating the benefits of the migration and addressing any concerns.
+                <Text as='span' fontFamily='euclid-semibold'>Training and Change Management:</Text> Provide training to employees on how to use the new SaaS applications effectively. Manage the change by communicating the benefits of the migration and addressing any concerns.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontWeight={600}>Rollout and Monitoring:</Text> Once all tests are successful, gradually roll out the SaaS applications to the entire organization. Monitor the performance, user experience, and any potential challenges post-migration.
+                <Text as='span' fontFamily='euclid-semibold'>Rollout and Monitoring:</Text> Once all tests are successful, gradually roll out the SaaS applications to the entire organization. Monitor the performance, user experience, and any potential challenges post-migration.
               </ListItem>
             </OrderedList>
           </Text>
@@ -217,9 +217,9 @@ const Approved = () => {
           <Text className="content">
             <Text as='p' marginTop="20px">
               Gather the whole ensemble – extend invitations to team members spanning every echelon, from directors and sales personnel to marketing experts. Precision is key: ensure you meticulously assign relevant roles to each invitee. And if, by chance, the role you seek isn't within our predefined options, rest assured there's a solution if you are an esteemed
-              <Link to='/veerge_plus'>
+              <a href='https://veerge.myxellia.io/'>
                 <Text color='#4545FE' as='span'> Veerge Plus subscriber</Text>
-              </Link>, you possess the privilege of tailored role customization. A simple liaison with our support team opens the door to this possibility.
+              </a>, you possess the privilege of tailored role customization. A simple liaison with our support team opens the door to this possibility.
             </Text>
             <Text as='p' marginTop="20px">
               Roles aren't just labels; they're gateways to distinct views. Each role unlocks a unique view sculpted to align with their respective responsibilities. We've ingrained role-based access control into our core, meticulously shaping it to cater to the separation of concerns

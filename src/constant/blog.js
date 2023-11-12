@@ -15,7 +15,7 @@ export const blogDataRead = [
         title: 'New era of Real Estate',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Mar 07, 2023',
         path: '/blog/new_era'
     },
     {
@@ -23,7 +23,7 @@ export const blogDataRead = [
         title: 'Why Veerge instead of building',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Feb 27, 2023',
         path: '/blog/why_veerge'
     },
     {
@@ -31,7 +31,7 @@ export const blogDataRead = [
         title: 'Veerge & Data analytics',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Aug 10, 2023',
         path: '/blog/veerge_data'
     },
     {
@@ -39,7 +39,7 @@ export const blogDataRead = [
         title: 'Fractional ownership',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jan 21, 2023',
         path: '/blog/fractional_ownership'
     },
     {
@@ -47,7 +47,7 @@ export const blogDataRead = [
         title: 'Understanding fractional real estate',
         type: 'Industry Insight',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Dec 16, 2022',
         path: '/blog/understanding_fraction'
     },
     {
@@ -55,7 +55,7 @@ export const blogDataRead = [
         title: 'A letter from CEO',
         type: 'Culture',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Nov 20, 2022',
         path: '/blog/a_letter'
     },
     {
@@ -63,7 +63,7 @@ export const blogDataRead = [
         title: 'Lead management system',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jun 22, 2023',
         path: '/blog/lead_management'
     },
     {
@@ -71,7 +71,7 @@ export const blogDataRead = [
         title: 'A ticketing system serves as...',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'May 20, 2023',
         path: '/blog/transforming_business'
     },
     {
@@ -79,7 +79,7 @@ export const blogDataRead = [
         title: 'Inventory management system',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Apr 04, 2023',
         path: '/blog/inventory'
     },
     {
@@ -87,7 +87,7 @@ export const blogDataRead = [
         title: 'Revenue recognition solution',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jul 15, 2023',
         path: '/blog/revenue_recognition'
     },
     {
@@ -95,7 +95,7 @@ export const blogDataRead = [
         title: 'Smart payment plan',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Sep 25, 2023',
         path: '/blog/smart_payment'
     },
 ]
@@ -106,7 +106,7 @@ export const blogDataRecent = [
         title: 'Smart payment plan',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Sep 25, 2023',
         path: '/blog/smart_payment'
     },
     {
@@ -114,7 +114,7 @@ export const blogDataRecent = [
         title: 'Veerge & Data analytics',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Aug 10, 2023',
         path: '/blog/veerge_data'
     },
     {
@@ -122,7 +122,7 @@ export const blogDataRecent = [
         title: 'Revenue recognition solution',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jul 15, 2023',
         path: '/blog/revenue_recognition'
     },
     {
@@ -130,7 +130,7 @@ export const blogDataRecent = [
         title: 'Lead management system',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jun 22, 2023',
         path: '/blog/lead_management'
     },
     {
@@ -138,7 +138,7 @@ export const blogDataRecent = [
         title: 'A ticketing system serves as...',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'May 20, 2023',
         path: '/blog/transforming_business'
     },
     {
@@ -146,7 +146,7 @@ export const blogDataRecent = [
         title: 'Inventory management system',
         type: 'Features',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Apr 04, 2023',
         path: '/blog/inventory'
     },
     {
@@ -154,7 +154,7 @@ export const blogDataRecent = [
         title: 'New era of Real Estate',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Mar 07, 2023',
         path: '/blog/new_era'
     },
     {
@@ -162,7 +162,7 @@ export const blogDataRecent = [
         title: 'Why Veerge instead of building',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Feb 27, 2023',
         path: '/blog/why_veerge'
     },
     {
@@ -170,7 +170,7 @@ export const blogDataRecent = [
         title: 'Fractional ownership',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jan 21, 2023',
         path: '/blog/fractional_ownership'
     },
     {
@@ -178,7 +178,7 @@ export const blogDataRecent = [
         title: 'Understanding fractional real estate',
         type: 'Industry Insight',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Dec 16, 2022',
         path: '/blog/understanding_fraction'
     },
     {
@@ -186,7 +186,7 @@ export const blogDataRecent = [
         title: 'A letter from CEO',
         type: 'Culture',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Nov 20, 2022',
         path: '/blog/a_letter'
     },
 ]

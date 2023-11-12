@@ -52,7 +52,7 @@ const New_era = () => {
 
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
               The New Era of Real Estate
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
@@ -102,7 +102,7 @@ const New_era = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box ref={idea_forRef} id='idea_for'>
             <Text>
               A few years ago, we took a daring leap of faith, embarking on an extraordinary journey to establish our very own IT business solution company. Little did we know that this decision would lead us on a thrilling roller coaster ride, brimming with exhilarating challenges and triumphant moments. But you know what? We wouldn’t trade this adventure for anything else in the world.
@@ -146,7 +146,7 @@ const New_era = () => {
             </Text>
           </Box>
           <Box ref={what_isRef} id='what_is'>
-            <Text mt='30px' fontWeight={600} fontSize={'36px'}>
+            <Text mt='30px' fontFamily='euclid-semibold' fontSize={'36px'}>
               What is Veerge?
             </Text>
             <Text mt='30px'>
@@ -158,7 +158,7 @@ const New_era = () => {
             </Text>
           </Box>
           <Box ref={how_doesRef} id='how_does'>
-            <Text mt='30px' fontWeight={600} fontSize={'36px'}>
+            <Text mt='30px' fontFamily='euclid-semibold' fontSize={'36px'}>
               How does Veerge deliver these values effectively?
             </Text>
             <Text mt='30px'>

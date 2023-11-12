@@ -52,7 +52,7 @@ export const Usersexperience = () => {
           marginTop: '70px'
         }}
       >
-        <Box mx='auto' w='95%' >
+        <Box mx='auto' w='95%' fontFamily={'euclid-light'}>
           <Text color='#FFF' lineHeight={'25px'}>
             <Box w='60%' mx='auto'>
               <Text className="head_" color='#FFF'>End to End Experience</Text>
@@ -71,7 +71,7 @@ export const Usersexperience = () => {
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AUTHENTICATION
               </Text>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -98,7 +98,7 @@ export const Usersexperience = () => {
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AFTER AUTHENTICATION, WHAT NEXT ?
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -131,7 +131,7 @@ export const Usersexperience = () => {
               </video> */}
               <Text as='p' fontWeight={300} mt='30px'>
                 All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
-                <Text color='#56C3CE' as='span'>a dedicated ticket.</Text>
+                <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
               </Text>
               <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3rIcAAmqdws'} />
@@ -148,7 +148,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 PURCHASE FLOW
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -166,7 +166,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 REVENUE RECOGNITION SOLUTION
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -181,7 +181,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 SMART ALLOCATION
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -208,7 +208,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AUTO - PAY
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -223,7 +223,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 CO - OWNERSHIP
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -239,7 +239,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 FRACTIONAL
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -263,7 +263,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
-              <Text fontSize={'24px'} fontWeight={600}>
+              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AGENT
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -277,9 +277,9 @@ export const Usersexperience = () => {
               {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
                 <source src={end14} />
               </video> */}
-              <Text as='p' fontWeight={300} mt='30px'>
+              {/* <Text as='p' fontWeight={300} mt='30px'>
                 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-              </Text>
+              </Text> */}
               <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'js0FlPwGoh0'} />
               </Box>

@@ -64,7 +64,7 @@ export const CreateLeadAccount = () => {
     <div className="main">
       <LeftNav articleContent={articleContent} />
       <LeadRightNav />
-      <Box position={'relative'}>
+      <Box w='full'>
         <Text className="head_">Create aN ACCOUNT</Text>
         <Text className="publish">Published: November 24, 2022</Text>
         <Box id="how_to" ref={how_toRef}>
@@ -263,8 +263,8 @@ export const CreateLeadAccount = () => {
           <Helpful />
         </Box>
 
-        {!toView && <Blocker />}
       </Box>
+      {!toView && <Blocker />}
 
     </div>
   );

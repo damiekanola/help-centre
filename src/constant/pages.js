@@ -17,7 +17,7 @@ const data = [
         color: 'black',
         tag: 'Beginner',
         readTime: '6 mins read',
-        datePosted: 'Nov 24,2022',
+        datePosted: 'Nov 23, 2022',
         path: '/into_to_veerge'
     },
     {
@@ -26,7 +26,7 @@ const data = [
         color: 'black',
         tag: 'Beginner',
         readTime: '5 mins read',
-        datePosted: 'Nov 24,2022',
+        datePosted: 'Dec 09, 2022',
         path: '/fisrt_time_setup'
     },
     {
@@ -35,7 +35,7 @@ const data = [
         color: 'black',
         tag: 'Beginner',
         readTime: '4 mins read',
-        datePosted: 'Nov 24,2022',
+        datePosted: 'Jan 06, 2023',
         path: '/approved_whats_next'
     },
     {
@@ -44,7 +44,7 @@ const data = [
         color: 'black',
         tag: 'Advanced',
         readTime: '8 mins read',
-        datePosted: 'Nov 24,2022',
+        datePosted: 'Fed 18, 2023',
         path: '/listings/overview'
     },
     {
@@ -53,7 +53,7 @@ const data = [
         color: 'black',
         tag: 'Intermediate',
         readTime: '5 mins read',
-        datePosted: 'Jul 20,2023',
+        datePosted: 'Mar 26, 2023',
         path: '/lead/create_account'
     },
     {
@@ -62,7 +62,7 @@ const data = [
         color: 'black',
         tag: 'Intermediate',
         readTime: '5 mins read',
-        datePosted: 'Jul 20,2023',
+        datePosted: 'Apr 02, 2023',
         path: '/invite_team_members'
     },
     {
@@ -71,7 +71,7 @@ const data = [
         color: 'white',
         tag: 'Intermediate',
         readTime: '5 mins read',
-        datePosted: 'Jul 20,2023',
+        datePosted: 'May 11, 2023',
         path: '/users_experience'
     },
     {
@@ -80,7 +80,7 @@ const data = [
         color: 'white',
         tag: 'Intermediate',
         readTime: '5 mins read',
-        datePosted: 'Jul 20,2023',
+        datePosted: 'Jun 09, 2023',
         path: '/ticketing'
     },
     {
@@ -89,7 +89,7 @@ const data = [
         color: 'black',
         tag: 'Intermediate',
         readTime: '5 mins read',
-        datePosted: 'Jul 20,2023',
+        datePosted: 'Jul 21, 2023',
         path: '/veerge_plus'
     },
     {

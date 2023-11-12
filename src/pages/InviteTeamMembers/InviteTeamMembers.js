@@ -58,7 +58,7 @@ export const InviteTeamMembers = () => {
     <div className="main">
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
-      <Box position={'relative'}>
+      <Box>
         <Text className="head_">INVITE TEAM MEMBERS</Text>
         <Text className="publish">Published: November 24, 2022</Text>
         <Box id="invite" ref={inviteRef}>
@@ -145,8 +145,8 @@ export const InviteTeamMembers = () => {
           <Helpful />
         </Box>
 
-        {!toView && <Blocker />}
       </Box>
+      {!toView && <Blocker />}
     </div>
   );
 };

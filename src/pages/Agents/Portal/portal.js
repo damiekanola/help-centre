@@ -27,7 +27,7 @@ export const AgentPortal = () => {
       <Text className="publish">Published: November 24, 2022</Text>
       <Box id="overview" ref={overviewRef} className="content" lineHeight={'25px'}>
         <Box>
-          <Text fontSize={'24px'} fontWeight={600}>Introducing the Veerge Premier Agent Portal</Text>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>Introducing the Veerge Premier Agent Portal</Text>
           <Text fontSize={'16px'} fontWeight={500}>Your gateway to success in today's dynamic real estate landscape</Text>
         </Box>
         <Text as='p' mt='30px'>

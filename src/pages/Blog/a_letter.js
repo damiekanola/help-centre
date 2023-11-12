@@ -33,7 +33,7 @@ const A_letter = () => {
         <Flex h='full' direction={'column'} align={'stretch'} justify={'space-between'} w='full'>
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
               A Letter the CEO
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
@@ -81,7 +81,7 @@ const A_letter = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box>
             <Text>
               As I expressed in the letter when I assumed the position of CEO, "This is not a conventional company. We do not intend to become one." In line with that, we also emphasized the need to constantly strive for more and pursue important and meaningful endeavors with the resources at our disposal. We have always believed that over time, companies tend to become complacent, merely making incremental changes.
@@ -113,7 +113,7 @@ const A_letter = () => {
             <Text mt='30px'>
               However, success is never a given; it must be earned every day through hard work and teamwork. If we strive to be the best version of ourselves and bring out the best in others, our dreams will manifest repeatedly, and our mission, values, and guiding principles will endure.These values are of utmost importance to everything we do. I will continue to lead as a true servant leader as this esteemed company embarks on its next chapter.
             </Text>
-            <Text mt='30px' fontWeight={600} fontSize={'20px'} color='#000'>-Ahmed Ibraheem</Text>
+            <Text mt='30px' fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>-Ahmed Ibraheem</Text>
           </Box>
           <Helpful />
         </Box>

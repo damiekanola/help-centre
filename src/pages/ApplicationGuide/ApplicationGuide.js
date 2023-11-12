@@ -47,7 +47,7 @@ export const ApplicationGuide = () => {
       <Text className="publish">Published: November 10, 2022</Text>
       <Text className="content" lineHeight={'25px'} mt='50px'>
         <Box mb='30px' id='the_veerge' ref={the_veergeRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             The Veerge Dilemma
           </Text>
           <Text mt='20px' as='p' fontWeight={400}>
@@ -57,7 +57,7 @@ export const ApplicationGuide = () => {
         </Box>
         <Box id='unleashing' ref={unleashingRef}>
           <Box mb='30px'>
-            <Text fontSize={'24px'} fontWeight={600}>
+            <Text fontSize={'24px'} fontFamily='euclid-semibold'>
               Unleashing the Power of Basic Application
             </Text>
             <Text as='p' mt='20px' fontWeight={400}>
@@ -97,7 +97,7 @@ export const ApplicationGuide = () => {
 
         <Box id='enter' ref={enterRef}>
           <Box mb='30px'>
-            <Text fontSize={'24px'} fontWeight={600}>
+            <Text fontSize={'24px'} fontFamily='euclid-semibold'>
               Enter the Realm of Custom Application
             </Text>
             <Text as='p' fontWeight={400}>
@@ -143,7 +143,7 @@ export const ApplicationGuide = () => {
 
         <Box id='the_shuwdown' ref={the_shuwdownRef}>
           <Box mb='30px'>
-            <Text fontSize={'24px'} fontWeight={600}>
+            <Text fontSize={'24px'} fontFamily='euclid-semibold'>
               The Showdown: Basic vs. Custom Veerge Applications
             </Text>
             <Text as='p' fontWeight={400}>
@@ -203,7 +203,7 @@ export const ApplicationGuide = () => {
 
         <Box id='making' ref={makingRef}>
           <Box mb='30px'>
-            <Text fontSize={'24px'} fontWeight={600}>
+            <Text fontSize={'24px'} fontFamily='euclid-semibold'>
               Making the Right Move
             </Text>
             <Text as='p' fontWeight={400}>

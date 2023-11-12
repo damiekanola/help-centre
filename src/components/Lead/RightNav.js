@@ -12,8 +12,8 @@ const LeadRightNav = () => {
         position={'fixed'} h='fit-content'
         maxH={'70vh'}
         overflowY={'scroll'} right='0'
-        w='100%' maxW={'282px'} pl='40px'
-        pb='50px'
+        w={'23%'} px='30px'
+        pb='50px' fontFamily={'euclid-light'}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -27,7 +27,7 @@ const LeadRightNav = () => {
           },
         }}
       >
-        <Text color="#000" fontSize={'24px'} fontWeight={500} letterSpacing={'3px'}>Lead & Account</Text>
+        <Text color="#000" fontSize={'24px'} fontFamily={'euclid-medium'} letterSpacing={'3px'}>Lead & Account</Text>
         <VStack mt='30px' spacing={'20px'} align='stretch'>
           <Link to="/lead/create_account">
             <Text fontWeight={location.pathname === '/lead/create_account' && 600}>Create an account</Text>

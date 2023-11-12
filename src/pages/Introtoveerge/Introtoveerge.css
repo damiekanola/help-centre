@@ -1,14 +1,13 @@
 @media only screen and (max-width: 768px) {
   .main {
-    max-width: 821px;
-    width: 100%;
+    width: 53.5%;
     padding: 70px 20px;
     position: relative;
     top: 50px;
   }
 
   .head_ {
-    font-family: euclid;
+    font-family: euclid-semibold;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -30,7 +29,7 @@
 
   .content_head {
     min-height: 30px;
-    font-family: euclid;
+    font-family: euclid-semibold;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -58,12 +57,20 @@
 
   .content {
     max-width: 621px;
-    font-family: euclid;
+    font-family: euclid-light;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     color: #000;
+  }
+
+  .blog_content {
+    /* font-family: euclid-light;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000; */
   }
 
   /* The sidebar menu */
@@ -179,18 +186,18 @@
 
 @media only screen and (min-width: 769px) {
   .main {
-    max-width: 821px;
-    width: 100%;
+    width: 53.5%;
     margin-right: 282px;
     margin-left: 337px;
-    padding: 70px 100px;
+    padding: 70px 5%;
+    line-height: 160%;
     margin: 0 auto;
     position: relative;
-    top: 100px
+    top: 100px;
   }
 
   .head_ {
-    font-family: euclid;
+    font-family: euclid-semibold;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -214,7 +221,7 @@
 
   .content_head {
     min-height: 30px;
-    font-family: euclid;
+    font-family: euclid-semibold;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -242,12 +249,20 @@
 
   .content {
     max-width: 621px;
-    font-family: euclid;
+    font-family: euclid-light;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     color: #000;
+  }
+
+  .blog_content {
+    /* font-family: euclid-light;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000; */
   }
 
   /* The sidebar menu */
