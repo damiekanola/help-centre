@@ -20,10 +20,9 @@ export const VeergeThemes = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge the new era of real estate' },
-    { link: "/", text: 'Veerge Theme' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: "/veerge_plus", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
 
   return (
@@ -31,7 +30,7 @@ export const VeergeThemes = () => {
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">VEERGE THEME</Text>
-      <Text className="publish">Published: November 10, 2022</Text>
+      <Text className="publish">Published: Aug 12, 2023</Text>
       <Text className="content" lineHeight={'25px'} mt='50px'>
         <Box mb='30px' id="veerge_theme" ref={veerge_themeRef}>
           <Text mt='30px' as='p' fontWeight={400}>

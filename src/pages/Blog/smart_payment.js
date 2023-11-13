@@ -34,7 +34,7 @@ const Smart_payment = () => {
 
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
               Smart Payment Plan
             </Text>
             <Text mt='15px' fontWeight={300} color='#191919' w='80%' alignSelf={'center'} fontSize='14px'>
@@ -84,7 +84,7 @@ const Smart_payment = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box>
             <Text>
               Imagine the joy of owning your dream home — a place to call your own, where you can build cherished memories with your family. In the western part of Africa, however, this dream seems like an elusive mirage for many hardworking Africans. The housing deficit looms large, presenting a daunting challenge that stands between them and their dream of homeownership. While buying or building a home are potential options, only a select few have the financial means to do so due to the substantial capital typically required. For the majority, a mortgage could be the key to unlocking the doors of their dream home. But alas! Several factors conspire to keep this door tightly shut, making access to mortgages a Herculean task.

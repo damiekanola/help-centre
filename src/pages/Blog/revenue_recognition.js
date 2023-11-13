@@ -49,7 +49,7 @@ const Revenue_recognition = () => {
 
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
 
               Revenue recognition solution
             </Text>
@@ -97,7 +97,7 @@ const Revenue_recognition = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Let's be frank – revenue is the lifeblood of your business's success. Without it, your organization simply cannot thrive. While generating profits can be an arduous task, monitoring and managing those earnings can present an even greater challenge. Grasping your income and comprehending your financial standing demands effort and a firm grasp of a fundamental accounting principle: revenue recognition. Navigating the intricacies of revenue recognition can undoubtedly become bewildering at times. This is where Veerge's innovative revenue recognition solution steps in, tailored specifically to empower property development firms in precisely and efficiently handling the intricate process of identifying and documenting revenue derived from sales or services rendered. Revenue recognition serves as a bedrock accounting concept, dictating the timing and methodology for recognizing revenue within a company's financial statements. Veerge's revenue recognition solution holds pivotal significance due to several compelling factors:
@@ -105,50 +105,50 @@ const Revenue_recognition = () => {
           </Box>
           <Box ref={benefitRef} id='benefit'>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>1. Precise financial reporting </Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>1. Precise financial reporting </Text>
               <Text>
                 Property development ventures often encompass convoluted revenue recognition scenarios, involving extended project timelines, diverse revenue streams, and multifaceted recognition criteria. An adept system guarantees the accurate recognition of revenue, aligning seamlessly with accounting standards. This precision fosters trust among stakeholders like investors, regulatory bodies, and lending institutions.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>2. Informed decision-making </Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>2. Informed decision-making </Text>
               <Text>
                 Accurate and timely revenue recognition bestows management with lucid insights into project performance and financial robustness. These insights are pivotal for making well-informed determinations concerning resource allocation, project expansion, risk mitigation, and overarching corporate strategy.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>3. Mitigating risk </Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>3. Mitigating risk </Text>
               <Text>
                 Property development endeavors typically entail substantial capital investments and are exposed to an array of risks, ranging from project delays and cost escalations to market fluctuations. A revenue recognition system serves as an early warning system, aiding in the proactive identification and management of potential pitfalls.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>4. Investor trust</Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>4. Investor trust</Text>
               <Text>
                 Both individual and institutional investors hinge their evaluations of a property development entity on dependable financial data. A robust revenue recognition system bolsters transparency and credibility, fostering investor confidence and potentially attracting heightened investment.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>5. Internal vigilance</Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>5. Internal vigilance</Text>
               <Text>
                 Effective revenue recognition systems often integrate internal controls that thwart fraud, inaccuracies, and
                 financial discrepancies. This robust oversight fortifies the overall fiscal administration and diminishes the odds of financial irregularities.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>6. Auditing and diligence</Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>6. Auditing and diligence</Text>
               <Text>
                 Amid external audits or due diligence processes, a well-deployed revenue recognition system streamlines the scrutiny of financial records and guarantees auditors or potential collaborators swift comprehension of the applied revenue recognition methodologies.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>7. Enhanced efficiency</Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>7. Enhanced efficiency</Text>
               <Text>
                 Manual revenue recognition procedures tend to be laborious and error-prone. Implementing an automated solution amplifies efficiency, curbs the necessity for manual data inputs and calculations, and allocates resources for more value-centric tasks.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontWeight={600} fontSize={'20px'} color='#000'>8. Forward-looking strategies</Text>
+              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>8. Forward-looking strategies</Text>
               <Text>
                 Accurate revenue recognition insights furnish valuable comprehension of revenue trends and patterns. This data stands indispensable for long-range strategizing, resource allotment, and tactical decision-making.
               </Text>

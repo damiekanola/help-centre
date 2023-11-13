@@ -30,8 +30,10 @@ export const Searchbar = () => {
 
   const handleCurrentRoute = () => {
     switch (location.pathname) {
-      case '/into_to_veerge':
-        return 'Intro to veerge';
+      case '/terms':
+        return 'Terms of Service';
+      case '/privacy':
+        return 'Privacy Policy';
       case '/fisrt_time_setup':
         return 'First time setup';
       case '/approved_whats_next':
@@ -61,7 +63,7 @@ export const Searchbar = () => {
       case '/invite_team_members':
         return 'Invite team members'
       case '/users_experience':
-        return 'End to end experience'
+        return 'End-to-end experience'
       case '/veerge_plus':
         return 'Veerge plus'
       case '/application_guide':
@@ -111,9 +113,10 @@ export const Searchbar = () => {
               {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
             </Link>{" "}
             <SlArrowRight color={isWHite ? "#fff" : "#0D0D0D"} />
-            <Link
-              to="/"
+            <Text
+              onClick={window.scrollTo(0, 0)}
               style={{
+                cursor: 'pointer',
                 textDecoration: "none",
                 href: "fisrt_time_setup",
                 color: isWHite ? "#fff" : "#5D5FEF",
@@ -124,7 +127,7 @@ export const Searchbar = () => {
               }}
             >
               {handleCurrentRoute()}
-            </Link>
+            </Text>
           </Flex>
           <form>
             <Flex

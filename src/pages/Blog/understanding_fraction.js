@@ -33,7 +33,7 @@ const Understanding_fraction = () => {
         <Flex h='full' direction={'column'} align={'stretch'} justify={'space-between'} w='full'>
           <Box />
           <Box>
-            <Text fontWeight={600} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
               Understanding Fractional Real Estate
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
@@ -78,9 +78,9 @@ const Understanding_fraction = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box>
-            <Text fontWeight={600} fontSize={'36px'} color='#000'>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
               OVERVIEW
             </Text>
             <Text mt='30px'>

@@ -14,8 +14,8 @@ export const blogDataRead = [
         img: new_era,
         title: 'New era of Real Estate',
         type: 'Peaks',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '6mins read',
+        datePosted: 'Mar 07, 2023',
         path: '/blog/new_era'
     },
     {
@@ -23,15 +23,15 @@ export const blogDataRead = [
         title: 'Why Veerge instead of building',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Feb 27, 2023',
         path: '/blog/why_veerge'
     },
     {
         img: veergeNDdata,
         title: 'Veerge & Data analytics',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '8mins read',
+        datePosted: 'Aug 10, 2023',
         path: '/blog/veerge_data'
     },
     {
@@ -39,63 +39,63 @@ export const blogDataRead = [
         title: 'Fractional ownership',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jan 21, 2023',
         path: '/blog/fractional_ownership'
     },
     {
         img: fractional_ownership,
         title: 'Understanding fractional real estate',
         type: 'Industry Insight',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '3mins read',
+        datePosted: 'Dec 16, 2022',
         path: '/blog/understanding_fraction'
     },
     {
         img: letter_from_CEO,
         title: 'A letter from CEO',
         type: 'Culture',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Nov 20, 2022',
         path: '/blog/a_letter'
     },
     {
         img: lead_management,
         title: 'Lead management system',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Jun 22, 2023',
         path: '/blog/lead_management'
     },
     {
         img: a_ticketing_system,
         title: 'A ticketing system serves as...',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '4mins read',
+        datePosted: 'May 20, 2023',
         path: '/blog/transforming_business'
     },
     {
         img: inventory_management,
         title: 'Inventory management system',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Apr 04, 2023',
         path: '/blog/inventory'
     },
     {
         img: revenue_recognition,
         title: 'Revenue recognition solution',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '3mins read',
+        datePosted: 'Jul 15, 2023',
         path: '/blog/revenue_recognition'
     },
     {
         img: smart_payment,
         title: 'Smart payment plan',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '7mins read',
+        datePosted: 'Sep 25, 2023',
         path: '/blog/smart_payment'
     },
 ]
@@ -105,56 +105,56 @@ export const blogDataRecent = [
         img: smart_payment,
         title: 'Smart payment plan',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '7mins read',
+        datePosted: 'Sep 25, 2023',
         path: '/blog/smart_payment'
     },
     {
         img: veergeNDdata,
         title: 'Veerge & Data analytics',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '8mins read',
+        datePosted: 'Aug 10, 2023',
         path: '/blog/veerge_data'
     },
     {
         img: revenue_recognition,
         title: 'Revenue recognition solution',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '3mins read',
+        datePosted: 'Jul 15, 2023',
         path: '/blog/revenue_recognition'
     },
     {
         img: lead_management,
         title: 'Lead management system',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Jun 22, 2023',
         path: '/blog/lead_management'
     },
     {
         img: a_ticketing_system,
         title: 'A ticketing system serves as...',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '4mins read',
+        datePosted: 'May 20, 2023',
         path: '/blog/transforming_business'
     },
     {
         img: inventory_management,
         title: 'Inventory management system',
         type: 'Features',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Apr 04, 2023',
         path: '/blog/inventory'
     },
     {
         img: new_era,
         title: 'New era of Real Estate',
         type: 'Peaks',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '6mins read',
+        datePosted: 'Mar 07, 2023',
         path: '/blog/new_era'
     },
     {
@@ -162,7 +162,7 @@ export const blogDataRecent = [
         title: 'Why Veerge instead of building',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Feb 27, 2023',
         path: '/blog/why_veerge'
     },
     {
@@ -170,23 +170,23 @@ export const blogDataRecent = [
         title: 'Fractional ownership',
         type: 'Peaks',
         readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        datePosted: 'Jan 21, 2023',
         path: '/blog/fractional_ownership'
     },
     {
         img: fractional_ownership,
         title: 'Understanding fractional real estate',
         type: 'Industry Insight',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '3mins read',
+        datePosted: 'Dec 16, 2022',
         path: '/blog/understanding_fraction'
     },
     {
         img: letter_from_CEO,
         title: 'A letter from CEO',
         type: 'Culture',
-        readTime: '5mins read',
-        datePosted: 'Jul 5, 2023',
+        readTime: '2mins read',
+        datePosted: 'Nov 20, 2022',
         path: '/blog/a_letter'
     },
 ]

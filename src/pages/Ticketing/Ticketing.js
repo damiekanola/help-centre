@@ -23,7 +23,7 @@ export const Ticketing = () => {
       <LeftNav articleContent={articleContent} />
 
       <Text className="head_">Veerge’s ticketing system</Text>
-      <Text className="publish">Published: November 23, 2022</Text>
+      <Text className="publish">Published: Jun 09, 2023</Text>
       <Box id='overview' ref={overviewRef}>
         <Text className="content">
           <Text as='p' marginTop="20px">

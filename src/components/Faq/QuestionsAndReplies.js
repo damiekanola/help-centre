@@ -26,15 +26,15 @@ const QuestionsAndReplies = ({ questions, white }) => {
                 </Center>
               )}
               <VStack align={'stretch'} w='70%' spacing={'2px'}>
-                <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontWeight={600}>
+                <Text fontFamily={'euclid-medium'} color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontFamily='euclid-semibold'>
                   {question?.name}
                 </Text>
-                <Text color={white ? '#FFF' : '#000'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
+                <Text fontFamily={'euclid-light'} color={white ? '#FFF' : '#000'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
                   {question?.date}
                 </Text>
               </VStack>
             </Flex>
-            <Text mt='17px' fontSize={'12px'} color={'#191919'}>{question?.content}</Text>
+            <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'} color={'#191919'}>{question?.content}</Text>
             <Box
               mt='22px'
               p={'9.469px 7.575px 0px 13.256px'}
@@ -54,16 +54,16 @@ const QuestionsAndReplies = ({ questions, white }) => {
                         </Center>
                       )}
                       <VStack align={'stretch'} w='70%' spacing={'2px'}>
-                        <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontWeight={600}>
+                        <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontFamily='euclid-semibold'>
                           Veerge Support
                         </Text>
                         <Text color={white ? '#FFF' : '#000'} fontSize={'12px'} fontWeight={400} noOfLines={1}>
-                          Jun 15,2023
+                          Jun 15, 2023
                         </Text>
                       </VStack>
                     </Flex>
                   </Box>
-                  <Text mt='17px' fontSize={'12px'} color={white ? '#FFF' : '#191919'}>{reply}</Text>
+                  <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'} color={white ? '#FFF' : '#191919'}>{reply}</Text>
                 </>
               ))}
             </Box>

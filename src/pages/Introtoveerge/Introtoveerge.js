@@ -32,9 +32,14 @@ export const Introtoveerge = () => {
     { check: conclusionCheck, id: 'conclusion', title: 'Conclusion' },
   ]
 
+  const relatedContent = [
+    { link: '/fisrt_time_setup', text: 'First time setup' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
+
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Text className="head_">INTRO TO VEERGE</Text>
       <Text className="publish">Published: November 23, 2022</Text>
       <div ref={veergeRef}>
@@ -80,7 +85,7 @@ export const Introtoveerge = () => {
               This interface is the foundational building block to staying relevant in today’s fast paced world.
               It serves as a singular space where offerings and buyers coexist harmoniously every day, with personalization being a key feature.
               Veerge empowers real estate businesses to establish and launch this interface effortlessly,
-              enabling quick customer onboarding through KYC automation in a matter of minutes, with just a few clicks and without the need for coding.
+              enabling quick customer onboarding through KYC automation in a matter of minutes, with just a few clicks.
             </Text>
             <Text as='p' marginTop="20px">
               The interface is a potent tool that governs end-user interactions and breathes life into the business through its transformative customer
@@ -93,7 +98,7 @@ export const Introtoveerge = () => {
               such as outright payment, payment plans, or even co-ownership of the property with family and friends.
               It is designed to empower any real estate business worldwide, instantly establishing it as a global enterprise.
               Customers from around the world can access the portal, and payments can be accepted from customers in over
-              <Text as='span' fontWeight={600}> 60 countries and 135 currencies, </Text>
+              <Text as='span' fontFamily='euclid-semibold'> 60 countries and 135 currencies, </Text>
               24/7, without the need to establish local entities.
             </Text>
             <Text as='p' marginTop="20px">
@@ -139,7 +144,7 @@ export const Introtoveerge = () => {
         <Box pt="30px" id="intelligence" ref={intelligenceRef}>
           <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
           <Text className="content">
-            <Text as='p' fontWeight={600}>
+            <Text as='p' fontFamily='euclid-semibold'>
               AI+ Your business = Limitless possibilities.
             </Text>
             <Text as='p' marginTop='20px'>

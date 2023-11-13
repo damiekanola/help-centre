@@ -42,10 +42,10 @@ export const VeergePlus = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge the new era of real estate' },
-    { link: "/", text: 'Veerge Theme' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: '/blog/new_era', text: 'Veerge the new era of real estate' },
+    { link: "/veerge_themes", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
 
   return (
@@ -53,10 +53,10 @@ export const VeergePlus = () => {
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">VEERGE PLUS</Text>
-      <Text className="publish">Published: November 10, 2022</Text>
+      <Text className="publish">Published: Jul 21, 2023</Text>
       <Text className="content" lineHeight={'25px'} mt='50px'>
         <Box mb='30px' id="personalize" ref={personalizeRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Personalize More, Retain More, Move Fast, Never Stop
           </Text>
           <Text mt='20px' as='p' fontWeight={400}>
@@ -64,7 +64,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="optimize" ref={optimizeRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Optimized for Performance
           </Text>
           <Text as='p' fontWeight={400}>
@@ -72,7 +72,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="migrate" ref={migrateRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Migrate and Launch with Ease
           </Text>
           <Text as='p' fontWeight={400}>
@@ -80,7 +80,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="built" ref={builtRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Built-In Security and Insights
           </Text>
           <Text as='p' fontWeight={400}>
@@ -88,7 +88,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="committed" ref={committedRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Committed to Support
           </Text>
           <Text as='p' fontWeight={400}>
@@ -111,7 +111,7 @@ export const VeergePlus = () => {
         </Box>
 
         <Box mb='30px' id="channels" ref={channelsRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Channels
           </Text>
           <Text as='p' fontWeight={400}>
@@ -135,7 +135,7 @@ export const VeergePlus = () => {
         </Box>
 
         <Box mb='50px' id="pricing" ref={pricingRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Pricing and Cost Breakdown
           </Text>
           <Text as='p' fontWeight={400}>
@@ -206,7 +206,7 @@ export const VeergePlus = () => {
 
 
         <Box mb='30px' id="getting" ref={gettingRef}>
-          <Text fontSize={'24px'} fontWeight={600}>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Getting started with Veerge
           </Text>
           <Text as='p' fontWeight={400}>

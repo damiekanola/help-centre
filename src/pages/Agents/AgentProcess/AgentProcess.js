@@ -68,35 +68,35 @@ export const AgentProcess = () => {
           </Text>
 
           <Box>
-            <Text as='p' marginTop="20px" fontSize={'24px'} fontWeight={600}>STEP 1</Text>
+            <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 1</Text>
             <Text as='p' marginTop="20px">
               Initiating the process, you'll begin by selecting the property that corresponds to the commission request. This ensures alignment between the transaction and the commission.
             </Text>
             <Image marginTop='20px' w='full' h='auto' src={agent1} />
           </Box>
           <Box>
-            <Text as='p' marginTop="20px" fontSize={'24px'} fontWeight={600}>STEP 2</Text>
+            <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 2</Text>
             <Text as='p' marginTop="20px">
               Once the property is chosen, a new screen emerges, inviting you to input the specific commission amount. You also have the option to include any relevant notes that provide additional context or clarification.
             </Text>
             <Image marginTop='20px' w='full' h='auto' src={agent2} />
           </Box>
           <Box>
-            <Text as='p' marginTop="20px" fontSize={'24px'} fontWeight={600}>STEP 3</Text>
+            <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 3</Text>
             <Text as='p' marginTop="20px">
               At this juncture, a noteworthy feature comes into play. A checkbox gives you the authority to grant the agent access to the client's transaction records through their portal. If you decide to leave the checkbox unchecked, the agent's access will remain limited, preserving a higher level of privacy.
             </Text>
             <Image marginTop='20px' w='full' h='auto' src={agent3} />
           </Box>
           <Box>
-            <Text as='p' marginTop="20px" fontSize={'24px'} fontWeight={600}>STEP 4</Text>
+            <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 4</Text>
             <Text as='p' marginTop="20px">
               With all the necessary information entered, a summary screen materializes. Here, you can review the entire commission approval process, ensuring accuracy and completeness before finalizing the action.
             </Text>
             <Image marginTop='20px' w='full' h='auto' src={agent4} />
           </Box>
           <Box>
-            <Text as='p' marginTop="20px" fontSize={'24px'} fontWeight={600}>STEP 5</Text>
+            <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 5</Text>
             <Text as='p' marginTop="20px">
               Notably, the Veerge platform offers an innovative option for future commission management. By checking a specific box, you can activate the automation of future commissions. These automated commissions are calculated based on a percentage derived from the initial commission. This feature proves particularly advantageous when dealing with payment plans and extended transactions.
             </Text>

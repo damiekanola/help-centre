@@ -55,7 +55,7 @@ const Veerge_data = () => {
 
           <Box />
           <Box>
-            <Text fontWeight={600} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontFamily='euclid-semibold' color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
               Veerge & Data Analytics
             </Text>
             <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
@@ -102,9 +102,9 @@ const Veerge_data = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
-            <Text fontWeight={600} fontSize={'36px'}>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'}>
               OVERVIEW
             </Text>
             <Text mt='30px'>
@@ -127,7 +127,7 @@ const Veerge_data = () => {
             </Text>
           </Box>
           <Box mt='20px' ref={machine_leaningRef} id='machine_leaning'>
-            <Text fontWeight={600} fontSize={'36px'}>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'}>
               MACHINE LEARNING, DEEP LEARNING & AI
             </Text>
             <Text mt='20px'>
@@ -144,7 +144,7 @@ const Veerge_data = () => {
             </Text>
           </Box>
           <Box mt='20px' ref={why_veergeRef} id='why_veerge'>
-            <Text fontWeight={600} fontSize={'36px'}>
+            <Text fontFamily='euclid-semibold' fontSize={'36px'}>
               WHY VEERGE MATTERS
             </Text>
             <Text mt='20px'>
@@ -172,7 +172,7 @@ const Veerge_data = () => {
 
             <Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Sales
                 </Text>
                 <UnorderedList pl='10px'>
@@ -185,7 +185,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Demographics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -198,7 +198,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Feedback
                 </Text>
                 <UnorderedList pl='10px'>
@@ -211,7 +211,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Lead Generation
                 </Text>
                 <UnorderedList pl='10px'>
@@ -224,7 +224,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Engagement
                 </Text>
                 <UnorderedList pl='10px'>
@@ -237,7 +237,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Inventory
                 </Text>
                 <UnorderedList pl='10px'>
@@ -250,7 +250,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Sales Funnel Conversion
                 </Text>
                 <UnorderedList pl='10px'>
@@ -263,7 +263,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Retention
                 </Text>
                 <UnorderedList pl='10px'>
@@ -276,7 +276,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Sales Performance
                 </Text>
                 <UnorderedList pl='10px'>
@@ -289,7 +289,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Pricing
                 </Text>
                 <UnorderedList pl='10px'>
@@ -302,7 +302,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Lifetime Value
                 </Text>
                 <UnorderedList pl='10px'>
@@ -315,7 +315,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Referral Tracking
                 </Text>
                 <UnorderedList pl='10px'>
@@ -328,7 +328,7 @@ const Veerge_data = () => {
                 </UnorderedList>
               </Box>
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Demand
                 </Text>
                 <UnorderedList pl='10px'>
@@ -342,7 +342,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Inventory Turnover
                 </Text>
                 <UnorderedList pl='10px'>
@@ -356,7 +356,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Satisfaction
                 </Text>
                 <UnorderedList pl='10px'>
@@ -370,7 +370,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Support Metrics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -384,7 +384,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Inspection Data
                 </Text>
                 <UnorderedList pl='10px'>
@@ -398,7 +398,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Sales Forecasting
                 </Text>
                 <UnorderedList pl='10px'>
@@ -412,7 +412,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Behaviour Segmentation
                 </Text>
                 <UnorderedList pl='10px'>
@@ -426,7 +426,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Cash Flow Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -440,7 +440,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Marketing ROI
                 </Text>
                 <UnorderedList pl='10px'>
@@ -454,7 +454,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Appreciation
                 </Text>
                 <UnorderedList pl='10px'>
@@ -468,7 +468,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   User Acquisition Cost
                 </Text>
                 <UnorderedList pl='10px'>
@@ -482,7 +482,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer LTV vs. CAC
                 </Text>
                 <UnorderedList pl='10px'>
@@ -496,7 +496,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Regulatory Compliance
                 </Text>
                 <UnorderedList pl='10px'>
@@ -510,7 +510,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Application Performance
                 </Text>
                 <UnorderedList pl='10px'>
@@ -524,7 +524,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Loyalty Programs
                 </Text>
                 <UnorderedList pl='10px'>
@@ -538,7 +538,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Trends and Insights
                 </Text>
                 <UnorderedList pl='10px'>
@@ -552,7 +552,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Segmentation for Personalization
                 </Text>
                 <UnorderedList pl='10px'>
@@ -566,7 +566,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Application Usability and User Experience
                 </Text>
                 <UnorderedList pl='10px'>
@@ -580,7 +580,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Inventory Age Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -594,7 +594,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Sales Channel Effectiveness
                 </Text>
                 <UnorderedList pl='10px'>
@@ -608,7 +608,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Journey Mapping
                 </Text>
                 <UnorderedList pl='10px'>
@@ -622,7 +622,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Lead-to-Customer Conversion Time
                 </Text>
                 <UnorderedList pl='10px'>
@@ -636,7 +636,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Segmentation for Expansion
                 </Text>
                 <UnorderedList pl='10px'>
@@ -650,7 +650,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Lifetime Value by Acquisition Source
                 </Text>
                 <UnorderedList pl='10px'>
@@ -664,7 +664,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Payment Delay Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -678,7 +678,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property ROI (Return on Investment)
                 </Text>
                 <UnorderedList pl='10px'>
@@ -692,7 +692,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Comparative Analysis of Property Features
                 </Text>
                 <UnorderedList pl='10px'>
@@ -706,7 +706,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Refund Rate
                 </Text>
                 <UnorderedList pl='10px'>
@@ -720,7 +720,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Engagement Metrics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -734,7 +734,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Sales Team Efficiency
                 </Text>
                 <UnorderedList pl='10px'>
@@ -748,7 +748,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Profitability Analysis by Property Type
                 </Text>
                 <UnorderedList pl='10px'>
@@ -762,7 +762,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Referral Sources
                 </Text>
                 <UnorderedList pl='10px'>
@@ -776,7 +776,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Segmentation by Purchase Frequency
                 </Text>
                 <UnorderedList pl='10px'>
@@ -790,7 +790,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Sentiment Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -804,7 +804,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Rental Property Metrics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -818,7 +818,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Lead Source Conversion Rates
                 </Text>
                 <UnorderedList pl='10px'>
@@ -832,7 +832,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Location Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -846,7 +846,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Purchase History
                 </Text>
                 <UnorderedList pl='10px'>
@@ -860,7 +860,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Segmentation by Property Size
                 </Text>
                 <UnorderedList pl='10px'>
@@ -874,7 +874,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Payment Method Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -888,7 +888,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Onboarding Efficiency
                 </Text>
                 <UnorderedList pl='10px'>
@@ -902,7 +902,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Development Cost Breakdown
                 </Text>
                 <UnorderedList pl='10px'>
@@ -916,7 +916,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Satisfaction by Region
                 </Text>
                 <UnorderedList pl='10px'>
@@ -930,7 +930,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Expansion Feasibility
                 </Text>
                 <UnorderedList pl='10px'>
@@ -944,7 +944,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Purchase Behaviour Over Time
                 </Text>
                 <UnorderedList pl='10px'>
@@ -958,7 +958,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Age
                 </Text>
                 <UnorderedList pl='10px'>
@@ -972,7 +972,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Portfolio Diversification
                 </Text>
                 <UnorderedList pl='10px'>
@@ -986,7 +986,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Education Engagement
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1000,7 +1000,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Resale Data
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1014,7 +1014,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Mobile App Usage Analytics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1028,7 +1028,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Amenities Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1042,7 +1042,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Communication Effectiveness
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1056,7 +1056,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Inspection Frequency
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1070,7 +1070,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Segmentation by Property Preferences
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1084,7 +1084,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Predictive Maintenance Needs
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1098,7 +1098,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Purchase Intent Data
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1112,7 +1112,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Exit Surveys
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1126,7 +1126,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Portfolio Valuation
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1140,7 +1140,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Inspection Efficiency
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1154,7 +1154,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Cross-Selling Opportunities
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1168,7 +1168,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Risk Analysis
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1182,7 +1182,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Property Financing Data
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1196,7 +1196,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Market Niche Identification
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1210,7 +1210,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Relationship Building
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1224,7 +1224,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Customer Loyalty Predictive Analytics
                 </Text>
                 <UnorderedList pl='10px'>
@@ -1238,7 +1238,7 @@ const Veerge_data = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontWeight={600} fontSize={'16px'}>
+                <Text fontFamily='euclid-semibold' fontSize={'16px'}>
                   Predictive Sales Modelling
                 </Text>
                 <UnorderedList pl='10px'>

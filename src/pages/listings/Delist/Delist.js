@@ -46,7 +46,7 @@ const Delist = () => {
   const relatedContent = [
     { link: '/into_to_veerge', text: 'Intro to Veerge' },
     { link: "/listings/create_listing", text: 'How to create a listing' },
-    { link: "/", text: 'Veerge & Data analytics' }
+    { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
   ]
 
   return (

@@ -38,11 +38,10 @@ export const Header = () => {
           align="center"
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Link to="/">
-            {" "}
+          <a href="https://veerge.myxellia.io/">
             <Image src={logo} />
             <Text fontSize={'12px'} color='#fff'>Powered by Myxellia</Text>
-          </Link>
+          </a>
         </Flex>
       </Show>
       <Show breakpoint="(max-width: 768px)">

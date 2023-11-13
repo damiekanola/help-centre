@@ -48,17 +48,17 @@ export const InviteTeamMembers = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Veerge: The new era of real estate' },
-    { link: "/", text: 'Veerge Plus' },
-    { link: "/", text: 'How you are protected' },
-    { link: "/", text: 'Why Veerge instead of building?' }
+    { link: '/blog/new_era', text: 'Veerge: The new era of real estate' },
+    { link: "/veerge_plus", text: 'Veerge Plus' },
+    { link: "/how_protected", text: 'How you are protected' },
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
   ]
 
   return (
     <div className="main">
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
-      <Box position={'relative'}>
+      <Box>
         <Text className="head_">INVITE TEAM MEMBERS</Text>
         <Text className="publish">Published: November 24, 2022</Text>
         <Box id="invite" ref={inviteRef}>
@@ -145,8 +145,8 @@ export const InviteTeamMembers = () => {
           <Helpful />
         </Box>
 
-        {!toView && <Blocker />}
       </Box>
+      {!toView && <Blocker />}
     </div>
   );
 };
