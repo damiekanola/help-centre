@@ -30,9 +30,15 @@ export const AgentProcess = () => {
     { check: approvingCheck, id: 'approving', title: 'Approving commissions: A step-by-step guide' },
   ]
 
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
+
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <AgentRightNav />
       <Text className="head_">The complete agents process</Text>
       <Text className="publish">Published: November 24, 2022</Text>

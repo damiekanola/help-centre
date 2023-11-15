@@ -1,9 +1,12 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Box, Text, OrderedList, ListItem } from "@chakra-ui/react";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 
 export const Terms = () => {
+  useEffect(() => {
+    document.title = 'Terms of service';
+  }, []);
 
   const account_termsRef = useRef(null)
   const account_activationRef = useRef(null)
@@ -53,11 +56,16 @@ export const Terms = () => {
     { check: generalCheck, id: 'general', title: 'General Conditions' },
   ]
 
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
 
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">TERMS OF SERVICE</Text>
       <Text className="publish">Last updated on: May 23, 2022</Text>
@@ -378,7 +386,7 @@ export const Terms = () => {
             </ListItem>
             <ListItem>
               The Terms of Service may be available in languages other than English. To the extent of any inconsistencies or conflicts between these English Terms of Service and Veerge’s Terms of Service available in another language, the most current English version of the Terms of Service at
-              <a href="https://www.Veerge.com/legal/terms" as='span' textDecoration={'underline'}> https://www.Veerge.com/legal/terms</a> will prevail. Any disputes arising out of these Terms of Service will be resolved in English unless otherwise determined by Veerge (acting in its sole discretion) or as required by applicable law.
+              <a href="https://www.veerge.myxellia.io/legal/terms" as='span' textDecoration={'underline'}> https://www.veerge.myxellia.io/legal/terms</a> will prevail. Any disputes arising out of these Terms of Service will be resolved in English unless otherwise determined by Veerge (acting in its sole discretion) or as required by applicable law.
             </ListItem>
             <ListItem>
               All the terms and provisions of the Terms of Service will be binding upon and inure to the benefit of the parties to the Terms of Service and to their respective heirs, successors, permitted assigns and legal representatives. Veerge will be permitted to assign these Terms of Service without notice to you or consent from you. You will have no right to assign or otherwise transfer the Terms of Service, or any of your rights or obligations hereunder, to any third party without Veerge’s prior written consent, to be given or withheld in Veerge’s sole discretion.

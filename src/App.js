@@ -50,13 +50,13 @@ function App() {
       <Show pb='100px' breakpoint="(min-width: 769px)">
         <Searchbar />
       </Show>
-      <div className="wrapper">
+      <div>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/into_to_veerge" element={<Introtoveerge />} />
-          <Route path="/fisrt_time_setup" element={<Fisrttimesetup />} />
-          <Route path="/approved_whats_next" element={<Approved />} />
+          <Route path="/intro_to_veerge" element={<Introtoveerge />} />
+          <Route path="/first_time_setup" element={<Fisrttimesetup />} />
+          <Route path="/approved_what_next" element={<Approved />} />
           <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/listings/create_listing" element={<Createlisting />} />
           <Route path="/listings/change_listing" element={<Changelisting />} />

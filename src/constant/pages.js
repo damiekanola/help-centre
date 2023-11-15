@@ -18,7 +18,7 @@ const data = [
         tag: 'Beginner',
         readTime: '6 mins read',
         datePosted: 'Nov 23, 2022',
-        path: '/into_to_veerge'
+        path: '/intro_to_veerge'
     },
     {
         img: firstTime,
@@ -27,7 +27,7 @@ const data = [
         tag: 'Beginner',
         readTime: '5 mins read',
         datePosted: 'Dec 09, 2022',
-        path: '/fisrt_time_setup'
+        path: '/first_time_setup'
     },
     {
         img: approvedWhat,
@@ -36,7 +36,7 @@ const data = [
         tag: 'Beginner',
         readTime: '4 mins read',
         datePosted: 'Jan 06, 2023',
-        path: '/approved_whats_next'
+        path: '/approved_what_next'
     },
     {
         img: listings,
@@ -44,7 +44,7 @@ const data = [
         color: 'black',
         tag: 'Advanced',
         readTime: '8 mins read',
-        datePosted: 'Fed 18, 2023',
+        datePosted: 'Feb 18, 2023',
         path: '/listings/overview'
     },
     {

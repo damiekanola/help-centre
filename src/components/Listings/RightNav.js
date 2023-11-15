@@ -25,7 +25,7 @@ const RightNav = () => {
           },
         }}
       >
-        <Text color="#000" fontSize={'24px'} fontFamily={'euclid-medium'} letterSpacing={'3px'}>Listings</Text>
+        <Text fontSize={'24px'} fontFamily={'euclid-medium'} color={'black !important'} letterSpacing={'3px'}>Listings</Text>
         <VStack mt='30px' spacing={'20px'} align='stretch'>
           <Link to="/listings/overview">
             <Text fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}>Overview of Listing</Text>

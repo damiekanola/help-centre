@@ -28,7 +28,7 @@ export const BlogLeftNav = ({ articleContent }) => {
           }}
         >
           {/* <Box overflowY={'scroll'}> */}
-          <Text mb='20px' className="article_text">Table of Content</Text>
+          <Text mb='20px' className="article_text" color={'black !important'} fontFamily={'euclid-medium'}>Table of Content</Text>
           <Flex direction={'column'} align={'stretch'}>
             {articleContent.map((content, i) => (
               <Flex

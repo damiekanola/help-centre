@@ -58,7 +58,7 @@ const Approved = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Intro to veerge' },
+    { link: '/intro_to_veerge', text: 'Intro to veerge' },
     { link: "/veerge_plus", text: 'Veerge Plus' },
     { link: "/how_protected", text: 'How are you protected' }
   ]
@@ -68,7 +68,7 @@ const Approved = () => {
     <div className="main">
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Text className="head_">APPROVED, WHAT NEXT?</Text>
-      <Text className="publish">Published: November 23, 2022</Text>
+      <Text className="publish">Published: January 06, 2023</Text>
       <Box id='approved' ref={approvedRef}>
         <Text className="content_head">
           MY ACCOUNT HAS BEEN APPROVED WHAT NEXT?

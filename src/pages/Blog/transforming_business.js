@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, Text } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import a_ticketing_system from '../../assets/images/blog/a_ticketing_system.png';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
@@ -11,6 +11,10 @@ import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Transforming_business = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate()
   const a_ticketRef = useRef(null)
   const perksRef = useRef(null)

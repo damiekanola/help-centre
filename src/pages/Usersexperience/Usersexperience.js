@@ -55,7 +55,7 @@ export const Usersexperience = () => {
         <Box mx='auto' w='95%' fontFamily={'euclid-light'}>
           <Text color='#FFF' lineHeight={'25px'}>
             <Box w='60%' mx='auto'>
-              <Text className="head_" color='#FFF'>End to End Experience</Text>
+              <Text className="head_" color='#FFF'>End-to-End Experience</Text>
               <Text as='p' fontWeight={300} mt='30px' >
                 This is where Veerge truly shines – as a catalyst for business value. Veerge serves as a robust system of engagement. It empowers you to craft an application interface effortlessly, without the need for a single line of code. Yet, it's not just any interface; it's the nexus, an all-encompassing marketplace where your offerings and your buyers coexist seamlessly day in and day out. This coexistence is uniquely tailored to cater to the specific needs of every individual buyer. When Veerge integrates into a development company's existing infrastructure, it turns the experience into gold, addressing every facet of the home ownership journey, all without demanding any coding.
               </Text>
@@ -131,7 +131,9 @@ export const Usersexperience = () => {
               </video> */}
               <Text as='p' fontWeight={300} mt='30px'>
                 All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
-                <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
+                <Link to='/listings/create_listing'>
+                  <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
+                </Link>
               </Text>
               <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3rIcAAmqdws'} />

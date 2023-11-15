@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, Text } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
 import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
@@ -9,6 +9,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Smart_payment = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate();
 
   return (

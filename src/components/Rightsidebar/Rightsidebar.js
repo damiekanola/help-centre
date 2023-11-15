@@ -14,7 +14,7 @@ export const Rightsidebar = () => {
   return (
     // right  Side navigation
     <div class="rightsidenav">
-      <Text className="article_text">In this article</Text>
+      <Text className="article_text" color={'black !important'} fontFamily={'euclid-medium'}>In this article</Text>
       <ul className={style}>
         <li onClick={handleClick}>
           <a href="#veerge">What is Veerge</a>
@@ -35,7 +35,7 @@ export const Rightsidebar = () => {
           <a href="#faq"> FAQs</a>
         </li>
       </ul>
-      <Text className="article_text" mt="60px">
+      <Text className="article_text" mt="60px" color={'black !important'} fontFamily={'euclid-medium'}>
         In this article
       </Text>
       <Flex columnGap="20px">

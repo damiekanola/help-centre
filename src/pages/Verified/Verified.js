@@ -34,7 +34,7 @@ export const Verified = () => {
           </Text>
           <Flex columnGap="20px">
             <Image src={file} h="18px" w="14px" />
-            <Link to="fisrt_time_setup">First time setup</Link>
+            <Link to="first_time_setup">First time setup</Link>
           </Flex>
 
           <Flex columnGap="20px">

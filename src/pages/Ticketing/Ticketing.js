@@ -4,8 +4,8 @@ import "./Ticketing.css";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../components/Faq/Helpful";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
-export const Ticketing = () => {
 
+export const Ticketing = () => {
   const overviewRef = useRef(null)
   const perksRef = useRef(null)
 
@@ -18,9 +18,15 @@ export const Ticketing = () => {
     { check: perksCheck, id: 'perks', title: 'Perks of a ticketing system tailored for property development companies' },
   ]
 
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
+
   return (
     <div className="main" id="verified">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
 
       <Text className="head_">Veerge’s ticketing system</Text>
       <Text className="publish">Published: Jun 09, 2023</Text>

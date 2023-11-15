@@ -44,7 +44,7 @@ const Delist = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: '/intro_to_veerge', text: 'Intro to Veerge' },
     { link: "/listings/create_listing", text: 'How to create a listing' },
     { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
   ]
@@ -54,7 +54,7 @@ const Delist = () => {
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">HOW TO DELIST A LISTING</Text>
-      <Text className="publish">Published: November 24, 2022</Text>
+      <Text className="publish">Published: February 18, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
           <Text as='p'>

@@ -26,7 +26,7 @@ const LeadRightNav = () => {
           },
         }}
       >
-        <Text color="#000" fontSize={'24px'} fontFamily={'euclid-medium'} letterSpacing={'3px'}>Lead & Account</Text>
+        <Text fontSize={'24px'} letterSpacing={'3px'} color={'black !important'} fontFamily={'euclid-medium'}>Lead & Account</Text>
         <VStack mt='30px' spacing={'20px'} align='stretch'>
           <Link to="/lead/create_account">
             <Text fontWeight={location.pathname === '/lead/create_account' && 600}>Create an account</Text>

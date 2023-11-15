@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import file from "../../assets/icons/file.png";
 
 const sample = [
-  { link: '/fisrt_time_setup', text: 'First time setup' },
-  { link: "/approved_whats_next", text: 'Approved, what next?' },
+  { link: '/first_time_setup', text: 'First time setup' },
+  { link: "/approved_what_next", text: 'Approved, what next?' },
   { link: "/terms", text: 'Terms of service' }
 ]
 export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
@@ -34,7 +34,7 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
         }}
       >
         {/* <Box overflowY={'scroll'}> */}
-        <Text className="article_text">In this article</Text>
+        <Text className="article_text" color={'black !important'} fontFamily={'euclid-medium'}>In this article</Text>
         <Flex mt='20px' direction={'column'} align={'stretch'}>
           {articleContent.map((content, i) => (
             <Flex
@@ -56,7 +56,7 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
           ))}
         </Flex>
 
-        <Text className="article_text" mt="40px">
+        <Text className="article_text" mt="40px" color={'black !important'} fontFamily={'euclid-medium'}>
           Related Content
         </Text>
         <VStack fontFamily='euclid' mt='20px' spacing={'17px'} align='stretch'>

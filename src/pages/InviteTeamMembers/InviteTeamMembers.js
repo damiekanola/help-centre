@@ -60,7 +60,7 @@ export const InviteTeamMembers = () => {
       {/* <LeadRightNav /> */}
       <Box>
         <Text className="head_">INVITE TEAM MEMBERS</Text>
-        <Text className="publish">Published: November 24, 2022</Text>
+        <Text className="publish">Published: April 02, 2023</Text>
         <Box id="invite" ref={inviteRef}>
           <Text className="content" lineHeight={'25px'}>
             <Text as='p' fontWeight={500}>

@@ -53,14 +53,18 @@ const Createunit = () => {
     }
   ]
 
-
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">HOW TO CREATE UNIT ALLOCATIONS</Text>
-      <Text className="publish">Published: November 24, 2022</Text>
+      <Text className="publish">Published: February 18, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
           <Text as='p'>

@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, OrderedList, Text } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
 import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
@@ -9,6 +9,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 const A_letter = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate();
 
   return (
@@ -34,7 +38,7 @@ const A_letter = () => {
           <Box />
           <Box>
             <Text fontFamily='euclid-semibold' color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
-              A Letter the CEO
+              A Letter from the CEO
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
               By Ahmed Ibraheem
