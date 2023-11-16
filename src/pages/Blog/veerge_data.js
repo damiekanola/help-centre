@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, Text, UnorderedList, ListItem } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import veergeNDdata from '../../assets/images/blog/veerge&data.png';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
@@ -11,6 +11,10 @@ import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Veerge_data = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate()
   const overviewRef = useRef(null)
   const machine_leaningRef = useRef(null)
@@ -27,7 +31,7 @@ const Veerge_data = () => {
     { check: overviewCheck, id: 'overview', title: 'Overview' },
     { check: machine_leaningCheck, id: 'machine_leaning', title: 'Machine Learning, Deep Learning & AI' },
     { check: why_veergeCheck, id: 'why_veerge', title: 'Why Veerge Matters' },
-    { check: conclusionCheck, id: 'conclusion', title: 'Conculusion' },
+    { check: conclusionCheck, id: 'conclusion', title: 'Conclusion' },
   ]
 
 

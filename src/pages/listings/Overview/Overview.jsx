@@ -33,7 +33,7 @@ const Overview = () => {
   ]
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: '/intro_to_veerge', text: 'Intro to Veerge' },
     { link: "/blog/understanding_fraction", text: 'Understanding Fractional Real estate ' },
     { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
   ]
@@ -44,7 +44,7 @@ const Overview = () => {
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Text className="head_">LISTINGS</Text>
-      <Text className="publish">Published: November 23, 2022</Text>
+      <Text className="publish">Published: February 18, 2023</Text>
       <Box>
         <Text className="content_head" id="overview" ref={overviewRef}>
           OVERVIEW OF LISTINGS

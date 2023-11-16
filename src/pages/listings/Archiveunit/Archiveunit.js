@@ -59,7 +59,7 @@ const Archiveunit = () => {
 
 
   const relatedContent = [
-    { link: '/into_to_veerge', text: 'Intro to Veerge' },
+    { link: '/intro_to_veerge', text: 'Intro to Veerge' },
     { link: "/blog/understanding_fraction", text: 'Understanding Fractional Real estate ' },
     { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
   ]
@@ -70,7 +70,7 @@ const Archiveunit = () => {
       <RightNav />
       <Box id="how_to" ref={how_toRef}>
         <Text className="head_">HOW TO ARCHIVE A UNIT</Text>
-        <Text className="publish">Published: November 24, 2022</Text>
+        <Text className="publish">Published: February 18, 2023</Text>
         <Text className="content" lineHeight={'25px'}>
           <Text as='p'>
             If you want to reserve specific units for a special purpose, these are the steps to follow:

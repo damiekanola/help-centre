@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Text, Image, OrderedList, ListItem, UnorderedList } from "@chakra-ui/react";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 
 export const Privacy = () => {
-
+  useEffect(() => {
+    document.title = 'Privacy policy';
+  }, []);
 
   const introductionRef = useRef(null)
   const our_valuesRef = useRef(null)
@@ -50,10 +52,15 @@ export const Privacy = () => {
     // textTransform: 'uppercase',
   }
 
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">PRIVACY POLICY</Text>
       <Text className="publish">Last updated on: May 23, 2022</Text>

@@ -34,9 +34,9 @@ export const Searchbar = () => {
         return 'Terms of Service';
       case '/privacy':
         return 'Privacy Policy';
-      case '/fisrt_time_setup':
+      case '/first_time_setup':
         return 'First time setup';
-      case '/approved_whats_next':
+      case '/approved_what_next':
         return 'Approved, what next?';
       case '/ticketing':
         return 'Ticketing';
@@ -91,6 +91,26 @@ export const Searchbar = () => {
     }
   }
 
+  const checkBlogPage = () => {
+    switch (location.pathname) {
+      case "/blog":
+      case "/blog/transforming_business":
+      case "/blog/inventory":
+      case "/blog/revenue_recognition":
+      case "/blog/lead_management":
+      case "/blog/a_letter":
+      case "/blog/understanding_fraction":
+      case "/blog/smart_payment":
+      case "/blog/fractional_ownership":
+      case "/blog/new_era":
+      case "/blog/veerge_data":
+      case "/blog/why_veerge":
+        return true
+      default:
+        return false;
+    }
+  }
+
   return (
     <>
       <Show breakpoint="(min-width: 769px)">
@@ -109,16 +129,20 @@ export const Searchbar = () => {
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
-            <Link to="/">
-              {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
-            </Link>{" "}
-            <SlArrowRight color={isWHite ? "#fff" : "#0D0D0D"} />
+            {location.pathname === '/' || location.pathname === '/blog' ? null : (
+              <>
+                <Link to={checkBlogPage() ? '/blog' : "/"}>
+                  {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
+                </Link>{" "}
+                <SlArrowRight color={isWHite ? "#fff" : "#0D0D0D"} />
+              </>
+            )}
             <Text
               onClick={window.scrollTo(0, 0)}
               style={{
                 cursor: 'pointer',
                 textDecoration: "none",
-                href: "fisrt_time_setup",
+                href: "first_time_setup",
                 color: isWHite ? "#fff" : "#5D5FEF",
                 fontStyle: "normal",
                 fontWeight: "400",
@@ -164,13 +188,14 @@ export const Searchbar = () => {
             scrollBehavior={scrollBehavior}
           >
             <ModalOverlay bg="rgba(0,0,0,0.2)" />
-            <ModalContent>
+            <ModalContent minW={'450px'}>
               <ModalBody>
                 <Flex direction="row" align="center">
                   <CiSearch style={{ width: "25px", height: "25px" }} />
                   <Input
                     placeholder="Search the docs"
                     type="text"
+                    value={query}
                     border="none"
                     FontWeight="400"
                     fontSize="12px"
@@ -189,15 +214,13 @@ export const Searchbar = () => {
                     if (query === "") {
                       return null;
                     } else if (
-                      data.searchQuery
-                        .toLowerCase()
-                        .includes(query.toLowerCase())
+                      data?.title?.toLowerCase()?.includes(query?.toLowerCase())
                     ) {
                       return data;
                     }
                   })
                   .map((data) => {
-                    const { route, topic } = data;
+                    const { id, page, link, title, pageTitle } = data;
                     return (
                       <Flex
                         direction="column"
@@ -207,7 +230,7 @@ export const Searchbar = () => {
                         mt="20px"
                         width="400px"
                       >
-                        <Link to={route} className="a__">
+                        <Link to={`${link}#${id}`} className="a__">
                           <Flex
                             direction="row"
                             justify="space-between"
@@ -216,7 +239,10 @@ export const Searchbar = () => {
                             align="center"
                             onClick={onClose}
                           >
-                            <Text>{topic}</Text>
+                            <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
+                              {pageTitle}:
+                              <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
+                            </Text>
 
                             <MdSubdirectoryArrowLeft />
                           </Flex>
@@ -273,6 +299,7 @@ export const Searchbar = () => {
                 <Input
                   placeholder="Search the docs"
                   type="text"
+                  value={query}
                   border="none"
                   FontWeight="400"
                   fontSize="12px"
@@ -291,13 +318,13 @@ export const Searchbar = () => {
                   if (query === "") {
                     return null;
                   } else if (
-                    data.searchQuery.toLowerCase().includes(query.toLowerCase())
+                    data?.title?.toLowerCase()?.includes(query?.toLowerCase())
                   ) {
                     return data;
                   }
                 })
                 .map((data) => {
-                  const { route, topic } = data;
+                  const { id, page, link, title, pageTitle } = data;
                   return (
                     <Flex
                       direction="column"
@@ -307,7 +334,7 @@ export const Searchbar = () => {
                       mt="20px"
                       width="320px"
                     >
-                      <Link to={route} className="a__">
+                      <Link to={`${link}#${id}`} className="a__">
                         <Flex
                           direction="row"
                           justify="space-between"
@@ -316,7 +343,10 @@ export const Searchbar = () => {
                           align="center"
                           onClick={onClose}
                         >
-                          <Text>{topic}</Text>
+                          <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
+                            {pageTitle}:
+                            <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
+                          </Text>
 
                           <MdSubdirectoryArrowLeft />
                         </Flex>

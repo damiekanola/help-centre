@@ -1,5 +1,5 @@
 import { Box, Center, Flex, HStack, Image, Text } from '@chakra-ui/react'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'
 import timeIcon from '../../assets/icons/time_icon.svg'
@@ -9,6 +9,10 @@ import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 
 export const Blog = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const readScollToRef = useRef();
 
   return (

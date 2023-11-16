@@ -10,7 +10,6 @@ import infoIcon from '../../assets/icons/info.svg'
 import { Link } from "react-router-dom";
 
 export const VeergePlus = () => {
-
   const personalizeRef = useRef(null);
   const optimizeRef = useRef(null);
   const migrateRef = useRef(null);

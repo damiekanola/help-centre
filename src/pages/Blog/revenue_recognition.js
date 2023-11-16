@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, OrderedList, Text } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
 import { GrFacebook, GrLinkedin, GrTwitter } from 'react-icons/gr';
@@ -11,6 +11,10 @@ import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const Revenue_recognition = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate();
   const overviewRef = useRef(null);
   const benefitRef = useRef(null);

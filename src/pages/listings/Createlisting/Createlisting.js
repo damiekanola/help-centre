@@ -49,14 +49,19 @@ const Createlisting = () => {
     }
   ]
 
+  const relatedContent = [
+    { link: '/first_time_setup', text: 'First time setup' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
+    { link: "/terms", text: 'Terms of service' }
+  ]
 
   return (
     <Box className="main" >
-      <LeftNav articleContent={articleContent} />
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <RightNav />
       <Box>
         <Text className="head_">HOW TO CREATE A LISTING</Text>
-        <Text className="publish">Published: November 23, 2022</Text>
+        <Text className="publish">Published: February 18, 2023</Text>
         <Box id="overview" ref={overviewRef}>
           <Text className="content_head">
             CREATING A MULTI-FAMILY OR A GATED COMMUNITY LISTING

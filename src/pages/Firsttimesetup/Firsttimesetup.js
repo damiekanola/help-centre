@@ -137,7 +137,7 @@ export const Fisrttimesetup = () => {
   ]
 
   const relatedContent = [
-    { link: "/approved_whats_next", text: 'Approved, what next?' },
+    { link: "/approved_what_next", text: 'Approved, what next?' },
     { link: "/terms", text: 'Terms of service' },
     { link: "/privacy", text: 'Privacy policy' }
   ]
@@ -150,7 +150,7 @@ export const Fisrttimesetup = () => {
       <Text className="head_">
         FIRST TIME SETUP
       </Text>
-      <Text className="publish">Published: November 23, 2022</Text>
+      <Text className="publish">Published: December 09, 2022</Text>
       <Box pt="30px" id="account" ref={accountRef}>
         <Text className="content_head">SETTING UP A VEERGE ACCOUNT</Text>
         <Text className="content">

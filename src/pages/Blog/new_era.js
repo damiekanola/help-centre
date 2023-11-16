@@ -1,5 +1,5 @@
 import { Center, Flex, Image, Box, Text, OrderedList, ListItem } from '@chakra-ui/react'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import new_era from '../../assets/images/blog/new_era.png';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
@@ -11,6 +11,10 @@ import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
 
 const New_era = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
+
   const navigate = useNavigate()
   const idea_forRef = useRef(null)
   const what_isRef = useRef(null)
