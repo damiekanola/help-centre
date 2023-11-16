@@ -5,15 +5,29 @@ import { Link } from 'react-router-dom'
 import timeIcon from '../../assets/icons/time_icon.svg'
 import { blogDataRead, blogDataRecent } from '../../constant/blog';
 import { handleIconType } from '../../utils/handleIconType';
-import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 
 export const Blog = () => {
   useEffect(() => {
     document.title = 'Blog';
   }, []);
+  const [scrollPosition1, setScrollPosition1] = useState(0)
+  const [scrollPosition2, setScrollPosition2] = useState(0)
 
-  const readScollToRef = useRef();
+  const readScollToRef1 = useRef();
+  const readScollToRef2 = useRef();
+
+  const handleMostReadScroll = (scrollAmount) => {
+    const newScrollPosition = scrollPosition1 + scrollAmount;
+    setScrollPosition1(newScrollPosition);
+    readScollToRef1.current.scrollLeft = newScrollPosition;
+  }
+
+  const handleMostRecentScroll = (scrollAmount) => {
+    const newScrollPosition = scrollPosition2 + scrollAmount;
+    setScrollPosition2(newScrollPosition);
+    readScollToRef2.current.scrollLeft = newScrollPosition;
+  }
 
   return (
     <Box w='full' pt='160px' pb='50px'>
@@ -23,7 +37,7 @@ export const Blog = () => {
           <HStack spacing={'15px'}>
             <Center
               cursor={'pointer'}
-              onClick={() => readScollToRef.current.scrollTo(0, 1000)}
+              onClick={() => handleMostReadScroll(-320)}
               h='36px' w='36px' borderRadius={'full'}
               color='#191919' border={'2px solid #191919'}
             >
@@ -31,7 +45,7 @@ export const Blog = () => {
             </Center>
             <Center
               cursor={'pointer'}
-              onClick={() => readScollToRef.current.scrollTo(0, 1000)}
+              onClick={() => handleMostReadScroll(320)}
               h='36px' w='36px' borderRadius={'full'}
               color='#191919' border={'2px solid #191919'}
             >
@@ -39,9 +53,16 @@ export const Blog = () => {
             </Center>
           </HStack>
         </Flex>
-        <HStack ref={readScollToRef} px='20px' spacing='45px' alignItems={'center'} h='470px' overflowX={'scroll'} overflowY={'hidden'} className='hide_scroll'>
+        <HStack
+          ref={readScollToRef1} px='20px'
+          spacing='45px' alignItems={'center'}
+          h='470px' overflowX={'scroll'}
+          overflowY={'hidden'}
+          className='hide_scroll'
+          scrollBehavior={'smooth'}
+        >
           {blogDataRead.map(detail => (
-            <Link to={detail.path || ''}>
+            <Link key={detail.path} to={detail.path || ''}>
               <Box
                 h={'432px'}
                 borderRadius={'16px'}
@@ -86,7 +107,7 @@ export const Blog = () => {
           <HStack spacing={'15px'}>
             <Center
               cursor={'pointer'}
-              onClick={() => readScollToRef.current.scrollTo(0, 1000)}
+              onClick={() => handleMostRecentScroll(-320)}
               h='36px' w='36px' borderRadius={'full'}
               color='#191919' border={'2px solid #191919'}
             >
@@ -94,7 +115,7 @@ export const Blog = () => {
             </Center>
             <Center
               cursor={'pointer'}
-              onClick={() => readScollToRef.current.scrollTo(0, 1000)}
+              onClick={() => handleMostRecentScroll(320)}
               h='36px' w='36px' borderRadius={'full'}
               color='#191919' border={'2px solid #191919'}
             >
@@ -102,9 +123,16 @@ export const Blog = () => {
             </Center>
           </HStack>
         </Flex>
-        <HStack ref={readScollToRef} px='20px' spacing='45px' alignItems={'center'} h='470px' overflowX={'scroll'} overflowY={'hidden'} className='hide_scroll'>
+        <HStack
+          ref={readScollToRef2} px='20px'
+          spacing='45px' alignItems={'center'}
+          h='470px' overflowX={'scroll'}
+          overflowY={'hidden'}
+          className='hide_scroll'
+          scrollBehavior={'smooth'}
+        >
           {blogDataRecent.map(detail => (
-            <Link to={detail.path || ''}>
+            <Link key={detail.path} to={detail.path || ''}>
               <Box
                 h={'432px'}
                 borderRadius={'16px'}
