@@ -63,7 +63,7 @@ const New_era = () => {
               By Ahmed Ibraheem
             </Text>
             <Text mt='15px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              March 07, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

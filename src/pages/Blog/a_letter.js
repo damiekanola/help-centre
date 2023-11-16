@@ -44,7 +44,7 @@ const A_letter = () => {
               By Ahmed Ibraheem
             </Text>
             <Text mt='15px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
-              Published July 20, 2022
+              Published November 20, 2022
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

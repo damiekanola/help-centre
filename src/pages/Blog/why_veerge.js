@@ -64,7 +64,7 @@ const Why_veerge = () => {
               We operate at the forefront of technology, leveraging cutting-edge techniques
             </Text>
             <Text mt='15px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
-              Oct 5, 2023
+              February 27, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

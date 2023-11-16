@@ -41,7 +41,7 @@ const Understanding_fraction = () => {
               Understanding Fractional Real Estate
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
-              July 20, 2022
+              December 16, 2022
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

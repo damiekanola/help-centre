@@ -58,7 +58,7 @@ const Revenue_recognition = () => {
               Revenue recognition solution
             </Text>
             <Text mt='45px' fontWeight={500} color='#191919' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              July 15, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

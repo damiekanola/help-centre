@@ -57,7 +57,7 @@ const Transforming_business = () => {
               Transforming your business with a  Ticketing system
             </Text>
             <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              May 20, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>
