@@ -57,7 +57,7 @@ const Inventory = () => {
               Inventory Management system
             </Text>
             <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              April 04, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

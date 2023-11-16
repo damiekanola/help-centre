@@ -63,7 +63,7 @@ const Veerge_data = () => {
               Veerge & Data Analytics
             </Text>
             <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              August 10, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>

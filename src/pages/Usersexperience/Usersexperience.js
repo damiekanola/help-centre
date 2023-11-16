@@ -131,9 +131,9 @@ export const Usersexperience = () => {
               </video> */}
               <Text as='p' fontWeight={300} mt='30px'>
                 All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
-                <Link to='/listings/create_listing'>
+                <a href='https://test-veerge.myxellia.io/veerge_menu/ticket'>
                   <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
-                </Link>
+                </a>
               </Text>
               <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3rIcAAmqdws'} />

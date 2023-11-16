@@ -64,7 +64,7 @@ const Lead_management = () => {
               By Veerge Team
             </Text>
             <Text mt='15px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              July 20, 2023
+              June 22, 2023
             </Text>
           </Box>
           <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>
