@@ -60,7 +60,8 @@ const Approved = () => {
   const relatedContent = [
     { link: '/intro_to_veerge', text: 'Intro to veerge' },
     { link: "/veerge_plus", text: 'Veerge Plus' },
-    { link: "/how_protected", text: 'How are you protected' }
+    { link: "/how_protected", text: 'How are you protected' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
 

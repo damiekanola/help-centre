@@ -16,13 +16,14 @@ export const Protected = () => {
 
   const articleContent = [
     { check: veerge_themeCheck, id: 'veerge_theme', title: 'How you are protected' },
-    { check: mitigatingCheck, id: 'mitigating', title: 'MITIGATION AGAINST DOWNTIME ' },
+    { check: mitigatingCheck, id: 'mitigating', title: 'Mitigation against downtime ' },
   ]
 
   const relatedContent = [
     { link: "/veerge_plus", text: 'Veerge Plus' },
     { link: "/how_protected", text: 'How you are protected' },
-    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (
@@ -91,7 +92,7 @@ export const Protected = () => {
 
         <Box mb='30px' id="getting" ref={mitigatingRef}>
           <Text fontSize={'24px'} fontFamily='euclid-semibold'>
-            MITIGATION AGAINST DOWNTIME
+            Mitigation against downtime
           </Text>
           <Text as='p' fontWeight={400}>
             Mitigating downtime is crucial to ensure the availability and reliability of services. To address potential downtime, Veerge has implemented several measures while leveraging Myxellia microservices built on AWS (Amazon Web Services), a highly reliable cloud computing platform. These mitigants include:

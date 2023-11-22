@@ -55,7 +55,8 @@ export const Privacy = () => {
   const relatedContent = [
     { link: '/first_time_setup', text: 'First time setup' },
     { link: "/approved_what_next", text: 'Approved, what next?' },
-    { link: "/terms", text: 'Terms of service' }
+    { link: "/terms", text: 'Terms of service' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (

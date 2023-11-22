@@ -22,7 +22,8 @@ export const VeergeThemes = () => {
   const relatedContent = [
     { link: "/veerge_plus", text: 'Veerge Plus' },
     { link: "/how_protected", text: 'How you are protected' },
-    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (

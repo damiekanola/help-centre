@@ -77,21 +77,21 @@ export const Usersexperience = () => {
               <Text as='p' fontWeight={300} mt='30px'>
                 After your application has been successfully deployed, your subscribers and potential buyers simply need to visit the Google Play Store or Apple App Store. There, they can search for your property development company's name, download the app, and proceed to sign up by providing some fundamental information, including their full name, email, phone number, and password. Once these details have been filled out, their account will be created, and they will be prompted to provide additional information.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'azDCqLSl_Fc'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end1} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Authentication_-_User_Signup.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 On your portal, you will immediately see new user sign-ups, and you can access and review the profiles of these individuals. Additionally, you have the capability to track their activities within your applicatio
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'k7HYIiJTUJI'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end2} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Admin_-_View_Users.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px' color='#56C3CE'>
                 What is the sweet spot in this process?
               </Text>
@@ -105,42 +105,42 @@ export const Usersexperience = () => {
                 After completing the sign-up process, users gain effortless access to all available properties, including those that have already been sold, along with comprehensive information such as pricing, location, and property type. The information provided is continuously updated in real-time, eliminating the need for manual updates. It's like magic! Our system is intuitively designed to be user-friendly, ensuring that all information required for informed decision-making is readily available. Users can easily access pricing details, explore various payment plans and structures, and even identify nearby schools and recreational centers for a comprehensive understanding of the property's location.
                 Furthermore, users have the option to schedule property inspections, whether in-person or through a convenient video chat.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'4OW6cLxn8Bc'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end3} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Access_Property_Details_&_Schedule_Inspection.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 On your portal, you have the ability to manage these requests. You can approve requests that align with the given schedule or, if the timing doesn't work, you can easily reschedule them. When it comes to assignment, you can assign the task to any member of your team for handling the inspection.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'eIT_ztShm2o'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end4} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Manage_Requests_&_Assign_Inspection.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 After the inspection, the potential home buyer, in this case, Ahmed Ali, will receive a notification to provide inspection feedback. This feedback system is akin to the ones employed by popular ride-sharing services like Uber and Bolt. It's this innovative feedback system that distinguishes Veerge from the conventional inspection processes used by most property development companies.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'2QjRwSLhVf0'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end5} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Inspection_Feedback.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
-                <a href='https://test-veerge.myxellia.io/veerge_menu/ticket'>
+                <a target='_blank' href='https://veerge.myxellia.io/veerge_menu/ticket'>
                   <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
                 </a>
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3rIcAAmqdws'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end6} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Creating_a_Ticket.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 What is the sweet spot in this process?
               </Text>
@@ -159,12 +159,12 @@ export const Usersexperience = () => {
               <Text as='p' fontWeight={300}>
                 In this specific case, Ahmed Ali, the buyer, gains immediate access to the purchase document and all other associated documents relevant to the property purchase
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'kc4tGoO-VkE'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end7} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Purchase_Flow.mp4'} />
+              </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
@@ -174,12 +174,12 @@ export const Usersexperience = () => {
               <Text as='p' fontWeight={300} mt='30px'>
                 As your business continues to grow, managing revenue can become a complex and error-prone task. To effectively address this challenge, we have implemented a robust revenue recognition system. With this system in place, you can effortlessly track who has made payments and what those payments were made for. It serves as the definitive source of truth, enabling your accounting team to rely on accurate upstream data. Unlike conventional methods, there's no need for manual confirmation calls before paperwork can be signed. Once payment is confirmed, our integrated inventory management system is instantly updated. Moreover, when a particular property unit type is completely sold, the system notifies all relevant parties and restricts further purchases within the application."
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3oVA2prmXsg'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end8} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Revenue_Recognition_Solution.mp4'} />
+              </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
@@ -192,21 +192,21 @@ export const Usersexperience = () => {
               <Text as='p' fontWeight={300} mt='30px'>
                 All a property development company needs to do is provide some essential information regarding unit numbering. They also have the flexibility to designate which units they don't want to be available for selection, such as those that are reserved. Furthermore, they can specify the milestone at which buyers or subscribers become eligible for unit allocation. Some companies opt for allocation after the initial deposit, while others prefer it after full payment, or even at the 50% payment mark. Some companies may also choose to handle allocations themselves. The beauty of Veerge is that it accommodates all these use cases seamlessly.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3vG_tiR8CvE'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end9} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Smart_Allocation.mp4'} />
+              </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 For instance, if a company sets the allocation milestone at 50%, it means that once Ahmed Ali completes 50% of his payment, he gains the ability to select from the available units in real-time.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'mBmdqIyUXLE'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end10} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Admin_Controlled_Allocation.mp4'} />
+              </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
@@ -216,12 +216,12 @@ export const Usersexperience = () => {
               <Text as='p' fontWeight={300} mt='30px'>
                 After the purchase, subscribers gain full control over all transactions related to their newly acquired property. This includes the ability to set up Autopay, a convenient feature that automatically deducts the due payment plan amount from their bank account. Autopay helps in preventing late payments and relieves subscribers from the task of remembering payment dates.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'GBBSRYg3O9Y'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end11} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/User_Autopay.mp4'} />
+              </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
@@ -232,12 +232,12 @@ export const Usersexperience = () => {
                 The mobile application also boasts a secret weapon - co-ownership. Take someone like Ahmed Ali, for instance; he can invite his friends or family to join him in purchasing a property seamlessly. With co-ownership, they can split the costs based on their agreed-upon sharing ratio, all while ensuring that each party remains accountable for their financial commitments. It's truly a win-win situation for everyone involved!
                 We liken this feature to the invention of the fax machine. When the first person acquired a fax machine, they couldn't make full use of it alone. Similar to the fax machine's inherent marketing potential, co-ownership itself is a marketing tool. By inviting friends and family to co-own, you not only fulfill your property goals but also extend the reach of the development company. Once the company delivers on its promises, these co-owners become long-term, loyal customers.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'BB3BYeKwRAE'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end12} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Co-ownership.mp4'} />
+              </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto'>
@@ -251,12 +251,12 @@ export const Usersexperience = () => {
                 For instance, consider a property with a total value of 50 million units. With fractional ownership, this property can be divided into 1,000 shares, each priced at 50,000 Naira, representing a fraction of the property's overall value. This means that individuals with varying budgets and investment capabilities can purchase a fraction of the property according to their financial capacity, even if it's a very small amount.
                 This approach opens up exciting opportunities for a wider range of people to participate in the real estate market, enabling them to benefit from the property's value appreciation over time.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'nU_TOqXAyfI'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end13} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Fractional_Ownership.mp4'} />
+              </video>
               <Link to='/listings/fractionalize_asset'>
                 <Text as='p' fontWeight={300} mt='60px' color='#56C3CE' cursor={'pointer'}>
                   Click here to read more about Fractional Real Estate
@@ -273,21 +273,21 @@ export const Usersexperience = () => {
                 This portal functions as a centralized hub and also reimagines the commission payout process for the sales team. Within this portal, agents gain access to critical information, including pricing details, marketing resources, performance metrics, and all the essential tools required for effective selling. Furthermore, it provides management teams with enhanced visibility into the entire sales process and performance metrics.
                 The process for agents is streamlined and user-friendly. They simply visit your application to initiate the sign-up process. Upon submission of their application, you have the opportunity to review and, if it meets your criteria, grant approval. This approval grants them access to their dedicated portal. Any referrals generated by the agent are automatically logged, providing a record of their client acquisitions. Additionally, agents can monitor their customers' payment statuses, facilitating the identification of defaults and guiding follow-up actions when necessary.
               </Text>
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'SL45BfGVweU'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end14} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Agent_Portal.mp4'} />
+              </video>
               {/* <Text as='p' fontWeight={300} mt='30px'>
                 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
               </Text> */}
-              <Box w='full' h='400px'>
+              {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'js0FlPwGoh0'} />
-              </Box>
-              {/* <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
-                <source src={end15} />
-              </video> */}
+              </Box> */}
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+                <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Agent_Charging_System.mp4'} />
+              </video>
             </Box >
           </Text >
           <Box w='60%' mx='auto'>

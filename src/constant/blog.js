@@ -52,7 +52,7 @@ export const blogDataRead = [
     },
     {
         img: letter_from_CEO,
-        title: 'A letter from CEO',
+        title: 'A letter from the CEO',
         type: 'Culture',
         readTime: '2mins read',
         datePosted: 'Nov 20, 2022',
@@ -183,7 +183,7 @@ export const blogDataRecent = [
     },
     {
         img: letter_from_CEO,
-        title: 'A letter from CEO',
+        title: 'A letter from the CEO',
         type: 'Culture',
         readTime: '2mins read',
         datePosted: 'Nov 20, 2022',
