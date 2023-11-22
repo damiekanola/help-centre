@@ -10,13 +10,13 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
-import { GrHome, GrHomeOption, GrHomeRounded } from "react-icons/gr";
-import { MdHome, MdSubdirectoryArrowLeft } from "react-icons/md";
-import { CiHome, CiSearch } from "react-icons/ci";
-import { searchData } from "./data";
+import { GrHomeRounded } from "react-icons/gr";
+import { MdSubdirectoryArrowLeft } from "react-icons/md";
+import { CiSearch } from "react-icons/ci";
+import { helpSearchData, blogSearchData } from "./data";
 import "./Search.css";
 import home_svg from '../../assets/icons/home.svg'
 
@@ -25,11 +25,27 @@ export const Searchbar = () => {
   const scrollBehavior = "inside";
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [query, setQuery] = useState("");
+  const [searchFilteredData, setSearchFilteredData] = useState([...helpSearchData])
 
-  const isWHite = location.pathname === '/users_experience'
+  const currLocation = location.pathname;
+  const isHomePage = currLocation === '/blog' || currLocation === '/' || currLocation === "";
+
+  useEffect(() => {
+    let dataTouse;
+    if (currLocation === '/blog') {
+      dataTouse = ([...blogSearchData])
+    } else if (currLocation === '/' || currLocation === '/') {
+      dataTouse = ([...helpSearchData])
+    } else {
+      dataTouse = ([...helpSearchData, ...blogSearchData].filter(data => data.link === currLocation))
+    }
+    setSearchFilteredData(dataTouse)
+  }, [currLocation])
+
+  const isWHite = currLocation === '/users_experience'
 
   const handleCurrentRoute = () => {
-    switch (location.pathname) {
+    switch (currLocation) {
       case '/terms':
         return 'Terms of Service';
       case '/privacy':
@@ -73,18 +89,28 @@ export const Searchbar = () => {
       case '/agent/process':
         return 'Veerge Premier Agent Portal'
       case "/blog":
+        return 'Blog'
       case "/blog/transforming_business":
+        return 'Ticketing system'
       case "/blog/inventory":
+        return 'Inventory Management system'
       case "/blog/revenue_recognition":
+        return 'Revenue recognition solution'
       case "/blog/lead_management":
+        return 'Leads management system'
       case "/blog/a_letter":
       case "/blog/understanding_fraction":
+        return 'Understanding Fractional Real Estate'
       case "/blog/smart_payment":
+        return 'Smart Payment Plan'
       case "/blog/fractional_ownership":
+        return 'Fractional Ownership'
       case "/blog/new_era":
+        return 'The New Era of Real Estate'
       case "/blog/veerge_data":
+        return 'Veerge & Data Analytics'
       case "/blog/why_veerge":
-        return 'Blog'
+        return ' Why Veerge instead of Building'
 
       default:
         return 'Help Centre';
@@ -92,7 +118,7 @@ export const Searchbar = () => {
   }
 
   const checkBlogPage = () => {
-    switch (location.pathname) {
+    switch (currLocation) {
       case "/blog":
       case "/blog/transforming_business":
       case "/blog/inventory":
@@ -110,6 +136,7 @@ export const Searchbar = () => {
         return false;
     }
   }
+
 
   return (
     <>
@@ -129,7 +156,7 @@ export const Searchbar = () => {
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
-            {location.pathname === '/' || location.pathname === '/blog' ? null : (
+            {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
                 <Link to={checkBlogPage() ? '/blog' : "/"}>
                   {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
@@ -209,7 +236,7 @@ export const Searchbar = () => {
                   />
                 </Flex>
 
-                {searchData
+                {searchFilteredData
                   .filter((data) => {
                     if (query === "") {
                       return null;
@@ -240,7 +267,7 @@ export const Searchbar = () => {
                             onClick={onClose}
                           >
                             <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
-                              {pageTitle}:
+                              {isHomePage && `${pageTitle}:`}
                               <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
                             </Text>
 
@@ -313,7 +340,7 @@ export const Searchbar = () => {
                 />
               </Flex>
 
-              {searchData
+              {searchFilteredData
                 .filter((data) => {
                   if (query === "") {
                     return null;
@@ -344,7 +371,7 @@ export const Searchbar = () => {
                           onClick={onClose}
                         >
                           <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
-                            {pageTitle}:
+                            {isHomePage && `${pageTitle}:`}
                             <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
                           </Text>
 

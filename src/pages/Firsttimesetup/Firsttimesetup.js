@@ -139,7 +139,8 @@ export const Fisrttimesetup = () => {
   const relatedContent = [
     { link: "/approved_what_next", text: 'Approved, what next?' },
     { link: "/terms", text: 'Terms of service' },
-    { link: "/privacy", text: 'Privacy policy' }
+    { link: "/privacy", text: 'Privacy policy' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
 

@@ -34,7 +34,8 @@ export const Introtoveerge = () => {
 
   const relatedContent = [
     { link: '/first_time_setup', text: 'First time setup' },
-    { link: "/terms", text: 'Terms of service' }
+    { link: "/terms", text: 'Terms of service' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (

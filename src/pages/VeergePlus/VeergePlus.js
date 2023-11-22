@@ -44,7 +44,8 @@ export const VeergePlus = () => {
     { link: '/blog/new_era', text: 'Veerge the new era of real estate' },
     { link: "/veerge_themes", text: 'Veerge Plus' },
     { link: "/how_protected", text: 'How you are protected' },
-    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' }
+    { link: "/blog/why_veerge", text: 'Why Veerge instead of building?' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (

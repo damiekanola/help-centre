@@ -12,11 +12,11 @@ export const Homepage = () => {
 
   return (
     <Box w='full' pt='200px' pb='50px'>
-      <SimpleGrid w='85%' mx='auto' gap='30px' columns={{ base: 1, md: 4 }} justify={'center'} alignItems={'center'}>
+      <SimpleGrid w='85%' mx='auto' gap='30px' columns={{ base: 1, md: 3, lg: 3, xl: 4 }} justify={'center'} alignItems={'center'}>
         {data.map(detail => (
           <Link to={detail.path || ''}>
             <Box
-              h='343px'
+              // h='343px'
               maxH={'911px'}
               borderRadius={'16px'}
               shadow={'md'}
@@ -31,6 +31,8 @@ export const Homepage = () => {
                 borderTopRightRadius={'16px'}
                 borderTopLeftRadius={'16px'}
                 w='full' bgImage={detail.img}
+                bgPosition={'center'}
+                bgSize={'cover'}
                 h='272.2px' p='14px'
               >
                 <Text fontSize={'10px'} color={detail.color}>SAAS</Text>

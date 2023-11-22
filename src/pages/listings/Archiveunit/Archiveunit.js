@@ -61,7 +61,8 @@ const Archiveunit = () => {
   const relatedContent = [
     { link: '/intro_to_veerge', text: 'Intro to Veerge' },
     { link: "/blog/understanding_fraction", text: 'Understanding Fractional Real estate ' },
-    { link: "/blog/veerge_data", text: 'Veerge & Data analytics' }
+    { link: "/blog/veerge_data", text: 'Veerge & Data analytics' },
+    { link: "/users_experience", text: 'End-to-End experience' }
   ]
 
   return (
