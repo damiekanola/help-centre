@@ -35,7 +35,7 @@ export const Homepage = () => {
                 bgSize={'cover'}
                 h='272.2px' p='14px'
               >
-                <Text fontSize={'10px'} color={detail.color}>SAAS</Text>
+                {/* <Text fontSize={'10px'} color={detail.color}>SAAS</Text> */}
                 <Text mt='8px' fontSize={'20px'} fontWeight={500} color={detail.color}>{detail.title}</Text>
               </Box>
               <Box px='16px' py='12px'>

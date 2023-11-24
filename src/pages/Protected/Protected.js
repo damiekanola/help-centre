@@ -32,7 +32,7 @@ export const Protected = () => {
       {/* <LeadRightNav /> */}
       <Text className="head_">HOW YOU’RE PROTECTED</Text>
       <Text className="publish">Published: Sep 29, 2023</Text>
-      <Text className="content" lineHeight={'25px'} mt='50px'>
+      <Text className="content" lineHeight={'25px'} mt='50px' textAlign={'justify'}>
         <Box mb='30px' id="veerge_theme" ref={veerge_themeRef}>
           <Text mt='30px' as='p' fontWeight={400}>
             By now, you are hopefully familiar with our mission: To democratize real estate for all! We believe that everyone should have access to the tools they need to thrive financially. However, our vision goes beyond accessibility; we strive to be the most trusted, lowest cost, and culturally-relevant software company in the industry.
@@ -90,7 +90,7 @@ export const Protected = () => {
 
 
 
-        <Box mb='30px' id="getting" ref={mitigatingRef}>
+        <Box mb='30px' id="mitigating" ref={mitigatingRef}>
           <Text fontSize={'24px'} fontFamily='euclid-semibold'>
             Mitigation against downtime
           </Text>
