@@ -42,7 +42,7 @@ export const Fisrttimesetup = () => {
       image: peters,
       name: 'Peters T.',
       date: 'Jun 15, 2023',
-      content: "Why am I not getting OTP?",
+      content: "Why am I not an getting OTP?",
       replies: [
         <Box>
           <Text>
@@ -55,7 +55,7 @@ export const Fisrttimesetup = () => {
               <b>Correct Information:</b> Ensure that you have accurately entered your phone number during the registration process. Double-check for any potential typos or errors.
             </ListItem>
             <ListItem mt='20px'>
-              <b>Network Issues:</b> Delays in receiving OTPs may arise due to network related problems. Verify your network connectivity and attempt the process again.
+              <b>Network Issues:</b> Delays in receiving OTPs may arise due to network-related problems. Verify your network connectivity and attempt the process again.
             </ListItem>
             <ListItem mt='20px'>
               <b>Server Delays:</b> The service responsible for providing the OTP might be encountering technical complications or delays. These delays might be the result of server disruptions or high levels of user traffic.
@@ -92,10 +92,10 @@ export const Fisrttimesetup = () => {
     {
       name: 'Tracy K.',
       date: 'May 28, 2023',
-      content: "My application was rejected ?? Is there any reason for that?",
+      content: "My application was rejected?? Is there any reason for that?",
       replies: [
         `Hello,
-        We understand that you may have questions about the recent rejection of your application. The reasons for rejection could stem from a few factors. These might include challenges in verifying the status of your property development company, the possibility that the individual who created the account lacked the authority to enter agreements on behalf of the company, or discrepancies in the
+        we understand that you may have questions about the recent rejection of your application. The reasons for rejection could stem from a few factors. These might include challenges in verifying the status of your property development company, the possibility that the individual who created the account lacked the authority to enter agreements on behalf of the company, or discrepancies in the
         information provided.
         If you have received a rejection email, the specific reason for the rejection should have been detailed within that communication. We encourage you to review the email for further clarification on the decision. If you require any assistance or have additional inquiries, please don't hesitate to reach out to our support team. We're here to help address any concerns you may have.
         Thank you for your understanding.`
@@ -108,17 +108,17 @@ export const Fisrttimesetup = () => {
       content: 'My Listings, User, dashboard and other applications are not working? How do I make them work?????',
       replies: [
         `Hello,
-      Access to this feature is currently unavailable as your account is pending approval. Once your account has been approved, you will be able to select a subscription of your choice. This will grant you access to the features you are seeking.
+      access to this feature is currently unavailable as your account is pending approval. Once your account has been approved, you will be able to select a subscription of your choice. This will grant you access to the features you are seeking.
       Thank you for your patience and we look forward to having you fully onboarded.`
       ]
     },
     {
       name: 'Samuel G.',
       date: 'May 08, 2023',
-      content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
+      content: 'My account was pending approval last night but this morning, I couldn’t log in anymore.',
       replies: [
         `Hello,
-      If you're currently experiencing this issue, it's possible that your application has been rejected. Please review the email associated with your registration – you should find the reason for the rejection explained there. If you require any assistance or wish to contest the decision, please don't hesitate to get in touch with our support team.
+      if you're currently experiencing this issue, it's possible that your application has been rejected. Please review the email associated with your registration – you should find the reason for the rejection explained there. If you require any assistance or wish to contest the decision, please don't hesitate to get in touch with our support team.
       Thank you for your understanding and cooperation.`
       ]
     },
@@ -126,10 +126,10 @@ export const Fisrttimesetup = () => {
       image: farouk,
       name: 'Farouk I.',
       date: 'May 05, 2023',
-      content: 'My account was pending approval last night but this morning I couldn’t log in anymore.',
+      content: "I'm trying to create an application, but I'm unable to.",
       replies: [
         `Hello,
-        Upon the approval of your account and your selection of a subscription tier, you will be able to create your application. Please note that the Basic and Premium tiers grant access solely to the web application. 
+        upon the approval of your account and your selection of a subscription tier, you will be able to create your application. Please note that the Basic and Premium tiers grant access solely to the web application. 
         On the other hand, Veerge Plus subscriptions provide access to either mobile applications, web applications, or both, depending on your preference.
         Thank you for your interest, and we're excited to have you on board.`
       ]
@@ -161,14 +161,13 @@ export const Fisrttimesetup = () => {
           <Text marginTop="20px">
             What you'll need:
             <ol style={{ listStyleType: "decimal", paddingLeft: "15px" }}>
-              <li> Be at least 18 years old (we’ll ask for proof)</li>
+              <li> Be at least 18 years old (we’ll ask for proof).</li>
               <li>
                 {" "}
-                A government-issued photo ID (we don’t accept passport cards)
+                A government-issued photo ID (we don’t accept passport cards).
               </li>
               <li>
-                A phone number connected to your smartphone (we'll send SMS text
-                messages).
+                A phone number connected to your smartphone (we'll send SMS text messages).
               </li>
             </ol>
           </Text>
@@ -182,8 +181,8 @@ export const Fisrttimesetup = () => {
           </Text>
           <Text className="content">
             To begin, click on the provided
-            <a href="https://veerge.myxellia.io/auth/onboarding" style={{ color: "#8486f2" }}>  link  </a>
-            . You'll be asked to provide the following information:
+            <a href="https://veerge.myxellia.io/auth/onboarding" style={{ color: "#8486f2" }}>  link</a>.
+             You'll be asked to provide the following information:
             <ul style={{ paddingLeft: "20px" }}>
               <li>Your legal full name (we'll require proof for verification purposes).</li>
               <li>An email address that you have access to. Please use a valid and active email.</li>
@@ -196,8 +195,8 @@ export const Fisrttimesetup = () => {
             STEP 2
           </Text>
           <Text className="content">
-            You'll receive an email from   <span style={{ color: "#8486f2" }}>  no-reply@myxellia.io  </span>. This email will contain an OTP (One-Time Password).
-            Please enter the OTP provided in the email to verify your email address. Click on "Verify" once you've entered the OTP.
+            You'll receive an email from   <span style={{ color: "#8486f2" }}>  no-reply@myxellia.io</span>. This email will contain an OTP (One-Time Password),
+            please enter the OTP provided in the email to verify your email address. Click on "Verify" once you've entered the OTP.
           </Text>
           <Image src={email} mt="30px" mx="auto" />
         </Box>
@@ -207,8 +206,8 @@ export const Fisrttimesetup = () => {
           </Text>
           <Text className="content">
             You will be prompted to create a password <b>(please create a memorable password)</b>.
-            Passwords must be at least 8 characters long and have an estimated offline crack time over 6,000 seconds. We do not enforce arbitrary restrictions on numbers, special characters, or maximum password length.
-            However, any passwords longer than 72 characters will be truncated.
+            Passwords must be at least 8 characters long and have an estimated offline crack time of over 6,000 seconds. We do not enforce arbitrary restrictions on numbers, special characters, or maximum password length;
+            however, any passwords longer than 72 characters will be truncated.
           </Text>
           <Image src={pass_setup} mt="30px" mx="auto" />
         </Box>
@@ -225,9 +224,9 @@ export const Fisrttimesetup = () => {
               </li>
               <li>Enter your legal business name (we’ll ask for proof).</li>
               <li>
-                Enter company address (Mails might be sent to this address)
+                Enter company address (mails might be sent to this address).
               </li>
-              <li>If prompted enter your company’s Registration number.</li>
+              <li>If prompted, enter your company’s Registration number.</li>
             </ul>{" "}
           </Text>
           <Image src={account_setup} mt="30px" mx="auto" />
@@ -237,8 +236,8 @@ export const Fisrttimesetup = () => {
             STEP 5
           </Text>
           <Text className="content">
-            Enter the six-digit code texted to your phone number, if you didn’t
-            receive OTP, you might need to use voice call OTP.
+            Enter the six-digits code texted to your phone number. If you didn’t
+            receive an OTP, you might need to use voice call OTP.
           </Text>
           <Image src={phone} mt="30px" mx="auto" />
         </Box>
@@ -252,7 +251,7 @@ export const Fisrttimesetup = () => {
           </Text>
           <Image src={id} mt="30px" mx="auto" />
           <Text className="content" mt="20.7" fontWeight={700}>
-            Once you've completed this step, click "Okay," and you'll be directed to the dashboard. However,
+            Once you've completed this step, click "Okay", and you'll be directed to the dashboard. However,
             please note that before you can fully utilise Veerge, we'll need more information about you and your business.
             We're eager to learn more about your company,
             so kindly fill in the details regarding your expected activities.
@@ -272,16 +271,17 @@ export const Fisrttimesetup = () => {
             STEP 9
           </Text>
           <Text className="content" mt="20.7">
-            Proceed to the compliance section and Fill in the details;
+            Proceed to the compliance section and fill in the details:
             <ul style={{ paddingLeft: "25px" }}>
               <li>
                 Phone number
               </li>
-              <li>company’s email company’s website</li>
+              <li>Company’s email</li>
+              <li>Company’s website</li>
               <li>
                 Bio
               </li>
-              <li>social media links</li>
+              <li>Social media links</li>
             </ul>{" "}
           </Text>
           <Image src={details} mt="30px" mx="auto" />

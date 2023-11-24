@@ -38,7 +38,7 @@ const Why_veerge = () => {
     <Box p='0'>
       <Flex direction={'row'} align={'stretch'} py='0' gap='70px' pr='78px' pl='150px' mt='150px' w='full' bg={'#F5E4D0'} maxH={'100vh'} h={'500px'} position={'relative'}>
         <Center
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/blog")}
           position={'absolute'} top='20px'
           cursor={'pointer'} left='78px'
           h='50px' w='50px' borderRadius={'full'}

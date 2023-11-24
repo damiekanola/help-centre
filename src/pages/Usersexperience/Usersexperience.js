@@ -1,24 +1,8 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-// import end1 from "../../assets/videos/endtoend1.mov";
-// import end2 from "../../assets/videos/endtoend2.mov";
-// import end3 from "../../assets/videos/endtoend3.mov";
-// import end4 from "../../assets/videos/endtoend4.mov";
-// import end5 from "../../assets/videos/endtoend5.mov";
-// import end6 from "../../assets/videos/endtoend6.mov";
-// import end7 from "../../assets/videos/endtoend7.mov";
-// import end8 from "../../assets/videos/endtoend8.mov";
-// import end9 from "../../assets/videos/endtoend9.mov";
-// import end10 from "../../assets/videos/endtoend10.mov";
-// import end11 from "../../assets/videos/endtoend11.mov";
-// import end12 from "../../assets/videos/endtoend12.mov";
-// import end13 from "../../assets/videos/endtoend13.mov";
-// import end14 from "../../assets/videos/endtoend14.mov";
-// import end15 from "../../assets/videos/endtoend15.mov";
 import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
 import Helpful from "../../components/Faq/Helpful";
 import { Link } from "react-router-dom";
-import EmbedVideo from "../../components/EmbedVideo";
 
 export const Usersexperience = () => {
 
@@ -39,6 +23,18 @@ export const Usersexperience = () => {
         "Hi Jerry, there's really no downside. If fractional ownership doesn't achieve the level of success that was anticipated, the development company can simply list the property on the application as usual. In that case, those who purchased fractional units will be reimbursed once the property is sold, and the development company will receive the remaining funds."
       ]
     }
+  ]
+
+  const articleContent = [
+    { id: 'authentication', title: 'AUTHENTICATION' },
+    { id: 'after_authentication', title: 'AFTER AUTHENTICATION, WHAT NEXT ?' },
+    { id: 'purchase_flow', title: 'PURCHASE FLOW' },
+    { id: 'revenue_recogniition', title: 'REVENUE RECOGNITION SOLUTION' },
+    { id: 'smart_alloc', title: 'SMART ALLOCATION' },
+    { id: 'auto_pay', title: 'AUTO - PAY' },
+    { id: 'co_ownership', title: 'CO - OWNERSHIP' },
+    { id: 'fractional_ownership', title: 'FRACTIONAL OWNERSHIP' },
+    { id: 'agent', title: 'AGENT' },
   ]
 
 
@@ -70,7 +66,7 @@ export const Usersexperience = () => {
               </Text>
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='authentication'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AUTHENTICATION
               </Text>
@@ -80,16 +76,16 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'azDCqLSl_Fc'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Authentication_-_User_Signup.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
-                On your portal, you will immediately see new user sign-ups, and you can access and review the profiles of these individuals. Additionally, you have the capability to track their activities within your applicatio
+                On your portal, you will immediately see new user sign-ups, and you can access and review the profiles of these individuals. Additionally, you have the capability to track their activities within your application
               </Text>
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'k7HYIiJTUJI'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Admin_-_View_Users.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px' color='#56C3CE'>
@@ -97,7 +93,7 @@ export const Usersexperience = () => {
               </Text>
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='after_authentication'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AFTER AUTHENTICATION, WHAT NEXT ?
               </Text >
@@ -108,7 +104,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'4OW6cLxn8Bc'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Access_Property_Details_&_Schedule_Inspection.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -117,7 +113,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'eIT_ztShm2o'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Manage_Requests_&_Assign_Inspection.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -126,7 +122,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'2QjRwSLhVf0'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Inspection_Feedback.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -138,7 +134,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3rIcAAmqdws'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Creating_a_Ticket.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -149,7 +145,7 @@ export const Usersexperience = () => {
               </Text>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='purchase_flow'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 PURCHASE FLOW
               </Text >
@@ -162,12 +158,12 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'kc4tGoO-VkE'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Purchase_Flow.mp4'} />
               </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='revenue_recogniition'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 REVENUE RECOGNITION SOLUTION
               </Text >
@@ -177,12 +173,12 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3oVA2prmXsg'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Revenue_Recognition_Solution.mp4'} />
               </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='smart_alloc'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 SMART ALLOCATION
               </Text >
@@ -195,7 +191,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'3vG_tiR8CvE'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Smart_Allocation.mp4'} />
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -204,12 +200,12 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'mBmdqIyUXLE'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Admin_Controlled_Allocation.mp4'} />
               </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='auto_pay'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AUTO - PAY
               </Text >
@@ -219,12 +215,12 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'GBBSRYg3O9Y'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/User_Autopay.mp4'} />
               </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='co_ownership'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 CO - OWNERSHIP
               </Text >
@@ -235,14 +231,14 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'BB3BYeKwRAE'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Co-ownership.mp4'} />
               </video>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='fractional_ownership'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
-                FRACTIONAL
+                FRACTIONAL OWNERSHIP
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
                 One of the remarkable benefits offered by Veerge is the ability to fractionalize real estate without the need for intermediaries. Fractional ownership is a feature designed to provide individuals with limited purchasing power access to the real estate market, breaking down the traditional barriers to entry. This innovative approach doesn't change the fundamental way properties are sold; instead, it introduces a fresh perspective by dividing ownership into smaller, more affordable shares.
@@ -254,7 +250,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'nU_TOqXAyfI'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Fractional_Ownership.mp4'} />
               </video>
               <Link to='/listings/fractionalize_asset'>
@@ -264,7 +260,7 @@ export const Usersexperience = () => {
               </Link>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
-            <Box w='60%' mx='auto'>
+            <Box w='60%' mx='auto' id='agent'>
               <Text fontSize={'24px'} fontFamily='euclid-semibold'>
                 AGENT
               </Text >
@@ -276,7 +272,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'SL45BfGVweU'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Agent_Portal.mp4'} />
               </video>
               {/* <Text as='p' fontWeight={300} mt='30px'>
@@ -285,7 +281,7 @@ export const Usersexperience = () => {
               {/* <Box w='full' h='400px'>
                 <EmbedVideo style={{ width: '100%', height: '100%' }} videoId={'js0FlPwGoh0'} />
               </Box> */}
-              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '282px', width: '100%' }} controls>
+              <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Agent_Charging_System.mp4'} />
               </video>
             </Box >

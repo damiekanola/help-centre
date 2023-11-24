@@ -168,6 +168,15 @@ export const helpSearchData = [
   { pageTitle: 'Veerge Plus', page: 'VeergePlus', link: '/veerge_plus', id: 'pricing', title: 'Pricing and Cost Breakdown' },
   { pageTitle: 'Veerge Plus', page: 'VeergePlus', link: '/veerge_plus', id: 'getting', title: 'Getting Started with Veerge' },
   { pageTitle: 'Veerge Themes', page: 'VeergeThemes', link: '/veerge_themes', id: 'veerge_theme', title: 'Veerge Theme' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'authentication', title: 'AUTHENTICATION' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'after_authentication', title: 'AFTER AUTHENTICATION, WHAT NEXT ?' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'purchase_flow', title: 'PURCHASE FLOW' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'revenue_recogniition', title: 'REVENUE RECOGNITION SOLUTION' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'smart_alloc', title: 'SMART ALLOCATION' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'auto_pay', title: 'AUTO - PAY' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'co_ownership', title: 'CO - OWNERSHIP' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'fractional_ownership', title: 'FRACTIONAL OWNERSHIP' },
+  { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'agent', title: 'AGENT' },
 ]
 
 export const blogSearchData = [
