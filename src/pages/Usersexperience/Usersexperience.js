@@ -127,7 +127,7 @@ export const Usersexperience = () => {
               </video>
               <Text as='p' fontWeight={300} mt='30px'>
                 All feedback will be centralized in one accessible location, ensuring that everyone can review it. Moreover, the feedback can be responded to, and if any issues require further attention, they can be escalated by creating
-                <a target='_blank' href='https://veerge.myxellia.io/veerge_menu/ticket'>
+                <a target='_blank' href='https://test-veerge.myxellia.io/veerge_menu/ticket'>
                   <Text color='#56C3CE' as='span'> a dedicated ticket.</Text>
                 </a>
               </Text>
@@ -253,11 +253,11 @@ export const Usersexperience = () => {
               <video style={{ marginTop: '30px', marginRight: 'auto', marginLeft: 'auto', height: '400px', width: '100%' }} controls>
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Fractional_Ownership.mp4'} />
               </video>
-              <Link to='/listings/fractionalize_asset'>
+              <a target="_blank" rel='noreferrer' href='https://veerge-support.myxellia.io/blog/understanding_fraction'>
                 <Text as='p' fontWeight={300} mt='60px' color='#56C3CE' cursor={'pointer'}>
                   Click here to read more about Fractional Real Estate
                 </Text>
-              </Link>
+              </a>
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='agent'>

@@ -58,7 +58,7 @@ const Approved = () => {
   ]
 
   const relatedContent = [
-    { link: '/intro_to_veerge', text: 'Intro to veerge' },
+    { link: '/intro_to_veerge', text: 'Intro to Veerge' },
     { link: "/veerge_plus", text: 'Veerge Plus' },
     { link: "/how_protected", text: 'How are you protected' },
     { link: "/users_experience", text: 'End-to-End experience' }
@@ -115,8 +115,7 @@ const Approved = () => {
                 <Text as='span' fontFamily='euclid-semibold'>Pilot Phase:</Text> Consider conducting a pilot phase where a smaller group of users can test the new SaaS setup in a controlled environment. This helps to uncover any potential problems and gather feedback for improvements.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as='span' fontFamily='euclid-semibold'>Data Migration:</Text> Plan the migration of data from legacy systems to Veerge. This involves transferring existing data to the new SaaS solution and ensuring data integrity and security during th
-                e process.
+                <Text as='span' fontFamily='euclid-semibold'>Data Migration:</Text> Plan the migration of data from legacy systems to Veerge. This involves transferring existing data to the new SaaS solution and ensuring data integrity and security during the process.
               </ListItem>
               <ListItem marginTop="20px">
                 <Text as='span' fontFamily='euclid-semibold'>Customization and Configuration:</Text> Customize Veerge to align with your business processes and requirements. Configure settings, user permissions, and any integrations with other systems.
@@ -147,7 +146,7 @@ const Approved = () => {
           <Image src={addprop} mt="30px" mx="auto" />
           <Text className="content">
             <Text as='p' marginTop="20px">
-              you've got a brand new Veerge account, a blank canvas of potential. Your very first brushstroke should be the addition of your remarkable property projects. It's not just essential; it's the heartbeat of your account's success. And where do you start? Simple – the "New Listings" section. This is your podium, your stage to spotlight all the transformative development projects you've brought to life – past and present.
+              You've got a brand new Veerge account, a blank canvas of potential. Your very first brushstroke should be the addition of your remarkable property projects. It's not just essential; it's the heartbeat of your account's success. And where do you start? Simple – the "New Listings" section. This is your podium, your stage to spotlight all the transformative development projects you've brought to life – past and present.
             </Text>
             <Text as='p' marginTop="20px">
               Each listing should be more than just a description. It's a testament to your innovation and dedication. With meticulous attention, infuse every project description with life. And when it comes to visuals, go big! Those high-quality pictures aren't just images; they're windows into your creativity. They're the vibrant hues that make your projects leap off the screen.
@@ -171,13 +170,13 @@ const Approved = () => {
               Once you've seamlessly integrated all your development projects, the next imperative step is to craft your digital realm—an experience that seamlessly bridges your business with prospective and existing clients. This is what we refer to as the "convergence point," a virtual crossroads where your endeavors meet the aspirations of those who have or are considering investing in your offerings. This space encapsulates the entire journey of a buyer's path to homeownership.
             </Text>
             <Text as='p' marginTop="20px">
-              Within this digital sanctuary, buyers are empowered to shape their journey. They can effortlessly schedule property inspections, gaining firsthand experiences that transcend the confines of the screen. The real-time property availability feature ensures transparency and timeliness, granting them a dynamic snapshot of the options at hand. But that's not all—by enabling initial deposit payments spanning over 74 countries and 154 currencies, you're transforming a potentially cumbersome task into a breeze.
+              Within this digital sanctuary, buyers are empowered to shape their journey. They can effortlessly schedule property inspections, gaining firsthand experiences that transcend the confines of the screen. The real-time property availability feature ensures transparency and timeliness, granting them a dynamic snapshot of the options at hand. But that's not all—by enabling initial deposit payments spanning over <b>74 countries and 154 currencies</b>, you're transforming a potentially cumbersome task into a breeze.
             </Text>
             <Text as='p' marginTop="20px">
               Their journey is meticulously accompanied by tools that facilitate control. From tracking payments to managing outstanding balances, every interaction is poised for simplicity. Even the nuances of payment customization for outstanding balances are at their fingertips, underscoring your commitment to tailored convenience. And the icing on the cake? A centralized hub for all their purchase documents and associated files. No more lost papers or searching through an abyss of emails. It's all right there, harmoniously organized, ready to be accessed at their convenience.
             </Text>
             <Text as='p' marginTop="20px">
-              And the icing on the cake? A centralized hub for all their purchase documents and associated files. No more lost papers or searching through an abyss of emails. It's all right there, harmoniously organized, ready to be accessed at their convenience. But wait, there's more! In this immersive landscape, even realtors and agents can stake their claim. With your discerning approval, they can join your platform, a stage for them to sell properties and earn well-deserved commissions upon successful transactions.
+              But wait, there's more! In this immersive landscape, even realtors and agents can stake their claim. With your discerning approval, they can join your platform, a stage for them to sell properties and earn well-deserved commissions upon successful transactions.
             </Text>
             <Text as='p' marginTop="20px">
               In essence, what you're crafting isn't just an online experience—it's a symphony of empowerment, interconnecting aspirations, and facilitating dreams. It's a dynamic convergence where the potential for growth, interaction, and success knows no bounds. Welcome to the nexus of innovation, the intersection of technology and human ambition.
@@ -196,7 +195,7 @@ const Approved = () => {
               If you're no stranger to the world of property development, you likely boast an established clientele—individuals to whom you've successfully sold properties in the past, clients whose valuable information you've diligently collected over time. Now, at this juncture, your path leads to the strategic establishment of their accounts within your newfound CRM tool. It's not just migration; it's a meticulous migration that lays the foundation for an even stronger rapport. As their accounts take shape, a virtual inkling awakens—an automated email that invites them to finish their journey of inclusion. Upon completion, they're granted a panoramic view of their property purchase chronicles. And in certain scenarios, a window into their ongoing payment plans.
             </Text>
             <Text as='p' marginTop="20px">
-              Within this digital sanctuary, buyers are empowered to shape their journey. They can effortlessly schedule property inspections, gaining firsthand experiences that transcend the confines of the screen. The real-time property availability feature ensures transparency and timeliness, granting them a dynamic snapshot of the options at hand. But that's not all—by enabling initial deposit payments spanning over 74 countries and 154 currencies, you're transforming a potentially cumbersome task into a breeze.
+              Within this digital sanctuary, buyers are empowered to shape their journey. They can effortlessly schedule property inspections, gaining firsthand experiences that transcend the confines of the screen. The real-time property availability feature ensures transparency and timeliness, granting them a dynamic snapshot of the options at hand. But that's not all—by enabling initial deposit payments spanning over <b>74 countries and 154 currencies</b>, you're transforming a potentially cumbersome task into a breeze.
             </Text>
             <Text as='p' marginTop="20px">
               Here's where the magic happens: for those with existing payment plans, a symphony of automated reminders nudge them when payment plans are due for fulfilment. It's convenience at its zenith. And that's not all. The option to seamlessly link their bank accounts for direct debit during payment due dates rests at their fingertips, an offering that transforms transactions into a frictionless dance.
@@ -218,7 +217,7 @@ const Approved = () => {
           <Text className="content">
             <Text as='p' marginTop="20px">
               Gather the whole ensemble – extend invitations to team members spanning every echelon, from directors and sales personnel to marketing experts. Precision is key: ensure you meticulously assign relevant roles to each invitee. And if, by chance, the role you seek isn't within our predefined options, rest assured there's a solution if you are an esteemed
-              <a href='https://veerge.myxellia.io/'>
+              <a href='https://matador-support-seven.vercel.app/veerge_plus' target="_blank">
                 <Text color='#4545FE' as='span'> Veerge Plus subscriber</Text>
               </a>, you possess the privilege of tailored role customization. A simple liaison with our support team opens the door to this possibility.
             </Text>
@@ -227,8 +226,8 @@ const Approved = () => {
             </Text>
             <Text as='p' marginTop="20px">
               Having journeyed through these four steps, your Veerge experience is now in full bloom, primed to fuel your property development journey. Should you find yourself in need of any assistance along this path, please don't hesitate to reach out to our dedicated
-              <a href='/'><Text color='#4545FE' as='span'> support</Text></a>. We're here to ensure your Journey with Veerge is seamless and successful. Your success is our priority, and our
-              <a href='/'><Text color='#4545FE' as='span'> support</Text></a> team is eager to guide you every step of the way.
+              support. We're here to ensure your Journey with Veerge is seamless and successful. Your success is our priority, and our
+              support team is eager to guide you every step of the way.
             </Text>
           </Text>
         </Box>

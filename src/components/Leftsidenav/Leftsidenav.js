@@ -59,12 +59,12 @@ export const Leftsidenav = ({ articleContent, relatedContent = sample }) => {
         <Text className="article_text" mt="40px" color={'black !important'} fontFamily={'euclid-medium'}>
           Related Content
         </Text>
-        <VStack fontFamily='euclid' mt='20px' spacing={'17px'} align='stretch'>
+        <VStack fontFamily='euclid' mt='20px' spacing={'23px'} align='stretch'>
           {relatedContent.map(content => (
-            <Flex columnGap="20px" align={'center'}>
-              <Image src={file} />
+            <Flex columnGap="16px" align={'center'}>
+              <Image src={file} w='14px' h='18px' />
               <Link to={content.link}>
-                <Text color='#606060' fontFamily={'euclid'}>{content.text}</Text>
+                <Text fontSize={'14px'} color='#606060' fontFamily={'euclid'}>{content.text}</Text>
               </Link>
             </Flex>
           ))}

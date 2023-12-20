@@ -181,8 +181,8 @@ export const Fisrttimesetup = () => {
           </Text>
           <Text className="content">
             To begin, click on the provided
-            <a href="https://veerge.myxellia.io/auth/onboarding" style={{ color: "#8486f2" }}>  link</a>.
-             You'll be asked to provide the following information:
+            <a target="_blank" href="https://test-veerge.myxellia.io/auth/onboarding" style={{ color: "#8486f2" }}>  link</a>.
+            You'll be asked to provide the following information:
             <ul style={{ paddingLeft: "20px" }}>
               <li>Your legal full name (we'll require proof for verification purposes).</li>
               <li>An email address that you have access to. Please use a valid and active email.</li>

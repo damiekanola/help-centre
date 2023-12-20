@@ -7,13 +7,11 @@ const AgentRightNav = () => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        bg='#F9FAFB'
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-        position={'fixed'} h='fit-content'
-        maxH={'70vh'}
+        position={'fixed'} h='fit-content' maxH='70vh'
         overflowY={'scroll'} right='0'
-        w='100%' maxW={'282px'} pl='40px'
-        pb='50px'
+        w={'23%'} px='30px'
+        pb='50px' fontFamily={'euclid-light'}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -23,17 +21,17 @@ const AgentRightNav = () => {
           },
           '&::-webkit-scrollbar-thumb': {
             borderRadius: '10',
-            bg: `#333`,
+            bg: `transparent`,
           },
         }}
       >
-        <Text color="#000" fontSize={'24px'} fontWeight={500} letterSpacing={'3px'}>Agent Guide</Text>
-        <VStack mt='30px' spacing={'20px'} align='stretch'>
+        <Text fontSize={'24px'} fontFamily={'euclid-medium'} color={'black !important'} letterSpacing={'3px'}>Agents Guide</Text>
+        <VStack mt='30px' spacing={'27px'} align='stretch'>
           <Link to="/agent/portal">
-            <Text fontWeight={location.pathname === '/agent/portal' && 600}>Veerge Premier Agent Portal</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/agent/portal' && 'euclid-medium'}>Veerge Premier Agent Portal</Text>
           </Link>
           <Link to="/agent/process">
-            <Text fontWeight={location.pathname === '/agent/process' && 600}>The complete agent process</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/agent/process' && 'euclid-medium'}>The complete agents process</Text>
           </Link>
         </VStack>
       </Box>

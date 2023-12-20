@@ -26,27 +26,27 @@ const RightNav = () => {
         }}
       >
         <Text fontSize={'24px'} fontFamily={'euclid-medium'} color={'black !important'} letterSpacing={'3px'}>Listings</Text>
-        <VStack mt='30px' spacing={'20px'} align='stretch'>
+        <VStack mt='30px' spacing={'27px'} align='stretch'>
           <Link to="/listings/overview">
-            <Text fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}>Overview of Listing</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}>Overview of Listing</Text>
           </Link>
           <Link to="/listings/create_listing">
-            <Text fontFamily={location.pathname === '/listings/create_listing' && 'euclid-medium'}>How to create a listing</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/create_listing' && 'euclid-medium'}>How to create a listing</Text>
           </Link>
           <Link to="/listings/create_unit">
-            <Text fontFamily={location.pathname === '/listings/create_unit' && 'euclid-medium'}>Unit Allocations</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/create_unit' && 'euclid-medium'}>Unit Allocations</Text>
           </Link>
           <Link to="/listings/archive_unit">
-            <Text fontFamily={location.pathname === '/listings/archive_unit' && 'euclid-medium'}>Archive a listing</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/archive_unit' && 'euclid-medium'}>Archive a unit</Text>
           </Link>
           <Link to="/listings/fractionalize_asset">
-            <Text fontFamily={location.pathname === '/listings/fractionalize_asset' && 'euclid-medium'}>How to fractionalise a unit</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/fractionalize_asset' && 'euclid-medium'}>How to fractionalise a unit</Text>
           </Link>
           <Link to="/listings/change_listing">
-            <Text fontFamily={location.pathname === '/listings/change_listing' && 'euclid-medium'}>Changing listing information</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/change_listing' && 'euclid-medium'}>Changing listing information</Text>
           </Link>
           <Link to="/listings/delist">
-            <Text fontFamily={location.pathname === '/listings/delist' && 'euclid-medium'}>How to delist a listing</Text>
+            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/delist' && 'euclid-medium'}>How to delist a listing</Text>
           </Link>
         </VStack>
       </Box>

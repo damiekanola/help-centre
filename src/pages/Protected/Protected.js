@@ -32,10 +32,10 @@ export const Protected = () => {
       {/* <LeadRightNav /> */}
       <Text className="head_">HOW YOU’RE PROTECTED</Text>
       <Text className="publish">Published: Sep 29, 2023</Text>
-      <Text className="content" lineHeight={'25px'} mt='50px' textAlign={'justify'}>
+      <Text className="content" lineHeight={'25px'} mt='50px'>
         <Box mb='30px' id="veerge_theme" ref={veerge_themeRef}>
           <Text mt='30px' as='p' fontWeight={400}>
-            By now, you are hopefully familiar with our mission: To democratize real estate for all! We believe that everyone should have access to the tools they need to thrive financially. However, our vision goes beyond accessibility; we strive to be the most trusted, lowest cost, and culturally-relevant software company in the industry.
+            By now, you are hopefully familiar with our mission: To democratize real estate for all! We believe that everyone should have access to the tools they need to thrive financially. However, our vision goes beyond accessibility; we strive to be the most trusted, lowest-cost, and culturally relevant software company in the industry.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
             We understand that the majority of our users are venturing into the world of value creation and investment for the first time. That's why we place the utmost importance on the reliability of our platform. We want to be there for our customers when they need us the most, providing a secure and trustworthy experience.
@@ -44,37 +44,21 @@ export const Protected = () => {
             While we strongly advocate for democratization and the power of participation, we hold "Safety First" as our top company value. After all, democratization without safety would be reckless. We are committed to being a safety-first company, ensuring that our customers can explore the world of finance with confidence.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
-            Just as we prioritize safety internally, we believe that the values our customers attribute to us over time will reflect our commitment to their security and well-being. In today's digital age, where the internet serves as a powerful tool to reach potential customers, data protection has become more crucial than ever.
+            Just as we prioritize safety internally, we believe that the values our customers attribute to us over time will reflect our commitment to their security and well-being. In today's digital age, where the internet serves as a powerful tool to reach potential customers, data protection has become more crucial than ever. Unfortunately, cyber attacks and data breaches have been on the rise, posing significant risks to individuals and organizations. At Veerge, we recognize the importance of data protection, particularly for real estate companies that handle sensitive personal and financial information on a daily basis.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
-            Unfortunately, cyber-attacks and data breaches have been on the rise, posing significant risks to individuals and organizations. At Veerge, we recognize the importance of data protection, particularly for real estate companies that handle sensitive personal and financial information on a daily basis.
+            To safeguard your data and provide the highest level of security, we have implemented comprehensive data protection measures aligning with GDPR, NDPR, NITDA, and CCPA regulations. We want you to have complete peace of mind when using our platform, knowing that your data is in safe hands. We employ state-of-the-art security protocols to fortify your organization, and we take security seriously by leaving no stone unturned in protecting your sensitive information from prying eyes.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
-            To safeguard your data and provide the highest level of security, we have implemented comprehensive data protection measures. Our SaaS product is specifically designed to assist real estate companies in building web applications that facilitate the seamless selling of properties to customers. However, our commitment to data protection goes beyond that.
+            Our security protocols act as an impenetrable shield, ensuring that unauthorized access is prevented. Two-factor authentication, regular password updates, and access controls are just a few of the measures we implement to limit access to sensitive data, allowing only authorized individuals to enter. Complacency has no place in our fortress. We conduct regular security audits and updates to strengthen our systems against the ever-evolving threats of the digital realm. Our vigilant security team keeps a watchful eye on our systems, swiftly responding to any suspicious activity or security incidents. When it comes to encryption, we raise the bar even higher. All data transmitted between our servers and your devices is encrypted using cutting-edge industry-standard protocols. Intercepting this encrypted data would be futile, as it remains indecipherable to anyone without the key. Passwords are fortified using the BCrypt hashing algorithm, rendering them virtually impossible to crack. We never store passwords in plain text, ensuring an additional layer of protection for your sensitive information. Our app and website utilize the Transport Layer Security (TLS) protocol to establish secure communication with our servers, safeguarding your personal and account information. But our commitment to security doesn't end there. We go beyond encryption during transmission by encrypting all data at rest. This ensures that even if unauthorized users gain access to our servers, they will find nothing but encrypted data, keeping your information safe and secure.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
-            In this section, we will walk you through the robust data protection measures we have put in place, aligning with GDPR, NDPR, NITDA, and CCPA regulations. We want you to have complete peace of mind when using our platform, knowing that your data is in safe hands.We employ state-of-the-art security protocols to fortify your organization, and we take security seriously by leaving no stone unturned in protecting your sensitive information from prying eyes.
+            To enhance the resilience of your data, we regularly perform encrypted backups. These backups are securely stored in off-site locations, guaranteeing the safety of your information even in the face of unforeseen disasters. During the backup process, we conduct meticulous security audits, ensuring that your data remains protected from insider attacks or any malicious attempts.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
-            Our security protocols act as an impenetrable shield, ensuring that unauthorized access is prevented. Two-factor authentication, regular password updates, and access controls are just a few of the measures we implement to limit access to sensitive data, allowing only authorized individuals to enter.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            Complacency has no place in our fortress. We conduct regular security audits and updates to strengthen our systems against the ever-evolving threats of the digital realm. Our vigilant security team keeps a watchful eye on our systems, swiftly responding to any suspicious activity or security incidents.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            When it comes to encryption, we raise the bar even higher. All data transmitted between our servers and your devices is encrypted using cutting-edge industry-standard protocols. Intercepting this encrypted data would be futile, as it remains indecipherable to anyone without the key.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            Passwords are fortified using the BCrypt hashing algorithm, rendering them virtually impossible to crack. We never store passwords in plain text, ensuring an additional layer of protection for your sensitive information. Social Security numbers and other sensitive data are encrypted before being stored securely. Our app and website utilize the Transport Layer Security (TLS) protocol to establish secure communication with our servers, safeguarding your personal and account information.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            But our commitment to security doesn't end there. We go beyond encryption during transmission by encrypting all data at rest. This ensures that even if unauthorized users gain access to our servers, they will find nothing but encrypted data, keeping your information safe and secure.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            To enhance the resilience of your data, we regularly perform encrypted backups. These backups are securely stored in offsite locations, guaranteeing the safety of your information even in the face of unforeseen disasters. During the backup process, we conduct meticulous security audits, ensuring that your data remains protected from insider attacks or any malicious attempts.
-          </Text>
-          <Text mt='30px' as='p' fontWeight={400}>
-            We understand the power of collaboration and have partnered with trusted third-party service providers, such as payment processors, who share our commitment to data protection. These partners adhere to stringent measures, ensuring the security of your information throughout the payment process.
+            We recognize the immense value of collaboration and have thus partnered with esteemed third-party service providers, including Sterling Bank, for all transaction processing.
+            <b> It's important to note that we do not directly handle funds; this is exclusively managed by Sterling Bank. </b>
+            Upholding our shared dedication to data protection, Sterling Bank rigorously adheres to strict security measures. This commitment ensures the utmost protection of your personal information throughout the entire payment process.
           </Text>
           <Text mt='30px' as='p' fontWeight={400}>
             We've implemented two-factor authentication (2FA) as an additional layer of defense. This powerful mechanism requires two sources of verification to access your account, providing an extra level of security even if someone gains access to your password.
@@ -91,11 +75,11 @@ export const Protected = () => {
 
 
         <Box mb='30px' id="mitigating" ref={mitigatingRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-semibold' mb='5px'>
             Mitigation against downtime
           </Text>
           <Text as='p' fontWeight={400}>
-            Mitigating downtime is crucial to ensure the availability and reliability of services. To address potential downtime, Veerge has implemented several measures while leveraging Myxellia microservices built on AWS (Amazon Web Services), a highly reliable cloud computing platform. These mitigants include:
+            Mitigating downtime is crucial to ensuring the availability and reliability of services. To address potential downtime, Veerge has implemented several measures while leveraging Myxellia microservices built on AWS (Amazon Web Services), a highly reliable cloud computing platform. These mitigants include:
             <OrderedList>
               <ListItem mt='30px'>
                 <Text>
@@ -104,12 +88,12 @@ export const Protected = () => {
               </ListItem>
               <ListItem mt='30px'>
                 <Text>
-                  <b>Load Balancing:</b> AWS Elastic Load Balancer is utilized to evenly distribute incoming traffic across multiple instances or availability zones. This load balancing mechanism enhances high availability and fault tolerance, enabling continuous access to the application even if certain instances or zones experience downtime.
+                  <b>Load Balancing:</b> The AWS Elastic Load Balancer is utilized to evenly distribute incoming traffic across multiple instances or availability zones. This load balancing mechanism enhances high availability and fault tolerance, enabling continuous access to the application even if certain instances or zones experience downtime.
                 </Text>
               </ListItem>
               <ListItem mt='30px'>
                 <Text>
-                  <b>Auto Scaling:</b> AWS Auto Scaling is implemented to automatically adjust the number of instances based on traffic demand. This dynamic scaling capability ensures the application can handle increased traffic during peak periods and scale down during lower demand, reducing the risk of downtime due to resource limitations.
+                  <b>Auto Scaling:</b> The AWS Auto Scaling is implemented to automatically adjust the number of instances based on traffic demand. This dynamic scaling capability ensures the application can handle increased traffic during peak periods and scale down during lower demand, reducing the risk of downtime due to resource limitations.
                 </Text>
               </ListItem>
               <ListItem mt='30px'>

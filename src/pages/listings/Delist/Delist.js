@@ -57,7 +57,7 @@ const Delist = () => {
       <Text className="head_">HOW TO DELIST A LISTING</Text>
       <Text className="publish">Published: February 18, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
-        <Text className="content" lineHeight={'25px'}>
+        <Text className="content" lineHeight={'25px'} mt='40px'>
           <Text as='p'>
             Delisting a listing involves removing it from public visibility within the application and converting it into a private offering. Here's how you can accomplish this:
           </Text>
@@ -66,7 +66,7 @@ const Delist = () => {
         <Box>
           <Text className="content_head">STEP 1</Text>
           <Text className="content">
-            Start by navigating to the "Listings" section.
+            Start by navigating to the <b>"Listings"</b> section.
           </Text>
 
           <Image src={delist1} mt="30px" mx="auto" w='full' />
@@ -86,7 +86,7 @@ const Delist = () => {
             STEP 3
           </Text>
           <Text className="content">
-            From the dropdown options, choose "Make Private." This action initiates the process of delisting.
+            From the dropdown options, choose <b>"Make Private."</b> This action initiates the process of delisting.
           </Text>
           <Image src={delist3} mt="30px" mx="auto" w='full' />
         </Box>
@@ -108,7 +108,7 @@ const Delist = () => {
             If you choose to proceed with invitations, input the relevant email addresses or select users from the provided recommendations. These invitations will grant the chosen individuals exclusive access to the delisted listing. If invitations aren't necessary, you can simply skip this step.
           </Text>
           <Image src={delist5} mt="30px" mx="auto" w='full' />
-          <Text className="content">
+          <Text className="content" mt="30px">
             By following these steps, you can effectively delist a listing, making it private and restricting access to a select audience, either through private invitations or by maintaining it exclusively offline. This versatile approach ensures that you have control over the visibility and accessibility of your listings, tailored to your specific marketing and business strategies.
           </Text>
         </Box>

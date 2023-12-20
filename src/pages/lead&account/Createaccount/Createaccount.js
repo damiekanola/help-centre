@@ -30,7 +30,8 @@ import Blocker from "../../../components/blocker";
 
 export const CreateLeadAccount = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const toView = searchParams.get('isrestricted') === 'true'
+  const toView = true
+  // searchParams.get('isrestricted') === 'true'
 
   const how_toRef = useRef(null)
   const stepsRef = useRef(null)
@@ -75,7 +76,7 @@ export const CreateLeadAccount = () => {
         <Text className="publish">Published: March 26, 2023</Text>
         <Box id="how_to" ref={how_toRef}>
           <Text className="content" lineHeight={'25px'}>
-            <Text as='p'>
+            <Text as='p' marginTop={'30px'}>
               Lead management serves as the cornerstone of the sales process, providing the crucial framework for nurturing potential leads aligned with your target audience. Guiding these prospects through the various stages of the lead lifecycle demands a systematic approach, characterized by swift follow-ups, meticulous segmentation, and the precise delegation of leads to the appropriate sales representatives. The essence lies in maintaining impeccably timed interactions that resonate with the lead's journey.
             </Text>
             <Text as='p' marginTop="20px">
@@ -92,7 +93,7 @@ export const CreateLeadAccount = () => {
           <Box>
             <Text className="content_head">STEP 1</Text>
             <Text className="content">
-              Begin by navigating to the designated "Users" section within the system
+              Begin by navigating to the designated <b>"Users"</b> section within the system.
             </Text>
 
             <Image src={createLead1} mt="30px" mx="auto" w='full' />
@@ -103,7 +104,7 @@ export const CreateLeadAccount = () => {
                 STEP 2
               </Text>
               <Text className="content">
-                Initiate the lead logging process by selecting the "Create Account" option.
+                Initiate the lead logging process by selecting the <b>"Create Account"</b> option.
               </Text>
 
               <Image src={createLead2} mt="30px" mx="auto" w='full' />
@@ -113,7 +114,7 @@ export const CreateLeadAccount = () => {
                 STEP 3
               </Text>
               <Text className="content">
-                Populate the requisite lead information fields with accurate data
+                Populate the requisite lead information fields with accurate data.
               </Text>
               <Image src={createLead3} mt="30px" mx="auto" w='full' />
             </Box>
@@ -132,7 +133,7 @@ export const CreateLeadAccount = () => {
                 STEP 5
               </Text>
               <Text className="content">
-                Confirm the lead account's creation by clicking "Create Lead Account."
+                Confirm the lead account's creation by clicking <b>"Create Lead Account."</b>
               </Text>
 
               {/* <Image src={createLead5} mt="30px" mx="auto" w='full' /> */}
@@ -145,12 +146,14 @@ export const CreateLeadAccount = () => {
                 Conclude the process, ensuring meticulous recording of the lead's particulars and associated notes.
               </Text>
               {/* <Image src={createLead6} mt="30px" mx="auto" w='full' /> */}
-              <Text className="content">
-                In parallel scenarios where clients make property purchases external to the
-                application, the onboarding process presents distinct requirements. One
-                frequent scenario involves new entrants to the Veerge platform, particularly
-                property development firms aiming to integrate their existing clientele. For such
-                scenarios, a specialized set of steps is vital:
+              <Text className="content" marginTop={'20px'}>
+                <b>
+                  In parallel scenarios where clients make property purchases external to the
+                  application, the onboarding process presents distinct requirements. One
+                  frequent scenario involves new entrants to the Veerge platform, particularly
+                  property development firms aiming to integrate their existing clientele. For such
+                  scenarios, a specialized set of steps is vital:
+                </b>
               </Text>
             </Box>
             <Box>
@@ -167,7 +170,7 @@ export const CreateLeadAccount = () => {
                 STEP 2
               </Text>
               <Text className="content">
-                Activate the account creation procedure by selecting the "Create Account" option
+                Activate the account creation procedure by selecting the <b>"Create Account"</b> option.
               </Text>
               <Image src={createLeadS2} mt="30px" mx="auto" w='full' />
             </Box>
@@ -185,7 +188,7 @@ export const CreateLeadAccount = () => {
                 STEP 4
               </Text>
               <Text className="content">
-                Progress to the property assignment phase by clicking on "Assign Property."
+                Progress to the property assignment phase by clicking on <b>"Assign Property."</b>
               </Text>
               <Image src={createLeadS4} mt="30px" mx="auto" w='full' />
             </Box>
@@ -194,7 +197,7 @@ export const CreateLeadAccount = () => {
                 STEP 5
               </Text>
               <Text className="content">
-                Identify the relevant listing and unit to be allocated to the user
+                Identify the relevant listing and unit to be allocated to the user.
               </Text>
               <Image src={createLeadS5} mt="30px" mx="auto" w='full' />
             </Box>
@@ -252,10 +255,10 @@ export const CreateLeadAccount = () => {
                 Finalize the process, culminating in the successful assignment of units and completion of the transaction.
               </Text>
               <Image src={createLeadS11} mt="30px" mx="auto" w='full' />
-              <Text className="content">
+              <Text className="content" mt='30px'>
                 In both lead management and property acquisition scenarios, meticulous
                 attention to detail and adherence to the prescribed steps are imperative for
-                ensuring accuracy, enhancing user experience, and optimizing sales efficacy
+                ensuring accuracy, enhancing user experience, and optimizing sales efficacy.
               </Text>
             </Box>
 

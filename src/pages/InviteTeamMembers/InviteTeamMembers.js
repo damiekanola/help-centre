@@ -15,7 +15,8 @@ import { useSearchParams } from "react-router-dom";
 
 export const InviteTeamMembers = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const toView = searchParams.get('isrestricted') === 'true'
+  const toView = true
+  // searchParams.get('isrestricted') === 'true'
 
   const inviteRef = useRef(null);
   const stepsRef = useRef(null);
@@ -64,7 +65,7 @@ export const InviteTeamMembers = () => {
         <Text className="publish">Published: April 02, 2023</Text>
         <Box id="invite" ref={inviteRef}>
           <Text className="content" lineHeight={'25px'}>
-            <Text as='p' fontWeight={500}>
+            <Text as='p' fontFamily={'euclid-medium'} mt='30px'>
               As businesses increasingly embrace Veerge for their operational needs,
               managing user access and permissions emerges as a paramount concern
               for security and collaboration.
@@ -72,7 +73,7 @@ export const InviteTeamMembers = () => {
             <Text as='p' marginTop="20px">
               Veerge indeed offers a blend of convenience, scalability, and cost-effectiveness, yet it also brings potential security vulnerabilities if not wielded with care. Within the Veerge ecosystem, diverse users hailing from various departments and hierarchies demand access to a spectrum of applications and data. Skillful administration of these users and their access privileges is a linchpin against unauthorized entry, ensuring that personnel hold just the right level of access pertinent to their roles. This is where the Teams feature comes to the forefront, supported by a robust framework known as Role-Based Access Control (RBAC).
             </Text>
-            <Text as='p' marginTop="20px" fontWeight={500} letterSpacing={'1.92px'}>
+            <Text as='p' marginTop="20px" fontFamily={'euclid-medium'} letterSpacing={'1.92px'}>
               RBAC orchestrates access rights and permissions based on users'
               designated roles within an organization.
             </Text>
@@ -81,7 +82,7 @@ export const InviteTeamMembers = () => {
               simplifies user management while untangling the intricacies of permission
               assignments
             </Text>
-            <Text as='p' marginTop={'20px'} fontWeight={500}>
+            <Text as='p' marginTop={'20px'} fontFamily={'euclid-medium'}>
               How to Invite Team Members:
             </Text>
           </Text>
@@ -91,7 +92,7 @@ export const InviteTeamMembers = () => {
             <Box>
               <Text className="content_head">STEP 1</Text>
               <Text className="content">
-                Navigate to the "Settings" section and select "Teams."
+                Navigate to the <b>"Settings"</b> section and select "Teams."
               </Text>
 
               <Image src={inviteTeam1} mt="30px" mx="auto" w='full' />
@@ -101,7 +102,7 @@ export const InviteTeamMembers = () => {
                 STEP 2
               </Text>
               <Text className="content">
-                Before extending invitations, explore "Manage Roles" to assess the array of available roles. Verify that the access controls align with your organisation's requisites. If adjustments are needed, reach out to our support team.
+                Before extending invitations, explore <b>"Manage Roles"</b> to assess the array of available roles. Verify that the access controls align with your organisation's requisites. If adjustments are needed, reach out to our support team.
               </Text>
 
               <Image src={inviteTeam2} mt="30px" mx="auto" w='full' />
@@ -111,7 +112,7 @@ export const InviteTeamMembers = () => {
                 STEP 3
               </Text>
               <Text className="content">
-                If the roles conform to your needs, proceed to "Invite Team  Members."
+                If the roles conform to your needs, proceed to <b>"Invite Team  Members."</b>
               </Text>
               <Image src={inviteTeam3} mt="30px" mx="auto" w='full' />
             </Box>
@@ -120,7 +121,7 @@ export const InviteTeamMembers = () => {
                 STEP 4
               </Text>
               <Text className="content">
-                Input the team member's email address and select the designated role. Subsequently, click on "Send Invitations."
+                Input the team member's email address and select the designated role. Subsequently, click on <b>"Send Invitations."</b>
               </Text>
 
               <Image src={inviteTeam4} mt="30px" mx="auto" w='full' />
@@ -134,7 +135,7 @@ export const InviteTeamMembers = () => {
               </Text>
 
               <Image src={inviteTeam5} mt="30px" mx="auto" w='full' />
-              <Text className="content">
+              <Text className="content" mt='40px'>
                 This streamlined procedure empowers organizations to harness the full potential of Veerge's collaborative capabilities while fortifying data security and enhancing operational efficacy.
               </Text>
             </Box>

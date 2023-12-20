@@ -18,7 +18,7 @@ const Blocker = () => {
           <Text textAlign={'center'} fontFamily={'euclid-light'} fontSize={'16px'} color={'#191919'}>This article is available to Veerge subscribers only</Text>
         </Flex>
 
-        <a target='_blank' href='https://veerge.myxellia.io/auth/onboarding'>
+        <a target='_blank' href='https://test-veerge.myxellia.io/auth/onboarding'>
           <Button
             _hover={{ bg: 'transparent' }}
             w='400px' h='50px' bg='transparent'
@@ -34,7 +34,7 @@ const Blocker = () => {
         >
           Already have an account? <Text
             cursor={'pointer'} as='span'>
-            <a target='_blank' href='https://veerge.myxellia.io'> Sign In</a>
+            <a target='_blank' href='https://test-veerge.myxellia.io'> Sign In</a>
           </Text>
         </Text>
       </Flex>

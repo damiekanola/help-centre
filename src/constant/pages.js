@@ -8,6 +8,7 @@ import webApplication from '../assets/images/home/web_application.png'
 import tickets from '../assets/images/home/tickets.png'
 import veergePlus from '../assets/images/home/veerge_plus.png'
 import protectedImg from '../assets/images/home/protected.png'
+import agentGuide from '../assets/images/home/agent_guide.png'
 import themes from '../assets/images/home/themes.png'
 
 const data = [
@@ -109,6 +110,15 @@ const data = [
         readTime: '6 mins read',
         datePosted: 'Sep 29, 2023',
         path: '/how_protected'
+    },
+    {
+        img: agentGuide,
+        title: 'AGENTS GUIDE',
+        color: 'black',
+        tag: 'Intermediate',
+        readTime: '6 mins read',
+        datePosted: 'Nov 1, 2022',
+        path: '/agent/portal'
     },
 ]
 

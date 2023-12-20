@@ -26,16 +26,16 @@ const LeadRightNav = () => {
           },
         }}
       >
-        <Text fontSize={'24px'} letterSpacing={'3px'} color={'black !important'} fontFamily={'euclid-medium'}>Lead & Account</Text>
-        <VStack mt='30px' spacing={'20px'} align='stretch'>
+        <Text fontSize={'24px'} letterSpacing={'3px'} color={'black !important'} fontFamily={'euclid-medium'}>Leads & Account</Text>
+        <VStack mt='30px' spacing={'27px'} align='stretch'>
           <Link to="/lead/create_account">
-            <Text fontWeight={location.pathname === '/lead/create_account' && 600}>Create an account</Text>
+            <Text fontSize={'14px'} fontWeight={location.pathname === '/lead/create_account' && 600}>Create an account</Text>
           </Link>
           <Link to="/lead/home_owners_packet">
-            <Text fontWeight={location.pathname === '/lead/home_owners_packet' && 600}>Home owner’s packet</Text>
+            <Text fontSize={'14px'} fontWeight={location.pathname === '/lead/home_owners_packet' && 600}>Home owner’s packet</Text>
           </Link>
           <Link to="/lead/send_an_offer">
-            <Text fontWeight={location.pathname === '/lead/send_an_offer' && 600}>Send an offer</Text>
+            <Text fontSize={'14px'} fontWeight={location.pathname === '/lead/send_an_offer' && 600}>Send an offer</Text>
           </Link>
         </VStack>
       </Box>

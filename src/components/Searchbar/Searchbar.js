@@ -150,7 +150,7 @@ export const Searchbar = () => {
           align="center"
           position="fixed"
           top="82px"
-          zIndex="1"
+          zIndex="2"
           bg={isWHite ? "#0D0D0D" : "#ffffff"}
           borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"

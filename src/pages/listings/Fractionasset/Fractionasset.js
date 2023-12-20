@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Text, Image, Flex, useToast } from "@chakra-ui/react";
-import { ink } from "react-router-dom";
+import { Box, Text, Image, useDisclosure } from "@chakra-ui/react";
 import fractionalize1 from '../../../assets/images/fractionalize/fractionalize-1.png';
 import fractionalize2 from '../../../assets/images/fractionalize/fractionalize-2.png';
 import fractionalize3 from '../../../assets/images/fractionalize/fractionalize-3.png';
@@ -18,10 +17,10 @@ import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../../components/Faq/Helpful";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
 import HideUnsubscribed from "../../../hoc/Hidefull";
+import Strategy from "../../../components/Drawer/strategy";
 
 const Fractionasset = () => {
-  const toast = useToast();
-
+  const strategyModal = useDisclosure();
 
   const how_toRef = useRef(null)
   const questionsRef = useRef(null)
@@ -89,16 +88,18 @@ const Fractionasset = () => {
       <RightNav />
       <Text className="head_">FRACTIONALISING A PROPERTY</Text>
       <Text className="publish">Published: February 18, 2023</Text>
-      <Box id="how_to" ref={how_toRef}>
+      <Box id="how_to" ref={how_toRef} mt='40px'>
         <Text className="content" lineHeight={'25px'}>
           <Text as='p'>
             Let's explore the process of fractionalizing a unit into smaller segments, catering to individuals with lower purchasing power.
           </Text>
-          <Text as='p' mt='20px' cursor={'pointer'} color={'#5d5fef'}>
-            Click here to learn more about fractional Real estate
-          </Text>
+          <a href="https://matador-support-seven.vercel.app/blog/understanding_fraction" target="_blank">
+            <Text as='p' mt='20px' cursor={'pointer'} color={'#5d5fef'}>
+              Click here to learn more about fractional Real Estate
+            </Text>
+          </a>
           <Text as='p' mt='20px'>
-            Consider the scenario where you decide to fractionalize a 1-bedroom flat and offer each fraction at 50,000.00 Naira. These are the steps to follow
+            Consider the scenario where you decide to fractionalize a 1-bedroom flat and offer each fraction at <b>50,000.00 Naira</b>. These are the steps to follow.
           </Text>
         </Text>
 
@@ -134,7 +135,7 @@ const Fractionasset = () => {
             STEP 4
           </Text>
           <Text className="content">
-            Scroll through the options and select "Fractionalise." This will prompt a new screen to appear.
+            Scroll through the options and select <b>"Fractionalise."</b> This will prompt a new screen to appear.
           </Text>
 
           <Image src={fractionalize4} mt="30px" mx="auto" w='full' />
@@ -144,7 +145,7 @@ const Fractionasset = () => {
             STEP 5
           </Text>
           <Text className="content">
-            On the new screen, input the price per fraction. For instance, in this scenario, the price per fraction could be set at 50,000.00 Naira.
+            On the new screen, input the price per fraction. For instance, in this scenario, the price per fraction could be set at <b>50,000.00 Naira</b>.
           </Text>
 
           <Image src={fractionalize5} mt="30px" mx="auto" w='full' />
@@ -164,8 +165,8 @@ const Fractionasset = () => {
             STEP 7
           </Text>
           <Text className="content">
-            Next, move on to the strategy section. Choose between the two available strategies: "Buy to Flip" or "Buy to Hold."
-            <Text as='span' color='#5d5fef' cursor={'pointer'}>Click here to read about “Buy to Flip” & “Buy to Hold”</Text>
+            Next, move on to the strategy section. Choose between the two available strategies: "Buy to Flip" or "Buy to Hold.
+            <Text as='span' color='#5d5fef' cursor={'pointer'} onClick={strategyModal.onOpen}> "Click here to read about “Buy to Flip” & “Buy to Hold”</Text>
           </Text>
           <Image src={fractionalize7} mt="30px" mx="auto" w='full' />
         </Box>
@@ -176,7 +177,7 @@ const Fractionasset = () => {
             STEP 8
           </Text>
           <Text className="content">
-            For the deal structure, select "Equity." This choice indicates that all fractional owners hold ownership stakes. Given that this is a "Buy to Flip" strategy, dividends are unlikely.
+            For the deal structure, select <b>"Equity."</b> This choice indicates that all fractional owners hold ownership stakes. Given that this is a "Buy to Flip" strategy, dividends are unlikely.
           </Text>
           <Image src={fractionalize8} mt="30px" mx="auto" w='full' />
         </Box>
@@ -187,7 +188,7 @@ const Fractionasset = () => {
             STEP 9
           </Text>
           <Text className="content">
-            Proceed to upload the investor packet, ensuring that all relevant information is included.
+            Proceed to upload  <Text as='span' color='#5d5fef' cursor={'pointer'}>the investor packet</Text>, ensuring that all relevant information is included.
           </Text>
           <Image src={fractionalize9} mt="30px" mx="auto" w='full' />
         </Box>
@@ -210,7 +211,7 @@ const Fractionasset = () => {
             Complete the process by reviewing the fractional summary, ensuring that all details are accurate and aligned with your intentions.
           </Text>
           <Image src={fractionalize11} mt="30px" mx="auto" w='full' />
-          <Text className="content">
+          <Text className="content" mt="40px">
             By following these steps, you can effectively fractionalize a unit, making property ownership accessible to a wider range of individuals. The granular approach of fractionalization, accompanied by strategic decision-making, can contribute to a more inclusive and versatile real estate offering.
           </Text>
         </Box>
@@ -220,7 +221,7 @@ const Fractionasset = () => {
         <QuestionsAndReplies questions={questions} />
       </Box>
       <Helpful />
-
+      <Strategy drawerModal={strategyModal} />
     </div>
   );
 };

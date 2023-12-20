@@ -73,7 +73,7 @@ const Archiveunit = () => {
         <Text className="head_">HOW TO ARCHIVE A UNIT</Text>
         <Text className="publish">Published: February 18, 2023</Text>
         <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
+          <Text as='p' mt='40px'>
             If you want to reserve specific units for a special purpose, these are the steps to follow:
           </Text>
         </Text>
@@ -101,7 +101,7 @@ const Archiveunit = () => {
             STEP 3
           </Text>
           <Text className="content">
-            Click on the dropdown menu at the top right corner of the page. Choose "Archived Unit"
+            Click on the dropdown menu at the top right corner of the page. Choose <b>"Archived Unit."</b>
           </Text>
           <Image src={archive3} mt="30px" mx="auto" w='full' />
         </Box>
@@ -110,7 +110,7 @@ const Archiveunit = () => {
             STEP 4
           </Text>
           <Text className="content">
-            Choose "Add to Archived" on the drawer.
+            Choose <b>"Add to Archived"</b> on the drawer.
           </Text>
 
           <Image src={archive4} mt="30px" mx="auto" w='full' />
@@ -120,7 +120,7 @@ const Archiveunit = () => {
             STEP 5
           </Text>
           <Text className="content">
-            In the ensuing window, input the number of units you wish to archive. This number must be less than the total units of that specific type
+            In the ensuing window, input the number of units you wish to archive. This number must be less than the total units of that specific type.
           </Text>
 
           <Image src={archive5} mt="30px" mx="auto" w='full' />
@@ -148,7 +148,7 @@ const Archiveunit = () => {
         <Box>
           <Text className="content_head">STEP 1</Text>
           <Text className="content">
-            Go to the "Listings" section and locate the relevant listing
+            Go to the "Listings" section and locate the relevant listing.
           </Text>
 
           <Image src={archiveStep1} mt="30px" mx="auto" w='full' />
@@ -157,7 +157,7 @@ const Archiveunit = () => {
         <Box>
           <Text className="content_head">STEP 2</Text>
           <Text className="content">
-            Click on the dropdown menu at the top right corner of the listing's page. Select "Archived Units".
+            Click on the dropdown menu at the top right corner of the listing's page. Select <b>"Archived Units."</b>
           </Text>
 
           <Image src={archiveStep2} mt="30px" mx="auto" w='full' />
@@ -188,8 +188,8 @@ const Archiveunit = () => {
           </Text>
 
           <Image src={archiveStep5} mt="30px" mx="auto" w='full' />
-          <Text className="content">
-            By following these steps, you can seamlessly manage unit availability, whether reserving them for future release or restoring them to the public domain. This level of control ensures that your property's market exposure aligns with your strategic objectives
+          <Text className="content" mt='30px'>
+            By following these steps, you can seamlessly manage unit availability, whether reserving them for future release or restoring them to the public domain. This level of control ensures that your property's market exposure aligns with your strategic objectives.
           </Text>
 
         </Box>

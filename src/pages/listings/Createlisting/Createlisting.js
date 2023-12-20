@@ -18,7 +18,8 @@ import Blocker from "../../../components/blocker";
 const Createlisting = () => {
   const toast = useToast();
   const [searchParams, setSearchParams] = useSearchParams();
-  const toView = searchParams.get('isrestricted') === 'true'
+  const toView = true
+  // searchParams.get('isrestricted') === 'true'
 
   const overviewRef = useRef(null)
   const what_you_needRef = useRef(null);
@@ -83,16 +84,18 @@ const Createlisting = () => {
               <ListItem>
                 <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Flat:</Text>
                 <UnorderedList>
-                  <ListItem>Outright Price: 65 million</ListItem>
-                  <ListItem>3-Month Payment Plan:</ListItem>
-                  <ListItem>Initial Deposit: 25 million</ListItem>
-                  <ListItem>Followed by 15 million every month for 3 months</ListItem>
-                  <ListItem>Total Payment: 70 million</ListItem>
-                  <ListItem>6-Month Payment Plan:</ListItem>
+                  <ListItem fontFamily='euclid-light'>Outright Price: 65 million</ListItem>
+                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem>Initial Deposit: 25 million</ListItem>
-                    <ListItem>Followed by 24 million every 3 months</ListItem>
-                    <ListItem>Total Payment: 73 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Followed by 15 million every month for 3 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>Total Payment: 70 million</ListItem>
+                  </UnorderedList>
+                  <ListItem mt='20px' fontFamily='euclid-light'>6-Month Payment Plan:</ListItem>
+                  <UnorderedList>
+                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Followed by 24 million every 3 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>Total Payment: 73 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
@@ -100,12 +103,12 @@ const Createlisting = () => {
               <ListItem>
                 <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Loft:</Text>
                 <UnorderedList>
-                  <ListItem>Outright Price: 75 million</ListItem>
-                  <ListItem>3-Month Payment Plan:</ListItem>
+                  <ListItem fontFamily='euclid-light'>Outright Price: 75 million</ListItem>
+                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem>Initial Deposit: 35 million</ListItem>
-                    <ListItem>Spread the remaining payment within 3 months</ListItem>
-                    <ListItem>Total Price: 80 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Initial Deposit: 35 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Spread the remaining payment within 3 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>Total Price: 80 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
@@ -113,15 +116,15 @@ const Createlisting = () => {
               <ListItem>
                 <Text fontFamily='euclid-semibold' mt='20px'>2-Bedroom Flat:</Text>
                 <UnorderedList>
-                  <ListItem>Outright Price: 100 million</ListItem>
-                  <ListItem>12-month (1-Year) Payment Plan:</ListItem>
+                  <ListItem fontFamily='euclid-light'>Outright Price: 100 million</ListItem>
+                  <ListItem mt='20px' fontFamily='euclid-light'>12-month (1-Year) Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem>Initial Deposit: 25 million</ListItem>
-                    <ListItem>15 million after 3 months</ListItem>
-                    <ListItem>10 million after 2 months</ListItem>
-                    <ListItem>30 million after 4 months</ListItem>
-                    <ListItem>40 million after 3 months</ListItem>
-                    <ListItem>Total Price: 110 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>15 million after 3 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>10 million after 2 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>30 million after 4 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>40 million after 3 months</ListItem>
+                    <ListItem fontFamily='euclid-light'>Total Price: 110 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
@@ -129,19 +132,17 @@ const Createlisting = () => {
               <ListItem>
                 <Text fontFamily='euclid-semibold' mt='20px'>3-Bedroom:</Text>
                 <UnorderedList>
-                  <ListItem>Outright Price: 120 million</ListItem>
-                  <ListItem>3-Month Payment Plan:</ListItem>
+                  <ListItem fontFamily='euclid-light'>Outright Price: 120 million</ListItem>
+                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem>Initial Payment: 60 million</ListItem>
-                    <ListItem>Payment spread over 3 months, no interest</ListItem>
+                    <ListItem fontFamily='euclid-light'>Initial Payment: 60 million</ListItem>
+                    <ListItem fontFamily='euclid-light'>Payment spread over 3 months, no interest</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
 
-              <ListItem>
-                <Text mt='20px'>
-                  As for the pinnacle of grandeur—the penthouse—a veil of mystery shrouds the price, creating an air of anticipation. The development company invites offers from discerning individuals, fostering an atmosphere of exclusivity and negotiation.
-                </Text>
+              <ListItem fontFamily='euclid-light' mt='20px'>
+                As for the pinnacle of grandeur—the penthouse—a veil of mystery shrouds the price, creating an air of anticipation. The development company invites offers from discerning individuals, fostering an atmosphere of exclusivity and negotiation.
               </ListItem>
             </OrderedList>
           </Text>
@@ -155,16 +156,16 @@ const Createlisting = () => {
                 To navigate the workings on Veerge, let's embark on a journey of clarity. It's important to note that this process is the same for estates and residential gated communities.
               </Text>
               <Text as='p' marginTop="20px">
-                For the <b>one-bedroom flat,</b> the 3-month or 6-month payment plans, these are called Quick Payment Plans. This is because you'll be making the same payment regularly over a set time.
+                For the <b>one-bedroom flat,</b> the 3-month or 6-month payment plans, these are called <b>Quick payment plans</b>. This is because you'll be making the same payment regularly over a set time.
               </Text>
               <Text as='p' marginTop="20px">
-                Moving to the <b>1-bedroom loft,</b> the 3-month payment plan is a bit more flexible but still falls under the Quick Payment Plan category. It gives you some leeway in payment timing.
+                Moving to the <b>1-bedroom loft,</b> the 3-month payment plan is a bit more flexible but still falls under the <b>Quick payment plan</b> category. It gives you some leeway in payment timing.
               </Text>
               <Text as='p' marginTop="20px">
-                The <b>2-bedroom flat</b> takes a different approach. Its payment plan doesn't follow the same pattern, so we call it a Custom Payment Plan. Payments happen at different times and amounts, tailored to the situation.
+                The <b>2-bedroom flat</b> takes a different approach. Its payment plan doesn't follow the same pattern, so we call it a <b>Custom Payment Plan</b>. Payments happen at different times and amounts, tailored to the situation.
               </Text>
               <Text as='p' marginTop="20px">
-                Now, onto the <b>3-bedroom—</b>it's still in the Quick Payment Plan category. This keeps things simple and efficient.
+                Now, onto the <b>3-bedroom</b>-it's still in the Quick Payment Plan category. This keeps things simple and efficient.
               </Text>
               <Text as='p' marginTop="20px">
                 But the penthouse stands apart. It doesn't fit neatly into any category. Instead, it's open to offers, and you can customize the payment plan based on what works best for different buyers.
@@ -181,20 +182,20 @@ const Createlisting = () => {
               </Text>
 
               <OrderedList>
-                <ListItem><b>Listing Name:</b> This is the name of the property, in this case, "Barrio Logan."</ListItem>
-                <ListItem><b>Select Land Title:</b> Choose the land title type, such as "C of O" (Certificate of Occupancy).</ListItem>
-                <ListItem><b>Select Property Type:</b> Indicate the type of property, like "Apartment Complex," "Estate," or "Residential Community."</ListItem>
-                <ListItem><b>Land Size (sqm):</b> Specify the size of the land in square meters.</ListItem>
-                <ListItem><b>Country:</b> Select the country where the property is being developed, in this case, "Nigeria."</ListItem>
-                <ListItem><b>Construction Status:</b> Choose the current construction status, for example, "Pre Construction."</ListItem>
-                <ListItem><b>Start Date and End Date:</b> Fill in the estimated start and end dates of the development.</ListItem>
-                <ListItem><b>Address:</b> Provide the full address of the property.</ListItem>
-                <ListItem><b>Location Landmark:</b> Identify a prominent landmark near the property's location, such as "Victoria Island, Lagos."</ListItem>
-                <ListItem><b>Longitude and Latitude:</b> Retrieve these coordinates from https://www.latlong.net. (Learn more about how to get this information.)</ListItem>
-                <ListItem><b>Description of the Property:</b> Summarize the property in 1,200 characters or less, highlighting its key features and selling points.</ListItem>
-                <ListItem><b>YouTube Link (Optional):</b> If available, you can add a YouTube video link showcasing the property.</ListItem>
-                <ListItem><b>Project Brochure:</b> Upload the project brochure containing detailed information about the property.</ListItem>
-                <ListItem><b>Upload Images:</b> Provide up to 10 images of the property, showcasing its various aspects and features.</ListItem>
+                <ListItem mt='10px'><b>Listing Name:</b> This is the name of the property, in this case, "Barrio Logan."</ListItem>
+                <ListItem mt='10px'><b>Select Land Title:</b> Choose the land title type, such as "C of O" (Certificate of Occupancy).</ListItem>
+                <ListItem mt='10px'><b>Select Property Type:</b> Indicate the type of property, like "Apartment Complex," "Estate," or "Residential Community."</ListItem>
+                <ListItem mt='10px'><b>Land Size (sqm):</b> Specify the size of the land in square meters.</ListItem>
+                <ListItem mt='10px'><b>Country:</b> Select the country where the property is being developed, in this case, "Nigeria."</ListItem>
+                <ListItem mt='10px'><b>Construction Status:</b> Choose the current construction status, for example, "Pre construction."</ListItem>
+                <ListItem mt='10px'><b>Start Date and End Date:</b> Fill in the estimated start and end dates of the development.</ListItem>
+                <ListItem mt='10px'><b>Address:</b> Provide the full address of the property.</ListItem>
+                <ListItem mt='10px'><b>Location Landmark:</b> Identify a prominent landmark near the property's location, such as "Victoria Island, Lagos."</ListItem>
+                <ListItem mt='10px'><b>Longitude and Latitude:</b> Retrieve these coordinates from <a href="https://www.latlong.net" target="_blank"><Text color='#4545FE' as='span'>https://www.latlong.net</Text></a>.</ListItem>
+                <ListItem mt='10px'><b>Description of the Property:</b> Summarize the property in 1,200 characters or less, highlighting its key features and selling points.</ListItem>
+                <ListItem mt='10px'><b>YouTube Link (Optional):</b> If available, you can add a YouTube video link showcasing the property.</ListItem>
+                <ListItem mt='10px'><b>Project Brochure:</b> Upload the project brochure containing detailed information about the property.</ListItem>
+                <ListItem mt='10px'><b>Upload Images:</b> Provide up to 10 images of the property, showcasing its various aspects and features.</ListItem>
               </OrderedList>
 
               <Image src={create1} mt="30px" mx="auto" w='full' />
@@ -203,7 +204,7 @@ const Createlisting = () => {
             <Text className="content_head" pt="30px">STEP 2</Text>
             <Text className="content">
               <Text as='p'>
-                This is the part where you fill units information. in this case the units are 1 bedroom flat, one bedroom loft, 2-bedroom flat, 3 bedroom and the pent house.
+                This is the part where you fill units information. In this case the units are 1 bedroom flat, one bedroom loft, 2-bedroom flat, 3 bedroom and the pent house.
               </Text>
 
               <Box>
@@ -213,13 +214,13 @@ const Createlisting = () => {
                 </Box>
 
                 <OrderedList>
-                  <ListItem><b>Unit Title:</b> Fill in "1 Bedroom Flat."</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Input the size of the unit in square meters.</ListItem>
-                  <ListItem><b>Number of Bedrooms:</b> Indicate the number of bedrooms (1 bedroom).</ListItem>
-                  <ListItem><b>Unit Quantity:</b> Enter the total number of units (10 units).</ListItem>
-                  <ListItem><b>Unit Price:</b> Enter the outright unit price (65 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-                  <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement specific to this unit.</ListItem>
-                  <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
+                  <ListItem mt='10px'><b>Unit Title:</b> Fill in "1 Bedroom Flat."</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Input the size of the unit in square meters.</ListItem>
+                  <ListItem mt='10px'><b>Number of Bedrooms:</b> Indicate the number of bedrooms (1 bedroom).</ListItem>
+                  <ListItem mt='10px'><b>Unit Quantity:</b> Enter the total number of units (10 units).</ListItem>
+                  <ListItem mt='10px'><b>Unit Price:</b> Enter the outright unit price (65 million) and ensure the "Price will be displayed" box is checked.</ListItem>
+                  <ListItem mt='10px'><b>Upload Purchase Agreement:</b> Attach the purchase agreement specific to this unit.</ListItem>
+                  <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
                 <UnorderedList>
@@ -264,26 +265,26 @@ const Createlisting = () => {
                   We will then add another Unit by clicking on the Add unit button
                 </Text>
                 <Text as='p' mt='20px'>
-                  This is the one bedroom loft with a flexible payment plan
+                  This is the one bedroom loft with a flexible payment plan.
                 </Text>
 
                 <OrderedList mt='20px'>
-                  <ListItem><b>Unit Title:</b> Enter "1 Bedroom Loft."</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-                  <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (1 bedroom).</ListItem>
-                  <ListItem><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
-                  <ListItem><b>Unit Price:</b> Enter the unit price (75 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-                  <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-                  <ListItem><b>Upload Unit Images:</b> Provide images highlighting this unit.</ListItem>
+                  <ListItem mt='10px'><b>Unit Title:</b> Enter "1 Bedroom Loft."</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
+                  <ListItem mt='10px'><b>Number of Bedrooms:</b> Indicate the bedroom count (1 bedroom).</ListItem>
+                  <ListItem mt='10px'><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
+                  <ListItem mt='10px'><b>Unit Price:</b> Enter the unit price (75 million) and ensure the "Price will be displayed" box is checked.</ListItem>
+                  <ListItem mt='10px'><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
+                  <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images highlighting this unit.</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the payment plan:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Quick Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the 3-month flexible payment plan:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>For the 3-month flexible payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 3 months.</ListItem>
                   <ListItem>Initial deposit: 35 million.</ListItem>
@@ -297,29 +298,29 @@ const Createlisting = () => {
                 <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iii)</Text>
 
                 <Text as='p' mt='20px'>
-                  There are still 3 more units left so we will add another Unit by clicking on the Add unit butto
+                  There are still 3 more units left so we will add another Unit by clicking on the Add unit button.
                 </Text>
                 <Text as='p' mt='20px'>
-                  This will be the 2 bedroom flat with a flexible payment plan
+                  This will be the 2 bedroom flat with a flexible payment plan.
                 </Text>
 
                 <OrderedList mt='20px'>
-                  <ListItem><b>Unit Title:</b> Enter "2 Bedroom Flat."</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-                  <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (2 bedroom).</ListItem>
-                  <ListItem><b>Unit Quantity:</b> Fill in the quantity (30 units).</ListItem>
-                  <ListItem><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-                  <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-                  <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
+                  <ListItem mt='10px'><b>Unit Title:</b> Enter "2 Bedroom Flat."</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
+                  <ListItem mt='10px'><b>Number of Bedrooms:</b> Indicate the bedroom count (2 bedroom).</ListItem>
+                  <ListItem mt='10px'><b>Unit Quantity:</b> Fill in the quantity (30 units).</ListItem>
+                  <ListItem mt='10px'><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
+                  <ListItem mt='10px'><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
+                  <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the payment plan:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Custom Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the 12-month payment plan:</Text>
+                <Text fontFamily='euclid-semibold' mt='20px'>For the 12-month payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 12 months.</ListItem>
                   <ListItem>Initial deposit: 25 million.</ListItem>
@@ -336,26 +337,26 @@ const Createlisting = () => {
                 <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iv)</Text>
 
                 <Text as='p' mt='20px'>
-                  This will be the 3 bedroom with a flexible payment plan
+                  This will be the 3 bedroom with a flexible payment plan.
                 </Text>
 
                 <OrderedList mt='20px'>
-                  <ListItem><b>Unit Title:</b> Enter "3 Bedroom Flat."</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-                  <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (3 bedroom).</ListItem>
-                  <ListItem><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
-                  <ListItem><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
-                  <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-                  <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
+                  <ListItem mt='10px'><b>Unit Title:</b> Enter "3 Bedroom Flat."</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
+                  <ListItem mt='10px'><b>Number of Bedrooms:</b> Indicate the bedroom count (3 bedroom).</ListItem>
+                  <ListItem mt='10px'><b>Unit Quantity:</b> Fill in the quantity (5 units).</ListItem>
+                  <ListItem mt='10px'><b>Unit Price:</b> Enter the unit price (100 million) and ensure the "Price will be displayed" box is checked.</ListItem>
+                  <ListItem mt='10px'><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
+                  <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the payment plan:</Text>
+                <Text mt='20px' fontFamily='euclid-semibold'>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Quick Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text mt='20px'>For the 3-month flexible payment plan:</Text>
+                <Text mt='20px' fontFamily='euclid-semibold'>For the 3-month flexible payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 3 months.</ListItem>
                   <ListItem>Initial deposit: 60 million.</ListItem>
@@ -369,18 +370,18 @@ const Createlisting = () => {
                 <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (v)</Text>
 
                 <Text as='p' mt='20px'>
-                  This will be the prestigious penthouse with a no-interest payment plan
+                  This will be the prestigious penthouse with a no-interest payment plan.
                 </Text>
 
                 <OrderedList mt='20px'>
-                  <ListItem><b>Unit Title:</b> Enter "Penthouse."</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-                  <ListItem><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
-                  <ListItem><b>Number of Bedrooms:</b> Indicate the bedroom count (4 bedrooms).</ListItem>
-                  <ListItem><b>Unit Quantity:</b> Fill in the quantity (1 unit).</ListItem>
-                  <ListItem><b>Unit Price:</b> Enter the unit price (450 million) and uncheck the "Price will be displayed" box.</ListItem>
-                  <ListItem><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
-                  <ListItem><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
+                  <ListItem mt='10px'><b>Unit Title:</b> Enter "Penthouse."</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
+                  <ListItem mt='10px'><b>Unit Size (sqm):</b> Specify the unit size.</ListItem>
+                  <ListItem mt='10px'><b>Number of Bedrooms:</b> Indicate the bedroom count (4 bedrooms).</ListItem>
+                  <ListItem mt='10px'><b>Unit Quantity:</b> Fill in the quantity (1 unit).</ListItem>
+                  <ListItem mt='10px'><b>Unit Price:</b> Enter the unit price (450 million) and uncheck the "Price will be displayed" box.</ListItem>
+                  <ListItem mt='10px'><b>Upload Purchase Agreement:</b> Attach the purchase agreement for this unit.</ListItem>
+                  <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
                 <Text mt='20px'>After this, select "Proceed," which will guide you to a new page.</Text>
@@ -395,7 +396,7 @@ const Createlisting = () => {
               </Text>
               <OrderedList>
                 <ListItem>
-                  Select All Amenities: We willSimply click on each amenity that applies to the project.
+                  Select All Amenities: We will Simply click on each amenity that applies to the project.
                 </ListItem>
               </OrderedList>
               <Image src={create4} mt="30px" mx="auto" w='full' />
@@ -411,7 +412,7 @@ const Createlisting = () => {
                   <b>Contact Persons:</b> Navigate to the "Contact Person" section and select the relevant individuals from your teams.
                 </ListItem>
                 <ListItem>
-                  <b>Commissions:</b>Move on to the "Commission" section and input the respective percentages for both internal sales team and external registered agents. If no commission is applicable, simply enter zero.
+                  <b>Commissions:</b> Move on to the "Commission" section and input the respective percentages for both internal sales team and external registered agents. If no commission is applicable, simply enter zero.
                 </ListItem>
               </OrderedList>
 
@@ -431,7 +432,7 @@ const Createlisting = () => {
               </Text>
 
               <Link to='/listings/create_unit'>
-                <Text mt='20px' cursor={'pointer'} color='#4545FE'>How to create an allocation</Text>
+                <Text mt='20px' cursor={'pointer'} color='#4545FE'>How to create an allocation.</Text>
               </Link>
 
             </Text>

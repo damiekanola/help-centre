@@ -57,8 +57,8 @@ const HomeOwnersPacket = () => {
       <Text className="publish">Published: March 26, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
-            A "homeowner's packet" is a comprehensive collection of documents and
+          <Text as='p' marginTop={'30px'}>
+            A <b>"homeowner's packet"</b> is a comprehensive collection of documents and
             essential information offered to new homeowners upon purchasing a property.
             When you embark on the journey of purchasing a property, you can anticipate
             receiving a set of vital documents throughout the process. The exact nature of
@@ -97,10 +97,10 @@ const HomeOwnersPacket = () => {
             </li>
           </Text>
           <Text className="content">
-            The title search report stands as a verification of the property's legal ownership. This document provides insight into any prevailing liens, mortgages, easements, or encumbrances that might impact the property's title
+            The title search report stands as a verification of the property's legal ownership. This document provides insight into any prevailing liens, mortgages, easements, or encumbrances that might impact the property's title.
           </Text>
           <Text className="content" mt="20px">
-            A meticulously detailed map that delineates the precise boundaries, dimensions, and physical attributes of the property. The property survey serves as a tool to identify and mitigate any potential disputes or encroachments related to property boundaries
+            A meticulously detailed map that delineates the precise boundaries, dimensions, and physical attributes of the property. The property survey serves as a tool to identify and mitigate any potential disputes or encroachments related to property boundaries.
           </Text>
         </Box>
 
@@ -111,7 +111,7 @@ const HomeOwnersPacket = () => {
             </li>
           </Text>
           <Text className="content">
-            These records serve to elucidate the property's tax assessment details, encompassing elements such as the assessed value and any pertinent property taxes that apply
+            These records serve to elucidate the property's tax assessment details, encompassing elements such as the assessed value and any pertinent property taxes that apply.
           </Text>
         </Box>
 
@@ -122,7 +122,7 @@ const HomeOwnersPacket = () => {
             </li>
           </Text>
           <Text className="content">
-            A comprehensive breakdown of the costs associated with the property purchase. This document elucidates elements such as the loan amount, interest rate, closing costs, and additional fees
+            A comprehensive breakdown of the costs associated with the property purchase. This document elucidates elements such as the loan amount, interest rate, closing costs, and additional fees.
           </Text>
         </Box>
 
@@ -133,7 +133,7 @@ const HomeOwnersPacket = () => {
             </li>
           </Text>
           <Text className="content">
-            If a home inspection was conducted, thisreport will comprehensively detail the property's condition and highlight any issues identified during the inspection
+            If a home inspection was conducted, thisreport will comprehensively detail the property's condition and highlight any issues identified during the inspection.
           </Text>
         </Box>
 
@@ -238,7 +238,7 @@ const HomeOwnersPacket = () => {
             STEP 3
           </Text>
           <Text className="content">
-            Choose the "Upload Homeowner's Packet" option, proceed to upload the PDF document, and finalize the process by clicking "Proceed."
+            Choose the <b>"Upload Homeowner's Packet"</b> option, proceed to upload the PDF document, and finalize the process by clicking "Proceed."
           </Text>
 
           <Image src={homeOwner3} mt="30px" mx="auto" w='full' />

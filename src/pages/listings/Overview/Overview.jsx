@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import RightNav from "../../../components/Listings/RightNav";
 import LeftNav from "../../../components/Leftsidenav/Leftsidenav";
 import useIsInViewport from "../../../utils/useOnScreen/useOnScreen";
+import Helpful from "../../../components/Faq/Helpful";
 
 
 const Overview = () => {
@@ -69,13 +70,13 @@ const Overview = () => {
         <Text className="content_head">WHAT IS THE DIFFERENCE BETWEEN UNIT & A LISTING</Text>
         <Text className="content">
           <Text as='p'>
-            Distinguishing between a "<b>unit</b>" and a "<b>listing</b>" is essential to grasp the dynamics of real estate. A "<b>listing</b>" represents a comprehensive portrayal of a property available for sale, rent, or investment. Notably, a "<b>listing</b>" can encompass multiple individual  "<b>unit</b>s," creating a framework for properties like multifamily apartments, apartment complexes, or estates.
+            Distinguishing between a "<b>unit</b>" and a "<b>listing</b>" is essential to grasp the dynamics of real estate. A "<b>listing</b>" represents a comprehensive portrayal of a property available for sale, rent, or investment. Notably, a "<b>listing</b>" can encompass multiple individual  "<b>units</b>," creating a framework for properties like multifamily apartments, apartment complexes, or estates.
           </Text>
           <Text as='p' marginTop="20px">
             Think of a "<b>listing</b>" as a broader canvas, a platform that can accommodate diverse configurations of "<b>units</b>." In essence, it serves as the umbrella term for a development project. On the other hand, a  "<b>unit</b>" is a distinct component within a  "<b>listing</b>" – it is a singular, self-contained living space or property that constitutes part of the larger whole.
           </Text>
           <Text as='p' marginTop="20px">
-            For example, envision an apartment complex as a  "<b>listing</b>." Within this listing, each individual apartment unit is a distinct  "<b>unit</b>." Likewise, a multifamily estate, comprising several separate living spaces, is a  "<b>listing</b>," with each residential unit forming an essential part of it.
+            For example, envision an apartment complex as a  "<b>listing</b>." Within this listing, each individual apartment unit is a distinct  "<b>unit</b>." Likewise, a residential estate, comprising several separate living spaces, is a  "<b>listing</b>," with each residential unit forming an essential part of it.
           </Text>
           <Text as='p' marginTop="20px">
             It's worth noting that in some instances, a single  "<b>unit</b>" can also be considered a  "<b>listing</b>." For instance, a single-family residential home, standing independently, can be regarded as both a single "<b>unit</b>" and a standalone  "<b>listing</b>."
@@ -115,9 +116,7 @@ const Overview = () => {
             Allocation within the Veerge platform serves as an exclusive identifier uniquely assigned to each listing, streamlining the process of locating specific properties within your portfolio. This applies to various real estate offerings, whether they are individual apartments, gated communities, or other real estate ventures. To simplify, let's illustrate this concept through an example: picture an apartment complex named ABC, encompassing a total of 30 distinct apartment units. In this scenario, the allocation process might involve designations such as "Flat 1," "Flat 2," "Flat 3," progressing sequentially up to "Flat 30." Alternatively, it could be represented as "Apartment 1," "Apartment 2," seamlessly extending up to "Apartment 30."
           </Text>
           <Text as='p' marginTop='20px'>
-            Veerge offers two distinct types of allocations: Smart Allocation and Manual Allocation. Under Smart Allocation, home buyers have the ability to select a unit of their preference once they reach a predetermined milestone set by the development company. In contrast, Manual Allocation means that buyers cannot personally choose their units; instead, the development company is responsible for assigning units to them.          </Text>
-          <Text as='p' marginTop='20px'>
-            Veerge's analytics solutions empower businesses to develop a profound understanding of their customers' preferences, behaviors, and buying patterns, ultimately fostering increased customer loyalty. By leveraging Veerge's technology, businesses can address crucial questions such as what clients want to purchase, when they are most likely to make a purchase, the factors driving their purchase decisions, and their preferred buying methods. This in-depth understanding of individual buyer needs allows businesses to tailor their services and offerings to better meet those unique requirements. Moreover, Veerge's analytics capabilities can identify customers who are most likely looking for second properties, determine their location preferences, understand what they desire in a second property, comprehend the factors influencing their loyalty, and prioritize them based on various criteria.
+            Veerge offers two distinct types of allocations: Smart Allocation and Manual Allocation. With Smart Allocation, home buyers have the opportunity to select a unit of their choice in real time. This is facilitated through a compartmentalized building allocation layout accessible on their mobile or web application, which becomes available once they reach a specific milestone set by the development company. This process is akin to how passengers select seats on a plane when purchasing a ticket. It's important to note that subscribers cannot select units that have already been chosen by others or those marked as unavailable by the company. On the other hand, Manual Allocation differs significantly. In this method, buyers do not have the option to choose their units personally. Instead, the units are assigned to them by the development company, ensuring a different approach to property allocation.
           </Text>
           <Text as='p' marginTop='20px'>
             In essence, this allocation mechanism functions as an advanced organizational tool, facilitating efficient navigation through your diverse property portfolio. It significantly streamlines property management processes and enhances interactions with clients, ensuring accuracy and effectiveness in your real estate endeavors.
@@ -131,15 +130,15 @@ const Overview = () => {
           <Text as='p'>
             There are instances when not all the buildings or units within a listing are available for sale. This scenario can arise due to reasons such as joint ventures or a strategic decision to sell some units at a later date. This is precisely why this aspect of Veerge holds substantial importance.
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop='20px'>
             Allow me to clarify further:
-            Imagine you're engaged in a joint venture with an investment company, aiming to develop a sprawling apartment complex encompassing 100 units. Within this partnership, your portion consists of 60 units, while the investment company owns the remaining 40 units. In this context, it's astute to segregate your 60 units from the investment company's 40. This separation is pivotal as it forestalls any inadvertent sales, which could complicate matters, considering these units were never intended for sale.
+            Imagine you're engaged in a joint venture with an investment company, aiming to develop a sprawling apartment complex encompassing <b>100 units</b>. Within this partnership, your portion consists of <b>60 units</b>, while the investment company owns the remaining <b>40 units</b>. In this context, it's astute to segregate your <b>60 units</b> from the investment company's 40. This separation is pivotal as it forestalls any inadvertent sales, which could complicate matters, considering these units were never intended for sale.
           </Text>
-          <Text as='p'>
-            Another common scenario arises when certain units have already been sold before transitioning your operations to Veerge. Let's revisit the previous case study: presume that the joint venture allocates 40 units to the investment company and 60 to your domain. However, you've already successfully sold 10 units. In this scenario, your focus shifts to archiving 50 units, not 40, since 50 units are no longer part of the market.
+          <Text as='p' marginTop='20px'>
+            Another common scenario arises when certain units have already been sold before transitioning your operations to Veerge. Let's revisit the previous case study: presume that the joint venture allocates <b>40 units</b> to the investment company and 60 to your domain. However, you've already successfully sold <b>10 units</b>. In this scenario, your focus shifts to archiving <b>50 units</b>, not 40, since <b>50 units</b> are no longer part of the market.
           </Text>
-          <Text as='p'>
-            For a step-by-step guide on archiving units, please follow this link [insert link]. This crucial feature ensures your property management remains streamlined and transparent, safeguarding against unintended transactions and simplifying your real estate operations.
+          <Text as='p' marginTop='20px'>
+            For a step-by-step guide on archiving units, please follow this <a target="_blank" href='https://matador-support-seven.vercel.app/listings/archive_unit'><Text as='span' color='#8486f2'>link</Text></a>. This crucial feature ensures your property management remains streamlined and transparent, safeguarding against unintended transactions and simplifying your real estate operations.
           </Text>
         </Text>
       </Box>
@@ -150,24 +149,25 @@ const Overview = () => {
           <Text as='p'>
             Inspections on Veerge represent a paradigm shift from the norm that many property development companies are accustomed to. It is, in essence, the bedrock upon which the entire process stands, an unparalleled facet that sets it leagues apart. Allow me to elaborate.
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop={'20px'}>
             In most property development firms, a scheduling inspection feature on their website is not unheard of. But here's where Veerge shines distinctively. Our inspection system is not just intelligent; it's brilliantly intelligent. Its core essence is innovation at its peak. One aspect that distinguishes it is the post-inspection feedback mechanism—a prompt akin to how Uber seeks your input after a trip.
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop={'20px'} fontStyle={'italic'}>
             “Tell us about your experience on site yesterday”
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop={'20px'}>
             This feedback mechanism is pivotal. It perpetually furnishes you with a comprehensive record of every individual who set foot on your site or embarked on a virtual tour of your project. More than that, it encapsulates their impressions. If an on-site experience doesn't align with their expectations, there's an accessible channel for them to communicate this. Should their preferences differ from what's being offered, they can articulate that too.
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop={'20px'}>
             This facet isn't merely about feedback—it's about intelligence derived from data. It's about spotting leaks in your business strategy. If a consistent pattern of complaints or requests emerges, it's an indicator of an underserved market or an existing gap. Veerge doesn't just inform; it empowers you to take timely action. It's the symbiotic dance between operational efficiency and strategic planning. Bear in mind, every individual with access holds the key to this repository of insight, a repository that molds future decisions. Here's the pinnacle of Veerge's intelligence:
             It's predictive. If a customer enters your site, offers less-than-stellar feedback, and then modifies their payment behavior after the visit, Veerge can unravel the threads connecting these actions.
           </Text>
-          <Text as='p'>
+          <Text as='p' marginTop={'20px'}>
             In essence, Veerge's inspection system transcends the ordinary. It's an embodiment of innovation, a guiding light that casts your business onto the forefront of progressive strategies. It's intelligent, insightful, and relentlessly ahead of everything you've grown accustomed to.
           </Text>
         </Text>
       </Box>
+      <Helpful />
     </div>
   );
 };

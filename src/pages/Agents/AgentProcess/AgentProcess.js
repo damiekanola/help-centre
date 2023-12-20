@@ -42,26 +42,25 @@ export const AgentProcess = () => {
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <AgentRightNav />
       <Text className="head_">The complete agents process</Text>
-      <Text className="publish">Published: November 24, 2022</Text>
+      <Text className="publish">Published: November 1, 2022</Text>
       <Box className="content" lineHeight={'25px'}>
         <Box id="agents" ref={agentsRef}>
-          <Text as='p' marginTop="20px" fontSize={'16px'} fontWeight={500}>Agents on Veerge:</Text>
           <Text as='p' marginTop="20px">
-            In the realm of  Veerge , agents typically don't directly access a portal to view listings.
-            Instead, they initiate a request for access which is subsequently approved by the property development company. When an agent signs up, their access request becomes a distinct entry in the "Requests" section. To manage this, navigate to the "Requests" area, click on the specific request, review all the provided details, and then proceed to either approve or reject the request.
+            In the realm of  Veerge , agents typically don't directly access a portal to view
+            listings. Instead, they initiate a request for access which is subsequently approved by the property development company. When an agent signs up, their access request becomes a distinct entry in the "Requests" section. To manage this, navigate to the "Requests" area, click on the specific request, review all the provided details, and then proceed to either approve or reject the request.
           </Text>
         </Box>
         <Box id="referral" ref={referralRef}>
-          <Text as='p' marginTop="20px" fontSize={'16px'} fontWeight={500}>Referral Link and User Connections:</Text>
-          <Text as='p' marginTop="20px">
+          <Text as='p' marginTop="20px" fontSize={'16px'} fontFamily={'euclid-semibold'}>Referral Link and User Connections</Text>
+          <Text as='p'>
             Each agent is assigned a unique referral link. The primary purpose of this link is
             to establish a direct connection between the agent and any user who signs up
             through that link. This connection is evident in the user's profile, where you'll find a notation indicating that the user was referred by a particular agent.
           </Text>
         </Box>
         <Box id="commission" ref={commissionRef}>
-          <Text as='p' marginTop="20px" fontSize={'16px'} fontWeight={500}>Commission Requests and Transactions:</Text>
-          <Text as='p' marginTop="20px">
+          <Text as='p' marginTop="20px" fontSize={'16px'} fontFamily={'euclid-semibold'}>Commission Requests and Transactions:</Text>
+          <Text as='p'>
             When a user facilitated by a registered agent makes a property purchase, the
             agent is entitled to a commission. To initiate this process, the agent submits a
             commission request. This request also surfaces in the "Requests" section,
@@ -69,15 +68,11 @@ export const AgentProcess = () => {
           </Text>
         </Box>
         <Box id="approving" ref={approvingRef}>
-          <Text as='p' marginTop="20px" fontSize={'16px'} fontWeight={500}>Approving Commissions: A Step-by-Step Guide</Text>
-          <Text as='p' marginTop="20px">
-            When you choose to approve a commission request, a logical sequence of actions  ensues, ensuring a meticulous and efficient process. Here's a breakdown of the process:
-          </Text>
-
+          <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily={'euclid-medium'} letterSpacing={'2.88px;'}>Step-by-Step Guide to Approving Commissions</Text>
           <Box>
             <Text as='p' marginTop="20px" fontSize={'24px'} fontFamily='euclid-semibold'>STEP 1</Text>
             <Text as='p' marginTop="20px">
-              Initiating the process, you'll begin by selecting the property that corresponds to the commission request. This ensures alignment between the transaction and the commission.
+              Initiating the process, you'll begin by clicking on the request and make sure due diligence has been done on your end. Then you select the property that corresponds to the commission request. This ensures alignment between the transaction and the commission.
             </Text>
             <Image marginTop='20px' w='full' h='auto' src={agent1} />
           </Box>

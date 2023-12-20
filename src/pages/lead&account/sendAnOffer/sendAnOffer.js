@@ -60,7 +60,7 @@ const SendAnOffer = () => {
       <Text className="publish">Published: March 26, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
+          <Text as='p' marginTop={'30px'}>
             In the realm of real estate transactions, negotiation often plays a pivotal role.
             Within this landscape, the price displayed on the user’s application most times
             is not set in stone for the development company—it's subject to negotiation.
@@ -84,7 +84,7 @@ const SendAnOffer = () => {
         <Box>
           <Text className="content_head">STEP 1</Text>
           <Text className="content">
-            Begin by heading to the 'Users' section, where you can select the relevant user.
+            Begin by heading to the <b>'Users'</b> section, where you can select the relevant user.
           </Text>
 
           <Image src={sendOffer1} mt="30px" mx="auto" w='full' />
@@ -94,7 +94,7 @@ const SendAnOffer = () => {
             STEP 2
           </Text>
           <Text className="content">
-            Scroll drown to select the 'Give an Offer' button.
+            Scroll drown to select the <b>'Give an Offer'</b> button.
           </Text>
 
           <Image src={sendOffer2} mt="30px" mx="auto" w='full' />
@@ -104,7 +104,7 @@ const SendAnOffer = () => {
             STEP 3
           </Text>
           <Text className="content">
-            Proceed to specify key details. This includes selecting the listing and unit in question. Depending on the payment structure—outright purchase or payment plan— you'll define the payment type accordingly.
+            Proceed to specify key details. This includes selecting the listing and unit in question. Depending on the payment structure—outright purchase or payment plan—you'll define the payment type accordingly.
           </Text>
           <Image src={sendOffer3} mt="30px" mx="auto" w='full' />
         </Box>
@@ -113,7 +113,7 @@ const SendAnOffer = () => {
             STEP 4
           </Text>
           <Text className="content">
-            For outright purchases, input the negotiated amount. If it's a payment plan, you'll need to provide the initial deposit, outline instalment payments along with their due dates, and set an expiration date for the offer
+            For outright purchases, input the negotiated amount. If it's a payment plan, you'll need to provide the initial deposit, outline instalment payments along with their due dates, and set an expiration date for the offer.
           </Text>
 
           <Image src={sendOffer4} mt="30px" mx="auto" w='full' />
@@ -136,7 +136,7 @@ const SendAnOffer = () => {
             With all pertinent information in place, you can now dispatch the offer for consideration.
           </Text>
           <Image src={sendOffer6} mt="30px" mx="auto" w='full' />
-          <Text className="content">
+          <Text className="content" mt='30px'>
             Once dispatched, the offer enters a 'Pending' status within the profile. Its
             progression hinges on the potential buyer either submitting the initial deposit or
             upon the offer's expiration date, beyond which it ceases to be valid. This

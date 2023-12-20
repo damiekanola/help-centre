@@ -70,7 +70,7 @@ const Changelisting = () => {
       <Text className="head_">HOW TO CHANGE A LISTING INFORMATION</Text>
       <Text className="publish">Published: November 24, 2022</Text>
       <Box id="how_to" ref={how_toRef}>
-        <Text className="content" lineHeight={'25px'}>
+        <Text className="content" lineHeight={'25px'} mt='40px'>
           <Text as='p'>
             Development projects often require adjustments over time. Prices, payment terms, unit quantities, and even project scales may undergo changes. Alongside, documentation and images might also need updates. To effect any modification to a listing, follow these steps:
           </Text>
@@ -84,7 +84,7 @@ const Changelisting = () => {
         <Box>
           <Text className="content_head">STEP 1</Text>
           <Text className="content" mt='20px'>
-            Start by heading to the "Listings" section.
+            Start by heading to the <b>"Listings"</b> section.
           </Text>
 
           <Image src={changeListing1} mt="30px" mx="auto" w='full' />
@@ -94,7 +94,7 @@ const Changelisting = () => {
             STEP 2
           </Text>
           <Text className="content" mt='20px'>
-            Locate the listing you want to update, then click on the  top right corner select the drop down and click "Edit".
+            Locate the listing you want to update, then click on the  top right corner select the drop down and click <b>"Edit."</b>
           </Text>
 
           <Image src={changeListing2} mt="30px" mx="auto" w='full' />
@@ -113,7 +113,7 @@ const Changelisting = () => {
             STEP 4
           </Text>
           <Text className="content" mt='20px'>
-            After making your desired changes, click the "Update" button. This will save and apply your modifications to the listing.
+            After making your desired changes, click the <b>"Update"</b> button. This will save and apply your modifications to the listing.
           </Text>
 
           <Image src={changeListing4} mt="30px" mx="auto" w='full' />
@@ -128,7 +128,7 @@ const Changelisting = () => {
 
         <Text className="content_head">Modifying Unit Information and Prices</Text>
 
-        <Text className="content" mt='20px'>
+        <Text className="content">
           <Text as='p'>
             If you need to make changes to unit information, such as quantity or price, follow these specific steps:
           </Text>
@@ -136,7 +136,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 1</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             Choose the listing you wish to modify and navigate to it.
           </Text>
 
@@ -145,7 +145,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 2</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             Select the specific unit you want to adjust within the listing.
           </Text>
 
@@ -154,8 +154,8 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 3</Text>
-          <Text className="content" mt='20px'>
-            At the top-right corner of the unit's page, click on the dropdown menu and choose "Edit Listing."
+          <Text className="content">
+            At the top-right corner of the unit's page, click on the dropdown menu and choose <b>"Edit Listing."</b>
           </Text>
 
           <Image src={modifyUnit3} mt="30px" mx="auto" w='full' />
@@ -163,7 +163,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 4</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             Within the editing interface, you can alter unit information like Number of Units, Outright price, and even update outright documents if necessary. For changes in quantity, please note that adjustments will require corresponding updates to the allocation information.
           </Text>
 
@@ -172,7 +172,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 5</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             To modify the unit price, edit the price field accordingly. Be mindful that if a price adjustment is made, it could potentially impact users with pending transactions related to that specific price. You'll need to decide whether to continue with the new price or honor the old price for ongoing transactions until their expiration date. If your project involves payment plans, remember that updating prices here will only affect outright purchases. If changes to payment plan prices are required, a separate process is needed to ensure that modifications are reflected accurately.
           </Text>
 
@@ -182,7 +182,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 6</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             After making your desired adjustments, ensure that you complete the process to save your changes.
           </Text>
 
@@ -196,7 +196,7 @@ const Changelisting = () => {
 
         <Text className="content_head">EDITING PAYMENT PLAN</Text>
 
-        <Text className="content" mt='20px'>
+        <Text className="content">
           <Text as='p'>
             If you need to edit a payment plan for a unit, the process involves a few straightforward steps:
           </Text>
@@ -204,7 +204,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 1</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             Start by navigating to the units section of your listing.
           </Text>
 
@@ -213,7 +213,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 2</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             Once within the units page, scroll down to locate the section that pertains to payment plans.
           </Text>
 
@@ -222,7 +222,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 3</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             While it's not possible to directly delete a payment plan, you have the option to make it private. This means that new buyers won't have access to that specific payment structure. After making it private, you can proceed to create a new payment plan structure.
           </Text>
 
@@ -233,8 +233,8 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 4</Text>
-          <Text className="content" mt='20px'>
-            Click on “Add payment plan” to craft the new payment plan to reflect the desired changes or updates. Ensure that it aligns with the adjustments you intend to make.
+          <Text className="content">
+            Click on <b>“Add payment plan”</b> to craft the new payment plan to reflect the desired changes or updates. Ensure that it aligns with the adjustments you intend to make.
           </Text>
 
           <Image src={editPaymentPlan4} mt="30px" mx="auto" w='full' />
@@ -243,7 +243,7 @@ const Changelisting = () => {
 
         <Box>
           <Text className="content_head">STEP 5</Text>
-          <Text className="content" mt='20px'>
+          <Text className="content">
             After creating the new payment plan structure, save your changes to implement the updated payment arrangement.
           </Text>
 

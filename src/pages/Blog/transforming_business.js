@@ -117,14 +117,14 @@ const Transforming_business = () => {
               Perks of a Ticketing System
             </Text>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>1. Elevates the Customer Experience </Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>1. Elevates the Customer Experience </Text>
               <Text>
                 A ticketing system stands as a cornerstone for fortifying customer service and augmenting satisfaction. It presents a seamless avenue for customers to seek assistance while providing your staff with a streamlined channel to deliver
                 efficient and effective support. It shines by offering an online self-service portal accessible round the clock. This empowers customers to seek help whenever the need arises. The inherent structure of tickets ensures that no request is lost or forgotten; each ticket is meticulously tracked, capturing crucial information and communication in a centralised repository. Consequently, your team is empowered to guide customer concerns to resolution with precision. The ability to highlight high priority issues expedites their resolution, enabling your team to address critical matters promptly. Additionally, the portal often incorporates frequently asked questions (FAQs) and other relevant information, empowering customers to troubleshoot common problems independently. By enabling customers to swiftly resolve issues on their own, the system not only facilitates their tasks but also alleviates the workload of your support staff.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>2. Amplifies Team Productivity </Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>2. Amplifies Team Productivity </Text>
               <Text>
                 For your team, a ticketing system serves as a catalyst for heightened productivity. It acts as a comprehensive hub that centralizes all service request activities and pertinent information, eliminating the time wasted on searching
                 for crucial data. In addition to capturing the initial request, the system meticulously documents every subsequent interaction with the customer. Team members can effortlessly catch up on the request's history, ensuring a
@@ -132,13 +132,13 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>3. Expedites Issue Resolution </Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>3. Expedites Issue Resolution </Text>
               <Text>
                 The ticketing system propels your team towards swifter issue resolution. With its built-in tracking mechanisms, requests are consistently monitored, and in cases of stagnation, automated email reminders prompt staff to take necessary actions. The system's versatility extends to ticket reassignment, allowing allocation to the team members best suited to address specific issues. By deftly handling routine administrative tasks, your team gains more time to focus on resolving intricate problems, leading to a significant reduction in resolution timelines.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>4. Cost Reduction and Heightened Customer Retention</Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>4. Cost Reduction and Heightened Customer Retention</Text>
               <Text>
                 A strategic deployment of a ticketing system translates to substantial cost  savings while simultaneously bolstering customer retention. The system's productivity enhancements empower your support team to accomplish more
                 with fewer resources, directly impacting operational costs. Moreover, the enhancement of customer experiences, stemming from prompt issue resolution and reduced customer frustration, culminates in elevated customer
@@ -146,13 +146,13 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>5. Enhances Project Transparency and Collaboration</Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>5. Enhances Project Transparency and Collaboration</Text>
               <Text>
                 A ticketing system offers an elevated level of project transparency and collaboration among internal teams.Various departments like design, engineering, construction, and sales need to seamlessly communicate and stay updated on project progress. The ticketing system acts as a central hub, allowing team members to track the status of tasks, share vital information, and collaborate in real-time. This transparency fosters a cohesive work environment where all stakeholders are aligned, minimizing miscommunication and enhancing the efficiency of project execution.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>6. Efficient Resource Allocation and Workload Management</Text>
+              <Text fontFamily='euclid-medium' fontSize={'20px'} color='#000'>6. Efficient Resource Allocation and Workload Management</Text>
               <Text>
                 In property development, managing resources efficiently is paramount to project success. A ticketing system plays a pivotal role in this aspect by providing a clear overview of ongoing tasks, pending requests, and resource
                 availability. This enables development companies to allocate resources judiciously, preventing overloading of certain teams while optimizing the utilization of specialized skills. Workload distribution becomes streamlined,

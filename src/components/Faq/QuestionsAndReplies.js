@@ -12,7 +12,7 @@ const QuestionsAndReplies = ({ questions, white }) => {
       <Box border={white ? '0.3px solid #2E2E32' : '0.3px solid #CBCBCB'} bg={white ? '#0D0D0D' : '#F9F9F9'} borderRadius={'5px'}>
         <Flex align='center' gap='10px' px='15px' py='20px'>
           {white ? <Image src={comment_white} /> : <Image src={comment} />}
-          <Text>Questions and replies</Text>
+          <Text fontSize={'16px'}>Questions and replies</Text>
         </Flex>
         <Divider w='full' />
         {questions.map(question => (
@@ -57,8 +57,8 @@ const QuestionsAndReplies = ({ questions, white }) => {
                         <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontFamily='euclid-semibold'>
                           Veerge Support
                         </Text>
-                        <Text color={white ? '#FFF' : '#000'} fontSize={'12px'} fontWeight={400} noOfLines={1}>
-                          Jun 15, 2023
+                        <Text color={white ? '#FFF' : '#000'} fontSize={'12px'} fontFamily={'euclid-light'} noOfLines={1}>
+                          {question?.date}
                         </Text>
                       </VStack>
                     </Flex>

@@ -68,7 +68,7 @@ const Createunit = () => {
       <Text className="publish">Published: February 18, 2023</Text>
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
-          <Text as='p'>
+          <Text as='p' marginTop={'30px'}>
             In the Veerge context, Allocation refers to the deliberate process of designating specific units or properties within a development project to particular individuals or entities. This encompasses tasks like assigning units to buyers, investors, partners, or any other stakeholders engaged in the project.
           </Text>
           <Text as='p' marginTop="20px">
@@ -94,7 +94,7 @@ const Createunit = () => {
             STEP 2
           </Text>
           <Text className="content">
-            Once you've selected the unit, opt for "Create Allocation."
+            Once you've selected the unit, opt for <b>"Create Allocation."</b>
           </Text>
 
           <Image src={createUnit2} mt="30px" mx="auto" w='full' />
@@ -104,7 +104,7 @@ const Createunit = () => {
             STEP 3
           </Text>
           <Text className="content">
-            Next, pick the "Smart Allocation" option for this unit.
+            Next, pick the <b>"Smart Allocation"</b> option for this unit.
           </Text>
           <Image src={createUnit3} mt="30px" mx="auto" w='full' />
         </Box>
@@ -133,7 +133,7 @@ const Createunit = () => {
             STEP 6
           </Text>
           <Text className="content">
-            You'll encounter an input field equivalent to the quantity of units available. Fill in the necessary details for each unit within the selected type, in this case it will be “Flat 1,2,3,4,5,6,7,8,9 & 10”
+            You'll encounter an input field equivalent to the quantity of units available. Fill in the necessary details for each unit within the selected type, in this case it will be “Flat 1,2,3,4,5,6,7,8,9 & 10”.
           </Text>
           <Image src={createUnit6} mt="30px" mx="auto" w='full' />
 
@@ -144,7 +144,7 @@ const Createunit = () => {
             STEP 7
           </Text>
           <Text className="content">
-            Proceed through the allocation setup, reviewing the details you've inputted
+            Proceed through the allocation setup, reviewing the details you've inputted.
           </Text>
           <Image src={createUnit7} mt="30px" mx="auto" w='full' />
 
@@ -155,7 +155,7 @@ const Createunit = () => {
             STEP 8
           </Text>
           <Text className="content">
-            Once you're satisfied, finalize the process, and your allocation setup for the 1 bedroom flat is complete
+            Once you're satisfied, finalize the process, and your allocation setup for the 1 bedroom flat is complete.
           </Text>
           <Image src={createUnit8} mt="30px" mx="auto" w='full' />
           <Text className="content" lineHeight={'25px'}>
@@ -167,11 +167,13 @@ const Createunit = () => {
             </Text>
             <Text as='p' marginTop="20px">
               what if you wish to withhold certain units from immediate public display on the application? There are instances where you might want to reserve specific units for a later date, gradually releasing them when the time is right. This strategy can help maintain a controlled pace of sales and align with your business objectives.
-              With <Text cursor={'pointer'} as='span' color='#5d5fef'> Archiving of a unit</Text> you have the flexibility to strategically manage unit availability, ensuring a tailored approach to your property's market presence.
+              With <a href='https://matador-support-seven.vercel.app/listings/archive_unit' target="_blank"><Text cursor={'pointer'} as='span' color='#5d5fef'> Archiving of a unit</Text></a> you have the flexibility to strategically manage unit availability, ensuring a tailored approach to your property's market presence.
             </Text>
-            <Text cursor={'pointer'} as='p' marginTop="20px" color='#5d5fef'>
-              Click here to learn how to archive a unit
-            </Text>
+            <a href='https://matador-support-seven.vercel.app/listings/archive_unit' target="_blank">
+              <Text cursor={'pointer'} as='p' marginTop="20px" color='#5d5fef'>
+                Click here to learn how to archive a unit
+              </Text>
+            </a>
           </Text>
         </Box>
       </Box>

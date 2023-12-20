@@ -33,12 +33,12 @@ export const Header = () => {
           top='0'
           left='0'
           right='0'
-          zIndex="1"
+          zIndex="2"
           bg="#191919"
           align="center"
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <a href="https://veerge.myxellia.io/">
+          <a href="https://test-veerge.myxellia.io/">
             <Image src={logo} />
             <Text fontSize={'12px'} color='#fff'>Powered by Myxellia</Text>
           </a>
@@ -51,7 +51,7 @@ export const Header = () => {
           maxW="770px"
           w="100%"
           position="fixed"
-          zIndex="1"
+          zIndex="2"
           m="0 auto"
           px="20px"
           height="72px"

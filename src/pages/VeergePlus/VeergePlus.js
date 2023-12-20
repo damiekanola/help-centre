@@ -56,7 +56,7 @@ export const VeergePlus = () => {
       <Text className="publish">Published: Jul 21, 2023</Text>
       <Text className="content" lineHeight={'25px'} mt='50px'>
         <Box mb='30px' id="personalize" ref={personalizeRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Personalize More, Retain More, Move Fast, Never Stop
           </Text>
           <Text mt='20px' as='p' fontWeight={400}>
@@ -64,7 +64,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="optimize" ref={optimizeRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Optimized for Performance
           </Text>
           <Text as='p' fontWeight={400}>
@@ -72,7 +72,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="migrate" ref={migrateRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Migrate and Launch with Ease
           </Text>
           <Text as='p' fontWeight={400}>
@@ -80,7 +80,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="built" ref={builtRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Built-In Security and Insights
           </Text>
           <Text as='p' fontWeight={400}>
@@ -88,7 +88,7 @@ export const VeergePlus = () => {
           </Text>
         </Box>
         <Box mb='30px' id="committed" ref={committedRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Committed to Support
           </Text>
           <Text as='p' fontWeight={400}>
@@ -111,7 +111,7 @@ export const VeergePlus = () => {
         </Box>
 
         <Box mb='30px' id="channels" ref={channelsRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Channels
           </Text>
           <Text as='p' fontWeight={400}>
@@ -135,7 +135,7 @@ export const VeergePlus = () => {
         </Box>
 
         <Box mb='50px' id="pricing" ref={pricingRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Pricing and Cost Breakdown
           </Text>
           <Text as='p' fontWeight={400}>
@@ -206,7 +206,7 @@ export const VeergePlus = () => {
 
 
         <Box mb='30px' id="getting" ref={gettingRef}>
-          <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+          <Text fontSize={'24px'} fontFamily='euclid-medium' mb='10px'>
             Getting started with Veerge
           </Text>
           <Text as='p' fontWeight={400}>
@@ -215,7 +215,7 @@ export const VeergePlus = () => {
               <ListItem mt='30px'>
                 <Text><b>Sign up for a Free Trial: </b></Text>
                 <Text>
-                  Visit <a href='https://veerge.myxellia.io'><Text color='#4545FE' cursor={'pointer'}>veerge.myxellia.io</Text></a> and register for a free trial. This will grant you access to the platform, enabling you to test the application, make design decisions, and explore its features. It's an opportunity to familiarize yourself with Veerge before committing to an active monthly plan.
+                  Visit <a href='https://test-veerge.myxellia.io'><Text color='#4545FE' cursor={'pointer'}>veerge.myxellia.io</Text></a> and register for a free trial. This will grant you access to the platform, enabling you to test the application, make design decisions, and explore its features. It's an opportunity to familiarize yourself with Veerge before committing to an active monthly plan.
                 </Text>
               </ListItem>
               <ListItem mt='30px'>

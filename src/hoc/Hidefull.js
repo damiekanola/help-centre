@@ -5,7 +5,8 @@ import { Center, Spinner } from '@chakra-ui/react';
 function HideUnsubscribed(Component) {
   const HideComp = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const toView = searchParams.get('isrestricted') === 'true';
+    const toView = true
+    // searchParams.get('isrestricted') === 'true';
     const navigate = useNavigate()
 
     useEffect(() => {
