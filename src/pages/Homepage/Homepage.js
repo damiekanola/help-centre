@@ -28,10 +28,11 @@ export const Homepage = () => {
               shadow={'md'}
               as={motion.div}
               mx={'auto'}
-              w="100%"
-              cursor={'pointer'}
-              whileHover={{scale: 1.02}}
-              whileTap={{scale: 0.98}}
+              w='100%'
+              cursor={"pointer"}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              bgColor={'#191919'}
             >
               <Box
                 borderTopRightRadius={'16px'}
@@ -40,8 +41,8 @@ export const Homepage = () => {
                 bgImage={detail.img}
                 bgPosition={'center'}
                 bgSize={'cover'}
-                h="272.2px"
-                p="14px"
+                h='272.2px' p='14px'
+                bgColor={'#191919'}
               >
                 {/* <Text fontSize={'10px'} color={detail.color}>SAAS</Text> */}
                 <Text mt="8px" fontSize={'20px'} fontWeight={500} color={detail.color}>
@@ -50,27 +51,13 @@ export const Homepage = () => {
               </Box>
               <Box px="16px" py="12px">
                 {handleTagType(detail.tag)}
-                <HStack spacing={'8px'} align={'center'} mt="10px" fontSize={'10px'}>
-                  <Flex
-                    align={'center'}
-                    gap={'4px'}
-                    py="2px"
-                    px="8px"
-                    borderRadius={'4px'}
-                    border="1px solid rgba(69, 69, 254, 0.10)"
-                  >
-                    <Image w="12px" h="12px" src={readIcon} />
+                <HStack spacing={'8px'} align={'center'} mt='10px' fontSize={'10px'}>
+                  <Flex align={'center'} gap={'4px'} py='2px' px='8px' borderRadius={'4px'} border='1px solid #232425'>
+                    <Image w='12px' h='12px' src={readIcon} />
                     <Text>{detail.readTime}</Text>
                   </Flex>
-                  <Flex
-                    align={'center'}
-                    gap={'4px'}
-                    py="2px"
-                    px="8px"
-                    borderRadius={'4px'}
-                    border="1px solid rgba(69, 69, 254, 0.10)"
-                  >
-                    <Image w="12px" h="12px" src={timeIcon} />
+                  <Flex align={'center'} gap={'4px'} py='2px' px='8px' borderRadius={'4px'} border='1px solid #232425'>
+                    <Image w='12px' h='12px' src={timeIcon} />
                     <Text>{detail.datePosted}</Text>
                   </Flex>
                 </HStack>

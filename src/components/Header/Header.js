@@ -77,7 +77,6 @@ export const Header = () => {
 
               <DrawerBody>
                 <Text
-                  color="#000000"
                   fontSize="24px"
                   letterSpaceing="0.13em"
                   lineHeight="30px"

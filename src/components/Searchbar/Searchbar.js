@@ -47,6 +47,9 @@ export const Searchbar = () => {
 
   const handleCurrentRoute = () => {
     switch (currLocation) {
+      case '':
+      case '/':
+        return 'Help Centre';
       case '/terms':
         return 'Terms of Service';
       case '/privacy':
@@ -154,7 +157,7 @@ export const Searchbar = () => {
           position="fixed"
           top="82px"
           zIndex="2"
-          bg={isWHite ? '#0D0D0D' : '#ffffff'}
+          bg={'#0D0D0D'}
           borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
@@ -162,7 +165,7 @@ export const Searchbar = () => {
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
                 <Link to={checkBlogPage() ? '/blog' : '/'}>
-                  {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
+                  {<Image src={home_svg} />}
                 </Link>{' '}
                 <SlArrowRight color={isWHite ? '#fff' : '#0D0D0D'} />
               </>
@@ -211,7 +214,7 @@ export const Searchbar = () => {
                 }}
               /> */}
               <CiSearch
-                color={isWHite ? '#fff' : '#0D0D0D'}
+                color={'white'}
                 style={{width: '25px', height: '25px'}}
               />
             </Flex>

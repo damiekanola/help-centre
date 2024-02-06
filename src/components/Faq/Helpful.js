@@ -1,13 +1,13 @@
 import { Box, Flex, Text, useToast } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
-const Helpful = ({ noMarginTop, white }) => {
+const Helpful = ({ noMarginTop }) => {
   const toast = useToast();
   const [visible, setVisible] = useState(true)
 
   return (
     <Flex direction={'column'} align={'flex-end'} w='full' marginTop={noMarginTop ? "0" : "70px"} >
-      <Text textAlign={'sright'} className="content_head" color={white ? '#fff' : '#191919'}>Was this helpful?</Text>
+      <Text textTransform={'capitalize'} letterSpacing={'normal'} fontSize={'24px'} textAlign={'sright'} className="content_head">Was this helpful?</Text>
       {visible && (
         <>
           <Flex direction="row">

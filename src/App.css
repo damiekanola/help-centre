@@ -1,10 +1,14 @@
 .help_container {
   width: 100%;
   margin: 0 auto;
-  /* background-color: #fbfcfc; */
-  background-color: #0d0d0d;
+  background-color: #0D0D0D;
   height: fit-content;
   position: relative;
+  color: white;
+}
+
+body, html, .main {
+  background: #0D0D0D;
 }
 .head_,
 .content_head {
@@ -18,4 +22,8 @@ p,
 .hide_scroll::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+.chakra-text { 
+  color: white ;
 }
