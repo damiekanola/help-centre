@@ -9,9 +9,9 @@ const QuestionsAndReplies = ({ questions, white }) => {
   const colors = ['#FF9103', '#1D6169', '#4545FE']
   return (
     <Box pt="30px" id="questions">
-      <Box border={white ? '0.3px solid #2E2E32' : '0.3px solid #CBCBCB'} bg={white ? '#0D0D0D' : '#F9F9F9'} borderRadius={'5px'}>
+      <Box border={'0.5px solid #323338'} background={'#0D0D0D'} borderRadius={'5px'} color={'white'}>
         <Flex align='center' gap='10px' px='15px' py='20px'>
-          {white ? <Image src={comment_white} /> : <Image src={comment} />}
+          {<Image src={comment_white} />}
           <Text fontSize={'16px'}>Questions and replies</Text>
         </Flex>
         <Divider w='full' />
@@ -26,44 +26,38 @@ const QuestionsAndReplies = ({ questions, white }) => {
                 </Center>
               )}
               <VStack align={'stretch'} w='70%' spacing={'2px'}>
-                <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontFamily='euclid-semibold'>
+                <Text fontSize={'16px'} fontFamily='euclid-semibold'>
                   {question?.name}
                 </Text>
-                <Text fontFamily={'euclid-light'} color={white ? '#FFF' : '#000'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
+                <Text fontFamily={'euclid-light'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
                   {question?.date}
                 </Text>
               </VStack>
             </Flex>
-            <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'} color={white ? '#FFF' : '#191919'}>{question?.content}</Text>
+            <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'}>{question?.content}</Text>
             <Box
               mt='22px'
-              p={'9.469px 7.575px 0px 13.256px'}
-              bg={white ? '#171717' : '#F5F5F5'} borderRadius={white && ' 7.575px'}
+              p={'1rem'}
+              bg={'#232425'} borderRadius={'8px'}
             >
               {question?.replies?.map(reply => (
                 <>
                   <Box mt='16px'>
-                    <Flex gap='10px' align={'center'}>
-                      {white ? (
-                        <Center borderRadius={'full'} bg='#fff' w='38px' h='38px'>
-                          <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support_white} />
-                        </Center>
-                      ) : (
-                        <Center borderRadius={'full'} bg='#000' w='38px' h='38px'>
+                    <Flex gap='10px' alignItems={'center'}>
+                    <Center borderRadius={'full'} bg='black' w='38px' h='38px'>
                           <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
                         </Center>
-                      )}
-                      <VStack align={'stretch'} w='70%' spacing={'2px'}>
-                        <Text color={white ? '#FFF' : '#1C1D2C'} fontSize={'16px'} fontFamily='euclid-semibold'>
+                      <VStack align={'stretch'} w='70%' spacing={'1px'}>
+                        <Text  fontSize={'16px'} fontFamily='euclid-semibold'>
                           Veerge Support
                         </Text>
-                        <Text color={white ? '#FFF' : '#000'} fontSize={'12px'} fontFamily={'euclid-light'} noOfLines={1}>
+                        <Text fontSize={'12px'} fontFamily={'euclid-light'} noOfLines={1}>
                           {question?.date}
                         </Text>
                       </VStack>
                     </Flex>
                   </Box>
-                  <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'} color={white ? '#FFF' : '#191919'}>{reply}</Text>
+                  <Text fontFamily={'euclid-light'} mt='17px' fontSize={'12px'}>{reply}</Text>
                 </>
               ))}
             </Box>

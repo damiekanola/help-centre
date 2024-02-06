@@ -287,13 +287,10 @@ export const Usersexperience = () => {
             </Box >
           </Text >
           <Box w='60%' mx='auto'>
-            <QuestionsAndReplies white questions={questions} />
+            <QuestionsAndReplies questions={questions} />
           </Box>
         </Box >
-
-
-        <Helpful white />
-
+        <Helpful/>
       </Box >
     </Box >
   );
