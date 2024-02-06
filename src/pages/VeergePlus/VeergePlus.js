@@ -6,15 +6,12 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Flex,
 } from "@chakra-ui/react";
-import QuestionsAndReplies from "../../components/Faq/QuestionsAndReplies";
 import LeftNav from "../../components/Leftsidenav/Leftsidenav";
 import Helpful from "../../components/Faq/Helpful";
 import useIsInViewport from "../../utils/useOnScreen/useOnScreen";
 // import LeadRightNav from "../../components/Lead/RightNav";
 import veergePlus1 from "../../assets/images/veerge_plus1.png";
-import infoIcon from "../../assets/icons/info.svg";
 import { Link } from "react-router-dom";
 import RightNav from "../../components/Rightsidebar/Rightsidenav";
 

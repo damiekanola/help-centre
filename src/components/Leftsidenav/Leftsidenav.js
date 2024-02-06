@@ -8,7 +8,7 @@ const sample = [
   {link: '/approved_what_next', text: 'Approved, what next?'},
   {link: '/terms', text: 'Terms of service'},
 ];
-export const Leftsidenav = ({articleContent, relatedContent = sample}) => {
+export const Leftsidenav = ({articleContent, relatedContent }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
@@ -75,7 +75,9 @@ export const Leftsidenav = ({articleContent, relatedContent = sample}) => {
           ))}
         </Flex>
 
-        <Text
+        {relatedContent ? (
+          <>
+          <Text
           className="article_text"
           mt="40px"
           color="white !important"
@@ -95,6 +97,8 @@ export const Leftsidenav = ({articleContent, relatedContent = sample}) => {
             </Flex>
           ))}
         </VStack>
+          </>
+        ): null}
         {/* </Box> */}
       </Box>
     </Show>

@@ -1,13 +1,8 @@
 import React, {useRef} from 'react';
-import {Box, Text, Image, UnorderedList, ListItem, OrderedList, Flex} from '@chakra-ui/react';
-import QuestionsAndReplies from '../../components/Faq/QuestionsAndReplies';
+import {Box, Text} from '@chakra-ui/react';
 import LeftNav from '../../components/Leftsidenav/Leftsidenav';
 import Helpful from '../../components/Faq/Helpful';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
-// import LeadRightNav from "../../components/Lead/RightNav";
-import veergePlus1 from '../../assets/images/veerge_plus1.png';
-import infoIcon from '../../assets/icons/info.svg';
-import {Link} from 'react-router-dom';
 
 export const VeergeThemes = () => {
   const veerge_themeRef = useRef(null);

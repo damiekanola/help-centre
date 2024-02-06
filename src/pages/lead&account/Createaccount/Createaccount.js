@@ -1,7 +1,6 @@
 import React, {useRef} from 'react';
-import {Box, Text, Image, Flex, useToast, Show, VStack} from '@chakra-ui/react';
-import {Link, useSearchParams} from 'react-router-dom';
-import file from '../../../assets/icons/file.png';
+import {Box, Text, Image} from '@chakra-ui/react';
+import {useSearchParams} from 'react-router-dom';
 import createLead1 from '../../../assets/images/create-lead/create-lead-account-1.png';
 import createLead2 from '../../../assets/images/create-lead/create-lead-account-2.png';
 import createLead3 from '../../../assets/images/create-lead/create-lead-account-3.png';
@@ -19,9 +18,7 @@ import createLeadS9 from '../../../assets/images/create-lead/create-lead-account
 import createLeadS10 from '../../../assets/images/create-lead/create-lead-account-2-10.png';
 import createLeadS11 from '../../../assets/images/create-lead/create-lead-account-2-11.png';
 
-import {useState} from 'react';
 import QuestionsAndReplies from '../../../components/Faq/QuestionsAndReplies';
-import RightNav from '../../../components/Listings/RightNav';
 import LeftNav from '../../../components/Leftsidenav/Leftsidenav';
 import Helpful from '../../../components/Faq/Helpful';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';

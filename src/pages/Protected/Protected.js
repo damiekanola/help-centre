@@ -1,10 +1,8 @@
 import React, {useRef} from 'react';
-import {Box, Text, Image, UnorderedList, ListItem, OrderedList, Flex} from '@chakra-ui/react';
-import QuestionsAndReplies from '../../components/Faq/QuestionsAndReplies';
+import {Box, Text, ListItem, OrderedList} from '@chakra-ui/react';
 import LeftNav from '../../components/Leftsidenav/Leftsidenav';
 import Helpful from '../../components/Faq/Helpful';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
-// import LeadRightNav from "../../components/Lead/RightNav";
 
 export const Protected = () => {
   const veerge_themeRef = useRef(null);
