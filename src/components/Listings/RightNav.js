@@ -1,17 +1,22 @@
-import { Box, Show, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import {Box, Show, Text, VStack} from '@chakra-ui/react';
+import React from 'react';
+import {Link, useLocation} from 'react-router-dom';
 
 const RightNav = () => {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-        position={'fixed'} h='fit-content' maxH='70vh'
-        overflowY={'scroll'} right='0'
-        w={'23%'} px='30px'
-        pb='50px' fontFamily={'euclid-light'}
+        position={'fixed'}
+        h="fit-content"
+        maxH="70vh"
+        overflowY={'scroll'}
+        right="0"
+        w={'23%'}
+        px="30px"
+        pb="50px"
+        fontFamily={'euclid-light'}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -25,33 +30,75 @@ const RightNav = () => {
           },
         }}
       >
-        <Text fontSize={'24px'} fontFamily={'euclid-medium'} color={'black !important'} letterSpacing={'3px'}>Listings</Text>
-        <VStack mt='30px' spacing={'27px'} align='stretch'>
+        <Text
+          fontSize={'24px'}
+          fontFamily={'euclid-medium'}
+          color={'white !important'}
+          letterSpacing={'3px'}
+        >
+          Listings
+        </Text>
+        <VStack mt="30px" spacing={'27px'} align="stretch">
           <Link to="/listings/overview">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}>Overview of Listing</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}
+            >
+              Overview of Listing
+            </Text>
           </Link>
           <Link to="/listings/create_listing">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/create_listing' && 'euclid-medium'}>How to create a listing</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/create_listing' && 'euclid-medium'}
+            >
+              How to create a listing
+            </Text>
           </Link>
           <Link to="/listings/create_unit">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/create_unit' && 'euclid-medium'}>Unit Allocations</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/create_unit' && 'euclid-medium'}
+            >
+              Unit Allocations
+            </Text>
           </Link>
           <Link to="/listings/archive_unit">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/archive_unit' && 'euclid-medium'}>Archive a unit</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/archive_unit' && 'euclid-medium'}
+            >
+              Archive a unit
+            </Text>
           </Link>
           <Link to="/listings/fractionalize_asset">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/fractionalize_asset' && 'euclid-medium'}>How to fractionalise a unit</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/fractionalize_asset' && 'euclid-medium'}
+            >
+              How to fractionalise a unit
+            </Text>
           </Link>
           <Link to="/listings/change_listing">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/change_listing' && 'euclid-medium'}>Changing listing information</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/change_listing' && 'euclid-medium'}
+            >
+              Changing listing information
+            </Text>
           </Link>
           <Link to="/listings/delist">
-            <Text fontSize={'14px'} fontFamily={location.pathname === '/listings/delist' && 'euclid-medium'}>How to delist a listing</Text>
+            <Text
+              fontSize={'14px'}
+              fontFamily={location.pathname === '/listings/delist' && 'euclid-medium'}
+            >
+              How to delist a listing
+            </Text>
           </Link>
         </VStack>
       </Box>
     </Show>
-  )
-}
+  );
+};
 
-export default RightNav
+export default RightNav;

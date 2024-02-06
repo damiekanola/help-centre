@@ -34,7 +34,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.1em;
     color: #000000;
     padding-bottom: 5px;
     padding-top: 30px;
@@ -115,7 +115,7 @@
 
   ul.navigation_ li:after {
     /* bullets */
-    content: url("../../assets/icons/bullet.png");
+    content: url('../../assets/icons/bullet.png');
     position: absolute;
     left: 2px;
     /*adjust manually*/
@@ -124,7 +124,7 @@
 
   ul.navigation_ li:before {
     /* lines */
-    content: "";
+    content: '';
     position: absolute;
     left: 4.5px;
     border-left: 1px solid blue;
@@ -154,7 +154,7 @@
 
   ul.bluenav li:after {
     /* bullets */
-    content: url("../../assets/icons/bullet_active.png ");
+    content: url('../../assets/icons/bullet_active.png ');
     position: absolute;
     left: 2px;
     /*adjust manually*/
@@ -163,7 +163,7 @@
 
   ul.bluenav li:before {
     /* lines */
-    content: "";
+    content: '';
     position: absolute;
     left: 4.5px;
     border-left: 1px solid blue;
@@ -202,7 +202,7 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 41px;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.1em;
     color: #000000;
     padding-bottom: 15px;
     margin-top: 70px;
@@ -226,7 +226,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.1em;
     color: #000000;
     padding-bottom: 5px;
     padding-top: 30px;
@@ -314,7 +314,7 @@
 
   ul.navigation_ li:after {
     /* bullets */
-    content: url("../../assets/icons/bullet.png");
+    content: url('../../assets/icons/bullet.png');
     position: absolute;
     left: 2px;
     /*adjust manually*/
@@ -323,7 +323,7 @@
 
   ul.navigation_ li:before {
     /* lines */
-    content: "";
+    content: '';
     position: absolute;
     left: 4.5px;
     border-left: 1px solid blue;
@@ -353,7 +353,7 @@
 
   ul.bluenav li:after {
     /* bullets */
-    content: url("../../assets/icons/bullet_active.png ");
+    content: url('../../assets/icons/bullet_active.png ');
     position: absolute;
     left: 2px;
     /*adjust manually*/
@@ -362,7 +362,7 @@
 
   ul.bluenav li:before {
     /* lines */
-    content: "";
+    content: '';
     position: absolute;
     left: 4.5px;
     border-left: 1px solid blue;
