@@ -9,40 +9,41 @@ import {
   Show,
   Text,
   useDisclosure,
-} from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { SlArrowRight } from "react-icons/sl";
-import { GrHomeRounded } from "react-icons/gr";
-import { MdSubdirectoryArrowLeft } from "react-icons/md";
-import { CiSearch } from "react-icons/ci";
-import { helpSearchData, blogSearchData } from "./data";
-import "./Search.css";
-import home_svg from '../../assets/icons/home.svg'
+} from '@chakra-ui/react';
+import React, {useEffect, useState} from 'react';
+import {Link, useLocation} from 'react-router-dom';
+import {SlArrowRight} from 'react-icons/sl';
+import {GrHomeRounded} from 'react-icons/gr';
+import {MdSubdirectoryArrowLeft} from 'react-icons/md';
+import {CiSearch} from 'react-icons/ci';
+import {helpSearchData, blogSearchData} from './data';
+import './Search.css';
+import home_svg from '../../assets/icons/home.svg';
 
 export const Searchbar = () => {
-  const location = useLocation()
-  const scrollBehavior = "inside";
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [query, setQuery] = useState("");
-  const [searchFilteredData, setSearchFilteredData] = useState([...helpSearchData])
+  const location = useLocation();
+  const scrollBehavior = 'inside';
+  const {isOpen, onOpen, onClose} = useDisclosure();
+  const [query, setQuery] = useState('');
+  const [searchFilteredData, setSearchFilteredData] = useState([...helpSearchData]);
 
   const currLocation = location.pathname;
-  const isHomePage = currLocation === '/blog' || currLocation === '/' || currLocation === "";
+  const isHomePage = currLocation === '/blog' || currLocation === '/' || currLocation === '';
 
   useEffect(() => {
     let dataTouse;
     if (currLocation === '/blog') {
-      dataTouse = ([...blogSearchData])
+      dataTouse = [...blogSearchData];
     } else if (currLocation === '/' || currLocation === '/') {
-      dataTouse = ([...helpSearchData])
+      dataTouse = [...helpSearchData];
     } else {
-      dataTouse = ([...helpSearchData, ...blogSearchData].filter(data => data.link === currLocation))
+      dataTouse = [...helpSearchData, ...blogSearchData].filter(data => data.link === currLocation);
     }
-    setSearchFilteredData(dataTouse)
-  }, [currLocation])
+    setSearchFilteredData(dataTouse);
+  }, [currLocation]);
 
-  const isWHite = currLocation === '/users_experience'
+  // const isWHite = currLocation === '/users_experience'
+  const isWHite = true;
 
   const handleCurrentRoute = () => {
     switch (currLocation) {
@@ -63,80 +64,82 @@ export const Searchbar = () => {
       case '/listings/create_unit':
         return 'Create unit';
       case '/listings/archive_unit':
-        return 'Archive unit'
+        return 'Archive unit';
       case '/listings/fractionalize_asset':
-        return 'Fractionalize unit'
+        return 'Fractionalize unit';
       case '/listings/change_listing':
-        return 'Change listing'
+        return 'Change listing';
       case '/listings/delist':
-        return 'Delist listing'
+        return 'Delist listing';
       case '/lead/create_account':
-        return 'Create lead account'
+        return 'Create lead account';
       case '/lead/send_an_offer':
-        return 'Send an offer'
+        return 'Send an offer';
       case '/lead/home_owners_pack':
-        return 'Home owners\'s packet'
+        return "Home owners's packet";
       case '/invite_team_members':
-        return 'Invite team members'
+        return 'Invite team members';
       case '/users_experience':
-        return 'End-to-end experience'
+        return 'End-to-end experience';
       case '/veerge_plus':
-        return 'Veerge plus'
+        return 'Veerge plus';
       case '/application_guide':
-        return 'What is the difference between Basic & Custom app ?'
+        return 'What is the difference between Basic & Custom app ?';
       case '/agent/portal':
-        return 'Veerge Premier Agent Portal'
+        return 'Veerge Premier Agent Portal';
       case '/agent/process':
-        return 'Veerge Premier Agent Portal'
-      case "/blog":
-        return 'Blog'
-      case "/blog/transforming_business":
-        return 'Ticketing system'
-      case "/blog/inventory":
-        return 'Inventory Management system'
-      case "/blog/revenue_recognition":
-        return 'Revenue recognition solution'
-      case "/blog/lead_management":
-        return 'Leads management system'
-      case "/blog/a_letter":
-      case "/blog/understanding_fraction":
-        return 'Understanding Fractional Real Estate'
-      case "/blog/smart_payment":
-        return 'Smart Payment Plan'
-      case "/blog/fractional_ownership":
-        return 'Fractional Ownership'
-      case "/blog/new_era":
-        return 'The New Era of Real Estate'
-      case "/blog/veerge_data":
-        return 'Veerge & Data Analytics'
-      case "/blog/why_veerge":
-        return ' Why Veerge instead of Building'
+        return 'Veerge Premier Agent Portal';
+      case '/blog':
+        return 'Blog';
+      case '/blog/transforming_business':
+        return 'Ticketing system';
+      case '/blog/inventory':
+        return 'Inventory Management system';
+      case '/blog/revenue_recognition':
+        return 'Revenue recognition solution';
+      case '/blog/lead_management':
+        return 'Leads management system';
+      case '/blog/a_letter':
+      case '/blog/understanding_fraction':
+        return 'Understanding Fractional Real Estate';
+      case '/blog/smart_payment':
+        return 'Smart Payment Plan';
+      case '/blog/fractional_ownership':
+        return 'Fractional Ownership';
+      case '/blog/new_era':
+        return 'The New Era of Real Estate';
+      case '/blog/veerge_data':
+        return 'Veerge & Data Analytics';
+      case '/blog/why_veerge':
+        return ' Why Veerge instead of Building';
 
       default:
-        return 'Help Centre';
+        return (
+          currLocation.split('/').join(' ').split('_').join(' ').split('-').join(' ') ||
+          'Help Centre'
+        );
     }
-  }
+  };
 
   const checkBlogPage = () => {
     switch (currLocation) {
-      case "/blog":
-      case "/blog/transforming_business":
-      case "/blog/inventory":
-      case "/blog/revenue_recognition":
-      case "/blog/lead_management":
-      case "/blog/a_letter":
-      case "/blog/understanding_fraction":
-      case "/blog/smart_payment":
-      case "/blog/fractional_ownership":
-      case "/blog/new_era":
-      case "/blog/veerge_data":
-      case "/blog/why_veerge":
-        return true
+      case '/blog':
+      case '/blog/transforming_business':
+      case '/blog/inventory':
+      case '/blog/revenue_recognition':
+      case '/blog/lead_management':
+      case '/blog/a_letter':
+      case '/blog/understanding_fraction':
+      case '/blog/smart_payment':
+      case '/blog/fractional_ownership':
+      case '/blog/new_era':
+      case '/blog/veerge_data':
+      case '/blog/why_veerge':
+        return true;
       default:
         return false;
     }
-  }
-
+  };
 
   return (
     <>
@@ -151,30 +154,31 @@ export const Searchbar = () => {
           position="fixed"
           top="82px"
           zIndex="2"
-          bg={isWHite ? "#0D0D0D" : "#ffffff"}
+          bg={isWHite ? '#0D0D0D' : '#ffffff'}
           borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
-                <Link to={checkBlogPage() ? '/blog' : "/"}>
+                <Link to={checkBlogPage() ? '/blog' : '/'}>
                   {isWHite ? <Image src={home_svg} /> : <GrHomeRounded />}
-                </Link>{" "}
-                <SlArrowRight color={isWHite ? "#fff" : "#0D0D0D"} />
+                </Link>{' '}
+                <SlArrowRight color={isWHite ? '#fff' : '#0D0D0D'} />
               </>
             )}
             <Text
               onClick={window.scrollTo(0, 0)}
               style={{
                 cursor: 'pointer',
-                textDecoration: "none",
-                href: "first_time_setup",
-                color: isWHite ? "#fff" : "#5D5FEF",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "14px",
-                lineHeight: "18px",
+                textDecoration: 'none',
+                href: 'first_time_setup',
+                color: isWHite ? '#fff' : '#5D5FEF',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '14px',
+                lineHeight: '18px',
+                textTransform: 'capitalize',
               }}
             >
               {handleCurrentRoute()}
@@ -190,7 +194,8 @@ export const Searchbar = () => {
               border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
               px="10px"
-              onClick={onOpen} cursor={'pointer'}
+              onClick={onOpen}
+              cursor={'pointer'}
             >
               {/* <Input
                 placeholder="Search for a topic"
@@ -205,7 +210,10 @@ export const Searchbar = () => {
                   border: "none",
                 }}
               /> */}
-              <CiSearch color={isWHite ? "#fff" : "#0D0D0D"} style={{ width: "25px", height: "25px" }} />
+              <CiSearch
+                color={isWHite ? '#fff' : '#0D0D0D'}
+                style={{width: '25px', height: '25px'}}
+              />
             </Flex>
           </form>
           <Modal
@@ -218,7 +226,7 @@ export const Searchbar = () => {
             <ModalContent minW={'450px'}>
               <ModalBody>
                 <Flex direction="row" align="center">
-                  <CiSearch style={{ width: "25px", height: "25px" }} />
+                  <CiSearch style={{width: '25px', height: '25px'}} />
                   <Input
                     placeholder="Search the docs"
                     type="text"
@@ -230,24 +238,22 @@ export const Searchbar = () => {
                     color="#606060"
                     onClick={onOpen}
                     _focusVisible={{
-                      border: "none",
+                      border: 'none',
                     }}
-                    onChange={(event) => setQuery(event.target.value)}
+                    onChange={event => setQuery(event.target.value)}
                   />
                 </Flex>
 
                 {searchFilteredData
-                  .filter((data) => {
-                    if (query === "") {
+                  .filter(data => {
+                    if (query === '') {
                       return null;
-                    } else if (
-                      data?.title?.toLowerCase()?.includes(query?.toLowerCase())
-                    ) {
+                    } else if (data?.title?.toLowerCase()?.includes(query?.toLowerCase())) {
                       return data;
                     }
                   })
-                  .map((data) => {
-                    const { id, page, link, title, pageTitle } = data;
+                  .map(data => {
+                    const {id, page, link, title, pageTitle} = data;
                     return (
                       <Flex
                         direction="column"
@@ -268,7 +274,10 @@ export const Searchbar = () => {
                           >
                             <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
                               {isHomePage && `${pageTitle}:`}
-                              <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
+                              <Text fontFamily={'euclid-medium'} fontSize={'17px'} as="span">
+                                {' '}
+                                {title}
+                              </Text>
                             </Text>
 
                             <MdSubdirectoryArrowLeft />
@@ -294,7 +303,8 @@ export const Searchbar = () => {
             borderRadius=" 12px"
             px="10px"
             mt="20px"
-            onClick={onOpen} cursor={'pointer'}
+            onClick={onOpen}
+            cursor={'pointer'}
           >
             {/* <Input
               placeholder="Search for a topic"
@@ -309,7 +319,7 @@ export const Searchbar = () => {
                 border: "none",
               }}
             /> */}
-            <CiSearch style={{ width: "25px", height: "25px" }} />
+            <CiSearch style={{width: '25px', height: '25px'}} />
           </Flex>
         </form>
         <Modal
@@ -319,10 +329,10 @@ export const Searchbar = () => {
           scrollBehavior={scrollBehavior}
         >
           <ModalOverlay bg="rgba(0,0,0,0.2)" />
-          <ModalContent w={{ base: "370px", md: "500px" }}>
+          <ModalContent w={{base: '370px', md: '500px'}}>
             <ModalBody>
               <Flex direction="row" align="center">
-                <CiSearch style={{ width: "25px", height: "25px" }} />
+                <CiSearch style={{width: '25px', height: '25px'}} />
                 <Input
                   placeholder="Search the docs"
                   type="text"
@@ -334,24 +344,22 @@ export const Searchbar = () => {
                   color="#606060"
                   onClick={onOpen}
                   _focusVisible={{
-                    border: "none",
+                    border: 'none',
                   }}
-                  onChange={(event) => setQuery(event.target.value)}
+                  onChange={event => setQuery(event.target.value)}
                 />
               </Flex>
 
               {searchFilteredData
-                .filter((data) => {
-                  if (query === "") {
+                .filter(data => {
+                  if (query === '') {
                     return null;
-                  } else if (
-                    data?.title?.toLowerCase()?.includes(query?.toLowerCase())
-                  ) {
+                  } else if (data?.title?.toLowerCase()?.includes(query?.toLowerCase())) {
                     return data;
                   }
                 })
-                .map((data) => {
-                  const { id, page, link, title, pageTitle } = data;
+                .map(data => {
+                  const {id, page, link, title, pageTitle} = data;
                   return (
                     <Flex
                       direction="column"
@@ -372,7 +380,10 @@ export const Searchbar = () => {
                         >
                           <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
                             {isHomePage && `${pageTitle}:`}
-                            <Text fontFamily={'euclid-medium'} fontSize={'17px'} as='span'> {title}</Text>
+                            <Text fontFamily={'euclid-medium'} fontSize={'17px'} as="span">
+                              {' '}
+                              {title}
+                            </Text>
                           </Text>
 
                           <MdSubdirectoryArrowLeft />

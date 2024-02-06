@@ -1,20 +1,22 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import file from "../../assets/icons/file.png";
-import "./Rightsidebar.css";
+import {Flex, Image, Text} from '@chakra-ui/react';
+import React from 'react';
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
+import file from '../../assets/icons/file.png';
+import './Rightsidebar.css';
 export const Rightsidebar = () => {
-  const [style, setStyle] = useState("navigation");
+  const [style, setStyle] = useState('navigation');
   const handleClick = () => {
-    console.log("you just clicked me");
-    setStyle("bluenav");
+    console.log('you just clicked me');
+    setStyle('bluenav');
   };
 
   return (
     // right  Side navigation
     <div class="rightsidenav">
-      <Text className="article_text" color={'black !important'} fontFamily={'euclid-medium'}>In this article</Text>
+      <Text className="article_text" color={'white !important'} fontFamily={'euclid-medium'}>
+        In this article
+      </Text>
       <ul className={style}>
         <li onClick={handleClick}>
           <a href="#veerge">What is Veerge</a>
@@ -35,7 +37,12 @@ export const Rightsidebar = () => {
           <a href="#faq"> FAQs</a>
         </li>
       </ul>
-      <Text className="article_text" mt="60px" color={'black !important'} fontFamily={'euclid-medium'}>
+      <Text
+        className="article_text"
+        mt="60px"
+        color={'white !important'}
+        fontFamily={'euclid-medium'}
+      >
         In this article
       </Text>
       <Flex columnGap="20px">

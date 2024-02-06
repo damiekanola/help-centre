@@ -10,7 +10,8 @@
   right: 0;
   overflow-x: hidden;
   padding-top: 82px;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: #232425;
   display: flex;
   flex-direction: column;
   row-gap: 27px;
@@ -22,6 +23,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #606060;
+  color: red;
 }
 
 .rightsidenav Link:hover {
@@ -49,7 +51,7 @@ ul.navigation_ li {
 
 ul.navigation_ li:after {
   /* bullets */
-  content: url("../../assets/icons/bullet.png");
+  content: url('../../assets/icons/bullet.png');
   position: absolute;
   left: 2px;
   /*adjust manually*/
@@ -58,7 +60,7 @@ ul.navigation_ li:after {
 
 ul.bluenav li:after {
   /* bullets */
-  content: url("../../assets/icons/bullet_active.png");
+  content: url('../../assets/icons/bullet_active.png');
   position: absolute;
   left: 2px;
   /*adjust manually*/
@@ -67,7 +69,7 @@ ul.bluenav li:after {
 
 ul.navigation_ li:before {
   /* lines */
-  content: "";
+  content: '';
   position: absolute;
   left: 4.5px;
   border-left: 1px solid blue;
