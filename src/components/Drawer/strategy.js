@@ -38,14 +38,14 @@ export const Strategy = ({ drawerModal }) => {
           pt="20px"
           color="#3D3D3D"
           fontSize={'14px'}
-          fontFamily={'euclid-light'}
+          
           bg="#FBFCFC"
           pb='40px'
         >
-          <Text fontFamily={'euclid-medium'} color='#191919' fontSize={'16px'}>
+          <Text  color='#191919' fontSize={'16px'}>
             "Buy to flip" and "buy to hold" are two distinct investment strategies within the realm of real estate, including fractional real estate ownership:
           </Text>
-          <Text mt='20px' fontFamily={'euclid-medium'} color='#191919' >
+          <Text mt='20px'  color='#191919' >
             Buy to Flip
           </Text>
           <Text mt='10px'>
@@ -57,7 +57,7 @@ export const Strategy = ({ drawerModal }) => {
           <Text mt='20px'>
             Risks: This strategy can carry increased risks due to its reliance on precise market timing, renovation costs, and the need to locate a buyer willing to pay a higher price. If the property doesn't sell swiftly or renovation expenses exceed expectations, profits may be diminished or even turn into losses.
           </Text>
-          <Text mt='20px' fontFamily={'euclid-medium'} color='#191919'>
+          <Text mt='20px'  color='#191919'>
             Buy to Hold
           </Text>
           <Text mt='10px'>

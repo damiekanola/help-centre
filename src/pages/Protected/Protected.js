@@ -124,7 +124,7 @@ export const Protected = () => {
         </Box>
 
         <Box mb="30px" id="mitigating" ref={mitigatingRef}>
-          <Text fontSize={'24px'} fontFamily="euclid-semibold" mb="5px">
+          <Text fontSize={'24px'} fontWeight={500} mb="5px">
             Mitigation against downtime
           </Text>
           <Text as="p" fontWeight={400}>

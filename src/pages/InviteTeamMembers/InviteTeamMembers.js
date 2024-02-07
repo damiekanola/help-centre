@@ -65,7 +65,7 @@ export const InviteTeamMembers = () => {
         <Text className="publish">Published: April 02, 2023</Text>
         <Box id="invite" ref={inviteRef}>
           <Text className="content" lineHeight={'25px'}>
-            <Text as='p' fontFamily={'euclid-medium'} mt='30px'>
+            <Text as='p'  mt='30px'>
               As businesses increasingly embrace Veerge for their operational needs,
               managing user access and permissions emerges as a paramount concern
               for security and collaboration.
@@ -73,7 +73,7 @@ export const InviteTeamMembers = () => {
             <Text as='p' marginTop="20px">
               Veerge indeed offers a blend of convenience, scalability, and cost-effectiveness, yet it also brings potential security vulnerabilities if not wielded with care. Within the Veerge ecosystem, diverse users hailing from various departments and hierarchies demand access to a spectrum of applications and data. Skillful administration of these users and their access privileges is a linchpin against unauthorized entry, ensuring that personnel hold just the right level of access pertinent to their roles. This is where the Teams feature comes to the forefront, supported by a robust framework known as Role-Based Access Control (RBAC).
             </Text>
-            <Text as='p' marginTop="20px" fontFamily={'euclid-medium'} letterSpacing={'1.92px'}>
+            <Text as='p' marginTop="20px"  letterSpacing={'1.92px'}>
               RBAC orchestrates access rights and permissions based on users'
               designated roles within an organization.
             </Text>
@@ -82,7 +82,7 @@ export const InviteTeamMembers = () => {
               simplifies user management while untangling the intricacies of permission
               assignments
             </Text>
-            <Text as='p' marginTop={'20px'} fontFamily={'euclid-medium'}>
+            <Text as='p' marginTop={'20px'} >
               How to Invite Team Members:
             </Text>
           </Text>

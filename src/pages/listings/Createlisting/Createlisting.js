@@ -82,66 +82,66 @@ const Createlisting = () => {
           <Text className="" mt='30px'>
             <OrderedList>
               <ListItem>
-                <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Flat:</Text>
+                <Text fontWeight={500} mt='20px'>1-Bedroom Flat:</Text>
                 <UnorderedList>
-                  <ListItem fontFamily='euclid-light'>Outright Price: 65 million</ListItem>
-                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
+                  <ListItem fontWeight={200}>Outright Price: 65 million</ListItem>
+                  <ListItem mt='20px' fontWeight={200}>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
-                    <ListItem fontFamily='euclid-light'>Followed by 15 million every month for 3 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>Total Payment: 70 million</ListItem>
+                    <ListItem fontWeight={200}>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontWeight={200}>Followed by 15 million every month for 3 months</ListItem>
+                    <ListItem fontWeight={200}>Total Payment: 70 million</ListItem>
                   </UnorderedList>
-                  <ListItem mt='20px' fontFamily='euclid-light'>6-Month Payment Plan:</ListItem>
+                  <ListItem mt='20px' fontWeight={200}>6-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
-                    <ListItem fontFamily='euclid-light'>Followed by 24 million every 3 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>Total Payment: 73 million</ListItem>
+                    <ListItem fontWeight={200}>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontWeight={200}>Followed by 24 million every 3 months</ListItem>
+                    <ListItem fontWeight={200}>Total Payment: 73 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
 
               <ListItem>
-                <Text fontFamily='euclid-semibold' mt='20px'>1-Bedroom Loft:</Text>
+                <Text fontWeight={500} mt='20px'>1-Bedroom Loft:</Text>
                 <UnorderedList>
-                  <ListItem fontFamily='euclid-light'>Outright Price: 75 million</ListItem>
-                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
+                  <ListItem fontWeight={200}>Outright Price: 75 million</ListItem>
+                  <ListItem mt='20px' fontWeight={200}>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem fontFamily='euclid-light'>Initial Deposit: 35 million</ListItem>
-                    <ListItem fontFamily='euclid-light'>Spread the remaining payment within 3 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>Total Price: 80 million</ListItem>
+                    <ListItem fontWeight={200}>Initial Deposit: 35 million</ListItem>
+                    <ListItem fontWeight={200}>Spread the remaining payment within 3 months</ListItem>
+                    <ListItem fontWeight={200}>Total Price: 80 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
 
               <ListItem>
-                <Text fontFamily='euclid-semibold' mt='20px'>2-Bedroom Flat:</Text>
+                <Text fontWeight={500} mt='20px'>2-Bedroom Flat:</Text>
                 <UnorderedList>
-                  <ListItem fontFamily='euclid-light'>Outright Price: 100 million</ListItem>
-                  <ListItem mt='20px' fontFamily='euclid-light'>12-month (1-Year) Payment Plan:</ListItem>
+                  <ListItem fontWeight={200}>Outright Price: 100 million</ListItem>
+                  <ListItem mt='20px' fontWeight={200}>12-month (1-Year) Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem fontFamily='euclid-light'>Initial Deposit: 25 million</ListItem>
-                    <ListItem fontFamily='euclid-light'>15 million after 3 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>10 million after 2 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>30 million after 4 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>40 million after 3 months</ListItem>
-                    <ListItem fontFamily='euclid-light'>Total Price: 110 million</ListItem>
+                    <ListItem fontWeight={200}>Initial Deposit: 25 million</ListItem>
+                    <ListItem fontWeight={200}>15 million after 3 months</ListItem>
+                    <ListItem fontWeight={200}>10 million after 2 months</ListItem>
+                    <ListItem fontWeight={200}>30 million after 4 months</ListItem>
+                    <ListItem fontWeight={200}>40 million after 3 months</ListItem>
+                    <ListItem fontWeight={200}>Total Price: 110 million</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
 
               <ListItem>
-                <Text fontFamily='euclid-semibold' mt='20px'>3-Bedroom:</Text>
+                <Text fontWeight={500} mt='20px'>3-Bedroom:</Text>
                 <UnorderedList>
-                  <ListItem fontFamily='euclid-light'>Outright Price: 120 million</ListItem>
-                  <ListItem mt='20px' fontFamily='euclid-light'>3-Month Payment Plan:</ListItem>
+                  <ListItem fontWeight={200}>Outright Price: 120 million</ListItem>
+                  <ListItem mt='20px' fontWeight={200}>3-Month Payment Plan:</ListItem>
                   <UnorderedList>
-                    <ListItem fontFamily='euclid-light'>Initial Payment: 60 million</ListItem>
-                    <ListItem fontFamily='euclid-light'>Payment spread over 3 months, no interest</ListItem>
+                    <ListItem fontWeight={200}>Initial Payment: 60 million</ListItem>
+                    <ListItem fontWeight={200}>Payment spread over 3 months, no interest</ListItem>
                   </UnorderedList>
                 </UnorderedList>
               </ListItem>
 
-              <ListItem fontFamily='euclid-light' mt='20px'>
+              <ListItem fontWeight={200} mt='20px'>
                 As for the pinnacle of grandeur—the penthouse—a veil of mystery shrouds the price, creating an air of anticipation. The development company invites offers from discerning individuals, fostering an atmosphere of exclusivity and negotiation.
               </ListItem>
             </OrderedList>
@@ -208,7 +208,7 @@ const Createlisting = () => {
               </Text>
 
               <Box>
-                <Box mt='20px' fontFamily='euclid-semibold'>
+                <Box mt='20px' fontWeight={500}>
                   <Text fontSize={'16px'}>STEP 2 (i)</Text>
                   <Text>Lets begin with the 1 bedroom flat. We will fill the:</Text>
                 </Box>
@@ -225,14 +225,14 @@ const Createlisting = () => {
 
                 <UnorderedList>
                   <ListItem>
-                    <Text fontFamily='euclid-semibold' mt='20px'>Next, proceed to the payment plan:</Text>
+                    <Text fontWeight={500} mt='20px'>Next, proceed to the payment plan:</Text>
                     <OrderedList>
                       <ListItem>Select "Add Payment Plan."</ListItem>
                       <ListItem>Choose "Quick Payment Plan."</ListItem>
                     </OrderedList>
                   </ListItem>
                   <ListItem>
-                    <Text fontFamily='euclid-semibold' mt='20px'>For the 3-month payment plan:</Text>
+                    <Text fontWeight={500} mt='20px'>For the 3-month payment plan:</Text>
                     <OrderedList>
                       <ListItem>Set the duration as 3 months.</ListItem>
                       <ListItem>Initial deposit: 25 million.</ListItem>
@@ -243,7 +243,7 @@ const Createlisting = () => {
                     </OrderedList>
                   </ListItem>
                   <ListItem>
-                    <Text fontFamily='euclid-semibold' mt='20px'>For the 6-month payment plan:</Text>
+                    <Text fontWeight={500} mt='20px'>For the 6-month payment plan:</Text>
                     <OrderedList>
                       <ListItem>Select "Add Plan."</ListItem>
                       <ListItem>Set the duration as 6 months.</ListItem>
@@ -259,7 +259,7 @@ const Createlisting = () => {
               <Image src={create2} mt="30px" mx="auto" w='full' />
 
               <Box mt='20px'>
-                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (ii)</Text>
+                <Text fontWeight={500} fontSize={'16px'}>STEP 2 (ii)</Text>
 
                 <Text as='p' mt='20px'>
                   We will then add another Unit by clicking on the Add unit button
@@ -278,13 +278,13 @@ const Createlisting = () => {
                   <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images highlighting this unit.</ListItem>
                 </OrderedList>
 
-                <Text fontFamily='euclid-semibold' mt='20px'>For the payment plan:</Text>
+                <Text fontWeight={500} mt='20px'>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Quick Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text fontFamily='euclid-semibold' mt='20px'>For the 3-month flexible payment plan:</Text>
+                <Text fontWeight={500} mt='20px'>For the 3-month flexible payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 3 months.</ListItem>
                   <ListItem>Initial deposit: 35 million.</ListItem>
@@ -295,7 +295,7 @@ const Createlisting = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iii)</Text>
+                <Text fontWeight={500} fontSize={'16px'}>STEP 2 (iii)</Text>
 
                 <Text as='p' mt='20px'>
                   There are still 3 more units left so we will add another Unit by clicking on the Add unit button.
@@ -314,13 +314,13 @@ const Createlisting = () => {
                   <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
-                <Text fontFamily='euclid-semibold' mt='20px'>For the payment plan:</Text>
+                <Text fontWeight={500} mt='20px'>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Custom Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text fontFamily='euclid-semibold' mt='20px'>For the 12-month payment plan:</Text>
+                <Text fontWeight={500} mt='20px'>For the 12-month payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 12 months.</ListItem>
                   <ListItem>Initial deposit: 25 million.</ListItem>
@@ -334,7 +334,7 @@ const Createlisting = () => {
 
 
               <Box mt='20px'>
-                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (iv)</Text>
+                <Text fontWeight={500} fontSize={'16px'}>STEP 2 (iv)</Text>
 
                 <Text as='p' mt='20px'>
                   This will be the 3 bedroom with a flexible payment plan.
@@ -350,13 +350,13 @@ const Createlisting = () => {
                   <ListItem mt='10px'><b>Upload Unit Images:</b> Provide images showcasing this unit.</ListItem>
                 </OrderedList>
 
-                <Text mt='20px' fontFamily='euclid-semibold'>For the payment plan:</Text>
+                <Text mt='20px' fontWeight={500}>For the payment plan:</Text>
                 <OrderedList>
                   <ListItem>Select "Add Payment Plan."</ListItem>
                   <ListItem>Choose "Quick Payment Plan."</ListItem>
                 </OrderedList>
 
-                <Text mt='20px' fontFamily='euclid-semibold'>For the 3-month flexible payment plan:</Text>
+                <Text mt='20px' fontWeight={500}>For the 3-month flexible payment plan:</Text>
                 <OrderedList>
                   <ListItem>Set the duration as 3 months.</ListItem>
                   <ListItem>Initial deposit: 60 million.</ListItem>
@@ -367,7 +367,7 @@ const Createlisting = () => {
               </Box>
 
               <Box mt='20px'>
-                <Text fontFamily='euclid-semibold' fontSize={'16px'}>STEP 2 (v)</Text>
+                <Text fontWeight={500} fontSize={'16px'}>STEP 2 (v)</Text>
 
                 <Text as='p' mt='20px'>
                   This will be the prestigious penthouse with a no-interest payment plan.

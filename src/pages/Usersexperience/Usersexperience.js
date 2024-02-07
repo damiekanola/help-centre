@@ -48,7 +48,7 @@ export const Usersexperience = () => {
           marginTop: '70px'
         }}
       >
-        <Box mx='auto' w='95%' fontFamily={'euclid-light'}>
+        <Box mx='auto' w='95%' >
           <Text color='#FFF' lineHeight={'25px'}>
             <Box w='60%' mx='auto'>
               <Text className="head_" color='#FFF'>End-to-End Experience</Text>
@@ -67,7 +67,7 @@ export const Usersexperience = () => {
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='authentication'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 AUTHENTICATION
               </Text>
               <Text as='p' fontWeight={300} mt='30px'>
@@ -94,7 +94,7 @@ export const Usersexperience = () => {
             </Box>
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='after_authentication'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 AFTER AUTHENTICATION, WHAT NEXT ?
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -146,7 +146,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='purchase_flow'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 PURCHASE FLOW
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -164,7 +164,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='revenue_recogniition'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 REVENUE RECOGNITION SOLUTION
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -179,7 +179,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='smart_alloc'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 SMART ALLOCATION
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -206,7 +206,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='auto_pay'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 AUTO - PAY
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -221,7 +221,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='co_ownership'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 CO - OWNERSHIP
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -237,7 +237,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='fractional_ownership'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 FRACTIONAL OWNERSHIP
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>
@@ -261,7 +261,7 @@ export const Usersexperience = () => {
             </Box >
             <Box borderBottom='1px solid #2E2E32' w='full' mx='auto' mt='70px' mb='60px' />
             <Box w='60%' mx='auto' id='agent'>
-              <Text fontSize={'24px'} fontFamily='euclid-semibold'>
+              <Text fontSize={'24px'} fontWeight={500}>
                 AGENT
               </Text >
               <Text as='p' fontWeight={300} mt='30px'>

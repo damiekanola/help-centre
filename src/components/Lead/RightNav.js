@@ -17,7 +17,7 @@ const LeadRightNav = () => {
         w={'23%'}
         px="30px"
         pb="50px"
-        fontFamily={'euclid-light'}
+        
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -35,7 +35,7 @@ const LeadRightNav = () => {
           fontSize={'24px'}
           letterSpacing={'3px'}
           color={'white !important'}
-          fontFamily={'euclid-medium'}
+          
         >
           Leads & Account
         </Text>

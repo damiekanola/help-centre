@@ -1,13 +1,23 @@
-import { Box, Flex, Text, useToast } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import {Box, Flex, Text, useToast} from '@chakra-ui/react';
+import React, {useState} from 'react';
 
-const Helpful = ({ noMarginTop }) => {
+const Helpful = ({noMarginTop, white}) => {
   const toast = useToast();
-  const [visible, setVisible] = useState(true)
+  const [visible, setVisible] = useState(true);
 
   return (
-    <Flex direction={'column'} align={'flex-end'} w='full' marginTop={noMarginTop ? "0" : "70px"} >
-      <Text textTransform={'capitalize'} letterSpacing={'normal'} fontSize={'24px'} textAlign={'sright'} className="content_head">Was this helpful?</Text>
+    <Flex direction={'column'} align={'flex-end'} w="full" marginTop={noMarginTop ? '0' : '70px'}>
+      <Text
+        textTransform={'capitalize'}
+        letterSpacing={'normal'}
+        fontSize={'24px'}
+        textAlign={'sright'}
+        className="content_head"
+        color={white ? 'black' : 'white'}
+        fontFamily={'Euclid'}
+      >
+        Was this helpful?
+      </Text>
       {visible && (
         <>
           <Flex direction="row">
@@ -18,26 +28,26 @@ const Helpful = ({ noMarginTop }) => {
               cursor="pointer"
               onClick={() => {
                 toast({
-                  position: "bottom-center",
+                  position: 'bottom-center',
                   isClosable: true,
                   render: () => (
                     <Box color="white" p={3} bg="#000000">
                       Thank you for your feedback.
                     </Box>
                   ),
-                })
-                setVisible(!visible)
+                });
+                setVisible(!visible);
               }}
             >
               Yes
-            </Text>{" "}
+            </Text>{' '}
             <Text
               color="#5d5fef"
               pl="8px"
               cursor="pointer"
               onClick={() =>
                 toast({
-                  position: "bottom-center",
+                  position: 'bottom-center',
                   isClosable: true,
                   render: () => (
                     <Box color="white" p={3} bg="#000000">
@@ -53,7 +63,7 @@ const Helpful = ({ noMarginTop }) => {
         </>
       )}
     </Flex>
-  )
-}
+  );
+};
 
-export default Helpful
+export default Helpful;
