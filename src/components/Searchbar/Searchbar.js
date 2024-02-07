@@ -13,7 +13,6 @@ import {
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import {SlArrowRight} from 'react-icons/sl';
-import {GrHomeRounded} from 'react-icons/gr';
 import {MdSubdirectoryArrowLeft} from 'react-icons/md';
 import {CiSearch} from 'react-icons/ci';
 import {helpSearchData, blogSearchData} from './data';
@@ -42,8 +41,7 @@ export const Searchbar = () => {
     setSearchFilteredData(dataTouse);
   }, [currLocation]);
 
-  // const isWHite = currLocation === '/users_experience'
-  const isWHite = true;
+  const isWHite = currLocation.startsWith('/blog') ? false : true;
 
   const handleCurrentRoute = () => {
     switch (currLocation) {
@@ -144,6 +142,10 @@ export const Searchbar = () => {
     }
   };
 
+  useEffect(() => {
+    document.title = handleCurrentRoute();
+  }, [currLocation]);
+
   return (
     <>
       <Show breakpoint="(min-width: 769px)">
@@ -157,16 +159,14 @@ export const Searchbar = () => {
           position="fixed"
           top="82px"
           zIndex="2"
-          bg={'#0D0D0D'}
+          bg={isWHite ? '#0D0D0D' : '#ffffff'}
           borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
-                <Link to={checkBlogPage() ? '/blog' : '/'}>
-                  {<Image src={home_svg} />}
-                </Link>{' '}
+                <Link to={checkBlogPage() ? '/blog' : '/'}>{<Image src={home_svg} />}</Link>{' '}
                 <SlArrowRight color={isWHite ? '#fff' : '#0D0D0D'} />
               </>
             )}
@@ -193,28 +193,15 @@ export const Searchbar = () => {
               align="center"
               maxW="300px"
               h="43px"
-              bg="transparent"
-              border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
               px="10px"
               onClick={onOpen}
               cursor={'pointer'}
+              bg={'transparent'}
+              border={!isWHite ? '1px solid black' : '1px solid white'}
             >
-              {/* <Input
-                placeholder="Search for a topic"
-                type="text"
-                border="none"
-                FontWeight="400"
-                fontSize="12px"
-                lineHeight="15px"
-                color="#606060"
-                onClick={onOpen}
-                _focusVisible={{
-                  border: "none",
-                }}
-              /> */}
               <CiSearch
-                color={'white'}
+                color={isWHite ? 'white' : 'black'}
                 style={{width: '25px', height: '25px'}}
               />
             </Flex>
@@ -277,7 +264,7 @@ export const Searchbar = () => {
                           >
                             <Text fontSize={'14px'} textAlign={'left'}>
                               {isHomePage && `${pageTitle}:`}
-                              <Text  fontSize={'17px'} as="span">
+                              <Text fontSize={'17px'} as="span">
                                 {' '}
                                 {title}
                               </Text>
@@ -309,19 +296,6 @@ export const Searchbar = () => {
             onClick={onOpen}
             cursor={'pointer'}
           >
-            {/* <Input
-              placeholder="Search for a topic"
-              type="text"
-              border="none"
-              FontWeight="400"
-              fontSize="12px"
-              lineHeight="15px"
-              color="#606060"
-              onClick={onOpen}
-              _focusVisible={{
-                border: "none",
-              }}
-            /> */}
             <CiSearch style={{width: '25px', height: '25px'}} />
           </Flex>
         </form>
@@ -383,12 +357,11 @@ export const Searchbar = () => {
                         >
                           <Text fontSize={'14px'} textAlign={'left'}>
                             {isHomePage && `${pageTitle}:`}
-                            <Text  fontSize={'17px'} as="span">
+                            <Text fontSize={'17px'} as="span">
                               {' '}
                               {title}
                             </Text>
                           </Text>
-
                           <MdSubdirectoryArrowLeft />
                         </Flex>
                       </Link>

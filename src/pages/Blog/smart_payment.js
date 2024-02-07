@@ -29,7 +29,7 @@ const Smart_payment = () => {
         maxH={'100vh'}
         h={'500px'}
         position={'relative'}
-        color={'white'}
+        overflowY={'hidden'}
       >
         <Center
           onClick={() => navigate('/blog')}
@@ -46,26 +46,58 @@ const Smart_payment = () => {
           <SlArrowLeft fontSize={'20px'} />
         </Center>
 
-        <Image h="full" w="468px" src={smart_payment} bgPosition={'center'} bgSize={'cover'} />
+        <Image
+          h="full"
+          w="468px"
+          src={smart_payment}
+          bgPosition={'center'}
+          bgSize={'cover'}
+          marginTop={'120px'}
+        />
 
         <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
           <Box />
-          <Box>
-            <Text fontWeight={500} w="full" alignSelf={'center'} fontSize="36px">
+          <Box color="white !important">
+            <Text
+              fontWeight={500}
+              w="full"
+              alignSelf={'center'}
+              fontSize="36px"
+              color="white !important"
+            >
               Smart Payment Plan
             </Text>
-            <Text mt="15px" fontWeight={300} w="80%" alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="15px"
+              fontWeight={300}
+              w="80%"
+              alignSelf={'center'}
+              fontSize="14px"
+              color="white !important"
+            >
               We have Automated the conventional payment plan, the time has come to re-engineer it
             </Text>
-            <Text mt="45px" fontWeight={500} alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="45px"
+              fontWeight={500}
+              alignSelf={'center'}
+              fontSize="14px"
+              color="white !important"
+            >
               By Ahmed Ibraheem
             </Text>
-            <Text mt="15px" fontWeight={500} alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="15px"
+              fontWeight={500}
+              alignSelf={'center'}
+              fontSize="14px"
+              color="white !important"
+            >
               September 25, 2023
             </Text>
           </Box>
           <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} alignSelf={'center'} fontSize="14px">
+            <Text fontWeight={500} alignSelf={'center'} fontSize="14px" color="white !important">
               11 mins read
             </Text>
             <Flex align={'center'} gap="4px">
@@ -86,7 +118,16 @@ const Smart_payment = () => {
         </Flex>
       </Flex>
       <Box px={'78px'}>
-        <Box w={'75%'} ml="auto" mt="58px" pb="70px" fontWeight={200} fontSize="16px">
+        <Box
+          w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto"
+          mt="58px"
+          pb="70px"
+          fontWeight={200}
+          fontSize="16px"
+        >
           <Box>
             <Text mt="30px">
               Imagine the joy of owning your dream home — a place to call your own, where you can
@@ -193,16 +234,16 @@ const Smart_payment = () => {
               home ownership, simplifying every step for Mary.
             </Text>
             <Text mt="30px">
-              One of the app’s standout features is “<b>Auto-pay</b>,” which proved to be a game-changer
-              for buyers opting for payment plans like Mary. Upon her purchase, the app offered her
-              the option to automate her payment plan by linking her card or bank account. This
-              remarkable convenience feature ensured that when the payment was due, it was
-              automatically processed, lifting the burden of manual transactions from her shoulders.
-              With a smile, Mary happily chose to automate her quarterly payment of <b>₦6,809,000</b>, and
-              she even had the flexibility to switch to monthly, weekly, or daily payments if she
-              found it more convenient. This level of control and ease of payment management
-              transformed the way property development companies handled transactions, making it a
-              win-win for both buyers and sellers.
+              One of the app’s standout features is “<b>Auto-pay</b>,” which proved to be a
+              game-changer for buyers opting for payment plans like Mary. Upon her purchase, the app
+              offered her the option to automate her payment plan by linking her card or bank
+              account. This remarkable convenience feature ensured that when the payment was due, it
+              was automatically processed, lifting the burden of manual transactions from her
+              shoulders. With a smile, Mary happily chose to automate her quarterly payment of{' '}
+              <b>₦6,809,000</b>, and she even had the flexibility to switch to monthly, weekly, or
+              daily payments if she found it more convenient. This level of control and ease of
+              payment management transformed the way property development companies handled
+              transactions, making it a win-win for both buyers and sellers.
             </Text>
 
             <Text mt="30px">
@@ -333,14 +374,15 @@ const Smart_payment = () => {
             </Text>
 
             <Text mt="30px">
-              If you’ve already delved into our previous article on <Link color={'#4545FE'} borderBottom={'1px solid #4545FE'} href="">
-                Veerge as a system of
-                engagement
-              </Link>, you’ll realize that the true secret sauce behind our new payment plan
-              model lies in the integration of an interface and an intelligent system that manages
-              the process seamlessly at all times. This combination of a system of engagement, a
-              system of trust, and a system of intelligence is what makes it efficient, scalable,
-              and future-proof. It revolutionizes the real estate industry by providing personalized
+              If you’ve already delved into our previous article on{' '}
+              <Link color={'#4545FE'} borderBottom={'1px solid #4545FE'} href="">
+                Veerge as a system of engagement
+              </Link>
+              , you’ll realize that the true secret sauce behind our new payment plan model lies in
+              the integration of an interface and an intelligent system that manages the process
+              seamlessly at all times. This combination of a system of engagement, a system of
+              trust, and a system of intelligence is what makes it efficient, scalable, and
+              future-proof. It revolutionizes the real estate industry by providing personalized
               financial aggregation tools, giving property development companies the power to
               reshape the real estate landscape and elevate the home buying experience for
               customers.
