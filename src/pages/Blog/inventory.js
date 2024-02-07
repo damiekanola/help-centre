@@ -100,7 +100,10 @@ const Inventory = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+        <Box w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Inventory management forms the cornerstone of efficient operations in any business, a principle that holds equally true for property development companies. The domain of property development is renowned for its intricate and continually evolving nature. It encompasses a wide spectrum of variables, ranging from initial design and meticulous planning to the finer aspects of marketing and eventual sales. Amidst this complexity, a pivotal factor emerges, one with the potential to profoundly influence the success of a property development enterprise – the adept management of unit types.

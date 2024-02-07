@@ -107,7 +107,10 @@ const Lead_management = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+        <Box w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Imagine diving into the fascinating world of leads in property development—it's like embarking on a multifaceted adventure. Small property development businesses often find themselves grappling with an array of manual methods, scattered spreadsheets, and a whirlwind of documents. These tools are meant to safeguard vital customer data and choreograph the intricate journey of leads, but here's the twist: they're not only vulnerable to occasional human hiccups but can also turn into major speed bumps, especially when you're trying to grow beyond your initial customer circle.

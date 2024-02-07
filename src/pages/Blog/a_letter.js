@@ -81,7 +81,10 @@ const A_letter = () => {
         </Flex>
       </Flex>
       <Box px={'78px'}>
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+        <Box w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box>
             <Text>
               As I expressed in the letter when I assumed the position of CEO, "This is not a conventional company. We do not intend to become one." In line with that, we also emphasized the need to constantly strive for more and pursue important and meaningful endeavors with the resources at our disposal. We have always believed that over time, companies tend to become complacent, merely making incremental changes.

@@ -107,7 +107,10 @@ const Why_veerge = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+        <Box w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={why_veergeRef} id='why_veerge'>
             <Text fontWeight={500} fontSize={'36px'} color='#000'>
               WHY VEERGE?

@@ -106,7 +106,10 @@ const Fractional_ownership = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+        <Box w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Real estate, the golden ticket to wealth building, continues to entice investors seeking stability amidst the unpredictable stock market. But here’s the catch: for many young adults, the dream of owning property seems to drift further away as property prices soar higher than their incomes. Enter the hero of the hour: <b>Fractional ownership in real estate.</b>

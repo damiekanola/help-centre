@@ -112,7 +112,6 @@ export const VeergePlus = () => {
             </UnorderedList>
           </Text>
         </Box>
-
         <Box mb="30px" id="channels" ref={channelsRef}>
           <Text
             textTransform={"uppercase"}
