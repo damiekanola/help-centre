@@ -53,7 +53,7 @@ const Inventory = () => {
 
           <Box />
           <Box>
-            <Text fontFamily='euclid-semibold' color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontWeight={500} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
               Inventory Management system
             </Text>
             <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
@@ -100,7 +100,7 @@ const Inventory = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Inventory management forms the cornerstone of efficient operations in any business, a principle that holds equally true for property development companies. The domain of property development is renowned for its intricate and continually evolving nature. It encompasses a wide spectrum of variables, ranging from initial design and meticulous planning to the finer aspects of marketing and eventual sales. Amidst this complexity, a pivotal factor emerges, one with the potential to profoundly influence the success of a property development enterprise – the adept management of unit types.
@@ -110,41 +110,41 @@ const Inventory = () => {
             </Text>
           </Box>
           <Box ref={benefitRef} id='benefit'>
-            <Text mt='30px' fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
+            <Text mt='30px' fontWeight={500} fontSize={'36px'} color='#000'>
               Benefits of this system
             </Text>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>1. Precise Allocation </Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>1. Precise Allocation </Text>
               <Text>
                 By accurately tracking the availability of each unit type, property development companies can ensure that clients are presented with up-to-date and accurate options. This minimises the risk of overbooking or overselling and maintains customer trust.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>2. Optimized Pricing Strategies </Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>2. Optimized Pricing Strategies </Text>
               <Text>
                 This system allows property developers to implement dynamic pricing strategies based on demand, availability, and market trends. This ensures that unit types are priced competitively, maximizing revenue potential.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>3. Customized Offerings </Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>3. Customized Offerings </Text>
               <Text>
                 Property developers can use the insights from this system to tailor their offerings to match market demand. This level of customization enhances the appeal of the development to potential buyers or tenants.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>4. Accurate Sales Forecasting</Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>4. Accurate Sales Forecasting</Text>
               <Text>
                 With real-time data on unit type availability and sales trends, property development companies can create more accurate sales forecasts. This aids in resource planning, budgeting, and overall project management.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>5. Customer Satisfaction</Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>5. Customer Satisfaction</Text>
               <Text>
                 By presenting potential buyers or tenants with accurate and updated information about available unit types, property developers enhance customer satisfaction. This transparency builds trust and fosters positive relationships.
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>6.Project Performance Evaluation</Text>
+              <Text fontWeight={500} fontSize={'20px'} color='#000'>6.Project Performance Evaluation</Text>
               <Text>
                 The inventory management system provides a clear picture of the popularity of different unit types. This information is invaluable for evaluating the success of different projects and guiding future development decisions.
               </Text>

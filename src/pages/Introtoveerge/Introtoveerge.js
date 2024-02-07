@@ -99,7 +99,7 @@ export const Introtoveerge = () => {
               such as outright payment, payment plans, or even co-ownership of the property with family and friends.
               It is designed to empower any real estate business worldwide, instantly establishing it as a global enterprise.
               Customers from around the world can access the portal, and payments can be accepted from customers in over
-              <Text as='span' fontFamily='euclid-semibold'> 60 countries and 135 currencies, </Text>
+              <Text as='span' fontWeight={500}> 60 countries and 135 currencies, </Text>
               24/7, without the need to establish local entities.
             </Text>
             <Text as='p' marginTop="20px">
@@ -145,7 +145,7 @@ export const Introtoveerge = () => {
         <Box pt="30px" id="intelligence" ref={intelligenceRef}>
           <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
           <Text className="content">
-            <Text as='p' fontFamily='euclid-semibold'>
+            <Text as='p' fontWeight={500}>
               AI+ Your business = Limitless possibilities.
             </Text>
             <Text as='p' marginTop='20px'>

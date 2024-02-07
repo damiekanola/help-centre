@@ -12,7 +12,6 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        fontFamily="euclid"
         bg="#232425"
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         position={'fixed'}
@@ -38,7 +37,7 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
         }}
       >
         {/* <Box overflowY={'scroll'}> */}
-        <Text className="article_text" color="white !important" fontFamily={'euclid-medium'}>
+        <Text className="article_text" color="white !important" >
           In this article
         </Text>
         <Flex mt="20px" direction={'column'} align={'stretch'}>
@@ -81,16 +80,16 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
           className="article_text"
           mt="40px"
           color="white !important"
-          fontFamily={'euclid-medium'}
+          
         >
           Related Content
         </Text>
-        <VStack fontFamily="euclid" mt="20px" spacing={'23px'} align="stretch">
+        <VStack mt="20px" spacing={'23px'} align="stretch">
           {relatedContent.map(content => (
             <Flex columnGap="16px" align={'center'}>
               <Image src={file} w="14px" h="18px" />
               <Link to={content.link}>
-                <Text fontSize={'14px'} color="#DDD" fontFamily={'euclid'}>
+                <Text fontSize={'14px'} color="#DDD">
                   {content.text}
                 </Text>
               </Link>

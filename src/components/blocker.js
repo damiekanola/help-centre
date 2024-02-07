@@ -14,8 +14,8 @@ const Blocker = () => {
       <Flex direction={'column'} justify={'space-between'} align={'center'} mx='auto' w='65%' h='full'>
         <Flex direction={'column'} gap='15px' align={'center'}>
           <Image src={hide} />
-          <Text textAlign={'center'} fontFamily='euclid-semibold' fontSize={'24px'} color={'#191919'}>Create a Veerge Account to read the full article.</Text>
-          <Text textAlign={'center'} fontFamily={'euclid-light'} fontSize={'16px'} color={'#191919'}>This article is available to Veerge subscribers only</Text>
+          <Text textAlign={'center'} fontWeight={500} fontSize={'24px'} color={'#191919'}>Create a Veerge Account to read the full article.</Text>
+          <Text textAlign={'center'}  fontSize={'16px'} color={'#191919'}>This article is available to Veerge subscribers only</Text>
         </Flex>
 
         <a target='_blank' href='https://test-veerge.myxellia.io/auth/onboarding'>
@@ -28,7 +28,7 @@ const Blocker = () => {
         </a>
         <Text
           textAlign={'center'}
-          fontFamily={'euclid-light'}
+          
           fontSize={'16px'}
           color={'#191919'}
         >

@@ -86,7 +86,7 @@ const Approved = () => {
             preferences. Should you require guidance during this selection process, please don't
             hesitate to reach out to our support team for assistance.
           </Text>
-          <Text as="p" marginTop="20px" fontFamily="euclid-semibold">
+          <Text as="p" marginTop="20px" fontWeight={500}>
             Please be aware that your subscription charges are automatically deducted from your
             wallet at each billing cycle.
           </Text>
@@ -109,13 +109,13 @@ const Approved = () => {
             preferences. Should you require guidance during this selection process, please don't
             hesitate to reach out to our support team for assistance.
           </Text>
-          <Text as="p" marginTop="20px" fontFamily="euclid-semibold">
+          <Text as="p" marginTop="20px" fontWeight={500}>
             Here are the key steps and considerations involved:
           </Text>
           <Text as="p" marginTop="20px">
             <OrderedList>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Assessment and Planning:
                 </Text>{' '}
                 Understand the current software landscape of the business, including the
@@ -124,14 +124,14 @@ const Approved = () => {
                 scalability, or enhancing user experience.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Testing:
                 </Text>{' '}
                 Thoroughly test Veerge and its applications and their integrations to identify and
                 resolve any issues before the full migration.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Pilot Phase:
                 </Text>{' '}
                 Consider conducting a pilot phase where a smaller group of users can test in a
@@ -139,28 +139,28 @@ const Approved = () => {
                 feedback for improvements.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Data Migration:
                 </Text>{' '}
                 Plan the migration of data from legacy systems to Veerge. This involves transferring
                 existing data and ensuring data integrity and security during the process.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Customization and Configuration:
                 </Text>{' '}
                 Customize Veerge to align with your business processes and requirements. Configure
                 settings, user permissions, and any integrations with other systems.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Training and Change Management:
                 </Text>{' '}
                 Train employees to use Veerge, and make sure they know the benefits of the switch.
                 Address any concerns they may have during the transition.
               </ListItem>
               <ListItem marginTop="20px">
-                <Text as="span" fontFamily="euclid-semibold">
+                <Text as="span" fontWeight={500}>
                   Rollout and Monitoring:
                 </Text>{' '}
                 Once all tests are successful, start introducing the applications to everyone in the

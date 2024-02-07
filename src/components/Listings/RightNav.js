@@ -16,7 +16,7 @@ const RightNav = () => {
         w={'23%'}
         px="30px"
         pb="50px"
-        fontFamily={'euclid-light'}
+        
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -32,7 +32,7 @@ const RightNav = () => {
       >
         <Text
           fontSize={'24px'}
-          fontFamily={'euclid-medium'}
+          
           color={'white !important'}
           letterSpacing={'3px'}
         >
@@ -42,7 +42,7 @@ const RightNav = () => {
           <Link to="/listings/overview">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/overview' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/overview' && 500}
             >
               Overview of Listing
             </Text>
@@ -50,7 +50,7 @@ const RightNav = () => {
           <Link to="/listings/create_listing">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/create_listing' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/create_listing' && 500}
             >
               How to create a listing
             </Text>
@@ -58,7 +58,7 @@ const RightNav = () => {
           <Link to="/listings/create_unit">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/create_unit' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/create_unit' && 500}
             >
               Unit Allocations
             </Text>
@@ -66,7 +66,7 @@ const RightNav = () => {
           <Link to="/listings/archive_unit">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/archive_unit' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/archive_unit' && 500}
             >
               Archive a unit
             </Text>
@@ -74,7 +74,7 @@ const RightNav = () => {
           <Link to="/listings/fractionalize_asset">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/fractionalize_asset' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/fractionalize_asset' && 500}
             >
               How to fractionalise a unit
             </Text>
@@ -82,7 +82,7 @@ const RightNav = () => {
           <Link to="/listings/change_listing">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/change_listing' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/change_listing' && 500}
             >
               Changing listing information
             </Text>
@@ -90,7 +90,7 @@ const RightNav = () => {
           <Link to="/listings/delist">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/listings/delist' && 'euclid-medium'}
+              fontWeight={location.pathname === '/listings/delist' && 500}
             >
               How to delist a listing
             </Text>

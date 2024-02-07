@@ -53,7 +53,7 @@ const Fractional_ownership = () => {
           <Box />
           <Box>
             <Text mb='15px' fontWeight={400} color='#FFF' alignSelf={'center'} fontSize='24px'>Peaks</Text>
-            <Text fontFamily='euclid-semibold' color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontWeight={500} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
               Fractional Ownership
             </Text>
             <Text mt='15px' fontWeight={300} color='#FFF' w='80%' alignSelf={'center'} fontSize='14px'>
@@ -106,7 +106,7 @@ const Fractional_ownership = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Real estate, the golden ticket to wealth building, continues to entice investors seeking stability amidst the unpredictable stock market. But here’s the catch: for many young adults, the dream of owning property seems to drift further away as property prices soar higher than their incomes. Enter the hero of the hour: <b>Fractional ownership in real estate.</b>
@@ -154,7 +154,7 @@ const Fractional_ownership = () => {
               </Text>
             </Box>
             <Box mt='30px'>
-              <Text fontFamily='euclid-semibold' fontSize={'36px'} color='#000'>
+              <Text fontWeight={500} fontSize={'36px'} color='#000'>
                 How Fractional Works the Veerge Way
               </Text>
             </Box>

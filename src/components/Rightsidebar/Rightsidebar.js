@@ -14,7 +14,7 @@ export const Rightsidebar = () => {
   return (
     // right  Side navigation
     <div class="rightsidenav">
-      <Text className="article_text" color={'white !important'} fontFamily={'euclid-medium'}>
+      <Text className="article_text" color={'white !important'} >
         In this article
       </Text>
       <ul className={style}>
@@ -41,7 +41,7 @@ export const Rightsidebar = () => {
         className="article_text"
         mt="60px"
         color={'white !important'}
-        fontFamily={'euclid-medium'}
+        
       >
         In this article
       </Text>

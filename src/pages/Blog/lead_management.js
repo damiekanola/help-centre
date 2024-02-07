@@ -54,7 +54,7 @@ const Lead_management = () => {
           <Box />
           <Box>
             <Text mb='15px' fontWeight={400} color='#FFF' alignSelf={'center'} fontSize='24px'>Features</Text>
-            <Text fontFamily='euclid-semibold' color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+            <Text fontWeight={500} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
               Leads management system
             </Text>
             <Text mt='15px' fontWeight={300} color='#FFF' alignSelf={'center'} fontSize='14px'>
@@ -107,7 +107,7 @@ const Lead_management = () => {
         {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
           <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
         </Box> */}
-        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontFamily='euclid-light' fontSize='16px'>
+        <Box w={'75%'} ml='auto' mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
           <Box ref={overviewRef} id='overview'>
             <Text>
               Imagine diving into the fascinating world of leads in property development—it's like embarking on a multifaceted adventure. Small property development businesses often find themselves grappling with an array of manual methods, scattered spreadsheets, and a whirlwind of documents. These tools are meant to safeguard vital customer data and choreograph the intricate journey of leads, but here's the twist: they're not only vulnerable to occasional human hiccups but can also turn into major speed bumps, especially when you're trying to grow beyond your initial customer circle.
@@ -117,7 +117,7 @@ const Lead_management = () => {
             </Text>
           </Box>
           <Box ref={benefitRef} id='benefit'>
-            <Text mt='30px' fontFamily='euclid-semibold' fontSize={'20px'} color='#000'>
+            <Text mt='30px' fontWeight={500} fontSize={'20px'} color='#000'>
               Enter the star of the show: a scalable lead management system.
             </Text>
             <Box mt='30px'>

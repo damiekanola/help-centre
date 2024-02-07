@@ -16,7 +16,6 @@ const AgentRightNav = () => {
         w={'23%'}
         px="30px"
         pb="50px"
-        fontFamily={'euclid-light'}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -32,7 +31,7 @@ const AgentRightNav = () => {
       >
         <Text
           fontSize={'24px'}
-          fontFamily={'euclid-medium'}
+          
           color={'white !important'}
           letterSpacing={'3px'}
         >
@@ -42,7 +41,7 @@ const AgentRightNav = () => {
           <Link to="/agent/portal">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/agent/portal' && 'euclid-medium'}
+              fontWeight={location.pathname === '/agent/portal' && 500}
             >
               Veerge Premier Agent Portal
             </Text>
@@ -50,7 +49,7 @@ const AgentRightNav = () => {
           <Link to="/agent/process">
             <Text
               fontSize={'14px'}
-              fontFamily={location.pathname === '/agent/process' && 'euclid-medium'}
+              fontWeight={location.pathname === '/agent/process' && 500}
             >
               The complete agents process
             </Text>

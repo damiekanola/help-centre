@@ -67,7 +67,7 @@ export const VeergePlus = () => {
           <Text
             textTransform={"uppercase"}
             fontSize={"24px"}
-            fontFamily="euclid-bold"
+            fontWeight={600}
             mb="10px"
             lineHeight={"2.1rem"}
           >
@@ -83,7 +83,7 @@ export const VeergePlus = () => {
           <Text
             textTransform={"uppercase"}
             fontSize={"24px"}
-            fontFamily="euclid-bold"
+            fontWeight={600}
             mb="10px"
             lineHeight={"2.1rem"}
           >
@@ -117,7 +117,7 @@ export const VeergePlus = () => {
           <Text
             textTransform={"uppercase"}
             fontSize={"24px"}
-            fontFamily="euclid-bold"
+            fontWeight={600}
             mb="10px"
             lineHeight={"2.1rem"}
           >
@@ -127,7 +127,7 @@ export const VeergePlus = () => {
             There are multiple channels to enhance your real estate business:
             <OrderedList spacing={30}>
               <ListItem mt={"30px"}>
-                <b style={{ fontFamily: "euclid-bold" }}>Veerge Portal:</b> A
+                <b>Veerge Portal:</b> A
                 user-friendly web portal where you can manage all your business
                 operations. It provides a comprehensive overview of your
                 revenue, an advanced inventory management system, and a leads
@@ -136,14 +136,14 @@ export const VeergePlus = () => {
                 long-term business strategies.
               </ListItem>
               <ListItem>
-                <b style={{ fontFamily: "euclid-bold" }}>Agent Portal:</b> A
+                <b>Agent Portal:</b> A
                 dedicated platform designed specifically for agents. It allows
                 them to track leads, manage client interactions, and streamline
                 their real estate operations. Additionally, agents can use the
                 Agent Portal to track commissions earned.
               </ListItem>
               <ListItem>
-                <b style={{ fontFamily: "euclid-bold" }}>Mobile App:</b>{" "}
+                <b>Mobile App:</b>{" "}
                 Veerge's mobile app acts as a bridge between your offerings and
                 your customers' expectations. It serves as a convergence point
                 where buyers and offerings seamlessly coexist. The mobile app
@@ -151,7 +151,7 @@ export const VeergePlus = () => {
                 unique needs throughout their home ownership journey.
               </ListItem>
               <ListItem>
-                <b style={{ fontFamily: "euclid-bold" }}>Veerge Pro Portal:</b>{" "}
+                <b>Veerge Pro Portal:</b>{" "}
                 The exclusive version of Veerge that grants access to funds in
                 the audience's wallet before purchases. Unlike the standard
                 version where funds are held with partner financial institutions
@@ -167,7 +167,7 @@ export const VeergePlus = () => {
           <Text
             textTransform={"uppercase"}
             fontSize={"24px"}
-            fontFamily="euclid-bold"
+            fontWeight={600}
             mb="10px"
             lineHeight={"2.1rem"}
           >
@@ -178,12 +178,12 @@ export const VeergePlus = () => {
             needs and budgets. Here's a breakdown of the costs:
           </Text>
           <OrderedList listStyleType={"decimal"} mt="30px">
-            <ListItem fontFamily={"euclid-bold"}>
+            <ListItem fontWeight={600}>
               <Text>Mobile App Theme and Integration Cost:</Text>
-              <Text fontFamily={"euclid-light"}>
+              <Text fontWeight={200}>
                 This cost covers the theme of the mobile app and its
                 integration. The total cost is{" "}
-                <b style={{ fontFamily: "euclid-bold" }}>$7,200.00</b>, which is
+                <b>$7,200.00</b>, which is
                 a one-time fee. However, Veerge provides discounts for payment
                 plans. You can avail a 5% discount by making two payments, or a
                 10% discount for an upfront payment. If paid monthly, the cost
@@ -195,30 +195,30 @@ export const VeergePlus = () => {
                 Click here to read more on themes
               </Text>
             </Link>
-            <ListItem fontFamily={"euclid-bold"}>
+            <ListItem fontWeight={600}>
               <Text mt="30px">Subscription:</Text>
-              <UnorderedList fontFamily={"euclid-light"} pl="10px">
+              <UnorderedList fontWeight={200} pl="10px">
                 <ListItem>
                   The basic subscription tier costs{" "}
-                  <b style={{ fontFamily: "euclid-bold" }}>$700.00</b>,
+                  <b>$700.00</b>,
                   providing comprehensive coverage for both web and mobile
                   applications, complete with all essential technical resources
                   to bolster your real estate business operations. This tier
                   includes ongoing support and updates for the Veerge Portal.
                   Moreover, opting for access to the Veerge Premier Agents
                   Portal entails an additional{" "}
-                  <b style={{ fontFamily: "euclid-bold" }}>$200</b> fee, while
+                  <b>$200</b> fee, while
                   integrating fractional real estate incurs an extra{" "}
-                  <b style={{ fontFamily: "euclid-bold" }}>$250</b> charge. For
+                  <b>$250</b> charge. For
                   instance, if you require the Mobile application + web
                   application + Agents Portal + Fractional real estate bundle,
                   the total cost would amount to{" "}
-                  <b style={{ fontFamily: "euclid-bold" }}>$1150</b>.
+                  <b>$1150</b>.
                   Alternatively, the Mobile application + web application +
                   Fractional real estate package is priced at{" "}
-                  <b style={{ fontFamily: "euclid-bold" }}>$950</b>, and the
+                  <b>$950</b>, and the
                   Mobile application + web application + Agents Portal package
-                  comes in at <b style={{ fontFamily: "euclid-bold" }}>$900</b>
+                  comes in at <b>$900</b>
                 </ListItem>
                 <ListItem>
                   The exclusive version of Veerge, tailored for those in pursuit
@@ -239,7 +239,7 @@ export const VeergePlus = () => {
           <Text
             textTransform={"uppercase"}
             fontSize={"24px"}
-            fontFamily="euclid-bold"
+            fontWeight={600}
             mb="10px"
             lineHeight={"2.1rem"}
           >
@@ -249,9 +249,9 @@ export const VeergePlus = () => {
             Getting started with Veerge is simple and straightforward. Follow
             these steps to begin your journey:
             <OrderedList spacing={30}>
-              <ListItem fontFamily={"euclid-bold"} mt="30px">
+              <ListItem fontWeight={600} mt="30px">
                 <Text>Sign up for a free Trial:</Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   Visit{" "}
                   <span>
                     <a
@@ -271,9 +271,9 @@ export const VeergePlus = () => {
                   committing to an active monthly plan.
                 </Text>
               </ListItem>
-              <ListItem fontFamily={"euclid-bold"}>
+              <ListItem fontWeight={600}>
                 <Text>Select a Plan:</Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   Before starting the free trial, choose a plan that aligns with
                   your business requirements and goals. This step ensures a
                   seamless transition from the trial period to an ongoing
@@ -281,9 +281,9 @@ export const VeergePlus = () => {
                   your budget to continue using Veerge after the trial ends.
                 </Text>
               </ListItem>
-              <ListItem fontFamily={"euclid-bold"}>
+              <ListItem fontWeight={600}>
                 <Text>Approval and Trial Access:</Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   Once your account is approved, you'll gain access to your free
                   trial period. During this time, you'll receive a TestFlight
                   link for Apple users and an internal test link for Android
@@ -292,9 +292,9 @@ export const VeergePlus = () => {
                   experience.
                 </Text>
               </ListItem>
-              <ListItem fontFamily={"euclid-bold"}>
+              <ListItem fontWeight={600}>
                 <Text>Enjoy the Free Trial: </Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   Make the most of your free trial by diving into the Veerge
                   platform. Explore its capabilities, customize your experience,
                   and take advantage of its powerful features. The trial period
@@ -304,9 +304,9 @@ export const VeergePlus = () => {
                   evaluate Veerge without any financial commitment.
                 </Text>
               </ListItem>
-              <ListItem fontFamily={"euclid-bold"}>
+              <ListItem fontWeight={600}>
                 <Text>Theme Licensing Fee: </Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   Should you decide to go live with Veerge, you'll be required
                   to make a payment for the licensing fee of the mobile app
                   theme. This fee guarantees that your mobile application will
@@ -314,9 +314,9 @@ export const VeergePlus = () => {
                   user experience.
                 </Text>
               </ListItem>
-              <ListItem fontFamily={"euclid-bold"}>
+              <ListItem fontWeight={600}>
                 <Text>Payment and Go-Live: </Text>
-                <Text fontFamily={"euclid-light"}>
+                <Text fontWeight={200}>
                   When you're ready to launch your real estate operations with
                   Veerge, proceed with the payment to go live. This step enables
                   you to actively use Veerge and leverage its capabilities to
