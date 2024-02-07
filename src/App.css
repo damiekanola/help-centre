@@ -6,26 +6,38 @@
   position: relative;
   /* color: white; */
 }
+body {
+  height: 100%;
+}
 
-body,
+html {
+  background-color: var(--global-background);
+}
+
+/* body,
 html,
 .main {
-  /* background: #0d0d0d; */
-}
+  background: #0d0d0d;
+} */
 .help_centre_pages {
   background: #0d0d0d;
-  color: #ddd;
+  color: #ddd !important;
 }
+/* .help_centre_pages .main {
+  background: #0d0d0d;
+} */
 .help_centre_pages .head_,
 .help_centre_pages .content_head {
   color: white;
 }
-.help_centre_pages .publish {
+
+.help_centre_pages .main .chakra-text {
+  color: #ddd;
 }
 
 .blog_pages {
   background-color: white;
-  color: black !important;
+  color: black;
 }
 
 .blog_pages .head,
@@ -34,6 +46,9 @@ html,
 }
 
 .blog_pages .publish {
+  color: black;
+}
+.blog_pages .chakra-text {
   color: black;
 }
 

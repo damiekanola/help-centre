@@ -144,6 +144,10 @@ export const Searchbar = () => {
     }
   };
 
+  useEffect(() => {
+    document.title = handleCurrentRoute();
+  }, [currLocation]);
+
   return (
     <>
       <Show breakpoint="(min-width: 769px)">
@@ -182,7 +186,7 @@ export const Searchbar = () => {
                 textTransform: 'capitalize',
               }}
             >
-              {handleCurrentRoute()}ashshaj
+              {handleCurrentRoute()}
             </Text>
           </Flex>
           <form>
@@ -199,7 +203,7 @@ export const Searchbar = () => {
               cursor={'pointer'}
               // bg={isWHite ? '#0D0D0D' : '#ffffff'}
               bg={'transparent'}
-              borderBottom={!isWHite ? '1px solid black' : '1px solid white'}
+              border={!isWHite ? '1px solid black' : '1px solid white'}
               // color={'black'}
             >
               {/* <Input
@@ -279,7 +283,7 @@ export const Searchbar = () => {
                           >
                             <Text fontSize={'14px'} textAlign={'left'}>
                               {isHomePage && `${pageTitle}:`}
-                              <Text  fontSize={'17px'} as="span">
+                              <Text fontSize={'17px'} as="span">
                                 {' '}
                                 {title}
                               </Text>
@@ -385,7 +389,7 @@ export const Searchbar = () => {
                         >
                           <Text fontSize={'14px'} textAlign={'left'}>
                             {isHomePage && `${pageTitle}:`}
-                            <Text  fontSize={'17px'} as="span">
+                            <Text fontSize={'17px'} as="span">
                               {' '}
                               {title}
                             </Text>

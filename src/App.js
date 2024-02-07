@@ -1,5 +1,5 @@
-import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {Route, Routes, useLocation} from 'react-router-dom';
 import {Homepage} from './pages/Homepage/Homepage';
 import {Introtoveerge} from './pages/Introtoveerge/Introtoveerge';
 import {Fisrttimesetup} from './pages/Firsttimesetup/Firsttimesetup';
@@ -44,6 +44,19 @@ import {VeergeThemes} from './pages/VeergeThemes/VeergeThemes';
 import {Protected} from './pages/Protected/Protected';
 
 function App() {
+  const location = useLocation();
+  const currLocation = location.pathname;
+
+  useEffect(() => {
+    if (!currLocation.startsWith('/blog')) {
+      console.log('Dark Page');
+      document.documentElement.style.setProperty('--global-background', '#0d0d0d');
+    } else {
+      console.log('Light Page');
+      document.documentElement.style.setProperty('--global-background', 'white');
+    }
+  }, [currLocation]);
+
   return (
     <div className="routes_container">
       <Header />

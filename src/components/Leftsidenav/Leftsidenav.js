@@ -8,7 +8,7 @@ const sample = [
   {link: '/approved_what_next', text: 'Approved, what next?'},
   {link: '/terms', text: 'Terms of service'},
 ];
-export const Leftsidenav = ({articleContent, relatedContent }) => {
+export const Leftsidenav = ({articleContent, relatedContent}) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
@@ -24,20 +24,20 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
         pb="50px"
         pt={'82px'}
         __css={{
-          "&::-webkit-scrollbar": {
-            w: "1",
+          '&::-webkit-scrollbar': {
+            w: '1',
           },
-          "&::-webkit-scrollbar-track": {
-            w: "6",
+          '&::-webkit-scrollbar-track': {
+            w: '6',
           },
-          "&::-webkit-scrollbar-thumb": {
-            borderRadius: "10",
+          '&::-webkit-scrollbar-thumb': {
+            borderRadius: '10',
             bg: `transparent`,
           },
         }}
       >
         {/* <Box overflowY={'scroll'}> */}
-        <Text className="article_text" color="white !important" >
+        <Text className="article_text" color="white !important">
           In this article
         </Text>
         <Flex mt="20px" direction={'column'} align={'stretch'}>
@@ -66,7 +66,7 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
                 fontSize={'14px'}
                 fontWeight={content.check ? 500 : 400}
                 // color={content.check ? '#4545FE' : '#606060'}
-                color={content.check ? '#FF0' : '#DDD'}
+                color={content.check ? '#FF0 !important' : '#DDD'}
               >
                 <a href={`#${content.id}`}>{content?.title}</a>
               </Text>
@@ -76,28 +76,23 @@ export const Leftsidenav = ({articleContent, relatedContent }) => {
 
         {relatedContent ? (
           <>
-          <Text
-          className="article_text"
-          mt="40px"
-          color="white !important"
-          
-        >
-          Related Content
-        </Text>
-        <VStack mt="20px" spacing={'23px'} align="stretch">
-          {relatedContent.map(content => (
-            <Flex columnGap="16px" align={'center'}>
-              <Image src={file} w="14px" h="18px" />
-              <Link to={content.link}>
-                <Text fontSize={'14px'} color="#DDD">
-                  {content.text}
-                </Text>
-              </Link>
-            </Flex>
-          ))}
-        </VStack>
+            <Text className="article_text" mt="40px" color="white !important">
+              Related Content
+            </Text>
+            <VStack mt="20px" spacing={'23px'} align="stretch">
+              {relatedContent.map(content => (
+                <Flex columnGap="16px" align={'center'}>
+                  <Image src={file} w="14px" h="18px" />
+                  <Link to={content.link}>
+                    <Text fontSize={'14px'} color="#DDD">
+                      {content.text}
+                    </Text>
+                  </Link>
+                </Flex>
+              ))}
+            </VStack>
           </>
-        ): null}
+        ) : null}
         {/* </Box> */}
       </Box>
     </Show>

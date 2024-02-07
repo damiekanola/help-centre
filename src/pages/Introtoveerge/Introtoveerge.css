@@ -7,7 +7,7 @@
   }
 
   .head_ {
-    font-family: euclid-semibold;
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -29,7 +29,7 @@
 
   .content_head {
     min-height: 30px;
-    font-family: euclid-semibold;
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -57,7 +57,7 @@
 
   .content {
     max-width: 621px;
-    font-family: euclid-light;
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -66,7 +66,7 @@
   }
 
   .blog_content {
-    /* font-family: euclid-light;
+    /* font-family: euclid;
     font-style: normal;
     font-size: 16px;
     line-height: 160%;
@@ -197,7 +197,7 @@
   }
 
   .head_ {
-    font-family: euclid-semibold;
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -221,7 +221,7 @@
 
   .content_head {
     min-height: 30px;
-    font-family: euclid-semibold;
+    font-family: euclid;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -249,7 +249,7 @@
 
   .content {
     max-width: 621px;
-    font-family: euclid-light;
+    font-family: euclid;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -258,7 +258,7 @@
   }
 
   .blog_content {
-    /* font-family: euclid-light;
+    /* font-family: euclid;
     font-style: normal;
     font-size: 16px;
     line-height: 160%;

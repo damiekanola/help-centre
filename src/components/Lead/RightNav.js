@@ -7,7 +7,7 @@ const LeadRightNav = () => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        bg="#F9FAFB"
+        // bg="#F9FAFB"
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         position={'fixed'}
         h="fit-content"
@@ -17,7 +17,6 @@ const LeadRightNav = () => {
         w={'23%'}
         px="30px"
         pb="50px"
-        
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -31,12 +30,7 @@ const LeadRightNav = () => {
           },
         }}
       >
-        <Text
-          fontSize={'24px'}
-          letterSpacing={'3px'}
-          color={'white !important'}
-          
-        >
+        <Text fontSize={'24px'} letterSpacing={'3px'} color={'white !important'}>
           Leads & Account
         </Text>
         <VStack mt="30px" spacing={'27px'} align="stretch">

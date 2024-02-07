@@ -62,25 +62,49 @@ const Lead_management = () => {
 
         <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
           <Box />
-          <Box>
-            <Text mb="15px" fontWeight={400} color="#FFF" alignSelf={'center'} fontSize="24px">
+          <Box color={'white'}>
+            <Text
+              mb="15px"
+              fontWeight={400}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="24px"
+            >
               Features
             </Text>
             <Text fontWeight={500} color="#FFF" w="full" alignSelf={'center'} fontSize="36px">
               Leads management system
             </Text>
-            <Text mt="15px" fontWeight={300} color="#FFF" alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="15px"
+              fontWeight={300}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="14px"
+            >
               Revenue is the lifeblood of your business's success.
             </Text>
-            <Text mt="45px" fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="45px"
+              fontWeight={500}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="14px"
+            >
               By Veerge Team
             </Text>
-            <Text mt="15px" fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
+            <Text
+              mt="15px"
+              fontWeight={500}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="14px"
+            >
               June 22, 2023
             </Text>
           </Box>
           <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
+            <Text fontWeight={500} color="#FFF !important" alignSelf={'center'} fontSize="14px">
               5 mins read
             </Text>
             <Flex align={'center'} gap="4px">
