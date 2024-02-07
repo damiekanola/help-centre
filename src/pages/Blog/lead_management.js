@@ -66,13 +66,7 @@ const Lead_management = () => {
             <Text mb="15px" fontWeight={400} color="#FFF" alignSelf={'center'} fontSize="24px">
               Features
             </Text>
-            <Text
-              fontFamily="euclid-semibold"
-              color="#FFF"
-              w="full"
-              alignSelf={'center'}
-              fontSize="36px"
-            >
+            <Text fontWeight={500} color="#FFF" w="full" alignSelf={'center'} fontSize="36px">
               Leads management system
             </Text>
             <Text mt="15px" fontWeight={300} color="#FFF" alignSelf={'center'} fontSize="14px">
@@ -114,12 +108,12 @@ const Lead_management = () => {
         </Box> */}
         <Box
           w={'95%'}
-          maxW={{base: '587px', xl: '45%'}}
-          minW={{base: '0px', xl: '45%'}}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
           mx="auto"
           mt="58px"
           pb="70px"
-          fontFamily="euclid-light"
+          fontWeight={200}
           fontSize="16px"
         >
           <Box ref={overviewRef} id="overview">
@@ -141,8 +135,8 @@ const Lead_management = () => {
             </Text>
           </Box>
           <Box ref={benefitRef} id="benefit">
-            <Text mt="30px" fontFamily="euclid-semibold" fontSize={'20px'} color="#000">
-              Enter the star of the show: a scalable lead management system.{' '}
+            <Text mt="30px" fontWeight={500} fontSize={'20px'} color="#000">
+              Enter the star of the show: a scalable lead management system.
             </Text>
             <Box mt="30px">
               <Text>

@@ -277,9 +277,9 @@ export const Searchbar = () => {
                             align="center"
                             onClick={onClose}
                           >
-                            <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
+                            <Text fontSize={'14px'} textAlign={'left'}>
                               {isHomePage && `${pageTitle}:`}
-                              <Text fontFamily={'euclid-medium'} fontSize={'17px'} as="span">
+                              <Text  fontSize={'17px'} as="span">
                                 {' '}
                                 {title}
                               </Text>
@@ -383,9 +383,9 @@ export const Searchbar = () => {
                           align="center"
                           onClick={onClose}
                         >
-                          <Text fontFamily={'euclid'} fontSize={'14px'} textAlign={'left'}>
+                          <Text fontSize={'14px'} textAlign={'left'}>
                             {isHomePage && `${pageTitle}:`}
-                            <Text fontFamily={'euclid-medium'} fontSize={'17px'} as="span">
+                            <Text  fontSize={'17px'} as="span">
                               {' '}
                               {title}
                             </Text>

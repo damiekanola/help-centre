@@ -13,7 +13,6 @@ export const Rightsidenav = ({ relatedContent = sample }) => {
   return (
     <Show breakpoint="(min-width: 769px)">
       <Box
-        fontFamily='euclid'
         bg='#232425'
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         position={'fixed'} h='fit-content' maxH='70vh'
@@ -35,15 +34,15 @@ export const Rightsidenav = ({ relatedContent = sample }) => {
         }}
       >
         {/* <Box overflowY={'scroll'}> */}
-        <Text className="article_text" mt="40px" fontFamily={'euclid-medium'}>
+        <Text className="article_text" mt="40px" >
           Related Content
         </Text>
-        <VStack fontFamily='euclid' mt='20px' spacing={'23px'} align='stretch'>
+        <VStack mt='20px' spacing={'23px'} align='stretch'>
           {relatedContent.map(content => (
             <Flex columnGap="16px" align={'center'}>
               <Image src={file} w='14px' h='18px' />
               <Link to={content.link}>
-                <Text fontSize={'14px'} fontFamily={'euclid'}>{content.text}</Text>
+                <Text fontSize={'14px'}>{content.text}</Text>
               </Link>
             </Flex>
           ))}

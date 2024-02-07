@@ -40,7 +40,7 @@ export const Blog = () => {
           justify={'space-between'}
           mb="30px"
         >
-          <Text fontFamily={'euclid-medium'} fontSize={'36px'} mb="20px" color="#191919">
+          <Text fontWeight={'300'} fontSize={'36px'} mb="20px" color="#191919">
             Most Read
           </Text>
           <HStack spacing={'15px'}>
@@ -128,12 +128,7 @@ export const Blog = () => {
                       </Text>
                     </Flex>
                   </HStack>
-                  <Text
-                    my="10px"
-                    fontSize={'20px'}
-                    fontFamily={'euclid-semibold'}
-                    color={'#101828'}
-                  >
+                  <Text my="10px" fontSize={'20px'} fontWeight={500} color={'#101828'}>
                     {detail.title}
                   </Text>
                   <Box w="fit-content" bg="#4545FE1A" borderRadius="full" px="8px" py="2px">
@@ -156,7 +151,7 @@ export const Blog = () => {
           justify={'space-between'}
           mb="30px"
         >
-          <Text fontFamily={'euclid-medium'} fontSize={'36px'} mb="20px" color="#191919">
+          <Text fontWeight={'300'} fontSize={'36px'} mb="20px" color="#191919">
             Most Recent
           </Text>
           <HStack spacing={'15px'}>
@@ -244,12 +239,7 @@ export const Blog = () => {
                       </Text>
                     </Flex>
                   </HStack>
-                  <Text
-                    my="10px"
-                    fontSize={'20px'}
-                    fontFamily={'euclid-semibold'}
-                    color={'#101828'}
-                  >
+                  <Text my="10px" fontSize={'20px'} fontWeight={500} color={'#101828'}>
                     {detail.title}
                   </Text>
                   <Box w="fit-content" bg="#4545FE1A" borderRadius="full" px="8px" py="2px">

@@ -26,15 +26,15 @@ const QuestionsAndReplies = ({ questions, white }) => {
                 </Center>
               )}
               <VStack align={'stretch'} w='70%' spacing={'2px'}>
-                <Text fontSize={'16px'} fontFamily='euclid-semibold'>
+                <Text fontSize={'16px'} fontWeight={500}>
                   {question?.name}
                 </Text>
-                <Text fontFamily={'euclid-light'} fontSize={'12px'} fontWeight={300} noOfLines={1}>
+                <Text  fontSize={'12px'} fontWeight={300} noOfLines={1}>
                   {question?.date}
                 </Text>
               </VStack>
             </Flex>
-            <Text fontFamily={'euclid'} mt='17px' fontSize={'12px'}>{question?.content}</Text>
+            <Text mt='17px' fontSize={'12px'}>{question?.content}</Text>
             <Box
               mt='22px'
               p={'1rem'}
@@ -48,16 +48,16 @@ const QuestionsAndReplies = ({ questions, white }) => {
                           <Image w='30px' h='30px' borderRadius={'full'} src={veerge_support} />
                         </Center>
                       <VStack align={'stretch'} w='70%' spacing={'1px'}>
-                        <Text  fontSize={'16px'} fontFamily='euclid-semibold'>
+                        <Text  fontSize={'16px'} fontWeight={500}>
                           Veerge Support
                         </Text>
-                        <Text fontSize={'12px'} fontFamily={'euclid-light'} noOfLines={1}>
+                        <Text fontSize={'12px'}  noOfLines={1}>
                           {question?.date}
                         </Text>
                       </VStack>
                     </Flex>
                   </Box>
-                  <Text fontFamily={'euclid-light'} mt='17px' fontSize={'12px'}>{reply}</Text>
+                  <Text  mt='17px' fontSize={'12px'}>{reply}</Text>
                 </>
               ))}
             </Box>

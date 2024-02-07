@@ -1,5 +1,5 @@
 @font-face {
-  font-family: euclid-light;
+  font-family: Euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ Light.ttf);
   font-weight: 200;
   font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: euclid-medium;
+  font-family: Euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ Medium.ttf);
   font-weight: 300;
   font-display: swap;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: euclid;
+  font-family: Euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ Regular.ttf);
   font-weight: 400;
   font-display: swap;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: euclid-semibold;
+  font-family: Euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ SemiBold.ttf);
   font-weight: 500;
   font-display: swap;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: euclid-bold;
+  font-family: Euclid;
   src: url(assets/fonts/Euclid\ Circular\ B\ Bold.ttf);
   font-weight: 600;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: euclid-medium, euclid-light, euclid, euclid-semibold, euclid-bold !important;
+  font-family: Euclid !important;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;

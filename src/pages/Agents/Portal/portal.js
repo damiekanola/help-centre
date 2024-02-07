@@ -40,7 +40,7 @@ export const AgentPortal = () => {
         <Text
           textTransform={"uppercase"}
           fontSize={"24px"}
-          fontFamily="euclid-bold"
+          fontWeight={600}
           mb="10px"
           lineHeight={"2.1rem"}
         >
