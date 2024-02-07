@@ -57,9 +57,7 @@ const Lead_management = () => {
         >
           <SlArrowLeft fontSize={'20px'} />
         </Center>
-
         <Image h="full" w="468px" src={lead_management} bgPosition={'center'} bgSize={'cover'} />
-
         <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
           <Box />
           <Box color={'white'}>
@@ -126,10 +124,6 @@ const Lead_management = () => {
       </Flex>
       <Box px={'78px'}>
         <BlogLeftNav articleContent={articleContent} />
-
-        {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
-          <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
-        </Box> */}
         <Box
           w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
@@ -173,7 +167,7 @@ const Lead_management = () => {
             <Box mt="30px">
               <Text>
                 Here’s the catch: Only a handful of property development pros have managed to unlock
-                the treasure chest of unified customer data. The result? Crafting top tier digital
+                the treasure chest of unified customer data. The result? Crafting top tier digital
                 experiences becomes a bit like solving a puzzle with missing pieces. This challenge
                 often stems from data silos—those sneaky dividers that create gaps between sales,
                 marketing, customer service, and the product gang. But lo and behold, Veerge strides

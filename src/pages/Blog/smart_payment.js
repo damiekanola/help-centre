@@ -29,7 +29,6 @@ const Smart_payment = () => {
         maxH={'100vh'}
         h={'500px'}
         position={'relative'}
-        // color={'white'}
         overflowY={'hidden'}
       >
         <Center

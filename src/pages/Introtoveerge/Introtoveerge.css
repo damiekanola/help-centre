@@ -65,15 +65,6 @@
     color: #000;
   }
 
-  .blog_content {
-    /* font-family: euclid;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 160%;
-    color: #000; */
-  }
-
-  /* The sidebar menu */
   .rightsidenav {
     overflow-y: scroll;
     height: 100%;
@@ -114,16 +105,13 @@
   }
 
   ul.navigation_ li:after {
-    /* bullets */
     content: url('../../assets/icons/bullet.png');
     position: absolute;
     left: 2px;
-    /*adjust manually*/
     top: 0px;
   }
 
   ul.navigation_ li:before {
-    /* lines */
     content: '';
     position: absolute;
     left: 4.5px;
@@ -133,15 +121,11 @@
   }
 
   ul.navigation_ li:first-child:before {
-    /* first li's line */
     top: 8px;
-    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.navigation_ li:last-child:before {
-    /* last li's line */
     height: 8px;
-    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 
   ul.bluenav li {
@@ -153,16 +137,13 @@
   }
 
   ul.bluenav li:after {
-    /* bullets */
     content: url('../../assets/icons/bullet_active.png ');
     position: absolute;
     left: 2px;
-    /*adjust manually*/
     top: 0px;
   }
 
   ul.bluenav li:before {
-    /* lines */
     content: '';
     position: absolute;
     left: 4.5px;
@@ -172,15 +153,11 @@
   }
 
   ul.bluenav li:first-child:before {
-    /* first li's line */
     top: 8px;
-    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.bluenav li:last-child:before {
-    /* last li's line */
     height: 8px;
-    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 }
 
@@ -257,15 +234,6 @@
     color: #000;
   }
 
-  .blog_content {
-    /* font-family: euclid;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 160%;
-    color: #000; */
-  }
-
-  /* The sidebar menu */
   .rightsidenav {
     overflow-y: scroll;
     min-height: 751px;
@@ -273,7 +241,6 @@
     max-width: 282px;
     width: 100%;
     position: fixed;
-    /* top: 149px; */
     left: 0;
     overflow-x: hidden;
     padding-top: 82px;
@@ -313,16 +280,13 @@
   }
 
   ul.navigation_ li:after {
-    /* bullets */
     content: url('../../assets/icons/bullet.png');
     position: absolute;
     left: 2px;
-    /*adjust manually*/
     top: 0px;
   }
 
   ul.navigation_ li:before {
-    /* lines */
     content: '';
     position: absolute;
     left: 4.5px;
@@ -332,15 +296,11 @@
   }
 
   ul.navigation_ li:first-child:before {
-    /* first li's line */
     top: 8px;
-    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.navigation_ li:last-child:before {
-    /* last li's line */
     height: 8px;
-    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 
   ul.bluenav li {
@@ -352,16 +312,13 @@
   }
 
   ul.bluenav li:after {
-    /* bullets */
     content: url('../../assets/icons/bullet_active.png ');
     position: absolute;
     left: 2px;
-    /*adjust manually*/
     top: 0px;
   }
 
   ul.bluenav li:before {
-    /* lines */
     content: '';
     position: absolute;
     left: 4.5px;
@@ -371,14 +328,10 @@
   }
 
   ul.bluenav li:first-child:before {
-    /* first li's line */
     top: 8px;
-    /* moves the line down so that it disappears under the bullet. Adjust manually */
   }
 
   ul.bluenav li:last-child:before {
-    /* last li's line */
     height: 8px;
-    /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
   }
 }

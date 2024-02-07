@@ -13,7 +13,6 @@ import {
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import {SlArrowRight} from 'react-icons/sl';
-import {GrHomeRounded} from 'react-icons/gr';
 import {MdSubdirectoryArrowLeft} from 'react-icons/md';
 import {CiSearch} from 'react-icons/ci';
 import {helpSearchData, blogSearchData} from './data';
@@ -42,7 +41,6 @@ export const Searchbar = () => {
     setSearchFilteredData(dataTouse);
   }, [currLocation]);
 
-  // const isWHite = currLocation === '/users_experience'
   const isWHite = currLocation.startsWith('/blog') ? false : true;
 
   const handleCurrentRoute = () => {
@@ -195,30 +193,13 @@ export const Searchbar = () => {
               align="center"
               maxW="300px"
               h="43px"
-              // bg="transparent"
-              // border=" 1px solid #C3C4FC"
               borderRadius=" 12px"
               px="10px"
               onClick={onOpen}
               cursor={'pointer'}
-              // bg={isWHite ? '#0D0D0D' : '#ffffff'}
               bg={'transparent'}
               border={!isWHite ? '1px solid black' : '1px solid white'}
-              // color={'black'}
             >
-              {/* <Input
-                placeholder="Search for a topic"
-                type="text"
-                border="none"
-                FontWeight="400"
-                fontSize="12px"
-                lineHeight="15px"
-                color="#606060"
-                onClick={onOpen}
-                _focusVisible={{
-                  border: "none",
-                }}
-              /> */}
               <CiSearch
                 color={isWHite ? 'white' : 'black'}
                 style={{width: '25px', height: '25px'}}
@@ -315,19 +296,6 @@ export const Searchbar = () => {
             onClick={onOpen}
             cursor={'pointer'}
           >
-            {/* <Input
-              placeholder="Search for a topic"
-              type="text"
-              border="none"
-              FontWeight="400"
-              fontSize="12px"
-              lineHeight="15px"
-              color="#606060"
-              onClick={onOpen}
-              _focusVisible={{
-                border: "none",
-              }}
-            /> */}
             <CiSearch style={{width: '25px', height: '25px'}} />
           </Flex>
         </form>
@@ -394,7 +362,6 @@ export const Searchbar = () => {
                               {title}
                             </Text>
                           </Text>
-
                           <MdSubdirectoryArrowLeft />
                         </Flex>
                       </Link>

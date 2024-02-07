@@ -56,7 +56,6 @@ const Inventory = () => {
         >
           <SlArrowLeft fontSize={'20px'} />
         </Center>
-
         <Image
           h="full"
           w="468px"
@@ -64,7 +63,6 @@ const Inventory = () => {
           bgPosition={'center'}
           bgSize={'cover'}
         />
-
         <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
           <Box />
           <Box>
@@ -98,10 +96,6 @@ const Inventory = () => {
       </Flex>
       <Box px={'78px'}>
         <BlogLeftNav articleContent={articleContent} />
-
-        {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
-          <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
-        </Box> */}
         <Box w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}

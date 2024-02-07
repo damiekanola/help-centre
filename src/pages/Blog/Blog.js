@@ -8,9 +8,6 @@ import {handleIconType} from '../../utils/handleIconType';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
 
 export const Blog = () => {
-  // useEffect(() => {
-  //   document.title = 'Blog';
-  // }, []);
   const [scrollPosition1, setScrollPosition1] = useState(0);
   const [scrollPosition2, setScrollPosition2] = useState(0);
 

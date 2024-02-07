@@ -1,11 +1,10 @@
 .routes_container {
   width: 100%;
   margin: 0 auto;
-  /* background-color: #0d0d0d; */
   height: fit-content;
   position: relative;
-  /* color: white; */
 }
+
 body {
   height: 100%;
 }
@@ -14,18 +13,11 @@ html {
   background-color: var(--global-background);
 }
 
-/* body,
-html,
-.main {
-  background: #0d0d0d;
-} */
 .help_centre_pages {
   background: #0d0d0d;
   color: #ddd !important;
 }
-/* .help_centre_pages .main {
-  background: #0d0d0d;
-} */
+
 .help_centre_pages .head_,
 .help_centre_pages .content_head {
   color: white;
@@ -62,8 +54,4 @@ html,
 .hide_scroll::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-}
-
-.chakra-text {
-  /* color: white; */
 }
