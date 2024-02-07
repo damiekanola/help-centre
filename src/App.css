@@ -1,22 +1,47 @@
-.help_container {
+.routes_container {
   width: 100%;
   margin: 0 auto;
-  background-color: #0D0D0D;
+  /* background-color: #0d0d0d; */
   height: fit-content;
   position: relative;
-  color: white;
+  /* color: white; */
 }
 
-body, html, .main {
-  background: #0D0D0D;
+body,
+html,
+.main {
+  /* background: #0d0d0d; */
 }
-.head_,
-.content_head {
+.help_centre_pages {
+  background: #0d0d0d;
+  color: #ddd;
+}
+.help_centre_pages .head_,
+.help_centre_pages .content_head {
   color: white;
 }
-p,
-.publish {
-  color: #ddd;
+.help_centre_pages .publish {
+}
+
+.blog_pages {
+  background-color: white;
+  color: black !important;
+}
+
+.blog_pages .head,
+.blog_pages .content_head {
+  color: black;
+}
+
+.blog_pages .publish {
+  color: black;
+}
+
+.blog_pages .blog_text_content {
+  width: 90%;
+  margin: auto;
+  max-width: 587px;
+  margin: 0rem auto;
 }
 
 .hide_scroll::-webkit-scrollbar {
@@ -24,6 +49,6 @@ p,
   background: transparent;
 }
 
-.chakra-text { 
-  color: white ;
+.chakra-text {
+  /* color: white; */
 }
