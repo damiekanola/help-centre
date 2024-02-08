@@ -1,4 +1,4 @@
-import { Center, Flex, Image, Box, Text } from '@chakra-ui/react'
+import { Center, Flex, Image, Box, Text, useBreakpointValue } from '@chakra-ui/react'
 import React, { useEffect, useRef } from 'react';
 import { SlArrowLeft } from 'react-icons/sl';
 import { CiInstagram } from 'react-icons/ci';
@@ -22,7 +22,7 @@ const Fractional_ownership = () => {
 
   const a_ticketCheck = useIsInViewport(overviewRef);
   const howCheck = useIsInViewport(howRef)
-
+  const shareText = useBreakpointValue({base: 'Share this article', md: '5 mins read'});
 
   const articleContent = [
     { check: a_ticketCheck, id: 'overview', title: 'Overview' },
@@ -31,7 +31,18 @@ const Fractional_ownership = () => {
 
   return (
     <Box p='0'>
-      <Flex direction={'row'} align={'stretch'} py='0' gap='70px' pr='78px' pl='150px' mt='150px' w='full' bg={'#491A8F'} maxH={'100vh'} h={'500px'} position={'relative'}>
+      <Flex direction={{base: 'column-reverse', md: 'row'}}
+        align={'stretch'}
+        py="0"
+        gap={{md: '70px'}}
+        pr={{md: '78px'}}
+        pl={{md: '150px'}}
+        mt={{md: '150px'}}
+        w="full" bg={{md: '#491A8F'}} maxH={{md: '100vh'}}
+        h={{md: '500px'}}
+        position={'relative'}
+        overflowY={'hidden'}
+        justifyContent={'center'}>
         <Center
           onClick={() => navigate("/blog")}
           position={'absolute'} top='20px'
@@ -45,30 +56,81 @@ const Fractional_ownership = () => {
         <Image
           h='full' w='468px'
           src={fractional_ownership}
-          bgPosition={'center'} bgSize={'cover'}
+          bgPosition={'center'}
+          bgSize={'cover'}
+          objectFit={'cover'}
+          alignSelf={'center'}
+          p={{base: 4, md: 0}}
         />
 
-        <Flex h='full' direction={'column'} align={'stretch'} justify={'space-between'} w='full'>
+        <Flex
+          h="full"
+          direction={'column'}
+          align={'stretch'}
+          justify={'space-between'}
+          w="full"
+          mt={{base: '5rem', md: 0}}
+          padding={{base: '1rem 2rem', lg: 0}}
+          gap={{base: 6, md: 0}}
+        >
 
           <Box />
-          <Box>
-            <Text mb='15px' fontWeight={400} color='#FFF' alignSelf={'center'} fontSize='24px'>Peaks</Text>
-            <Text fontWeight={500} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+          <Box
+            display={{base: 'flex', md: 'block'}}
+            flexDirection={'column'}
+            gap={{base: 6, md: 0}}
+          >
+            <Text mb='15px' fontWeight={400} color='#FFF' alignSelf={'center'} fontSize='24px' display={{base: 'none', md: 'block'}}>Peaks</Text>
+            <Text
+              fontWeight={500}
+              w="full"
+              alignSelf={{md: 'center'}}
+              fontSize="36px"
+              color={{base: '#191919 !important', md: 'black !important'}}
+              lineHeight={{base: '40px', md: 'normal'}}
+            >
               Fractional Ownership
             </Text>
-            <Text mt='15px' fontWeight={300} color='#FFF' w='80%' alignSelf={'center'} fontSize='14px'>
+            <Text mt='15px' fontWeight={300} color='#FFF' w='80%' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
               If fractional ownership is such a game-changer, why are so many startups still struggling with it?
             </Text>
-            <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
+            <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
               By Veerge Team
             </Text>
-            <Text mt='15px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              January 21, 2023
-            </Text>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+              <Text
+                mt={{md: '15px'}}
+                fontWeight={500}
+                alignSelf={'center'}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'black !important'}}
+              >
+                January 21, 2023
+              </Text>
+              <Text
+                fontWeight={500}
+                fontSize="14px"
+                color={'#3D3D3D !important'}
+                display={{md: 'none'}}
+              >
+                5 mins read
+              </Text>
+            </Flex>
           </Box>
-          <Flex w='full' justify={'space-between'} align={'center'} pb='10px'>
-            <Text fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px'>
-              5 mins read
+          <Flex
+            w="full"
+            justify={'space-between'}
+            align={{md: 'center'}}
+            pb="10px"
+            direction={{base: 'column', md: 'row'}}
+          >
+            <Text
+              fontWeight={{md: 500}}
+              alignSelf={{md: 'center'}}
+              fontSize="14px"
+              color={{base: '#3D3D3D !important', md: 'black !important'}}
+            >
+              {shareText}
             </Text>
             <Flex align={'center'} gap='4px'>
               <Center
