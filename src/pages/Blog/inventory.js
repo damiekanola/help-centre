@@ -1,4 +1,4 @@
-import {Center, Flex, Image, Box, OrderedList, Text} from '@chakra-ui/react';
+import {Center, Flex, Image, Box, OrderedList, Text, useBreakpointValue} from '@chakra-ui/react';
 import React, {useEffect, useRef} from 'react';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
@@ -25,22 +25,25 @@ const Inventory = () => {
     {check: overviewCheck, id: 'overview', title: 'Overview'},
     {check: benefitCheck, id: 'benefit', title: 'Benefits of this system'},
   ];
+  const shareText = useBreakpointValue({base: 'Share this article', md: '5 mins read'});
 
   return (
     <Box p="0">
       <Flex
-        direction={'row'}
+        direction={{base: 'column-reverse', md: 'row'}}
         align={'stretch'}
         py="0"
-        gap="70px"
-        pr="78px"
-        pl="150px"
-        mt="150px"
+        gap={{md: '70px'}}
+        pr={{md: '78px'}}
+        pl={{md: '150px'}}
+        mt={{md: '150px'}}
         w="full"
-        bg={'#407BFF'}
-        maxH={'100vh'}
-        h={'500px'}
+        bg={{md: '#407BFF'}}
+        maxH={{md: '100vh'}}
+        h={{md: '500px'}}
         position={'relative'}
+        overflowY={'hidden'}
+        justifyContent={'center'}
       >
         <Center
           onClick={() => navigate('/blog')}
@@ -57,25 +60,73 @@ const Inventory = () => {
           <SlArrowLeft fontSize={'20px'} />
         </Center>
         <Image
-          h="full"
-          w="468px"
+          h={{base: '300px', md: 'full'}}
+          w={{base: 'full', md: '468px'}}
           src={inventory_management}
           bgPosition={'center'}
           bgSize={'cover'}
         />
-        <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
+        <Flex
+          h="full"
+          direction={'column'}
+          align={'stretch'}
+          justify={'space-between'}
+          w="full"
+          mt={{base: '5rem', md: 0}}
+          padding={{base: '1rem 2rem', lg: 0}}
+          gap={{base: 6, md: 0}}
+        >
           <Box />
-          <Box>
-            <Text fontWeight={500} color='#FFF' w='full' alignSelf={'center'} fontSize='36px'>
+          <Box
+            display={{base: 'flex', md: 'block'}}
+            flexDirection={'column'}
+            color={{base: 'black', md: 'white !important'}}
+            gap={{base: 6, md: 0}}
+          >
+            <Text
+              fontWeight={500}
+              w="full"
+              alignSelf={'center'}
+              fontSize="36px"
+              color={{base: '#191919 !important', md: 'white !important'}}
+              lineHeight={{base: '40px', md: 'normal'}}
+            >
               Inventory Management system
             </Text>
-            <Text mt="45px" fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
-              April 04, 2023
-            </Text>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+              <Text
+                mt={{md: '15px'}}
+                fontWeight={500}
+                alignSelf={'center'}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'white !important'}}
+              >
+                April 04, 2023
+              </Text>
+              <Text
+                fontWeight={500}
+                fontSize="14px"
+                color={'#3D3D3D !important'}
+                display={{md: 'none'}}
+              >
+                5 mins read
+              </Text>
+            </Flex>
           </Box>
-          <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
-              5 mins read
+          <Flex
+            w="full"
+            justify={'space-between'}
+            align={{md: 'center'}}
+            pb="10px"
+            direction={{base: 'column', md: 'row'}}
+          >
+            <Text
+              fontWeight={{md: 500}}
+              alignSelf={{md: 'center'}}
+              fontSize="14px"
+              color={{base: '#3D3D3D !important', md: 'white !important'}}
+            >
+              {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
@@ -94,13 +145,24 @@ const Inventory = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'}>
+      <Box
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 8, md: 0}}
+       px={'80px'}
+      >
         <BlogLeftNav articleContent={articleContent} />
-        <Box w={'95%'}
+        <Box
+          w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
-          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
-          <Box ref={overviewRef} id='overview'>
+          mx="auto"
+          mt={{md: '58px'}}
+          pb="70px"
+          fontWeight={200}
+          fontSize="16px"
+        >
+          <Box ref={overviewRef} id="overview">
             <Text>
               Inventory management serves as the bedrock of efficient operations across all business
               sectors, including property development firms. Within the dynamic realm of property
@@ -121,12 +183,14 @@ const Inventory = () => {
               to streamlined operations and favorable outcomes.
             </Text>
           </Box>
-          <Box ref={benefitRef} id='benefit'>
-            <Text mt='30px' fontWeight={500} fontSize={'36px'} color='#000'>
+          <Box ref={benefitRef} id="benefit">
+            <Text mt="30px" fontWeight={500} fontSize={'36px'} color="#000">
               Benefits of this system
             </Text>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>1. Precise Allocation </Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                1. Precise Allocation{' '}
+              </Text>
               <Text>
                 By accurately tracking the availability of each unit type, property development
                 companies can ensure that clients are presented with up-to-date and accurate
@@ -134,40 +198,50 @@ const Inventory = () => {
                 customer trust.
               </Text>
             </Box>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>2. Optimized Pricing Strategies </Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                2. Optimized Pricing Strategies{' '}
+              </Text>
               <Text>
                 This system allows property developers to implement dynamic pricing strategies based
                 on demand, availability, and market trends. This ensures that unit types are priced
                 competitively, maximizing revenue potential.
               </Text>
             </Box>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>3. Customized Offerings </Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                3. Customized Offerings{' '}
+              </Text>
               <Text>
                 Property developers can use the insights from this system to tailor their offerings
                 to match market demand. This level of customization enhances the appeal of the
                 development to potential buyers or tenants.
               </Text>
             </Box>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>4. Accurate Sales Forecasting</Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                4. Accurate Sales Forecasting
+              </Text>
               <Text>
                 With real-time data on unit type availability and sales trends, property development
                 companies can create more accurate sales forecasts. This aids in resource planning,
                 budgeting, and overall project management.
               </Text>
             </Box>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>5. Customer Satisfaction</Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                5. Customer Satisfaction
+              </Text>
               <Text>
                 By presenting potential buyers or tenants with accurate and updated information
                 about available unit types, property developers enhance customer satisfaction. This
                 transparency builds trust and fosters positive relationships.
               </Text>
             </Box>
-            <Box mt='30px'>
-              <Text fontWeight={500} fontSize={'20px'} color='#000'>6.Project Performance Evaluation</Text>
+            <Box mt="30px">
+              <Text fontWeight={500} fontSize={'20px'} color="#000">
+                6.Project Performance Evaluation
+              </Text>
               <Text>
                 The inventory management system provides a clear picture of the popularity of
                 different unit types. This information is invaluable for evaluating the success of

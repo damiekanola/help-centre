@@ -1,4 +1,4 @@
-import {Center, Flex, Image, Box, Text, Link} from '@chakra-ui/react';
+import {Center, Flex, Image, Box, Text, Link, useBreakpointValue} from '@chakra-ui/react';
 import React, {useEffect, useRef} from 'react';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
@@ -13,23 +13,25 @@ const Smart_payment = () => {
   }, []);
 
   const navigate = useNavigate();
+  const shareText = useBreakpointValue({base: 'Share this article', md: '11 mins read'});
 
   return (
     <Box p="0">
       <Flex
-        direction={'row'}
+        direction={{base: 'column-reverse', md: 'row'}}
         align={'stretch'}
         py="0"
-        gap="70px"
-        pr="78px"
-        pl="150px"
-        mt="150px"
+        gap={{md: '70px'}}
+        pr={{md: '78px'}}
+        pl={{md: '150px'}}
+        mt={{md: '150px'}}
         w="full"
-        bg={'#0A0B08'}
-        maxH={'100vh'}
-        h={'500px'}
+        bg={{md: '#0A0B08'}}
+        maxH={{md: '100vh'}}
+        h={{md: '500px'}}
         position={'relative'}
         overflowY={'hidden'}
+        justifyContent={'center'}
       >
         <Center
           onClick={() => navigate('/blog')}
@@ -47,23 +49,41 @@ const Smart_payment = () => {
         </Center>
 
         <Image
-          h="full"
-          w="468px"
+          h={{base: '300px', md: 'full'}}
+          w={{base: 'full', md: '468px'}}
           src={smart_payment}
           bgPosition={'center'}
           bgSize={'cover'}
-          marginTop={'120px'}
+          marginTop={{md: '120px'}}
+          objectFit={'cover'}
+          alignSelf={'center'}
+          p={{base: 4, md: 0}}
         />
 
-        <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
+        <Flex
+          h="full"
+          direction={'column'}
+          align={'stretch'}
+          justify={'space-between'}
+          w="full"
+          mt={{base: '5rem', md: 0}}
+          padding={{base: '1rem 2rem', lg: 0}}
+          gap={{base: 6, md: 0}}
+        >
           <Box />
-          <Box color="white !important">
+          <Box
+            display={{base: 'flex', md: 'block'}}
+            flexDirection={'column'}
+            color={{base: 'black', md: 'white !important'}}
+            gap={{base: 6, md: 0}}
+          >
             <Text
               fontWeight={500}
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color="white !important"
+              color={{base: 'black', md: 'white !important'}}
+              lineHeight={{base: '40px', md: 'normal'}}
             >
               Smart Payment Plan
             </Text>
@@ -73,7 +93,8 @@ const Smart_payment = () => {
               w="80%"
               alignSelf={'center'}
               fontSize="14px"
-              color="white !important"
+              color={{base: 'black', md: 'white !important'}}
+              display={{base: 'none', md: 'flex'}}
             >
               We have Automated the conventional payment plan, the time has come to re-engineer it
             </Text>
@@ -82,23 +103,45 @@ const Smart_payment = () => {
               fontWeight={500}
               alignSelf={'center'}
               fontSize="14px"
-              color="white !important"
+              color={{base: 'black', md: 'white !important'}}
+              display={{base: 'none', md: 'flex'}}
             >
               By Ahmed Ibraheem
             </Text>
-            <Text
-              mt="15px"
-              fontWeight={500}
-              alignSelf={'center'}
-              fontSize="14px"
-              color="white !important"
-            >
-              September 25, 2023
-            </Text>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+              <Text
+                mt={{md: '15px'}}
+                fontWeight={500}
+                alignSelf={'center'}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'white !important'}}
+              >
+                September 25, 2023
+              </Text>
+              <Text
+                fontWeight={500}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'white !important'}}
+                display={{md: 'none'}}
+              >
+                11 mins read
+              </Text>
+            </Flex>
           </Box>
-          <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} alignSelf={'center'} fontSize="14px" color="white !important">
-              11 mins read
+          <Flex
+            w="full"
+            justify={'space-between'}
+            align={{md: 'center'}}
+            pb="10px"
+            direction={{base: 'column', md: 'row'}}
+          >
+            <Text
+              fontWeight={{md: 500}}
+              alignSelf={{md: 'center'}}
+              fontSize="14px"
+              color={{base: '#3D3D3D !important', md: 'white !important'}}
+            >
+              {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
@@ -123,7 +166,7 @@ const Smart_payment = () => {
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
           mx="auto"
-          mt="58px"
+          mt={'58px'}
           pb="70px"
           fontWeight={200}
           fontSize="16px"
