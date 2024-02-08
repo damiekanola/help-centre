@@ -76,6 +76,7 @@ export const BlogLeftNav = ({articleContent}) => {
           divider={isOpen && <StackDivider borderColor="#E4E4E4" />}
           border={'1px solid #E4E4E4'}
           borderRadius={'8px'}
+          mt={16}
         >
           <Flex align={'center'} justify={'space-between'} onClick={() => setIsOpen(!isOpen)}>
             <Text mb={'5px'} className="article_text" fontWeight={500}>
