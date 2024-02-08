@@ -47,10 +47,10 @@ export const VeergePlus = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} />
       <RightNav relatedContent={relatedContent} />
       <Text className="head_">VEERGE PLUS</Text>
       <Text className="publish">Published: Jul 21, 2023</Text>
+      <LeftNav articleContent={articleContent} />
       <Text className="content" lineHeight={'25px'} mt="20px">
         <Box mb="30px" id="personalize" ref={personalizeRef}>
           <Text

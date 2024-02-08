@@ -25,7 +25,7 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
   return (
     <Box
       position={{base: 'sticky', lg: 'fixed'}}
-      top={{base: '100px', lg: '149px'}}
+      top={{base: '100px', md: '160px', lg: '149px'}}
       w={{base: '100%', lg: '23%'}}
       left="0"
       minW={'300px'}
@@ -48,7 +48,7 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
               width={'100%'}
               bg="#232425"
               textAlign={'left'}
-              mt={'10px'}
+              my={'10px'}
               display={{base: 'block', lg: 'none'}}
               rightIcon={
                 <Image

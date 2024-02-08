@@ -48,10 +48,10 @@ const HomeOwnersPacket = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <LeadRightNav />
       <Text className="head_">HOME OWNER’S PACKET</Text>
       <Text className="publish">Published: March 26, 2023</Text>
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box id="how_to" ref={how_toRef}>
         <Text className="content" lineHeight={'25px'}>
           <Text as="p" marginTop={'30px'}>

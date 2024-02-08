@@ -20,10 +20,10 @@ export const VeergeThemes = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       {/* <LeadRightNav /> */}
       <Text className="head_">VEERGE THEMES</Text>
       <Text className="publish">Published: Aug 12, 2023</Text>
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Text className="content" lineHeight={'25px'} mt="50px">
         <Box mb="30px" id="veerge_theme" ref={veerge_themeRef}>
           <Text mt="30px" as="p" fontWeight={400}>
