@@ -49,7 +49,8 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
               bg="#232425"
               textAlign={'left'}
               my={'10px'}
-              display={{base: 'block', lg: 'none'}}
+              // display={{base: 'block', lg: 'none'}}
+              display={{base: 'none', lg: 'none'}}
               rightIcon={
                 <Image
                   src={down_arrow.src}
