@@ -161,10 +161,9 @@ export const Fisrttimesetup = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
-
       <Text className="head_">FIRST TIME SETUP</Text>
       <Text className="publish">Published: December 09, 2022</Text>
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box pt="30px" id="account" ref={accountRef}>
         <Text className="content_head">SETTING UP A VEERGE ACCOUNT</Text>
         <Text className="content">
