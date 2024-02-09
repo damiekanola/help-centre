@@ -1,4 +1,4 @@
-import {Center, Flex, Image, Box, OrderedList, Text} from '@chakra-ui/react';
+import {Center, Flex, Image, Box, OrderedList, Text, useBreakpointValue} from '@chakra-ui/react';
 import React, {useEffect, useRef} from 'react';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
@@ -13,22 +13,24 @@ const Understanding_fraction = () => {
   }, []);
 
   const navigate = useNavigate();
-
+  const shareText = useBreakpointValue({base: 'Share this article', md: '11 mins read'});
   return (
     <Box p="0">
       <Flex
-        direction={'row'}
+        direction={{base: 'column-reverse', md: 'row'}}
         align={'stretch'}
         py="0"
-        gap="70px"
-        pr="78px"
-        pl="150px"
-        mt="150px"
+        gap={{md: '70px'}}
+        pr={{md: '78px'}}
+        pl={{md: '150px'}}
+        mt={{md: '150px'}}
         w="full"
-        bg={'#C8B9E2'}
-        maxH={'100vh'}
-        h={'500px'}
+        bg={{md: '#C8B9E2'}}
+        maxH={{md: '100vh'}}
+        h={{md: '500px'}}
         position={'relative'}
+        overflowY={'hidden'}
+        justifyContent={'center'}
       >
         <Center
           onClick={() => navigate('/blog')}
@@ -46,26 +48,74 @@ const Understanding_fraction = () => {
         </Center>
 
         <Image
-          h="full"
-          w="468px"
+          h={{base: '300px', md: 'full'}}
+          w={{base: 'full', md: '468px'}}
           src={fractional_ownership}
           bgPosition={'center'}
           bgSize={'cover'}
         />
 
-        <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
+        <Flex
+          h="full"
+          direction={'column'}
+          align={'stretch'}
+          justify={'space-between'}
+          w="full"
+          mt={{base: '5rem', md: 0}}
+          padding={{base: '1rem 2rem', lg: 0}}
+          gap={{base: 6, md: 0}}
+        >
           <Box />
-          <Box>
-            <Text fontWeight={500} color='#191919' w='full' alignSelf={'center'} fontSize='36px'>
+          <Box
+            display={{base: 'flex', md: 'block'}}
+            flexDirection={'column'}
+            color={{base: 'black', md: 'white !important'}}
+            gap={{base: 6, md: 0}}
+          >
+            <Text
+              fontWeight={500}
+              w="full"
+              alignSelf={'center'}
+              fontSize="36px"
+              color="#191919"
+              lineHeight={{base: '40px', md: 'normal'}}
+            >
               Understanding Fractional Real Estate
             </Text>
-            <Text mt="45px" fontWeight={500} color="#191919" alignSelf={'center'} fontSize="14px">
-              December 16, 2022
-            </Text>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+              <Text
+                mt={{md: '15px'}}
+                fontWeight={500}
+                alignSelf={'center'}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'black !important'}}
+              >
+                December 16, 2022
+              </Text>
+              <Text
+                fontWeight={500}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'black !important'}}
+                display={{md: 'none'}}
+              >
+                11 mins read
+              </Text>
+            </Flex>
           </Box>
-          <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} color="#191919" alignSelf={'center'} fontSize="14px">
-              11 mins read
+          <Flex
+            w="full"
+            justify={'space-between'}
+            align={{md: 'center'}}
+            pb="10px"
+            direction={{base: 'column', md: 'row'}}
+          >
+            <Text
+              fontWeight={{md: 500}}
+              alignSelf={{md: 'center'}}
+              fontSize="14px"
+              color={{base: '#3D3D3D !important', md: 'black !important'}}
+            >
+              {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
@@ -85,12 +135,18 @@ const Understanding_fraction = () => {
         </Flex>
       </Flex>
       <Box px={'78px'}>
-        <Box w={'95%'}
+        <Box
+          w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
-          mx="auto" mt='58px' pb='70px' fontWeight={200} fontSize='16px'>
+          mx="auto"
+          mt={{md: '58px'}}
+          pb="70px"
+          fontWeight={200}
+          fontSize="16px"
+        >
           <Box>
-            <Text fontWeight={500} fontSize={'36px'} color='#000'>
+            <Text fontWeight={500} fontSize={'36px'} color="#000">
               OVERVIEW
             </Text>
             <Text mt="30px">
