@@ -1,26 +1,19 @@
 import {
   Box,
-  Show,
   Text,
   VStack,
   Image,
   Flex,
   Menu,
   MenuButton,
-  Button,
   MenuList,
   MenuItem,
 } from '@chakra-ui/react';
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import file from '../../assets/icons/file.png';
 import down_arrow from '../../assets/icons/down_arrow.svg';
 
-const sample = [
-  {link: '/first_time_setup', text: 'First time setup'},
-  {link: '/approved_what_next', text: 'Approved, what next?'},
-  {link: '/terms', text: 'Terms of service'},
-];
 export const Leftsidenav = ({articleContent, relatedContent}) => {
   return (
     <Box
@@ -32,7 +25,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
       bg="#232425"
     >
       <Menu
-        // bg="#232425"
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
       >
         {({isOpen}) => (
@@ -49,7 +41,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
               bg="#232425"
               textAlign={'left'}
               my={'10px'}
-              // display={{base: 'block', lg: 'none'}}
               display={{base: 'none', lg: 'none'}}
               rightIcon={
                 <Image
@@ -65,7 +56,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
               bg="#232425"
               borderRadius={'5px'}
               border={'1px solid var(--Stroke-dark-2, #323338)'}
-              // minWidth={'100% !important'}
               display={{base: 'block', lg: 'none'}}
               position={'absolute'}
               left={'0px'}
@@ -78,7 +68,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
                     w="10px"
                     h="10px"
                     borderRadius={'full'}
-                    // bg={content.check ? '#4545FE' : '#C3C4FC'}
                     bg={content.check ? '#FF0' : '#A4A486'}
                   />
                   <Text
@@ -88,7 +77,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
                     fontSize={'14px'}
                     flex={'1'}
                     fontWeight={content.check ? 500 : 400}
-                    // color={content.check ? '#4545FE' : '#606060'}
                     color={content.check ? '#FF0 !important' : '#DDD'}
                   >
                     <a href={`#${content.id}`}>{content?.title}</a>
@@ -105,9 +93,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
         maxH="70vh"
         overflowY={'scroll'}
         display={{base: 'none', lg: 'block'}}
-        // px="30px"
-        // pb="50px"
-        // pt={'82px'}
         padding={{base: '14px 16px', lg: '82px 30px 50px'}}
         __css={{
           '&::-webkit-scrollbar': {
@@ -122,7 +107,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
           },
         }}
       >
-        {/* <Box overflowY={'scroll'}> */}
         <Text className="article_text" color="white !important">
           In this article
         </Text>
@@ -131,7 +115,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
             <Flex
               key={i}
               cursor={'pointer'}
-              // borderLeft={i !== articleContent.length - 1 && '1px solid #C3C4FC'}
               borderLeft={i !== articleContent.length - 1 && '1px solid #A4A486'}
               pb="25px"
               justify="flex-start"
@@ -142,7 +125,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
                 w="10px"
                 h="10px"
                 borderRadius={'full'}
-                // bg={content.check ? '#4545FE' : '#C3C4FC'}
                 bg={content.check ? '#FF0' : '#A4A486'}
               />
               <Text
@@ -151,7 +133,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
                 ml="20px"
                 fontSize={'14px'}
                 fontWeight={content.check ? 500 : 400}
-                // color={content.check ? '#4545FE' : '#606060'}
                 color={content.check ? '#FF0 !important' : '#DDD'}
               >
                 <a href={`#${content.id}`}>{content?.title}</a>
@@ -179,7 +160,6 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
             </VStack>
           </Box>
         ) : null}
-        {/* </Box> */}
       </Box>
     </Box>
   );
