@@ -71,9 +71,9 @@ const Approved = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Text className="head_">APPROVED, WHAT NEXT?</Text>
       <Text className="publish">Published: January 06, 2023</Text>
+      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box id="approved" ref={approvedRef}>
         <Text className="content_head">MY ACCOUNT HAS BEEN APPROVED WHAT NEXT?</Text>
         <Text className="content">

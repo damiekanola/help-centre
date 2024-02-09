@@ -1,9 +1,15 @@
 @media only screen and (max-width: 768px) {
   .main {
-    width: 53.5%;
+    width: 100%;
     padding: 70px 20px;
     position: relative;
     top: 50px;
+  }
+  .users_experience {
+    width: 100%;
+    padding: 90px 20px;
+    margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   .head_ {
@@ -13,7 +19,7 @@
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.13em;
-    color: #000000;
+    /* color: #000000; */
     text-transform: uppercase;
   }
 
@@ -23,7 +29,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #606060;
+    /* color: #606060; */
     padding-bottom: 10px;
   }
 
@@ -35,7 +41,7 @@
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.1em;
-    color: #000000;
+    /* color: #000000; */
     padding-bottom: 5px;
     padding-top: 30px;
     text-transform: uppercase;
@@ -49,7 +55,7 @@
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0;
-    color: #000000;
+    /* color: #000000; */
     padding-bottom: 5px;
     padding-top: 20px;
     text-transform: capitalize;
@@ -62,7 +68,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #000;
+    /* color: #000; */
   }
 
   .rightsidenav {
@@ -84,7 +90,7 @@
   }
 
   .rightsidenav Link:hover {
-    color: #f1f1f1;
+    /* color: #f1f1f1; */
   }
 
   .article_text {
@@ -93,7 +99,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    color: #000000;
+    /* color: #000000; */
   }
 
   ul.navigation_ li {
@@ -164,6 +170,7 @@
 @media only screen and (min-width: 769px) {
   .main {
     width: 53.5%;
+    min-width: 700px;
     margin-right: 282px;
     margin-left: 337px;
     padding: 70px 5%;
@@ -173,6 +180,14 @@
     top: 100px;
   }
 
+  .users_experience {
+    width: 60%;
+    min-width: 800px;
+    padding: 70px 100px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
   .head_ {
     font-family: euclid;
     font-style: normal;
@@ -180,7 +195,7 @@
     font-size: 32px;
     line-height: 41px;
     letter-spacing: 0.1em;
-    color: #000000;
+    /* color: #000000; */
     padding-bottom: 15px;
     margin-top: 70px;
     text-transform: uppercase;
@@ -192,7 +207,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #606060;
+    /* color: #606060; */
     padding-bottom: 10px;
   }
 
@@ -204,7 +219,7 @@
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.1em;
-    color: #000000;
+    /* color: #000000; */
     padding-bottom: 5px;
     padding-top: 30px;
     text-transform: uppercase;
@@ -218,7 +233,7 @@
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0;
-    color: #000000;
+    /* color: #000000; */
     padding-bottom: 5px;
     padding-top: 20px;
     text-transform: capitalize;
@@ -231,7 +246,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #000;
+    /* color: #000; */
   }
 
   .rightsidenav {
@@ -244,7 +259,7 @@
     left: 0;
     overflow-x: hidden;
     padding-top: 82px;
-    background: #ffffff;
+    /* background: #ffffff; */
     display: flex;
     flex-direction: column;
     row-gap: 27px;
@@ -255,11 +270,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #606060;
+    /* color: #606060; */
   }
 
   .rightsidenav Link:hover {
-    color: #f1f1f1;
+    /* color: #f1f1f1; */
   }
 
   .article_text {
@@ -268,7 +283,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    color: #000000;
+    /* color: #000000; */
   }
 
   ul.navigation_ li {

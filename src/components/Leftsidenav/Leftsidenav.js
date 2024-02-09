@@ -1,7 +1,20 @@
-import {Box, Show, Text, VStack, Image, Flex} from '@chakra-ui/react';
+import {
+  Box,
+  Show,
+  Text,
+  VStack,
+  Image,
+  Flex,
+  Menu,
+  MenuButton,
+  Button,
+  MenuList,
+  MenuItem,
+} from '@chakra-ui/react';
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import file from '../../assets/icons/file.png';
+import down_arrow from '../../assets/icons/down_arrow.svg';
 
 const sample = [
   {link: '/first_time_setup', text: 'First time setup'},
@@ -10,19 +23,92 @@ const sample = [
 ];
 export const Leftsidenav = ({articleContent, relatedContent}) => {
   return (
-    <Show breakpoint="(min-width: 769px)">
-      <Box
-        bg="#232425"
+    <Box
+      position={{base: 'sticky', lg: 'fixed'}}
+      top={{base: '100px', md: '160px', lg: '149px'}}
+      w={{base: '100%', lg: '23%'}}
+      left="0"
+      minW={'300px'}
+      bg="#232425"
+    >
+      <Menu
+        // bg="#232425"
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-        position={'fixed'}
+      >
+        {({isOpen}) => (
+          <>
+            <MenuButton
+              padding={'20px'}
+              isActive={isOpen}
+              className="article_text"
+              color="white !important"
+              fontSize={'16px'}
+              borderRadius={'5px'}
+              border={'1px solid var(--Stroke-dark-2, #323338)'}
+              width={'100%'}
+              bg="#232425"
+              textAlign={'left'}
+              my={'10px'}
+              // display={{base: 'block', lg: 'none'}}
+              display={{base: 'none', lg: 'none'}}
+              rightIcon={
+                <Image
+                  src={down_arrow.src}
+                  alt="Down"
+                  style={isOpen ? {rotate: '180deg', transition: '.3s'} : {transition: '.3s'}}
+                />
+              }
+            >
+              {isOpen ? 'Table Of Content' : 'In This Article'}
+            </MenuButton>
+            <MenuList
+              bg="#232425"
+              borderRadius={'5px'}
+              border={'1px solid var(--Stroke-dark-2, #323338)'}
+              // minWidth={'100% !important'}
+              display={{base: 'block', lg: 'none'}}
+              position={'absolute'}
+              left={'0px'}
+              right={'0px'}
+            >
+              {articleContent.map((content, i) => (
+                <MenuItem key={i} bg="#232425" width={'100%'}>
+                  <Box
+                    ml="-5px"
+                    w="10px"
+                    h="10px"
+                    borderRadius={'full'}
+                    // bg={content.check ? '#4545FE' : '#C3C4FC'}
+                    bg={content.check ? '#FF0' : '#A4A486'}
+                  />
+                  <Text
+                    maxW={'80%'}
+                    mt="-5px"
+                    ml="20px"
+                    fontSize={'14px'}
+                    flex={'1'}
+                    fontWeight={content.check ? 500 : 400}
+                    // color={content.check ? '#4545FE' : '#606060'}
+                    color={content.check ? '#FF0 !important' : '#DDD'}
+                  >
+                    <a href={`#${content.id}`}>{content?.title}</a>
+                  </Text>
+                </MenuItem>
+              ))}
+            </MenuList>
+          </>
+        )}
+      </Menu>
+      <Box
+        boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         h="fit-content"
         maxH="70vh"
         overflowY={'scroll'}
-        left="0"
-        w={'23%'}
-        px="30px"
-        pb="50px"
-        pt={'82px'}
+        display={{base: 'none', lg: 'block'}}
+        // px="30px"
+        // pb="50px"
+        // pt={'82px'}
+        padding={{base: '14px 16px', lg: '82px 30px 50px'}}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -75,7 +161,7 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
         </Flex>
 
         {relatedContent ? (
-          <>
+          <Box display={{base: 'none', lg: 'block'}}>
             <Text className="article_text" mt="40px" color="white !important">
               Related Content
             </Text>
@@ -91,11 +177,11 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
                 </Flex>
               ))}
             </VStack>
-          </>
+          </Box>
         ) : null}
         {/* </Box> */}
       </Box>
-    </Show>
+    </Box>
   );
 };
 

@@ -65,11 +65,11 @@ export const CreateLeadAccount = () => {
 
   return (
     <div className="main">
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <LeadRightNav />
       <Box w="full">
         <Text className="head_">Create aN ACCOUNT</Text>
         <Text className="publish">Published: March 26, 2023</Text>
+        <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
         <Box id="how_to" ref={how_toRef}>
           <Text className="content" lineHeight={'25px'}>
             <Text as="p" marginTop={'30px'}>

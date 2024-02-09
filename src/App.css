@@ -27,6 +27,10 @@ html {
   color: #ddd;
 }
 
+.help_centre_pages .main li {
+  color: #ddd;
+}
+
 .blog_pages {
   background-color: white;
   color: black;

@@ -1,4 +1,13 @@
-import {Center, Flex, Image, Box, Text, UnorderedList, ListItem} from '@chakra-ui/react';
+import {
+  Center,
+  Flex,
+  Image,
+  Box,
+  Text,
+  UnorderedList,
+  ListItem,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import React, {useEffect, useRef} from 'react';
 import veergeNDdata from '../../assets/images/blog/veerge&data.png';
 import {SlArrowLeft} from 'react-icons/sl';
@@ -19,11 +28,11 @@ const Veerge_data = () => {
   const machine_leaningRef = useRef(null);
   const why_veergeRef = useRef(null);
   const conclusionRef = useRef(null);
-
   const overviewCheck = useIsInViewport(overviewRef);
   const machine_leaningCheck = useIsInViewport(machine_leaningRef);
   const why_veergeCheck = useIsInViewport(why_veergeRef);
   const conclusionCheck = useIsInViewport(conclusionRef);
+  const shareText = useBreakpointValue({base: 'Share this article', md: '5 mins read'});
 
   const articleContent = [
     {check: overviewCheck, id: 'overview', title: 'Overview'},
@@ -39,18 +48,20 @@ const Veerge_data = () => {
   return (
     <Box p="0">
       <Flex
-        direction={'row'}
+        direction={{base: 'column-reverse', md: 'row'}}
         align={'stretch'}
         py="0"
-        gap="70px"
-        pr="78px"
-        pl="150px"
-        mt="150px"
+        gap={{md: '70px'}}
+        pr={{md: '78px'}}
+        pl={{md: '150px'}}
+        mt={{md: '150px'}}
         w="full"
-        bg={'#1D6169'}
-        maxH={'100vh'}
-        h={'500px'}
+        bg={{md: '#1D6169'}}
+        maxH={{md: '100vh'}}
+        h={{md: '500px'}}
         position={'relative'}
+        overflowY={'hidden'}
+        justifyContent={'center'}
       >
         <Center
           onClick={() => navigate('/blog')}
@@ -66,28 +77,77 @@ const Veerge_data = () => {
         >
           <SlArrowLeft fontSize={'20px'} />
         </Center>
-
-        <Image h="full" w="468px" src={veergeNDdata} bgPosition={'center'} bgSize={'cover'} />
-
-        <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
-          <Box/>
-          <Box>
+        <Image
+          h={{base: '300px', md: 'full'}}
+          w={{base: 'full', md: '468px'}}
+          src={veergeNDdata}
+          bgPosition={'center'}
+          bgSize={'cover'}
+          objectFit={'cover'}
+          alignSelf={'center'}
+          p={{base: 4, md: 0}}
+        />
+        <Flex
+          h="full"
+          direction={'column'}
+          align={'stretch'}
+          justify={'space-between'}
+          w="full"
+          mt={{base: '5rem', md: 0}}
+          padding={{base: '1rem 2rem', lg: 0}}
+          gap={{base: 6, md: 0}}
+        >
+          <Box />
+          <Box
+            display={{base: 'flex', md: 'block'}}
+            flexDirection={'column'}
+            color={{base: 'black', md: 'white !important'}}
+            gap={{base: 6, md: 0}}
+          >
             <Text
               fontWeight={500}
-              color="#FFF"
               w="full"
-              alignSelf={'center'}
+              alignSelf={{md: 'center'}}
               fontSize="36px"
+              color={{base: '#191919 !important', md: 'white !important'}}
+              lineHeight={{base: '40px', md: 'normal'}}
             >
               Veerge & Data Analytics
             </Text>
-            <Text mt="45px" fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
-              August 10, 2023
-            </Text>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+              <Text
+                mt={{md: '15px'}}
+                fontWeight={500}
+                alignSelf={'center'}
+                fontSize="14px"
+                color={{base: '#3D3D3D !important', md: 'white !important'}}
+              >
+                August 10, 2023
+              </Text>
+              <Text
+                fontWeight={500}
+                fontSize="14px"
+                color={'#3D3D3D !important'}
+                display={{md: 'none'}}
+              >
+                5 mins read
+              </Text>
+            </Flex>
           </Box>
-          <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
-            <Text fontWeight={500} color="#FFF" alignSelf={'center'} fontSize="14px">
-              5 mins read
+          <Flex
+            w="full"
+            justify={'space-between'}
+            align={{md: 'center'}}
+            pb="10px"
+            direction={{base: 'column', md: 'row'}}
+          >
+            <Text
+              fontWeight={{md: 500}}
+              alignSelf={{md: 'center'}}
+              fontSize="14px"
+              color={{base: '#3D3D3D !important', md: 'white !important'}}
+            >
+              {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
@@ -106,9 +166,21 @@ const Veerge_data = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'}>
+      <Box
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 8, md: 0}}
+       px={'80px'}
+      >
         <BlogLeftNav articleContent={articleContent} />
-        <Box w={{base: '50%', '2xl': '35%'}} ml={{base: '25%', '2xl': '20%'}} mt="58px" pb="70px" fontWeight={200} fontSize="16px">
+        <Box
+          w={{base: '50%', '2xl': '35%'}}
+          ml={{base: '25%', '2xl': '20%'}}
+          mt={{md: '58px'}}
+          pb="70px"
+          fontWeight={200}
+          fontSize="16px"
+        >
           <Box ref={overviewRef} id="overview">
             <Text letterSpacing={'.25em'} fontWeight={500} fontSize={'36px'}>
               OVERVIEW
@@ -918,7 +990,6 @@ const Veerge_data = () => {
                   <ListItem>What motivates customers to resell properties?</ListItem>
                 </UnorderedList>
               </Box>
-
               <Box mt="20px">
                 <Text fontWeight={500} fontSize={'16px'}>
                   Mobile App Usage Analytics
