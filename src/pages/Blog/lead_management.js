@@ -1,4 +1,4 @@
-import {Center, Flex, Image, Box, OrderedList, Text, useBreakpointValue} from '@chakra-ui/react';
+import {Center, Flex, Image, Box, OrderedList, Text} from '@chakra-ui/react';
 import React, {useEffect, useRef} from 'react';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
@@ -20,7 +20,6 @@ const Lead_management = () => {
 
   const overviewCheck = useIsInViewport(overviewRef);
   const benefitCheck = useIsInViewport(benefitRef);
-  const shareText = useBreakpointValue({base: 'Share this article', md: '5 mins read'});
 
   const articleContent = [
     {check: overviewCheck, id: 'overview', title: 'Overview'},
@@ -30,20 +29,18 @@ const Lead_management = () => {
   return (
     <Box p="0">
       <Flex
-        direction={{base: 'column-reverse', md: 'row'}}
+        direction={'row'}
         align={'stretch'}
         py="0"
-        gap={{md: '70px'}}
-        pr={{md: '78px'}}
-        pl={{md: '150px'}}
-        mt={{md: '150px'}}
+        gap="70px"
+        pr="78px"
+        pl="150px"
+        mt="150px"
         w="full"
-        bg={{md: '#1EA490'}}
-        maxH={{md: '100vh'}}
-        h={{md: '500px'}}
+        bg={'#1EA490'}
+        maxH={'100vh'}
+        h={'500px'}
         position={'relative'}
-        overflowY={'hidden'}
-        justifyContent={'center'}
         justify={'center'}
       >
         <Center
@@ -60,77 +57,53 @@ const Lead_management = () => {
         >
           <SlArrowLeft fontSize={'20px'} />
         </Center>
-        <Image
-          h={{base: '300px', md: 'full'}}
-          w={{base: 'full', md: '468px'}}
-          src={lead_management}
-          bgPosition={'center'}
-          bgSize={'cover'}
-          objectFit={'cover'}
-          alignSelf={'center'}
-          p={{base: 4, md: 0}}
-        />
-        <Flex
-          h="full"
-          direction={'column'}
-          align={'stretch'}
-          justify={'space-between'}
-          w="full"
-          mt={{base: '5rem', md: 0}}
-          padding={{base: '1rem 2rem', lg: 0}}
-          gap={{base: 6, md: 0}}
-        >
+        <Image h="full" w="468px" src={lead_management} bgPosition={'center'} bgSize={'cover'} />
+        <Flex h="full" direction={'column'} align={'stretch'} justify={'space-between'} w="full">
           <Box />
-          <Box
-            display={{base: 'flex', md: 'block'}}
-            flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
-            gap={{base: 6, md: 0}}
-          >
+          <Box color={'white'}>
             <Text
-              fontWeight={500}
-              w="full"
+              mb="15px"
+              fontWeight={400}
+              color="#FFF !important"
               alignSelf={'center'}
-              fontSize="36px"
-              color={{base: '#191919 !important', md: 'white !important'}}
-              lineHeight={{base: '40px', md: 'normal'}}
+              fontSize="24px"
             >
+              Features
+            </Text>
+            <Text fontWeight={500} color="#FFF" w="full" alignSelf={'center'} fontSize="36px">
               Leads management system
             </Text>
-            <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={500}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
-                July 20, 2022
-              </Text>
-              <Text
-                fontWeight={500}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
-                5 mins read
-              </Text>
-            </Flex>
-          </Box>
-          <Flex
-            w="full"
-            justify={'space-between'}
-            align={{md: 'center'}}
-            pb="10px"
-            direction={{base: 'column', md: 'row'}}
-          >
             <Text
-              fontWeight={{md: 500}}
-              alignSelf={{md: 'center'}}
+              mt="15px"
+              fontWeight={300}
+              color="#FFF !important"
+              alignSelf={'center'}
               fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
             >
-              {shareText}
+              Revenue is the lifeblood of your business's success.
+            </Text>
+            <Text
+              mt="45px"
+              fontWeight={500}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="14px"
+            >
+              By Veerge Team
+            </Text>
+            <Text
+              mt="15px"
+              fontWeight={500}
+              color="#FFF !important"
+              alignSelf={'center'}
+              fontSize="14px"
+            >
+              June 22, 2023
+            </Text>
+          </Box>
+          <Flex w="full" justify={'space-between'} align={'center'} pb="10px">
+            <Text fontWeight={500} color="#FFF !important" alignSelf={'center'} fontSize="14px">
+              5 mins read
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
@@ -149,19 +122,14 @@ const Lead_management = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box
-        display={{base: 'flex', md: 'block'}}
-        flexDirection={'column'}
-        gap={{base: 8, md: 0}}
-       px={'80px'}
-      >
+      <Box px={'78px'}>
         <BlogLeftNav articleContent={articleContent} />
         <Box
           w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
           mx="auto"
-          mt={{md: '58px'}}
+          mt="58px"
           pb="70px"
           fontWeight={200}
           fontSize="16px"
