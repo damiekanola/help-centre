@@ -8,6 +8,7 @@ import Helpful from '../../components/Faq/Helpful';
 import inventory_management from '../../assets/images/blog/inventory_management.png';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
+import { FaFacebook } from 'react-icons/fa6';
 
 const Inventory = () => {
   useEffect(() => {
@@ -130,7 +131,7 @@ const Inventory = () => {
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
-                <GrFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
+                <FaFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
               </Center>
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
                 <GrTwitter style={{borderRadius: '10000px'}} color="#000" size={17} />

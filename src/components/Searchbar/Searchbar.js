@@ -17,7 +17,7 @@ import {MdSubdirectoryArrowLeft} from 'react-icons/md';
 import {CiSearch} from 'react-icons/ci';
 import {helpSearchData, blogSearchData} from './data';
 import './Search.css';
-import home_svg from '../../assets/icons/home.svg';
+import home_svg from '../../assets/icons/home_dark.svg';
 
 export const Searchbar = () => {
   const location = useLocation();
@@ -101,6 +101,7 @@ export const Searchbar = () => {
       case '/blog/lead_management':
         return 'Leads management system';
       case '/blog/a_letter':
+        return 'A Letter from our CEO'
       case '/blog/understanding_fraction':
         return 'Understanding Fractional Real Estate';
       case '/blog/smart_payment':
