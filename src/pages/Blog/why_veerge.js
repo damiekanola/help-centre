@@ -185,8 +185,8 @@ const Why_veerge = () => {
       >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          
-          mx="auto"
+          w={{base: '50%', '2xl': '35%'}}
+          ml={{base: '25%', '2xl': '20%'}}
           mt={{md: '58px'}}
           pb="70px"
           fontWeight={200}

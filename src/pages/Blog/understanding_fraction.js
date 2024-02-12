@@ -6,6 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import fractional_ownership from '../../assets/images/blog/fractional_ownership.png';
 import {useNavigate} from 'react-router-dom';
+import { FaFacebook } from 'react-icons/fa6';
 
 const Understanding_fraction = () => {
   useEffect(() => {
@@ -119,7 +120,7 @@ const Understanding_fraction = () => {
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
-                <GrFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
+                <FaFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
               </Center>
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
                 <GrTwitter style={{borderRadius: '10000px'}} color="#000" size={17} />

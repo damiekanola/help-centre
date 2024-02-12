@@ -9,6 +9,7 @@ import fractional_ownership from '../../assets/images/blog/fractional_ownership.
 import fractional_animation from '../../assets/images/blog/fractional_animation.gif';
 import { useNavigate } from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
+import { FaFacebook } from 'react-icons/fa6';
 
 
 const Fractional_ownership = () => {
@@ -52,7 +53,6 @@ const Fractional_ownership = () => {
         >
           <SlArrowLeft fontSize={'20px'} />
         </Center>
-
         <Image
           h='full' w='468px'
           src={fractional_ownership}
@@ -62,7 +62,6 @@ const Fractional_ownership = () => {
           alignSelf={'center'}
           p={{base: 4, md: 0}}
         />
-
         <Flex
           h="full"
           direction={'column'}
@@ -73,28 +72,27 @@ const Fractional_ownership = () => {
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
         >
-
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
             gap={{base: 6, md: 0}}
           >
-            <Text mb='15px' fontWeight={400} color='#FFF' alignSelf={'center'} fontSize='24px' display={{base: 'none', md: 'block'}}>Peaks</Text>
+            <Text mb='15px' fontWeight={400} color='#FFF !important' alignSelf={'center'} fontSize='24px' display={{base: 'none', md: 'block'}}>Peaks</Text>
             <Text
               fontWeight={500}
               w="full"
               alignSelf={{md: 'center'}}
               fontSize="36px"
-              color={{base: '#191919 !important', md: 'black !important'}}
+              color={{base: '#191919 !important', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Fractional Ownership
             </Text>
-            <Text mt='15px' fontWeight={300} color='#FFF' w='80%' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
+            <Text mt='15px' fontWeight={300} color='#FFF !important' w='80%' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
               If fractional ownership is such a game-changer, why are so many startups still struggling with it?
             </Text>
-            <Text mt='45px' fontWeight={500} color='#FFF' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
+            <Text mt='45px' fontWeight={500} color='#FFF !important' alignSelf={'center'} fontSize='14px' display={{base: 'none', md: 'block'}}>
               By Veerge Team
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
@@ -103,7 +101,7 @@ const Fractional_ownership = () => {
                 fontWeight={500}
                 alignSelf={'center'}
                 fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
+                color={{base: '#3D3D3D !important', md: 'white !important'}}
               >
                 January 21, 2023
               </Text>
@@ -128,7 +126,7 @@ const Fractional_ownership = () => {
               fontWeight={{md: 500}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'black !important'}}
+              color={{base: '#3D3D3D !important', md: 'white !important'}}
             >
               {shareText}
             </Text>
@@ -137,7 +135,7 @@ const Fractional_ownership = () => {
                 cursor={'pointer'} bg='#FFF'
                 h='28px' w='28px' borderRadius={'full'}
               >
-                <GrFacebook style={{ borderRadius: '10000px' }} color='#000' size={17} />
+                <FaFacebook style={{ borderRadius: '10000px' }} color='#000' size={17} />
               </Center>
               <Center
                 cursor={'pointer'} bg='#FFF'
@@ -162,12 +160,7 @@ const Fractional_ownership = () => {
         </Flex>
       </Flex>
       <Box px={'78px'}>
-
         <BlogLeftNav articleContent={articleContent} />
-
-        {/* <Box shadow={'md'} p='32px 20px' w='256px' h='193px' position={'absolute'} top='-100px' bg='white'>
-          <Text mb='20px' fontWeight={500} fontSize={'20px'}>Table of Content</Text>
-        </Box> */}
         <Box w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}

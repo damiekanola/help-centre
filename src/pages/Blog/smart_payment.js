@@ -6,6 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import smart_payment from '../../assets/images/blog/smart_payment.png';
 import {useNavigate} from 'react-router-dom';
+import { FaFacebook } from 'react-icons/fa6';
 
 const Smart_payment = () => {
   useEffect(() => {
@@ -145,7 +146,7 @@ const Smart_payment = () => {
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
-                <GrFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
+                <FaFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
               </Center>
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
                 <GrTwitter style={{borderRadius: '10000px'}} color="#000" size={17} />
