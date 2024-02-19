@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useLayoutEffect} from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
 import {Homepage} from './pages/Homepage/Homepage';
 import {Introtoveerge} from './pages/Introtoveerge/Introtoveerge';
@@ -56,6 +56,13 @@ function App() {
       document.documentElement.style.setProperty('--global-background', 'white');
     }
   }, [currLocation]);
+
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      const element = document.getElementById(window.location.hash.slice(1));
+      if (element) element.scrollIntoView();
+    }, 1000);
+  }, []);
 
   return (
     <div className="routes_container">

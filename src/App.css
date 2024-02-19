@@ -11,6 +11,8 @@ body {
 
 html {
   background-color: var(--global-background);
+  scroll-padding-top: 150px;
+  scroll-behavior: smooth !important;
 }
 
 .help_centre_pages {
