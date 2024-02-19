@@ -151,11 +151,15 @@ const Revenue_recognition = () => {
         </Flex>
       </Flex>
       <Box
-        display={{base: 'flex', md: 'block'}}
-        flexDirection={'column'}
-        gap={{base: 8, md: 0}}
-       px={'80px'}
-      >
+          w={'95%'}
+          maxW={{base: '587px', xl: '40%'}}
+          minW={{base: '0px', xl: '40%'}}
+          mx="auto"
+          mt={{md: '58px'}}
+          pb="70px"
+          fontWeight={200}
+          fontSize="16px"
+        >
         <BlogLeftNav articleContent={articleContent} />
 
         <Box w={'95%'}
