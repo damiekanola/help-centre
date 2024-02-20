@@ -120,7 +120,7 @@ const New_era = () => {
               fontSize="14px"
               display={{base: 'none', md: 'block'}}
             >
-              By Ahmed Ibraheem
+              By Veerge Team
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
@@ -150,7 +150,7 @@ const New_era = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'black !important'}}

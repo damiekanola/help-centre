@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import fractional_ownership from '../../assets/images/blog/fractional_ownership.png';
 import {useNavigate} from 'react-router-dom';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Understanding_fraction = () => {
   useEffect(() => {
@@ -86,7 +86,7 @@ const Understanding_fraction = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -94,7 +94,7 @@ const Understanding_fraction = () => {
                 December 16, 2022
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
                 display={{md: 'none'}}
@@ -111,7 +111,7 @@ const Understanding_fraction = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'black !important'}}

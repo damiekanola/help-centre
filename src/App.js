@@ -48,13 +48,13 @@ function App() {
   const currLocation = location.pathname;
 
   useEffect(() => {
-    if (!currLocation.startsWith('/blog')) {
-      console.log('Dark Page');
-      document.documentElement.style.setProperty('--global-background', '#0d0d0d');
-    } else {
-      console.log('Light Page');
-      document.documentElement.style.setProperty('--global-background', 'white');
-    }
+    // if (!currLocation.startsWith('/blog')) {
+    //   console.log('Dark Page');
+    document.documentElement.style.setProperty('--global-background', '#0d0d0d');
+    // } else {
+    //   console.log('Light Page');
+    //   document.documentElement.style.setProperty('--global-background', 'white');
+    // }
   }, [currLocation]);
 
   useLayoutEffect(() => {

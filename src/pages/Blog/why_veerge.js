@@ -116,7 +116,7 @@ const Why_veerge = () => {
             </Text>
             <Text
               mt="15px"
-              fontWeight={300}
+              fontWeight={400}
               color="#191919"
               w="80%"
               alignSelf={'center'}
@@ -128,7 +128,7 @@ const Why_veerge = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -136,7 +136,7 @@ const Why_veerge = () => {
                 February 27, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
                 display={{md: 'none'}}
@@ -153,7 +153,7 @@ const Why_veerge = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'black !important'}}

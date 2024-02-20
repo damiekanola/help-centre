@@ -8,7 +8,7 @@ import Helpful from '../../components/Faq/Helpful';
 import inventory_management from '../../assets/images/blog/inventory_management.png';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Inventory = () => {
   useEffect(() => {
@@ -97,7 +97,7 @@ const Inventory = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -105,7 +105,7 @@ const Inventory = () => {
                 April 04, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={'#3D3D3D !important'}
                 display={{md: 'none'}}
@@ -122,7 +122,7 @@ const Inventory = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -150,7 +150,7 @@ const Inventory = () => {
         display={{base: 'flex', md: 'block'}}
         flexDirection={'column'}
         gap={{base: 8, md: 0}}
-       px={'80px'}
+        px={'80px'}
       >
         <BlogLeftNav articleContent={articleContent} />
         <Box
