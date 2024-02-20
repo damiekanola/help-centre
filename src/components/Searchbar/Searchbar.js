@@ -17,7 +17,8 @@ import {MdSubdirectoryArrowLeft} from 'react-icons/md';
 import {CiSearch} from 'react-icons/ci';
 import {helpSearchData, blogSearchData} from './data';
 import './Search.css';
-import home_svg from '../../assets/icons/home_dark.svg';
+import home_dark from '../../assets/icons/home_dark.svg';
+import home_light from '../../assets/icons/home_light.svg';
 
 export const Searchbar = () => {
   const location = useLocation();
@@ -41,7 +42,8 @@ export const Searchbar = () => {
     setSearchFilteredData(dataTouse);
   }, [currLocation]);
 
-  const isWHite = currLocation.startsWith('/blog') ? false : true;
+  // const isWhite = currLocation.startsWith('/blog') ? false : true;
+  const isWhite = true;
 
   const handleCurrentRoute = () => {
     switch (currLocation) {
@@ -101,7 +103,7 @@ export const Searchbar = () => {
       case '/blog/lead_management':
         return 'Leads management system';
       case '/blog/a_letter':
-        return 'A Letter from our CEO'
+        return 'A Letter from our CEO';
       case '/blog/understanding_fraction':
         return 'Understanding Fractional Real Estate';
       case '/blog/smart_payment':
@@ -160,15 +162,17 @@ export const Searchbar = () => {
           position="fixed"
           top="82px"
           zIndex="2"
-          bg={isWHite ? '#0D0D0D' : '#ffffff'}
-          borderBottom={isWHite && '1px solid rgba(255, 255, 255, 0.20)'}
+          bg={isWhite ? '#0D0D0D' : '#ffffff'}
+          borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="18px" align="center">
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
-                <Link to={checkBlogPage() ? '/blog' : '/'}>{<Image src={home_svg} />}</Link>{' '}
-                <SlArrowRight color={isWHite ? '#fff' : '#0D0D0D'} />
+                <Link to={checkBlogPage() ? '/blog' : '/'}>
+                  {<Image src={isWhite ? home_light : home_dark} />}
+                </Link>{' '}
+                <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
               </>
             )}
             <Text
@@ -177,7 +181,7 @@ export const Searchbar = () => {
                 cursor: 'pointer',
                 textDecoration: 'none',
                 href: 'first_time_setup',
-                color: isWHite ? '#fff' : '#5D5FEF',
+                color: isWhite ? '#fff' : '#5D5FEF',
                 fontStyle: 'normal',
                 fontWeight: '400',
                 fontSize: '14px',
@@ -199,10 +203,10 @@ export const Searchbar = () => {
               onClick={onOpen}
               cursor={'pointer'}
               bg={'transparent'}
-              border={!isWHite ? '1px solid black' : '1px solid white'}
+              border={!isWhite ? '1px solid black' : '1px solid white'}
             >
               <CiSearch
-                color={isWHite ? 'white' : 'black'}
+                color={isWhite ? 'white' : 'black'}
                 style={{width: '25px', height: '25px'}}
               />
             </Flex>

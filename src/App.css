@@ -15,42 +15,42 @@ html {
   scroll-behavior: smooth !important;
 }
 
-.help_centre_pages {
+.dark_pages {
   background: #0d0d0d;
   color: #ddd !important;
 }
 
-.help_centre_pages .head_,
-.help_centre_pages .content_head {
+.dark_pages .head_,
+.dark_pages .content_head {
   color: white;
 }
 
-.help_centre_pages .main .chakra-text {
+.dark_pages .main .chakra-text {
   color: #ddd;
 }
 
-.help_centre_pages .main li {
+.dark_pages .main li {
   color: #ddd;
 }
 
-.blog_pages {
+.light_pages {
   background-color: white;
   color: black;
 }
 
-.blog_pages .head,
-.blog_pages .content_head {
+.light_pages .head,
+.light_pages .content_head {
   color: black;
 }
 
-.blog_pages .publish {
+.light_pages .publish {
   color: black;
 }
-.blog_pages .chakra-text {
+.light_pages .chakra-text {
   color: black;
 }
 
-.blog_pages .blog_text_content {
+.light_pages .blog_text_content {
   width: 90%;
   margin: auto;
   max-width: 587px;

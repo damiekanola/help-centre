@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import letter_from_CEO from '../../assets/images/blog/letter_from_CEO.png';
 import {useNavigate} from 'react-router-dom';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const A_letter = () => {
   useEffect(() => {
@@ -85,18 +85,18 @@ const A_letter = () => {
             </Text>
             <Text
               mt="45px"
-              fontWeight={500}
+              fontWeight={400}
               color="#191919"
               alignSelf={'center'}
               fontSize="14px"
               display={{base: 'none', md: 'block'}}
             >
-              By Ahmed Ibraheem
+              By Veerge Team
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -104,7 +104,7 @@ const A_letter = () => {
                 {dateText}
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={'#3D3D3D !important'}
                 display={{md: 'none'}}
@@ -121,7 +121,7 @@ const A_letter = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'black !important'}}

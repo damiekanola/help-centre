@@ -8,7 +8,7 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Transforming_business = () => {
   useEffect(() => {
@@ -104,7 +104,7 @@ const Transforming_business = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -112,7 +112,7 @@ const Transforming_business = () => {
                 May 20, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={'#3D3D3D !important'}
                 display={{md: 'none'}}
@@ -129,7 +129,7 @@ const Transforming_business = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -157,17 +157,19 @@ const Transforming_business = () => {
         display={{base: 'flex', md: 'block'}}
         flexDirection={'column'}
         gap={{base: 8, md: 0}}
-       px={'80px'}
+        px={'80px'}
       >
         <BlogLeftNav articleContent={articleContent} />
-        <Box w={'95%'}
+        <Box
+          w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
           mx="auto"
           mt={{md: '58px'}}
           pb="70px"
           fontWeight={200}
-          fontSize="16px">
+          fontSize="16px"
+        >
           <Box ref={a_ticketRef} id="a_ticket">
             <Text>
               A Ticketing system on veerge is a central hub for managing various aspects of the
