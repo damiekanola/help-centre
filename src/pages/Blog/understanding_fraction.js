@@ -65,12 +65,12 @@ const Understanding_fraction = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#fffff !important', md: '#191919 !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -78,27 +78,15 @@ const Understanding_fraction = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color="#191919"
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Understanding Fractional Real Estate
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 December 16, 2022
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 11 mins read
               </Text>
             </Flex>
@@ -110,12 +98,7 @@ const Understanding_fraction = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'black !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -149,7 +132,7 @@ const Understanding_fraction = () => {
           w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box>
-            <Text fontWeight={500} fontSize={'36px'} color="#000">
+            <Text fontWeight={500} fontSize={'36px'}>
               OVERVIEW
             </Text>
             <Text mt="30px">

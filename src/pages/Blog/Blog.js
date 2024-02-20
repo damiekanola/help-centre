@@ -29,14 +29,7 @@ export const Blog = () => {
 
   return (
     <Box w="full" pt={{base: '100px', md: '160px'}} pb="50px">
-      <Text
-        display={{md: 'none'}}
-        fontWeight={'500'}
-        pl={8}
-        fontSize={'36px'}
-        mb="10px"
-        color="#191919"
-      >
+      <Text display={{md: 'none'}} fontWeight={'500'} pl={8} fontSize={'36px'} mb="10px">
         Blog
       </Text>
       <Flex
@@ -48,24 +41,30 @@ export const Blog = () => {
       >
         <Button
           onClick={() => setShowBlogData('most_read')}
-          color={showBlogData === 'most_read' ? 'white' : '#4545FE'}
-          bg={showBlogData === 'most_read' ? '#4545FE' : '#F2F4F7'}
+          color={showBlogData === 'most_read' ? 'black' : '#ff0'}
+          bg={showBlogData === 'most_read' ? '#ff0' : 'transparent'}
+          border={'1px solid #ff0'}
           fontWeight={showBlogData === 'most_read' ? 500 : 400}
+          _hover={{backgroundColor: '#ff0'}}
+          _active={{backgroundColor: '#ff0'}}
         >
           Most Read
         </Button>
         <Button
           onClick={() => setShowBlogData('most_recent')}
-          color={showBlogData === 'most_recent' ? 'white' : '#4545FE'}
-          bg={showBlogData === 'most_recent' ? '#4545FE' : '#F2F4F7'}
+          color={showBlogData === 'most_recent' ? 'black' : '#ff0'}
+          bg={showBlogData === 'most_recent' ? '#ff0' : 'transparent'}
+          border={'1px solid #ff0'}
           fontWeight={showBlogData === 'most_recent' ? 500 : 400}
+          _hover={{backgroundColor: '#ff0'}}
+          _active={{backgroundColor: '#ff0'}}
         >
           Most Recent
         </Button>
       </Flex>
       <Box w={{base: 'full', md: '85%'}} mx="auto">
         <Flex
-          borderBottom={'1px solid #CBCBCB'}
+          borderBottom={'1px solid #606060'}
           w="full"
           px="19px"
           align={'center'}
@@ -128,7 +127,7 @@ export const Blog = () => {
       </Box>
       <Box w={{base: 'full', md: '85%'}} mx="auto" mt={{lg: '44px'}}>
         <Flex
-          borderBottom={'1px solid #CBCBCB'}
+          borderBottom={'1px solid #606060'}
           w="full"
           px="19px"
           align={'center'}
@@ -159,7 +158,7 @@ export const Blog = () => {
               w="36px"
               borderRadius={'full'}
               // color="#191919"
-              border={'2px solid #ffffff'}
+              border={'px solid #ffffff'}
             >
               <SlArrowRight fontWeight={700} />
             </Center>
