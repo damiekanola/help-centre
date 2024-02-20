@@ -119,7 +119,7 @@ const Fractional_ownership = () => {
               If fractional ownership is such a game-changer, why are so many startups still
               struggling with it?
             </Text>
-            <Text
+            {/* <Text
               mt="45px"
               fontWeight={400}
               color="#FFF !important"
@@ -128,7 +128,7 @@ const Fractional_ownership = () => {
               display={{base: 'none', md: 'block'}}
             >
               By Veerge Team
-            </Text>
+            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}

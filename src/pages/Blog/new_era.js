@@ -112,7 +112,7 @@ const New_era = () => {
             >
               The New Era of Real Estate
             </Text>
-            <Text
+            {/* <Text
               mt="45px"
               fontWeight={400}
               color="#191919"
@@ -121,7 +121,7 @@ const New_era = () => {
               display={{base: 'none', md: 'block'}}
             >
               By Veerge Team
-            </Text>
+            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
