@@ -12,7 +12,7 @@ import React, {useEffect, useRef} from 'react';
 import veergeNDdata from '../../assets/images/blog/veerge&data.png';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
-import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
+import {GrLinkedin, GrTwitter} from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
@@ -168,23 +168,18 @@ const Veerge_data = () => {
         </Flex>
       </Flex>
       <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
-          fontWeight={200}
-          fontSize="16px"
-        >
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={{base: '50%', '2xl': '35%'}}
-          ml={{base: '25%', '2xl': '20%'}}
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text letterSpacing={'.25em'} fontWeight={500} fontSize={'36px'}>

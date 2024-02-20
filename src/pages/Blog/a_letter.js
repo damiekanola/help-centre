@@ -83,7 +83,7 @@ const A_letter = () => {
             <Text fontWeight={500} color="#191919" w="full" alignSelf={'center'} fontSize="36px">
               A Letter from the CEO
             </Text>
-            <Text
+            {/* <Text
               mt="45px"
               fontWeight={400}
               color="#191919"
@@ -92,7 +92,7 @@ const A_letter = () => {
               display={{base: 'none', md: 'block'}}
             >
               By Veerge Team
-            </Text>
+            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}

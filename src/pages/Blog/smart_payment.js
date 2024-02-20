@@ -99,7 +99,7 @@ const Smart_payment = () => {
             >
               We have Automated the conventional payment plan, the time has come to re-engineer it
             </Text>
-            <Text
+            {/* <Text
               mt="45px"
               fontWeight={400}
               alignSelf={'center'}
@@ -108,7 +108,7 @@ const Smart_payment = () => {
               display={{base: 'none', md: 'flex'}}
             >
               By Veerge Team
-            </Text>
+            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
