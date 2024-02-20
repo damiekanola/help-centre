@@ -8,7 +8,7 @@ import Helpful from '../../components/Faq/Helpful';
 import lead_management from '../../assets/images/blog/lead_management.png';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Lead_management = () => {
   useEffect(() => {
@@ -101,7 +101,7 @@ const Lead_management = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -109,7 +109,7 @@ const Lead_management = () => {
                 July 20, 2022
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={'#3D3D3D !important'}
                 display={{md: 'none'}}
@@ -126,7 +126,7 @@ const Lead_management = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'white !important'}}

@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import smart_payment from '../../assets/images/blog/smart_payment.png';
 import {useNavigate} from 'react-router-dom';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Smart_payment = () => {
   useEffect(() => {
@@ -90,7 +90,7 @@ const Smart_payment = () => {
             </Text>
             <Text
               mt="15px"
-              fontWeight={300}
+              fontWeight={400}
               w="80%"
               alignSelf={'center'}
               fontSize="14px"
@@ -101,18 +101,18 @@ const Smart_payment = () => {
             </Text>
             <Text
               mt="45px"
-              fontWeight={500}
+              fontWeight={400}
               alignSelf={'center'}
               fontSize="14px"
               color={{base: 'black', md: 'white !important'}}
               display={{base: 'none', md: 'flex'}}
             >
-              By Ahmed Ibraheem
+              By Veerge Team
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'white !important'}}
@@ -120,7 +120,7 @@ const Smart_payment = () => {
                 September 25, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'white !important'}}
                 display={{md: 'none'}}
@@ -137,7 +137,7 @@ const Smart_payment = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'white !important'}}

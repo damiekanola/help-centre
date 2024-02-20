@@ -48,13 +48,13 @@ function App() {
   const currLocation = location.pathname;
 
   useEffect(() => {
-    if (!currLocation.startsWith('/blog')) {
-      console.log('Dark Page');
-      document.documentElement.style.setProperty('--global-background', '#0d0d0d');
-    } else {
-      console.log('Light Page');
-      document.documentElement.style.setProperty('--global-background', 'white');
-    }
+    // if (!currLocation.startsWith('/blog')) {
+    //   console.log('Dark Page');
+    document.documentElement.style.setProperty('--global-background', '#0d0d0d');
+    // } else {
+    //   console.log('Light Page');
+    //   document.documentElement.style.setProperty('--global-background', 'white');
+    // }
   }, [currLocation]);
 
   useLayoutEffect(() => {
@@ -71,7 +71,7 @@ function App() {
         <Searchbar />
       </Show>
       <ScrollToTop />
-      <div className="help_centre_pages">
+      <div className="dark_pages">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/intro_to_veerge" element={<Introtoveerge />} />
@@ -98,10 +98,6 @@ function App() {
           <Route path="/application_guide" element={<ApplicationGuide />} />
           <Route path="/veerge_themes" element={<VeergeThemes />} />
           <Route path="/how_protected" element={<Protected />} />
-        </Routes>
-      </div>
-      <div className="blog_pages">
-        <Routes>
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/transforming_business" element={<Transforming_business />} />
           <Route path="/blog/inventory" element={<Inventory />} />
@@ -115,6 +111,9 @@ function App() {
           <Route path="/blog/veerge_data" element={<Veerge_data />} />
           <Route path="/blog/why_veerge" element={<Why_veerge />} />
         </Routes>
+      </div>
+      <div className="light_pages">
+        <Routes></Routes>
       </div>
     </div>
   );

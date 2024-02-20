@@ -8,7 +8,7 @@ import Helpful from '../../components/Faq/Helpful';
 import revenue_recognition from '../../assets/images/blog/revenue_recognition.png';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const Revenue_recognition = () => {
   useEffect(() => {
@@ -101,7 +101,7 @@ const Revenue_recognition = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -109,7 +109,7 @@ const Revenue_recognition = () => {
                 July 15, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={'#3D3D3D !important'}
                 display={{md: 'none'}}
@@ -126,7 +126,7 @@ const Revenue_recognition = () => {
             direction={{base: 'column', md: 'row'}}
           >
             <Text
-              fontWeight={{md: 500}}
+              fontWeight={{md: 400}}
               alignSelf={{md: 'center'}}
               fontSize="14px"
               color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -162,14 +162,16 @@ const Revenue_recognition = () => {
         >
         <BlogLeftNav articleContent={articleContent} />
 
-        <Box w={'95%'}
+        <Box
+          w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
           mx="auto"
           mt={{md: '58px'}}
           pb="70px"
           fontWeight={200}
-          fontSize="16px">
+          fontSize="16px"
+        >
           <Box ref={overviewRef} id="overview">
             <Text>
               Let's be frank – revenue is the lifeblood of any business's success. Without it, any
