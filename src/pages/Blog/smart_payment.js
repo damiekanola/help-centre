@@ -70,12 +70,12 @@ const Smart_payment = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#ffffff !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -83,7 +83,6 @@ const Smart_payment = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color={{base: 'black', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Smart Payment Plan
@@ -94,37 +93,15 @@ const Smart_payment = () => {
               w="80%"
               alignSelf={'center'}
               fontSize="14px"
-              color={{base: 'black', md: 'white !important'}}
               display={{base: 'none', md: 'flex'}}
             >
               We have Automated the conventional payment plan, the time has come to re-engineer it
             </Text>
-            {/* <Text
-              mt="45px"
-              fontWeight={400}
-              alignSelf={'center'}
-              fontSize="14px"
-              color={{base: 'black', md: 'white !important'}}
-              display={{base: 'none', md: 'flex'}}
-            >
-              By Veerge Team
-            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 September 25, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 11 mins read
               </Text>
             </Flex>
@@ -136,12 +113,7 @@ const Smart_payment = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -161,16 +133,18 @@ const Smart_payment = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'}>
+      <Box
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={'58px'}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box>
             <Text mt="30px">
@@ -419,7 +393,7 @@ const Smart_payment = () => {
 
             <Text mt="30px">
               If you’ve already delved into our previous article on{' '}
-              <Link color={'#4545FE'} borderBottom={'1px solid #4545FE'} href="">
+              <Link color={'#ff0'} borderBottom={'1px solid #4545FE'} href="">
                 Veerge as a system of engagement
               </Link>
               , you’ll realize that the true secret sauce behind our new payment plan model lies in

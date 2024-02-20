@@ -81,6 +81,7 @@ const Revenue_recognition = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#ffffff !important', md: '#191919 !important'}}
         >
           <Box />
           <Box
@@ -93,27 +94,15 @@ const Revenue_recognition = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color={'#191919 !important'}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Revenue recognition solution
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 July 15, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 5 mins read
               </Text>
             </Flex>
@@ -125,12 +114,7 @@ const Revenue_recognition = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'black !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -151,26 +135,18 @@ const Revenue_recognition = () => {
         </Flex>
       </Flex>
       <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
-          fontWeight={200}
-          fontSize="16px"
-        >
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
-
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text>
@@ -193,7 +169,7 @@ const Revenue_recognition = () => {
           </Box>
           <Box ref={benefitRef} id="benefit">
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 1. Precise financial reporting{' '}
               </Text>
               <Text>
@@ -206,7 +182,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 2. Informed decision-making{' '}
               </Text>
               <Text>
@@ -217,7 +193,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 3. Mitigating risk{' '}
               </Text>
               <Text>
@@ -228,7 +204,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 4. Investor trust
               </Text>
               <Text>
@@ -239,7 +215,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 5. Internal vigilance
               </Text>
               <Text>
@@ -250,7 +226,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 6. Auditing and diligence
               </Text>
               <Text>
@@ -261,7 +237,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 7. Enhanced efficiency
               </Text>
               <Text>
@@ -272,7 +248,7 @@ const Revenue_recognition = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'20px'} color="#000">
+              <Text fontWeight={500} fontSize={'20px'}>
                 8. Forward-looking strategies
               </Text>
               <Text>

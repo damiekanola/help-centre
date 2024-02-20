@@ -80,12 +80,12 @@ const Lead_management = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#ffffff !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -93,27 +93,15 @@ const Lead_management = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color={{base: '#191919 !important', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Leads management system
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 July 20, 2022
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 5 mins read
               </Text>
             </Flex>
@@ -125,12 +113,7 @@ const Lead_management = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -151,25 +134,18 @@ const Lead_management = () => {
         </Flex>
       </Flex>
       <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
-          fontWeight={200}
-          fontSize="16px"
-        >
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 8, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text>
@@ -190,7 +166,7 @@ const Lead_management = () => {
             </Text>
           </Box>
           <Box ref={benefitRef} id="benefit">
-            <Text mt="30px" fontWeight={500} fontSize={'20px'} color="#000">
+            <Text mt="30px" fontWeight={500} fontSize={'20px'}>
               Enter the star of the show: a scalable lead management system.
             </Text>
             <Box mt="30px">

@@ -5,6 +5,7 @@ import timeIcon from '../../assets/icons/time_icon_2.svg';
 import {blogDataRead, blogDataRecent} from '../../constant/blog';
 import {handleIconType} from '../../utils/handleIconType';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
+import {IoChevro} from 'react-icons/io5';
 import {BlogCard} from './BlogCard';
 
 export const Blog = () => {
@@ -139,7 +140,7 @@ export const Blog = () => {
           <Text fontWeight={'300'} fontSize={'36px'} mb="20px">
             Most Recent
           </Text>
-          <HStack spacing={'15px'}>
+          <HStack spacing={'15px'} color="#fff">
             <Center
               cursor={'pointer'}
               onClick={() => handleMostRecentScroll(-320)}
@@ -158,7 +159,7 @@ export const Blog = () => {
               w="36px"
               borderRadius={'full'}
               // color="#191919"
-              border={'px solid #ffffff'}
+              border={'2px solid #ffffff'}
             >
               <SlArrowRight fontWeight={700} />
             </Center>
