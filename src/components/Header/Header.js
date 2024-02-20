@@ -13,7 +13,8 @@ import {
 } from '@chakra-ui/react';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {Searchbar} from '../Searchbar/Searchbar';
-import logo from '../../assets/images/veergelogo.png';
+// import logo from '../../assets/images/veergelogo.png';
+import logo from '../../assets/images/veergelogo.svg';
 import React, {useRef} from 'react';
 import {Link} from 'react-router-dom';
 export const Header = () => {

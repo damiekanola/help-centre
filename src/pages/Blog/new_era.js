@@ -17,7 +17,7 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import { FaFacebook } from 'react-icons/fa6';
+import {FaFacebook} from 'react-icons/fa6';
 
 const New_era = () => {
   useEffect(() => {
@@ -114,7 +114,7 @@ const New_era = () => {
             </Text>
             <Text
               mt="45px"
-              fontWeight={500}
+              fontWeight={400}
               color="#191919"
               alignSelf={'center'}
               fontSize="14px"
@@ -125,7 +125,7 @@ const New_era = () => {
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <Text
                 mt={{md: '15px'}}
-                fontWeight={500}
+                fontWeight={400}
                 alignSelf={'center'}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
@@ -133,7 +133,7 @@ const New_era = () => {
                 March 7, 2023
               </Text>
               <Text
-                fontWeight={500}
+                fontWeight={400}
                 fontSize="14px"
                 color={{base: '#3D3D3D !important', md: 'black !important'}}
                 display={{md: 'none'}}
@@ -178,17 +178,19 @@ const New_era = () => {
         display={{base: 'flex', md: 'block'}}
         flexDirection={'column'}
         gap={{base: 8, md: 0}}
-       px={'80px'}
+        px={'80px'}
       >
         <BlogLeftNav articleContent={articleContent} />
-        <Box w={'95%'}
+        <Box
+          w={'95%'}
           maxW={{base: '587px', xl: '40%'}}
           minW={{base: '0px', xl: '40%'}}
           mx="auto"
           mt={{md: '58px'}}
           pb="70px"
           fontWeight={200}
-          fontSize="16px">
+          fontSize="16px"
+        >
           <Box ref={idea_forRef} id="idea_for">
             <Text>
               A few years ago, we took a daring leap of faith, embarking on an extraordinary journey

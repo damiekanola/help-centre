@@ -15,7 +15,7 @@ import {CiInstagram} from 'react-icons/ci';
 import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
-import why_veerge from '../../assets/images/blog/why_veerge_instead.png';
+import why_veerge from '../../assets/images/blog/why_veerge.png';
 import {Link, useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
 
