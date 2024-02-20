@@ -94,12 +94,12 @@ export const BlogLeftNav = ({articleContent}) => {
                     w="5px"
                     h="5px"
                     borderRadius={'full'}
-                    bg={content.check ? '#4545FE' : '#606060'}
+                    bg={content.check ? '#ff0' : '#606060'}
                   />
                   <Text
                     fontSize={'14px'}
                     fontWeight={content.check ? 500 : 400}
-                    color={content.check ? '#4545FE' : '#191919'}
+                    color={content.check ? '#ff0' : '#white'}
                   >
                     <a href={`#${content.id}`}>{content?.title}</a>
                   </Text>

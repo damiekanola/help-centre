@@ -17,6 +17,7 @@ import {Searchbar} from '../Searchbar/Searchbar';
 import logo from '../../assets/images/veergelogo.svg';
 import React, {useRef} from 'react';
 import {Link} from 'react-router-dom';
+import {VeergeLogo} from './VeergeLogo';
 export const Header = () => {
   const {isOpen, onOpen, onClose} = useDisclosure();
   const btnRef = useRef();
@@ -40,7 +41,8 @@ export const Header = () => {
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <a href="https://test-veerge.myxellia.io/">
-            <Image src={logo} />
+            {/* <Image src={logo} /> */}
+            <VeergeLogo />
             <Text fontSize={'12px'} color="#fff">
               Powered by Myxellia
             </Text>
@@ -63,8 +65,8 @@ export const Header = () => {
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Link to="/">
-            {' '}
-            <Image src={logo} />
+            {/* <Image src={logo} /> */}
+            <VeergeLogo />
           </Link>
         </Flex>
       </Show>

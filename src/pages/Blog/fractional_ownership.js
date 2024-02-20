@@ -9,7 +9,7 @@ import fractional_ownership from '../../assets/images/blog/fractional_ownership.
 import fractional_animation from '../../assets/images/blog/fractional_animation.gif';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Fractional_ownership = () => {
   useEffect(() => {
@@ -59,7 +59,7 @@ const Fractional_ownership = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h="full"
@@ -156,7 +156,7 @@ const Fractional_ownership = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text>

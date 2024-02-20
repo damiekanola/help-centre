@@ -11,7 +11,7 @@ import {HomePageCard} from './HomePageCard';
 
 export const Homepage = () => {
   return (
-    <Box w="full" pt="200px" pb="50px">
+    <Box w="full" pt={{base: '120px', md: '200px'}} pb="50px">
       <SimpleGrid
         w="85%"
         mx="auto"
