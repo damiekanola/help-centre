@@ -12,7 +12,7 @@ import React, {useEffect, useRef} from 'react';
 import new_era from '../../assets/images/blog/new_era.png';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
-import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
+import {GrLinkedin, GrTwitter} from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
