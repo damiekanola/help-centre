@@ -95,6 +95,7 @@ const New_era = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#fffff !important', md: '#191919 !important'}}
         >
           <Box />
           <Box
@@ -107,37 +108,15 @@ const New_era = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color={'#191919 !important'}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               The New Era of Real Estate
             </Text>
-            {/* <Text
-              mt="45px"
-              fontWeight={400}
-              color="#191919"
-              alignSelf={'center'}
-              fontSize="14px"
-              display={{base: 'none', md: 'block'}}
-            >
-              By Veerge Team
-            </Text> */}
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 March 7, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 11 mins read
               </Text>
             </Flex>
@@ -149,12 +128,7 @@ const New_era = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'black !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -178,18 +152,15 @@ const New_era = () => {
         display={{base: 'flex', md: 'block'}}
         flexDirection={'column'}
         gap={{base: 8, md: 0}}
-        px={'80px'}
+        px={{base: '20px', md: '80px'}}
       >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box ref={idea_forRef} id="idea_for">
             <Text>

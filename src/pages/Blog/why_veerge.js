@@ -96,12 +96,12 @@ const Why_veerge = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#fffff !important', md: '#191919 !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -109,7 +109,6 @@ const Why_veerge = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color="#191919 !important"
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Why Veerge instead of Building
@@ -117,7 +116,6 @@ const Why_veerge = () => {
             <Text
               mt="15px"
               fontWeight={400}
-              color="#191919"
               w="80%"
               alignSelf={'center'}
               fontSize="14px"
@@ -126,21 +124,10 @@ const Why_veerge = () => {
               We operate at the forefront of technology, leveraging cutting-edge techniques
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 February 27, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'black !important'}}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 11 mins read
               </Text>
             </Flex>
@@ -152,12 +139,7 @@ const Why_veerge = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'black !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -181,19 +163,18 @@ const Why_veerge = () => {
         display={{base: 'flex', md: 'block'}}
         flexDirection={'column'}
         gap={{base: 6, md: 0}}
-        px={'80px'}
+        px={{base: '20px', md: '80px'}}
       >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={{base: '50%', '2xl': '35%'}}
-          ml={{base: '25%', '2xl': '20%'}}
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '50%', '2xl': '35%'}}
         >
           <Box ref={why_veergeRef} id="why_veerge">
-            <Text fontWeight={500} fontSize={'36px'} color="#000">
+            <Text fontWeight={500} fontSize={'36px'}>
               WHY VEERGE?
             </Text>
 
@@ -264,7 +245,7 @@ const Why_veerge = () => {
             </Text>
           </Box>
           <Box ref={ourMissionRef} mt="30px" id="our_mission">
-            <Text fontWeight={500} fontSize={'36px'} color="#000">
+            <Text fontWeight={500} fontSize={'36px'}>
               Our Mission
             </Text>
             <Text>
@@ -299,7 +280,7 @@ const Why_veerge = () => {
             </Text>
           </Box>
           <Box ref={ourValueRef} mt="30px" id="our_value">
-            <Text fontWeight={500} fontSize={'36px'} color="#000">
+            <Text fontWeight={500} fontSize={'36px'}>
               Our Values
             </Text>
             <Text mt="30px">
@@ -403,7 +384,7 @@ const Why_veerge = () => {
             </OrderedList>
           </Box>
           <Box ref={ourCultureRef} mt="30px" id="our_culture">
-            <Text fontWeight={500} fontSize={'36px'} color="#000">
+            <Text fontWeight={500} fontSize={'36px'}>
               Our Culture
             </Text>
             <Text mt="30px">
@@ -567,7 +548,7 @@ const Why_veerge = () => {
               </ListItem>
             </OrderedList>
           </Box>
-          <Text mt="70px" color="#4545FE">
+          <Text mt="70px" color="#ff0">
             <Link to="/blog/a_letter">Read a letter from our CEO</Link>
           </Text>
           <Helpful noMarginTop />
