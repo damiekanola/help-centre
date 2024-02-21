@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import fractional_ownership from '../../assets/images/blog/fractional_ownership.png';
 import {useNavigate} from 'react-router-dom';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Understanding_fraction = () => {
   useEffect(() => {
@@ -45,7 +45,7 @@ const Understanding_fraction = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
 
         <Image
@@ -129,7 +129,7 @@ const Understanding_fraction = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box>
             <Text fontWeight={500} fontSize={'36px'}>

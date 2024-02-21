@@ -17,7 +17,7 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const New_era = () => {
   useEffect(() => {
@@ -74,7 +74,7 @@ const New_era = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h="full"
@@ -160,7 +160,7 @@ const New_era = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={idea_forRef} id="idea_for">
             <Text>

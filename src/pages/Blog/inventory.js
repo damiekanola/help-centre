@@ -8,7 +8,7 @@ import Helpful from '../../components/Faq/Helpful';
 import inventory_management from '../../assets/images/blog/inventory_management.png';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Inventory = () => {
   useEffect(() => {
@@ -58,7 +58,7 @@ const Inventory = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h={{base: '300px', md: 'full'}}
@@ -141,7 +141,7 @@ const Inventory = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text>

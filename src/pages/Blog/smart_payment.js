@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import smart_payment from '../../assets/images/blog/smart_payment.png';
 import {useNavigate} from 'react-router-dom';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Smart_payment = () => {
   useEffect(() => {
@@ -46,7 +46,7 @@ const Smart_payment = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
 
         <Image
@@ -144,7 +144,7 @@ const Smart_payment = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box>
             <Text mt="30px">

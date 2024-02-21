@@ -6,7 +6,7 @@ import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
 import Helpful from '../../components/Faq/Helpful';
 import letter_from_CEO from '../../assets/images/blog/letter_from_CEO.png';
 import {useNavigate} from 'react-router-dom';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const A_letter = () => {
   useEffect(() => {
@@ -50,7 +50,7 @@ const A_letter = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
 
         <Image
@@ -131,7 +131,7 @@ const A_letter = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box>
             <Text>

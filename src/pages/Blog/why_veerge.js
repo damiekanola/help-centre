@@ -18,6 +18,7 @@ import Helpful from '../../components/Faq/Helpful';
 import why_veerge from '../../assets/images/blog/why_veerge.png';
 import {Link, useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Why_veerge = () => {
   useEffect(() => {
@@ -73,7 +74,7 @@ const Why_veerge = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
 
         <Image
@@ -144,7 +145,7 @@ const Why_veerge = () => {
             </Text>
             <Flex align={'center'} gap="4px">
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
-                <GrFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
+                <FaFacebook style={{borderRadius: '10000px'}} color="#000" size={17} />
               </Center>
               <Center cursor={'pointer'} bg="#FFF" h="28px" w="28px" borderRadius={'full'}>
                 <GrTwitter style={{borderRadius: '10000px'}} color="#000" size={17} />
@@ -171,7 +172,7 @@ const Why_veerge = () => {
           pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
-          w={{base: '100%', md: '50%', '2xl': '35%'}}
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={why_veergeRef} id="why_veerge">
             <Text fontWeight={500} fontSize={'36px'}>
