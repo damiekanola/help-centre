@@ -160,14 +160,11 @@ export const VeergePlus = () => {
             <ListItem fontWeight={600}>
               <Text>Mobile App Theme and Integration Cost:</Text>
               <Text fontWeight={200}>
-                This cost covers the theme of the mobile app and its integration. The total cost is{' '}
-                <b>$7,200.00</b>, which is a one-time fee. However, Veerge provides discounts for
-                payment plans. You can avail a 5% discount by making two payments, or a 10% discount
-                for an upfront payment. If paid monthly, the cost will be $600 per month for a year.
+              This cost includes the mobile app theme and its deployment. The starting price for the mobile theme is <b>$10,000.00</b>, a one-time fee with payment plans available. You'll have access to a free trial version of the mobile application before making any payments. This allows you to extensively test the app in a controlled environment before making any financial commitments.
               </Text>
             </ListItem>
             <Link to="/">
-              <Text my={5} ml={-5} color="#4545FE" cursor={'pointer'}>
+              <Text my={5} ml={-5} color="#FF0" cursor={'pointer'}>
                 Click here to read more on themes
               </Text>
             </Link>
