@@ -8,7 +8,7 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Transforming_business = () => {
   useEffect(() => {
@@ -62,7 +62,7 @@ const Transforming_business = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h={{base: '300px', md: 'full'}}
@@ -83,12 +83,12 @@ const Transforming_business = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#ffffff !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -96,27 +96,15 @@ const Transforming_business = () => {
               w="full"
               alignSelf={'center'}
               fontSize="36px"
-              color={{base: '#191919 !important', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Transforming your business with a Ticketing system
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 May 20, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 5 mins read
               </Text>
             </Flex>
@@ -128,12 +116,7 @@ const Transforming_business = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -154,25 +137,18 @@ const Transforming_business = () => {
         </Flex>
       </Flex>
       <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
-          fontWeight={200}
-          fontSize="16px"
-        >
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={a_ticketRef} id="a_ticket">
             <Text>
@@ -216,11 +192,11 @@ const Transforming_business = () => {
             </Text>
           </Box>
           <Box ref={perksRef} id="perks">
-            <Text mt="30px" fontWeight={500} fontSize={'36px'} color="#000">
+            <Text mt="30px" fontWeight={500} fontSize={'36px'}>
               Perks of a Ticketing System
             </Text>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 1. Elevates the Customer Experience{' '}
               </Text>
               <Text>
@@ -242,7 +218,7 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 2. Amplifies Team Productivity{' '}
               </Text>
               <Text>
@@ -258,7 +234,7 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 3. Expedites Issue Resolution{' '}
               </Text>
               <Text>
@@ -272,7 +248,7 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 4. Cost Reduction and Heightened Customer Retention
               </Text>
               <Text>
@@ -286,7 +262,7 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 5. Enhances Project Transparency and Collaboration
               </Text>
               <Text>
@@ -300,7 +276,7 @@ const Transforming_business = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={300} fontSize={'20px'} color="#000">
+              <Text fontWeight={300} fontSize={'20px'}>
                 6. Efficient Resource Allocation and Workload Management
               </Text>
               <Text>

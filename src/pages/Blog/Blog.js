@@ -5,7 +5,9 @@ import timeIcon from '../../assets/icons/time_icon_2.svg';
 import {blogDataRead, blogDataRecent} from '../../constant/blog';
 import {handleIconType} from '../../utils/handleIconType';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
+import {IoChevro} from 'react-icons/io5';
 import {BlogCard} from './BlogCard';
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa6';
 
 export const Blog = () => {
   const [showBlogData, setShowBlogData] = useState('most_read');
@@ -29,43 +31,45 @@ export const Blog = () => {
 
   return (
     <Box w="full" pt={{base: '100px', md: '160px'}} pb="50px">
-      <Text
-        display={{md: 'none'}}
-        fontWeight={'500'}
-        pl={8}
-        fontSize={'36px'}
-        mb="10px"
-        color="#191919"
-      >
+      <Text display={{md: 'none'}} fontWeight={'500'} pl={8} fontSize={'36px'} mb="10px">
         Blog
       </Text>
       <Flex
         display={{base: 'flex', md: 'none'}}
         alignItems={'center'}
-        justifyContent={'center'}
+        mx="auto"
         py={4}
+        px={'20px'}
         gap={4}
       >
         <Button
+          flex={1}
           onClick={() => setShowBlogData('most_read')}
-          color={showBlogData === 'most_read' ? 'white' : '#4545FE'}
-          bg={showBlogData === 'most_read' ? '#4545FE' : '#F2F4F7'}
+          color={showBlogData === 'most_read' ? 'black' : '#ff0'}
+          bg={showBlogData === 'most_read' ? '#ff0' : 'transparent'}
+          border={'1px solid #ff0'}
           fontWeight={showBlogData === 'most_read' ? 500 : 400}
+          _hover={{backgroundColor: '#ff0'}}
+          _active={{backgroundColor: '#ff0'}}
         >
           Most Read
         </Button>
         <Button
+          flex={1}
           onClick={() => setShowBlogData('most_recent')}
-          color={showBlogData === 'most_recent' ? 'white' : '#4545FE'}
-          bg={showBlogData === 'most_recent' ? '#4545FE' : '#F2F4F7'}
+          color={showBlogData === 'most_recent' ? 'black' : '#ff0'}
+          bg={showBlogData === 'most_recent' ? '#ff0' : 'transparent'}
+          border={'1px solid #ff0'}
           fontWeight={showBlogData === 'most_recent' ? 500 : 400}
+          _hover={{backgroundColor: '#ff0'}}
+          _active={{backgroundColor: '#ff0'}}
         >
           Most Recent
         </Button>
       </Flex>
       <Box w={{base: 'full', md: '85%'}} mx="auto">
         <Flex
-          borderBottom={'1px solid #CBCBCB'}
+          borderBottom={'1px solid #191919'}
           w="full"
           px="19px"
           align={'center'}
@@ -73,7 +77,6 @@ export const Blog = () => {
           mb="30px"
           display={{base: 'none', md: 'flex'}}
         >
-          {/* <Text fontWeight={'300'} fontSize={'36px'} mb="20px" color="#191919"> */}
           <Text fontWeight={'300'} fontSize={'36px'} mb="20px">
             Most Read
           </Text>
@@ -84,11 +87,9 @@ export const Blog = () => {
               h="36px"
               w="36px"
               borderRadius={'full'}
-              // color="#191919"
-              // border={'2px solid #191919'}
               border={'2px solid #ffffff'}
             >
-              <SlArrowLeft fontWeight={700} />
+              <FaChevronLeft />
             </Center>
             <Center
               cursor={'pointer'}
@@ -96,11 +97,9 @@ export const Blog = () => {
               h="36px"
               w="36px"
               borderRadius={'full'}
-              // color="#191919"
-              // border={'2px solid #191919'}
               border={'2px solid #ffffff'}
             >
-              <SlArrowRight fontWeight={700} />
+              <FaChevronRight />
             </Center>
           </HStack>
         </Flex>
@@ -128,7 +127,7 @@ export const Blog = () => {
       </Box>
       <Box w={{base: 'full', md: '85%'}} mx="auto" mt={{lg: '44px'}}>
         <Flex
-          borderBottom={'1px solid #CBCBCB'}
+          borderBottom={'1px solid #191919'}
           w="full"
           px="19px"
           align={'center'}
@@ -136,21 +135,19 @@ export const Blog = () => {
           mb="30px"
           display={{base: 'none', md: 'flex'}}
         >
-          {/* <Text fontWeight={'300'} fontSize={'36px'} mb="20px" color="#191919"> */}
           <Text fontWeight={'300'} fontSize={'36px'} mb="20px">
             Most Recent
           </Text>
-          <HStack spacing={'15px'}>
+          <HStack spacing={'15px'} color="#fff">
             <Center
               cursor={'pointer'}
               onClick={() => handleMostRecentScroll(-320)}
               h="36px"
               w="36px"
               borderRadius={'full'}
-              // color="#191919"
               border={'2px solid #ffffff'}
             >
-              <SlArrowLeft fontWeight={700} />
+              <FaChevronLeft />
             </Center>
             <Center
               cursor={'pointer'}
@@ -158,14 +155,14 @@ export const Blog = () => {
               h="36px"
               w="36px"
               borderRadius={'full'}
-              // color="#191919"
               border={'2px solid #ffffff'}
             >
-              <SlArrowRight fontWeight={700} />
+              <FaChevronRight />
             </Center>
           </HStack>
         </Flex>
         <Stack
+          ref={readScollToRef2}
           px="20px"
           gap={{base: '20px', md: '40px'}}
           alignItems={'center'}

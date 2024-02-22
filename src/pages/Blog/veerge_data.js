@@ -12,12 +12,12 @@ import React, {useEffect, useRef} from 'react';
 import veergeNDdata from '../../assets/images/blog/veerge&data.png';
 import {SlArrowLeft} from 'react-icons/sl';
 import {CiInstagram} from 'react-icons/ci';
-import {GrFacebook, GrLinkedin, GrTwitter} from 'react-icons/gr';
+import {GrLinkedin, GrTwitter} from 'react-icons/gr';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import Helpful from '../../components/Faq/Helpful';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Veerge_data = () => {
   useEffect(() => {
@@ -76,7 +76,7 @@ const Veerge_data = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h={{base: '300px', md: 'full'}}
@@ -97,12 +97,12 @@ const Veerge_data = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#fffff !important'}}
         >
           <Box />
           <Box
             display={{base: 'flex', md: 'block'}}
             flexDirection={'column'}
-            color={{base: 'black', md: 'white !important'}}
             gap={{base: 6, md: 0}}
           >
             <Text
@@ -110,27 +110,15 @@ const Veerge_data = () => {
               w="full"
               alignSelf={{md: 'center'}}
               fontSize="36px"
-              color={{base: '#191919 !important', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Veerge & Data Analytics
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 August 10, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 5 mins read
               </Text>
             </Flex>
@@ -142,12 +130,7 @@ const Veerge_data = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -168,23 +151,18 @@ const Veerge_data = () => {
         </Flex>
       </Flex>
       <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt={{md: '58px'}}
-          pb="70px"
-          fontWeight={200}
-          fontSize="16px"
-        >
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={{base: '50%', '2xl': '35%'}}
-          ml={{base: '25%', '2xl': '20%'}}
-          mt={{md: '58px'}}
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text letterSpacing={'.25em'} fontWeight={500} fontSize={'36px'}>

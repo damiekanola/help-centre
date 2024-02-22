@@ -9,7 +9,7 @@ import fractional_ownership from '../../assets/images/blog/fractional_ownership.
 import fractional_animation from '../../assets/images/blog/fractional_animation.gif';
 import {useNavigate} from 'react-router-dom';
 import BlogLeftNav from '../../components/Leftsidenav/BlogLeftNav';
-import {FaFacebook} from 'react-icons/fa6';
+import {FaChevronLeft, FaFacebook} from 'react-icons/fa6';
 
 const Fractional_ownership = () => {
   useEffect(() => {
@@ -59,7 +59,7 @@ const Fractional_ownership = () => {
           color="#191919"
           bg="#fff"
         >
-          <SlArrowLeft fontSize={'20px'} />
+          <FaChevronLeft fontSize={'16px'} />
         </Center>
         <Image
           h="full"
@@ -80,6 +80,7 @@ const Fractional_ownership = () => {
           mt={{base: '5rem', md: 0}}
           padding={{base: '1rem 2rem', lg: 0}}
           gap={{base: 6, md: 0}}
+          color={{base: '#fffff !important'}}
         >
           <Box />
           <Box
@@ -88,21 +89,10 @@ const Fractional_ownership = () => {
             gap={{base: 6, md: 0}}
           >
             <Text
-              mb="15px"
-              fontWeight={400}
-              color="#FFF !important"
-              alignSelf={'center'}
-              fontSize="24px"
-              display={{base: 'none', md: 'block'}}
-            >
-              Peaks
-            </Text>
-            <Text
               fontWeight={500}
               w="full"
               alignSelf={{md: 'center'}}
               fontSize="36px"
-              color={{base: '#191919 !important', md: 'white !important'}}
               lineHeight={{base: '40px', md: 'normal'}}
             >
               Fractional Ownership
@@ -110,7 +100,6 @@ const Fractional_ownership = () => {
             <Text
               mt="15px"
               fontWeight={400}
-              color="#FFF !important"
               w="80%"
               alignSelf={'center'}
               fontSize="14px"
@@ -119,32 +108,11 @@ const Fractional_ownership = () => {
               If fractional ownership is such a game-changer, why are so many startups still
               struggling with it?
             </Text>
-            <Text
-              mt="45px"
-              fontWeight={400}
-              color="#FFF !important"
-              alignSelf={'center'}
-              fontSize="14px"
-              display={{base: 'none', md: 'block'}}
-            >
-              By Veerge Team
-            </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Text
-                mt={{md: '15px'}}
-                fontWeight={400}
-                alignSelf={'center'}
-                fontSize="14px"
-                color={{base: '#3D3D3D !important', md: 'white !important'}}
-              >
+              <Text mt={{md: '15px'}} fontWeight={400} alignSelf={'center'} fontSize="14px">
                 January 21, 2023
               </Text>
-              <Text
-                fontWeight={400}
-                fontSize="14px"
-                color={'#3D3D3D !important'}
-                display={{md: 'none'}}
-              >
+              <Text fontWeight={400} fontSize="14px" display={{md: 'none'}}>
                 5 mins read
               </Text>
             </Flex>
@@ -156,12 +124,7 @@ const Fractional_ownership = () => {
             pb="10px"
             direction={{base: 'column', md: 'row'}}
           >
-            <Text
-              fontWeight={{md: 400}}
-              alignSelf={{md: 'center'}}
-              fontSize="14px"
-              color={{base: '#3D3D3D !important', md: 'white !important'}}
-            >
+            <Text fontWeight={{md: 400}} alignSelf={{md: 'center'}} fontSize="14px">
               {shareText}
             </Text>
             <Flex align={'center'} gap="4px">
@@ -181,17 +144,19 @@ const Fractional_ownership = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Box px={'78px'}>
+      <Box
+        display={{base: 'flex', md: 'block'}}
+        flexDirection={'column'}
+        gap={{base: 6, md: 0}}
+        px={{base: '20px', md: '80px'}}
+      >
         <BlogLeftNav articleContent={articleContent} />
         <Box
-          w={'95%'}
-          maxW={{base: '587px', xl: '40%'}}
-          minW={{base: '0px', xl: '40%'}}
-          mx="auto"
-          mt="58px"
-          pb="70px"
+          m={{base: '10px auto', md: '58px auto'}}
+          pb={{base: '10px', md: '70px'}}
           fontWeight={200}
           fontSize="16px"
+          w={{base: '100%', md: '40%', '2xl': '35%'}}
         >
           <Box ref={overviewRef} id="overview">
             <Text>
@@ -320,7 +285,7 @@ const Fractional_ownership = () => {
               </Text>
             </Box>
             <Box mt="30px">
-              <Text fontWeight={500} fontSize={'36px'} color="#000">
+              <Text fontWeight={500} fontSize={'36px'}>
                 How Fractional Works the Veerge Way
               </Text>
             </Box>
