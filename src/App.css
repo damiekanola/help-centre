@@ -18,6 +18,8 @@ html {
 .dark_pages {
   background: #0d0d0d;
   color: #ddd !important;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .dark_pages .head_,
@@ -36,6 +38,7 @@ html {
 .light_pages {
   background-color: white;
   color: black;
+  height: 100%;
 }
 
 .light_pages .head,
