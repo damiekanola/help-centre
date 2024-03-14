@@ -235,8 +235,9 @@ export const Usersexperience = () => {
                 All feedback will be centralized in one accessible location, ensuring that everyone
                 can review it. Moreover, the feedback can be responded to, and if any issues require
                 further attention, they can be escalated by creating
-                <a target="_blank" href="https://test-veerge.myxellia.io/veerge_menu/ticket">
-                  <Text color="#56C3CE" as="span">
+                <a target="_blank" href="/ticketing">
+                  {/* <Text color="#56C3CE" as="span"> */}
+                  <Text color="#FF0" as="span">
                     {' '}
                     a dedicated ticket.
                   </Text>
@@ -285,7 +286,7 @@ export const Usersexperience = () => {
                 payments. Our payment system is globally inclusive, supporting transactions in over
                 70 countries and more than 150 currencies.
               </Text>
-              <Text as="p" fontWeight={300}>
+              <Text as="p">
                 In this specific case, Ahmed Ali, the buyer, gains immediate access to the purchase
                 document and all other associated documents relevant to the property purchase
               </Text>
@@ -410,7 +411,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 AUTO - PAY
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 After the purchase, subscribers gain full control over all transactions related to
                 their newly acquired property. This includes the ability to set up Autopay, a
                 convenient feature that automatically deducts the due payment plan amount from their
@@ -439,7 +440,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 CO - OWNERSHIP
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 The mobile application also boasts a secret weapon - co-ownership. Take someone like
                 Ahmed Ali, for instance; he can invite his friends or family to join him in
                 purchasing a property seamlessly. With co-ownership, they can split the costs based
@@ -474,7 +475,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 FRACTIONAL OWNERSHIP
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 One of the remarkable benefits offered by Veerge is the ability to fractionalize
                 real estate without the need for intermediaries. Fractional ownership is a feature
                 designed to provide individuals with limited purchasing power access to the real
@@ -483,7 +484,7 @@ export const Usersexperience = () => {
                 introduces a fresh perspective by dividing ownership into smaller, more affordable
                 shares.
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 For instance, consider a property with a total value of 50 million units. With
                 fractional ownership, this property can be divided into 1,000 shares, each priced at
                 50,000 Naira, representing a fraction of the property's overall value. This means
@@ -508,12 +509,9 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Fractional_Ownership.mp4'} />
               </video>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://veerge-support.myxellia.io/blog/understanding_fraction"
-              >
-                <Text as="p" fontWeight={300} mt="60px" color="#56C3CE" cursor={'pointer'}>
+              <a target="_blank" rel="noreferrer" href="/blog/fractional_ownership">
+                {/* <Text as="p" mt="60px" color="#56C3CE" cursor={'pointer'}> */}
+                <Text as="p" mt="60px" color="#FF0" cursor={'pointer'}>
                   Click here to read more about Fractional Real Estate
                 </Text>
               </a>
@@ -524,7 +522,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 AGENT
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 An integral figure in numerous real estate transactions is the agent. In fact, for
                 many real estate deals, agents play a pivotal role, akin to the vital function of
                 kidneys in the human body. They often serve as intermediaries, and recognizing the
@@ -558,7 +556,7 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Agent_Portal.mp4'} />
               </video>
-              {/* <Text as='p' fontWeight={300} mt='30px'>
+              {/* <Text as='p'  mt='30px'>
                 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
               </Text> */}
               {/* <Box w='full' h='400px'>
