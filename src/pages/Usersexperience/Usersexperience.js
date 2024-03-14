@@ -3,6 +3,7 @@ import {Box, Text} from '@chakra-ui/react';
 import QuestionsAndReplies from '../../components/Faq/QuestionsAndReplies';
 import Helpful from '../../components/Faq/Helpful';
 import {Link} from 'react-router-dom';
+import {UserExperienceDrawer} from './UserExperienceDrawer';
 
 export const Usersexperience = () => {
   const questions = [
@@ -56,7 +57,7 @@ export const Usersexperience = () => {
               <Text className="head_" color="#FFF">
                 End-to-End Experience
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 This is where Veerge truly shines – as a catalyst for business value. Veerge serves
                 as a robust system of engagement. It empowers you to craft an application interface
                 effortlessly, without the need for a single line of code. Yet, it's not just any
@@ -67,7 +68,7 @@ export const Usersexperience = () => {
                 experience into gold, addressing every facet of the home ownership journey, all
                 without demanding any coding.
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 Why do we emphasize personalization? Because buyers are not uniform entities with
                 identical needs and preferences. Each buyer is a distinctive individual with
                 specific desires, challenges, and dreams. By infusing a personal touch, we forge
@@ -75,11 +76,11 @@ export const Usersexperience = () => {
                 exceptional service that surpasses buyer expectations creates enduring, memorable
                 experiences.
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 In this section, we will guide you through the comprehensive workings of Veerge from
                 start to finish.
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 Before we dive into the breakdown of how things work, it's important to note that
                 there are two types of applications: basic and custom. The one in focus here is the
                 custom application, which has already been fully deployed. Therefore, the steps we
@@ -93,7 +94,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 AUTHENTICATION
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 After your application has been successfully deployed, your subscribers and
                 potential buyers simply need to visit the Google Play Store or Apple App Store.
                 There, they can search for your property development company's name, download the
@@ -119,7 +120,7 @@ export const Usersexperience = () => {
                   src={'https://d1tfxqgzlmg1r3.cloudfront.net/Authentication_-_User_Signup.mp4'}
                 />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 On your portal, you will immediately see new user sign-ups, and you can access and
                 review the profiles of these individuals. Additionally, you have the capability to
                 track their activities within your application
@@ -139,9 +140,12 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Admin_-_View_Users.mp4'} />
               </video>
-              <Text as="p" fontWeight={300} mt="30px" color="#56C3CE">
-                What is the sweet spot in this process?
-              </Text>
+              {/* <Text as="p" mt="30px" color="#56C3CE"> */}
+              <UserExperienceDrawer>
+                <Text as="p" mt="30px" color="#FF0">
+                  What is the sweet spot in this process?
+                </Text>
+              </UserExperienceDrawer>
             </Box>
             <Box borderBottom="1px solid #2E2E32" w="full" mx="auto" mt="70px" mb="60px" />
             {/* <Box w="60%" mx="auto" id="after_authentication"> */}
@@ -149,7 +153,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 AFTER AUTHENTICATION, WHAT NEXT ?
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 After completing the sign-up process, users gain effortless access to all available
                 properties, including those that have already been sold, along with comprehensive
                 information such as pricing, location, and property type. The information provided
@@ -180,7 +184,7 @@ export const Usersexperience = () => {
                   }
                 />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 On your portal, you have the ability to manage these requests. You can approve
                 requests that align with the given schedule or, if the timing doesn't work, you can
                 easily reschedule them. When it comes to assignment, you can assign the task to any
@@ -205,7 +209,7 @@ export const Usersexperience = () => {
                   }
                 />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 After the inspection, the potential home buyer, in this case, Ahmed Ali, will
                 receive a notification to provide inspection feedback. This feedback system is akin
                 to the ones employed by popular ride-sharing services like Uber and Bolt. It's this
@@ -227,7 +231,7 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Inspection_Feedback.mp4'} />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 All feedback will be centralized in one accessible location, ensuring that everyone
                 can review it. Moreover, the feedback can be responded to, and if any issues require
                 further attention, they can be escalated by creating
@@ -253,10 +257,10 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Creating_a_Ticket.mp4'} />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 What is the sweet spot in this process?
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 With this approach, you can effectively navigate the daily operations while
                 concurrently strategizing for the future of your business. Veerge excels at
                 collecting and collating feedback data, transforming it into actionable insights.
@@ -272,7 +276,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 PURCHASE FLOW
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 If the buyer remains interested after the inspection, they have the convenience of
                 making the property purchase directly through the application. The current property
                 price, along with available payment options, is readily accessible within the app.
@@ -307,7 +311,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 REVENUE RECOGNITION SOLUTION
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 As your business continues to grow, managing revenue can become a complex and
                 error-prone task. To effectively address this challenge, we have implemented a
                 robust revenue recognition system. With this system in place, you can effortlessly
@@ -343,7 +347,7 @@ export const Usersexperience = () => {
               <Text fontSize={'24px'} fontWeight={500}>
                 SMART ALLOCATION
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 The core objective behind our creation is to deliver an unparalleled experience to
                 our customers. We aim for nothing less than a gold-standard experience, and we
                 believe achieving this necessitates the inclusion of a smart allocation system. So,
@@ -352,7 +356,7 @@ export const Usersexperience = () => {
                 map? Well, we've incorporated a similar concept into Veerge, and we've made it
                 exceptionally user-friendly.
               </Text>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 All a property development company needs to do is provide some essential information
                 regarding unit numbering. They also have the flexibility to designate which units
                 they don't want to be available for selection, such as those that are reserved.
@@ -377,7 +381,7 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Smart_Allocation.mp4'} />
               </video>
-              <Text as="p" fontWeight={300} mt="30px">
+              <Text as="p" mt="30px">
                 For instance, if a company sets the allocation milestone at 50%, it means that once
                 Ahmed Ali completes 50% of his payment, he gains the ability to select from the
                 available units in real-time.
