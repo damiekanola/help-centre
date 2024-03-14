@@ -258,7 +258,7 @@ export const Usersexperience = () => {
               >
                 <source src={'https://d1tfxqgzlmg1r3.cloudfront.net/Creating_a_Ticket.mp4'} />
               </video>
-              <Text as="p" mt="30px">
+              {/* <Text as="p" mt="30px">
                 What is the sweet spot in this process?
               </Text>
               <Text as="p" mt="30px">
@@ -269,6 +269,37 @@ export const Usersexperience = () => {
                 customer segment that may have been overlooked. This enables you to seamlessly tap
                 into new revenue streams, explore distinctive opportunities, maximize your
                 addressable market, and expand your customer base.
+              </Text> */}
+
+              <Text as="p" mt="30px">
+                At the heart of the system lies a feedback loop that serves as the foundation for
+                identifying and addressing the gaps in businesses. This becomes especially crucial
+                when handling a large volume of feedback. Here, the System of Intelligence steps in
+                to provide AI-generated summaries of the feedback received. With natural language
+                models It identifies the most dissatisfied customers and suggests engaging with them
+                promptly. Whether the feedback is about a desire for a larger kitchen, a preference
+                for a tennis court over a football pitch, budget concerns, or suggestions for a
+                different location—the system collates all this information to highlight underserved
+                or addressable markets and notifies when it's time to act.{' '}
+              </Text>
+              <Text as="p" mt="30px">
+                This enables anyone to quickly gain a data-driven and comprehensive understanding of
+                what's actually happening in the market. It's akin to having a world-class data
+                scientist on the team, without the need to have one on the payroll. Furthermore, one
+                can pose specific questions to address their most pressing concerns, such as:
+                <Box as="ul" m={{base: '16px'}}>
+                  <li>What is the age distribution of the potential buyers?</li>
+                  <li>Where is the majority of the customer base located?</li>
+                  <li>What types of properties are in highest demand?</li>
+                  <li>
+                    At what point do potential buyers tend to drop off in the sales process, and
+                    what are the main reasons for buyers' attrition?
+                  </li>
+                </Box>
+              </Text>
+              <Text as="p" mt="30px">
+                With this system, one is equipped to make informed decisions and respond effectively
+                to the needs and preferences of the market.
               </Text>
             </Box>
             <Box borderBottom="1px solid #2E2E32" w="full" mx="auto" mt="70px" mb="60px" />
