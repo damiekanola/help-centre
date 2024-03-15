@@ -228,7 +228,7 @@ const New_era = () => {
                 that the needs are ever evolving how do you evolve with these needs?
               </ListItem>
               <ListItem>
-                How do you we know when it’s time to take advantage of new revenue streams, explore
+                How do we know when it’s time to take advantage of new revenue streams, explore
                 unique opportunities that maximize an addressable market, and expand the customer
                 base?
               </ListItem>

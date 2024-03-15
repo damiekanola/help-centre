@@ -38,7 +38,12 @@ export const UserExperienceDrawer = ({children, ...rest}) => {
           color="#fff"
           bg="#101010"
         >
-          <DrawerCloseButton />
+          <DrawerCloseButton
+            _focus={{outline: 'none'}}
+            _focusVisible={{outline: 'none'}}
+            _hover={{outline: 'none'}}
+            _active={{outline: 'none'}}
+          />
           <Flex px={'21px'} justify="center" direction="column" gap="10px">
             <Image alt="Icon" h="36px" w="36px" src={info || '/'} />
             <Text
