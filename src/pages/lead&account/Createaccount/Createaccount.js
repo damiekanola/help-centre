@@ -73,18 +73,18 @@ export const CreateLeadAccount = () => {
         <Box id="how_to" ref={how_toRef}>
           <Text className="content" lineHeight={'25px'}>
             <Text as="p" marginTop={'30px'}>
-              Lead management is the foundation of the sales process, providing a vital framework
-              for nurturing potential leads that match your target audience. Guiding these prospects
-              through the lead lifecycle requires a systematic approach, including prompt
-              follow-ups, careful segmentation, and assigning leads to the right sales
-              representatives. The key is to maintain timely interactions that align with the lead's
-              journey.{' '}
+              Lead management serves as the cornerstone of the sales process, providing the crucial
+              framework for nurturing potential leads aligned with your target audience. Guiding
+              these prospects through the various stages of the lead lifecycle demands a systematic
+              approach, characterized by swift follow-ups, meticulous segmentation, and the precise
+              delegation of leads to the appropriate sales representatives. The essence lies in
+              maintaining impeccably timed interactions that resonate with the lead's journey.
             </Text>
             <Text as="p" marginTop="20px">
-              Most leads on the verge of conversion will likely come from individuals who have
-              registered on your platform, whether through mobile or web applications. However,
-              there may be cases where leads are acquired externally and need to be entered
-              manually.
+              Typically, the majority of leads poised on the brink of conversion will comprise
+              individuals who have registered on your platform, be it through mobile or web
+              applications. Nevertheless, there will be instances where leads are acquired
+              externally and require manual entry.
             </Text>
             <Text as="p" marginTop="20px">
               In such cases, the following procedural steps are indispensable:

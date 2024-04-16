@@ -19,8 +19,10 @@ import pass_setup from '../../assets/images/pass_setup.png';
 import account_setup from '../../assets/images/account_setup.png';
 import phone from '../../assets/images/phone_verification.png';
 import id from '../../assets/images/select_id.png';
-import edit from '../../assets/images/edit.png';
-import details from '../../assets/images/fill_details.png';
+// import edit from '../../assets/images/edit.png';
+import edit from '../../assets/images/firsttimesetup/edit_profile_image.png';
+// import details from '../../assets/images/fill_details.png';
+import details from '../../assets/images/firsttimesetup/compliance_section.png';
 import QuestionsAndReplies from '../../components/Faq/QuestionsAndReplies';
 import LeftNav from '../../components/Leftsidenav/Leftsidenav';
 import peters from '../../assets/images/peters-pic.png';
@@ -167,8 +169,10 @@ export const Fisrttimesetup = () => {
       <Box pt="30px" id="account" ref={accountRef}>
         <Text className="content_head">SETTING UP A VEERGE ACCOUNT</Text>
         <Text className="content">
-          Creating a Veerge account is free, easy and can be done in a few minutes. The steps below
-          should guide you on how to create your account.
+          Setting up a Veerge account is incredibly simple, requiring only a brief moment of your
+          time. By adhering to these straightforward instructions, you'll swiftly be on your way to
+          enjoying all that Veerge has to offer. Before delving in, ensure that you have the
+          following essentials at hand:
           <Text marginTop="20px">
             What you'll need:
             <ol style={{listStyleType: 'decimal', paddingLeft: '15px'}}>
