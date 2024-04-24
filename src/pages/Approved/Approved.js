@@ -92,8 +92,8 @@ const Approved = () => {
             wallet at each billing cycle.
           </Text>
           <Text as="p" marginTop="20px">
-            Once you have chosen your subscription, the following step entails initiating the
-            migration of your business processes to the Veerge platform.
+            Once you have chosen your subscription, the following step entails the processes of
+            migrating your business to the Veerge platform.
           </Text>
         </Text>
       </Box>

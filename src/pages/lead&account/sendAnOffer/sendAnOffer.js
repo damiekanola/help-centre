@@ -75,7 +75,7 @@ const SendAnOffer = () => {
             application.
           </Text>
           <Text as="p" marginTop="20px">
-            Navigating this process involves several steps, which will be outlined below:
+            Navigating this process involves several steps which will be outlined below:
           </Text>
         </Text>
       </Box>
