@@ -315,63 +315,37 @@ export const Terms = () => {
           <Text className="content_head">Payment of Fees and Taxes</Text>
           <OrderedList className="content">
             <ListItem>
-              We bill subscription fees and charge on a monthly basis. However, we may bill you more
+              We bill subscription fees on a monthly basis. However, we may issue bills more
               frequently if we suspect fraudulent activity or a risk of non-payment. You are
-              responsible for paying the applicable fees and charges for using the Services as
-              described on the Veerge Site. Payments must be made using one of the payment methods
-              supported by Veerge. You agree to pay all amounts without setoff, counterclaim,
-              deduction, or withholding. Fees and charges for new Services or features will be
-              effective when we post updated fees and charges on the Veerge Site, unless otherwise
-              stated in a notice. We may increase or add new fees and charges for any existing
-              Services you are using by providing at least 30 days' prior notice. Late payments may
-              be subject to interest at a rate of 1.5% per month (or the highest rate permitted by
-              law, if lower).
+              responsible for paying all applicable fees and charges for using the Services as
+              described on the Veerge website. Payments must be made using a payment method
+              supported by Veerge. You agree to pay all amounts due without setoff, counterclaim,
+              deduction, or withholding. Fees and charges for new services or features will be
+              effective when we post updated fees and charges on the Veerge website, unless
+              otherwise stated in a notice. We may increase or add new fees and charges for any
+              existing services you are using by providing at least 30 days' prior notice.
             </ListItem>
             <ListItem>
-              Your users will be responsible for paying the applicable fees related to sales made
-              through your Web Application when using Veerge Checkout.
+              Your users will be responsible for paying all applicable fees related to sales made
+              through your web or mobile application. Veerge charges will continue until the
+              Services are terminated and all outstanding fees have been paid in full. Unless
+              otherwise specified, all fees and charges are in U.S. dollars.
             </ListItem>
             <ListItem>
-              Veerge will charge the applicable fees from your Veerge wallet or any valid payment
-              method. The charges will continue until the Services are terminated, and all
-              outstanding fees have been paid in full. Unless otherwise specified, all fees and
-              charges are in U.S. dollars.
-            </ListItem>
-            <ListItem>
-              If we are unable to process payment of fees using an Authorized Payment Method or your
-              Veerge wallet, we may make subsequent attempts to process payment using any Authorized
-              Payment Method. If payment is not successfully processed within 28 days of our initial
-              attempt, we may suspend and revoke access to your Account and the Services. Your
-              Account will be reactivated upon payment of any outstanding fees. During any period of
-              suspension, you may not be able to access your Account or your Web Application. If
-              outstanding fees remain unpaid for 60 days following the suspension date, Veerge
-              reserves the right to terminate your Account in accordance with Section 14.
+              If payment is not made, we may suspend or revoke access to your account and the
+              services. Your account will be reactivated upon payment of any outstanding fees.
+              During any period of suspension, you may not be able to access your account, and your
+              users may not have access to the web or mobile application. If outstanding fees remain
+              unpaid for 60 days following the suspension date, Veerge reserves the right to
+              terminate your account in accordance with Section 14.
             </ListItem>
             <ListItem>
               You are responsible for all applicable taxes arising from your subscription to or
-              purchase of Veerge's products and services. If Veerge charges these taxes, they will
-              be calculated based on the tax rates applicable to the billing address you provide. If
-              you are exempt from such taxes, you must provide us with evidence of your exemption,
-              which may include an original certificate satisfying legal requirements for tax-exempt
-              status. Tax exemption will apply only after we receive satisfactory evidence of your
-              exemption. If Veerge does not charge taxes, you are responsible for determining if
-              taxes are payable and, if so, self-remitting them to the appropriate tax authorities
-              in your jurisdiction.
-            </ListItem>
-            <ListItem>
-              All sums payable by you to Veerge under these Terms of Service will be paid without
-              any deductions or withholdings, except for taxes charged by Veerge and remitted to the
-              appropriate tax authorities on your behalf. Any deductions or withholdings required by
-              law will be your responsibility and must be paid separately to the relevant taxation
-              authority. Veerge will charge the full amount of fees specified under these Terms of
-              Service to your Authorized Payment Method, disregarding any required deductions or
-              withholdings.
-            </ListItem>
-            <ListItem>
-              You are solely responsible for determining, collecting, withholding, reporting, and
-              remitting any applicable taxes, duties, fees, surcharges, and additional charges
-              arising from sales made on your Web Application or your use of the Services. Any
-              contract of sale made through the Services is directly between you and the customer.
+              purchase of Veerge's products and services. You are solely responsible for
+              determining, collecting, withholding, reporting, and remitting any applicable taxes,
+              duties, fees, surcharges, and additional charges arising from sales made on your web
+              application or your use of the Services. Any contract of sale made through the
+              Services is directly between you and the customer.
             </ListItem>
             <ListItem>
               You must maintain an accurate location in the administrative console of your Veerge
