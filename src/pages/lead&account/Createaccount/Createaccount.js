@@ -67,7 +67,7 @@ export const CreateLeadAccount = () => {
     <div className="main">
       <LeadRightNav />
       <Box w="full">
-        <Text className="head_">Create aN ACCOUNT</Text>
+        <Text className="head_">CREATE AN ACCOUNT</Text>
         <Text className="publish">Published: March 26, 2023</Text>
         <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
         <Box id="how_to" ref={how_toRef}>
@@ -96,7 +96,7 @@ export const CreateLeadAccount = () => {
           <Box>
             <Text className="content_head">STEP 1</Text>
             <Text className="content">
-              Begin by navigating to the designated <b>"Users"</b> section within the system.
+              Begin by navigating to the designated "<b>Users</b>" section within the system.
             </Text>
 
             <Image src={createLead1} mt="30px" mx="auto" w="full" />
@@ -151,13 +151,13 @@ export const CreateLeadAccount = () => {
               </Text>
               {/* <Image src={createLead6} mt="30px" mx="auto" w='full' /> */}
               <Text className="content" marginTop={'20px'}>
-                <b>
-                  In parallel scenarios where clients make property purchases external to the
-                  application, the onboarding process presents distinct requirements. One frequent
-                  scenario involves new entrants to the Veerge platform, particularly property
-                  development firms aiming to integrate their existing clientele. For such
-                  scenarios, a specialized set of steps is vital:
-                </b>
+                {/* <b> */}
+                In parallel scenarios where clients make property purchases external to the
+                application, the onboarding process presents distinct requirements. One frequent
+                scenario involves new entrants to the Veerge platform, particularly property
+                development firms aiming to integrate their existing clientele. For such scenarios,
+                a specialized set of steps is vital:
+                {/* </b> */}
               </Text>
             </Box>
             <Box>
@@ -265,8 +265,9 @@ export const CreateLeadAccount = () => {
               </Text>
               <Image src={createLeadS11} mt="30px" mx="auto" w="full" />
               <Text className="content" mt="30px">
-                In both lead creation and property assignment scenarios, paying close attention to
-                detail and following the prescribed steps are crucial to ensure accuracy.
+                In both lead management and property acquisition scenarios, meticulous attention to
+                detail and adherence to the prescribed steps are imperative for ensuring accuracy,
+                enhancing user experience, and optimizing sales efficacy
               </Text>
             </Box>
           </Box>
