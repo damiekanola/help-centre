@@ -2,7 +2,8 @@ import {Box, Text, Image, useToast, OrderedList, ListItem} from '@chakra-ui/reac
 import React, {useRef} from 'react';
 import addprop from '../../assets/images/addprop.png';
 import alloc from '../../assets/images/alloc.png';
-import allo2 from '../../assets/images/allo2.png';
+// import allo2 from '../../assets/images/allo2.png';
+import allo2 from '../../assets/images/approved/migrate_client.png';
 import LeftNav from '../../components/Leftsidenav/Leftsidenav';
 import aminat from '../../assets/images/aminat.png';
 import daniel from '../../assets/images/daniel.svg';
@@ -91,8 +92,8 @@ const Approved = () => {
             wallet at each billing cycle.
           </Text>
           <Text as="p" marginTop="20px">
-            Once you have chosen your subscription, the following step entails initiating the
-            migration of your business processes to the Veerge platform.
+            Once you have chosen your subscription, the following step entails the processes of
+            migrating your business to the Veerge platform.
           </Text>
         </Text>
       </Box>

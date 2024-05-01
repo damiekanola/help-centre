@@ -1,4 +1,4 @@
-import {Box, Text, useToast} from '@chakra-ui/react';
+import {Box, Link, Text, useToast} from '@chakra-ui/react';
 import React, {useRef} from 'react';
 import RightNav from '../../../components/Listings/RightNav';
 import LeftNav from '../../../components/Leftsidenav/Leftsidenav';
@@ -69,21 +69,21 @@ const Overview = () => {
             Imagine this as your grand podium, a spotlight-stealing stage for showcasing the
             transformative development projects you've masterfully orchestrated throughout time –
             both the trailblazing achievements of the past and the radiant promises of the present.
-            These listings transcend mere descriptive summaries; Each project description demands
+            These listings transcend mere descriptive summaries; each project description demands
             your utmost attention, an infusion of vitality that breathes life into every word. Never
             lose sight of the fact that each listing surpasses the status of a mere item to check
-            off on a to-do list. It is your personal saga, a narrative of your journey and a
+            off on a to-do list. It is your personal saga, a narrative of your journey, and a
             proclamation of your intent.
           </Text>
         </Text>
       </Box>
       <Box pt="30px" id="listings" ref={listingsRef}>
-        <Text className="content_head">WHAT IS THE DIFFERENCE BETWEEN UNIT & A LISTING</Text>
+        <Text className="content_head">WHAT IS THE DIFFERENCE BETWEEN UNIT & A LISTING?</Text>
         <Text className="content">
           <Text as="p">
-            Distinguishing between a "<b>unit</b>" and a "<b>listing</b>" is essential to grasp the
-            dynamics of real estate. A "<b>listing</b>" represents a comprehensive portrayal of a
-            property available for sale, rent, or investment. Notably, a "<b>listing</b>" can
+            Distinguishing between a "<b>unit</b>" and a "<b>listing</b>" is essential to grasping
+            the dynamics of real estate. A "<b>listing</b>" represents a comprehensive portrayal of
+            a property available for sale, rent, or investment. Notably, a "<b>listing</b>" can
             encompass multiple individual "<b>units</b>," creating a framework for properties like
             multifamily apartments, apartment complexes, or estates.
           </Text>
@@ -113,20 +113,20 @@ const Overview = () => {
         <Text className="content_head">WHAT YOU NEED TO KNOW ABOUT PAYMENT PLAN ON VEERGE</Text>
         <Text className="content">
           <Text as="p">
-            In the realm of real estate, a "Payment Plan" denotes a mutually agreed arrangement
-            between a buyer and a seller, facilitating the acquisition of a property. This
-            innovative approach allows buyers to disburse the property's cost across an extended
-            duration, typically in incremental installments, as opposed to an immediate lump sum
+            In the realm of real estate, a "<b>Payment Plan</b>" denotes a mutually agreed-upon
+            arrangement between a buyer and a seller, facilitating the acquisition of a property.
+            This innovative approach allows buyers to disburse the property's cost over an extended
+            period, typically in incremental installments, as opposed to an immediate lump-sum
             payment upfront. Variably referred to as installment plans, seller financing, or seller
             carry-back, Payment Plans present a flexible pathway to property ownership.
           </Text>
           <Text as="p" marginTop="20px">
-            Within Veerge's dynamic landscape, two distinct types of payment plans emerge: the
-            "Quick Payment Plan" and the "Custom Payment Plan." For instance, envision a property on
-            the market for a total of 100 million Naira. To heighten buyer convenience, the seller
-            proposes diverse payment plan options. Under the "Quick Payment Plan," buyers can
-            initiate their journey by submitting an initial 20 million Naira and then dividing the
-            remaining sum over a span of one year.
+            Within Veerge's dynamic landscape, two distinct types of payment plans emerge: the "
+            <b>Quick Payment Plan</b>" and the "<b>Custom Payment Plan.</b>" For instance, envision
+            a property on the market for a total of 100 million Naira. To heighten buyer
+            convenience, the seller proposes diverse payment plan options. Under the "
+            <b>Quick Payment Plan</b>", buyers can initiate their journey by submitting an initial
+            20 million Naira and then dividing the remaining sum over a span of one year.
           </Text>
           <Text as="p" marginTop="20px">
             This division of payments can be structured as fixed amounts distributed weekly,
@@ -142,16 +142,16 @@ const Overview = () => {
             stipulated payment plan period.
           </Text>
           <Text as="p" marginTop="20px">
-            In contrast, a "Custom Payment Plan" deviates slightly. Imagine the property's outright
-            listing price stands at 100 million Naira. In this distinct plan, the structure
-            encompasses an initial deposit of 20 million Naira, succeeded by subsequent payments: 30
-            million Naira after 3 months, 25 million Naira after an additional 3 months, followed by
-            20 million Naira, and finally, a concluding 10 million Naira, both allocated after
-            3-month intervals.
+            In contrast, a "<b>Custom Payment Plan</b>" deviates slightly. Imagine that the
+            property's outright listing price stands at 100 million Naira. In this distinct plan,
+            the structure encompasses an initial deposit of 20 million Naira, succeeded by
+            subsequent payments: 30 million Naira after 3 months, 25 million Naira after an
+            additional 3 months, followed by 20 million Naira, and finally, a concluding 10 million
+            Naira, both allocated after 3-month intervals.
           </Text>
           <Text as="p" marginTop="20px">
-            Within a "Custom Payment Plan" on Veerge, the payments' amounts and intervals isn’t
-            rigid but buyers must adhere to as part of the purchasing agreement.
+            Within a "<b>Custom Payment Plan</b>" on Veerge, the payments' amounts and intervals
+            aren’t rigid but buyers must adhere to them as part of the purchasing agreement.
           </Text>
         </Text>
       </Box>
@@ -166,9 +166,10 @@ const Overview = () => {
             individual apartments, gated communities, or other real estate ventures. To simplify,
             let's illustrate this concept through an example: picture an apartment complex named
             ABC, encompassing a total of 30 distinct apartment units. In this scenario, the
-            allocation process might involve designations such as "Flat 1," "Flat 2," "Flat 3,"
-            progressing sequentially up to "Flat 30." Alternatively, it could be represented as
-            "Apartment 1," "Apartment 2," seamlessly extending up to "Apartment 30."
+            allocation process might involve designations such as "<b>Flat 1</b>", "<b>Flat 2</b>",
+            "<b>Flat 3</b>", progressing sequentially up to "<b>Flat 30</b>". Alternatively, it
+            could be represented as "<b>Apartment 1</b>", "<b>Apartment 2</b>", seamlessly extending
+            up to "<b>Apartment 30</b>".
           </Text>
           <Text as="p" marginTop="20px">
             Veerge offers two distinct types of allocations: Smart Allocation and Manual Allocation.
@@ -208,7 +209,7 @@ const Overview = () => {
             while the investment company owns the remaining <b>40 units</b>. In this context, it's
             astute to segregate your <b>60 units</b> from the investment company's 40. This
             separation is pivotal as it forestalls any inadvertent sales, which could complicate
-            matters, considering these units were never intended for sale.
+            matters considering these units were never intended for sale.
           </Text>
           <Text as="p" marginTop="20px">
             Another common scenario arises when certain units have already been sold before
@@ -220,14 +221,14 @@ const Overview = () => {
           </Text>
           <Text as="p" marginTop="20px">
             For a step-by-step guide on archiving units, please follow this{' '}
-            <a
+            <Link
               target="_blank"
+              rel="noopener noreferrer"
               href="https://matador-support-seven.vercel.app/listings/archive_unit"
+              color="#ff0"
             >
-              <Text as="span" color="#8486f2">
-                link
-              </Text>
-            </a>
+              link
+            </Link>
             . This crucial feature ensures your property management remains streamlined and
             transparent, safeguarding against unintended transactions and simplifying your real
             estate operations.
@@ -241,7 +242,7 @@ const Overview = () => {
           <Text as="p">
             Inspections on Veerge represent a paradigm shift from the norm that many property
             development companies are accustomed to. It is, in essence, the bedrock upon which the
-            entire process stands, an unparalleled facet that sets it leagues apart. Allow me to
+            entire process stands - an unparalleled facet that sets it leagues apart. Allow me to
             elaborate.
           </Text>
           <Text as="p" marginTop={'20px'}>
@@ -251,7 +252,7 @@ const Overview = () => {
             its peak. One aspect that distinguishes it is the post-inspection feedback mechanism—a
             prompt akin to how Uber seeks your input after a trip.
           </Text>
-          <Text as="p" marginTop={'20px'} fontStyle={'italic'}>
+          <Text as="p" marginTop={'20px'} fontStyle={'italic'} fontWeight={'500'}>
             “Tell us about your experience on site yesterday”
           </Text>
           <Text as="p" marginTop={'20px'}>
@@ -267,11 +268,12 @@ const Overview = () => {
             about spotting leaks in your business strategy. If a consistent pattern of complaints or
             requests emerges, it's an indicator of an underserved market or an existing gap. Veerge
             doesn't just inform; it empowers you to take timely action. It's the symbiotic dance
-            between operational efficiency and strategic planning. Bear in mind, every individual
-            with access holds the key to this repository of insight, a repository that molds future
-            decisions. Here's the pinnacle of Veerge's intelligence: It's predictive. If a customer
-            enters your site, offers less-than-stellar feedback, and then modifies their payment
-            behavior after the visit, Veerge can unravel the threads connecting these actions.
+            between operational efficiency and strategic planning. Bear in mind that every
+            individual with access holds the key to this repository of insight, a repository that
+            molds future decisions. Here's the pinnacle of Veerge's intelligence: It's predictive.
+            If a customer enters your site, offers less-than-stellar feedback, and then modifies
+            their payment behavior after the visit, Veerge can unravel the threads connecting these
+            actions.
           </Text>
           <Text as="p" marginTop={'20px'}>
             In essence, Veerge's inspection system transcends the ordinary. It's an embodiment of

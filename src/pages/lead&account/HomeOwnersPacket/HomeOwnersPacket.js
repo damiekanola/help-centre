@@ -2,7 +2,10 @@ import React, {useRef} from 'react';
 import {Box, Text, Image} from '@chakra-ui/react';
 import homeOwner1 from '../../../assets/images/homeOwners/home-owners-packet-1.png';
 import homeOwner2 from '../../../assets/images/homeOwners/home-owners-packet-2.png';
-import homeOwner3 from '../../../assets/images/homeOwners/home-owners-packet-3.png';
+// import homeOwner3 from '../../../assets/images/homeOwners/home-owners-packet-3.png';
+import homeOwner3_1 from '../../../assets/images/homeOwners/home-owners-packet-3-1.png';
+import homeOwner3_2 from '../../../assets/images/homeOwners/home-owners-packet-3-2.png';
+import homeOwner4 from '../../../assets/images/homeOwners/home-owners-packet-4.png';
 import QuestionsAndReplies from '../../../components/Faq/QuestionsAndReplies';
 import LeftNav from '../../../components/Leftsidenav/Leftsidenav';
 import Helpful from '../../../components/Faq/Helpful';
@@ -132,7 +135,7 @@ const HomeOwnersPacket = () => {
             <li style={{fontWeight: '700'}}>Home inspection report</li>
           </Text>
           <Text className="content">
-            If a home inspection was conducted, thisreport will comprehensively detail the
+            If a home inspection was conducted, this report will comprehensively detail the
             property's condition and highlight any issues identified during the inspection.
           </Text>
         </Box>
@@ -221,8 +224,7 @@ const HomeOwnersPacket = () => {
             STEP 2
           </Text>
           <Text className="content">
-            Click on the chosen property, then proceed to the upper right corner and access the
-            dropdown menu.
+            Click on the “View details” button to enter the user’s full profile.
           </Text>
 
           <Image src={homeOwner2} mt="30px" mx="auto" w="full" />
@@ -233,11 +235,24 @@ const HomeOwnersPacket = () => {
             STEP 3
           </Text>
           <Text className="content">
-            Choose the <b>"Upload Homeowner's Packet"</b> option, proceed to upload the PDF
-            document, and finalize the process by clicking "Proceed."
+            Click on the “<b>View transactions</b>” button of the chosen property, and then proceed
+            to the upper right corner and click the “<b>More options</b>” menu button."
           </Text>
 
-          <Image src={homeOwner3} mt="30px" mx="auto" w="full" />
+          <Image src={homeOwner3_1} mt="30px" mx="auto" w="full" />
+          <Image src={homeOwner3_2} mt="30px" mx="auto" w="full" />
+        </Box>
+
+        <Box>
+          <Text className="content_head" mt="40px">
+            STEP 4
+          </Text>
+          <Text className="content">
+            Choose the "<b>Home owner's Packet</b>" option, and then proceed to upload the PDF
+            document.
+          </Text>
+
+          <Image src={homeOwner4} mt="30px" mx="auto" w="full" />
         </Box>
       </Box>
 

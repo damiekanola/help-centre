@@ -107,7 +107,7 @@ export const Ticketing = () => {
             ensures that no request is lost or forgotten; each ticket is meticulously tracked,
             capturing crucial information and communication in a centralized repository.
             Consequently, your team is empowered to guide customer concerns to resolution with
-            precision. The ability to highlight high priority issues expedites their resolution,
+            precision. The ability to highlight high-priority issues expedites their resolution,
             enabling your team to address critical matters promptly. Additionally, the portal often
             incorporates frequently asked questions (FAQs) and other relevant information,
             empowering customers to troubleshoot common problems independently. By enabling
@@ -126,8 +126,8 @@ export const Ticketing = () => {
             pertinent information, eliminating the time wasted on searching for crucial data. In
             addition to capturing the initial request, the system meticulously documents every
             subsequent interaction with the customer. Team members can effortlessly catch up on the
-            request's history, ensuring a seamless continuity of service. Automation features
-            further enhance productivity, automating tasks like routing tickets to the appropriate
+            request's history, ensuring seamless continuity of service. Automation features further
+            enhance productivity, automating tasks like routing tickets to the appropriate
             departments based on request nature, generating insightful reports, and issuing timely
             alerts.
           </Text>
@@ -141,7 +141,7 @@ export const Ticketing = () => {
           <Text className="content">
             The ticketing system propels your team towards swifter issue resolution. With its
             built-in tracking mechanisms, requests are consistently monitored, and in cases of
-            stagnation, automated email reminders prompt staff to take necessary actions. The
+            stagnation, automated email reminders prompt staff to take the necessary action. The
             system's versatility extends to ticket reassignment, allowing allocation to the team
             members best suited to address specific issues. By deftly handling routine
             administrative tasks, your team gains more time to focus on resolving intricate
@@ -169,16 +169,13 @@ export const Ticketing = () => {
             <b>5. Enhances Project Transparency and Collaboration</b>
           </Text>
           <Text className="content">
-            In property development, managing resources efficiently is paramount to project success.
-            A ticketing system plays a pivotal role in this aspect by providing a clear overview of
-            ongoing tasks, pending requests, and resource availability. This enables development
-            companies to allocate resources judiciously, preventing overloading of certain teams
-            while optimizing the utilization of specialized skills. Workload distribution becomes
-            streamlined, ensuring that teams operate at peak performance levels without undue stress
-            or resource bottlenecks. The combined prowess of these tailored perks elevates a
-            ticketing system beyond being a mere tool and positions it as a strategic asset for
-            property development companies, fostering excellence, collaboration, and streamlined
-            operations.
+            A ticketing system offers an elevated level of project transparency and collaboration
+            among internal teams. Within property development, various departments like design,
+            engineering, construction, and sales need to seamlessly communicate and stay updated on
+            project progress. The ticketing system acts as a central hub, allowing team members to
+            track the status of tasks, share vital information, and collaborate in real-time. This
+            transparency fosters a cohesive work environment where all stakeholders are aligned,
+            minimizing miscommunication and enhancing the efficiency of project execution.
           </Text>
         </Box>
 
@@ -190,7 +187,7 @@ export const Ticketing = () => {
             In property development, managing resources efficiently is paramount to project success.
             A ticketing system plays a pivotal role in this aspect by providing a clear overview of
             ongoing tasks, pending requests, and resource availability. This enables development
-            companies to allocate resources judiciously, preventing overloading of certain teams
+            companies to allocate resources judiciously, preventing the overload of certain teams
             while optimizing the utilization of specialized skills. Workload distribution becomes
             streamlined, ensuring that teams operate at peak performance levels without undue stress
             or resource bottlenecks. The combined prowess of these tailored perks elevates a
