@@ -47,7 +47,7 @@ export const Introtoveerge = () => {
           <Text className="content" lineHeight={'25px'}>
             <Text as="p">
               Veerge is a state-of-the-art and dynamic technology infrastructure that empowers real
-              estate businesses to achieve extraordinary success, surpass customer expectations, and
+              estate businesses to achieve extraordinary success, surpass buyer’s expectations, and
               effectively navigate the ever-evolving technology landscape. With Veerge, property
               development companies can revolutionize their operations by delivering transformative
               customer experiences, leveraging data-driven insights for informed decision-making,
@@ -55,20 +55,20 @@ export const Introtoveerge = () => {
             </Text>
             <Text as="p" marginTop="20px">
               Veerge provides a transparent, efficient, and secure solution that significantly
-              reduces friction in the processes of buying, selling, and creating real estate assets.
-              It is a cost-effective, user-friendly, and sustainable platform that enables
-              businesses to handle increasing workloads while simplifying real estate investments,
-              making them as straightforward, borderless, and programmable as other internet
-              activities.
+              reduces friction in the processes of managing the clients of property development
+              companies and also the buying, selling, and creating real estate assets. It is a
+              cost-effective, user-friendly, and sustainable platform that enables businesses to
+              handle increasing workloads while simplifying real estate, making them as
+              straightforward, borderless, and programmable as other internet activities.
             </Text>
             <Text as="p" marginTop="20px">
-              At its core, Veerge functions as a hub of interconnected apps and services that
-              seamlessly integrate with one another, equipping businesses with essential tools to
-              elevate their operations. By leveraging its transformative customer experience,
-              businesses can develop a deep understanding of their customers on a personal level,
-              thereby strengthening relationships and fostering loyalty. Additionally, Veerge
-              empowers businesses to find answers to pressing questions, predict future trends, and
-              gain a comprehensive understanding of how to improve their approach.
+              At its core, it is a hub of interconnected apps and services that seamlessly integrate
+              with one another, equipping businesses with essential tools to elevate their
+              operations. By leveraging its transformative customer experience, businesses can
+              develop a deep understanding of their clients on a personal level, thereby
+              strengthening relationships and fostering loyalty. Additionally, Veerge empowers
+              businesses to find answers to pressing questions, predict future trends, and gain a
+              comprehensive understanding of how to improve their approach.
             </Text>
 
             <Text as="p" marginTop="20px">
@@ -83,45 +83,40 @@ export const Introtoveerge = () => {
           <Text className="content_head">SYSTEM OF ENGAGEMENT</Text>
           <Text className="content">
             <Text as="p">
-              Meeting and exceeding expectations is not a random occurrence but a deliberate outcome
-              that requires careful design. It is crucial to understand how your buyers perceive and
-              interact with your business, as it plays a pivotal role in your marketing efforts.
-              Achieving seamless interaction with your business necessitates the use of an
-              engagement interface. This interface is the foundational building block to staying
-              relevant in today’s fast paced world. It serves as a singular space where offerings
-              and buyers coexist harmoniously every day, with personalization being a key feature.
-              Veerge empowers real estate businesses to establish and launch this interface
-              effortlessly, enabling quick customer onboarding through KYC automation in a matter of
-              minutes, with just a few clicks.
+              Meeting and exceeding expectations is not merely a matter of chance but a strategic
+              outcome achieved through intentional design. Understanding how customers perceive and
+              engage with your business is vital for tailoring your marketing strategies
+              effectively. A seamless interaction with your business is facilitated through an
+              engagement interface, which serves as the cornerstone for maintaining relevance in
+              today's dynamic environment. This interface creates a unified space where offerings
+              and buyers coexist harmoniously, with personalization at its core.
             </Text>
             <Text as="p" marginTop="20px">
-              The interface is a potent tool that governs end-user interactions and breathes life
-              into the business through its transformative customer experience. It places the
-              customer at the center of the process. The experience it provides supports the
-              homebuyer's entire journey, starting from creating accounts and logging on to browsing
-              opportunities, searching for properties online, discovering local schools and
-              amenities, scheduling inspections, making inquiries, and even sharing properties with
-              family and friends.
+              Veerge empowers real estate businesses to effortlessly launch such
+              interfaces—applications that require no coding—thereby streamlining client onboarding
+              with KYC automation within minutes. This interface is a powerful tool that shapes
+              end-user interactions and revitalizes the business by offering a transformative
+              customer experience. It positions the client at the heart of the process, supporting
+              their entire home-buying journey. This includes managing payments and transactions,
+              organizing property-related documents, real-time unit allocation, and facilitating the
+              exploration of properties, local schools, and amenities online. It also simplifies
+              scheduling inspections, making inquiries, and sharing properties with family and
+              friends.
             </Text>
             <Text as="p" marginTop="20px">
-              Moreover, the singular space offers a gold standard experience that allows customers
-              to choose from various purchase options, such as outright payment, payment plans, or
-              even co-ownership of the property with family and friends. It is designed to empower
-              any real estate business worldwide, instantly establishing it as a global enterprise.
-              Customers from around the world can access the portal, and payments can be accepted
-              from customers in over
-              <Text as="span" fontWeight={500}>
-                {' '}
-                60 countries and 135 currencies,{' '}
-              </Text>
-              24/7, without the need to establish local entities.
+              The interface provides a premium experience, offering customers a range of purchase
+              options such as outright payment, installment plans, or co-ownership with family and
+              friends. Designed for global scalability, it enables any real estate business to
+              instantly position itself as an international enterprise. Customers worldwide can
+              access the portal, which accepts payments in over 60 countries and 135 currencies,
+              operating round-the-clock without the need for establishing local entities.
             </Text>
             <Text as="p" marginTop="20px">
-              This value proposition bridges the gap between what traditional businesses typically
-              offer and what customers have come to expect. The singular space coexists with the
-              database, providing a strategic advantage that enables businesses to control end-user
-              engagement and interactions. By adopting this operating model, businesses can
-              transform their customer experience and gain a competitive edge in the marketplace.
+              This value proposition narrows the gap between traditional offerings and modern
+              customer expectations. The interface integrates seamlessly with the database, giving
+              businesses a strategic advantage in managing end-user engagement and interactions. By
+              adopting this operating model, businesses can revolutionize their customer experience
+              and secure a competitive edge in the marketplace.
             </Text>
           </Text>
         </Box>
@@ -132,69 +127,64 @@ export const Introtoveerge = () => {
           <Text className="content_head">SYSTEM OF TRUST</Text>
           <Text className="content">
             <Text as="p">
-              In the modern era of cloud computing and on-demand data, manual entry spreadsheets are
-              becoming obsolete. However, real estate businesses are still traditionally operating
-              under a reactive model involving manual processes and paper-based records. This
-              results in slow and cumbersome processes. Fortunately, Veerge offers a proactive,
-              digital, and automated solution that records every transaction on the system of
-              engagement and logs it on the trust system, while saving time and resources.
+              In today's cloud computing age, where data is available on-demand, traditional
+              spreadsheets and manual data entry are becoming outdated. Many real estate businesses
+              still operate reactively, utilizing manual processes and paper-based records, leading
+              to inefficient and sluggish workflows. Veerge introduces a proactive, digital, and
+              automated alternative that not only records every transaction on its engagement system
+              but also logs them on a trusted platform, saving significant time and resources.
             </Text>
             <Text as="p" marginTop="20px">
-              Let's consider how the traditional process of making a payment for a property works:
-              Initially, a customer makes a payment, typically through a chosen payment method such
-              as wire transfer, check, or online payment. Once the payment is made, the customer
-              sends a payment document, such as an invoice or receipt, to the recipient or relevant
-              parties involved. Upon receiving the payment document, it is manually processed by the
-              recipient. The document is saved and organized within a designated folder or physical
-              filing system for future reference. The next step involves manually entering the
-              details from the payment document into the accounting system. The manual data entry
-              process requires an employee to carefully input the relevant information, such as the
-              payment amount, date, payer's details, and purpose of payment, into the accounting
-              system. After the data entry is complete, a bookkeeping entry is reconciled or
-              created, ensuring accurate financial records. However, this traditional process is not
-              without its challenges. It is prone to human error, as manual data entry leaves room
-              for mistakes or typos. Moreover, the process is time-consuming and can result in
-              delays, especially during high-volume transaction.
+              Consider the traditional property payment process: A client makes a payment through a
+              wire transfer, check, or online platform. Following the payment, they send a payment
+              document—like an invoice or receipt—to the recipient or other involved parties. This
+              document is then manually processed and stored in a specific folder or physical filing
+              system for future reference. The details from the document are manually entered into
+              an accounting system, a process prone to human error, which can lead to inaccuracies
+              and delays, especially during periods of high transaction volume.
             </Text>
             <Text as="p" marginTop="20px">
-              Veerge's Intelligence-powered data entry system transforms the payment process for
-              real estate transactions. It eliminates the need for manual data entry by
-              automatically creating bookkeeping entries once buyers make payments. Leveraging
-              intelligent algorithms, Veerge streamlines the payment process, reduces the potential
-              for duplicity, and ensures accuracy.
+              Veerge revolutionizes the payment process with its AI-powered data entry system, which
+              eliminates the need for manual data entry by automatically generating bookkeeping
+              entries when payments are received. As soon as a client makes a payment, the
+              transaction is instantly identified, recorded in the revenue management system, and
+              factored into the organization’s cash flow projections. Automatic notifications are
+              then sent to all relevant parties. Additionally, even if a client has never previously
+              used the application built by the property development company, the system logs all
+              transactions, enabling them to track their entire purchase history upon their first
+              login. Consider a familiar scenario: just as with a bank, where you can deposit money
+              over the counter for years and then see all your past transactions as soon as you
+              download the mobile app or sign up for online banking, Veerge offers a similar
+              experience. This approach not only streamlines the payment process but also minimizes
+              errors and ensures the accuracy of transactions.
             </Text>
             <Text as="p" marginTop="20px">
-              One of the key advantages of Veerge is its system of trust, which doesn't require a
-              third party to validate transactions. Instead, the system acts as a ledger of facts,
-              making transaction information more readily available, easily documented, and managed.
-              Transactions are processed 24/7, without any business hour or holiday cut-off times.
-              Furthermore, transactions can be confirmed within minutes, providing real-time
-              information on who paid, what the payment was for, when the payment was made, and the
-              remaining balance.
+              The system acts as a reliable ledger without the need for third-party validation,
+              making transaction data easily accessible, well-documented, and manageable.
+              Transactions are processed around the clock, with confirmations possible within
+              minutes, providing real-time updates on payment details and outstanding balances.
             </Text>
             <Text as="p" marginTop="20px">
-              Veerge's digital and automated approach to tracking inventory is highly beneficial in
-              reducing imbalances and inefficiencies. By ensuring that all parties involved have
-              access to the most up-to-date information, Veerge facilitates transparency and enables
-              better asset tracking, management, and risk reduction. This comprehensive view of
-              assets also assists in budgeting and planning more effectively.
+              Veerge’s digital approach extends to inventory management, greatly enhancing
+              efficiency and reducing discrepancies. With real-time access to updated information,
+              Veerge ensures transparency and facilitates better asset management and risk
+              mitigation. This real-time access means that neither agents nor clients need to
+              confirm prices or availability via phone; all information is instantly available.
             </Text>
             <Text as="p" marginTop="20px">
-              The smart contract feature within Veerge is particularly noteworthy. Smart contracts
-              are autonomous computer program codes that facilitate, execute, and enforce the
-              negotiation and performance of contracts or agreements based on predefined conditions.
-              They can be used as a substitute or complement to traditional legal contracts. For
-              example, a smart contract in Veerge could automatically grant permissions to a
-              customer upon completing their payment plan or reaching specific milestones. It can
-              also trigger contract termination and immediate listing of the property on the
-              marketplace in the event of defaults.
+              Furthermore, Veerge's smart contract feature is particularly significant. These
+              autonomous codes facilitate, execute, and enforce the terms of contracts based on set
+              conditions, serving as a supplement or alternative to traditional legal contracts. For
+              example, a smart contract in Veerge could automatically grant access to a property
+              once a client completes their payment plan or meets certain milestones, or it could
+              list a property for sale immediately if a default occurs.
             </Text>
             <Text as="p" marginTop="20px">
-              By leveraging intelligent data entry, comprehensive inventory tracking, and smart
-              contracts, Veerge establishes a system of trust that enhances efficiency, accuracy,
-              transparency, and security within the real estate industry. It streamlines processes,
-              reduces manual work, and provides a more accessible and reliable platform for real
-              estate transactions.
+              By integrating intelligent data entry, advanced inventory tracking, and smart
+              contracts, Veerge creates a trust-based system that boosts efficiency, accuracy,
+              transparency, and security in the real estate sector. This system not only streamlines
+              processes and reduces manual labor but also offers a more reliable and accessible
+              platform for real estate transactions.
             </Text>
           </Text>
         </Box>
@@ -204,47 +194,34 @@ export const Introtoveerge = () => {
         <Box pt="30px" id="intelligence" ref={intelligenceRef}>
           <Text className="content_head">SYSTEM OF INTELLIGENCE</Text>
           <Text className="content">
-            <Text as="p" fontWeight={500}>
-              AI+ Your business = Limitless possibilities.
+            <Text as="p">
+              A common challenge businesses face in outperforming their competitors is a lack of
+              deep customer understanding. Veerge's cutting-edge analytics technology enables
+              businesses to harness artificial intelligence to sift through vast amounts of both
+              internal and external unstructured data. This process uncovers valuable insights,
+              fosters accurate predictions, identifies emerging trends, and addresses critical
+              questions. Veerge’s analytics capabilities, similar to those used by platforms like
+              Facebook to understand user behavior and deliver personalized content, empower real
+              estate businesses to develop a deep understanding of their clients’ preferences,
+              behaviors, and purchasing patterns, ultimately enhancing customer loyalty.
             </Text>
             <Text as="p" marginTop="20px">
-              One of the primary reasons businesses struggle to outperform their competition is the
-              lack of understanding their customers. With Veerge's state-of-the-art analytics
-              technology, businesses can harness the power of artificial intelligence to analyze
-              vast amounts of unstructured data, both internal and external. This enables them to
-              gain valuable insights, make accurate predictions, identify emerging trends, and
-              address pressing questions. Veerge's advanced analytics capabilities are akin to those
-              employed by Facebook to comprehend its users and deliver personalized recommendations.
+              By leveraging Veerge's technology, businesses can answer vital questions about what
+              clients are likely to purchase, when they are inclined to buy, what drives their
+              decisions, and their preferred methods of purchase. This in-depth knowledge allows
+              businesses to tailor their services and offerings more precisely to meet individual
+              needs. Additionally, Veerge’s analytics can pinpoint clients who are potential buyers
+              of second properties, determine their location preferences, understand their desires
+              for such properties, and assess factors influencing their loyalty, allowing for
+              strategic prioritization based on various criteria.
             </Text>
             <Text as="p" marginTop="20px">
-              Veerge's analytics solutions empower businesses to develop a profound understanding of
-              their customers' preferences, behaviors, and buying patterns, ultimately fostering
-              increased customer loyalty. By leveraging Veerge's technology, businesses can address
-              crucial questions such as what clients want to purchase, when they are most likely to
-              make a purchase, the factors driving their purchase decisions, and their preferred
-              buying methods. This in-depth understanding of individual buyer needs allows
-              businesses to tailor their services and offerings to better meet those unique
-              requirements. Moreover, Veerge's analytics capabilities can identify customers who are
-              most likely looking for second properties, determine their location preferences,
-              understand what they desire in a second property, comprehend the factors influencing
-              their loyalty, and prioritize them based on various criteria.
-            </Text>
-            <Text as="p" marginTop="20px">
-              Analyzing customer data also facilitates a deeper understanding of the target audience
-              and allows businesses to track customers' preferences and choices. This is
-              particularly valuable in the luxury real estate sector, where customers prioritize
-              high-end features over specific locations. With Veerge, businesses can directly target
-              these customers by offering potential homes that align with their tastes and
-              expectations, leading to better investments and higher returns.
-            </Text>
-            <Text as="p" marginTop="20px">
-              The significance of Veerge's analytics capabilities cannot be overstated. In a
-              landscape where potential homebuyers are inundated with an abundance of irrelevant
-              choices, providing relevant recommendations can set businesses apart from their
-              competitors. Personalization is the key to success, and Veerge's advanced analytics
-              solutions enable businesses to effortlessly create personalized customer journeys for
-              thousands of buyers. This level of personalization fosters trust and helps businesses
-              establish enduring relationships with their customers.
+              Analyzing client data further deepens understanding of the target audience, enabling
+              businesses to monitor and respond to client preferences and choices dynamically.
+              Personalization is crucial to success, and Veerge's advanced analytics solutions
+              facilitate the creation of personalized journeys for thousands of buyers. This level
+              of customization builds trust and helps businesses forge lasting relationships with
+              their customers.
             </Text>
           </Text>
         </Box>
@@ -255,23 +232,23 @@ export const Introtoveerge = () => {
           <Text className="content_head">CONCLUSION</Text>
           <Text className="content">
             <Text as="p">
-              In order to meet changing customer expectations and deliver a consistent, end-to-end
+              In order to meet changing client expectations and deliver a consistent, end-to-end
               omnichannel customer experience, the future of real estate lies in digital,
-              structured, and automated channels. Adopting this approach enables businesses to power
-              their operations with everything needed to prioritise the customer, align teams and
-              technology, and plan strategies for growth. Veerge offers a peerless automated
-              solution that enables businesses to segment customers based on specific values, create
-              content and listings, track customer behaviour, and reduce marketing costs while
-              making smarter decisions. The use of data, rather than assumptions or gut feelings,
-              allows for more informed decision-making and an increased focus on sales, leading to
-              higher revenue. With Veerge, businesses can identify the hottest prospects and close
-              more deals. The benefits of this new approach extend beyond sales and marketing, with
-              the ability to provide a more transparent and efficient way of tracking assets and
-              managing contracts through the use of smart contracts. By leveraging technology to
-              automate tasks and reduce inefficiencies, businesses can move toward a more modern,
-              forward-thinking approach and stay ahead of the curve. Veerge has the potential to
-              transform the real estate industry and position businesses for success in the
-              twenty-first century.
+              structured, and automated channels. Adopting this approach enables property
+              development companies to power their operations with everything needed to prioritise
+              the client, align teams and technology, and plan strategies for growth. Veerge offers
+              a peerless automated solution that enables businesses to segment customers based on
+              specific values, create content and listings, track client behaviour, and reduce
+              marketing costs while making smarter decisions. The use of data, rather than
+              assumptions or gut feelings, allows for more informed decision-making and an increased
+              focus on sales, leading to higher revenue. With Veerge, businesses can identify the
+              hottest prospects and close more deals. The benefits of this new approach extend
+              beyond sales and marketing, with the ability to provide a more transparent and
+              efficient way of tracking assets and managing contracts through the use of smart
+              contracts. By leveraging technology to automate tasks and reduce inefficiencies,
+              businesses can move toward a more modern, forward-thinking approach and stay ahead of
+              the curve. Veerge has the potential to transform the real estate industry and position
+              businesses for success in the twenty-first century.
             </Text>
           </Text>
         </Box>
