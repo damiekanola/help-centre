@@ -270,9 +270,9 @@ const New_era = () => {
             </Text>
           </Box>
           <Box ref={how_doesRef} id="how_does">
-            <Text mt="30px" fontWeight={500} fontSize={'36px'}>
+            {/* <Text mt="30px" fontWeight={500} fontSize={'36px'}>
               How does Veerge deliver these values effectively?
-            </Text>
+            </Text> */}
             <Text mt="30px">
               Veerge includes a comprehensive CRM that delivers an exceptional 360-degree customer
               experience, alongside advanced systems for inventory, transaction, and task
