@@ -10,14 +10,14 @@ import RightNav from '../../components/Rightsidebar/Rightsidenav';
 
 export const VeergePlus = () => {
   const personalizeRef = useRef(null);
-  const committedRef = useRef(null);
-  const channelsRef = useRef(null);
+  // const committedRef = useRef(null);
+  // const channelsRef = useRef(null);
   const pricingRef = useRef(null);
   const gettingRef = useRef(null);
 
   const personalizeCheck = useIsInViewport(personalizeRef);
-  const committedCheck = useIsInViewport(committedRef);
-  const channelsCheck = useIsInViewport(channelsRef);
+  // const committedCheck = useIsInViewport(committedRef);
+  // const channelsCheck = useIsInViewport(channelsRef);
   const pricingCheck = useIsInViewport(pricingRef);
   const gettingCheck = useIsInViewport(gettingRef);
 
@@ -27,8 +27,8 @@ export const VeergePlus = () => {
       id: 'personalize',
       title: 'Personalize More, Retain More, Move Fast, Never Stop',
     },
-    {check: committedCheck, id: 'committed', title: 'Committed  to Support'},
-    {check: channelsCheck, id: 'channels', title: 'Channels'},
+    // {check: committedCheck, id: 'committed', title: 'Committed  to Support'},
+    // {check: channelsCheck, id: 'channels', title: 'Channels'},
     {check: pricingCheck, id: 'pricing', title: 'Pricing and Cost Breakdown'},
     {
       check: gettingCheck,
@@ -67,7 +67,30 @@ export const VeergePlus = () => {
             reach more potential buyers, and meet more of your business needs
           </Text>
         </Box>
-        <Box mb="30px" id="committed" ref={committedRef}>
+        <Box
+          mb="30px"
+          id="what-comes-with-plus"
+          // ref={personalizeRef}
+        >
+          <Text
+            textTransform={'uppercase'}
+            fontSize={'24px'}
+            fontWeight={600}
+            mb="10px"
+            lineHeight={'2.1rem'}
+          >
+            What comes with PLUS{' '}
+          </Text>
+          <Text mt="20px" as="p" fontWeight={400}>
+            Plus subscribers can fractionalize real estate, allowing them to divide the ownership of
+            a property into smaller, more affordable portions. This enables people with lower
+            purchasing power to co-own properties. Through your web or mobile application, friends
+            and family can co-own a property based on a sharing ratio. Additionally, Plus
+            subscribers typically gain early access to new features before they are made available
+            to users with lower subscription tiers.
+          </Text>
+        </Box>
+        {/* <Box mb="30px" id="committed" ref={committedRef}>
           <Text
             textTransform={'uppercase'}
             fontSize={'24px'}
@@ -98,8 +121,8 @@ export const VeergePlus = () => {
               </ListItem>
             </UnorderedList>
           </Text>
-        </Box>
-        <Box mb="30px" id="channels" ref={channelsRef}>
+        </Box> */}
+        {/* <Box mb="30px" id="channels" ref={channelsRef}>
           <Text
             textTransform={'uppercase'}
             fontSize={'24px'}
@@ -140,7 +163,7 @@ export const VeergePlus = () => {
             </OrderedList>
           </Text>
           <Image mt="50px" src={veergePlus1} w="full" />
-        </Box>
+        </Box> */}
 
         <Box mb="50px" id="pricing" ref={pricingRef}>
           <Text
@@ -152,41 +175,57 @@ export const VeergePlus = () => {
           >
             Pricing and Cost Breakdown
           </Text>
-          <Text as="p" fontWeight={400}>
+          <Text as="p" fontWeight={300}>
             Veerge offers various pricing options to cater to different business needs and budgets.
             Here's a breakdown of the costs:
           </Text>
           <OrderedList listStyleType={'decimal'} mt="30px">
-            <ListItem fontWeight={600}>
-              <Text>Mobile App Theme and Integration Cost:</Text>
+            <ListItem fontWeight={200}>
+              <Text fontWeight={600}>One-time Fee:</Text>
               <Text fontWeight={200}>
-              This cost includes the mobile app theme and its deployment. The starting price for the mobile theme is <b>$10,000.00</b>, a one-time fee with payment plans available. You'll have access to a free trial version of the mobile application before making any payments. This allows you to extensively test the app in a controlled environment before making any financial commitments.
+                Veerge offers various pricing options to cater to different business needs and
+                budgets. Here's a breakdown of the costs:
               </Text>
+              <UnorderedList>
+                <ListItem>
+                  Web theme: Starting at <b>$2,000</b>, depending on the theme.
+                </ListItem>
+                <ListItem>
+                  Web app + mobile application: <b>$5,000</b>.
+                </ListItem>
+                <ListItem>
+                  Autopay: Additional <b>$1,000</b>.
+                </ListItem>
+                <ListItem>
+                  Fractional ownership: Additional <b>$3,500</b>.
+                </ListItem>
+                <ListItem>
+                  Co-ownership: Additional <b>$2,500</b>.
+                </ListItem>
+                <ListItem>
+                  Realtors portal: Additional <b>$2,000</b>.
+                </ListItem>
+              </UnorderedList>
             </ListItem>
-            <Link to="/">
-              <Text my={5} ml={-5} color="#FF0" cursor={'pointer'}>
+            <Link to="/veerge_themes">
+              <Text my={5} ml={-5} color="#FF0 !important" cursor={'pointer'}>
                 Click here to read more on themes
               </Text>
             </Link>
             <ListItem fontWeight={600}>
               <Text mt="30px">Subscription:</Text>
-              <UnorderedList fontWeight={200} pl="10px">
+              <UnorderedList fontWeight={200}>
                 <ListItem>
-                  The basic subscription tier costs <b>$700.00</b>, providing comprehensive coverage
-                  for both web and mobile applications, complete with all essential technical
-                  resources to bolster your real estate business operations. This tier includes
-                  ongoing support and updates for the Veerge Portal. Moreover, opting for access to
-                  the Veerge Premier Agents Portal entails an additional <b>$200</b> fee, while
-                  integrating fractional real estate incurs an extra <b>$250</b> charge. For
-                  instance, if you require the Mobile application + web application + Agents Portal
-                  + Fractional real estate bundle, the total cost would amount to <b>$1150</b>.
-                  Alternatively, the Mobile application + web application + Fractional real estate
-                  package is priced at <b>$950</b>, and the Mobile application + web application +
-                  Agents Portal package comes in at <b>$900</b>
+                  The Platinum plan, priced at <b>$350</b> per month, covers everything except
+                  fractional ownership. The Plus subscription, priced at <b>$500</b> per month,
+                  provides comprehensive coverage for all Veerge features, including fractional
+                  ownership. This higher pricing reflects the increased load on our infrastructure
+                  due to the expected rise in user base and market penetration enabled by fractional
+                  ownership.
                 </ListItem>
                 <ListItem>
                   The exclusive version of Veerge, tailored for those in pursuit of premium features
-                  and top-notch performance, begins at <b>$1500</b>.
+                  and top-notch performance, begins at <b>$1,500</b>.
                 </ListItem>
               </UnorderedList>
             </ListItem>
@@ -221,9 +260,9 @@ export const VeergePlus = () => {
                         color: '#FF0',
                         textDecoration: 'underline',
                       }}
-                      href="https://test-veerge.myxellia.io"
+                      href="https://tests-veerge.myxellia.io"
                     >
-                      veerge.myxellia.io
+                      tests-veerge.myxellia.io
                     </a>
                   </span>{' '}
                   and register for a free trial. This will grant you access to the platform,
@@ -232,7 +271,7 @@ export const VeergePlus = () => {
                   committing to an active monthly plan.
                 </Text>
               </ListItem>
-              <ListItem fontWeight={600}>
+              {/* <ListItem fontWeight={600}>
                 <Text>Select a Plan:</Text>
                 <Text fontWeight={200}>
                   Before starting the free trial, choose a plan that aligns with your business
@@ -240,20 +279,21 @@ export const VeergePlus = () => {
                   period to an ongoing subscription. Pick the plan that suits your needs and fits
                   your budget to continue using Veerge after the trial ends.
                 </Text>
-              </ListItem>
+              </ListItem> */}
               <ListItem fontWeight={600}>
                 <Text>Approval and Trial Access:</Text>
                 <Text fontWeight={200}>
                   Once your account is approved, you'll gain access to your free trial period.
-                  During this time, you'll receive a TestFlight link for Apple users and an internal
-                  test link for Android users. These links enable you to experience Veerge on your
-                  preferred device, ensuring a smooth and tailored user experience.
+                  During this time, you'll receive a TestFlight link for Apple users and you can
+                  download the apk for Android users. These links enable you to experience the
+                  application on your preferred device, ensuring a smooth and tailored user
+                  experience.
                 </Text>
               </ListItem>
               <ListItem fontWeight={600}>
                 <Text>Enjoy the Free Trial: </Text>
                 <Text fontWeight={200}>
-                  Make the most of your free trial by diving into the Veerge platform. Explore its
+                  Make the most of your free trial by diving into the platform. Explore its
                   capabilities, customize your experience, and take advantage of its powerful
                   features. The trial period allows you to shape and fine-tune your real estate
                   infrastructure. Rest assured that there are no subscription fees during this
@@ -264,20 +304,18 @@ export const VeergePlus = () => {
               <ListItem fontWeight={600}>
                 <Text>Theme Licensing Fee: </Text>
                 <Text fontWeight={200}>
-                  Should you decide to go live with Veerge, you'll be required to make a payment for
-                  the licensing fee of the mobile app theme. This fee guarantees that your mobile
-                  application will have an appealing and functional design, enhancing the overall
-                  user experience.
+                  Should you decide to go live, you'll be required to make a payment for the
+                  licensing fee of the mobile app theme.
                 </Text>
               </ListItem>
-              <ListItem fontWeight={600}>
+              {/* <ListItem fontWeight={600}>
                 <Text>Payment and Go-Live: </Text>
                 <Text fontWeight={200}>
                   When you're ready to launch your real estate operations with Veerge, proceed with
                   the payment to go live. This step enables you to actively use Veerge and leverage
                   its capabilities to grow your business effectively.
                 </Text>
-              </ListItem>
+              </ListItem> */}
             </OrderedList>
           </Text>
           <Text mt="30px">
