@@ -72,16 +72,14 @@
 //   },
 // ];
 
-
-
-
+//prettier-ignore
 export const helpSearchData = [
-  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/agent/process', id: 'agents', title: 'Agents on Veerge' },
-  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/agent/process', id: 'referral', title: 'Referral link and users connections' },
-  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/agent/process', id: 'commission', title: 'Commission requests and transactions' },
-  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/agent/process', id: 'approving', title: 'Approving commissions: A step-by-step guide' },
-  { pageTitle: 'Agent Portal', page: 'AgentPortal', link: '/agent/portal', id: 'overview', title: 'Overview of agent portal' },
-  { pageTitle: 'Agent Portal', page: 'AgentPortal', link: '/agent/portal', id: 'howAgent', title: 'How Agent portal works' },
+  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/realtor/process', id: 'agents', title: 'Agents on Veerge' },
+  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/realtor/process', id: 'referral', title: 'Referral link and users connections' },
+  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/realtor/process', id: 'commission', title: 'Commission requests and transactions' },
+  { pageTitle: 'Agent Process', page: 'AgentProcess', link: '/realtor/process', id: 'approving', title: 'Approving commissions: A step-by-step guide' },
+  { pageTitle: 'Agent Portal', page: 'AgentPortal', link: '/realtor/portal', id: 'overview', title: 'Overview of agent portal' },
+  { pageTitle: 'Agent Portal', page: 'AgentPortal', link: '/realtor/portal', id: 'howAgent', title: 'How Agent portal works' },
   { pageTitle: 'Application Guide', page: 'ApplicationGuide', link: '/application_guide', id: 'the_veerge', title: 'The Veerge Dilemma' },
   { pageTitle: 'Application Guide', page: 'ApplicationGuide', link: '/application_guide', id: 'unleashing', title: 'Unleashing the power of Basic Application.' },
   { pageTitle: 'Application Guide', page: 'ApplicationGuide', link: '/application_guide', id: 'enter', title: 'Enter the realm of custom application' },
@@ -179,6 +177,7 @@ export const helpSearchData = [
   { pageTitle: 'End-to-End Experience', page: 'Usersexperience', link: '/users_experience', id: 'agent', title: 'AGENT' },
 ]
 
+//prettier-ignore
 export const blogSearchData = [
   { pageTitle: 'Fractional Ownership', page: 'Fractional_ownership', link: '/blog/fractional_ownership', id: 'overview', title: 'Overview' },
   { pageTitle: 'Fractional Ownership', page: 'Fractional_ownership', link: '/blog/fractional_ownership', id: 'how_fractional', title: 'How fractional works the Veerge way' },

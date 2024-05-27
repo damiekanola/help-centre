@@ -29,29 +29,18 @@ const AgentRightNav = () => {
           },
         }}
       >
-        <Text
-          fontSize={'24px'}
-          
-          color={'white !important'}
-          letterSpacing={'3px'}
-        >
-          Agents Guide
+        <Text fontSize={'24px'} color={'white !important'} letterSpacing={'3px'}>
+          Realtors Guide
         </Text>
         <VStack mt="30px" spacing={'27px'} align="stretch">
-          <Link to="/agent/portal">
-            <Text
-              fontSize={'14px'}
-              fontWeight={location.pathname === '/agent/portal' && 500}
-            >
-              Veerge Premier Agent Portal
+          <Link to="/realtor/portal">
+            <Text fontSize={'14px'} fontWeight={location.pathname === '/realtor/portal' && 500}>
+              Veerge Premier Realtor Portal
             </Text>
           </Link>
-          <Link to="/agent/process">
-            <Text
-              fontSize={'14px'}
-              fontWeight={location.pathname === '/agent/process' && 500}
-            >
-              The complete agents process
+          <Link to="/realtor/process">
+            <Text fontSize={'14px'} fontWeight={location.pathname === '/realtor/process' && 500}>
+              The complete realtors process
             </Text>
           </Link>
         </VStack>

@@ -88,10 +88,10 @@ export const Searchbar = () => {
         return 'Veerge plus';
       case '/application_guide':
         return 'What is the difference between Basic & Custom app ?';
-      case '/agent/portal':
-        return 'Veerge Premier Agent Portal';
-      case '/agent/process':
-        return 'Veerge Premier Agent Portal';
+      case '/realtor/portal':
+        return 'Veerge Premier Realtor Portal';
+      case '/realtor/process':
+        return 'Veerge Premier Realtor Portal';
       case '/blog':
         return 'Blog';
       case '/blog/transforming_business':

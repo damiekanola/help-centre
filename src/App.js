@@ -89,7 +89,9 @@ function App() {
           <Route path="/lead/send_an_offer" element={<SendAnOffer />} />
           <Route path="/lead/home_owners_packet" element={<HomeOwnersPacket />} />
           <Route path="/agent/portal" element={<AgentPortal />} />
+          <Route path="/realtor/portal" element={<AgentPortal />} />
           <Route path="/agent/process" element={<AgentProcess />} />
+          <Route path="/realtor/process" element={<AgentProcess />} />
           <Route path="/invite_team_members" element={<InviteTeamMembers />} />
           <Route path="/users_experience" element={<Usersexperience />} />
           <Route path="/terms" element={<Terms />} />

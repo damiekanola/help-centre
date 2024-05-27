@@ -24,7 +24,7 @@ export const AgentPortal = () => {
   return (
     <div className="main">
       <AgentRightNav />
-      <Text className="head_">Veerge Premier Agent Portal</Text>
+      <Text className="head_">Veerge Premier Realtor Portal</Text>
       <Text className="publish">Published: November 1, 2022</Text>
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box
@@ -41,30 +41,30 @@ export const AgentPortal = () => {
           mb="10px"
           lineHeight={'2.1rem'}
         >
-          Embark on a Journey of Real Estate Excellence with Veerge Premier Agent Portal!
+          Embark on a Journey of Real Estate Excellence with Veerge Premier Realtor Portal!
         </Text>
         <Text py={4}>
-          In today's dynamic real estate landscape, Veerge Premier Agent Portal emerges as your
+          In today's dynamic real estate landscape, Veerge Premier Realtor Portal emerges as your
           ultimate ally. Tailored for ambitious real estate agents striving for greatness, Veerge is
-          your key to unparalleled success. Let's delve into the realm of Veerge Premier Agent and
+          your key to unparalleled success. Let's delve into the realm of Veerge Premier Realtor and
           discover the transformative features that set you apart in this ever-evolving arena.
         </Text>
         <Text py={4}>
-          At the heart of Veerge Premier Agent lies a deep appreciation for the dedication and hard
-          work of agents in sealing deals. To simplify payment processes and foster transparency,
-          Veerge offers a seamless commission request feature. Agents can effortlessly submit their
-          commission requests through the portal, ensuring their efforts are duly recognized and
-          fairly compensated. This motivates agents to excel and cultivates a vibrant and
-          results-driven community within the Veerge network.
+          At the heart of Veerge Premier Realtor lies a deep appreciation for the dedication and
+          hard work of agents in sealing deals. To simplify payment processes and foster
+          transparency, Veerge offers a seamless commission request feature. Realtors can
+          effortlessly submit their commission requests through the portal, ensuring their efforts
+          are duly recognized and fairly compensated. This motivates agents to excel and cultivates
+          a vibrant and results-driven community within the Veerge network.
         </Text>
         <Text py={4}>
-          In the fast-paced world of real estate, time is precious. The Veerge Premier Agent Portal
-          streamlines client management with an automated system that intelligently assigns incoming
-          leads to agents based on customized routing rules. This ensures no lead slips through the
-          cracks, enabling agents to promptly engage with potential clients and increase the
-          likelihood of converting leads into successful deals. By leveraging this efficient system,
-          agents can establish a reputation for responsiveness and reliability, positioning
-          themselves as trusted advisors. Veerge Premier Agent revolutionizes client management by
+          In the fast-paced world of real estate, time is precious. The Veerge Premier Realtor
+          Portal streamlines client management with an automated system that intelligently assigns
+          incoming leads to agents based on customized routing rules. This ensures no lead slips
+          through the cracks, enabling agents to promptly engage with potential clients and increase
+          the likelihood of converting leads into successful deals. By leveraging this efficient
+          system, agents can establish a reputation for responsiveness and reliability, positioning
+          themselves as trusted advisors. Veerge Premier Realtor revolutionizes client management by
           blending cutting-edge technology with a human touch, enabling agents to not just meet but
           exceed client expectations, fostering lasting relationships, referrals, and unparalleled
           satisfaction.
@@ -84,10 +84,10 @@ export const AgentPortal = () => {
           administrative tasks.
         </Text>
         <Text py={4}>
-          The Veerge Premier Agent Portal is a transformative platform that propels real estate
+          The Veerge Premier Realtor Portal is a transformative platform that propels real estate
           agents to new heights of success. Agents can thrive in a competitive market by harnessing
           its data-driven insights, streamlined client management, and comprehensive performance
-          tracking. Embracing the power of Veerge Premier Agent empowers real estate professionals
+          tracking. Embracing the power of Veerge Premier Realtor empowers real estate professionals
           to deliver exceptional client experiences, make confident decisions, and forge lasting
           connections. As agents elevate their business to unprecedented levels, they play a pivotal
           role in turning their client's dreams into reality throughout the home-buying journey.
