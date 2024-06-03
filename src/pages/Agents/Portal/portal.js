@@ -11,7 +11,7 @@ export const AgentPortal = () => {
   const overviewCheck = useIsInViewport(overviewRef);
 
   const articleContent = [
-    {check: overviewCheck, id: 'overview', title: 'Overview of agent portal'},
+    {check: overviewCheck, id: 'overview', title: 'Overview of realtor portal'},
   ];
 
   const relatedContent = [

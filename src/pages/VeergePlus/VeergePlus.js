@@ -143,9 +143,9 @@ export const VeergePlus = () => {
                 long-term business strategies.
               </ListItem>
               <ListItem>
-                <b>Agent Portal:</b> A dedicated platform designed specifically for agents. It
+                <b>Realtor Portal:</b> A dedicated platform designed specifically for agents. It
                 allows them to track leads, manage client interactions, and streamline their real
-                estate operations. Additionally, agents can use the Agent Portal to track
+                estate operations. Additionally, agents can use the Realtor Portal to track
                 commissions earned.
               </ListItem>
               <ListItem>
