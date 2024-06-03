@@ -43,9 +43,9 @@ export const Header = () => {
           <a href="https://test-veerge.myxellia.io/">
             {/* <Image src={logo} /> */}
             <VeergeLogo />
-            <Text fontSize={'12px'} color="#fff">
+            {/* <Text fontSize={'12px'} color="#fff">
               Powered by Myxellia
-            </Text>
+            </Text> */}
           </a>
         </Flex>
       </Show>
