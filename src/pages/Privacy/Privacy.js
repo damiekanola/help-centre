@@ -60,7 +60,7 @@ export const Privacy = () => {
     <div className="main">
       {/* <LeadRightNav /> */}
       <Text className="head_">PRIVACY POLICY</Text>
-      <Text className="publish">Last updated on: May 23, 2022</Text>
+      <Text className="publish">Last updated on: May 23, 2024</Text>
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <OrderedList className="content">
         <ListItem style={headStyle} id="introduction" ref={introductionRef}>
