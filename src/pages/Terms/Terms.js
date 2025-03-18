@@ -514,6 +514,20 @@ export const Terms = () => {
               implement Veerge patents.
             </ListItem>
           </OrderedList>
+          <Text className="content_subhead">8.3. Themes and Templates</Text>
+          <OrderedList className="content">
+            <ListItem>
+              Veerge may provide a selection of basic templates (“Basic Templates”) that you can use
+              for your Web application. Each Basic Template will display a “Created with Myxellia.io”
+              notice in the footer.
+            </ListItem>
+            <ListItem>
+              Certain exclusive templates (“Exclusive Templates”)—for example, a “Brochure” template—do not require the “Created with Myxellia.io” notice. Exclusive Templates are made available upon request, are more expensive, and incur higher maintenance costs than other templates.
+            </ListItem>
+            <ListItem>
+              If you use any Basic Template, you acknowledge and agree that the “Created with Myxellia.io” notice must remain intact and visible in the footer of your Web application unless otherwise agreed in writing by Veerge.
+            </ListItem>
+          </OrderedList>
         </ListItem>
 
         <ListItem id="beta" ref={betaRef}>
