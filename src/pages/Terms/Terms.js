@@ -74,33 +74,39 @@ export const Terms = () => {
     <div className="main">
       {/* <LeadRightNav /> */}
       <Text className="head_">TERMS OF SERVICE</Text>
-      <Text className="publish">Last updated on: May 23, 2024</Text>
+      <Text className="publish">Last updated on: May 23, 2022</Text>
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box id="invite">
         <Text className="content" lineHeight={'25px'}>
-          <Text as="p">
-            Welcome to Veerge! By signing up for a Veerge Account (as defined in Section 1) or using
-            any Veerge Services (as defined below), you are agreeing to be bound by the following
-            terms and conditions (the <b>"Terms of Service"</b>). As used in these Terms of Service,{' '}
-            <b>"we,"</b> <b>"us,"</b> <b>"our,"</b> and <b>"Veerge"</b> refer to the applicable
-            Veerge Contracting Party (Myxellia Inc.), and <b>"you"</b>refers to the Veerge User (if
-            registering for or using a Veerge Service as an individual) or the business employing
-            the Veerge User (if registering for or using a Veerge Service as a business) and any of
-            its affiliates. Veerge provides seamlessly integrated apps and services that enable
-            property developers to unify their business activities. Our platform includes a range of
-            tools for property developers to build and customize web applications, manage offerings,
-            inventory, payments, fulfillment, business operations, and engage with existing and
-            potential customers. Any service or services offered by Veerge are collectively referred
-            to in these Terms of Service as the "Services." Any new features or tools added to the
-            current Services will also be subject to the Terms of Service. You can review the
-            current version of the Terms of Service at any time by visiting
-            <a href="https://www.Veerge.com/legal/terms" as="span" textDecoration={'underline'}>
-              {' '}
-              https://www.Veerge.com/legal/terms
-            </a>{' '}
-            Before you can sign up for a Veerge Account or use any Veerge Service, you must read,
-            agree with, and accept all of the terms and conditions contained or expressly referenced
-            in these Terms of Service, including the Privacy Policy.
+          <Text>
+            <b>Welcome to Myxellia!</b> Myxellia Inc. ("Myxellia") is the company behind the Veerge
+            platform ("Veerge"), a suite of integrated apps and services that help property
+            developers unify their business activities. By creating a Veerge account (as defined in
+            Section 1) or by using any Veerge Services (as defined below), you agree to the
+            following Terms of Service (the “Terms”).
+          </Text>
+          <Text mt="20px">
+            References to “we,” “us,” and “our” refer to Myxellia as the operator of Veerge. “You”
+            refers to the individual user of Veerge (if registering or using Veerge personally) or
+            the business employing the user (if registering or using Veerge on behalf of a
+            business), including any affiliates of that business. Collectively, Veerge’s platform,
+            applications, features, and offerings are referred to in these Terms as the “Services.”
+            Any new features or tools added to Veerge will also be subject to these Terms. The most
+            current version of these Terms is always available at
+            <br />
+            <a
+              href="https://veerge-support.myxellia.io/terms"
+              as="span"
+              textDecoration={'underline'}
+              style={{color: '#4545FE'}}
+            >
+              https://veerge-support.myxellia.io/terms
+            </a>
+          </Text>
+          <Text mt="20px">
+            By registering for a Veerge account or using any Veerge Services, you acknowledge that
+            you have read, agreed to, and accepted all terms contained or expressly referenced in
+            these Terms, including our Privacy Policy.
           </Text>
         </Text>
       </Box>
@@ -110,59 +116,64 @@ export const Terms = () => {
           <Text className="content_head">Account Terms</Text>
           <OrderedList className="content">
             <ListItem>
-              To access and use the Services, you must register for a Veerge account ("Account"). To
-              complete your Account registration, you must provide us with your full legal name,
-              business address, phone number, a valid email address, and any other information
-              indicated as required. Veerge reserves the right to reject your application for an
-              Account or cancel an existing Account, at our sole discretion, for any reason.
+              <b>Account Registration: </b>
+              To use the Services, you must open a Veerge account (the “Account”). During
+              registration, you must provide a full legal name, business address, phone number,
+              valid email address, and any other required information. Myxellia reserves the right
+              to reject your application or cancel an existing Account at its discretion, for any
+              reason.
             </ListItem>
             <ListItem>
-              You must be at least 18 years old, or the age of majority in your jurisdiction of
-              residence, whichever is older, to open an Account and use the Services.
+              <b>Age Requirement: </b>
+              You must be at least 18 years old—or the age of majority where you reside if older—to
+              open an Account and use the Services.
             </ListItem>
             <ListItem>
-              By using the Services provided by Veerge, you confirm that you are using them for
-              business purposes and not for personal, household, or family use.
+              <b>Communication: </b>
+              You authorize Myxellia to communicate with you primarily at the email address used to
+              register or update your Account. You are responsible for ensuring that your provided
+              email address is current, able to receive emails, and is secure. Only emails sent from
+              this address will be treated as authentic communications.
             </ListItem>
             <ListItem>
-              You acknowledge that Veerge will primarily communicate with you through the email
-              address you provide during Account registration or update. You must regularly check
-              the email address you provided and ensure that it is capable of sending and receiving
-              messages. Your email communications with Veerge can only be authenticated if they
-              originate from your provided email address.
+              <b>Security: </b>
+              You are solely responsible for safeguarding your Account credentials. Myxellia is not
+              liable for losses resulting from unauthorized access due to your failure to protect
+              Account information. We may request additional security measures at any time and
+              reserve the right to implement them at our discretion.
             </ListItem>
             <ListItem>
-              You are solely responsible for maintaining the security of your Account and password.
-              Veerge will not be liable for any loss or damage resulting from your failure to
-              safeguard your Account and password. We may request additional security measures at
-              any time and reserve the right to adjust these requirements at our discretion.
+              <b>Technical Support: </b>
+              Veerge support is provided only to Account holders. For questions about these Terms or
+              the Services, please contact Veerge Support.
             </ListItem>
             <ListItem>
-              Technical support for the Services is exclusively provided to Veerge Users. For any
-              questions regarding the Terms of Service, please contact Veerge Support.
+              <b>Prohibited Reproduction: </b>
+              You agree not to copy, reproduce, sell, resell, or exploit any part of Veerge or the
+              Services without Myxellia’s written permission.
             </ListItem>
             <ListItem>
-              You agree not to reproduce, duplicate, copy, sell, resell, or exploit any portion of
-              the Service, the use of the Services, or access to the Services without the express
-              written permission of Veerge.
+              <b>No Circumvention: </b>
+              You must not bypass or circumvent any technical limitations of Veerge or the Services;
+              nor engage in decompiling, reverse engineering, or using tools to enable features that
+              have been disabled.
             </ListItem>
             <ListItem>
-              You agree not to bypass, work around, or circumvent any technical limitations of the
-              Services, use any tool to enable disabled features or functionalities in the Services,
-              or engage in the decompiling, disassembling, or reverse engineering of the Services.
+              <b>Automated Access: </b>
+              You agree not to employ robots, scrapers, or other automated systems to monitor or
+              access the Services unless specifically authorized in writing by Myxellia.
             </ListItem>
             <ListItem>
               You agree not to access the Services or monitor any material or information from the
               Services using any robot, spider, scraper, or other automated means.
             </ListItem>
             <ListItem>
-              You understand that your Materials may be transferred unencrypted and may involve (a)
-              transmissions over various networks, and (b) changes to conform and adapt to technical
-              requirements of connecting networks or devices. "Materials" refer to your trademarks,
-              copyrighted content, any products or services you offer through the Services
-              (including descriptions and prices), and any photos, images, videos, graphics, written
-              content, or other data provided or made available by you or your affiliates to Veerge
-              or its affiliates.
+              <b>Materials Transfer: </b>
+              Your Materials (defined below) may be transmitted unencrypted and may be modified to
+              comply with technical requirements of connecting networks or devices. “Materials”
+              includes your trademarks, copyrighted works, products, services (including
+              descriptions and prices), images, videos, graphics, written content, and any other
+              data you provide to Myxellia or Veerge.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -172,93 +183,85 @@ export const Terms = () => {
           <Text className="content_subhead">2.1 Veerge Owner </Text>
           <OrderedList className="content">
             <ListItem>
-              The person who signs up for the Service by opening an Account will be the contracting
-              party ("Veerge Owner") for the purposes of our Terms of Service and will be authorized
-              to use any corresponding Account provided by Veerge in connection with the Service,
-              subject to Section 2.1.2.
+              <b>Owner: </b>
+              The individual who creates the Account is the “Veerge Owner” and is bound by these
+              Terms. This person is responsible for usage of any Account provided by Myxellia under
+              Veerge, subject to Section 2.1.2.
             </ListItem>
             <ListItem>
-              If you are signing up for the Services on behalf of your employer, your employer will
-              be the Veerge Owner. In such cases, you must use your employer-issued email address
-              and represent and warrant that you have the authority to bind your employer to our
-              Terms of Service.
+              <b>Employer Registration: </b>
+              If you register for Veerge on behalf of your employer, your employer is the Veerge
+              Owner. You must use your employer-issued email address and warrant that you have
+              authority to bind your employer to these Terms.
             </ListItem>
             <ListItem>
-              Your Veerge account can only be associated with one Veerge Owner. You agree to use
-              Veerge Checkout for your web application. "Web Application" refers to the online
-              application or any Veergefront built on top of the Veergefront API.
+              <b>Single Ownership: </b>
+              An Account can only be linked to one Veerge Owner. “Web Application” refers to any
+              online platform built on Veerge’s APIs.
             </ListItem>
           </OrderedList>
           <Text className="content_subhead">2.2 Staff Accounts</Text>
           <OrderedList className="content">
             <ListItem>
-              Depending on your Veerge pricing plan, you can create one or more staff accounts
-              ("Staff Accounts") to grant access to other individuals to your Account. Each Staff
-              Account must include a full legal name and a valid email address. Through Staff
-              Accounts, the Veerge Owner can set permissions and control the level of access that
-              Staff Accounts have to specific business information (e.g., you can limit Staff
-              Account access to sales information).
+              <b>Creation: </b>
+              Depending on your pricing plan, you may create additional staff accounts (“Staff
+              Accounts”) for others in your organization. Each Staff Account requires a full legal
+              name and valid email. You can manage Staff Account permissions through your Veerge
+              dashboard.
             </ListItem>
             <ListItem>
-              The Veerge Owner is responsible for: (a) ensuring that their employees, agents, and
-              subcontractors, including those using Staff Accounts, comply with these Terms of
-              Service, and (b) any breach of these Terms of Service by the Veerge Owner's employees,
-              agents, or subcontractors. The Veerge Owner acknowledges and agrees that they will be
-              responsible for the performance of all obligations under the Agreement, regardless of
-              whether they sublicense or subcontract any such obligations to third parties,
-              including affiliates or subsidiaries of the Veerge Owner.
+              <b>Responsibility: </b>
+              The Veerge Owner bears responsibility for ensuring Staff Accounts comply with these
+              Terms. Any violation by a Staff Account user is deemed a breach by the Veerge Owner.
             </ListItem>
             <ListItem>
-              The Veerge Owner and the users under Staff Accounts are collectively referred to as
-              "Veerge Users."
+              <b>Collective Reference: </b>
+              The Veerge Owner and all staff users are collectively referred to as “Veerge Users.”
             </ListItem>
           </OrderedList>
-          <Text className="content_subhead">2.3 Domain Names</Text>
+          {/* <Text className="content_subhead">2.3 Domain Names</Text>
           <Text className="content">
             When you purchase a domain name through Veerge, domain registration will be set to
             automatically renew each year as long as your Veerge Account remains active. You
             acknowledge that it is your sole responsibility to deactivate the auto-renewal function
             if you choose to do so.
-          </Text>
+          </Text> */}
         </ListItem>
 
         <ListItem id="veerge" ref={veergeRef}>
           <Text className="content_head">Veerge Rights</Text>
           <OrderedList className="content">
             <ListItem>
-              The Services offer a range of features and functionalities. However, not all Services
-              or features will be available to all Property development companies at all times, and
-              we are under no obligation to make any Services or features available in any
-              jurisdiction. We reserve the right to modify the Services or any part thereof for any
-              reason, without prior notice and at any time.
+              <b>Scope: </b>
+              Veerge offers various features and functionalities. These may not be available to all
+              users or in all jurisdictions, and we have no obligation to offer specific features in
+              any region. We may modify the Services without notice at any time.
             </ListItem>
             <ListItem>
-              Veerge does not pre-screen Materials, but we retain the sole discretion to refuse or
-              remove any Materials from any part of the Services. This includes situations where we
-              determine, at our sole discretion, that your offerings through the Services or the
-              Materials uploaded or posted to the Services violate these Terms of Service.
+              <b>Refusal or Removal of Materials: </b>
+              Myxellia does not pre-screen your Materials but reserves the right to remove any that
+              we deem (in our sole discretion) to violate these Terms.
             </ListItem>
             <ListItem>
-              Verbal or written abuse of any kind, including threats of abuse or retribution,
-              directed towards any Veerge employee, member, or officer will result in immediate
-              termination of your Account.
+              <b>Abuse: </b>
+              Any form of abuse, threats, or retribution toward Myxellia or Veerge personnel will
+              result in immediate Account termination.
             </ListItem>
             <ListItem>
-              We reserve the right to provide our Services to your competitors and make no promise
+              <b>No Exclusivity: </b>
+              Myxellia may provide the Services to your competitors and does not guarantee any form
               of exclusivity.
             </ListItem>
             <ListItem>
-              In the event of a dispute regarding Account ownership, we reserve the right to request
-              documentation to determine or confirm Account ownership. Such documentation may
-              include, but is not limited to, a scanned copy of your business license,
-              government-issued photo ID, or confirmation of your employment status with an entity.
+              <b>Ownership Disputes: </b>
+              In case of disputed Account ownership, we may request relevant documentation (e.g.,
+              business licenses, photo IDs) to ascertain the legitimate owner.
             </ListItem>
             <ListItem>
-              Veerge reserves the right, in our sole discretion, to determine rightful Account
-              ownership and transfer an Account to the rightful Veerge Owner. If we are unable to
-              reasonably determine the rightful Veerge Owner, without prejudice to our other rights
-              and remedies, Veerge reserves the right to temporarily suspend or disable an Account
-              until the resolution has been determined between the disputing parties.
+              <b>Account Transfer: </b>
+              Myxellia reserves the right to determine the rightful Veerge Owner and transfer the
+              Account to that person or entity. If we cannot determine ownership, we may suspend or
+              disable the Account until a resolution is reached.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -267,46 +270,27 @@ export const Terms = () => {
           <Text className="content_head">Your Responsibilities</Text>
           <OrderedList className="content">
             <ListItem>
-              You acknowledge and agree to provide public-facing contact information, a refund
-              policy, and fulfilment timelines on your Web application.
+              <b> Public-Facing Information: </b>
+              You agree to provide contact information, a refund policy, and fulfillment timelines
+              on any Web Application that you create or manage with Veerge.
             </ListItem>
             <ListItem>
-              You acknowledge and agree that any contract of sale made through the Services is
-              directly between you and the customer. You are the seller of record for all properties
-              you sell through the Services. You are responsible for the creation and operation of
-              your Web application, your Materials, properties that you sell through the Services,
-              and all aspects of the transactions between you and your customer(s). This includes,
-              but is not limited to, authorising the charge to the customer for their purchase,
-              processing refunds, fulfilling any sales or customer service obligations, handling
-              fraudulent transactions, providing required legal disclosures, ensuring regulatory
-              compliance, addressing alleged or actual violations of applicable laws (including
-              consumer protection laws in any jurisdiction where you offer your services), and
-              complying with these Terms of Service. You represent and warrant that your Web
-              application, your Materials, and the services you offer through the Services will be
-              true, accurate, and complete, and will not violate any applicable laws, regulations,
-              or rights of third parties. For the avoidance of doubt, Veerge will not be the seller
-              of record and will have no responsibility for your Web application or properties sold
-              to customers through the Services.
+              <b>Seller of Record: </b>
+              All sales made through Veerge are strictly between you and your customers. You are the
+              seller of record and assume all associated responsibilities (e.g., refunds, fraud,
+              compliance, legal disclosures). Myxellia (operating Veerge) is not the seller of
+              record and bears no responsibility for your sales.
             </ListItem>
             <ListItem>
-              You are solely responsible for the properties that you sell through the Services,
-              including their descriptions, prices, fees, taxes you calculate, any defects, required
-              legal disclosures, regulatory compliance, offers, or promotional content. You must
-              ensure compliance with all applicable laws and regulations.
+              <b>Product Compliance: </b>
+              You alone are responsible for the properties or products you sell and must abide by
+              all applicable legal and regulatory requirements.
             </ListItem>
             <ListItem>
-              You may not use the Veerge Services for any illegal or unauthorised purpose, and you
-              must not violate any laws in your jurisdiction (including copyright laws) or the laws
-              applicable to you in your customers' jurisdictions. You agree to comply with all
-              applicable laws, rules, and regulations, including obtaining and complying with any
-              necessary licenses or permits required to operate your Web application. You are
-              responsible for your use of the Service and for performing your obligations under
-              these Terms of Service.
-            </ListItem>
-            <ListItem>
-              You agree to use Veerge Checkout for any sales associated with your Web application.
-              "Veerge Checkout" refers to Veerge's checkout experience that allows customers to
-              enter their payment details.
+              <b>Legal Use: </b>
+              You must not use Veerge for illegal or unauthorized activities. You must comply with
+              the laws of your jurisdiction, your customers’ jurisdictions, and any licensing or
+              permitting obligations.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -315,44 +299,36 @@ export const Terms = () => {
           <Text className="content_head">Payment of Fees and Taxes</Text>
           <OrderedList className="content">
             <ListItem>
-              We bill subscription fees on a monthly basis. However, we may issue bills more
-              frequently if we suspect fraudulent activity or a risk of non-payment. You are
-              responsible for paying all applicable fees and charges for using the Services as
-              described on the Veerge website. Payments must be made using a payment method
-              supported by Veerge. You agree to pay all amounts due without setoff, counterclaim,
-              deduction, or withholding. Fees and charges for new services or features will be
-              effective when we post updated fees and charges on the Veerge website, unless
-              otherwise stated in a notice. We may increase or add new fees and charges for any
-              existing services you are using by providing at least 30 days' prior notice.
+              <b>Billing: </b>
+              We bill subscription fees monthly. You must pay all fees listed on our website.
+              Myxellia does not charge transaction fees on your customer sales; however, your own
+              payment processor may impose fees on you or your users. Myxellia is not responsible
+              for those third-party fees. We may introduce or modify subscription fees upon 30 days’
+              notice.
             </ListItem>
             <ListItem>
-              Your users will be responsible for paying all applicable fees related to sales made
-              through your web or mobile application. Veerge charges will continue until the
-              Services are terminated and all outstanding fees have been paid in full. Unless
-              otherwise specified, all fees and charges are in U.S. dollars.
+              <b>No Transaction Fees: </b>
+              Since Myxellia does not process your customer transactions, we do not charge
+              transaction fees. Any processing fees charged by your chosen payment processor are
+              between you and that processor.
             </ListItem>
             <ListItem>
-              If payment is not made, we may suspend or revoke access to your account and the
-              services. Your account will be reactivated upon payment of any outstanding fees.
-              During any period of suspension, you may not be able to access your account, and your
-              users may not have access to the web or mobile application. If outstanding fees remain
-              unpaid for 60 days following the suspension date, Veerge reserves the right to
-              terminate your account in accordance with Section 14.
+              <b>Non-Payment: </b>
+              If you fail to pay the monthly subscription fees, we may suspend or terminate your
+              Account. Once overdue amounts are settled, your Account may be reinstated. If fees
+              remain unpaid for 60 days, we may permanently close your Account under Section 14.
             </ListItem>
             <ListItem>
-              You are responsible for all applicable taxes arising from your subscription to or
-              purchase of Veerge's products and services. You are solely responsible for
-              determining, collecting, withholding, reporting, and remitting any applicable taxes,
-              duties, fees, surcharges, and additional charges arising from sales made on your web
-              application or your use of the Services. Any contract of sale made through the
-              Services is directly between you and the customer.
+              <b>Taxes: </b>
+              You are responsible for determining, collecting, withholding, reporting, and remitting
+              any applicable taxes or duties related to your sales. The contract of sale is strictly
+              between you and the customer.
             </ListItem>
             <ListItem>
-              You must maintain an accurate location in the administrative console of your Veerge
-              Store. If you change jurisdictions, you must promptly update your location in the
-              administrative console.
+              <b>No Refunds: </b>
+              Myxellia does not issue refunds for Veerge subscription fees.
             </ListItem>
-            <ListItem>Veerge does not provide refunds.</ListItem>
+            {/* <ListItem>Veerge does not provide refunds.</ListItem> */}
           </OrderedList>
         </ListItem>
 
@@ -360,42 +336,23 @@ export const Terms = () => {
           <Text className="content_head">Confidentiality</Text>
           <OrderedList className="content">
             <ListItem>
-              “Confidential Information” will include, but will not be limited to, any and all
-              information associated with a party’s business and not publicly known, including
-              specific business information, technical processes and formulas, software, customer
-              lists, prospective customer lists, names, addresses and other information regarding
-              customers and prospective customers, designs, sales, costs (including any relevant
-              processing fees), price lists, and other unpublished financial information, business
-              plans and marketing data, and any other confidential and proprietary information,
-              whether or not marked as confidential or proprietary. Veerge’s Confidential
-              Information includes all information that you receive relating to us, or to the
-              Services, that is not known to the general public including information related to our
-              security program and practices.
+              <b>Definition: </b>
+              “Confidential Information” means all non-public information regarding a party’s
+              business, including technical processes, formulas, software, customer lists,
+              prospective customer lists, names, addresses, sales data, cost data, marketing plans,
+              business strategies, and other unpublished financial or proprietary information.
+              Myxellia’s Confidential Information also includes any non-public information you learn
+              about Veerge, including details of our security practices.
             </ListItem>
             <ListItem>
-              Each party agrees to use the other party’s Confidential Information solely as
-              necessary for performing its obligations under these Terms of Service and in
-              accordance with any other obligations in these Terms of Service including this Section
-              6. Each party agrees that it will take all reasonable steps, at least substantially
-              equivalent to the steps it takes to protect its own proprietary information, to
-              prevent the duplication, disclosure or use of any such Confidential Information, other
-              than (i) by or to its employees, agents and subcontractors who must have access to
-              such Confidential Information to perform such party’s obligations hereunder, who each
-              will treat such Confidential Information as provided herein, and who are each subject
-              to obligations of confidentiality to such party that are at least as stringent as
-              those contained herein; or (ii) as required by any law, regulation, or order of any
-              court of proper jurisdiction over the parties and the subject matter contained in
-              these Terms of Service, provided that, if legally permitted, the receiving party will
-              give the disclosing party prompt written notice and use commercially reasonable
-              efforts to ensure that such disclosure is accorded confidential treatment.
-              Confidential Information will not include any information that the receiving party can
-              prove: (A) was already in the public domain, or was already known by or in the
-              possession of the receiving party, at the time of disclosure of such information; (B)
-              is independently developed by the receiving party without use of or reference to the
-              other party’s Confidential Information, and without breaching any provisions of these
-              Terms of Service; or (C) is thereafter rightly obtained by the receiving party from a
-              source other than the disclosing party without breaching any provision of these Terms
-              of Service.
+              <b>Use and Protection: </b>
+              Each party will use the other’s Confidential Information only to fulfill obligations
+              under these Terms, taking at least reasonable measures to protect it from unauthorized
+              disclosure. Disclosure is permitted if required by law, provided the receiving party
+              gives prompt notice and seeks confidential treatment where possible. Confidential
+              Information does not include information already known to the receiving party,
+              publicly available, independently developed without the disclosing party’s data, or
+              lawfully obtained from a third party.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -404,50 +361,46 @@ export const Terms = () => {
           <Text className="content_head">Limitation of Liability and Indemnification</Text>
           <OrderedList className="content">
             <ListItem>
-              You expressly understand and agree that, to the extent permitted by applicable laws,
-              Veerge will not be liable for any direct, indirect, incidental, special, consequential
-              or exemplary damages, including but not limited to, damages for loss of profits,
-              goodwill, use, data or other intangible losses arising out of or relating to the use
-              of or inability to use the Service or these Terms of Service (however arising,
-              including negligence).
+              <b>No Liability for Certain Damages: </b>
+              To the fullest extent allowed by law, Myxellia is not liable for indirect, incidental,
+              special, consequential, or exemplary damages—such as lost profits, goodwill, or
+              data—arising from your use or inability to use Veerge.
             </ListItem>
             <ListItem>
-              You agree to indemnify and hold us and (as applicable) our parent, subsidiaries,
-              affiliates, Veerge partners, officers, directors, agents, employees, and suppliers
-              harmless from any claim or demand, including reasonable attorneys’ fees, made by any
-              third party due to or arising out of (a) your breach of these Terms of Service or the
-              documents it incorporates by reference; (b) or your violation of any law or the rights
-              of a third party; or (c) any aspect of the transaction between you and your Customer,
-              including but not limited to refunds, fraudulent transactions, alleged or actual
-              violation of applicable laws (including but not limited to Federal and State consumer
-              protection laws), or your breach of the Terms of Service.
+              <b>Indemnification: </b>
+              You agree to indemnify and hold harmless Myxellia, its affiliates, officers,
+              directors, employees, agents, and suppliers from any claims or demands (including
+              legal fees) arising from (a) your breach of these Terms; (b) your violation of any law
+              or third-party right; or (c) any issues related to your sales (e.g., refunds, fraud,
+              regulatory breaches).
             </ListItem>
             <ListItem>
-              You will be responsible for any breach of the Terms of Service by your affiliates,
-              agents or subcontractors and will be liable as if it were your own breach.
+              <b>Third-Party Breaches: </b>
+              You are responsible for breaches of these Terms by your affiliates, agents, or
+              subcontractors.
             </ListItem>
             <ListItem>
-              Your use of the Services is at your sole risk. The Services are provided on an “as is”
-              and “as available” basis without any warranty or condition, express, implied or
-              statutory.
+              <b>As-Is: </b>
+              Veerge is provided “as is” and “as available,” with no warranties, express or implied.
             </ListItem>
             <ListItem>
-              Veerge does not warrant that the Services will be uninterrupted, timely, secure, or
+              <b> No Guarantee: </b>
+              Myxellia does not warrant that Veerge will be uninterrupted, timely, secure, or
               error-free.
             </ListItem>
             <ListItem>
-              Veerge does not warrant that the results that may be obtained from the use of the
-              Services will be accurate or reliable.
+              <b>Accuracy: </b>
+              We do not guarantee that results obtained from Veerge will be accurate or reliable.
             </ListItem>
             <ListItem>
-              Veerge is not responsible for any of your tax obligations or liabilities related to
-              the use of Veerge’s Services.
+              <b> Tax Liability: </b>
+              We are not responsible for any taxes or duties arising from your use of Veerge.
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               Veerge does not warrant that the quality of any products, services, information, or
               other materials purchased or obtained by you through the Services will meet your
               expectations, or that any errors in the Services will be corrected.
-            </ListItem>
+            </ListItem> */}
           </OrderedList>
         </ListItem>
 
@@ -456,34 +409,26 @@ export const Terms = () => {
           <Text className="content_subhead">8.1. Your Materials</Text>
           <OrderedList className="content">
             <ListItem>
-              We do not claim ownership of the Materials you provide to Veerge; however, we do
-              require a license to those Materials. You grant Veerge a non-exclusive, transferable,
-              sub-licensable, royalty-free, worldwide right and license to host, use, distribute,
-              expose, modify, run, copy, store, publicly perform, communicate to the public
-              (including by telecommunication), broadcast, reproduce, make available, display, and
-              translate, and create derivative works of any Materials provided by you in connection
-              with the Services. We may use our rights under this license to operate, provide, and
-              promote the Services and to perform our obligations and exercise our rights under the
-              Terms of Service. You represent, warrant, and agree that you have all necessary rights
-              in the Materials to grant this license. You irrevocably waive any and all moral rights
-              you may have in the Materials in favour of Veerge and agree that this waiver may be
-              invoked by anyone who obtains rights in the materials through Veerge, including anyone
-              to whom Veerge may transfer or grant (including by way of license or sublicense) any
-              rights in the Materials.
+              <b>License to Myxellia</b>
+              Myxellia does not claim ownership of your Materials, but you grant us a worldwide,
+              royalty-free, sub-licensable, transferrable license to host, use, distribute, modify,
+              display, perform, reproduce, and create derivative works of them for operating and
+              promoting Veerge. You represent that you have the rights to grant this license and
+              waive any moral rights in your Materials.
             </ListItem>
             <ListItem>
-              If you owned the Materials before providing them to Veerge then, despite uploading
-              them to your Web application they remain yours, subject to any rights or licenses
-              granted in the Terms of Service or elsewhere. You can remove your Web application at
-              any time by deleting your Account. Removing your Web application does not terminate
-              any rights or licenses granted to the Materials that Veerge requires to exercise any
-              rights or perform any obligations that arose during the Term.
+              <b>Ownership: </b>
+              If you owned the Materials before providing them to Veerge, you retain ownership
+              subject to the licenses granted here. Removing your Web Application or deleting your
+              Veerge Account does not terminate any licenses Myxellia requires for obligations or
+              rights incurred before deletion.
             </ListItem>
             <ListItem>
-              You agree that Veerge can, at any time, review and delete any or all of the Materials
-              submitted to the Services, although Veerge is not obligated to do so.
+              <b>Review Rights: </b>
+              Myxellia may, but is not obligated to, review your Materials. We may remove any
+              content we find in violation of these Terms.
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               You grant Veerge a non-exclusive, transferable, sub-licensable, royalty-free,
               worldwide right and license to use the names, trademarks, service marks and logos
               associated with your Store (“Your Trademarks”) to operate, provide, and promote the
@@ -491,41 +436,43 @@ export const Terms = () => {
               Service. This license will survive any termination of the Terms of Service solely to
               the extent that Veerge requires the license to exercise any rights or perform any
               obligations that arose during the Term.
-            </ListItem>
+            </ListItem> */}
           </OrderedList>
-          <Text className="content_subhead">8.2. Veerge Intellectual Property</Text>
+          <Text className="content_subhead">8.2. INTELLECTUAL PROPERTY AND YOUR MATERIALS</Text>
           <OrderedList className="content">
             <ListItem>
-              You agree that you may not use any trademarks, logos, or service marks of Veerge,
-              whether registered or unregistered, unless you are authorized to do so by Veerge in
-              writing. You agree not to use or adopt any marks that may be considered confusing with
-              the Veerge Trademarks. You agree that any variations or misspellings of the Veerge
-              Trademarks would be considered confusing with the Veerge Trademarks.
+              <b>Marks: </b>
+              You must not use any Myxellia or Veerge marks, whether registered or not, without
+              written approval. You shall not use confusingly similar marks.
             </ListItem>
             <ListItem>
-              You agree not to purchase, register, or use search engine or other pay-per-click
-              keywords (such as Google Ads), trademarks, email addresses, social media names, or
-              domain names (including without limitation top-level domains, sub-domains, and page
-              URLs) that use or include Veerge or Veerge Trademarks or that use or include any terms
-              that may be confusing with the Veerge Trademarks.
+              <b> Prohibited Registrations: </b>
+              You must not purchase or register search engine keywords, domains, or social handles
+              that incorporate Myxellia or Veerge or any mark that may be deemed confusingly
+              similar.
             </ListItem>
             <ListItem>
-              You acknowledge and agree that the Terms of Service do not give you any right to
-              implement Veerge patents.
+              <b>No Patent Rights: </b>
+              Nothing in these Terms grants you rights to any Myxellia patents.
             </ListItem>
           </OrderedList>
           <Text className="content_subhead">8.3. Themes and Templates</Text>
           <OrderedList className="content">
             <ListItem>
-              Veerge may provide a selection of basic templates (“Basic Templates”) that you can use
-              for your Web application. Each Basic Template will display a “Created with Myxellia.io”
-              notice in the footer.
+              <b>Basic Templates: </b>
+              Basic templates provided by Veerge (“Basic Templates”) will display a “Powered by
+              Myxellia.io” footer.
             </ListItem>
             <ListItem>
-              Certain exclusive templates (“Exclusive Templates”)—for example, a “Brochure” template—do not require the “Created with Myxellia.io” notice. Exclusive Templates are made available upon request, are more expensive, and incur higher maintenance costs than other templates.
+              <b> Exclusive Templates: </b>
+              Certain “Exclusive Templates,” such as a “Brochure” template, do not require this
+              footer notice. These templates generally cost more and come with higher maintenance
+              fees.
             </ListItem>
             <ListItem>
-              If you use any Basic Template, you acknowledge and agree that the “Created with Myxellia.io” notice must remain intact and visible in the footer of your Web application unless otherwise agreed in writing by Veerge.
+              <b>Notice Retention: </b>
+              If you use a Basic Template, the “Powered by Myxellia.io” footer notice cannot be
+              removed.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -533,52 +480,32 @@ export const Terms = () => {
         <ListItem id="beta" ref={betaRef}>
           <Text className="content_head">Beta Services</Text>
           <Text className="content">
-            From time to time, Veerge may, in its sole discretion, invite you to use, on a trial
-            basis, pre-release or beta features that are in development and not yet available to all
-            property development companies (“Beta Services”). Beta Services are not part of the
-            Services, and Beta Services may be subject to additional terms and conditions, which
-            Veerge will provide to you prior to your use of the Beta Services. Such Beta Services
-            and all associated conversations and materials relating thereto will be considered
-            Veerge Confidential Information and subject to the confidentiality provisions in this
-            agreement. Without limiting the generality of the foregoing, you agree that you will not
-            make any public statements or otherwise disclose your participation in the Beta Services
-            without Veerge’s prior written consent. Veerge makes no representations or warranties
-            that the Beta Services will function. Veerge may discontinue the Beta Services at any
-            time in its sole discretion. Veerge will have no liability for any harm or damage
-            arising out of or in connection with a Beta Service. The Beta Services may not work in
-            the same way as a final version. Veerge may change or not release a final or commercial
-            version of a Beta Service in our sole discretion
+            <b>Beta Services: </b>
+            Occasionally, Myxellia may offer test versions or beta features (“Beta Services”) for
+            evaluation. These Beta Services are considered Confidential Information, may be
+            discontinued at any time, and are provided on an “as is” basis. You agree not to
+            publicly disclose your participation in Beta Services without our written consent.
           </Text>
         </ListItem>
 
         <ListItem id="feedback" ref={feedbackRef}>
           <Text className="content_head">Feedback and Reviews</Text>
           <Text className="content">
-            Veerge welcomes any ideas and/or suggestions regarding improvements or additions to the
-            Services. Under no circumstances will any disclosure of any idea, suggestion or related
-            material or any review of the Services, Third Party Services or any Third Party Provider
-            (collectively, “Feedback”) to Veerge be subject to any obligation of confidentiality or
-            expectation of compensation. By submitting Feedback to Veerge (whether submitted
-            directly to Veerge or posted on any Veerge hosted forum or page), you waive any and all
-            rights in the Feedback and that Veerge is free to implement and use the Feedback if
-            desired, as provided by you or as modified by Veerge, without obtaining permission or
-            license from you or from any third party. Any reviews of a Third Party Service or Third
-            Party Provider that you submit to Veerge must be accurate to the best of your knowledge,
-            and must not be illegal, obscene, threatening, defamatory, invasive of privacy,
-            infringing of intellectual property rights, or otherwise injurious to third parties or
-            objectionable. Veerge reserves the right (but not the obligation) to remove or edit
-            Feedback of Third Party Services or Third Party Providers, but does not regularly
-            inspect posted Feedback.
+            <b>Feedback: </b>
+            We welcome suggestions (“Feedback”) for improving Veerge. By submitting Feedback, you
+            grant Myxellia the right to use it without obligation, license, or compensation. Any
+            reviews of third-party services must be lawful, accurate, and may be edited or removed
+            by Myxellia at our discretion.
           </Text>
         </ListItem>
 
         <ListItem id="privacy" ref={privacyRef}>
           <Text className="content_head">Privacy Policy</Text>
           <Text className="content">
-            Veerge is firmly committed to protecting the privacy of your personal information and
-            the personal information of your customers. By using the Service, you acknowledge and
-            agree that Veerge’s collection, usage and disclosure of this personal information is
-            governed by our Privacy Policy.
+            <b>Data Protection: </b>
+            We respect your privacy and that of your customers. By using Veerge, you agree that
+            Myxellia may collect, use, and disclose personal information in accordance with our
+            Privacy Policy.
           </Text>
         </ListItem>
 
@@ -586,53 +513,42 @@ export const Terms = () => {
           <Text className="content_head">Term and Termination</Text>
           <OrderedList className="content">
             <ListItem>
-              The term of these Terms of Service will begin on the date of your completed
-              registration for use of a Service and continue until terminated by us or by you, as
-              provided below (the “Term”).
+              <b>Term: </b>
+              These Terms take effect when you register for Veerge and continue until terminated by
+              you or Myxellia.
             </ListItem>
             <ListItem>
-              You may cancel your Account and terminate the Terms of Service at any time by
-              contacting Veerge Support and then following the specific instructions indicated to
-              you in Veerge’s response.
+              <b>Cancellation: </b>
+              You may cancel your Account by contacting Veerge Support and following any provided
+              instructions.
             </ListItem>
             <ListItem>
-              Without limiting any other remedies, we may suspend or terminate your Account or the
-              Terms of Service for any reason, without notice and at any time (unless otherwise
-              required by law), including if we suspect that you (by conviction, settlement,
-              insurance or escrow investigation, or otherwise) have engaged in fraudulent activity
-              in connection with the use of the Services. Termination of the Terms of Service will
-              be without prejudice to any rights or obligations which arose prior to the date of
-              termination.
+              <b> Suspension or Termination: </b>
+              Myxellia may suspend or terminate your Account at any time, with or without notice,
+              for any reason permitted by law.
             </ListItem>
             <ListItem>
+              <b>Effects of Termination: </b>
               Upon termination of the Services by either party for any reason:
               <OrderedList type="a" className="content">
                 <ListItem>
-                  Veerge will cease providing you with the Services and you will no longer be able
-                  to access your Account;
+                  We will cease providing the Services, and you will lose access to your Account.
                 </ListItem>
-                <ListItem>
-                  unless otherwise provided in the Terms of Service, you will not be entitled to any
-                  refunds of any Fees, pro rata or otherwise;
-                </ListItem>
-                <ListItem>
-                  any outstanding balance owed to Veerge for your use of the Services through the
-                  effective date of such termination will immediately become due and payable in
-                  full; and
-                </ListItem>
-                <ListItem>your Web Application will be taken offline.</ListItem>
+                <ListItem>No refunds will be issued unless otherwise specified.</ListItem>
+                <ListItem>Any outstanding fees must be paid immediately.</ListItem>
+                <ListItem>Your Web Application will be taken offline.</ListItem>
               </OrderedList>
             </ListItem>
             <ListItem>
-              If you purchased a domain name through Veerge, upon cancellation your domain will no
-              longer be automatically renewed. Following termination, it will be your sole
-              responsibility to handle all matters related to your domain with the domain provider.
+              <b> Final Invoice: </b>
+              If any amounts remain due at termination, you will receive a final invoice via email.
+              Once paid, no further charges will apply.
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               If there are any outstanding Fees owed by you at the date of termination of the
               Service, you will receive one final invoice via email. Once that invoice has been paid
               in full, you will not be charged again.
-            </ListItem>
+            </ListItem> */}
           </OrderedList>
         </ListItem>
 
@@ -640,30 +556,18 @@ export const Terms = () => {
           <Text className="content_head">Modifications</Text>
           <OrderedList className="content">
             <ListItem>
-              We reserve the right, in our sole and absolute discretion, to update or change any
-              portion of the Terms of Service at any time. We will provide you with reasonable
-              advance notice of changes to the Terms of Service that materially adversely affect
-              your use of the Services or your rights under the Terms of Service by sending an email
-              to the Primary Email Address, providing notice through the Veerge administrative
-              console, or by similar means. However, Veerge may make changes that materially
-              adversely affect your use of the Services or your rights under the Terms of Service at
-              any time and with immediate effect (i) for legal, regulatory, fraud and abuse
-              prevention, or security reasons; or (ii) to restrict products or activities that we
-              deem unsafe, inappropriate, or offensive. Unless we indicate otherwise in our notice
-              (if applicable), any changes to the Terms of Service will be effective immediately
-              upon posting of such updated terms at this location. Your continued access to or use
-              of the Services after we provide such notice, if applicable, or after we post such
-              updated terms, constitutes your acceptance of the changes and consent to be bound by
-              the Terms of Service as amended. If you do not agree to the amended Terms of Service,
-              you must stop accessing and using the Services.
+              <b>Amendments: </b>
+              We may change these Terms at any time. We will give reasonable notice if changes
+              significantly affect your rights or use of Veerge (e.g., via email or Veerge’s
+              administrative console). Some changes may be effective immediately for legal,
+              regulatory, or security reasons. Continued use of Veerge after changes become
+              effective indicates your acceptance.
             </ListItem>
             <ListItem>
-              Veerge may change the Fees for the Services from time-to-time. We will provide you
-              with 30 days advanced notice prior to any changes in Fees by sending an email to the
-              Primary Email Account, providing notice through the Veerge administrative console, or
-              by similar means. Veerge will not be liable to you or to any third party for any
-              modification, price change, suspension or discontinuance of the Services (or any part
-              thereof).
+              <b>Fee Changes: </b>
+              We may change subscription fees upon 30 days’ notice to your primary email address or
+              via Veerge’s console. We are not liable for modifications, price changes, or
+              discontinuation of any service.
             </ListItem>
           </OrderedList>
         </ListItem>
@@ -672,80 +576,55 @@ export const Terms = () => {
           <Text className="content_head">General Conditions</Text>
           <OrderedList className="content">
             <ListItem>
-              The Terms of Service, including the documents it incorporates by reference, constitute
-              the entire agreement between you and Veerge and govern your use of the Services and
-              your Account, superseding any prior agreements between you and Veerge (including, but
-              not limited to, any prior versions of the Terms of Service).
+              <b>Entire Agreement: </b>
+              These Terms—including any documents referenced—constitute the entire agreement between
+              you and Myxellia, superseding all prior versions.
             </ListItem>
             <ListItem>
-              The failure of Veerge to exercise or enforce any right or provision of the Terms of
-              Service will not constitute a waiver of such right or provision. If any provision of
-              the Terms of Service, including all terms and conditions and other documents it
-              incorporates by reference, is held by a court of competent jurisdiction to be contrary
-              to law, such provision will be changed and interpreted so as to best accomplish the
-              objectives of the original provision to the fullest extent allowed by law, and the
-              remaining provision of the Terms of Service will remain in full force and effect.
+              <b>No Waiver: </b>
+              Myxellia’s failure to enforce any provision of these Terms does not waive its right to
+              enforce that provision.
             </ListItem>
             <ListItem>
-              Save for Veerge and its affiliates, you or anyone accessing Veerge Services pursuant
-              to these Terms of Service, unless otherwise provided in these Terms of Service, no
-              person or entity who is not a party to these Terms of Service will have any right to
-              enforce any term of these Terms of Service, regardless of whether such person or
-              entity has been identified by name, as a member of a class or as answering a
-              particular description. For the avoidance of doubt, this will not affect the rights of
-              any permitted assignee or transferee of these Terms.
+              <b>Third-Party Rights: </b>
+              Except as expressly stated, no person or entity other than Myxellia or you has any
+              rights under these Terms.
             </ListItem>
             <ListItem>
-              The Terms of Service shall be governed by and construed in accordance with the laws of
-              the State of Delaware, United States, without giving effect to any principles of
-              conflicts of laws. Any legal actions, suits, or proceedings arising out of or relating
-              to the Terms of Service shall be brought in a court of competent jurisdiction located
-              in Delaware, United States.
+              <b>Governing Law: </b>
+              These Terms are governed by the laws of the State of Delaware, USA, without regard to
+              conflicts of law. Legal actions must be brought in a competent court located in
+              Delaware.
             </ListItem>
             <ListItem>
-              The Terms of Service may be available in languages other than English. To the extent
-              of any inconsistencies or conflicts between these English Terms of Service and
-              Veerge’s Terms of Service available in another language, the most current English
-              version of the Terms of Service at
+              <b>Language: </b>
+              If these Terms appear in multiple languages, the most recent English version at
               <a
-                href="https://www.veerge.myxellia.io/legal/terms"
+                href="https://veerge-support.myxellia.io/terms"
                 as="span"
                 textDecoration={'underline'}
               >
                 {' '}
-                https://www.veerge.myxellia.io/legal/terms
+                https://veerge-support.myxellia.io/terms
               </a>{' '}
-              will prevail. Any disputes arising out of these Terms of Service will be resolved in
-              English unless otherwise determined by Veerge (acting in its sole discretion) or as
-              required by applicable law.
+              prevails. Disputes will be handled in English unless otherwise required by law.
             </ListItem>
             <ListItem>
-              All the terms and provisions of the Terms of Service will be binding upon and inure to
-              the benefit of the parties to the Terms of Service and to their respective heirs,
-              successors, permitted assigns and legal representatives. Veerge will be permitted to
-              assign these Terms of Service without notice to you or consent from you. You will have
-              no right to assign or otherwise transfer the Terms of Service, or any of your rights
-              or obligations hereunder, to any third party without Veerge’s prior written consent,
-              to be given or withheld in Veerge’s sole discretion.
+              <b>Assignment: </b>
+              These Terms are binding on and inure to the benefit of each party’s successors and
+              assigns. Myxellia may assign these Terms without notice or consent. You may not assign
+              these Terms without prior written approval.
             </ListItem>
             <ListItem>
-              If any provision, or portion of the provision, in these Terms of Service is, for any
-              reason, held to be invalid, illegal or unenforceable in any respect, then such
-              invalidity, illegality or unenforceability will not affect any other provision (or the
-              unaffected portion of the provision) of the Terms of Service, and the Terms of Service
-              will be construed as if such invalid, illegal or unenforceable provision, or portion
-              of the provision, had never been contained within the Terms of Service.
+              <b>Severability: </b>
+              If any provision is found to be invalid or unenforceable, the remaining provisions
+              stay in effect, and the invalid portion is deemed modified to reflect the original
+              intent as closely as possible.
             </ListItem>
             <ListItem>
-              On termination, all related rights and obligations under the Terms of Service
-              immediately terminate, except that (a) you will remain responsible for performing all
-              of your obligations in connection with transactions entered into before termination
-              and for any liabilities that accrued before or as a result of termination; and
-              Sections 1 (Account Terms), 5 (Payment of Fees), 6 (Confidentiality), 7 (Limitation of
-              Liability and Indemnification), 8.1 (Intellectual Property and Your Materials), 10
-              (Feedback and Reviews), 11 (Privacy and Data Protection), 12 (Cancellation and
-              Termination), 13(1) (Modifications), and 14 (General Conditions) will survive the
-              termination or expiration of these Terms of Service.
+              <b>Survival: </b>
+              Sections 1, 5, 6, 7, 8.1, 10, 11, 12, 13.1, and 14 survive termination, along with any
+              sections required by their nature to remain in effect.
             </ListItem>
           </OrderedList>
         </ListItem>
