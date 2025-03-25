@@ -74,7 +74,7 @@ export const Terms = () => {
     <div className="main">
       {/* <LeadRightNav /> */}
       <Text className="head_">TERMS OF SERVICE</Text>
-      <Text className="publish">Last updated on: May 23, 2022</Text>
+      <Text className="publish">Last updated on: May 23, 2025</Text>
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box id="invite">
         <Text className="content" lineHeight={'25px'}>
@@ -92,13 +92,10 @@ export const Terms = () => {
             business), including any affiliates of that business. Collectively, Veerge’s platform,
             applications, features, and offerings are referred to in these Terms as the “Services.”
             Any new features or tools added to Veerge will also be subject to these Terms. The most
-            current version of these Terms is always available at
-            <br />
+            current version of these Terms is always available at{' '}
             <a
               href="https://veerge-support.myxellia.io/terms"
-              as="span"
-              textDecoration={'underline'}
-              style={{color: '#4545FE'}}
+              style={{color: '#4545FE', textDecoration: 'underline'}}
             >
               https://veerge-support.myxellia.io/terms
             </a>
@@ -598,13 +595,11 @@ export const Terms = () => {
             </ListItem>
             <ListItem>
               <b>Language: </b>
-              If these Terms appear in multiple languages, the most recent English version at
+              If these Terms appear in multiple languages, the most recent English version at{' '}
               <a
                 href="https://veerge-support.myxellia.io/terms"
-                as="span"
-                textDecoration={'underline'}
+                style={{color: '#4545FE', textDecoration: 'underline'}}
               >
-                {' '}
                 https://veerge-support.myxellia.io/terms
               </a>{' '}
               prevails. Disputes will be handled in English unless otherwise required by law.
