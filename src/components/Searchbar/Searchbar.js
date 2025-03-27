@@ -203,7 +203,7 @@ export const Searchbar = () => {
               onClick={onOpen}
               cursor={'pointer'}
               bg={'transparent'}
-              border={!isWhite ? '1px solid black' : '1px solid white'}
+              border={!isWhite ? '1px solid black' : '1px solid rgba(255, 255, 255, 0.20)'}
             >
               <CiSearch
                 color={isWhite ? 'white' : 'black'}
