@@ -74,7 +74,7 @@ export const Terms = () => {
     <div className="main">
       {/* <LeadRightNav /> */}
       <Text className="head_">TERMS OF SERVICE</Text>
-      <Text className="publish">Last updated on: May 23, 2025</Text>
+      <Text className="publish">Last updated on: March 23, 2025</Text>
       <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
       <Box id="invite">
         <Text className="content" lineHeight={'25px'}>
