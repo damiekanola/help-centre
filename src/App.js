@@ -1,8 +1,6 @@
 import React, {useEffect, useLayoutEffect} from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
 import {Homepage} from './pages/Homepage/Homepage';
-import {Introtoveerge} from './pages/Introtoveerge/Introtoveerge';
-import {Fisrttimesetup} from './pages/Firsttimesetup/Firsttimesetup';
 
 import Delist from './pages/listings/Delist/Delist';
 import Createunit from './pages/listings/Createunit/Createunit';
@@ -13,17 +11,13 @@ import {Searchbar} from './components/Searchbar/Searchbar';
 import {Header} from './components/Header/Header';
 import ScrollToTop from './ScrollToTop';
 import './App.css';
-import {Show} from '@chakra-ui/react';
-import Approved from './pages/Approved/Approved';
-import {Ticketing} from './pages/Ticketing/Ticketing';
 
 import SendAnOffer from './pages/lead&account/sendAnOffer/sendAnOffer';
 import HomeOwnersPacket from './pages/lead&account/HomeOwnersPacket/HomeOwnersPacket';
 import {InviteTeamMembers} from './pages/InviteTeamMembers/InviteTeamMembers';
 import {Terms} from './pages/Terms/Terms';
 import {Privacy} from './pages/Privacy/Privacy';
-import {Blog} from './pages/Blog/Blog';
-import {Hero} from './components/Header/Hero';
+
 import {Usersexperience} from './pages/Usersexperience/Usersexperience';
 import {VeergePlus} from './pages/VeergePlus/VeergePlus';
 import {AgentPortal} from './pages/Agents/Portal/portal';
@@ -31,8 +25,7 @@ import {AgentProcess} from './pages/Agents/AgentProcess/AgentProcess';
 import {ApplicationGuide} from './pages/ApplicationGuide/ApplicationGuide';
 import {VeergeThemes} from './pages/VeergeThemes/VeergeThemes';
 import {Protected} from './pages/Protected/Protected';
-import {Featured} from './components/Sections/Featured';
-// import { Listings } from './components/Sections/Listings';
+
 import {OverviewofMyxellia} from './pages/OverviewofMyxellia/OverviewofMyxellia';
 import {AccountApproved} from './pages/AccountApproved/AccountApproved';
 import {WhereToStart} from './pages/WhereToStart/WhereToStart';
@@ -104,7 +97,7 @@ function App() {
           <Route path="/listings/delist" element={<Delist />} />
           <Route path="/listings/create_unit" element={<Createunit />} />
           <Route path="/listings/fractionalize_asset" element={<Fractionasset />} />
-    
+
           <Route path="/lead/send_an_offer" element={<SendAnOffer />} />
           <Route path="/lead/home_owners_packet" element={<HomeOwnersPacket />} />
           <Route path="/agent/portal" element={<AgentPortal />} />
