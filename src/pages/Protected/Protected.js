@@ -1,298 +1,306 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList} from '@chakra-ui/react';
-import LeftNav from '../../components/Leftsidenav/Leftsidenav';
-import Helpful from '../../components/Faq/Helpful';
+import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import protectedImg from '../../assets/images/home/protected.jpg';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
+import {BlogLayout} from '../../layouts/BlogLayout';
+import { useSearchParams } from 'react-router-dom';
+import { gettingStarteddata } from '../../constant/pages';
 
 export const Protected = () => {
-  const veerge_themeRef = useRef(null);
-  const mitigatingRef = useRef(null);
+  const [searchParams] = useSearchParams();
+  const toView = true;
 
-  const veerge_themeCheck = useIsInViewport(veerge_themeRef);
-  const mitigatingCheck = useIsInViewport(mitigatingRef);
+  const introRef = useRef(null);
+  const safetyRef = useRef(null);
+  const commitmentRef = useRef(null);
+  const signupsRef = useRef(null);
+  // const commitmentRef = useRef(null);
+  const securitymeasureRef = useRef(null);
+  const thirdpartyRef = useRef(null);
+  const complianceRef = useRef(null);
+  const conclusionRef = useRef(null);
+  const backupRef = useRef(null);
+  const downtimeRef = useRef(null);
+
+  const introCheck = useIsInViewport(introRef);
+  const safetyCheck = useIsInViewport(safetyRef);
+  const commitmentCheck = useIsInViewport(commitmentRef);
+  const signupsCheck = useIsInViewport(signupsRef);
+  const securitymeasureCheck = useIsInViewport(securitymeasureRef);
+  const thirdpartyCheck = useIsInViewport(thirdpartyRef);
+  const complianceCheck = useIsInViewport(complianceRef);
+  const conclusionCheck = useIsInViewport(conclusionRef);
+  const backupCheck = useIsInViewport(backupRef);
+  const downtimeCheck = useIsInViewport(downtimeRef);
 
   const articleContent = [
-    {check: veerge_themeCheck, id: 'veerge_theme', title: 'How you are protected'},
-    {check: mitigatingCheck, id: 'mitigating', title: 'Mitigation against downtime '},
+    {check: introCheck, id: 'intro', title: 'Introduction'},
+    {check: safetyCheck, id: 'safety', title: 'Safety First'},
+    {check: commitmentCheck, id: 'commitment', title: 'Commitment to data protection'},
+    {check: signupsCheck, id: 'signups', title: 'Authorized sign ups and verification'},
+    {check: securitymeasureCheck, id: 'securitymeasure', title: 'Rigorous security measure'},
+    {check: backupCheck, id: 'backup', title: 'Rigorous security measure'},
+    {check: thirdpartyCheck, id: 'thirdparty', title: 'Trusted third party payment processors'},
+    {check: complianceCheck, id: 'compliance', title: 'Global compliance'},
+    {check: downtimeCheck, id: 'downtime', title: 'How we mititgate downtime'},
+    {check: conclusionCheck, id: 'conclusion', title: 'In Conclusion'},
   ];
 
-  const relatedContent = [
-    {link: '/veerge_plus', text: 'Veerge Plus'},
-    {link: '/how_protected', text: 'How you are protected'},
-    {link: '/blog/why_veerge', text: 'Why Veerge instead of building?'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+  const articleMeta = {
+    title: 'How you’re protected',
+    author: 'Myxellia Team',
+    published: 'February 04, 2025',
+    updated: 'March 05, 2025',
+    image: protectedImg,
+  };
+
+
 
   return (
-    <div className="main">
-      {/* <LeadRightNav /> */}
-      <Text className="head_">HOW YOU’RE PROTECTED</Text>
-      <Text className="publish">Published: Sep 29, 2023</Text>
-      <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
-      <Text className="content" lineHeight={'25px'} mt="50px">
-        <Box mb="30px" id="veerge_theme" ref={veerge_themeRef}>
-          <Text mt="30px" as="p" fontWeight={400}>
-            By now, you are hopefully familiar with our mission: To democratize real estate for all!
-            We believe that everyone should have access to the tools they need to thrive in the Real
-            estate industry. However, our vision goes beyond accessibility; we strive to be the most
-            trusted, lowest-cost, and culturally relevant real estate software company in the
-            industry. We understand that the majority of our users are venturing into the world of
-            technology for the first time. That's why we place the utmost importance on the
-            reliability & security of our platform. We want to be there for our customers when they
-            need us the most, providing a secure and trustworthy experience.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            While we strongly advocate for democratization and the power of participation, we hold
-            "Safety First" as our top company value. After all, democratization without safety would
-            be reckless. We are committed to being a safety-first company, ensuring that our
-            customers can explore the world of financial engineering & technology with confidence.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Just as we prioritize safety internally, we believe that the values our customers
-            attribute to us over time will reflect our commitment to their security and well-being.
-            In today's digital age, where the internet serves as a powerful tool to reach potential
-            customers, data protection has become more crucial than ever. Unfortunately, cyber
-            attacks and data breaches have been on the rise, posing significant risks to individuals
-            and organizations. At Myxellia, we recognize the importance of data protection,
-            particularly for real estate companies that handle sensitive personal and financial
-            information on a daily basis.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            To safeguard your data and provide the highest level of security, we have implemented
-            comprehensive data protection measures aligning with GDPR, NDPR, NITDA, and CCPA
-            regulations. We want you to have complete peace of mind when using our platform, knowing
-            that your data is in safe hands. We employ state-of-the-art security protocols to
-            fortify your organization, and we take security seriously by leaving no stone unturned
-            in protecting your sensitive information from prying eyes.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            To ensure compliance, the individual signing up from the property development company
-            must be authorized to enter into contracts on behalf of the company and will be deemed
-            the account owner. If the applicant is not from a property development company, the
-            registration will be rejected. This account owner must use an email address associated
-            with the property development company during registration. Their credentials, such as a
-            driver's license or passport data page, will be automatically verified. In certain
-            countries, additional verifications are required: for instance, the Bank Verification
-            Number (BVN) in Nigeria, the bank card number in Ghana, and the Social Security Number
-            (SSN) or Employer Identification Number (EIN) in the United States.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Our security protocols act as an impenetrable shield, ensuring that unauthorized access
-            is prevented. Two-factor authentication, regular password updates, and access controls
-            are just a few of the measures we implement to limit access to sensitive data, allowing
-            only authorized individuals to enter. Complacency has no place in our fortress. We
-            conduct regular security audits and updates to strengthen our systems against the
-            ever-evolving threats of the digital realm. Our vigilant security team keeps a watchful
-            eye on our systems, swiftly responding to any suspicious activity or security incidents.
-            When it comes to encryption, we raise the bar even higher. All data transmitted between
-            our servers and your devices is encrypted using cutting-edge industry-standard
-            protocols. Intercepting this encrypted data would be futile, as it remains
-            indecipherable to anyone without the key. Passwords are fortified using the BCrypt
-            hashing algorithm, rendering them virtually impossible to crack. We never store
-            passwords in plain text, ensuring an additional layer of protection for your sensitive
-            information. Our app and website utilize the Transport Layer Security (TLS) protocol to
-            establish secure communication with our servers, safeguarding your personal and account
-            information. But our commitment to security doesn't end there. We go beyond encryption
-            during transmission by encrypting all data at rest. This ensures that even if
-            unauthorized users gain access to our servers, they will find nothing but encrypted
-            data, keeping your information safe and secure.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            To enhance the resilience of your data, we regularly perform encrypted backups. These
-            backups are securely stored in off-site locations, guaranteeing the safety of your
-            information even in the face of unforeseen disasters. During the backup process, we
-            conduct meticulous security audits, ensuring that your data remains protected from
-            insider attacks or any malicious attempts.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            We recognize the immense value of collaboration and have thus partnered with esteemed
-            third-party service providers, including Sterling Bank, to handle all transaction
-            processing. It is important to note that we do not directly manage funds; this
-            responsibility is exclusively undertaken by the service provider you integrate into our
-            system. This means that once you are ready to move from the test environment to live
-            operations, you can connect your own payment processor and collect your funds directly.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            We recognize that different regions and industries have unique regulations and
-            compliance requirements for data protection. That's why we diligently ensure that our
-            platform complies with all relevant regulations, including GDPR, NDPR, NITDA, and CCPA.
-            Our dedicated compliance team stays informed about evolving regulations, ensuring that
-            our platform consistently meets the highest standards. With Veerge, you can have full
-            confidence that your data is handled in complete compliance with applicable regulations.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Join us in our secure fortress, where we are committed to democratizing real estate
-            while safeguarding your data and financial future. At Veerge, we combine accessibility,
-            trust, affordability, and cultural relevance to provide you with a seamless and secure
-            experience.
-          </Text>
-          {/* <Text mt="30px" as="p" fontWeight={400}>
-            By now, you are hopefully familiar with our mission: To democratize real estate for all!
-            We believe that everyone should have access to the tools they need to thrive
-            financially. However, our vision goes beyond accessibility; we strive to be the most
-            trusted, lowest-cost, and culturally relevant software company in the industry.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            We understand that the majority of our users are venturing into the world of value
-            creation and investment for the first time. That's why we place the utmost importance on
-            the reliability of our platform. We want to be there for our customers when they need us
-            the most, providing a secure and trustworthy experience.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            While we strongly advocate for democratization and the power of participation, we hold
-            "Safety First" as our top company value. After all, democratization without safety would
-            be reckless. We are committed to being a safety-first company, ensuring that our
-            customers can explore the world of finance with confidence.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Just as we prioritize safety internally, we believe that the values our customers
-            attribute to us over time will reflect our commitment to their security and well-being.
-            In today's digital age, where the internet serves as a powerful tool to reach potential
-            customers, data protection has become more crucial than ever. Unfortunately, cyber
-            attacks and data breaches have been on the rise, posing significant risks to individuals
-            and organizations. At Veerge, we recognize the importance of data protection,
-            particularly for real estate companies that handle sensitive personal and financial
-            information on a daily basis.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            To safeguard your data and provide the highest level of security, we have implemented
-            comprehensive data protection measures aligning with GDPR, NDPR, NITDA, and CCPA
-            regulations. We want you to have complete peace of mind when using our platform, knowing
-            that your data is in safe hands. We employ state-of-the-art security protocols to
-            fortify your organization, and we take security seriously by leaving no stone unturned
-            in protecting your sensitive information from prying eyes.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Our security protocols act as an impenetrable shield, ensuring that unauthorized access
-            is prevented. Two-factor authentication, regular password updates, and access controls
-            are just a few of the measures we implement to limit access to sensitive data, allowing
-            only authorized individuals to enter. Complacency has no place in our fortress. We
-            conduct regular security audits and updates to strengthen our systems against the
-            ever-evolving threats of the digital realm. Our vigilant security team keeps a watchful
-            eye on our systems, swiftly responding to any suspicious activity or security incidents.
-            When it comes to encryption, we raise the bar even higher. All data transmitted between
-            our servers and your devices is encrypted using cutting-edge industry-standard
-            protocols. Intercepting this encrypted data would be futile, as it remains
-            indecipherable to anyone without the key. Passwords are fortified using the BCrypt
-            hashing algorithm, rendering them virtually impossible to crack. We never store
-            passwords in plain text, ensuring an additional layer of protection for your sensitive
-            information. Our app and website utilize the Transport Layer Security (TLS) protocol to
-            establish secure communication with our servers, safeguarding your personal and account
-            information. But our commitment to security doesn't end there. We go beyond encryption
-            during transmission by encrypting all data at rest. This ensures that even if
-            unauthorized users gain access to our servers, they will find nothing but encrypted
-            data, keeping your information safe and secure.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            To enhance the resilience of your data, we regularly perform encrypted backups. These
-            backups are securely stored in off-site locations, guaranteeing the safety of your
-            information even in the face of unforeseen disasters. During the backup process, we
-            conduct meticulous security audits, ensuring that your data remains protected from
-            insider attacks or any malicious attempts.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            We recognize the immense value of collaboration and have thus partnered with esteemed
-            third-party service providers, including Sterling Bank, for all transaction processing.
-            <b>
-              {' '}
-              It's important to note that we do not directly handle funds; this is exclusively
-              managed by Sterling Bank.{' '}
-            </b>
-            Upholding our shared dedication to data protection, Sterling Bank rigorously adheres to
-            strict security measures. This commitment ensures the utmost protection of your personal
-            information throughout the entire payment process.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            We recognize that different regions and industries have unique regulations and
-            compliance requirements for data protection. That's why we diligently ensure that our
-            platform complies with all relevant regulations, including GDPR, NDPR, NITDA, and CCPA.
-            Our dedicated compliance team stays informed about evolving regulations, ensuring that
-            our platform consistently meets the highest standards. With Veerge, you can have full
-            confidence that your data is handled in complete compliance with applicable regulations.
-          </Text>
-          <Text mt="30px" as="p" fontWeight={400}>
-            Join us in our secure fortress, where we are committed to democratizing real estate
-            while safeguarding your data and financial future. At Veerge, we combine accessibility,
-            trust, affordability, and cultural relevance to provide you with a seamless and secure
-            experience.
-          </Text> */}
-        </Box>
+    <BlogLayout
+      articleContent={articleContent}
+      articleMeta={articleMeta}
+      otherresources={gettingStarteddata}
+    >
+      <Box id="intro" ref={introRef}>
+        <Text as="p" marginTop={'30px'}>
+          At Myxellia, our mission is clear: <b>democratize real estate for everyone</b>. We believe
+          everyone should have access to the tools they need to thrive in the real estate industry.
+          Yet, our vision extends beyond accessibility. We aim to be the{' '}
+          <b>most trusted, lowest-cost, and culturally relevant real estate software provider</b>.
+          Recognizing that many of our users are new to technology, we prioritize <b>reliability</b>{' '}
+          and security above all else. We’re here for you when you need us most, ensuring a safe and
+          dependable experience on our platform.
+        </Text>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
 
-        <Box mb="30px" id="mitigating" ref={mitigatingRef}>
-          <Text fontSize={'24px'} fontWeight={500} mb="5px">
-            Mitigation against downtime
-          </Text>
-          <Text as="p" fontWeight={400}>
-            Mitigating downtime is crucial to ensuring the availability and reliability of services.
-            To address potential downtime, Veerge has implemented several measures while leveraging
-            Myxellia microservices built on AWS (Amazon Web Services), a highly reliable cloud
-            computing platform. These mitigants include:
-            <OrderedList>
-              <ListItem mt="30px">
-                <Text>
-                  <b>Multi-region Architecture:</b> Applications are deployed across multiple AWS
-                  regions. By distributing resources geographically, Veerge ensures that even if one
-                  region experiences downtime, the application remains accessible in other regions.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b>Load Balancing:</b> The AWS Elastic Load Balancer is utilized to evenly
-                  distribute incoming traffic across multiple instances or availability zones. This
-                  load balancing mechanism enhances high availability and fault tolerance, enabling
-                  continuous access to the application even if certain instances or zones experience
-                  downtime.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b>Auto Scaling:</b> The AWS Auto Scaling is implemented to automatically adjust
-                  the number of instances based on traffic demand. This dynamic scaling capability
-                  ensures the application can handle increased traffic during peak periods and scale
-                  down during lower demand, reducing the risk of downtime due to resource
-                  limitations.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b>Fault-Tolerant Architectures:</b> Veerge designs applications to be
-                  fault-tolerant by incorporating redundancy and backup mechanisms. AWS services
-                  like Amazon S3 are utilized for data backup and replication, while services like
-                  Amazon RDS Multi-AZ ensure database replication and high availability.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b> Disaster Recovery:</b> Veerge creates and regularly tests disaster recovery
-                  plans to ensure business continuity in the event of a major outage. AWS Backup and
-                  AWS Disaster Recovery services are employed to automate and streamline the
-                  recovery process.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b>Monitoring and Alerting:</b> Veerge sets up monitoring and alerting using AWS
-                  CloudWatch. Key metrics are continuously monitored, and notifications are
-                  established to proactively identify and address any potential issues promptly.
-                </Text>
-              </ListItem>
-              <ListItem mt="30px">
-                <Text>
-                  <b> Regular Backup and Data Replication:</b> Veerge implements regular backup
-                  strategies for critical data and ensures data replication across different AWS
-                  regions. This approach safeguards data against potential loss or corruption during
-                  downtime events.
-                </Text>
-              </ListItem>
-            </OrderedList>
-          </Text>
-          <Text mt="30px">
-            By employing these mitigants, Veerge aims to minimize the impact of potential downtime
-            and maintain a highly available and reliable service for its users.
-          </Text>
+      <Box ref={safetyRef} id="safety">
+        <Text className="content_head">Safety First</Text>
+
+        <OrderedList mt={'40px'}>
+          <ListItem>
+            While we firmly believe in democratization and the power of participation, we hold
+            “Safety First” as our most important value. Democratization without safety would be
+            reckless. By placing safety at the forefront, we empower our customers to explore
+            financial engineering and technology confidently. In doing so, we aim to cultivate a
+            lasting reputation built on trust, reliability, and an unwavering commitment to your
+            security and well-being.
+          </ListItem>
+        </OrderedList>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={commitmentRef} id="commitment">
+        <Text className="content_head">Commitment to data protection</Text>
+        <Text as="p" marginTop="40px">
+          In today’s digital era, data protection is paramount—especially for real estate companies
+          handling sensitive personal and financial information. At Myxellia, we have established
+          robust measures in line with GDPR, NDPR, NITDA, and CCPA to ensure your data remains
+          secure. From modern security protocols to stringent internal practices, we leave no stone
+          unturned in safeguarding your information.
+        </Text>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={signupsRef} id="signups">
+        <Text className="content_head">Authorized sign ups and verification</Text>
+
+        <UnorderedList mt={'30px'}>
+          <ListItem>
+            The person signing up from a property development company must be authorized to enter
+            contracts on behalf of that company and will be deemed the account owner.
+          </ListItem>
+          <ListItem>
+            Any applicant not representing a property development company will be rejected.
+          </ListItem>
+          <ListItem>
+            The account owner is required to use an official company email for registration.
+          </ListItem>
+          <ListItem>
+            Identification documents (e.g., driver’s license, passport data page) may be requested.
+          </ListItem>
+          <ListItem>
+            Additional verifications may be needed depending on regional requirements (e.g., Bank
+            Verification Number in Nigeria, bank card number in Ghana, or Social Security
+            Number/Employer Identification Number in the United States).
+          </ListItem>
+        </UnorderedList>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={securitymeasureRef} id="securitymeasure">
+        <Text className="content_head">Rigorous security measure</Text>
+
+        <UnorderedList mt={'30px'}>
+          <ListItem>
+            Two-Factor Authentication (2FA), regular password updates, and access controls ensure
+            that only authorized individuals can access sensitive data.
+          </ListItem>
+          <ListItem>
+            We conduct regular security audits and updates to stay ahead of emerging threats, with
+            our vigilance team ready to respond immediately to any suspicious activity.
+          </ListItem>
+          <ListItem>
+            Data in transit is encrypted using industry-standard protocols, making any intercepted
+            information indecipherable without the correct key.
+          </ListItem>
+          <ListItem>
+            Passwords are safeguarded with the BCrypt hashing algorithm, ensuring they are virtually
+            impossible to crack.
+          </ListItem>
+        </UnorderedList>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={backupRef} id="backup">
+        <Text className="content_head">Encrypted backup and disaster resillience</Text>
+
+        <UnorderedList mt={'30px'}>
+          <ListItem>
+            We perform encrypted backups on a regular schedule, storing them securely in off-site
+            locations.
+          </ListItem>
+          <ListItem>
+            These backups ensure your data remains intact and recoverable in the face of unexpected
+            disasters.
+          </ListItem>
+          <ListItem>
+            During the backup process, we conduct careful security audits, guarding against both
+            insider threats and external attacks.
+          </ListItem>
+        </UnorderedList>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={thirdpartyRef} id="thirdparty">
+        <Text className="content_head">Trusted third party payment processors</Text>
+        <Text mt={'40px'}>
+          At Myxellia, we value collaboration. We partner with reputable third-party service
+          providers for transaction processing and do not directly manage funds. Once you transition
+          from testing to live operations, you can integrate your own payment processor and collect
+          your funds directly.
+        </Text>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={complianceRef} id="compliance">
+        <Text className="content_head">Global compliance</Text>
+        <Text mt={'40px'}>
+          We recognize that different regions and industries have unique regulations governing data
+          protection. Our dedicated compliance team ensures Myxellia meets all relevant standards,
+          including GDPR, NDPR, NITDA, and CCPA. We continuously monitor regulatory changes to keep
+          our platform in full compliance, so you can trust that your data is managed with integrity
+          and responsibility.
+        </Text>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={downtimeRef} id="downtime">
+        <Text className="content_head">How we mitigate downtime</Text>
+        <Text mt={'40px'}>
+          At Myxellia, mitigating downtime is critical to delivering the availability and
+          reliability our customers expect. We have implemented a range of proactive measures
+          throughout our microservices architecture, designed to minimize interruptions and ensure
+          continuous service:
+        </Text>
+        <Box my="30px">
+          <OrderedList spacing={'2px'}>
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Multi-Region Architecture
+              </Text>
+              <Text>
+                We distribute our applications across geographically distinct data centers. If one
+                region faces an outage, services remain operational through other regions,
+                preventing a single point of failure.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Load Balancing
+              </Text>
+              <Text>
+                Incoming requests are automatically directed to the most suitable server, ensuring
+                that if one server or zone becomes unavailable, traffic is seamlessly rerouted. This
+                helps maintain consistent performance even under high load or partial outages.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Auto Scaling
+              </Text>
+              <Text>
+                Our systems dynamically adjust computing resources based on real-time demand. This
+                ensures that we can handle usage spikes without downtime—and scale down during
+                quieter periods to remain cost-effective.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Fault-Tolerant Design
+              </Text>
+              <Text>
+                Redundancy and backup mechanisms are integrated into every layer. We store data in
+                multiple, synchronized locations and implement failover strategies so that if one
+                resource fails, another immediately takes over.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Disaster Recovery
+              </Text>
+              <Text>
+                We maintain well-tested disaster recovery protocols to handle large-scale outages
+                swiftly. Regular rehearsals of these scenarios enable us to restore essential
+                services with minimal disruption when unforeseen events occur.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Monitoring and Alerting
+              </Text>
+              <Text>
+                We continuously monitor key performance metrics and set automated alerts to detect
+                anomalies. This proactive approach helps us address potential issues before they
+                escalate, keeping downtime to a minimum.
+              </Text>
+            </ListItem>
+
+            <ListItem>
+              <Text fontWeight="600" color="#000000EB">
+                Regular Backups and Data Replication
+              </Text>
+              <Text>
+                We routinely back up critical data and replicate it across multiple regions. This
+                redundancy protects against data loss and ensures swift recovery even if an entire
+                region experiences a failure.
+              </Text>
+            </ListItem>
+          </OrderedList>
         </Box>
-      </Text>
-      <Helpful />
-    </div>
+        <Text mt={'20px'}>
+          By combining these strategies, Myxellia maintains a resilient infrastructure that
+          minimizes service disruptions and provides a reliable experience for all users
+        </Text>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+      </Box>
+      <Box ref={conclusionRef} id="conclusion">
+        <Text className="content_head">In conclusion</Text>
+        <Text mt={'40px'}>
+          Myxellia is dedicated to empowering the real estate sector by providing secure, reliable,
+          and trusted software solutions. From advanced security frameworks and strict compliance
+          measures to comprehensive downtime mitigation strategies, every aspect of our platform is
+          engineered to help our customers operate with confidence and peace of mind. We invite you
+          to join us and experience a new standard of excellence in real estate technology.
+        </Text>
+      </Box>
+    </BlogLayout>
   );
 };

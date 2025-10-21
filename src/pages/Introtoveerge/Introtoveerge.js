@@ -8,8 +8,6 @@ import LeftNav from '../../components/Leftsidenav/Leftsidenav';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 
 export const Introtoveerge = () => {
-  const toast = useToast();
-
   const veergeRef = useRef(null);
   const engagementRef = useRef(null);
   const trustRef = useRef(null);

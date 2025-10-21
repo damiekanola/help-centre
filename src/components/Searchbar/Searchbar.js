@@ -43,7 +43,7 @@ export const Searchbar = () => {
   }, [currLocation]);
 
   // const isWhite = currLocation.startsWith('/blog') ? false : true;
-  const isWhite = true;
+  const isWhite = false;
 
   const handleCurrentRoute = () => {
     switch (currLocation) {
@@ -154,7 +154,7 @@ export const Searchbar = () => {
       <Show breakpoint="(min-width: 769px)">
         <Flex
           w="100%"
-          px="78px"
+          px={{base: '24px', md: '78px'}}
           height="67px"
           direction="row"
           justify="space-between"
@@ -189,7 +189,7 @@ export const Searchbar = () => {
                 textTransform: 'capitalize',
               }}
             >
-              {handleCurrentRoute()}
+              Blog
             </Text>
           </Flex>
           <form>
@@ -199,15 +199,30 @@ export const Searchbar = () => {
               maxW="300px"
               h="43px"
               borderRadius=" 12px"
-              px="10px"
-              onClick={onOpen}
+              px="8px"
+              // onClick={onOpen}
               cursor={'pointer'}
               bg={'transparent'}
-              border={!isWhite ? '1px solid black' : '1px solid rgba(255, 255, 255, 0.20)'}
+              border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
             >
+              <Input
+                placeholder="Search for a part"
+                type="text"
+                value={query}
+                border="none"
+                FontWeight="400"
+                fontSize="12px"
+                lineHeight="15px"
+                color="#606060"
+                // onClick={onOpen}
+                _focusVisible={{
+                  border: 'none',
+                }}
+                onChange={event => setQuery(event.target.value)}
+              />
               <CiSearch
                 color={isWhite ? 'white' : 'black'}
-                style={{width: '25px', height: '25px'}}
+                style={{width: '24px', height: '24px'}}
               />
             </Flex>
           </form>
@@ -220,25 +235,6 @@ export const Searchbar = () => {
             <ModalOverlay bg="rgba(0,0,0,0.2)" />
             <ModalContent minW={'450px'}>
               <ModalBody>
-                <Flex direction="row" align="center">
-                  <CiSearch style={{width: '25px', height: '25px'}} />
-                  <Input
-                    placeholder="Search the docs"
-                    type="text"
-                    value={query}
-                    border="none"
-                    FontWeight="400"
-                    fontSize="12px"
-                    lineHeight="15px"
-                    color="#606060"
-                    onClick={onOpen}
-                    _focusVisible={{
-                      border: 'none',
-                    }}
-                    onChange={event => setQuery(event.target.value)}
-                  />
-                </Flex>
-
                 {searchFilteredData
                   .filter(data => {
                     if (query === '') {
@@ -258,7 +254,7 @@ export const Searchbar = () => {
                         mt="20px"
                         width="400px"
                       >
-                        <Link to={`${link}#${id}`} className="a__">
+                        <Link to={`${link}`} className="a__">
                           <Flex
                             direction="row"
                             justify="space-between"
@@ -286,96 +282,137 @@ export const Searchbar = () => {
           </Modal>
         </Flex>
       </Show>
-      <Show breakpoint="(max-width: 768px)">
-        <form>
-          <Flex
-            direction="row"
-            align="center"
-            maxW="320px"
-            h="43px"
-            bg="#F5F5F5"
-            border=" 1px solid #C3C4FC"
-            borderRadius=" 12px"
-            px="10px"
-            mt="20px"
-            onClick={onOpen}
-            cursor={'pointer'}
-          >
-            <CiSearch style={{width: '25px', height: '25px'}} />
-          </Flex>
-        </form>
-        <Modal
-          onClose={onClose}
-          isOpen={isOpen}
-          motionPreset="slideInBottom"
-          scrollBehavior={scrollBehavior}
-        >
-          <ModalOverlay bg="rgba(0,0,0,0.2)" />
-          <ModalContent w={{base: '370px', md: '500px'}}>
-            <ModalBody>
-              <Flex direction="row" align="center">
-                <CiSearch style={{width: '25px', height: '25px'}} />
-                <Input
-                  placeholder="Search the docs"
-                  type="text"
-                  value={query}
-                  border="none"
-                  FontWeight="400"
-                  fontSize="12px"
-                  lineHeight="15px"
-                  color="#606060"
-                  onClick={onOpen}
-                  _focusVisible={{
-                    border: 'none',
-                  }}
-                  onChange={event => setQuery(event.target.value)}
-                />
-              </Flex>
 
-              {searchFilteredData
-                .filter(data => {
-                  if (query === '') {
-                    return null;
-                  } else if (data?.title?.toLowerCase()?.includes(query?.toLowerCase())) {
-                    return data;
-                  }
-                })
-                .map(data => {
-                  const {id, page, link, title, pageTitle} = data;
-                  return (
-                    <Flex
-                      direction="column"
-                      rowGap="4px"
-                      justify="center"
-                      align="center"
-                      mt="20px"
-                      width="320px"
-                    >
-                      <Link to={`${link}#${id}`} className="a__">
-                        <Flex
-                          direction="row"
-                          justify="space-between"
-                          className="link__"
-                          px="15px"
-                          align="center"
-                          onClick={onClose}
-                        >
-                          <Text fontSize={'14px'} textAlign={'left'}>
-                            {isHomePage && `${pageTitle}:`}
-                            <Text fontSize={'17px'} as="span">
-                              {' '}
-                              {title}
+      <Show breakpoint="(max-width: 768px)">
+        <Flex
+          px={{base: '24px', md: '78px'}}
+          height="67px"
+          direction="row"
+          justify="space-between"
+          align="center"
+          position="fixed"
+          gap="30px"
+          top="82px"
+          zIndex="2"
+          bg={isWhite ? '#0D0D0D' : '#ffffff'}
+          borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
+          boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
+        >
+          <Flex maxW="319px" direction="row" columnGap="8px" align="center">
+            {currLocation === '/' || currLocation === '/blog' ? null : (
+              <>
+                <Link to={checkBlogPage() ? '/blog' : '/'}>
+                  {<Image src={isWhite ? home_light : home_dark} />}
+                </Link>{' '}
+                <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
+              </>
+            )}
+            <Text
+              onClick={window.scrollTo(0, 0)}
+              style={{
+                cursor: 'pointer',
+                textDecoration: 'none',
+                href: 'first_time_setup',
+                color: isWhite ? '#fff' : '#5D5FEF',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '14px',
+                lineHeight: '18px',
+                textTransform: 'capitalize',
+              }}
+            >
+              Blog
+            </Text>
+          </Flex>
+          <form>
+            <Flex
+              direction="row"
+              align="center"
+              w={'fit-content'}
+              h="43px"
+              borderRadius=" 12px"
+              px="12px"
+              cursor={'pointer'}
+              bg={'transparent'}
+              border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
+              // gap='20px'
+            >
+              <Input
+                placeholder="Search for a part"
+                type="text"
+                value={query}
+                border="none"
+                FontWeight="400"
+                fontSize="12px"
+                lineHeight="15px"
+                px='0px'
+                color="#606060"
+                _focusVisible={{
+                  border: 'none',
+                }}
+                onChange={event => setQuery(event.target.value)}
+              />
+              <CiSearch
+                color={isWhite ? 'white' : 'black'}
+                style={{width: '24px', height: '24px'}}
+              />
+            </Flex>
+          </form>
+          <Modal
+            onClose={onClose}
+            isOpen={isOpen}
+            motionPreset="slideInBottom"
+            scrollBehavior={scrollBehavior}
+          >
+            <ModalOverlay bg="rgba(0,0,0,0.2)" />
+            <ModalContent minW={'450px'}>
+              <ModalBody>
+                {searchFilteredData
+                  .filter(data => {
+                    if (query === '') {
+                      return null;
+                    } else if (data?.title?.toLowerCase()?.includes(query?.toLowerCase())) {
+                      return data;
+                    }
+                  })
+                  .map(data => {
+                    const {id, page, link, title, pageTitle} = data;
+                    return (
+                      <Flex
+                        direction="column"
+                        rowGap="4px"
+                        justify="center"
+                        align="center"
+                        mt="20px"
+                        width="400px"
+                      >
+                        <Link to={`${link}`} className="a__">
+                          <Flex
+                            direction="row"
+                            justify="space-between"
+                            className="link__"
+                            px="15px"
+                            align="center"
+                            onClick={onClose}
+                          >
+                            <Text fontSize={'14px'} textAlign={'left'}>
+                              {isHomePage && `${pageTitle}:`}
+                              <Text fontSize={'17px'} as="span">
+                                {' '}
+                                {title}
+                              </Text>
                             </Text>
-                          </Text>
-                          <MdSubdirectoryArrowLeft />
-                        </Flex>
-                      </Link>
-                    </Flex>
-                  );
-                })}
-            </ModalBody>
-          </ModalContent>
-        </Modal>
+
+                            <MdSubdirectoryArrowLeft />
+                          </Flex>
+                        </Link>
+                      </Flex>
+                    );
+                  })}
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </Flex>
       </Show>
     </>
   );

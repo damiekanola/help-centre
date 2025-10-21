@@ -14,7 +14,7 @@ const Helpful = ({noMarginTop, white}) => {
         textAlign={'sright'}
         className="content_head"
         color={white ? 'black' : 'white'}
-        fontFamily={'Euclid'}
+        fontFamily={'Inter'}
       >
         Was this helpful?
       </Text>

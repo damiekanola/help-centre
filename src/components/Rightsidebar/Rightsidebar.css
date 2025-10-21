@@ -17,7 +17,7 @@
   row-gap: 27px;
   padding-left: 30px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02);
-  /* font-family: euclid; */
+  /* font-family: Inter; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -33,7 +33,7 @@
 .article_text {
   width: 127px;
   height: 25px;
-  /* font-family: euclid; */
+  /* font-family: Inter; */
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

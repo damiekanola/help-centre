@@ -3,9 +3,8 @@ import {Route, Routes, useLocation} from 'react-router-dom';
 import {Homepage} from './pages/Homepage/Homepage';
 import {Introtoveerge} from './pages/Introtoveerge/Introtoveerge';
 import {Fisrttimesetup} from './pages/Firsttimesetup/Firsttimesetup';
-import Changelisting from './pages/listings/Changelisting/Changelisting';
+
 import Delist from './pages/listings/Delist/Delist';
-import Archiveunit from './pages/listings/Archiveunit/Archiveunit';
 import Createunit from './pages/listings/Createunit/Createunit';
 import Overview from './pages/listings/Overview/Overview';
 import Createlisting from './pages/listings/Createlisting/Createlisting';
@@ -17,24 +16,14 @@ import './App.css';
 import {Show} from '@chakra-ui/react';
 import Approved from './pages/Approved/Approved';
 import {Ticketing} from './pages/Ticketing/Ticketing';
-import {CreateLeadAccount} from './pages/lead&account/Createaccount/Createaccount';
+
 import SendAnOffer from './pages/lead&account/sendAnOffer/sendAnOffer';
 import HomeOwnersPacket from './pages/lead&account/HomeOwnersPacket/HomeOwnersPacket';
 import {InviteTeamMembers} from './pages/InviteTeamMembers/InviteTeamMembers';
 import {Terms} from './pages/Terms/Terms';
 import {Privacy} from './pages/Privacy/Privacy';
 import {Blog} from './pages/Blog/Blog';
-import Transforming_business from './pages/Blog/transforming_business';
-import Inventory from './pages/Blog/inventory';
-import Revenue_recognition from './pages/Blog/revenue_recognition';
-import Lead_management from './pages/Blog/lead_management';
-import A_letter from './pages/Blog/a_letter';
-import Understanding_fraction from './pages/Blog/understanding_fraction';
-import Smart_payment from './pages/Blog/smart_payment';
-import Fractional_ownership from './pages/Blog/fractional_ownership';
-import New_era from './pages/Blog/new_era';
-import Veerge_data from './pages/Blog/veerge_data';
-import Why_veerge from './pages/Blog/why_veerge';
+import {Hero} from './components/Header/Hero';
 import {Usersexperience} from './pages/Usersexperience/Usersexperience';
 import {VeergePlus} from './pages/VeergePlus/VeergePlus';
 import {AgentPortal} from './pages/Agents/Portal/portal';
@@ -42,6 +31,25 @@ import {AgentProcess} from './pages/Agents/AgentProcess/AgentProcess';
 import {ApplicationGuide} from './pages/ApplicationGuide/ApplicationGuide';
 import {VeergeThemes} from './pages/VeergeThemes/VeergeThemes';
 import {Protected} from './pages/Protected/Protected';
+import {Featured} from './components/Sections/Featured';
+// import { Listings } from './components/Sections/Listings';
+import {OverviewofMyxellia} from './pages/OverviewofMyxellia/OverviewofMyxellia';
+import {AccountApproved} from './pages/AccountApproved/AccountApproved';
+import {WhereToStart} from './pages/WhereToStart/WhereToStart';
+import {GettingStarted} from './pages/GettingStarted/GettingStarted';
+import {PartnerProgram} from './pages/PartnerPrograms/PartnerPrograms';
+import {SettingUp} from './pages/SettingUp/SettingUp';
+import {Listings} from './pages/listings/listings';
+import {Fractionalise} from './pages/Fractionalise/Fractionalise';
+import {Archiveunit} from './pages/listings/Archiveunit/Archiveunit';
+import {ClientAccount} from './pages/Clients/ClientAccount/ClientAccount';
+import {UpdateDocuments} from './pages/Clients/UpdateDocuments/UpdateDocuments';
+import {ManagingClients} from './pages/Clients/ManagingClients/ManagingClients';
+import {ClientPayments} from './pages/Clients/ClientsPayments/Clientpayments';
+import {ManageOwnership} from './pages/Clients/ManageOwnership/ManageOwnership';
+import {ManageOccupants} from './pages/listings/MangeOccupants/ManageOccupants';
+import {Schedule} from './pages/listings/Schedule/Schedule';
+import {Changelisting} from './pages/listings/Changelisting/Changelisting';
 
 function App() {
   const location = useLocation();
@@ -67,25 +75,36 @@ function App() {
   return (
     <div className="routes_container">
       <Header />
-      <Show pb="100px" breakpoint="(min-width: 769px)">
-        <Searchbar />
-      </Show>
+      <Searchbar />
       <ScrollToTop />
-      <div className="dark_pages">
+      <div className="">
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/intro_to_veerge" element={<Introtoveerge />} />
-          <Route path="/first_time_setup" element={<Fisrttimesetup />} />
-          <Route path="/approved_what_next" element={<Approved />} />
-          <Route path="/ticketing" element={<Ticketing />} />
+          <Route path="/overview" element={<OverviewofMyxellia />} />
+          <Route path="/approved_what_next" element={<AccountApproved />} />
+          <Route path="/where_to_start" element={<WhereToStart />} />
+          <Route path="/getting_started" element={<GettingStarted />} />
+          <Route path="/partner_program" element={<PartnerProgram />} />
+          <Route path="/setting_up" element={<SettingUp />} />
+          <Route path="/how_protected" element={<Protected />} />
+          <Route path="/listings" element={<Listings />} />
+          <Route path="/fractionalise" element={<Fractionalise />} />
+          <Route path="/listings/archive_unit" element={<Archiveunit />} />
+          <Route path="/clients/client_account" element={<ClientAccount />} />
+          <Route path="/clients/update_documents" element={<UpdateDocuments />} />
+          <Route path="/clients/manage_clients" element={<ManagingClients />} />
+          <Route path="/clients/client_payment" element={<ClientPayments />} />
+          <Route path="/clients/mananage_ownership" element={<ManageOwnership />} />
+          <Route path="/clients/mananage_occupants" element={<ManageOccupants />} />
+          <Route path="/clients/schedule" element={<Schedule />} />
+
           <Route path="/listings/create_listing" element={<Createlisting />} />
           <Route path="/listings/change_listing" element={<Changelisting />} />
           <Route path="/listings/overview" element={<Overview />} />
           <Route path="/listings/delist" element={<Delist />} />
-          <Route path="/listings/archive_unit" element={<Archiveunit />} />
           <Route path="/listings/create_unit" element={<Createunit />} />
           <Route path="/listings/fractionalize_asset" element={<Fractionasset />} />
-          <Route path="/lead/create_account" element={<CreateLeadAccount />} />
+    
           <Route path="/lead/send_an_offer" element={<SendAnOffer />} />
           <Route path="/lead/home_owners_packet" element={<HomeOwnersPacket />} />
           <Route path="/agent/portal" element={<AgentPortal />} />
@@ -99,19 +118,6 @@ function App() {
           <Route path="/veerge_plus" element={<VeergePlus />} />
           <Route path="/application_guide" element={<ApplicationGuide />} />
           <Route path="/veerge_themes" element={<VeergeThemes />} />
-          <Route path="/how_protected" element={<Protected />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/transforming_business" element={<Transforming_business />} />
-          <Route path="/blog/inventory" element={<Inventory />} />
-          <Route path="/blog/revenue_recognition" element={<Revenue_recognition />} />
-          <Route path="/blog/lead_management" element={<Lead_management />} />
-          <Route path="/blog/a_letter" element={<A_letter />} />
-          <Route path="/blog/understanding_fraction" element={<Understanding_fraction />} />
-          <Route path="/blog/smart_payment" element={<Smart_payment />} />
-          <Route path="/blog/fractional_ownership" element={<Fractional_ownership />} />
-          <Route path="/blog/new_era" element={<New_era />} />
-          <Route path="/blog/veerge_data" element={<Veerge_data />} />
-          <Route path="/blog/why_veerge" element={<Why_veerge />} />
         </Routes>
       </div>
       <div className="light_pages">
