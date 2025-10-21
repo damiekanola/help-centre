@@ -12,10 +12,7 @@ import step8 from '../../../assets/images/create-lead/8.png';
 import step9 from '../../../assets/images/create-lead/9.png';
 
 import {listingsData} from '../../../constant/pages';
-
-// import check from '../../assets/images/home/check.png';
-// import engage from '../../assets/images/home/engage.png';
-// import trust from '../../assets/images/home/trust.png';
+import {Card} from '../../../components/Faq/Card';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 
@@ -166,6 +163,8 @@ export const Setup = () => {
             </ListItem>
           </UnorderedList>
         </Box>
+
+        <Card />
       </Box>
     </BlogLayout>
   );

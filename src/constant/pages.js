@@ -11,6 +11,7 @@ import settingUp from '../assets/images/home/setting_up.jpg';
 import prtotected from '../assets/images/home/protected.jpg';
 import createListing from '../assets/images/home/create_listing.jpg';
 import clientManage from '../assets/images/home/manage-ownership.jpg';
+import clientManagee from '../assets/images/home/client_manag.jpg';
 import changeInfo from '../assets/images/home/change_info.jpg';
 import unitAllocation from '../assets/images/home/unit_allocation.jpg';
 import archive from '../assets/images/home/archive.jpg';
@@ -83,7 +84,7 @@ export const listingsData = [
     path: '/listings/create_listing',
   },
   {
-    img: clientManage,
+    img: clientManagee,
     title: 'Client Management, From migration to updating transactions',
     color: 'black',
     tag: 'Beginner',

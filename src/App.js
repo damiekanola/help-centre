@@ -25,8 +25,9 @@ import {ManageOwnership} from './pages/Clients/ManageOwnership/ManageOwnership';
 import {ManageOccupants} from './pages/listings/MangeOccupants/ManageOccupants';
 import {Schedule} from './pages/listings/Schedule/Schedule';
 import {Changelisting} from './pages/listings/Changelisting/Changelisting';
-import { CreateAllocations } from './pages/listings/Allocations/Allocations';
-import { Setup } from './pages/listings/Setup/Setup';
+import {CreateAllocations} from './pages/listings/Allocations/Allocations';
+import {Setup} from './pages/listings/Setup/Setup';
+import {ClientManagement} from './pages/listings/ClientManagement/ClientManagement';
 
 function App() {
   const location = useLocation();
@@ -78,6 +79,7 @@ function App() {
           <Route path="/listings/create_listing" element={<Createlisting />} />
           <Route path="/listings/change_listing" element={<Changelisting />} />
           <Route path="/listings/create_allocations" element={<CreateAllocations />} />
+          <Route path="/listings/client_management" element={<ClientManagement />} />
         </Routes>
       </div>
       <div className="light_pages">
