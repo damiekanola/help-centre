@@ -293,6 +293,7 @@ export const Searchbar = () => {
           position="fixed"
           gap="30px"
           top="82px"
+          w={'100%'}
           zIndex="2"
           bg={isWhite ? '#0D0D0D' : '#ffffff'}
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}

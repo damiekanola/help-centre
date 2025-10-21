@@ -3,12 +3,11 @@ import {Box, Text, ListItem, OrderedList, UnorderedList,} from '@chakra-ui/react
 import protectedImg from '../../assets/images/home/protected.jpg';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
-import { useSearchParams } from 'react-router-dom';
+
 import { gettingStarteddata } from '../../constant/pages';
 
 export const Protected = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+  
 
   const introRef = useRef(null);
   const safetyRef = useRef(null);

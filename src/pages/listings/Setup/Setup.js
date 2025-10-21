@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image, List} from '@chakra-ui/react';
+import {Box, Text, ListItem, UnorderedList, Image} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/schedule.jpg';
 import step1 from '../../../assets/images/create-lead/1.png';
 import step2 from '../../../assets/images/create-lead/2.png';
@@ -10,7 +10,7 @@ import step6 from '../../../assets/images/create-lead/6.png';
 import step7 from '../../../assets/images/create-lead/7.png';
 import step8 from '../../../assets/images/create-lead/8.png';
 import step9 from '../../../assets/images/create-lead/9.png';
-import {FaqCard} from '../../../components/Faq/FaqCard';
+
 import {listingsData} from '../../../constant/pages';
 
 // import check from '../../assets/images/home/check.png';
@@ -18,23 +18,17 @@ import {listingsData} from '../../../constant/pages';
 // import trust from '../../assets/images/home/trust.png';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
 
 export const Setup = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
   const introRef = useRef(null);
   const scheduleRef = useRef(null);
-  const offerRef = useRef(null);
 
   const introCheck = useIsInViewport(introRef);
   const scheduleCheck = useIsInViewport(scheduleRef);
-  const offerCheck = useIsInViewport(offerRef);
 
   const articleContent = [
     {check: introCheck, id: 'intro', title: 'Set Up Your Store Template'},
-    {check: scheduleCheck, id: 'schedule', title: 'How to Schedule Inspection on behalf of a User'},
-    {check: offerCheck, id: 'offer', title: 'Give an offer'},
+    {check: scheduleCheck, id: 'schedule', title: 'E-subscription url'},
   ];
 
   const articleMeta = {
@@ -54,7 +48,8 @@ export const Setup = () => {
       <Box id="intro" ref={introRef}>
         <Text className="content_head">Set Up Your Store Template</Text>
         <Text as="p" marginTop={'30px'}>
-          Easily schedule inspections on behalf of clients and track feedback after each visit!
+          Customize your store’s appearance by selecting a template, choosing your brand colors, and
+          applying a theme that reflects your business identity.
         </Text>
         <Box my="30px">
           <Text fontWeight="600" color="#000000EB">
@@ -137,7 +132,7 @@ export const Setup = () => {
 
       <Box id="schedule" ref={scheduleRef}>
         <Text className="content_head">E-Subscription URL</Text>
-        <Text as="p" marginTop={'30px'} fontSize={'20px'} fontWeight={'700'}>
+        <Text as="p" marginTop={'30px'}>
           E-Sub (Electronic Subscription) links make it easy for clients to secure a unit or listing
           directly from the link. When a client or Agent opens the link or scans the QR code,
           they’re taken straight to the subscription page for that specific unit—no need to search

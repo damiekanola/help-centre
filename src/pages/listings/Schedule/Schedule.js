@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image, List} from '@chakra-ui/react';
+import {Box, Text, ListItem,  UnorderedList, Image, List} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/schedule.jpg';
 
 import step11 from '../../../assets/images/client/schedule/step1.png';
@@ -8,18 +8,13 @@ import step13 from '../../../assets/images/client/schedule/step3.png';
 import step14 from '../../../assets/images/client/schedule/step4.png';
 import step15 from '../../../assets/images/client/schedule/step5.png';
 import {FaqCard} from '../../../components/Faq/FaqCard';
-
-// import check from '../../assets/images/home/check.png';
-// import engage from '../../assets/images/home/engage.png';
-// import trust from '../../assets/images/home/trust.png';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+
 import {listingsData} from '../../../constant/pages';
 
 export const Schedule = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+
   const introRef = useRef(null);
   const scheduleRef = useRef(null);
   const offerRef = useRef(null);
@@ -35,14 +30,12 @@ export const Schedule = () => {
   ];
 
   const articleMeta = {
-    title: 'Schedule Inspections',
+    title: 'Manage Property Inspections',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
     image: protectedImg,
   };
-
-
 
   return (
     <BlogLayout

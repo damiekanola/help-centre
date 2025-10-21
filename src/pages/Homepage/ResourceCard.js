@@ -11,18 +11,16 @@ export const ResourceCard = ({detail}) => {
     <Link to={detail.path || ''}>
       <Box
         // h='343px'
-h={'452px'}
+        h={'452px'}
         maxH={'452px'}
         borderRadius={'12px'}
         shadow={'md'}
         as={motion.div}
         mx={'auto'}
-        w="100%"
+        w={'416px'}
         minW={'270px'}
         maxW={'416px'}
         cursor={'pointer'}
-        whileHover={{scale: 1.02}}
-        whileTap={{scale: 0.98}}
         bgColor={'#ffffff'}
       >
         <Box

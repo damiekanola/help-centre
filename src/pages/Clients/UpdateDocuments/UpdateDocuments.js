@@ -1,13 +1,11 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, ListItem, UnorderedList} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/update-docs.jpg';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+import {clientsData} from '../../../constant/pages';
 
 export const UpdateDocuments = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
   const introRef = useRef(null);
   const updateRef = useRef(null);
   const stepsRef = useRef(null);
@@ -30,18 +28,11 @@ export const UpdateDocuments = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={clientsData}
     >
       <Box id="intro" ref={introRef}>
         <Text as="p" marginTop={'30px'}>

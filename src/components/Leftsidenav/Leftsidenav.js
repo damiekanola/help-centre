@@ -1,7 +1,6 @@
 import {
   Box,
   Text,
-  VStack,
   Image,
   Hide,
   Flex,
@@ -13,8 +12,7 @@ import {
   AccordionIcon,
 } from '@chakra-ui/react';
 import React from 'react';
-import {Link} from 'react-router-dom';
-import file from '../../assets/icons/file.png';
+
 import down_caret from '../../assets/icons/down-caret.svg';
 import table_icon from '../../assets/icons/table-icon.svg';
 
@@ -148,12 +146,14 @@ export const Leftsidenav = ({articleContent}) => {
                 _expanded={{bg: 'transparent'}}
                 justifyContent="space-between"
               >
-                <Flex align="center" gap="10px" w="100%" justify="flex-start">
-                  <Image src={table_icon} w="38px" h="38px" />
+                <Flex align="center" gap="10px" w="100%" justify="space-between">
+                  <Flex align={'center'} gap={'10px'}>
+                    <Image src={table_icon} w="38px" h="38px" />
 
-                  <Text className="article_text" color="#1B1B1B !important">
-                    Table of Contents
-                  </Text>
+                    <Text className="article_text" color="#1B1B1B !important">
+                      Table of Contents
+                    </Text>
+                  </Flex>
                   <AccordionIcon />
                 </Flex>
               </AccordionButton>

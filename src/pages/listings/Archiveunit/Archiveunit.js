@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, Image} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/archive.jpg';
 import step1 from '../../../assets/images/archive/1.png';
 import step2 from '../../../assets/images/archive/2.png';
@@ -13,12 +13,10 @@ import step14 from '../../../assets/images/archive/step4.png';
 
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+
 import {listingsData} from '../../../constant/pages';
 
 export const Archiveunit = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
   const introRef = useRef(null);
   const removeRef = useRef(null);
 

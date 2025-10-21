@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, Image} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/manage-ownership.jpg';
 import step1 from '../../../assets/images/client/step1.png';
 import step2 from '../../../assets/images/client/step2.png';
@@ -12,11 +12,10 @@ import step13 from '../../../assets/images/client/step13.png';
 import step14 from '../../../assets/images/client/step14.png';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+import { clientsData } from '../../../constant/pages';
 
 export const ManageOwnership = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+
   const introRef = useRef(null);
   const removeRef = useRef(null);
 
@@ -36,18 +35,13 @@ export const ManageOwnership = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+ 
 
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+     otherresources={clientsData}
     >
       <Box id="how_to" ref={introRef}>
         <Text className="content_head">Manage Ownership of Properties</Text>

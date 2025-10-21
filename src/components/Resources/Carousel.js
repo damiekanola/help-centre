@@ -1,4 +1,4 @@
-import {Box, Heading, Image, Text, Button, HStack} from '@chakra-ui/react';
+import {Box, Text, Button, HStack} from '@chakra-ui/react';
 import {motion, useMotionValue, useTransform, useSpring, animate} from 'framer-motion';
 import {useRef, useEffect, useState} from 'react';
 import {ResourceCard} from '../../pages/Homepage/ResourceCard';
@@ -40,12 +40,17 @@ export default function Carousel({otherresources}) {
   };
 
   return (
-    <Box bg="#EBEBFF" p={'64px'} overflow="hidden" position="relative">
+    <Box
+      bg="#EBEBFF"
+      p={{base: '30px', md: '40px', lg: '64px'}}
+      overflow="hidden"
+      position="relative"
+    >
       {/* Header + text controls */}
       <HStack justify="space-between" mb={'50px'}>
-        <Heading fontSize="40px" fontWeight="700">
+        <Text fontSize="40px" fontWeight="500" letterSpacing={'-2px'} >
           Other resources
-        </Heading>
+        </Text>
 
         <HStack spacing={3}>
           <Button
@@ -69,7 +74,6 @@ export default function Carousel({otherresources}) {
             w="40px"
             h="40px"
             minW="40px"
-          
             rounded={'full'}
             bg={'#1B1B1B1A'}
             onClick={() => slide('right')}
@@ -97,10 +101,10 @@ export default function Carousel({otherresources}) {
       </Box>
 
       {/* Progress bar */}
-      <Box mt={6} bg="gray.200" h="2px" borderRadius="full" position="relative">
+      <Box mt={10} bg="gray.200" h="2px" borderRadius="full" position="relative">
         <MotionBox
           h="4px"
-          bg="blue.500"
+          bg="#27272A"
           borderRadius="full"
           style={{scaleX: smoothProgress, transformOrigin: '0%'}}
         />

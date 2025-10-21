@@ -1,14 +1,15 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/client-accounts.jpg';
 
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
-import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+import { BlogLayout } from '../../../layouts/BlogLayout';
+import { clientsData } from '../../../constant/pages';
+
 
 export const ClientAccount = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+  // const [searchParams] = useSearchParams();
+  // const toView = true;
   const introRef = useRef(null);
   const owningRef = useRef(null);
   const buyerRef = useRef(null);
@@ -37,18 +38,13 @@ export const ClientAccount = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+
 
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={clientsData}
     >
       <Box id="intro" ref={introRef}>
         <Text as="p" marginTop={'30px'}>
