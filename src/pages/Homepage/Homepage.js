@@ -65,7 +65,7 @@ export const Homepage = () => {
               </Stack>
             </Stack>
           </Flex>
-          <Flex flex="1" justify="flex-end" align="flex-start">
+          <Flex flex="1" justify={{base: 'flex-start', md: 'flex-end'}} align="flex-start">
             <Box>
               <Text opacity="0.65">Hello@myxellia.io</Text>
             </Box>
