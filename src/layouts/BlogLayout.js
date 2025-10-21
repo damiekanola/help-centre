@@ -1,0 +1,179 @@
+import React, {useRef} from 'react';
+import {Box, Text, Image, Flex, Grid, Show, Hide, Link} from '@chakra-ui/react';
+
+import {useSearchParams} from 'react-router-dom';
+import Carousel from '../components/Resources/Carousel';
+import veergeIcon from '../assets/icons/veerge-icon.svg';
+import articleIcon from '../assets/icons/article-icon.svg';
+import facebook from '../assets/icons/facebook.svg';
+import x from '../assets/icons/x.svg';
+import linkedin from '../assets/icons/linkedin.svg';
+import link from '../assets/icons/link.svg';
+
+import LeftNav from '../components/Leftsidenav/Leftsidenav';
+// import Helpful from '../../../components/Faq/Helpful';
+// import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
+// import LeadRightNav from '../../../components/Lead/RightNav';
+// import Blocker from '../../components/blocker';
+
+export const BlogLayout = ({
+  articleMeta,
+  articleContent,
+  otherresources,
+  children,
+  toView = true,
+}) => {
+  return (
+    <div className="main">
+      <Grid
+        bg={'#FAFAFA'}
+        pl={'5%'}
+        pr={{base: '5%', md: '1%'}}
+        templateColumns={{base: '1fr', md: '1fr 1fr'}}
+        gap={'30px'}
+        minH="500px"
+        maxH="680"
+        // h={{base: '680px', md:'500px'}}
+        position="relative"
+        overflow="visible"
+        alignItems="start"
+      >
+        <Flex
+          pt={'90px'}
+          pb={{base: '20px', md: '80px'}}
+          h="100%"
+          direction="column"
+          justifyContent={'space-between'}
+        >
+          <Flex align={'center'} gap={'10px'} mb={'20px'}>
+            <Flex align={'center'} gap={'8px'}>
+              <Image w="24px" h="24px" src={articleIcon} />
+              <Text color={'#1B1B1B'}>Article</Text>
+            </Flex>
+
+            <Box h="16px" w="1px" bg="#1B1B1B66" />
+            <Text color={'#1B1B1B66'} pl={'px'} fontSize={'13px'}>
+              {articleMeta.readTime || '8 mins Read'}
+            </Text>
+          </Flex>
+          <Text className="head_" mb={{base: '50px', md: '20px'}}>
+            {articleMeta.title}
+          </Text>
+          <Text color={'#1B1B1BD9'} fontSize={'11px'} mb={{base: '50px', md: '20px'}}>
+            MYXELLIA GUIDE
+          </Text>
+
+          <Box borderTop={'1px solid #1B1B1B29'}>
+            <Hide breakpoint="(min-width: 769px)">
+              <Flex gap={'10px'} align={'center'} pt={'24px'} lineHeight={'23px'}>
+                <Image src={veergeIcon} width={'40px'} height={'40px'} />
+
+                <Box color={'#1B1B1BD9'} fontWeight={'500'}>
+                  <Text fontSize={'12px'}>AUTHOR</Text>
+                  <Text fontSize={'14px'}>Myxellia Team</Text>
+                </Box>
+              </Flex>
+            </Hide>
+            <Flex pt={'20px'} pb={{base: '0px'}} justify={'space-between'} lineHeight={'23px'}>
+              <Show breakpoint="(min-width: 769px)">
+                <Flex gap={'10px'} align={'center'}>
+                  <Image src={veergeIcon} width={'40px'} height={'40px'} />
+
+                  <Box color={'#1B1B1BD9'} fontWeight={'500'}>
+                    <Text fontSize={'12px'}>AUTHOR</Text>
+                    <Text fontSize={'14px'}>Myxellia Team</Text>
+                  </Box>
+                </Flex>
+              </Show>
+              <Box color={'#1B1B1BD9'} fontWeight={'500'}>
+                <Text fontSize={'12px'}>PUBLISHED</Text>
+                <Text fontSize={'14px'}>{articleMeta.published}</Text>
+              </Box>
+              <Box color={'#1B1B1BD9'} fontWeight={'500'}>
+                <Text fontSize={'12px'}>LAST UPDATE</Text>
+                <Text fontSize={'14px'}>{articleMeta.updated}</Text>
+              </Box>
+            </Flex>
+          </Box>
+        </Flex>
+
+        <Box
+          mt={{base: '', md: '40px'}}
+          borderRadius={{base: '0px', md: '10px'}}
+          overflow={'hidden'}
+          alignSelf="stretch" // 👈 important: don’t stretch grid row
+          position="relative"
+          top={{base: '0px', md: '20px'}}
+          zIndex={1}
+          bgImage={`url(${articleMeta.image})`}
+          bgSize="cover" // ✅ no stretching
+          bgPos="center" // ✅ always centered
+          bgRepeat="no-repeat"
+          minH={'250px'}
+          maxH={'500px'}
+        ></Box>
+      </Grid>
+
+      <div className="content_space">
+        <LeftNav articleContent={articleContent} />
+
+        <Box overflowY={'auto'}>{children}</Box>
+
+        <Flex
+          direction={'column'}
+          gap={'10px'}
+          alignItems={'center'}
+          position={{base: 'sticky', lg: 'sticky'}}
+          top={{base: '100px', md: '160px', lg: '100px'}}
+          pt={'45px'}
+        >
+          <Text
+            transform="rotate(180deg)"
+            sx={{
+              writingMode: 'vertical-rl',
+              textOrientation: 'mixed',
+            }}
+            fontSize="13px"
+            fontWeight="500"
+            color="gray.600"
+            letterSpacing="3px"
+            display={{base: 'none', md: 'block'}}
+          >
+            BACK TO TOP
+          </Text>
+          <Box bgColor={'#624DE3'} h={'80px'} w={'1px'} display={{base: 'none', md: 'block'}}></Box>
+          <Flex direction={{base: 'row', md: 'column'}} gap={'10px'}>
+            <Link>
+              <Image src={linkedin} w="40px" h={'40px'} />
+            </Link>
+            <Link>
+              <Image src={x} w="40px" h={'40px'} />
+            </Link>
+
+            <Link w="40px" h={'40px'}>
+              <Image src={facebook} />
+            </Link>
+            <Link w="40px" h={'40px'}>
+              <Image src={link} />
+            </Link>
+          </Flex>
+        </Flex>
+      </div>
+
+      {/* <Box bg={'#EBEBFF'} p={'80px 64px'}>
+        <Flex>
+          <Text fontSize={'40px'} fontWeight={'500'}>
+            Other Resources
+          </Text>
+        </Flex>
+        <Flex>
+          {relatedContent.map((detail, i) => (
+            <HomePageCard detail={detail} key={i} />
+          ))}
+        </Flex>
+      </Box> */}
+
+      <Carousel otherresources={otherresources} />
+    </div>
+  );
+};

@@ -23,53 +23,29 @@ export const Header = () => {
   const btnRef = useRef();
   return (
     <>
-      <Show breakpoint="(min-width: 769px)">
-        <Flex
-          direction="row"
-          justify="space-between"
-          // m="0 auto"
-          w="full"
-          px="78px"
-          height="82px"
-          position="fixed"
-          top="0"
-          left="0"
-          right="0"
-          zIndex="2"
-          bg="#191919"
-          align="center"
-          boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
-        >
-          <a href="https://test-veerge.myxellia.io/">
-            {/* <Image src={logo} /> */}
-            <VeergeLogo />
-            {/* <Text fontSize={'12px'} color="#fff">
+      <Flex
+        direction="row"
+        justify="space-between"
+        w="full"
+        px="5%"
+        height="82px"
+        position="fixed"
+        top="0"
+        left="0"
+        right="0"
+        zIndex="2"
+        bg="#191919"
+        align="center"
+        boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
+      >
+        <a href="https://test-veerge.myxellia.io/">
+          {/* <Image src={logo} /> */}
+          <VeergeLogo />
+          {/* <Text fontSize={'12px'} color="#fff">
               Powered by Myxellia
             </Text> */}
-          </a>
-        </Flex>
-      </Show>
-      <Show breakpoint="(max-width: 768px)">
-        <Flex
-          direction="row"
-          justify="space-between"
-          maxW="770px"
-          w="100%"
-          position="fixed"
-          zIndex="2"
-          m="0 auto"
-          px="20px"
-          height="72px"
-          bg="#191919"
-          align="center"
-          boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
-        >
-          <Link to="/">
-            {/* <Image src={logo} /> */}
-            <VeergeLogo />
-          </Link>
-        </Flex>
-      </Show>
+        </a>
+      </Flex>
     </>
   );
 };

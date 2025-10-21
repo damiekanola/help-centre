@@ -1,214 +1,157 @@
 import React, {useRef} from 'react';
-import {Box, Text, Image, Flex, useToast} from '@chakra-ui/react';
-import {ink} from 'react-router-dom';
-import archive1 from '../../../assets/images/archive/archive-1.png';
-import archive2 from '../../../assets/images/archive/archive-2.png';
-import archive3 from '../../../assets/images/archive/archive-3.png';
-import archive4 from '../../../assets/images/archive/archive-4.png';
-import archive5 from '../../../assets/images/archive/archive-5.png';
-import archive6 from '../../../assets/images/archive/archive-6.png';
-import archiveStep1 from '../../../assets/images/archive/archive-step-1.png';
-import archiveStep2 from '../../../assets/images/archive/archive-step-2.png';
-import archiveStep3 from '../../../assets/images/archive/archive-step-3.png';
-import archiveStep4 from '../../../assets/images/archive/archive-step-4.png';
-import archiveStep5 from '../../../assets/images/archive/archive-step-5.png';
-import QuestionsAndReplies from '../../../components/Faq/QuestionsAndReplies';
-import RightNav from '../../../components/Listings/RightNav';
-import LeftNav from '../../../components/Leftsidenav/Leftsidenav';
-import Helpful from '../../../components/Faq/Helpful';
+import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import protectedImg from '../../../assets/images/home/archive.jpg';
+import step1 from '../../../assets/images/archive/1.png';
+import step2 from '../../../assets/images/archive/2.png';
+import step3 from '../../../assets/images/archive/3.png';
+import step4 from '../../../assets/images/archive/4.png';
+import step5 from '../../../assets/images/archive/5.png';
+import step11 from '../../../assets/images/archive/step1.png';
+import step12 from '../../../assets/images/archive/step2.png';
+import step13 from '../../../assets/images/archive/step3.png';
+import step14 from '../../../assets/images/archive/step4.png';
+
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
-import HideUnsubscribed from '../../../hoc/Hidefull';
+import {BlogLayout} from '../../../layouts/BlogLayout';
+import {useSearchParams} from 'react-router-dom';
+import {listingsData} from '../../../constant/pages';
 
-const Archiveunit = () => {
-  const toast = useToast();
+export const Archiveunit = () => {
+  const [searchParams] = useSearchParams();
+  const toView = true;
+  const introRef = useRef(null);
+  const removeRef = useRef(null);
 
-  const how_toRef = useRef(null);
-  const how_to_removeCheckRef = useRef(null);
-  const questionsRef = useRef(null);
-
-  const how_toCheck = useIsInViewport(how_toRef);
-  const how_to_removeCheck = useIsInViewport(how_to_removeCheckRef);
-  const questionsCheck = useIsInViewport(questionsRef);
+  const introCheck = useIsInViewport(introRef);
+  const removeCheck = useIsInViewport(removeRef);
 
   const articleContent = [
-    {check: how_toCheck, id: 'how_to', title: 'How to archive a unit'},
-    {check: how_to_removeCheck, id: 'how_to_remove', title: 'How to remove a unit from achieve'},
-    {check: questionsCheck, id: 'questions', title: 'Questions & Replies'},
+    {check: introCheck, id: 'intro', title: 'How to archive a unit'},
+    {check: removeCheck, id: 'remove', title: 'How to remove from archive'},
   ];
 
-  const questions = [
-    {
-      name: 'David M.',
-      date: 'Jun 25, 2023',
-      content: "I tried to archive units, but I didn't get the allocation prompt.",
-      replies: [
-        <Box>
-          <Text>Hello David,</Text>
-          <Text mt="20px">
-            This situation might occur if allocations haven't been established yet for the specific
-            units. The allocation prompt is typically presented during the creation of allocations.
-            If you haven't reached that step, you might not encounter the prompt.
-          </Text>
-          <Text mt="20px">
-            Should you require further assistance or encounter any issues, please don't hesitate to
-            reach out to our support team. We're here to help!
-          </Text>
-        </Box>,
-      ],
-    },
-  ];
-
-  const relatedContent = [
-    {link: '/intro_to_veerge', text: 'Intro to Veerge'},
-    {link: '/blog/understanding_fraction', text: 'Understanding Fractional Real estate '},
-    {link: '/blog/veerge_data', text: 'Veerge & Data analytics'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+  const articleMeta = {
+    title: 'Archiving a Unit',
+    author: 'Myxellia Team',
+    published: 'February 04, 2025',
+    updated: 'March 05, 2025',
+    image: protectedImg,
+  };
 
   return (
-    <div className="main">
-      <RightNav />
-      <Box id="how_to" ref={how_toRef}>
-        <Text className="head_">HOW TO ARCHIVE A UNIT</Text>
-        <Text className="publish">Published: February 18, 2023</Text>
-        <LeftNav articleContent={articleContent} relatedContent={relatedContent} />
-        <Text className="content" lineHeight={'25px'}>
-          <Text as="p" mt="40px">
-            If you want to reserve specific units for a special purpose, these are the steps to
-            follow:
-          </Text>
+    <BlogLayout
+      articleContent={articleContent}
+      articleMeta={articleMeta}
+      otherresources={listingsData}
+    >
+      <Box id="how_to" ref={introRef}>
+        <Text className="content_head">How to archive a unit</Text>
+        <Text as="p" marginTop={'30px'}>
+          If you want to reserve specific units for a special purpose, these are the steps to
+          follow:
         </Text>
 
-        <Box>
-          <Text className="content_head">STEP 1</Text>
-          <Text className="content">Navigate to the relevant listing.</Text>
-
-          <Image src={archive1} mt="30px" mx="auto" w="full" />
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
+            STEP 1
+          </Text>
+          <Text>Navigate to the relevant listing.</Text>
+          <Image src={step1} mt={'30px'} w={'full'} />
         </Box>
-        <Box>
-          <Text className="content_head" mt="30px">
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
             STEP 2
           </Text>
-          <Text className="content">
-            Choose the specific unit you want to reserve from the list.
-          </Text>
-
-          <Image src={archive2} mt="30px" mx="auto" w="full" />
+          <Text>Choose the specific unit you want to reserve from the list.</Text>
+          <Image src={step2} mt={'30px'} w={'full'} />
         </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
             STEP 3
           </Text>
-          <Text className="content">
-            Click on the dropdown menu at the top right corner of the page. Choose{' '}
-            <b>"Archived Unit."</b>
+          <Text>
+            Click on the <b>“More Options”</b> button at the top-right corner to open the options
+            drawer, and then scroll down and select "Archived Units."{' '}
           </Text>
-          <Image src={archive3} mt="30px" mx="auto" w="full" />
+          <Image src={step3} mt={'30px'} w={'full'} />
         </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
             STEP 4
           </Text>
-          <Text className="content">
-            Choose <b>"Add to Archived"</b> on the drawer.
+          <Text>
+            In the ensuing window that says add to archive, input the number of units you wish to
+            archive. This number must be less than the total units of that specific type.
           </Text>
-
-          <Image src={archive4} mt="30px" mx="auto" w="full" />
+          <Image src={step4} mt={'30px'} w={'full'} />
         </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
             STEP 5
           </Text>
-          <Text className="content">
-            In the ensuing window, input the number of units you wish to archive. This number must
-            be less than the total units of that specific type.
+          <Text>
+            After completing the above steps, click the <b>“Proceed”</b> button. If you have already
+            created a unit allocation system, an allocation screen will appear, allowing you to
+            select the exact units to archive. Once you’re done you can proceed.
           </Text>
-
-          <Image src={archive5} mt="30px" mx="auto" w="full" />
+          <Image src={step5} mt={'30px'} w={'full'} />
         </Box>
-        <Box>
-          <Text className="content_head" mt="40px">
-            STEP 6
-          </Text>
-          <Text className="content">
-            After completing the above steps, an allocation screen will appear, allowing you to
-            select the exact units to archive.
-          </Text>
-          <Image src={archive6} mt="30px" mx="auto" w="full" />
-        </Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
 
-      <Box id="how_to_remove" ref={how_to_removeCheckRef}>
-        <Text className="head_">HOW TO REMOVE FROM ARCHIVE</Text>
-
-        <Text className="content">
-          <Text as="p">
-            When the time comes to make the listing available to the public again, follow these
-            steps:
-          </Text>
+      <Box id="remove" ref={removeRef}>
+        <Text className="content_head">How to remove from archive</Text>
+        <Text as="p" marginTop={'30px'}>
+          When the time comes to make the units available to the public again, follow these steps:
         </Text>
 
-        <Box>
-          <Text className="content_head">STEP 1</Text>
-          <Text className="content">
-            Go to the "Listings" section and locate the relevant listing.
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
+            STEP 1
           </Text>
-
-          <Image src={archiveStep1} mt="30px" mx="auto" w="full" />
+          <Text>
+            Go to the <b>"Listings"</b> section and locate the relevant unit within the listing.
+          </Text>
+          <Image src={step11} mt={'30px'} w={'full'} />
         </Box>
-
-        <Box>
-          <Text className="content_head">STEP 2</Text>
-          <Text className="content">
-            Click on the dropdown menu at the top right corner of the listing's page. Select{' '}
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
+            STEP 2
+          </Text>
+          <Text>
+            Select the specific unit you want to make public again, click on the{' '}
+            <b>“More Options”</b>
+            button at the top-right corner to open the options drawer, and then scroll down to click
             <b>"Archived Units."</b>
           </Text>
-
-          <Image src={archiveStep2} mt="30px" mx="auto" w="full" />
+          <Image src={step12} mt={'30px'} w={'full'} />
         </Box>
-
-        <Box>
-          <Text className="content_head">STEP 3</Text>
-          <Text className="content">
-            Identify the unit you wish to reintroduce, and click on it.
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
+            STEP 3
           </Text>
-
-          <Image src={archiveStep3} mt="30px" mx="auto" w="full" />
+          <Text>
+            An option to <b>"Remove from Archive"</b> will appear. Input the number of units you
+            want to restore from archived status then click on the “Proceed” button
+          </Text>
+          <Image src={step13} mt={'30px'} w={'full'} />
         </Box>
-
-        <Box>
-          <Text className="content_head">STEP 4</Text>
-          <Text className="content">
-            An option to "Remove from Archived" will appear. Input the number of units you want to
-            restore from archived status.
+        <Box my={'30px'}>
+          <Text fontWeight={'600'} color={'#000000EB'}>
+            STEP 4
           </Text>
-
-          <Image src={archiveStep4} mt="30px" mx="auto" w="full" />
-        </Box>
-
-        <Box>
-          <Text className="content_head">STEP 5</Text>
-          <Text className="content">
-            Similar to before, an allocation screen will prompt you to select the exact units to
-            restore.
+          <Text>
+            Similar to before, if a unit allocation system exists, an allocation screen will prompt
+            you to select the exact units to restore.
           </Text>
-
-          <Image src={archiveStep5} mt="30px" mx="auto" w="full" />
-          <Text className="content" mt="30px">
+          <Image src={step14} my={'30px'} w={'full'} />
+          <Text>
             By following these steps, you can seamlessly manage unit availability, whether reserving
             them for future release or restoring them to the public domain. This level of control
             ensures that your property's market exposure aligns with your strategic objectives.
           </Text>
         </Box>
       </Box>
-
-      <Box ref={questionsRef} id="questions">
-        <QuestionsAndReplies questions={questions} />
-      </Box>
-
-      <Helpful />
-    </div>
+    </BlogLayout>
   );
 };
-
-export default HideUnsubscribed(Archiveunit);

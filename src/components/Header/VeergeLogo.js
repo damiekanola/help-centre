@@ -2,11 +2,11 @@ import {HStack, Text} from '@chakra-ui/react';
 
 export const VeergeLogo = () => {
   return (
-    <HStack gap={`8px`} w={`max-content`}>
+    <HStack w={`max-content`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="56"
-        height="56"
+        width="45"
+        height="45"
         viewBox="0 0 56 56"
         fill="none"
       >
@@ -16,7 +16,7 @@ export const VeergeLogo = () => {
         />
       </svg>
 
-      <Text fontSize={`30px`} color="#fff">
+      <Text fontSize={{base: '20px', md: '30px'}} color="#fff">
         Veerge
       </Text>
     </HStack>

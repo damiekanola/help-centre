@@ -3,30 +3,33 @@ import {
   Text,
   VStack,
   Image,
+  Hide,
   Flex,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  Show,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from '@chakra-ui/react';
 import React from 'react';
 import {Link} from 'react-router-dom';
 import file from '../../assets/icons/file.png';
-import down_arrow from '../../assets/icons/down_arrow.svg';
+import down_caret from '../../assets/icons/down-caret.svg';
+import table_icon from '../../assets/icons/table-icon.svg';
 
-export const Leftsidenav = ({articleContent, relatedContent}) => {
+export const Leftsidenav = ({articleContent}) => {
   return (
     <Box
-      position={{base: 'sticky', lg: 'fixed'}}
-      top={{base: '100px', md: '160px', lg: '149px'}}
+      position={{base: 'sticky', lg: 'sticky'}}
+      top={{base: '160px', lg: '180px'}}
       w={{base: '100%', lg: '23%'}}
       left="0"
       minW={'300px'}
-      bg="#232425"
+      bg="#FFFFFF"
+      borderRadius={'16px'}
     >
-      <Menu
-        boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
-      >
+      {/* <Menu boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}>
         {({isOpen}) => (
           <>
             <MenuButton
@@ -86,14 +89,14 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
             </MenuList>
           </>
         )}
-      </Menu>
+      </Menu> */}
       <Box
         boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}
         h="fit-content"
         maxH="70vh"
         overflowY={'scroll'}
-        display={{base: 'none', lg: 'block'}}
-        padding={{base: '14px 16px', lg: '82px 30px 50px'}}
+        padding={{base: '14px 16px', lg: '25px 20px'}}
+        borderRadius={'16px'}
         __css={{
           '&::-webkit-scrollbar': {
             w: '1',
@@ -107,59 +110,80 @@ export const Leftsidenav = ({articleContent, relatedContent}) => {
           },
         }}
       >
-        <Text className="article_text" color="white !important">
-          In this article
-        </Text>
-        <Flex mt="20px" direction={'column'} align={'stretch'}>
-          {articleContent.map((content, i) => (
-            <Flex
-              key={i}
-              cursor={'pointer'}
-              borderLeft={i !== articleContent.length - 1 && '1px solid #A4A486'}
-              pb="25px"
-              justify="flex-start"
-              align="flex-start"
-            >
-              <Box
-                ml="-5px"
-                w="10px"
-                h="10px"
-                borderRadius={'full'}
-                bg={content.check ? '#FF0' : '#A4A486'}
-              />
-              <Text
-                maxW={'80%'}
-                mt="-5px"
-                ml="20px"
-                fontSize={'14px'}
-                fontWeight={content.check ? 500 : 400}
-                color={content.check ? '#FF0 !important' : '#DDD'}
-              >
-                <a href={`#${content.id}`}>{content?.title}</a>
+        <Show above="md">
+          <Flex justifyContent={'space-between'} alignItems={'center'}>
+            <Flex gap={'8px'} alignItems={'center'}>
+              <Image src={table_icon} w={'40px'} h={'40px'} />
+              <Text className="article_text" color="#1B1B1B !important">
+                Table of Contents
               </Text>
             </Flex>
-          ))}
-        </Flex>
+            <Image src={down_caret} w={'24px'} h={'24px'} display={{base: 'block', md: 'none'}} />
+          </Flex>
 
-        {relatedContent ? (
-          <Box display={{base: 'none', lg: 'block'}}>
-            <Text className="article_text" mt="40px" color="white !important">
-              Related Content
-            </Text>
-            <VStack mt="20px" spacing={'23px'} align="stretch">
-              {relatedContent.map(content => (
-                <Flex columnGap="16px" align={'center'}>
-                  <Image src={file} w="14px" h="18px" />
-                  <Link to={content.link}>
-                    <Text fontSize={'14px'} color="#DDD">
-                      {content.text}
-                    </Text>
-                  </Link>
+          <Flex mt="20px" direction={'column'} align={'stretch'}>
+            {articleContent.map((content, i) => (
+              <Flex key={i} cursor={'pointer'} pb="25px" justify="flex-start" align="flex-start">
+                <Text
+                  pb={'10px'}
+                  w={'100%'}
+                  mt="-5px"
+                  fontSize={'14px'}
+                  borderBottom={'1px solid #1B1B1B29'}
+                  fontWeight={content.check ? 500 : 400}
+                  color={content.check ? '#1B1B1B !important' : '#616161'}
+                >
+                  <a href={`#${content.id}`}>{content?.title}</a>
+                </Text>
+              </Flex>
+            ))}
+          </Flex>
+        </Show>
+        <Hide above="md">
+          <Accordion allowToggle>
+            <AccordionItem border="none">
+              <AccordionButton
+                p={0}
+                _hover={{bg: 'transparent'}}
+                _expanded={{bg: 'transparent'}}
+                justifyContent="space-between"
+              >
+                <Flex align="center" gap="10px" w="100%" justify="flex-start">
+                  <Image src={table_icon} w="38px" h="38px" />
+
+                  <Text className="article_text" color="#1B1B1B !important">
+                    Table of Contents
+                  </Text>
+                  <AccordionIcon />
                 </Flex>
-              ))}
-            </VStack>
-          </Box>
-        ) : null}
+              </AccordionButton>
+
+              <AccordionPanel py={4}>
+                {articleContent.map((content, i) => (
+                  <Flex
+                    key={i}
+                    cursor={'pointer'}
+                    pb="25px"
+                    justify="flex-start"
+                    align="flex-start"
+                  >
+                    <Text
+                      pb={'10px'}
+                      w={'100%'}
+                      mt="-5px"
+                      fontSize={'14px'}
+                      borderBottom={'1px solid #1B1B1B29'}
+                      fontWeight={content.check ? 500 : 400}
+                      color={content.check ? '#1B1B1B !important' : '#616161'}
+                    >
+                      <a href={`#${content.id}`}>{content?.title}</a>
+                    </Text>
+                  </Flex>
+                ))}
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </Hide>
       </Box>
     </Box>
   );
