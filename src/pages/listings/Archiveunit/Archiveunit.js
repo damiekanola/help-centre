@@ -11,12 +11,10 @@ import step12 from '../../../assets/images/archive/step2.png';
 import step13 from '../../../assets/images/archive/step3.png';
 import step14 from '../../../assets/images/archive/step4.png';
 
-// import check from '../../assets/images/home/check.png';
-// import engage from '../../assets/images/home/engage.png';
-// import trust from '../../assets/images/home/trust.png';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
+import {listingsData} from '../../../constant/pages';
 
 export const Archiveunit = () => {
   const [searchParams] = useSearchParams();
@@ -40,18 +38,11 @@ export const Archiveunit = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={listingsData}
     >
       <Box id="how_to" ref={introRef}>
         <Text className="content_head">How to archive a unit</Text>
@@ -79,8 +70,8 @@ export const Archiveunit = () => {
             STEP 3
           </Text>
           <Text>
-            Click on the <b>“More Options”</b> button at the top-right corner to open the options drawer,
-            and then scroll down and select "Archived Units."{' '}
+            Click on the <b>“More Options”</b> button at the top-right corner to open the options
+            drawer, and then scroll down and select "Archived Units."{' '}
           </Text>
           <Image src={step3} mt={'30px'} w={'full'} />
         </Box>
@@ -118,7 +109,9 @@ export const Archiveunit = () => {
           <Text fontWeight={'600'} color={'#000000EB'}>
             STEP 1
           </Text>
-          <Text>Go to the <b>"Listings"</b> section and locate the relevant unit within the listing.</Text>
+          <Text>
+            Go to the <b>"Listings"</b> section and locate the relevant unit within the listing.
+          </Text>
           <Image src={step11} mt={'30px'} w={'full'} />
         </Box>
         <Box my={'30px'}>
@@ -126,7 +119,8 @@ export const Archiveunit = () => {
             STEP 2
           </Text>
           <Text>
-            Select the specific unit you want to make public again, click on the <b>“More Options”</b>
+            Select the specific unit you want to make public again, click on the{' '}
+            <b>“More Options”</b>
             button at the top-right corner to open the options drawer, and then scroll down to click
             <b>"Archived Units."</b>
           </Text>
@@ -137,8 +131,8 @@ export const Archiveunit = () => {
             STEP 3
           </Text>
           <Text>
-            An option to <b>"Remove from Archive"</b> will appear. Input the number of units you want to
-            restore from archived status then click on the “Proceed” button
+            An option to <b>"Remove from Archive"</b> will appear. Input the number of units you
+            want to restore from archived status then click on the “Proceed” button
           </Text>
           <Image src={step13} mt={'30px'} w={'full'} />
         </Box>

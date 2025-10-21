@@ -10,10 +10,7 @@ import step11 from '../../../assets/images/archive/step1.png';
 import step12 from '../../../assets/images/archive/step2.png';
 import step13 from '../../../assets/images/archive/step3.png';
 import step14 from '../../../assets/images/archive/step4.png';
-
-// import check from '../../assets/images/home/check.png';
-// import engage from '../../assets/images/home/engage.png';
-// import trust from '../../assets/images/home/trust.png';
+import { listingsData } from '../../../constant/pages';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
@@ -52,18 +49,13 @@ export const ManageOccupants = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+ 
 
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+     otherresources={listingsData}
     >
       <Box id="how_to" ref={introRef}>
         <Text className="content_head">Managing Occupants</Text>

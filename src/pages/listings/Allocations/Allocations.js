@@ -13,10 +13,7 @@ import step13 from '../../../assets/images/firsttimesetup/csv3.png';
 import step14 from '../../../assets/images/firsttimesetup/csv4.png';
 import step15 from '../../../assets/images/firsttimesetup/csv5.png';
 import step16 from '../../../assets/images/firsttimesetup/csv6.png';
-
-// import check from '../../assets/images/home/check.png';
-// import engage from '../../assets/images/home/engage.png';
-// import trust from '../../assets/images/home/trust.png';
+import {listingsData} from '../../../constant/pages';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
@@ -57,7 +54,7 @@ export const CreateAllocatrions = () => {
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+     otherresources={listingsData}
     >
       <Box id="intro" ref={introRef}>
         <Text className="content_head">How to create unit allocations</Text>

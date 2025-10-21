@@ -4,6 +4,7 @@ import protectedImg from '../../../assets/images/home/listings.jpg';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
+import {listingsData} from '../../../constant/pages';
 
 const Createlisting = () => {
   const [searchParams] = useSearchParams();
@@ -35,18 +36,11 @@ const Createlisting = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/veerge_plus', text: 'Veerge Plus'},
-    {link: '/how_protected', text: 'How you are protected'},
-    {link: '/blog/why_veerge', text: 'Why Veerge instead of building?'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={listingsData}
     >
       <Box id="usecase" ref={usecaseRef}>
         <Text className="content" lineHeight={'25px'}>

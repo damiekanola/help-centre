@@ -11,9 +11,7 @@ import step7 from '../../assets/images/blog/7.png';
 import step8 from '../../assets/images/blog/8.png';
 import step9 from '../../assets/images/blog/9.png';
 import step10 from '../../assets/images/blog/10.png';
-import check from '../../assets/images/home/check.png';
-import engage from '../../assets/images/home/engage.png';
-import trust from '../../assets/images/home/trust.png';
+import {listingsData} from '../../constant/pages';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
@@ -37,18 +35,11 @@ export const Fractionalise = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={listingsData}
     >
       <Box id="how_to" ref={introRef}>
         <Text className="content_head">How to fractionalise a property</Text>

@@ -11,6 +11,7 @@ import step7 from '../../../assets/images/create-lead/7.png';
 import step8 from '../../../assets/images/create-lead/8.png';
 import step9 from '../../../assets/images/create-lead/9.png';
 import {FaqCard} from '../../../components/Faq/FaqCard';
+import {listingsData} from '../../../constant/pages';
 
 // import check from '../../assets/images/home/check.png';
 // import engage from '../../assets/images/home/engage.png';
@@ -44,18 +45,11 @@ export const Setup = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={listingsData}
     >
       <Box id="intro" ref={introRef}>
         <Text className="content_head">Set Up Your Store Template</Text>

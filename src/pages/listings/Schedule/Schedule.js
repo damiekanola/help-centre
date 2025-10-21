@@ -15,6 +15,7 @@ import {FaqCard} from '../../../components/Faq/FaqCard';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
+import {listingsData} from '../../../constant/pages';
 
 export const Schedule = () => {
   const [searchParams] = useSearchParams();
@@ -41,18 +42,13 @@ export const Schedule = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
+
 
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-      relatedContent={relatedContent}
+      otherresources={listingsData}
     >
       <Box id="intro" ref={introRef}>
         <Text className="content_head">Schedule Inspections</Text>

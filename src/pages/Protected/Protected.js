@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList,} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/protected.jpg';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
