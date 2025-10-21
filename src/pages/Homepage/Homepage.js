@@ -4,27 +4,32 @@ import {Featured} from '../../components/Sections/Featured';
 import {Trending} from '../../components/Sections/Trending';
 import {Hero} from '../../components/Header/Hero';
 import {Client} from '../../components/Sections/Client';
+import StatsSection from '../../components/Header/Stats';
 
 export const Homepage = () => {
   return (
-    <Box w="full" pb="50px">
+    <Box w="full">
       <Hero />
       <Trending />
       <Featured />
       <Listings />
       <Client />
-      {/* <Box p={'100px'}>
-        <Text align={'center'} fontSize={'38px'} fontWeight={'500'}>Myxellia makes building property tech solutions effortless</Text>
-        <Flex justifyContent={'center'} fontSize={'50px'} fontWeight={'700'}>
-          <Text>50+</Text>
-          <Text>10,000+</Text>
-          <Text>174+</Text>
-        </Flex>
-      </Box> */}
 
-      <Box as="footer" bgColor={'#000000'} color="#FFFFFF" p={{base:'40px 20px 20px', md:'70px 60px 20px'}}>
+      <StatsSection />
+
+      <Box
+        as="footer"
+        bgColor={'#000000'}
+        color="#FFFFFF"
+        p={{base: '40px 20px 20px', md: '70px 60px 20px'}}
+      >
         <Flex justifyContent="space-between" mb={'20px'} direction={{base: 'column', md: 'row'}}>
-          <Flex justifyContent="space-between" flex={'1'} direction={{base: 'column', md: 'row'}} gap={'40px'}>
+          <Flex
+            justifyContent="space-between"
+            flex={'1'}
+            direction={{base: 'column', md: 'row'}}
+            gap={'40px'}
+          >
             <Stack direction="column" spacing={4} color="#FFFFFF">
               <Text fontWeight="600">Services & Solutions</Text>
               <Stack direction="column" spacing={2} opacity="0.65">

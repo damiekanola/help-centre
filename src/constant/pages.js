@@ -90,7 +90,7 @@ export const listingsData = [
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
-    path: '/first_time_setup',
+    path: '/listings/client_management',
   },
   {
     img: changeInfo,
