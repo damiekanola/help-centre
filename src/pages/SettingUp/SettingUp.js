@@ -1,16 +1,14 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image, VStack} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/account_approved.jpg';
 import {FaqCard} from '../../components/Faq/FaqCard';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
-import { FaQ } from 'react-icons/fa6';
-import { gettingStarteddata } from '../../constant/pages';
+
+import {gettingStarteddata} from '../../constant/pages';
 
 export const SettingUp = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+
 
   const requirementsRef = useRef(null);
   const guideRef = useRef(null);
@@ -37,25 +35,11 @@ export const SettingUp = () => {
     image: protectedImg,
   };
 
-  const questions = [
-    {
-      name: 'Khamil F.',
-      date: 'Jun 07, 2023',
-      content:
-        "I assigned a property to an account, but now I can't find it in their profile overview anymore.",
-      replies: [
-        "Greetings Khamil,It seems that the property's absence from the account's profile overview could stem from a dispute initiated by the account owner. When you assign a property to an account, it necessitates validation from the account holder's side as well. To gain insights into the situation, I recommend heading to the ticket section. In situations like this, a ticket is automatically generated to track any arising issues. In these cases, account holders are usually prompted to add contexts to the reasons behind the dispute. If the explanation on the ticket section isn't sufficiently clear, you might need to establish direct communication with the account owner to better comprehend the nature of the discrepancy and discern what might have gone awry. This open line of communication should shed light on the issue and pave the way for a resolution.",
-      ],
-    },
-  ];
-
- 
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-    otherresources={gettingStarteddata}
+      otherresources={gettingStarteddata}
     >
       <Box>
         <Text as="p" marginTop={'30px'}>
@@ -134,7 +118,9 @@ export const SettingUp = () => {
         </Text>
         <OrderedList pl={'20px'}>
           <ListItem>Enter the OTP where prompted.</ListItem>
-          <ListItem>Click the <b>“Verify”</b> button.</ListItem>
+          <ListItem>
+            Click the <b>“Verify”</b> button.
+          </ListItem>
         </OrderedList>
 
         <Text fontWeight={'700'} mt={'20px'}>
@@ -144,11 +130,13 @@ export const SettingUp = () => {
           You’ll now create a secure, memorable password. Please note the following requirements:
         </Text>
         <UnorderedList pl={'20px'}>
-          <ListItem>Minimum <b>8 characters</b> in length</ListItem>
+          <ListItem>
+            Minimum <b>8 characters</b> in length
+          </ListItem>
           <ListItem>No restrictions on numbers or special characters</ListItem>
           <ListItem>
-            Passwords longer than <b>72 characters</b> will be truncated (only the first 72 characters are
-            used)
+            Passwords longer than <b>72 characters</b> will be truncated (only the first 72
+            characters are used)
           </ListItem>
         </UnorderedList>
         <Text fontWeight={'700'} mt={'20px'}>
@@ -184,8 +172,8 @@ export const SettingUp = () => {
         <Text className="content_head">Application Review</Text>
         <Text as="p" marginTop="40px">
           Once all steps are complete, our compliance team will review your application. You can
-          typically expect a response within<b> 48 hours</b>. During this period, feel free to prepare any
-          additional documentation that might be requested.
+          typically expect a response within<b> 48 hours</b>. During this period, feel free to
+          prepare any additional documentation that might be requested.
         </Text>
 
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>

@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, Image} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/unit_allocation.jpg';
 import step21 from '../../../assets/images/firsttimesetup/manual1.png';
 import step22 from '../../../assets/images/firsttimesetup/manual2.png';
@@ -16,11 +16,8 @@ import step16 from '../../../assets/images/firsttimesetup/csv6.png';
 import {listingsData} from '../../../constant/pages';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
 
-export const CreateAllocatrions = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+export const CreateAllocations = () => {
   const introRef = useRef(null);
   const csvRef = useRef(null);
   const manualRef = useRef(null);
@@ -43,18 +40,11 @@ export const CreateAllocatrions = () => {
     image: protectedImg,
   };
 
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-     otherresources={listingsData}
+      otherresources={listingsData}
     >
       <Box id="intro" ref={introRef}>
         <Text className="content_head">How to create unit allocations</Text>

@@ -16,12 +16,11 @@ import step24 from '../../../assets/images/change-listing/edit4.png';
 import step25 from '../../../assets/images/change-listing/edit5.png';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import { useSearchParams } from 'react-router-dom';
+
 import {listingsData} from '../../../constant/pages';
 
 export const Changelisting = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+  
   const introRef = useRef(null);
   const editRef = useRef(null);
   const modifyRef = useRef(null);

@@ -1,7 +1,4 @@
-import React, {useRef} from 'react';
 import {Box, Text, Image, Flex, Grid, Show, Hide, Link} from '@chakra-ui/react';
-
-import {useSearchParams} from 'react-router-dom';
 import Carousel from '../components/Resources/Carousel';
 import veergeIcon from '../assets/icons/veerge-icon.svg';
 import articleIcon from '../assets/icons/article-icon.svg';
@@ -11,10 +8,7 @@ import linkedin from '../assets/icons/linkedin.svg';
 import link from '../assets/icons/link.svg';
 
 import LeftNav from '../components/Leftsidenav/Leftsidenav';
-// import Helpful from '../../../components/Faq/Helpful';
-// import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
-// import LeadRightNav from '../../../components/Lead/RightNav';
-// import Blocker from '../../components/blocker';
+
 
 export const BlogLayout = ({
   articleMeta,
@@ -159,19 +153,6 @@ export const BlogLayout = ({
           </Flex>
         </Flex>
       </div>
-
-      {/* <Box bg={'#EBEBFF'} p={'80px 64px'}>
-        <Flex>
-          <Text fontSize={'40px'} fontWeight={'500'}>
-            Other Resources
-          </Text>
-        </Flex>
-        <Flex>
-          {relatedContent.map((detail, i) => (
-            <HomePageCard detail={detail} key={i} />
-          ))}
-        </Flex>
-      </Box> */}
 
       <Carousel otherresources={otherresources} />
     </div>

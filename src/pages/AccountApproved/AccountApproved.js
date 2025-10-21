@@ -3,10 +3,10 @@ import {
   Box,
   Text,
   ListItem,
-  OrderedList,
+
   UnorderedList,
   Image,
-  VStack,
+
   Button,
   Flex,
 } from '@chakra-ui/react';
@@ -18,11 +18,10 @@ import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {trendingData} from '../../constant/pages';
 
 import {BlogLayout} from '../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
+
 
 export const AccountApproved = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
+
   const introRef = useRef(null);
   const testingRef = useRef(null);
   const trainingRef = useRef(null);

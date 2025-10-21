@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image} from '@chakra-ui/react';
+import {Box, Text, Image} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/fractionalise.jpg';
 import step1 from '../../assets/images/blog/1.png';
 import step2 from '../../assets/images/blog/2.png';
@@ -14,11 +14,8 @@ import step10 from '../../assets/images/blog/10.png';
 import {listingsData} from '../../constant/pages';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
-import {useSearchParams} from 'react-router-dom';
 
 export const Fractionalise = () => {
-  const [searchParams] = useSearchParams();
-  const toView = true;
   const introRef = useRef(null);
 
   const introCheck = useIsInViewport(introRef);

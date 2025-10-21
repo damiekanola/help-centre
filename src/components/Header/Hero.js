@@ -55,7 +55,6 @@ export const Hero = () => {
               border="none"
               FontWeight="400"
               fontSize="12px"
-
               lineHeight="15px"
               color="#606060"
               borderRadius={'full'}
@@ -80,9 +79,6 @@ export const Hero = () => {
           </Flex>
           {filteredData.length > 0 && (
             <Box
-              // position="absolute"
-              // top="0px" // 👈 sits jst below the input
-              // left="0"
               w="100%"
               bg="white"
               boxShadow="md"

@@ -107,7 +107,7 @@ export const listingsData = [
     tag: 'Advanced',
     readTime: '8 mins read',
     datePosted: 'Feb 18, 2023',
-    path: '/listings/overview',
+    path: '/listings/create_allocations',
   },
   {
     img: archive,
@@ -129,7 +129,7 @@ export const listingsData = [
   },
   {
     img: manageoccupants,
-    title: 'Managing Occupants',
+    title: 'Managing Occupants of a Listing',
     color: 'black',
     tag: 'Beginner',
     readTime: '8 mins read',
@@ -138,16 +138,16 @@ export const listingsData = [
   },
   {
     img: setup,
-    title: 'How to Set Up Your Web Application',
+    title: 'Setting Up Your Company’s Website',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
-    path: '/first_time_setup',
+    path: '/store_setup',
   },
   {
     img: schedule,
-    title: 'Schedule Inspections',
+    title: 'Booking and Managing Inspections',
     color: 'black',
     tag: 'Beginner',
     readTime: '4 mins read',
@@ -216,7 +216,7 @@ export const clientsData = [
   },
   {
     img: clientManage,
-    title: 'Manage Ownership of Properties',
+    title: 'How to Add or Change Property Owners',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
