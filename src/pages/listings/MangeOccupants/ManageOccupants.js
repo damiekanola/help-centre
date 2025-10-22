@@ -1,16 +1,13 @@
 import React, {useRef} from 'react';
 import {Box, Text, ListItem, OrderedList, UnorderedList, Image, List} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/manage-occupants.jpg';
-import step1 from '../../../assets/images/archive/1.png';
-import step2 from '../../../assets/images/archive/2.png';
-import step3 from '../../../assets/images/archive/3.png';
-import step4 from '../../../assets/images/archive/4.png';
-import step5 from '../../../assets/images/archive/5.png';
-import step11 from '../../../assets/images/archive/step1.png';
-import step12 from '../../../assets/images/archive/step2.png';
-import step13 from '../../../assets/images/archive/step3.png';
-import step14 from '../../../assets/images/archive/step4.png';
-import { listingsData } from '../../../constant/pages';
+
+import step11 from '../../../assets/images/archive/manage1.png';
+import step12 from '../../../assets/images/archive/manage2.png';
+import step13 from '../../../assets/images/archive/manage3.png';
+
+import {listingsData} from '../../../constant/pages';
+import {Card} from '../../../components/Faq/Card';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
@@ -39,23 +36,23 @@ export const ManageOccupants = () => {
     {check: pinCheck, id: 'pin', title: 'How pinning a listing works'},
     {check: controlCheck, id: 'control', title: 'Control who sees your listing'},
     {check: inspectCheck, id: 'inspect', title: 'Manage inspection availability'},
+    {check: packetCheck, id: 'packet', title: 'Manage Property Documents — Internal Packet'},
   ];
 
   const articleMeta = {
-    title: 'Managing Occupants',
+    title: 'Managing Occupants – Keep track of tenants in your Property',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
- 
 
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-     otherresources={listingsData}
+      otherresources={listingsData}
     >
       <Box id="how_to" ref={introRef}>
         <Text className="content_head">Managing Occupants</Text>
@@ -103,16 +100,6 @@ export const ManageOccupants = () => {
           </Text>
           <Image src={step13} mt={'30px'} w={'full'} />
         </Box>
-        <Box my={'30px'}>
-          <Text fontWeight={'600'} color={'#000000EB'}>
-            STEP 4
-          </Text>
-          <Text>
-            Similar to before, if a unit allocation system exists, an allocation screen will prompt
-            you to select the exact units to restore.
-          </Text>
-          <Image src={step14} mt={'30px'} w={'full'} />
-        </Box>
       </Box>
       <Box id="pin" ref={pinRef}>
         <Text className="content_head">How Pinning a Listing Works</Text>
@@ -123,7 +110,7 @@ export const ManageOccupants = () => {
           choose to unpin it.
         </Text>
 
-        <List spacing={3} styleType="none">
+        <List spacing={'2px'} styleType="none">
           <ListItem>
             <Text as="span" fontWeight="bold">
               Step 1:
@@ -175,7 +162,7 @@ export const ManageOccupants = () => {
           existing subscribers or selected buyers.
         </Text>
 
-        <List spacing={3} styleType="none">
+        <List spacing={'2px'} styleType="none">
           <ListItem>
             <Text as="span" fontWeight="bold">
               Step 1:
@@ -229,7 +216,7 @@ export const ManageOccupants = () => {
           you to control whether potential buyers or agents can schedule visits for your listing.
         </Text>
 
-        <List spacing={'1px'} styleType="none">
+        <List spacing={'2px'} styleType="none">
           <ListItem>
             <Text as="span" fontWeight="bold">
               Step 1:
@@ -317,12 +304,97 @@ export const ManageOccupants = () => {
         </List>
 
         <Text as="p" marginTop={'30px'}>
-          A privatized listing is hidden from public view and not visible to potential buyers.
-          However, you can still share exclusive offers directly with selected parties. Existing
-          subscribers who have already invested in the project will retain access to the listing
-          through their portfolio section.
+          Your documents are stored securely and can only <b>be accessed by you</b>. This ensures
+          complete privacy and control over all sensitive property information.
         </Text>
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
+        <Box
+          bgColor={'#FFF7ED'}
+          p={'20px 30px'}
+          borderRadius={'8px'}
+          w={'full'}
+          fontSize={'17px'}
+          lineHeight={1.6}
+          my={'30px'}
+        >
+          <Text fontWeight={'700'} mb={'10px'}>
+            What if I want to share documents related to a listing or unit with existing
+            subscribers?
+          </Text>
+          <Text>
+            If you’d like to upload documents relating to a listing or a unit to access, you can do
+            so by uploading a subscriber document or unit document.
+            <br /> This feature can be accessed from the More Options drawer of the listing or unit.
+          </Text>
+        </Box>
+
+        <Box
+          bgColor={'#FFF7ED'}
+          p={'20px 30px'}
+          borderRadius={'8px'}
+          w={'full'}
+          fontSize={'17px'}
+          lineHeight={1.6}
+          my={'30px'}
+        >
+          <Text fontWeight={'700'} mb={'10px'}>
+            What if I want to upload property purchase-related documents?
+          </Text>
+          <Text>
+            If you’d like to upload property purchase-related documents, you can do so by using the
+            Owner’s packet feature.
+            <br /> This feature can be accessed from the More Options drawer a User
+          </Text>
+        </Box>
+
+        <Text className="content_head">Add Payment Accounts</Text>
+        <Text as="p" marginTop={'30px'}>
+          Add a bank account to your listing to manage payments and transactions securely.
+        </Text>
+
+        <List spacing={'1px'} styleType="none" mt={'30px'}>
+          <ListItem>
+            <Text as="span" fontWeight="bold">
+              Step 1:
+            </Text>{' '}
+            Go to the specific listing you want to add a payment account for
+          </ListItem>
+
+          <ListItem>
+            <Text as="span" fontWeight="bold">
+              Step 2:
+            </Text>{' '}
+            Click the More Options button on the right-hand side to access the drawer.
+          </ListItem>
+
+          <ListItem>
+            <Text as="span" fontWeight="bold">
+              Step 3:
+            </Text>{' '}
+            Select <b>Bank account</b>.
+          </ListItem>
+
+          <ListItem>
+            <Text as="span" fontWeight="bold">
+              Step 4:
+            </Text>{' '}
+            Click the <b>Edit icon</b> to <b>add or update your bank information</b>.
+          </ListItem>
+          <ListItem>
+            <Text as="span" fontWeight="bold">
+              Step 5:
+            </Text>{' '}
+            Input the details of the payment account.
+          </ListItem>
+        </List>
+
+        <Card
+          heading={'Failsafe Account'}
+          title={'Protect Your Transactions'}
+          action={'Set Up'}
+          desc={
+            'Set up a backup bank account to ensure your payments stay uninterrupted, even if your primary account is unavailable.'
+          }
+        />
       </Box>
     </BlogLayout>
   );

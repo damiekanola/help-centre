@@ -1,22 +1,12 @@
 import React, {useRef} from 'react';
-import {
-  Box,
-  Text,
-  ListItem,
-  OrderedList,
-  UnorderedList,
-  Image,
-  VStack,
-  Button,
-  Flex,
-} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList, Link} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/where_to_start.jpg';
-import started from '../../assets/images/home/getting_started.jpg';
-import check from '../../assets/images/home/check.png';
+
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
 import {trendingData} from '../../constant/pages';
 import {useSearchParams} from 'react-router-dom';
+import {Card} from '../../components/Faq/Card';
 
 export const WhereToStart = () => {
   const [searchParams] = useSearchParams();
@@ -37,15 +27,9 @@ export const WhereToStart = () => {
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
-  const relatedContent = [
-    {link: '/first_time_setup', text: 'First time setup'},
-    {link: '/approved_what_next', text: 'Approved, what next?'},
-    {link: '/terms', text: 'Terms of service'},
-    {link: '/users_experience', text: 'End-to-End experience'},
-  ];
 
   return (
     <BlogLayout
@@ -90,6 +74,11 @@ export const WhereToStart = () => {
             benefits of Myxellia—this fosters understanding and enthusiasm
           </ListItem>
         </UnorderedList>
+
+        <Text my={'30px'}>
+          A short, well-executed pilot helps you identify and resolve potential hurdles, setting the
+          stage for a smoother, broader rollout.
+        </Text>
 
         <Text as="p" fontWeight={'700'} mt={'30px'}>
           2. Training & Change Management
@@ -137,9 +126,9 @@ export const WhereToStart = () => {
           properties (often called “listings”), forming the foundation to showcase what your company
           offers.
         </Text>
-        <UnorderedList ml={'20px'}>
+        <UnorderedList ml={'20px'} mt={'20px'}>
           <ListItem>
-            We’ve prepared documentation and video tutorials—pick whichever format suits you best.
+            We’ve prepared <Link color={'#4545FE'} textDecoration={'underline'}>documentation and video tutorials</Link>—pick whichever format suits you best.
           </ListItem>
         </UnorderedList>
 
@@ -147,9 +136,9 @@ export const WhereToStart = () => {
           Step 2: Set Up Your “Digital Hub”
         </Text>
         <Text>
-          Next, create your 'digital hub'—essentially your web application. This will serve as the
-          central platform connecting your services with your clients, guiding them through the
-          entire buyer journey, from the initial property search to the final purchase.
+          Next, create your 'digital hub'—essentially your <b>web application</b>. This will serve
+          as the central platform connecting your services with your clients, guiding them through
+          the entire buyer journey, from the initial property search to the final purchase.
         </Text>
         <Text fontWeight={'700'} mt={'30px'}>
           Step 3: Bring Your Client Base Onboard
@@ -185,36 +174,12 @@ export const WhereToStart = () => {
             capabilities for your real estate operations.
           </Text>
 
-          <Box
-            w={'100%'}
-            bgColor={'#FFF7ED'}
-            p={'30px 40px'}
-            borderRadius={'16px'}
-            my={'20px'}
-            alignItems={'stretch'}
-            justifyContent={'space-between'}
-            gap={'20px'}
-            h={'fit-content'}
-          >
-            <Flex w={'50%'} direction="column" gap={'15px'} alignItems={'start'}>
-              <Text
-                borderBottom={'4px solid #FFCF25'}
-                pb={'8px'}
-                fontSize={'18px'}
-                fontWeight={'500'}
-                letterSpacing={'-1px'}
-              >
-                Onboarding Kit
-              </Text>
-              <Text fontSize="28px" fontWeight="500" lineHeight={'30px'} letterSpacing={'-1px'}>
-                Master Myxellia in Minutes
-              </Text>
-              <Text>Follow our quick guide to start using Myxellia like a pro.</Text>
-              <Button bgColor="#000000" color="#fff" borderRadius="full" p="17px 21px">
-                Get Started
-              </Button>
-            </Flex>
-          </Box>
+          <Card
+            heading={'Onboarding Kit'}
+            title={'Master Myxellia in Minutes'}
+            desc={'Follow our quick guide to start using Myxellia like a pro.'}
+            action={'Get Started'}
+          />
 
           <Text as="p" marginTop="20px">
             We’re excited to have you on board and look forward to helping your team make the most

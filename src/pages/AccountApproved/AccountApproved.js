@@ -1,15 +1,5 @@
 import React, {useRef} from 'react';
-import {
-  Box,
-  Text,
-  ListItem,
-
-  UnorderedList,
-  Image,
-
-  Button,
-  Flex,
-} from '@chakra-ui/react';
+import {Box, Text, ListItem, UnorderedList, Image, Button, Flex, Link} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/account_approved.jpg';
 import started from '../../assets/images/home/getting_started.jpg';
 import check from '../../assets/images/home/check.png';
@@ -19,9 +9,7 @@ import {trendingData} from '../../constant/pages';
 
 import {BlogLayout} from '../../layouts/BlogLayout';
 
-
 export const AccountApproved = () => {
-
   const introRef = useRef(null);
   const testingRef = useRef(null);
   const trainingRef = useRef(null);
@@ -43,7 +31,8 @@ export const AccountApproved = () => {
     title: 'My Account Has Been Approved-What’s Next?',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
-    updated: 'February 04, 2025',
+    updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
 
@@ -79,7 +68,7 @@ export const AccountApproved = () => {
             <Flex flex="1" direction="column" gap={'10px'} alignItems={'start'}>
               <Flex borderBottom={'4px solid #FFCF25'} alignContent={'center'} gap={'5px'}>
                 <Image src={veerge} w={'24px'} h={'24px'} />
-                <Text pb={'8px'} fontSize={'18px'} fontWeight={'500'}>
+                <Text pb={'8px'} fontSize={'18px'} fontWeight={'500'} letterSpacing={'-1px'}>
                   Onboarding Guide
                 </Text>
               </Flex>
@@ -91,11 +80,19 @@ export const AccountApproved = () => {
                 What happens next will depend on your specific role in your organization’s setup and
                 migration process.
               </Text>
-              <Button bgColor="#000000" color="#fff" borderRadius="full" p="17px 21px">
+              <Button
+                bgColor="#000000"
+                color="#fff"
+                borderRadius="full"
+                p="20px 21px"
+                letterSpacing={'-1px'}
+                lineHeight={'1.6'}
+                alignItems={'center'}
+              >
                 Learn More
               </Button>
             </Flex>
-            <Box flex="1" w="100%" h="100%" borderRadius={'3px'} overflow={'hidden'}>
+            <Box flex="1" w="100%" h="80%" my={'auto'} borderRadius={'3px'} overflow={'hidden'}>
               <Image
                 src={started}
                 alt="getting started"
@@ -127,8 +124,12 @@ export const AccountApproved = () => {
             Watch the video below to learn how to invite a team member
           </Text>
           <Image src={check} my="30px" mx="auto" w="full" />
-          <Text as="p" textDecoration={'underline'} color={'#4545FE'} my={'30px'}>
-            Once you’ve invited them, share this guide so they can continue from here.
+          <Text as="p" my={'30px'}>
+            Once you’ve invited them, share this{' '}
+            <Link textDecoration={'underline'} color={'#4545FE'}>
+              guide
+            </Link>{' '}
+            so they can continue from here.
           </Text>
           <Text as="p" fontWeight={'700'}>
             Step 2: If You’re Managing the Migration
@@ -240,7 +241,7 @@ export const AccountApproved = () => {
           and beyond.
         </Text>
         <Text fontWeight={'700'} mt={'20px'}>
-          Step 3: Bring Your Clients Onboard
+          Step 3: Bring Your Client Base Onboard
         </Text>
         <Text>
           Finally, shift your focus to your client records. Whether past buyers (who have fully
@@ -260,16 +261,15 @@ export const AccountApproved = () => {
         </UnorderedList>
 
         <Text as="p" marginTop="20px">
-          This data-driven perspective transforms guesswork into strategy, equipping real estate
-          companies with the power to better understand their clients, personalize service, and
-          boost sales.
+          Adding this data is more than just a technical step—it’s a way to keep connections warm
+          and ensure everyone benefits from the improved platform.
         </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
 
       <Box>
         <Box w={'100%'} bgColor={'#FFF7ED'} p={'21px 32px'} borderRadius={'8px'} my={'20px'}>
-          <Text pb={'8px'} fontWeight={'600'} fontSize={'18px'}>
+          <Text pb={'8px'} fontWeight={'600'} fontSize={'18px'} color={'#000000EB'}>
             What happens if there’s an error during import?
           </Text>
           <Text>
@@ -278,7 +278,7 @@ export const AccountApproved = () => {
           </Text>
         </Box>
         <Box w={'100%'} bgColor={'#FFF7ED'} p={'21px 32px'} borderRadius={'8px'} my={'20px'}>
-          <Text as="p" pb={'8px'} fontWeight={'600'} fontSize={'18px'}>
+          <Text as="p" pb={'8px'} fontWeight={'600'} fontSize={'18px'} color={'#000000EB'}>
             Can I make changes after data import?
           </Text>
           <Text>
@@ -287,8 +287,11 @@ export const AccountApproved = () => {
           </Text>
         </Box>
         <Text>
-          If you have any questions or run into any issues, feel free to reach out for support, and
-          remember to consult our knowledge base for additional resources.
+          If you have any questions or run into any issues, feel free to reach out for{' '}
+          <Link textDecoration={'underline'} color={'#4545FE'}>
+            support
+          </Link>
+          , and remember to consult our <b>knowledge</b> base for additional resources.
         </Text>
       </Box>
     </BlogLayout>

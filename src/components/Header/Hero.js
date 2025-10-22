@@ -1,14 +1,46 @@
 import {Box, Text, Flex, Input, Link, Image} from '@chakra-ui/react';
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {CiSearch} from 'react-icons/ci';
 import {helpSearchData} from '../Searchbar/data';
 import blogicon from '../../assets/icons/blog.svg';
 import searchicon from '../../assets/icons/search.svg';
+import {useNavigate} from 'react-router-dom';
 
 export const Hero = () => {
   const [query, setQuery] = useState('');
 
   const [filteredData, setFilteredData] = useState([]);
+  const navigate = useNavigate();
+  const inputRef = useRef(null);
+
+  const handleKeyDown = event => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const exactMatch = helpSearchData.find(
+        item => item.title.toLowerCase() === query.toLowerCase()
+      );
+
+      if (exactMatch) {
+        navigate(exactMatch.link); // React Router navigation
+      } else if (filteredData.length > 0) {
+        navigate(filteredData[0].link); // fallback to first suggestion
+      }
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (inputRef.current && !inputRef.current.contains(event.target)) {
+        setQuery(''); // Clear the input
+        setFilteredData([]); // Clear suggestions
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -38,7 +70,7 @@ export const Hero = () => {
           property development. Take a look at our helpful articles, guides, templates, tools and
           more.
         </Text>
-        <Box bg="#ffffff" borderRadius={'12px'} overflow={'hidden'}>
+        <Box bg="#ffffff" borderRadius={'12px'} overflow={'hidden'} ref={inputRef}>
           <Flex
             direction="row"
             align="center"
@@ -61,6 +93,7 @@ export const Hero = () => {
               _focusVisible={{
                 border: 'none',
               }}
+              onKeyDown={handleKeyDown}
               onChange={event => {
                 const value = event.target.value;
                 setQuery(value);
@@ -88,28 +121,28 @@ export const Hero = () => {
               borderTop={'1px solid gray'}
             >
               {filteredData.map((item, index) => (
-                <Flex
-                  key={index}
-                  gap={'14px'}
-                  px="4"
-                  py="2"
-                  alignItems={'center'}
-                  _hover={{bg: 'gray.100'}}
-                  cursor="pointer"
-                  onClick={() => {
-                    setQuery(item.title);
-                    setFilteredData([]);
-                  }}
-                >
-                  <Image
-                    src={item.type === 'article' ? blogicon : searchicon}
-                    w={'20px'}
-                    h={'20px'}
-                  />
-                  <Link href={item.link} fontSize="sm" fontWeight="500" color="gray.700">
+                <Link href={item.link} fontSize="sm" fontWeight="500" color="gray.700">
+                  <Flex
+                    key={index}
+                    gap={'14px'}
+                    px="4"
+                    py="2"
+                    alignItems={'center'}
+                    _hover={{bg: 'gray.100'}}
+                    cursor="pointer"
+                    onClick={() => {
+                      setQuery(item.title);
+                      setFilteredData([]);
+                    }}
+                  >
+                    <Image
+                      src={item.type === 'article' ? blogicon : searchicon}
+                      w={'20px'}
+                      h={'20px'}
+                    />
                     {item.title}
-                  </Link>
-                </Flex>
+                  </Flex>
+                </Link>
               ))}
             </Box>
           )}

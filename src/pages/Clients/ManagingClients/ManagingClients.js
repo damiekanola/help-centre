@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, UnorderedList} from '@chakra-ui/react';
+import {Box, Text, ListItem, UnorderedList, Link} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/managing-client.jpg';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
@@ -100,11 +100,22 @@ export const ManagingClients = () => {
         </Text>
 
         <UnorderedList>
-          <ListItem>Securely storing important client documents</ListItem>
-          <ListItem>Keeping all transaction-related files in one place</ListItem>
-          <ListItem>Ensuring easy retrieval for both internal teams and clients</ListItem>
-          <ListItem>Enhancing transparency in the sales process</ListItem>
+          <ListItem>Tracks property visits and client interest.</ListItem>
+          <ListItem>
+            Allows for <b>feedback collection</b> to enhance client follow-ups.
+          </ListItem>
+          <ListItem>
+            Maintains transparency in the sales process with structured records of inspections.
+          </ListItem>
         </UnorderedList>
+
+        <Text as="p" marginTop={'30px'}>
+          Use this{' '}
+          <Link color={'#4545FE'} textDecoration={'underline'}>
+            guide
+          </Link>{' '}
+          for a step-by-step walkthrough on Scheduling Inspection
+        </Text>
 
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
@@ -116,7 +127,7 @@ export const ManagingClients = () => {
           engaging with your platform. This may be necessary in cases of fraud, policy violations,
           or security concerns.
         </Text>
-        <UnorderedList>
+        <UnorderedList my={'30px'}>
           <ListItem>
             Navigate to the <b>Users Section</b> and select the client profile.
           </ListItem>
@@ -127,6 +138,11 @@ export const ManagingClients = () => {
             Scroll down and select <b>Add to Blacklist</b>.
           </ListItem>
         </UnorderedList>
+
+        <Text as="p" marginTop={'30px'}>
+          Once blacklisted, the client will be restricted from further interactions on the platform.
+          This action can be reversed if necessary.
+        </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box id="transferownership" ref={transferOwnershipRef}>
@@ -164,6 +180,14 @@ export const ManagingClients = () => {
           <ListItem>Helps track property resale transactions within the system.</ListItem>
           <ListItem>Keeps all stakeholders updated with the latest ownership information.</ListItem>
         </UnorderedList>
+
+         <Text as="p" marginTop={'30px'}>
+          Use this{' '}
+          <Link color={'#4545FE'} textDecoration={'underline'}>
+            guide
+          </Link>{' '}
+          for a step-by-step walkthrough on how to transfer ownership to another buyer.
+        </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box id="terminate-transaction" ref={terminateTransactionRef}>

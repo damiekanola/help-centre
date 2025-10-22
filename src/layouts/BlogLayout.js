@@ -6,9 +6,7 @@ import facebook from '../assets/icons/facebook.svg';
 import x from '../assets/icons/x.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import link from '../assets/icons/link.svg';
-
 import LeftNav from '../components/Leftsidenav/Leftsidenav';
-
 
 export const BlogLayout = ({
   articleMeta,
@@ -23,10 +21,10 @@ export const BlogLayout = ({
         bg={'#FAFAFA'}
         pl={'5%'}
         pr={{base: '5%', md: '1%'}}
-        templateColumns={{base: '1fr', md: '1fr 1fr'}}
+        templateColumns={{base: '1fr', md: '0.45fr 0.55fr'}}
         gap={'30px'}
         minH="500px"
-        maxH="680"
+        maxH="680px"
         // h={{base: '680px', md:'500px'}}
         position="relative"
         overflow="visible"
@@ -34,8 +32,8 @@ export const BlogLayout = ({
       >
         <Flex
           pt={'90px'}
-          pb={{base: '20px', md: '80px'}}
-          h="100%"
+          pb={{base: 'px', md: '80px'}}
+          h={{base: '100%', md: '100%'}}
           direction="column"
           justifyContent={'space-between'}
         >
@@ -45,21 +43,37 @@ export const BlogLayout = ({
               <Text color={'#1B1B1B'}>Article</Text>
             </Flex>
 
-            <Box h="16px" w="1px" bg="#1B1B1B66" />
-            <Text color={'#1B1B1B66'} pl={'px'} fontSize={'13px'}>
-              {articleMeta.readTime || '8 mins Read'}
+            <Text
+              color={'#1B1B1BD9'}
+              pl={'10px'}
+              fontSize={'13px'}
+              lineHeight={'13px'}
+              borderLeft={'1px solid #1B1B1B66'}
+            >
+              {articleMeta.readTime || '8 mins read'}
             </Text>
           </Flex>
-          <Text className="head_" mb={{base: '50px', md: '20px'}}>
+          <Text
+            className="head_"
+            mb={{base: '30px', md: 'px'}}
+            fontSize={{base: '5vh', md: '5vh', lg: '6vh'}}
+          >
             {articleMeta.title}
           </Text>
-          <Text color={'#1B1B1BD9'} fontSize={'11px'} mb={{base: '50px', md: '20px'}}>
+          <Text
+            color={'#1B1B1BD9'}
+            fontSize={'11px'}
+            mb={{base: '50px', md: '20px'}}
+            bgColor={'#FFFFFFE5'}
+            w={'fit-content'}
+            px={'5px'}
+          >
             MYXELLIA GUIDE
           </Text>
 
           <Box borderTop={'1px solid #1B1B1B29'}>
             <Hide breakpoint="(min-width: 769px)">
-              <Flex gap={'10px'} align={'center'} pt={'24px'} lineHeight={'23px'}>
+              <Flex gap={'15px'} align={'center'} pt={'24px'} lineHeight={'23px'}>
                 <Image src={veergeIcon} width={'40px'} height={'40px'} />
 
                 <Box color={'#1B1B1BD9'} fontWeight={'500'}>
@@ -68,9 +82,15 @@ export const BlogLayout = ({
                 </Box>
               </Flex>
             </Hide>
-            <Flex pt={'20px'} pb={{base: '0px'}} justify={'space-between'} lineHeight={'23px'}>
+            <Flex
+              pt={'20px'}
+              pb={{base: '0px'}}
+              justify={'space-between'}
+              lineHeight={'23px'}
+              px={'8px'}
+            >
               <Show breakpoint="(min-width: 769px)">
-                <Flex gap={'10px'} align={'center'}>
+                <Flex gap={'16px'} align={'center'}>
                   <Image src={veergeIcon} width={'40px'} height={'40px'} />
 
                   <Box color={'#1B1B1BD9'} fontWeight={'500'}>
@@ -103,8 +123,7 @@ export const BlogLayout = ({
           bgSize="cover" // ✅ no stretching
           bgPos="center" // ✅ always centered
           bgRepeat="no-repeat"
-          minH={'250px'}
-          maxH={'500px'}
+          minH={{base: '200px', md: '100%'}}
         ></Box>
       </Grid>
 
@@ -131,6 +150,7 @@ export const BlogLayout = ({
             fontWeight="500"
             color="gray.600"
             letterSpacing="3px"
+            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             display={{base: 'none', md: 'block'}}
           >
             BACK TO TOP

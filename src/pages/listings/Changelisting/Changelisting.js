@@ -20,7 +20,6 @@ import {BlogLayout} from '../../../layouts/BlogLayout';
 import {listingsData} from '../../../constant/pages';
 
 export const Changelisting = () => {
-  
   const introRef = useRef(null);
   const editRef = useRef(null);
   const modifyRef = useRef(null);
@@ -39,9 +38,9 @@ export const Changelisting = () => {
     {check: introCheck, id: 'intro', title: 'How to change listing information'},
     {check: editCheck, id: 'edit', title: 'Edit listing information'},
     {check: modifyCheck, id: 'modify', title: 'Modifying unit information'},
-    {check: paymentCheck, id: 'payment', title: 'Editing payment plan'},
     {check: unitpriceCheck, id: 'unitprice', title: 'How to modify unit price'},
     {check: unitquantityCheck, id: 'unitquantity', title: 'How to modify unit quantity'},
+    {check: paymentCheck, id: 'payment', title: 'Editing payment plan'},
   ];
 
   const articleMeta = {
@@ -49,10 +48,9 @@ export const Changelisting = () => {
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
-
 
   return (
     <BlogLayout

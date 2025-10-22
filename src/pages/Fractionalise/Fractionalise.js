@@ -29,6 +29,7 @@ export const Fractionalise = () => {
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
 
@@ -148,7 +149,13 @@ export const Fractionalise = () => {
             Complete the process by reviewing the fractional summary, ensuring that all details are
             accurate and aligned with your intentions then click on <b>“proceed”</b>
           </Text>
-          <Image src={step10} mt={'30px'} w={'full'} />
+          <Image src={step10} my={'30px'} w={'full'} />
+          <Text>
+            By following these steps, you can effectively fractionalize a unit, making property
+            ownership accessible to a wider range of individuals. The granular approach of
+            fractionalization, accompanied by strategic decision-making, can contribute to a more
+            inclusive and versatile real estate offering.
+          </Text>
         </Box>
       </Box>
     </BlogLayout>

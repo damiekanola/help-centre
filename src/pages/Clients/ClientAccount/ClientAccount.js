@@ -3,9 +3,8 @@ import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react'
 import protectedImg from '../../../assets/images/home/client-accounts.jpg';
 
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
-import { BlogLayout } from '../../../layouts/BlogLayout';
-import { clientsData } from '../../../constant/pages';
-
+import {BlogLayout} from '../../../layouts/BlogLayout';
+import {clientsData} from '../../../constant/pages';
 
 export const ClientAccount = () => {
   // const [searchParams] = useSearchParams();
@@ -35,10 +34,9 @@ export const ClientAccount = () => {
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
-
 
   return (
     <BlogLayout
@@ -48,9 +46,12 @@ export const ClientAccount = () => {
     >
       <Box id="intro" ref={introRef}>
         <Text as="p" marginTop={'30px'}>
-          <b>A common question we hear is:</b> <br /> "It feels like this system is only important
-          for existing clients, but what value does it add to new clients who have no investment
-          yet?"
+          <b>A common question we hear is:</b> <br /> "
+          <Text as="span" fontStyle={'oblique'}>
+            It feels like this system is only important for existing clients, but what value does it
+            add to new clients who have no investment yet?
+          </Text>
+          "
           <br /> At first glance, it might seem like Myxellia’s infrastructure primarily benefits
           clients who already own properties. However, its true power lies in{' '}
           <b>
@@ -66,14 +67,22 @@ export const ClientAccount = () => {
 
       <Box id="owning" ref={owningRef}>
         <Text className="content_head">Owning the client relationship from day one</Text>
-        <Text as="p" marginTop={'30px'}>
-          A potential buyer walks into your development company’s office or calls to inquire about
-          properties. They’ve never interacted with your online platform, never signed up on your
-          website, and haven’t made a purchase. However, they’re interested—they’re asking
-          questions, scheduling an inspection, and exploring possibilities.
+        <Text marginTop={'30px'}>Let’s consider a typical scenario:</Text>
+        <Text as="p">
+          A potential buyer <b>walks into your development company’s office</b> or{' '}
+          <b>calls to inquire about properties</b>. They’ve never interacted with your online
+          platform, never signed up on your website, and haven’t made a purchase. However, they’re
+          interested—they’re asking questions, scheduling an inspection, and exploring
+          possibilities.
         </Text>
         <Text as="p" marginTop={'30px'}>
+          The right move here is to <b>immediately create an account for them</b>.
+        </Text>
+        <Text as="p" fontWeight={'700'}>
           Why?
+        </Text>
+        <Text as="p">
+          Because this simple action does <b>three crucial things</b>:
         </Text>
         <OrderedList>
           <ListItem>
@@ -93,12 +102,6 @@ export const ClientAccount = () => {
       </Box>
       <Box id="buyer" ref={buyerRef}>
         <Text className="content_head">The right way to handle a potential buyer</Text>
-        <Text as="p" marginTop={'30px'}>
-          A potential buyer walks into your <b>development company’s office </b>or calls to inquire
-          about properties. They’ve never interacted with your online platform, never signed up on
-          your website, and haven’t made a purchase. However, they’re interested—they’re asking
-          questions, scheduling an inspection, and exploring possibilities.
-        </Text>
         <Text as="p" marginTop={'30px'} fontWeight={'700'}>
           Step 1: Create an Account for the Client
         </Text>

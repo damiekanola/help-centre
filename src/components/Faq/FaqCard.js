@@ -23,7 +23,13 @@ export const FaqCard = ({children, question, asker}) => {
         {question}
       </Text>
       <Box border="1px solid #FED7AA" bgColor="#FFF7ED" borderRadius="8px" overflow="hidden">
-        <Flex bgColor="#FFEDD5" p="12px" borderBottom="1px solid #FED7AA" alignItems={'center'} gap={'10px'}>
+        <Flex
+          bgColor="#FFEDD5"
+          p="12px"
+          borderBottom="1px solid #FED7AA"
+          alignItems={'center'}
+          gap={'10px'}
+        >
           <Image src={blueicon} w="24px" h="24px" />
           <Text color="#4545FE" fontWeight={'bold'}>
             Veerge Support

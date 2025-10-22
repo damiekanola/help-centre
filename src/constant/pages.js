@@ -11,6 +11,7 @@ import settingUp from '../assets/images/home/setting_up.jpg';
 import prtotected from '../assets/images/home/protected.jpg';
 import createListing from '../assets/images/home/create_listing.jpg';
 import clientManage from '../assets/images/home/manage-ownership.jpg';
+import clientManagee from '../assets/images/home/client_manag.jpg';
 import changeInfo from '../assets/images/home/change_info.jpg';
 import unitAllocation from '../assets/images/home/unit_allocation.jpg';
 import archive from '../assets/images/home/archive.jpg';
@@ -83,13 +84,13 @@ export const listingsData = [
     path: '/listings/create_listing',
   },
   {
-    img: clientManage,
+    img: clientManagee,
     title: 'Client Management, From migration to updating transactions',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
-    path: '/first_time_setup',
+    path: '/listings/client_management',
   },
   {
     img: changeInfo,
@@ -129,7 +130,7 @@ export const listingsData = [
   },
   {
     img: manageoccupants,
-    title: 'Managing Occupants of a Listing',
+    title: 'Managing Occupants – Keep track of Tenants in Your Property',
     color: 'black',
     tag: 'Beginner',
     readTime: '8 mins read',
@@ -138,7 +139,7 @@ export const listingsData = [
   },
   {
     img: setup,
-    title: 'Setting Up Your Company’s Website',
+    title: 'How to Set Up Your Web Application',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
@@ -147,7 +148,7 @@ export const listingsData = [
   },
   {
     img: schedule,
-    title: 'Booking and Managing Inspections',
+    title: 'Schedule Inspections for Clients',
     color: 'black',
     tag: 'Beginner',
     readTime: '4 mins read',
@@ -216,7 +217,7 @@ export const clientsData = [
   },
   {
     img: clientManage,
-    title: 'How to Add or Change Property Owners',
+    title: 'How to Assign and Change Ownership of a Property',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
@@ -225,11 +226,11 @@ export const clientsData = [
   },
   {
     img: realtors,
-    title: 'Working with Realtors',
+    title: 'Managing Realtors: How to Add Agents and Set Commissions',
     color: 'black',
     tag: 'Beginner',
     readTime: '4 mins read',
     datePosted: 'Jan 06, 2023',
-    path: '/approved_what_next',
+    path: '/clients/realtors',
   },
 ];

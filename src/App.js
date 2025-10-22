@@ -25,8 +25,10 @@ import {ManageOwnership} from './pages/Clients/ManageOwnership/ManageOwnership';
 import {ManageOccupants} from './pages/listings/MangeOccupants/ManageOccupants';
 import {Schedule} from './pages/listings/Schedule/Schedule';
 import {Changelisting} from './pages/listings/Changelisting/Changelisting';
-import { CreateAllocations } from './pages/listings/Allocations/Allocations';
-import { Setup } from './pages/listings/Setup/Setup';
+import {CreateAllocations} from './pages/listings/Allocations/Allocations';
+import {Setup} from './pages/listings/Setup/Setup';
+import {ClientManagement} from './pages/listings/ClientManagement/ClientManagement';
+import {Realtors} from './pages/Clients/Realtors/Realtors';
 
 function App() {
   const location = useLocation();
@@ -53,7 +55,7 @@ function App() {
     <div className="routes_container">
       <Header />
       <Searchbar />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <div className="">
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -74,10 +76,12 @@ function App() {
           <Route path="/clients/client_payment" element={<ClientPayments />} />
           <Route path="/clients/mananage_ownership" element={<ManageOwnership />} />
           <Route path="/clients/mananage_occupants" element={<ManageOccupants />} />
+          <Route path="/clients/realtors" element={<Realtors />} />
           <Route path="/clients/schedule" element={<Schedule />} />
           <Route path="/listings/create_listing" element={<Createlisting />} />
           <Route path="/listings/change_listing" element={<Changelisting />} />
           <Route path="/listings/create_allocations" element={<CreateAllocations />} />
+          <Route path="/listings/client_management" element={<ClientManagement />} />
         </Routes>
       </div>
       <div className="light_pages">

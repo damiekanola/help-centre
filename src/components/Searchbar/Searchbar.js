@@ -19,6 +19,7 @@ import {helpSearchData, blogSearchData} from './data';
 import './Search.css';
 import home_dark from '../../assets/icons/home_dark.svg';
 import home_light from '../../assets/icons/home_light.svg';
+import chevleft from '../../assets/icons/chevyleft.svg';
 
 export const Searchbar = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ export const Searchbar = () => {
   const [searchFilteredData, setSearchFilteredData] = useState([...helpSearchData]);
 
   const currLocation = location.pathname;
+  const hideSearchbar = location.pathname === '/';
   const isHomePage = currLocation === '/blog' || currLocation === '/' || currLocation === '';
 
   useEffect(() => {
@@ -166,15 +168,14 @@ export const Searchbar = () => {
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Flex maxW="319px" direction="row" columnGap="18px" align="center">
-            {currLocation === '/' || currLocation === '/blog' ? null : (
-              <>
-                <Link to={checkBlogPage() ? '/blog' : '/'}>
-                  {<Image src={isWhite ? home_light : home_dark} />}
-                </Link>{' '}
-                <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
-              </>
-            )}
+          <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
+            <>
+              <Link to={checkBlogPage() ? '/blog' : '/'}>
+                {<Image src={isWhite ? home_light : home_dark} />}
+              </Link>{' '}
+              <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
+            </>
+
             <Text
               onClick={window.scrollTo(0, 0)}
               style={{
@@ -192,40 +193,42 @@ export const Searchbar = () => {
               Blog
             </Text>
           </Flex>
-          <form>
-            <Flex
-              direction="row"
-              align="center"
-              maxW="300px"
-              h="43px"
-              borderRadius=" 12px"
-              px="8px"
-              // onClick={onOpen}
-              cursor={'pointer'}
-              bg={'transparent'}
-              border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
-            >
-              <Input
-                placeholder="Search for a part"
-                type="text"
-                value={query}
-                border="none"
-                FontWeight="400"
-                fontSize="12px"
-                lineHeight="15px"
-                color="#606060"
+          {!hideSearchbar && (
+            <form>
+              <Flex
+                direction="row"
+                align="center"
+                maxW="300px"
+                h="43px"
+                borderRadius=" 12px"
+                px="8px"
                 // onClick={onOpen}
-                _focusVisible={{
-                  border: 'none',
-                }}
-                onChange={event => setQuery(event.target.value)}
-              />
-              <CiSearch
-                color={isWhite ? 'white' : 'black'}
-                style={{width: '24px', height: '24px'}}
-              />
-            </Flex>
-          </form>
+                cursor={'pointer'}
+                bg={'transparent'}
+                border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
+              >
+                <Input
+                  placeholder="Search for a part"
+                  type="text"
+                  value={query}
+                  border="none"
+                  FontWeight="400"
+                  fontSize="12px"
+                  lineHeight="15px"
+                  color="#606060"
+                  // onClick={onOpen}
+                  _focusVisible={{
+                    border: 'none',
+                  }}
+                  onChange={event => setQuery(event.target.value)}
+                />
+                <CiSearch
+                  color={isWhite ? 'white' : 'black'}
+                  style={{width: '24px', height: '24px'}}
+                />
+              </Flex>
+            </form>
+          )}
           <Modal
             onClose={onClose}
             isOpen={isOpen}
@@ -299,13 +302,13 @@ export const Searchbar = () => {
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Flex maxW="319px" direction="row" columnGap="8px" align="center">
+          <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
                 <Link to={checkBlogPage() ? '/blog' : '/'}>
                   {<Image src={isWhite ? home_light : home_dark} />}
                 </Link>{' '}
-                <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
+                <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
               </>
             )}
             <Text
@@ -325,40 +328,42 @@ export const Searchbar = () => {
               Blog
             </Text>
           </Flex>
-          <form>
-            <Flex
-              direction="row"
-              align="center"
-              w={'fit-content'}
-              h="43px"
-              borderRadius=" 12px"
-              px="12px"
-              cursor={'pointer'}
-              bg={'transparent'}
-              border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
-              // gap='20px'
-            >
-              <Input
-                placeholder="Search for a part"
-                type="text"
-                value={query}
-                border="none"
-                FontWeight="400"
-                fontSize="12px"
-                lineHeight="15px"
-                px='0px'
-                color="#606060"
-                _focusVisible={{
-                  border: 'none',
-                }}
-                onChange={event => setQuery(event.target.value)}
-              />
-              <CiSearch
-                color={isWhite ? 'white' : 'black'}
-                style={{width: '24px', height: '24px'}}
-              />
-            </Flex>
-          </form>
+          {!hideSearchbar && (
+            <form>
+              <Flex
+                direction="row"
+                align="center"
+                w={'fit-content'}
+                h="43px"
+                borderRadius=" 12px"
+                px="12px"
+                cursor={'pointer'}
+                bg={'transparent'}
+                border={!isWhite ? '1px solid #E4E4E4' : '1px solid rgba(255, 255, 255, 0.20)'}
+                // gap='20px'
+              >
+                <Input
+                  placeholder="Search for a part"
+                  type="text"
+                  value={query}
+                  border="none"
+                  FontWeight="400"
+                  fontSize="12px"
+                  lineHeight="15px"
+                  px="0px"
+                  color="#606060"
+                  _focusVisible={{
+                    border: 'none',
+                  }}
+                  onChange={event => setQuery(event.target.value)}
+                />
+                <CiSearch
+                  color={isWhite ? 'white' : 'black'}
+                  style={{width: '24px', height: '24px'}}
+                />
+              </Flex>
+            </form>
+          )}
           <Modal
             onClose={onClose}
             isOpen={isOpen}

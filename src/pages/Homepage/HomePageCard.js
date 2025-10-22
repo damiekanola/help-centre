@@ -1,10 +1,9 @@
 import {Box, Flex, HStack, Image, Text, Button, Container} from '@chakra-ui/react';
-import timeIcon from '../../assets/icons/time_icon.svg';
+
 import articleIcon from '../../assets/icons/article-icon.svg';
-import readIcon from '../../assets/icons/read_icon.svg';
+
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
-import {handleTagType} from '../../utils/handleTags';
 
 export const HomePageCard = ({detail}) => {
   return (
@@ -12,7 +11,7 @@ export const HomePageCard = ({detail}) => {
       <Box
         // h='343px'
         h="452px"
-        maxH={'911px'}
+        
         borderRadius={'12px'}
         shadow={'md'}
         as={motion.div}
@@ -30,17 +29,13 @@ export const HomePageCard = ({detail}) => {
           bgImage={detail.img}
           bgPosition={'center'}
           bgSize={'cover'}
-          h="241px"
+          h={{ base: '33%', md:'48%'}}
           p="14px"
           border={'0px'}
         ></Box>
 
-        <Flex
-          h="calc(100% - 241px)"
-          direction={'column'}
-          justifyContent={'space-between'}
-          px="24px"
-          py="24px"
+        <Flex direction={'column'} justifyContent={'space-between'} px="24px" py="24px" flex={'1'}
+          h={{ base: '67%', md:'52%'}}
         >
           <Box>
             <Flex align={'center'} gap={'10px'} mb={'8px'}>
@@ -53,7 +48,14 @@ export const HomePageCard = ({detail}) => {
                 {detail.readTime}
               </Text>
             </Flex>
-            <Text mt="8px" fontSize={'22px'} letterSpacing={'-5%'} lineHeight={'1.2'} fontWeight={500} color={detail.color}>
+            <Text
+              mt="8px"
+              fontSize={'22px'}
+              letterSpacing={'-5%'}
+              lineHeight={'1.2'}
+              fontWeight={500}
+              color={detail.color}
+            >
               {detail.title}
             </Text>
           </Box>
