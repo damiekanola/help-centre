@@ -11,7 +11,6 @@ export const HomePageCard = ({detail}) => {
       <Box
         // h='343px'
         h="452px"
-        
         borderRadius={'12px'}
         shadow={'md'}
         as={motion.div}
@@ -29,13 +28,18 @@ export const HomePageCard = ({detail}) => {
           bgImage={detail.img}
           bgPosition={'center'}
           bgSize={'cover'}
-          h={{ base: '33%', md:'48%'}}
+          h={{base: '33%', md: '48%'}}
           p="14px"
           border={'0px'}
         ></Box>
 
-        <Flex direction={'column'} justifyContent={'space-between'} px="24px" py="24px" flex={'1'}
-          h={{ base: '67%', md:'52%'}}
+        <Flex
+          direction={'column'}
+          justifyContent={'space-between'}
+          px="24px"
+          py="24px"
+          flex={'1'}
+          h={{base: '67%', md: '52%'}}
         >
           <Box>
             <Flex align={'center'} gap={'10px'} mb={'8px'}>
@@ -43,8 +47,14 @@ export const HomePageCard = ({detail}) => {
                 <Image w="24px" h="24px" src={articleIcon} />
                 <Text color={'#1B1B1B'}>Article</Text>
               </Flex>
-              <Box h="16px" w="1px" bg="#1B1B1B66" />
-              <Text color={'#1B1B1B66'} pl={'8px'}>
+
+              <Text
+                color={'#1B1B1BD9'}
+                pl={'9px'}
+                fontSize={'13px'}
+                borderLeft={'1px solid #1B1B1B66'}
+                lineHeight={'13px'}
+              >
                 {detail.readTime}
               </Text>
             </Flex>

@@ -46,7 +46,8 @@ export const Hero = () => {
     <>
       <Box
         w="full"
-        py={{base: '200px', md: '200px'}}
+        pt={{base: '200px', md: '260px'}}
+        pb={{base: '200px', md: '200px'}}
         px={{base: '20px', md: '64px'}}
         bg={'#0d0d0d'}
       >
