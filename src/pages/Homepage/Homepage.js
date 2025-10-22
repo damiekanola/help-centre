@@ -8,15 +8,16 @@ import StatsSection from '../../components/Header/Stats';
 
 export const Homepage = () => {
   return (
-    <Box w="full">
-      <Hero />
-      <Trending />
-      <Featured />
+    <Box w="full" bg={'#0d0d0d'}>
+      <Box  position="relative" >
+        <Hero />
+        <Trending />
+      </Box>
+    
+        <Featured />
       <Listings />
       <Client />
-
       <StatsSection />
-
       <Box
         as="footer"
         bgColor={'#000000'}

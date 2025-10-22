@@ -24,6 +24,7 @@ import realtors from '../assets/images/home/realtors.jpg';
 import schedule from '../assets/images/home/schedule.jpg';
 import manageoccupants from '../assets/images/home/manage-occupants.jpg';
 import setup from '../assets/images/home/setup.jpg';
+import listingsss from "../assets/images/home/listingsss.jpg"
 
 export const gettingStarteddata = [
   {
@@ -36,7 +37,7 @@ export const gettingStarteddata = [
     path: '/getting_started',
   },
   {
-    img: listingss,
+    img: listingsss,
     title: 'Listings',
     color: 'black',
     tag: 'Beginner',
@@ -175,6 +176,15 @@ export const trendingData = [
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
     path: '/where_to_start',
+  },
+   {
+    img: gettingStarted,
+    title: 'Getting Started: A Simple & Quick One',
+    color: 'black',
+    tag: 'Beginner',
+    readTime: '8 mins read',
+    datePosted: 'Nov 23, 2022',
+    path: '/getting_started',
   },
 ];
 

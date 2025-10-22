@@ -74,8 +74,8 @@ function App() {
           <Route path="/clients/update_documents" element={<UpdateDocuments />} />
           <Route path="/clients/manage_clients" element={<ManagingClients />} />
           <Route path="/clients/client_payment" element={<ClientPayments />} />
-          <Route path="/clients/mananage_ownership" element={<ManageOwnership />} />
-          <Route path="/clients/mananage_occupants" element={<ManageOccupants />} />
+          <Route path="/clients/manage_ownership" element={<ManageOwnership />} />
+          <Route path="/clients/manage_occupants" element={<ManageOccupants />} />
           <Route path="/clients/realtors" element={<Realtors />} />
           <Route path="/clients/schedule" element={<Schedule />} />
           <Route path="/listings/create_listing" element={<Createlisting />} />

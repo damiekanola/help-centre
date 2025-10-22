@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import {Box, Text, ListItem, OrderedList, UnorderedList, Image, Link} from '@chakra-ui/react';
 // import protectedImg from '../../assets/images/home/account_approved.jpg';
-import protectedImg from '../../assets/images/home/listings.jpg';
+import protectedImg from '../../assets/images/home/listingsss.jpg';
 import listingimg from '../../assets/images/home/listingpage.png';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
@@ -46,7 +46,7 @@ export const Listings = () => {
   ];
 
   const articleMeta = {
-    title: 'How to create a listing',
+    title: 'Listings',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
