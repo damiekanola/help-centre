@@ -6,9 +6,7 @@ import facebook from '../assets/icons/facebook.svg';
 import x from '../assets/icons/x.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import link from '../assets/icons/link.svg';
-
 import LeftNav from '../components/Leftsidenav/Leftsidenav';
-
 
 export const BlogLayout = ({
   articleMeta,
@@ -121,6 +119,7 @@ export const BlogLayout = ({
           top={{base: '100px', md: '160px', lg: '100px'}}
           pt={'45px'}
         >
+          
           <Text
             transform="rotate(180deg)"
             sx={{
@@ -131,6 +130,7 @@ export const BlogLayout = ({
             fontWeight="500"
             color="gray.600"
             letterSpacing="3px"
+            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             display={{base: 'none', md: 'block'}}
           >
             BACK TO TOP

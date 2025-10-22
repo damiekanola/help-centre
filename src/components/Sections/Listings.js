@@ -34,7 +34,7 @@ export const Listings = () => {
           <SimpleGrid
             w="full"
             gap="30px"
-            columns={{base: 1, md: 3, lg: 3, xl: 4}}
+            columns={{base: 1, md: 3, lg: 3}}
             justify={'center'}
             alignItems={'center'}
           >

@@ -177,6 +177,11 @@
   ul.bluenav li:last-child:before {
     height: 8px;
   }
+
+  .link {
+    text-decoration: underline;
+    color: #4545fe;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -365,5 +370,10 @@
 
   ul.bluenav li:last-child:before {
     height: 8px;
+  }
+
+  .link {
+    text-decoration: underline;
+    color: #4545fe;
   }
 }
