@@ -13,6 +13,7 @@ import step13 from '../../../assets/images/firsttimesetup/csv3.png';
 import step14 from '../../../assets/images/firsttimesetup/csv4.png';
 import step15 from '../../../assets/images/firsttimesetup/csv5.png';
 import step16 from '../../../assets/images/firsttimesetup/csv6.png';
+import check from "../../../assets/images/home/check.png"
 import {listingsData} from '../../../constant/pages';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
@@ -36,7 +37,8 @@ export const CreateAllocations = () => {
     title: 'How to create Allocations',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
-    updated: 'March 05, 2025',
+   updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
 
@@ -49,11 +51,21 @@ export const CreateAllocations = () => {
       <Box id="intro" ref={introRef}>
         <Text className="content_head">How to create unit allocations</Text>
         <Text as="p" marginTop={'30px'}>
-          n this section, we’ll walk you through creating an allocation—think of it like a house or
+          In this section, we’ll walk you through creating an allocation—think of it like a house or
           apartment number for each property, giving every unit a unique identifier so it’s easy to
           spot in your listing. Unit allocations can be created either by uploading a CSV file or by
           adding them manually. We’ll explore both methods in this article.
         </Text>
+        <Text as="p" marginTop={'30px'}>
+          If you need more clarity, you should read this article.
+        </Text>
+        <Text as="p" marginTop={'30px'}>
+          Let's delve into the example of Barrio Logan to understand how allocation milestones are
+          handled: Assuming Barrio Logan's allocation milestone is set at 70%, here are the steps to
+          navigate this process:
+        </Text>
+
+        <Image src={check} my={'30px'} w={'full'} />
 
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>

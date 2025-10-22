@@ -1,12 +1,10 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList, Image, Link} from '@chakra-ui/react';
-// import protectedImg from '../../assets/images/home/account_approved.jpg';
+import {Box, Text, ListItem, UnorderedList, Link, VStack} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/getting_started.jpg';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
-import { gettingStarteddata } from '../../constant/pages';
-
+import {gettingStarteddata} from '../../constant/pages';
 
 export const GettingStarted = () => {
   const [searchParams] = useSearchParams();
@@ -35,11 +33,10 @@ export const GettingStarted = () => {
     title: 'Getting Started: A Simple & Quick One',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
-    updated: 'February 04, 2025',
+    updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
-
 
   return (
     <BlogLayout
@@ -85,7 +82,14 @@ export const GettingStarted = () => {
             </ListItem>
             <ListItem>
               Access Link:{' '}
-              <Link to="https://tests-veerge.myxellia.io">https://tests-veerge.myxellia.io</Link>
+              <Link
+                to="https://tests-veerge.myxellia.io"
+                textDecoration={'underline'}
+                color={'#4545FE'}
+                className="link"
+              >
+                https://tests-veerge.myxellia.io
+              </Link>
             </ListItem>
           </UnorderedList>
 
@@ -138,7 +142,13 @@ export const GettingStarted = () => {
             </ListItem>
             <ListItem>
               <b> Access Link:</b>{' '}
-              <Link to="https://tests-veerge.myxellia.io" color={'#4545FE'} textDecoration={'underline'}>https://tests-veerge.myxellia.io</Link>
+              <Link
+                to="https://tests-veerge.myxellia.io"
+                color={'#4545FE'}
+                textDecoration={'underline'}
+              >
+                https://tests-veerge.myxellia.io
+              </Link>
             </ListItem>
           </UnorderedList>
           <Text as="p" marginTop="20px">
@@ -169,14 +179,89 @@ export const GettingStarted = () => {
           <Text fontWeight={'700'} mt={'20px'}>
             How to Select or Change Your Store Template:
           </Text>
-          <Text>Step 1: Click on the menu button on the Navigation bar</Text>
-          <Text>Step 2: Click on Application</Text>
-          <Text>Step 3: Select any template that matches your brand’s identity</Text>
+          <Text>
+            <b>Step 1:</b> Click on the menu button on the Navigation bar
+          </Text>
+          <Text>
+            <b>Step 2:</b> Click on Application
+          </Text>
+          <Text>
+            <b>Step 3:</b> Select any template that matches your brand’s identity
+          </Text>
+
+          <Box my={'30px'}>
+            <Text fontWeight={'700'} mb={'10px'}>
+              Examples of store templates:
+            </Text>
+            <UnorderedList spacing={'10px'}>
+              <ListItem
+                textDecoration={'underline'}
+                color={'#4545FE'}
+                pl={'10px'}
+                bgColor={'#F4F4F5'}
+                w={'fit-content'}
+                p={'8px'}
+              >
+                Terracota-dev.6787878.com
+              </ListItem>
+              <ListItem
+                textDecoration={'underline'}
+                color={'#4545FE'}
+                pl={'10px'}
+                bgColor={'#F4F4F5'}
+                w={'fit-content'}
+                p={'8px'}
+              >
+                Suburban-Serenity-dev.6787878.com
+              </ListItem>
+              <ListItem
+                textDecoration={'underline'}
+                color={'#4545FE'}
+                pl={'10px'}
+                bgColor={'#F4F4F5'}
+                w={'fit-content'}
+                p={'8px'}
+              >
+                Vintage-Charm-dev.6787878.com
+              </ListItem>
+              <ListItem
+                textDecoration={'underline'}
+                color={'#4545FE'}
+                pl={'10px'}
+                bgColor={'#F4F4F5'}
+                w={'fit-content'}
+                p={'8px'}
+              >
+                Nordic-Hygge-dev.6787878.com
+              </ListItem>
+            </UnorderedList>
+          </Box>
+
+          <Box my={'30px'}>
+            <UnorderedList spacing={'10px'}>
+              <ListItem>
+                <b>Cost and Access:</b>
+                <UnorderedList ml={'20px'} lineHeight={'1.6'}>
+                  <ListItem>
+                    <b>Free Testing in Demo:</b> You can deploy and test any template in the Demo
+                    Environment at no cost.
+                  </ListItem>
+                  <ListItem>
+                    <b>Billing in Production:</b> Each template carries a one-time fee (which varies
+                    by exclusivity and quality). You won’t be charged the moment you deploy it on
+                    the Live Environment; the cost will appear on your next billing cycle.
+                  </ListItem>
+                </UnorderedList>
+              </ListItem>
+            </UnorderedList>
+          </Box>
 
           <Text as="p" marginTop="20px">
-            This data-driven perspective transforms guesswork into strategy, equipping real estate
-            companies with the power to better understand their clients, personalize service, and
-            boost sales.
+            <b>Note on Exclusive Templates</b>
+            <br />
+            Some templates are designed to be exclusive and aren’t widely available. If your
+            business values a unique aesthetic that sets you apart, an exclusive template ensures no
+            other developer in your region shares the same design.
           </Text>
           <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
         </Box>

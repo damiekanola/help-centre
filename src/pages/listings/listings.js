@@ -5,8 +5,8 @@ import protectedImg from '../../assets/images/home/listings.jpg';
 import listingimg from '../../assets/images/home/listingpage.png';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
-import { useSearchParams } from 'react-router-dom';
-import { gettingStarteddata } from '../../constant/pages';
+import {useSearchParams} from 'react-router-dom';
+import {gettingStarteddata} from '../../constant/pages';
 
 export const Listings = () => {
   const [searchParams] = useSearchParams();
@@ -46,14 +46,13 @@ export const Listings = () => {
   ];
 
   const articleMeta = {
-    title: 'Listings',
+    title: 'How to create a listing',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
-
- 
 
   return (
     <BlogLayout
@@ -78,14 +77,21 @@ export const Listings = () => {
       <Box ref={understandingRef} id="typeoflisting">
         <Text className="content_head">The two types of listing</Text>
         <Text as="p" marginTop="40px">
-          Some listings are standalone listings, meaning they don’t contain units, they represent a
-          single property, such as a detached house, which stands independently with no shared walls
-          or units.
+          Some listings are <b>standalone listings</b>, meaning they don’t contain units, they
+          represent a single property, such as a detached house, which stands independently with no
+          shared walls or units.
+        </Text>
+        <Text as="p">
+          <b>Example</b>: A detached house, which stands independently with no shared walls or
+          units.
         </Text>
         <Text mt={'20px'}>
-          Other listings, however, consist of multiple units, each being a self-contained property
-          within a larger structure, for example, a residential building with several apartments or
-          units that share common amenities and spaces.
+          Other listings, however, <b>consist of multiple units</b>, each being a self-contained
+          property within a larger structure.
+        </Text>
+        <Text as="p">
+          <b>Example</b>: A residential building with several apartments or units that share common
+          amenities and spaces.
         </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
       </Box>
@@ -140,10 +146,12 @@ export const Listings = () => {
           <ListItem>₦20 million as an initial deposit,</ListItem>
           <ListItem>then spread the remaining ₦80 million over one year.</ListItem>
         </UnorderedList>
-        <Text as="p">
+        <Text as="p" mt={'20px'}>
           All Quick Payment Plans involve fixed instalment amounts paid regularly (weekly, monthly,
           or quarterly).
-          <br />
+        </Text>
+
+        <Text mt={'20px'}>
           However, in some cases, the buyer may choose to pay at their own pace within the agreed
           one-year period, as long as the total amount is fully paid before the deadline.
         </Text>
@@ -163,7 +171,7 @@ export const Listings = () => {
           <ListItem>₦20 million ten months later,</ListItem>
           <ListItem>₦5 million fourteen months later.</ListItem>
         </UnorderedList>
-        <Text as="p">
+        <Text as="p" mt={'20px'}>
           Unlike the Quick Payment Plan, the payment amounts and dates here are not equal, and the
           buyer must follow this exact schedule as agreed upon in the payment terms.
         </Text>
@@ -225,7 +233,13 @@ export const Listings = () => {
           property allocation.'
         </Text>
 
-        <Text>Use this guide to learn how to create allocations for a unit or listing.</Text>
+        <Text mt={'20px'}>
+          Use this{' '}
+          <Link color={'#4545FECC'} textDecoration={'underline'}>
+            guide
+          </Link>{' '}
+          to learn how to create allocations for a unit or listing.
+        </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
       </Box>
       <Box id="archiving" ref={archivingRef}>
@@ -250,7 +264,13 @@ export const Listings = () => {
           This is why flexibility is essential.
         </Text>
 
-        <Text>Use this guide to learn how to create allocations for a unit or listing.</Text>
+        <Text mt={'20px'}>
+          For detailed instructions on archiving units, please follow this
+          <Link color={'#4545FECC'} textDecoration={'underline'}>
+            link
+          </Link>{' '}
+          .
+        </Text>
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
       </Box>
       <Box id="inspections" ref={inspectionsRef}>
@@ -259,6 +279,9 @@ export const Listings = () => {
           Property inspection has evolved from a routine task into a cornerstone of modern real
           estate. While many developers offer basic scheduling tools, this system takes it
           further—infusing intelligence and innovation to set a new industry standard.
+        </Text>
+        <Text fontWeight={'700'} mt={'20px'}>
+          Post-Inspection Feedback
         </Text>
         <Image src={listingimg} w={'100%'} my={'30px'} />
 
@@ -287,8 +310,6 @@ export const Listings = () => {
           predictive, and strategically empowering—ensuring your real estate business stays ahead in
           a rapidly evolving market.
         </Text>
-
-        <Text>Use this guide to learn how to create allocations for a unit or listing.</Text>
       </Box>
     </BlogLayout>
   );

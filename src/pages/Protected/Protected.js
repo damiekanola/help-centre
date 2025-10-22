@@ -1,14 +1,12 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList,} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
 import protectedImg from '../../assets/images/home/protected.jpg';
 import useIsInViewport from '../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../layouts/BlogLayout';
 
-import { gettingStarteddata } from '../../constant/pages';
+import {gettingStarteddata} from '../../constant/pages';
 
 export const Protected = () => {
-  
-
   const introRef = useRef(null);
   const safetyRef = useRef(null);
   const commitmentRef = useRef(null);
@@ -53,8 +51,6 @@ export const Protected = () => {
     image: protectedImg,
   };
 
-
-
   return (
     <BlogLayout
       articleContent={articleContent}
@@ -77,44 +73,48 @@ export const Protected = () => {
       <Box ref={safetyRef} id="safety">
         <Text className="content_head">Safety First</Text>
 
-        <OrderedList mt={'40px'}>
+        <OrderedList mt={'40px'} pl={'10px'}>
           <ListItem>
             While we firmly believe in democratization and the power of participation, we hold
-            “Safety First” as our most important value. Democratization without safety would be
-            reckless. By placing safety at the forefront, we empower our customers to explore
-            financial engineering and technology confidently. In doing so, we aim to cultivate a
-            lasting reputation built on trust, reliability, and an unwavering commitment to your
-            security and well-being.
+            <b>“Safety First”</b> as our most important value. Democratization without safety would
+            be reckless. By placing safety at the forefront, we empower our customers to explore
+            financial engineering and technology <b>confidently</b>. In doing so, we aim to
+            cultivate a lasting reputation built on trust, reliability, and an unwavering commitment
+            to your security and well-being.
           </ListItem>
         </OrderedList>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={commitmentRef} id="commitment">
         <Text className="content_head">Commitment to data protection</Text>
-        <Text as="p" marginTop="40px">
-          In today’s digital era, data protection is paramount—especially for real estate companies
-          handling sensitive personal and financial information. At Myxellia, we have established
-          robust measures in line with GDPR, NDPR, NITDA, and CCPA to ensure your data remains
-          secure. From modern security protocols to stringent internal practices, we leave no stone
-          unturned in safeguarding your information.
+        <Text as="p" marginTop="40px" lineHeight={'1.6'}>
+          In today’s digital era, <b>data protection</b> is paramount—especially for real estate
+          companies handling sensitive personal and financial information. At Myxellia, we have
+          established robust measures in line with <b>GDPR, NDPR, NITDA, and CCPA</b> to ensure your
+          data remains secure. From modern security protocols to stringent internal practices, we
+          leave no stone unturned in safeguarding your information.
         </Text>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={signupsRef} id="signups">
         <Text className="content_head">Authorized sign ups and verification</Text>
 
-        <UnorderedList mt={'30px'}>
+        <Text mt={'30px'} fontSize={'17px'}>
+          To ensure compliance and maintain the highest standards of security:
+        </Text>
+
+        <UnorderedList lineHeight={'1.6'} pl={'20px'} spacing={'3px'} fontSize={'17px'}>
           <ListItem>
-            The person signing up from a property development company must be authorized to enter
-            contracts on behalf of that company and will be deemed the account owner.
+            The person signing up from a property development company <b>must</b> be authorized to
+            enter contracts on behalf of that company and will be deemed the <b>account owner</b>.
           </ListItem>
           <ListItem>
-            Any applicant not representing a property development company will be rejected.
+            Any applicant not representing a property development company <b>will</b> be rejected.
           </ListItem>
           <ListItem>
-            The account owner is required to use an official company email for registration.
+            The account owner is required to use an official <b>company email</b> for registration.
           </ListItem>
           <ListItem>
             Identification documents (e.g., driver’s license, passport data page) may be requested.
@@ -126,47 +126,49 @@ export const Protected = () => {
           </ListItem>
         </UnorderedList>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={securitymeasureRef} id="securitymeasure">
         <Text className="content_head">Rigorous security measure</Text>
-
-        <UnorderedList mt={'30px'}>
+        <Text mt={'30px'} fontSize={'17px'} mb={'5px'}>
+          To ensure compliance and maintain the highest standards of security:
+        </Text>
+        <UnorderedList lineHeight={'1.6'} pl={'20px'} spacing={'3px'} fontSize={'17px'}>
           <ListItem>
-            Two-Factor Authentication (2FA), regular password updates, and access controls ensure
-            that only authorized individuals can access sensitive data.
+            <b>Two-Factor Authentication (2FA)</b>, regular password updates, and access controls
+            ensure that only <b>authorized individuals</b> can access sensitive data.
           </ListItem>
           <ListItem>
-            We conduct regular security audits and updates to stay ahead of emerging threats, with
-            our vigilance team ready to respond immediately to any suspicious activity.
+            We conduct <b>regular security audits</b> and updates to stay ahead of emerging threats,
+            with our vigilance team ready to respond immediately to any suspicious activity.
           </ListItem>
           <ListItem>
-            Data in transit is encrypted using industry-standard protocols, making any intercepted
-            information indecipherable without the correct key.
+            <b>Data in transit </b>is encrypted using industry-standard protocols, making any
+            intercepted information indecipherable without the correct key.
           </ListItem>
           <ListItem>
-            Passwords are safeguarded with the BCrypt hashing algorithm, ensuring they are virtually
-            impossible to crack.
+            <b>Passwords are safeguarded</b> with the <b>BCrypt hashing algorithm</b> , ensuring
+            they are virtually impossible to crack.
           </ListItem>
         </UnorderedList>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={backupRef} id="backup">
         <Text className="content_head">Encrypted backup and disaster resillience</Text>
-
-        <UnorderedList mt={'30px'}>
+        <Text mt={'30px'}>To further protect your information:</Text>
+        <UnorderedList lineHeight={'1.6'} pl={'20px'} spacing={'3px'} fontSize={'17px'}>
           <ListItem>
-            We perform encrypted backups on a regular schedule, storing them securely in off-site
-            locations.
+            We perform <b>encrypted backups</b> on a regular schedule, storing them securely in
+            off-site locations.
           </ListItem>
           <ListItem>
             These backups ensure your data remains intact and recoverable in the face of unexpected
             disasters.
           </ListItem>
           <ListItem>
-            During the backup process, we conduct careful security audits, guarding against both
-            insider threats and external attacks.
+            During the backup process, we conduct <b>careful security audits</b>, guarding against
+            both insider threats and external attacks.
           </ListItem>
         </UnorderedList>
 
@@ -175,25 +177,25 @@ export const Protected = () => {
       <Box ref={thirdpartyRef} id="thirdparty">
         <Text className="content_head">Trusted third party payment processors</Text>
         <Text mt={'40px'}>
-          At Myxellia, we value collaboration. We partner with reputable third-party service
-          providers for transaction processing and do not directly manage funds. Once you transition
-          from testing to live operations, you can integrate your own payment processor and collect
-          your funds directly.
+          At Myxellia, we value <b>collaboration</b>. We partner with reputable third-party service
+          providers <b>for transaction processing and do not directly manage funds</b>. Once you
+          transition from testing to live operations, you can integrate your own payment processor
+          and collect your funds directly.
         </Text>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={complianceRef} id="compliance">
         <Text className="content_head">Global compliance</Text>
         <Text mt={'40px'}>
           We recognize that different regions and industries have unique regulations governing data
           protection. Our dedicated compliance team ensures Myxellia meets all relevant standards,
-          including GDPR, NDPR, NITDA, and CCPA. We continuously monitor regulatory changes to keep
-          our platform in full compliance, so you can trust that your data is managed with integrity
-          and responsibility.
+          including <b>GDPR, NDPR, NITDA, and CCPA.</b> We continuously monitor regulatory changes
+          to keep our platform in full compliance, so you can trust that your data is managed with{' '}
+          <b>integrity and responsibility.</b>
         </Text>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={downtimeRef} id="downtime">
         <Text className="content_head">How we mitigate downtime</Text>
@@ -204,7 +206,7 @@ export const Protected = () => {
           continuous service:
         </Text>
         <Box my="30px">
-          <OrderedList spacing={'2px'}>
+          <OrderedList spacing={'2px'} pl={'10px'}>
             <ListItem>
               <Text fontWeight="600" color="#000000EB">
                 Multi-Region Architecture
@@ -288,7 +290,7 @@ export const Protected = () => {
           minimizes service disruptions and provides a reliable experience for all users
         </Text>
 
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} ml={'10px'} my={'40px'}></Box>
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
       <Box ref={conclusionRef} id="conclusion">
         <Text className="content_head">In conclusion</Text>

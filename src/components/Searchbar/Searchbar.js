@@ -19,6 +19,7 @@ import {helpSearchData, blogSearchData} from './data';
 import './Search.css';
 import home_dark from '../../assets/icons/home_dark.svg';
 import home_light from '../../assets/icons/home_light.svg';
+import chevleft from '../../assets/icons/chevyleft.svg';
 
 export const Searchbar = () => {
   const location = useLocation();
@@ -167,12 +168,12 @@ export const Searchbar = () => {
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Flex maxW="319px" direction="row" columnGap="18px" align="center">
+          <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
             <>
               <Link to={checkBlogPage() ? '/blog' : '/'}>
                 {<Image src={isWhite ? home_light : home_dark} />}
               </Link>{' '}
-              <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
+              <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
             </>
 
             <Text
@@ -301,13 +302,13 @@ export const Searchbar = () => {
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Flex maxW="319px" direction="row" columnGap="8px" align="center">
+          <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
             {currLocation === '/' || currLocation === '/blog' ? null : (
               <>
                 <Link to={checkBlogPage() ? '/blog' : '/'}>
                   {<Image src={isWhite ? home_light : home_dark} />}
                 </Link>{' '}
-                <SlArrowRight color={isWhite ? '#fff' : '#0D0D0D'} />
+                <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
               </>
             )}
             <Text

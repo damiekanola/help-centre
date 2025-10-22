@@ -33,6 +33,7 @@ export const Setup = () => {
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
 
@@ -48,11 +49,17 @@ export const Setup = () => {
           Customize your store’s appearance by selecting a template, choosing your brand colors, and
           applying a theme that reflects your business identity.
         </Text>
+
+        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
+
+        <Text className="content_head">A step-by-step guide</Text>
         <Box my="30px">
           <Text fontWeight="600" color="#000000EB">
             STEP 1
           </Text>
-          <Text>Start by clicking on the “menu icon” button on the Navigation bar.</Text>
+          <Text>
+            Start by clicking on the <b>“menu icon”</b> button on the Navigation bar.
+          </Text>
           <Image src={step1} mt="30px" w="full" alt="Step 1" />
         </Box>
 
@@ -60,7 +67,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 2
           </Text>
-          <Text>Select Application.</Text>
+          <Text>
+            Select <b>Application.</b>
+          </Text>
           <Image src={step2} mt="30px" w="full" alt="Step 2" />
         </Box>
 
@@ -68,7 +77,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 3
           </Text>
-          <Text>Select any template that matches your brand’s identity.</Text>
+          <Text>
+            Select any <b>template</b> that matches your<b> brand’s identity</b>.
+          </Text>
           <Image src={step3} mt="30px" w="full" alt="Step 3" />
         </Box>
 
@@ -76,7 +87,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 4
           </Text>
-          <Text>Select your brand color.</Text>
+          <Text>
+            Select your <b>brand color</b>.
+          </Text>
           <Image src={step4} mt="30px" w="full" alt="Step 4" />
         </Box>
 
@@ -84,7 +97,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 5
           </Text>
-          <Text>Select a theme that goes well with your brand color.</Text>
+          <Text>
+            Select a <b>theme</b> that goes well with your brand color.
+          </Text>
           <Image src={step5} mt="30px" w="full" alt="Step 5" />
         </Box>
 
@@ -92,7 +107,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 6
           </Text>
-          <Text>Review the details provided and proceed.</Text>
+          <Text>
+            <b>Review the details </b>provided and <b>proceed</b>.
+          </Text>
           <Image src={step6} mt="30px" w="full" alt="Step 6" />
         </Box>
 
@@ -103,6 +120,11 @@ export const Setup = () => {
           <Text>
             Create your web application URL (e.g., <b>Myxellia.67878.com</b>).
           </Text>
+          <Text mt={'30px'}>
+            <b>Tip</b>: A web URL is a unique address used to access resources on the internet. On
+            Veerge, it’s the link users visit to view your listing, acting as a direct pathway to
+            your property details, images, and other information.
+          </Text>
           <Image src={step7} mt="30px" w="full" alt="Step 7" />
         </Box>
 
@@ -110,7 +132,9 @@ export const Setup = () => {
           <Text fontWeight="600" color="#000000EB">
             STEP 8
           </Text>
-          <Text>Wait a few minutes to initialize deployment of your application.</Text>
+          <Text>
+            Wait a few minutes to <b>initialize deployment</b> of your application.
+          </Text>
           <Image src={step8} mt="30px" w="full" alt="Step 8" />
         </Box>
 
@@ -135,7 +159,7 @@ export const Setup = () => {
           they’re taken straight to the subscription page for that specific unit—no need to search
           or navigate through multiple listings.
         </Text>
-        <Box mt={'30px'}>
+        <Box my={'30px'}>
           <Text>You can:</Text>
           <UnorderedList>
             <ListItem>
@@ -149,7 +173,9 @@ export const Setup = () => {
             </ListItem>
           </UnorderedList>
         </Box>
-        <Box mt={'30px'}>
+
+        <Text>This ensures a smooth and direct purchase process for every potential buyer.</Text>
+        <Box my={'30px'}>
           <Text fontWeight={'500'}>How to get the E-subscription URL:</Text>
           <UnorderedList>
             <ListItem>
@@ -164,7 +190,15 @@ export const Setup = () => {
           </UnorderedList>
         </Box>
 
-        <Card />
+        <Card
+          heading={'Failsafe Account'}
+          title={'Protect Your Transactions'}
+          action={'Set Up'}
+          desc={
+            'Set up a backup bank account to ensure your payments stay uninterrupted, even if your primary account is unavailable.'
+          }
+        />
+        <Text mt={'30px'}>Keep your transactions running smoothly—no delays, no downtime.</Text>
       </Box>
     </BlogLayout>
   );

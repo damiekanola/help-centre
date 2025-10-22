@@ -4,6 +4,7 @@ import protectedImg from '../../../assets/images/home/listings.jpg';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {useSearchParams} from 'react-router-dom';
+import {Card} from '../../../components/Faq/Card';
 import {listingsData} from '../../../constant/pages';
 
 const Createlisting = () => {
@@ -32,7 +33,8 @@ const Createlisting = () => {
     title: 'How to create a Listing',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
-    updated: 'February 04, 2025',
+    updated: 'March 05, 2025',
+    readTime: '3 minute read',
     image: protectedImg,
   };
 
@@ -791,9 +793,23 @@ const Createlisting = () => {
 
           <Text mt="10px">
             You'll see a comprehensive summary of all the steps you've completed thus far. Click
-            "Publish" to make the listing go live.
+            <b>"Publish</b>" to make the listing go live.
           </Text>
         </Box>
+
+        <Card
+          heading={'Onboarding Kit'}
+          title={'Migrate with confidence'}
+          desc={
+            'Our step-by-step migration guide helps you securely transfer your clients to Myxellia in no time.'
+          }
+          action={'Get Started'}
+        />
+        <Text mt="10px">
+          If you are migrating from an existing system and already have clients subscribed to this
+          listing, the next step is to Migrate your clients so they remain connected to the new
+          listing.
+        </Text>
       </Box>
     </BlogLayout>
   );
