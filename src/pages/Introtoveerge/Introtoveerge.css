@@ -16,7 +16,6 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
     line-height: 100%;
     letter-spacing: -0.18px;
   }
@@ -31,7 +30,7 @@
     padding-left: 5%;
     padding-right: 5%;
     line-height: 160%;
-    margin: 90px auto 30px auto;
+    margin: 1px auto 30px auto;
     position: relative;
     color: #000000cc;
   }
@@ -53,7 +52,7 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
-    letter-spacing: 0.1em;
+    letter-spacing: -0.14px;
     /* color: #000000; */
     padding-bottom: 5px;
     color: #000000eb;
@@ -219,7 +218,6 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 54px;
     line-height: 100%;
     letter-spacing: -3px;
   }

@@ -10,7 +10,7 @@ export const HomePageCard = ({detail}) => {
     <Link to={detail.path || ''}>
       <Box
         // h='343px'
-        h="452px"
+        h={{base: '390px', md: '452px'}}
         borderRadius={'12px'}
         shadow={'md'}
         as={motion.div}
@@ -28,7 +28,7 @@ export const HomePageCard = ({detail}) => {
           bgImage={detail.img}
           bgPosition={'center'}
           bgSize={'cover'}
-          h={{base: '33%', md: '48%'}}
+          h={{base: '40%', md: '48%'}}
           p="14px"
           border={'0px'}
         ></Box>
@@ -39,7 +39,7 @@ export const HomePageCard = ({detail}) => {
           px="24px"
           py="24px"
           flex={'1'}
-          h={{base: '67%', md: '52%'}}
+          h={{base: '60%', md: '52%'}}
         >
           <Box>
             <Flex align={'center'} gap={'10px'} mb={'8px'}>

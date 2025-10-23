@@ -11,15 +11,15 @@ export const ResourceCard = ({detail}) => {
     <Link to={detail.path || ''}>
       <Box
         // h='343px'
-        h={'452px'}
+        h={{base: '390px', md: '452px'}}
         maxH={'452px'}
         borderRadius={'12px'}
         shadow={'md'}
         as={motion.div}
         mx={'auto'}
-        w={'416px'}
-        minW={'270px'}
-        maxW={'416px'}
+        w={{base: '270px', md: '416px'}}
+        // minW={'270px'}
+        // maxW={'416px'}
         cursor={'pointer'}
         bgColor={'#ffffff'}
       >
@@ -31,13 +31,13 @@ export const ResourceCard = ({detail}) => {
           bgPosition={'center'}
           bgSize={'cover'}
           minH={'157px'}
-          h={'241px'}
+          h={{base: '40%', md: '48%'}}
           p="14px"
           border={'0px'}
         ></Box>
 
         <Flex
-          h="calc(100% - 241px)"
+          h={{base: '60%', md: '52%'}}
           direction={'column'}
           justifyContent={'space-between'}
           px="24px"
@@ -49,8 +49,13 @@ export const ResourceCard = ({detail}) => {
                 <Image w="24px" h="24px" src={articleIcon} />
                 <Text color={'#1B1B1B'}>Article</Text>
               </Flex>
-              <Box h="16px" w="1px" bg="#1B1B1B66" />
-              <Text color={'#1B1B1B66'} pl={'8px'}>
+              <Text
+                color={'#1B1B1BD9'}
+                pl={'9px'}
+                fontSize={'13px'}
+                borderLeft={'1px solid #1B1B1B66'}
+                lineHeight={'13px'}
+              >
                 {detail.readTime}
               </Text>
             </Flex>

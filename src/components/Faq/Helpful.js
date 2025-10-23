@@ -74,6 +74,7 @@ export const Helpful = () => {
           onClick={handleYes}
           _hover={{bg: '#f3f3f3'}}
           borderRadius="0"
+          zIndex={'0'}
         >
           Yes
         </Button>
@@ -85,11 +86,12 @@ export const Helpful = () => {
           onClick={handleNo}
           _hover={{bg: '#f3f3f3'}}
           borderRadius="0"
+          zIndex={'0'}
         >
           No
         </Button>
 
-        {/* Modal for "No" feedback */}
+       
         <Modal isOpen={isOpen} onClose={onClose} isCentered>
           <ModalOverlay />
           <ModalContent>

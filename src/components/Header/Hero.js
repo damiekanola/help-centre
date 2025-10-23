@@ -47,7 +47,7 @@ export const Hero = () => {
       <Box
         w="full"
         pt={{base: '200px', md: '260px'}}
-        pb={{base: '200px', md: '200px'}}
+        pb={{base: '150px', md: '200px'}}
         px={{base: '20px', md: '64px'}}
         bg={'#0d0d0d'}
       >
@@ -71,7 +71,13 @@ export const Hero = () => {
           property development. Take a look at our helpful articles, guides, templates, tools and
           more.
         </Text>
-        <Box bg="#ffffff" borderRadius={'12px'} overflow={'hidden'} ref={inputRef}>
+        <Box
+          bg="#ffffff"
+          borderRadius={'12px'}
+          overflow={'visible'}
+          ref={inputRef}
+          position="relative"
+        >
           <Flex
             direction="row"
             align="center"
@@ -116,10 +122,13 @@ export const Hero = () => {
               w="100%"
               bg="white"
               boxShadow="md"
-              zIndex="10"
+              zIndex="1"
               maxH="200px"
+              position="absolute"
+              top="calc(100% - 12px)"
               overflowY="auto"
               borderTop={'1px solid gray'}
+              borderBottomRadius="12px"
             >
               {filteredData.map((item, index) => (
                 <Link href={item.link} fontSize="sm" fontWeight="500" color="gray.700">

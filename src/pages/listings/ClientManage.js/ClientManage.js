@@ -1,10 +1,10 @@
 import React, {useRef} from 'react';
-import {Box, Text, Image, List, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
+import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
 import protectedImg from '../../../assets/images/home/client_manag.jpg';
-
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {Card} from '../../../components/Faq/Card';
+import {FaqCard} from '../../../components/Faq/FaqCard';
 
 import {listingsData} from '../../../constant/pages';
 
@@ -24,12 +24,12 @@ export const ClientManage = () => {
   const unitquantityCheck = useIsInViewport(unitquantityRef);
 
   const articleContent = [
-    {check: introCheck, id: 'intro', title: 'How to change listing information'},
-    {check: editCheck, id: 'edit', title: 'Edit listing information'},
-    {check: modifyCheck, id: 'modify', title: 'Modifying unit information'},
-    {check: unitpriceCheck, id: 'unitprice', title: 'How to modify unit price'},
-    {check: unitquantityCheck, id: 'unitquantity', title: 'How to modify unit quantity'},
-    {check: paymentCheck, id: 'payment', title: 'Editing payment plan'},
+    {check: introCheck, id: 'intro', title: 'Overview'},
+    {check: editCheck, id: 'edit', title: 'A Bank account analogy'},
+    {check: modifyCheck, id: 'modify', title: 'Creating clients account'},
+    {check: unitpriceCheck, id: 'unitprice', title: 'Next Steps'},
+    {check: unitquantityCheck, id: 'unitquantity', title: 'I have migrated, but their investment still can’t be found'},
+    {check: paymentCheck, id: 'payment', title: 'FAQs'},
   ];
 
   const articleMeta = {
@@ -278,6 +278,65 @@ export const ClientManage = () => {
 
       <Box id="payment" ref={paymentRef}>
         <Text className="content_head">Frequently Asked Questions(FAQs)</Text>
+
+        <FaqCard
+          asker={'Manuel G.'}
+          question={'I made a mistake when manually inputting a transaction. What should I do?'}
+        >
+          <Text>If a transaction was entered incorrectly, there are two ways to resolve it:</Text>
+          <OrderedList listStylePosition={'inside'}>
+            <ListItem>
+              <b>Client Dispute</b>: The client can initiate a dispute regarding the incorrect
+              transaction.
+            </ListItem>
+            <ListItem>
+              Manual Termination: You can manually terminate the transaction in the{' '}
+              <b>Transactions Section</b>:
+            </ListItem>
+            <UnorderedList>
+              <ListItem>Locate the transaction.</ListItem>
+              <ListItem>
+                Select the <b>terminate</b> option.
+              </ListItem>
+              <ListItem>
+                Once terminated, the transaction <b>disappears from the client’s portfolio</b>{' '}
+                without an alert.
+              </ListItem>
+              <ListItem>
+                However, on your <b>management software (Myxellia)</b>, the transaction will still
+                be visible under their portfolio under <b>"Terminated Transactions"</b> for
+                reference.
+              </ListItem>
+            </UnorderedList>
+          </OrderedList>
+        </FaqCard>
+        <FaqCard
+          asker={'Manuel G.'}
+          question={'I made a mistake when entering a client’s name. How do I fix it?'}
+        >
+          <Text>
+            If a client’s name was entered incorrectly, you can update it by following these steps:
+          </Text>
+          <OrderedList listStylePosition={'inside'}>
+            <ListItem>
+              Navigate to the <b>Users Tab</b>.
+            </ListItem>
+            <ListItem>
+              Click on <b>Manage Options.</b>
+            </ListItem>
+            <ListItem>
+              Scroll down to <b>Edit Name</b>.
+            </ListItem>
+            <ListItem>Enter the correct name.</ListItem>
+            <ListItem>
+              Provide the <b>2FA Token</b> from your Authenticator App to confirm the change.
+            </ListItem>
+          </OrderedList>
+
+          <Text mt={'20px'}>
+            Once completed, the client’s updated name will reflect across the system.
+          </Text>
+        </FaqCard>
       </Box>
     </BlogLayout>
   );
