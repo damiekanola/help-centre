@@ -19,14 +19,16 @@ export const BlogLayout = ({
 }) => {
   return (
     <div className="main">
+      <Box pb={'34px'} h={'fit-content'} position="relative" overflow="visible">
+
       <Grid
         bg={'#FAFAFA'}
         pl={'5%'}
-        pr={{base: '5%', md: '1%'}}
+        pr={{ base: '5%', md: '1%' }}
         templateColumns={{base: '1fr', md: '0.45fr 0.55fr'}}
         gap={'30px'}
         minH="500px"
-        maxH="680px"
+        
         // h={{base: '680px', md:'500px'}}
         position="relative"
         overflow="visible"
@@ -128,6 +130,7 @@ export const BlogLayout = ({
           minH={{base: '200px', md: '100%'}}
         ></Box>
       </Grid>
+      </Box>
 
       <div className="content_space">
         <LeftNav articleContent={articleContent} />
@@ -139,7 +142,7 @@ export const BlogLayout = ({
 
         <Flex
           direction={'column'}
-          gap={'10px'}
+          gap={'15px'}
           alignItems={'center'}
           position={{base: 'sticky', lg: 'sticky'}}
           top={{base: '100px', md: '160px', lg: '140px'}}
@@ -162,7 +165,7 @@ export const BlogLayout = ({
           </Text>
           <ProgressBar />
           
-          <Flex direction={{base: 'row', md: 'column'}} gap={'10px'}>
+          <Flex direction={{base: 'row', md: 'column'}} gap={'10px'} mt={'20px'}>
             <Link>
               <Image src={linkedin} w="40px" h={'40px'} />
             </Link>

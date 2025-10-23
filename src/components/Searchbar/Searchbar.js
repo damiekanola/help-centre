@@ -290,6 +290,27 @@ export const Searchbar = () => {
         >
           <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
             <Link to="/">{<Image src={isWhite ? home_light : home_dark} />}</Link>{' '}
+            {currLocation === '/' && (
+              <>
+                <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
+                <Text
+                  onClick={window.scrollTo(0, 0)}
+                  style={{
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    href: 'first_time_setup',
+                    color: isWhite ? '#fff' : '#5D5FEF',
+                    fontStyle: 'normal',
+                    fontWeight: '400',
+                    fontSize: '14px',
+                    lineHeight: '18px',
+                    textTransform: 'capitalize',
+                  }}
+                >
+                  Blog
+                </Text>
+              </>
+            )}
             {currLocation !== '/' && (
               <>
                 <Image src={chevleft} w="24px" h="24px" alt="back" />

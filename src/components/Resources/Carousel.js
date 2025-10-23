@@ -2,7 +2,7 @@ import {Box, Text, Button, HStack} from '@chakra-ui/react';
 import {motion, useMotionValue, useSpring} from 'framer-motion';
 import {useRef, useEffect, useState} from 'react';
 import {ResourceCard} from '../../pages/Homepage/ResourceCard';
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import {FaArrowLeft, FaArrowRight} from 'react-icons/fa6';
 
 const MotionBox = motion(Box);
 
@@ -66,13 +66,13 @@ export default function Carousel({otherresources}) {
   return (
     <Box
       bg="#EBEBFF"
-      p={{base: '30px', md: '40px', lg: '64px'}}
+      p={{base: '24px', md: '40px', lg: '64px'}}
       overflow="hidden"
       position="relative"
     >
       {/* Header + Controls */}
-      <HStack justify="space-between" mb="50px">
-        <Text fontSize="40px" fontWeight="500" letterSpacing="-2px">
+      <HStack justify="space-between" mb="25px">
+        <Text fontSize={{base: '25px', md: '40px'}} fontWeight="500" letterSpacing="-2px">
           Other resources
         </Text>
 
