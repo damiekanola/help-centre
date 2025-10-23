@@ -26,7 +26,6 @@ export const Leftsidenav = ({articleContent}) => {
       minW={'300px'}
       bg="#FFFFFF"
       borderRadius={'16px'}
-      zIndex={2}
     >
       {/* <Menu boxShadow={'0px 4px 8px 0px rgba(0, 0, 0, 0.08)'}>
         {({isOpen}) => (

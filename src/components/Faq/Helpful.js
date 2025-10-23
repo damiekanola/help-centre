@@ -6,7 +6,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
- 
   ModalFooter,
   ModalBody,
   ModalCloseButton,
@@ -55,7 +54,7 @@ export const Helpful = () => {
     return (
       <>
         <Box w="60px" h="4px" bgColor="#D4D4D8" my="40px" />
-        <Text color="#5D5FEF" fontWeight="500" fontSize="17px">
+        <Text fontWeight="500" fontSize="17px">
           Thank you for your feedback!
         </Text>
       </>
@@ -101,18 +100,24 @@ export const Helpful = () => {
 
               <RadioGroup onChange={setSelectedReason} value={selectedReason} mb={4}>
                 <Stack direction="column" spacing={2}>
-                  <Radio size='md' value="hardtofind">It’s hard to find what I’m looking for.</Radio>
-                  <Radio size='md' value="unhelpful">The tone feels unhelpful or too technical.</Radio>
-                  <Radio size='md' value="understand">
+                  <Radio size="md" value="hardtofind">
+                    It’s hard to find what I’m looking for.
+                  </Radio>
+                  <Radio size="md" value="unhelpful">
+                    The tone feels unhelpful or too technical.
+                  </Radio>
+                  <Radio size="md" value="understand">
                     Hard to understand - unclear or translation is wrong
                   </Radio>
-                  <Radio size='md' value="instructionsdontmatch">
+                  <Radio size="md" value="instructionsdontmatch">
                     The instructions don’t match what I see on my screen.
                   </Radio>
-                  <Radio size='md' value="irrelevant">
+                  <Radio size="md" value="irrelevant">
                     Irrelevant - doesn’t match the title and / or my expectations
                   </Radio>
-                  <Radio size='md' value="other">Other</Radio>
+                  <Radio size="md" value="other">
+                    Other
+                  </Radio>
                 </Stack>
               </RadioGroup>
 
