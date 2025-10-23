@@ -34,7 +34,7 @@ export const CreateAllocations = () => {
   ];
 
   const articleMeta = {
-    title: 'How to create Allocations',
+    title: 'How to create unit allocations',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
    updated: 'March 05, 2025',

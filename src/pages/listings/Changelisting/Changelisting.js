@@ -37,9 +37,9 @@ export const Changelisting = () => {
   const articleContent = [
     {check: introCheck, id: 'intro', title: 'How to change listing information'},
     {check: editCheck, id: 'edit', title: 'Edit listing information'},
-    {check: modifyCheck, id: 'modify', title: 'Modifying unit information'},
-    {check: unitpriceCheck, id: 'unitprice', title: 'How to modify unit price'},
-    {check: unitquantityCheck, id: 'unitquantity', title: 'How to modify unit quantity'},
+    {check: modifyCheck, id: 'modify', title: 'Modify unit information'},
+    {check: unitpriceCheck, id: 'unitprice', title: 'Modify unit price'},
+    {check: unitquantityCheck, id: 'unitquantity', title: 'Modify unit quantity'},
     {check: paymentCheck, id: 'payment', title: 'Editing payment plan'},
   ];
 

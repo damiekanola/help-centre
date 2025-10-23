@@ -30,7 +30,7 @@ export const Schedule = () => {
   ];
 
   const articleMeta = {
-    title: 'Manage Property Inspections',
+    title: 'How to Schedule Inspections on Behalf of Clients',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
@@ -183,7 +183,7 @@ export const Schedule = () => {
         <Text className="content_head" mt={'40px'}>
           Frequently Asked Questions(FAQs)
         </Text>
-        <FaqCard
+        <FaqCard id='inspectionsquestions'
           question={'Where can I see the scheduled inspection requests?'}
           asker={'Elijah O.'}
         >

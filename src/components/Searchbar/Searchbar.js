@@ -52,98 +52,60 @@ export const Searchbar = () => {
       case '':
       case '/':
         return 'Help Centre';
-      case '/terms':
-        return 'Terms of Service';
-      case '/privacy':
-        return 'Privacy Policy';
-      case '/first_time_setup':
-        return 'First time setup';
+      case '/overview':
+        return 'Overview';
       case '/approved_what_next':
-        return 'Approved, what next?';
-      case '/ticketing':
-        return 'Ticketing';
-      case '/listings/create_listing':
-        return 'Create listing';
-      case '/listings/overview':
+        return 'Approved — What Next?';
+      case '/where_to_start':
+        return 'My Manager Told Me About This — Where Do I Start?';
+      case '/getting_started':
+        return 'Getting Started';
+      case '/partner_program':
+        return 'Myxellia’s Partners Program';
+      case '/setting_up':
+        return 'Setting Up Your Account';
+      case '/store_setup':
+        return 'How to set up your Store template';
+      case '/how_protected':
+        return 'How you’re protected';
+      case '/listings':
         return 'Listings';
-      case '/listings/create_unit':
-        return 'Create unit';
+      case '/fractionalise':
+        return 'Fractionalising an Asset';
       case '/listings/archive_unit':
-        return 'Archive unit';
-      case '/listings/fractionalize_asset':
-        return 'Fractionalize unit';
+        return 'Archiving a Unit';
+      case '/clients/client_account':
+        return 'Why Client Accounts Matter';
+      case '/clients/update_documents':
+        return 'How to update documents';
+      case '/clients/manage_clients':
+        return 'Managing Other Client Interactions & Property Transfers';
+      case '/clients/client_payment':
+        return 'Managing Client Payments: A Guide to Logging Transaction';
+      case '/clients/manage_ownership':
+        return 'How to Update or Change Ownership of Properties';
+      case '/clients/manage_occupants':
+        return 'Managing Occupants – Keep track of tenants in your Property';
+      case '/clients/realtors':
+        return 'Managing Realtors: How to Add Agents and Set Commissions';
+      case '/clients/schedule':
+        return 'Manage Property Inspections';
+      case '/listings/create_listing':
+        return 'How to create a Listing';
       case '/listings/change_listing':
-        return 'Change listing';
-      case '/listings/delist':
-        return 'Delist listing';
-      case '/lead/create_account':
-        return 'Create lead account';
-      case '/lead/send_an_offer':
-        return 'Send an offer';
-      case '/lead/home_owners_pack':
-        return "Home owners's packet";
-      case '/invite_team_members':
-        return 'Invite team members';
-      case '/users_experience':
-        return 'End-to-end experience';
-      case '/veerge_plus':
-        return 'Veerge plus';
-      case '/application_guide':
-        return 'What is the difference between Basic & Custom app ?';
-      case '/realtor/portal':
-        return 'Veerge Premier Realtor Portal';
-      case '/realtor/process':
-        return 'Veerge Premier Realtor Portal';
-      case '/blog':
-        return 'Blog';
-      case '/blog/transforming_business':
-        return 'Ticketing system';
-      case '/blog/inventory':
-        return 'Inventory Management system';
-      case '/blog/revenue_recognition':
-        return 'Revenue recognition solution';
-      case '/blog/lead_management':
-        return 'Leads management system';
-      case '/blog/a_letter':
-        return 'A Letter from our CEO';
-      case '/blog/understanding_fraction':
-        return 'Understanding Fractional Real Estate';
-      case '/blog/smart_payment':
-        return 'Smart Payment Plan';
-      case '/blog/fractional_ownership':
-        return 'Fractional Ownership';
-      case '/blog/new_era':
-        return 'The New Era of Real Estate';
-      case '/blog/veerge_data':
-        return 'Veerge & Data Analytics';
-      case '/blog/why_veerge':
-        return ' Why Veerge instead of Building';
-
+        return 'Changing Listing Information';
+      case '/listings/create_allocations':
+        return 'How to create Allocations';
+      case '/listings/clientmanagement':
+        return 'Managing Clients: Your Cornerstone for Leads & Sales';
       default:
+        // fallback: prettify the URL path
         return (
-          currLocation.split('/').join(' ').split('_').join(' ').split('-').join(' ') ||
-          'Help Centre'
+          currLocation
+            .replace(/[\/_-]/g, ' ')
+            .replace(/\b\w/g, c => c.toUpperCase())
+            .trim() || 'Help Centre'
         );
-    }
-  };
-
-  const checkBlogPage = () => {
-    switch (currLocation) {
-      case '/blog':
-      case '/blog/transforming_business':
-      case '/blog/inventory':
-      case '/blog/revenue_recognition':
-      case '/blog/lead_management':
-      case '/blog/a_letter':
-      case '/blog/understanding_fraction':
-      case '/blog/smart_payment':
-      case '/blog/fractional_ownership':
-      case '/blog/new_era':
-      case '/blog/veerge_data':
-      case '/blog/why_veerge':
-        return true;
-      default:
-        return false;
     }
   };
 
@@ -168,11 +130,15 @@ export const Searchbar = () => {
           borderBottom={isWhite && '1px solid rgba(255, 255, 255, 0.20)'}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
-          <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
+          <Flex
+            maxW="fit-content"
+            direction="row"
+            columnGap="8px"
+            align="center"
+            alignItems={'center'}
+          >
             <>
-              <Link to={checkBlogPage() ? '/blog' : '/'}>
-                {<Image src={isWhite ? home_light : home_dark} />}
-              </Link>{' '}
+              <Link to="/">{<Image src={isWhite ? home_light : home_dark} />}</Link>{' '}
               <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
             </>
 
@@ -192,6 +158,26 @@ export const Searchbar = () => {
             >
               Blog
             </Text>
+            {currLocation !== '/' && (
+              <>
+                <Image src={chevleft} w="24px" h="24px" alt="back" />
+                <Text
+                  onClick={() => window.scrollTo(0, 0)}
+                  style={{
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    color: isWhite ? '#fff' : '#5D5FEF',
+                    fontStyle: 'normal',
+                    fontWeight: '400',
+                    fontSize: '14px',
+                    lineHeight: '18px',
+                    textTransform: 'capitalize',
+                  }}
+                >
+                  {handleCurrentRoute()}
+                </Text>
+              </>
+            )}
           </Flex>
           {!hideSearchbar && (
             <form>
@@ -303,30 +289,27 @@ export const Searchbar = () => {
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.02)"
         >
           <Flex maxW="319px" direction="row" columnGap="8px" align="center" alignItems={'center'}>
-            {currLocation === '/' || currLocation === '/blog' ? null : (
+            <Link to="/">{<Image src={isWhite ? home_light : home_dark} />}</Link>{' '}
+            {currLocation !== '/' && (
               <>
-                <Link to={checkBlogPage() ? '/blog' : '/'}>
-                  {<Image src={isWhite ? home_light : home_dark} />}
-                </Link>{' '}
-                <Image src={chevleft} w={'24px'} h={'24px'} alt="right" />
+                <Image src={chevleft} w="24px" h="24px" alt="back" />
+                <Text
+                  onClick={() => window.scrollTo(0, 0)}
+                  style={{
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    color: isWhite ? '#fff' : '#5D5FEF',
+                    fontStyle: 'normal',
+                    fontWeight: '400',
+                    fontSize: '10px',
+                    lineHeight: '1',
+                    textTransform: 'capitalize',
+                  }}
+                >
+                  {handleCurrentRoute()}
+                </Text>
               </>
             )}
-            <Text
-              onClick={window.scrollTo(0, 0)}
-              style={{
-                cursor: 'pointer',
-                textDecoration: 'none',
-                href: 'first_time_setup',
-                color: isWhite ? '#fff' : '#5D5FEF',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '14px',
-                lineHeight: '18px',
-                textTransform: 'capitalize',
-              }}
-            >
-              Blog
-            </Text>
           </Flex>
           {!hideSearchbar && (
             <form>
@@ -343,12 +326,12 @@ export const Searchbar = () => {
                 // gap='20px'
               >
                 <Input
-                  placeholder="Search for a part"
+                  placeholder="Search"
                   type="text"
                   value={query}
                   border="none"
                   FontWeight="400"
-                  fontSize="12px"
+                  fontSize="14px"
                   lineHeight="15px"
                   px="0px"
                   color="#606060"

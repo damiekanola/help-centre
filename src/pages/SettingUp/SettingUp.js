@@ -182,13 +182,13 @@ export const SettingUp = () => {
       <Box ref={faqRef} id="faq">
         <Text className="content_head">Frequently Asked Questions(FAQs)</Text>
 
-        <FaqCard question={'How do I change my password?'} asker={'Joseph O.'}>
+        <FaqCard id='settingupq1' question={'How do I change my password?'} asker={'Joseph O.'}>
           <Text>
             Go to your account settings and select <b>Change Password</b>. Enter your current
             password, then create and confirm your new one.
           </Text>
         </FaqCard>
-        <FaqCard question={'How do I change my phone number?'} asker={'Precious O.'}>
+        <FaqCard id='settingupq2' question={'How do I change my phone number?'} asker={'Precious O.'}>
           <Text>
             Go to <b>Account Settings</b>, select <b>Business Information</b>, and click the{' '}
             <b>Edit icon</b>. From there, you can update your phone number and other business

@@ -128,7 +128,7 @@ export const helpSearchData = [
   {  link: '/listings/create_allocations', title: 'How to create unit allocations', type: 'article' },
   {  link: '/listings/create_allocations#csv', title: 'Create unit allocations using a CSV file', type: 'topic' },
   {  link: '/listings/create_allocations#manual', title: 'Create unit allocations manually', type: 'topic' },
-  {  link: '/clients/schedule', title: 'Schedule Inspections', type: 'article' },
+  {  link: '/clients/schedule', title: 'How to schedule inspections on behalf of clients', type: 'article' },
   {  link: '/clients/schedule#schedule', title: 'How to Schedule Inspection on behalf of a User', type: 'topic' },
   {  link: '/fractionalise', title: 'How to fractionalise a property', type: 'article' },
   {  link: '/clients/client_account', title: 'Why Client Accounts Matter', type: 'article' },
@@ -169,6 +169,16 @@ export const helpSearchData = [
   { link: '/listings/client_management#unitprice', title: 'How to modify unit price', type: 'topic' },
   { link: '/listings/client_management#unitquantity', title: 'How to modify unit quantity', type: 'topic' },
   { link: '/clients/realtors#faq', title: 'How do I assign an agent to a transaction that has been recorded?', type: 'topic' },
+  { link: '/clients/schedule#inspectionsquestions', title: 'Where can I see the scheduled inspection requests?', type: 'topic' },
+  { link: '/clients/schedule#inspectionsquestions', title: 'What should I do if I’m unavailable on the date a client schedules an inspection?', type: 'topic' },
+  { link: '/clients/client_payment#clientpaymentquestion1', title: 'Can I have back up account details on Veerge in case the one provided doesn’t go through?', type: 'topic' },
+  { link: '/clients/client_payment#clientpaymentquestion2', title: 'How does the payment gateway work?', type: 'topic' },
+  { link: '/clients/manage_ownership#manageownershipq1', title: 'How do I set up my Authenticator app?', type: 'topic' },
+  { link: '/clients/manage_ownership#manageownershipq2', title: 'I want to adjust the details of a transaction. How do I do this?', type: 'topic' },
+  { link: '/clients/manage_ownership#manageownershipq2', title: 'I made a mistake when manually inputting a transaction. What should I do?', type: 'topic' },
+  { link: '/clients/manage_ownership#manageownershipq2', title: 'I made a mistake when entering a client’s name. How do I fix it?', type: 'topic' },
+  { link: '/setting_up#settingupq1', title: 'How do I change my password?', type: 'topic' },
+  { link: '/setting_up#settingupq2', title: 'How do I change my phone number?', type: 'topic' },
 ]
 
 //prettier-ignore

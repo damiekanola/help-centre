@@ -24,7 +24,7 @@ import realtors from '../assets/images/home/realtors.jpg';
 import schedule from '../assets/images/home/schedule.jpg';
 import manageoccupants from '../assets/images/home/manage-occupants.jpg';
 import setup from '../assets/images/home/setup.jpg';
-import listingsss from "../assets/images/home/listingsss.jpg"
+import listingsss from '../assets/images/home/listingsss.jpg';
 
 export const gettingStarteddata = [
   {
@@ -91,7 +91,7 @@ export const listingsData = [
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
-    path: '/listings/client_management',
+    path: '/listings/clientmanagement',
   },
   {
     img: changeInfo,
@@ -104,7 +104,7 @@ export const listingsData = [
   },
   {
     img: unitAllocation,
-    title: 'Unit Allocation',
+    title: 'How to create unit allocations',
     color: 'black',
     tag: 'Advanced',
     readTime: '8 mins read',
@@ -113,7 +113,7 @@ export const listingsData = [
   },
   {
     img: archive,
-    title: 'Archive a Unit',
+    title: 'Archiving a Unit',
     color: 'black',
     tag: 'Intermediate',
     readTime: '5 mins read',
@@ -122,7 +122,7 @@ export const listingsData = [
   },
   {
     img: fractionalise,
-    title: 'How to Fractionalise a Unit',
+    title: 'How to Fractionalise a Listing',
     color: 'black',
     tag: 'Intermediate',
     readTime: '5 mins read',
@@ -136,7 +136,7 @@ export const listingsData = [
     tag: 'Beginner',
     readTime: '8 mins read',
     datePosted: 'Nov 23, 2022',
-    path: '/clients/mananage_occupants',
+    path: '/clients/manage_occupants',
   },
   {
     img: setup,
@@ -149,7 +149,7 @@ export const listingsData = [
   },
   {
     img: schedule,
-    title: 'Schedule Inspections for Clients',
+    title: 'How to Schedule Inspections on Behalf of Clients',
     color: 'black',
     tag: 'Beginner',
     readTime: '4 mins read',
@@ -170,14 +170,14 @@ export const trendingData = [
   },
   {
     img: firstTime,
-    title: 'My Manager Told Me About This-Where Do I Start',
+    title: 'My Manager Told Me About This - Where Do I Start',
     color: 'black',
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
     path: '/where_to_start',
   },
-   {
+  {
     img: gettingStarted,
     title: 'Getting Started: A Simple & Quick One',
     color: 'black',
@@ -232,7 +232,7 @@ export const clientsData = [
     tag: 'Beginner',
     readTime: '5 mins read',
     datePosted: 'Dec 09, 2022',
-    path: '/clients/mananage_ownership',
+    path: '/clients/manage_ownership',
   },
   {
     img: realtors,

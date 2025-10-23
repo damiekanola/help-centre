@@ -2,11 +2,11 @@ import {Box, Flex, Text, Grid, Image} from '@chakra-ui/react';
 import blueicon from '../../assets/icons/blue-veerge.svg';
 import grammer from '../../assets/icons/grammerly.svg';
 
-export const FaqCard = ({children, question, asker}) => {
+export const FaqCard = ({children, question, asker, id}) => {
   return (
     <Grid
       marginTop="50px"
-      id="faq"
+      id={id}
       bgColor="#FFFAF5"
       p="16px 24px"
       borderRadius="16px"

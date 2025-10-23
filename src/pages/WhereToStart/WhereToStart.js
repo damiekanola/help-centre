@@ -23,7 +23,7 @@ export const WhereToStart = () => {
   ];
 
   const articleMeta = {
-    title: 'My Manager Told Me About This—Where Do I Start?',
+    title: 'My Manager Told Me About This — Where Do I Start?',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',

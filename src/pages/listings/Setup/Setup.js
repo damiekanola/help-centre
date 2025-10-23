@@ -29,7 +29,7 @@ export const Setup = () => {
   ];
 
   const articleMeta = {
-    title: 'How to set up your Store template',
+    title: 'How to set up your Web Application',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',

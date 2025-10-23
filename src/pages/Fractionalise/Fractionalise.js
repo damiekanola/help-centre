@@ -25,7 +25,7 @@ export const Fractionalise = () => {
   ];
 
   const articleMeta = {
-    title: 'Fractionalising an Asset',
+    title: 'How to fractionalize a listing',
     author: 'Myxellia Team',
     published: 'February 04, 2025',
     updated: 'March 05, 2025',
