@@ -26,7 +26,7 @@ export const OverviewofMyxellia = () => {
 
   const articleContent = [
     {check: introCheck, id: 'intro', title: 'Introduction'},
-    {check: engageCheck, id: 'steps', title: 'System of Engagement'},
+    {check: engageCheck, id: 'engage', title: 'System of Engagement'},
     {check: trustCheck, id: 'trust', title: 'System of Trust'},
     {check: intelligenceCheck, id: 'intelligence', title: 'System of Intelligence'},
     {check: conclusionCheck, id: 'conclusion', title: 'Conclusion'},

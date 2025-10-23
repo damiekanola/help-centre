@@ -7,6 +7,8 @@ import x from '../assets/icons/x.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import link from '../assets/icons/link.svg';
 import LeftNav from '../components/Leftsidenav/Leftsidenav';
+import { Helpful } from '../components/Faq/Helpful';
+import { ProgressBar } from '../components/Faq/Progressbar';
 
 export const BlogLayout = ({
   articleMeta,
@@ -130,14 +132,17 @@ export const BlogLayout = ({
       <div className="content_space">
         <LeftNav articleContent={articleContent} />
 
-        <Box overflowY={'auto'}>{children}</Box>
+        <Box overflowY={'auto'}>
+          {children}
+          <Helpful />
+        </Box>
 
         <Flex
           direction={'column'}
           gap={'10px'}
           alignItems={'center'}
           position={{base: 'sticky', lg: 'sticky'}}
-          top={{base: '100px', md: '160px', lg: '100px'}}
+          top={{base: '100px', md: '160px', lg: '140px'}}
           pt={'45px'}
         >
           <Text
@@ -148,14 +153,15 @@ export const BlogLayout = ({
             }}
             fontSize="13px"
             fontWeight="500"
-            color="gray.600"
-            letterSpacing="3px"
+            color="#616161"
+            letterSpacing="0.78px"
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             display={{base: 'none', md: 'block'}}
           >
             BACK TO TOP
           </Text>
-          <Box bgColor={'#624DE3'} h={'80px'} w={'1px'} display={{base: 'none', md: 'block'}}></Box>
+          <ProgressBar />
+          
           <Flex direction={{base: 'row', md: 'column'}} gap={'10px'}>
             <Link>
               <Image src={linkedin} w="40px" h={'40px'} />

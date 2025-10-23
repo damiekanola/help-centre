@@ -71,49 +71,102 @@ const Createlisting = () => {
         <Text fontWeight={'700'} mt={'20px'}>
           Pricing and Payment Plans (Prices in Thousands):
         </Text>
-        <Text fontWeight={'700'}>1-Bedroom Flat:</Text>
-        <OrderedList>
-          <ListItem>Outright Price: AED 650,000</ListItem>
-          <ListItem>3-Month Payment Plan:</ListItem>
-          <ListItem>
-            <OrderedList>
-              <ListItem>Initial Deposit: AED 250,000</ListItem>
-              <ListItem>Monthly Payment: AED 150,000 for 3 months</ListItem>
-              <ListItem>Total: AED 700,000</ListItem>
-            </OrderedList>
-          </ListItem>
-        </OrderedList>
-
-        <Text fontWeight={'700'} mt={'20px'}>
-          6-Month Payment Plan:
+        <Text fontWeight={'700'}>
+          <b>1-Bedroom Flat:</b>
         </Text>
-        <OrderedList>
-          <ListItem>6-Month Payment Plan:</ListItem>
+        <UnorderedList pl={'10px'}>
           <ListItem>
-            <OrderedList>
-              <ListItem>Initial Deposit: AED 250,000</ListItem>
-              <ListItem>Payment every 3 months: AED 240,000</ListItem>
-              <ListItem>Total: AED 730,000</ListItem>
-            </OrderedList>
+            <b>Outright Price:</b> AED 650,000
           </ListItem>
-        </OrderedList>
+          <ListItem>
+            <b>3-Month Payment Plan:</b>
+          </ListItem>
+          <UnorderedList>
+            <ListItem>
+              <b>Initial Deposit:</b> AED 250,000
+            </ListItem>
+            <ListItem>
+              <b>Monthly Payment:</b> AED 150,000 for 3 months
+            </ListItem>
+            <ListItem>
+              <b>Total:</b> AED 700,000
+            </ListItem>
+          </UnorderedList>
+        </UnorderedList>
+
+        <UnorderedList pl={'10px'} mt={'20px'}>
+          <ListItem>
+            <b>6-Month Payment Plan</b>:
+          </ListItem>
+          <UnorderedList>
+            <ListItem>
+              <b>Initial Deposit</b>: AED 250,000
+            </ListItem>
+            <ListItem>
+              <b>Payment every 3 months</b>: AED 240,000
+            </ListItem>
+            <ListItem>
+              <b>Total:</b> AED 730,000
+            </ListItem>
+          </UnorderedList>
+        </UnorderedList>
 
         <Text fontWeight={'700'} mt={'20px'}>
           1-Bedroom Loft:
         </Text>
-        <OrderedList>
-          <ListItem>Outright Price: AED 750,000</ListItem>
-          <ListItem>3-Month Payment Plan:</ListItem>
-          <ListItem>30 units: 2-Bedroom Flats</ListItem>
-          <ListItem>5 units: 3-Bedroom Residences</ListItem>
+        <UnorderedList pl={'10px'}>
           <ListItem>
-            1 Exclusive Penthouse (Price upon request, starting from AED 4,500,000)
+            <b>Outright Price</b>: AED 750,000
           </ListItem>
-        </OrderedList>
+          <ListItem>
+            <b>3-Month Payment Plan:</b>
+          </ListItem>
+          <UnorderedList>
+            <ListItem>
+              <b>Initial Deposit: </b>AED 350,000
+            </ListItem>
+            <ListItem>Remaining amount distributed over 3 months</ListItem>
+            <ListItem>Total: AED 800,000</ListItem>
+          </UnorderedList>
+        </UnorderedList>
+
+        <Text fontWeight={'700'} mt={'20px'}>
+          2-Bedroom Flat:
+        </Text>
+        <UnorderedList pl={'10px'}>
+          <ListItem>
+            <b>Outright Price</b>: AED 1,000,000
+          </ListItem>
+          <ListItem>
+            <b>12-Month Payment Plan:</b>
+          </ListItem>
+          <UnorderedList>
+            <ListItem>
+              <b>Initial Deposit: </b>AED 250,000
+            </ListItem>
+            <ListItem>
+              <b>After 3 months</b>: AED 150,000
+            </ListItem>
+            <ListItem>
+              <b>After 2 more months</b>: AED 100,000
+            </ListItem>
+            <ListItem>
+              <b>After 4 more months</b>: AED 300,000
+            </ListItem>
+            <ListItem>
+              <b>Final payment after 3 months:</b> AED 400,000
+            </ListItem>
+            <ListItem>
+              <b>Total:</b> AED 1,100,000
+            </ListItem>
+          </UnorderedList>
+        </UnorderedList>
       </Box>
 
       <Box id="needtoknow" ref={needtoknowRef}>
-        <Text className="content_head">What you need to know</Text>
+        <Text className="content_head" mt={'30px'}>
+          What you need to know
+        </Text>
         <Text as="p" marginTop={'30px'}>
           To navigate the workings, let's embark on a journey of clarity. It's important to note
           that this process is the same for estates and residential gated communities.

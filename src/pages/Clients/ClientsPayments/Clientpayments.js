@@ -3,28 +3,30 @@ import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react'
 import protectedImg from '../../../assets/images/home/client-payments.jpg';
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
-import { FaqCard } from '../../../components/Faq/FaqCard';
-import { clientsData } from '../../../constant/pages';
+import {FaqCard} from '../../../components/Faq/FaqCard';
+import {clientsData} from '../../../constant/pages';
 
 export const ClientPayments = () => {
+  const introRef = useRef(null);
+  const updateRef = useRef(null);
+  const afterUpdateRef = useRef(null);
+  const faqRef = useRef(null);
 
- const introRef = useRef(null);
-const updateRef = useRef(null);
-const afterUpdateRef = useRef(null);
-const faqRef = useRef(null);
+  const introCheck = useIsInViewport(introRef);
+  const updateCheck = useIsInViewport(updateRef);
+  const afterUpdateCheck = useIsInViewport(afterUpdateRef);
+  const faqCheck = useIsInViewport(faqRef);
 
-const introCheck = useIsInViewport(introRef);
-const updateCheck = useIsInViewport(updateRef);
-const afterUpdateCheck = useIsInViewport(afterUpdateRef);
-const faqCheck = useIsInViewport(faqRef);
-
-const articleContent = [
-  { check: introCheck, id: 'intro', title: 'Introduction' },
-  { check: updateCheck, id: 'update', title: 'How to update transactions manually' },
-  { check: afterUpdateCheck, id: 'after-update', title: 'What happens after updating the transactions?' },
-  { check: faqCheck, id: 'faq', title: 'Frequently Asked Questions (FAQs)' },
-];
-
+  const articleContent = [
+    {check: introCheck, id: 'intro', title: 'Introduction'},
+    {check: updateCheck, id: 'update', title: 'How to update transactions manually'},
+    {
+      check: afterUpdateCheck,
+      id: 'after-update',
+      title: 'What happens after updating the transactions?',
+    },
+    {check: faqCheck, id: 'faq', title: 'Frequently Asked Questions (FAQs)'},
+  ];
 
   const articleMeta = {
     title: 'Managing Client Payments: A Guide to Logging Transaction',
@@ -34,12 +36,11 @@ const articleContent = [
     image: protectedImg,
   };
 
-
   return (
     <BlogLayout
       articleContent={articleContent}
       articleMeta={articleMeta}
-     otherresources={clientsData}
+      otherresources={clientsData}
     >
       <Box id="intro" ref={introRef}>
         <Text as="p" marginTop={'30px'}>
@@ -137,10 +138,12 @@ const articleContent = [
         </UnorderedList>
       </Box>
 
-
       <Box id="faq" ref={faqRef}>
-        <Text className="content_head" mt={'40px'}>Frequently Asked Questions (FAQs)</Text>
+        <Text className="content_head" mt={'40px'}>
+          Frequently Asked Questions (FAQs)
+        </Text>
         <FaqCard
+          id="clientpaymentquestion1"
           asker={'Manuel G.'}
           question={
             'Can I have back up account details on Veerge in case the one provided doesn’t go through?'
@@ -156,7 +159,11 @@ const articleContent = [
             <ListItem>Review the summary provided and add your bank account details</ListItem>
           </OrderedList>
         </FaqCard>
-        <FaqCard asker={'Manuel G.'} question={'How does the payment gateway work?'}>
+        <FaqCard
+          id="clientpaymentquestion2"
+          asker={'Manuel G.'}
+          question={'How does the payment gateway work?'}
+        >
           <Text>
             Myxellia connects to trusted gateways like Flutterwave and PayPal, allowing clients to
             make secure payments directly on the platform. All transactions are automatically

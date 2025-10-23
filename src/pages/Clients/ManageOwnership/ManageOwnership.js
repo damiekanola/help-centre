@@ -293,7 +293,7 @@ export const ManageOwnership = () => {
           Frequently Asked Questions(FAQs)
         </Text>
 
-        <FaqCard question={'How do I set up my Authenticator app?'} asker={'Joseph O.'}>
+        <FaqCard id='manageownershipq1' question={'How do I set up my Authenticator app?'} asker={'Joseph O.'}>
           <Text>
             To perform certain actions on Veerge, you’ll need to input a code from your
             authenticator app. Here is how to set it up:
@@ -307,7 +307,7 @@ export const ManageOwnership = () => {
             <ListItem>Enter the verification mail sent to your registered mail</ListItem>
           </OrderedList>
         </FaqCard>
-        <FaqCard
+        <FaqCard id='manageownershipq2'
           question={'I want to adjust the details of a transaction. How do I do this?'}
           asker={'Precious O.'}
         >

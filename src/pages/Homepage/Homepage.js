@@ -9,12 +9,11 @@ import StatsSection from '../../components/Header/Stats';
 export const Homepage = () => {
   return (
     <Box w="full" bg={'#0d0d0d'}>
-      <Box  position="relative" >
+      <Box position="relative">
         <Hero />
         <Trending />
       </Box>
-    
-        <Featured />
+      <Featured />
       <Listings />
       <Client />
       <StatsSection />

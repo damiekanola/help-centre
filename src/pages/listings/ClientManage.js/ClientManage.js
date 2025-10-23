@@ -1,12 +1,14 @@
 import React, {useRef} from 'react';
-import {Box, Text, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
-import protectedImg from '../../../assets/images/home/change_info.jpg';
+import {Box, Text, Image, List, ListItem, OrderedList, UnorderedList} from '@chakra-ui/react';
+import protectedImg from '../../../assets/images/home/client_manag.jpg';
+
 import useIsInViewport from '../../../utils/useOnScreen/useOnScreen';
 import {BlogLayout} from '../../../layouts/BlogLayout';
 import {Card} from '../../../components/Faq/Card';
+
 import {listingsData} from '../../../constant/pages';
 
-export const ClientManagement = () => {
+export const ClientManage = () => {
   const introRef = useRef(null);
   const editRef = useRef(null);
   const modifyRef = useRef(null);
@@ -22,12 +24,12 @@ export const ClientManagement = () => {
   const unitquantityCheck = useIsInViewport(unitquantityRef);
 
   const articleContent = [
-    {check: introCheck, id: 'intro', title: 'Overview'},
-    {check: editCheck, id: 'edit', title: 'A Bank account analogy'},
-    {check: modifyCheck, id: 'modify', title: 'Creating clients account'},
-    {check: paymentCheck, id: 'payment', title: 'Next Steps'},
-    {check: unitpriceCheck, id: 'unitprice', title: 'I have migrated, but their investment still can’t be found'},
-    {check: unitquantityCheck, id: 'unitquantity', title: 'FAQs'},
+    {check: introCheck, id: 'intro', title: 'How to change listing information'},
+    {check: editCheck, id: 'edit', title: 'Edit listing information'},
+    {check: modifyCheck, id: 'modify', title: 'Modifying unit information'},
+    {check: unitpriceCheck, id: 'unitprice', title: 'How to modify unit price'},
+    {check: unitquantityCheck, id: 'unitquantity', title: 'How to modify unit quantity'},
+    {check: paymentCheck, id: 'payment', title: 'Editing payment plan'},
   ];
 
   const articleMeta = {
@@ -180,6 +182,7 @@ export const ClientManagement = () => {
 
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
+
       <Box id="unitquantity" ref={unitquantityRef}>
         <Text className="content_head">
           Assigning transactions: I have migrated, but their investment still can’t be found
@@ -272,98 +275,10 @@ export const ClientManagement = () => {
 
         <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
       </Box>
-      {/* <Box id="unitquantity" ref={unitquantityRef}>
-        <Text className="content_head">
-          Assigning transactions: I have migrated, but their investment still can’t be found
-        </Text>
 
-        <Text>
-          Once you’ve created or imported client accounts, you also need to assign their purchased
-          units (properties). There are two primary approaches:
-        </Text>
-        <Box my={'25px'}>
-          <Text fontWeight="bold" fontSize="lg" mb={3}>
-            Method 1: Assign Property During One-by-One Creation
-          </Text>
-
-          <OrderedList spacing={'2px'}>
-            <ListItem>
-              Before finalizing the account creation, you’ll notice a button labeled{' '}
-              <Text as="span" fontWeight="medium">
-                Assign Property
-              </Text>
-              .
-            </ListItem>
-            <ListItem>
-              Click it to open a new page where you can select the listing and the specific unit the
-              client invested in. Once this button is clicked, the user’s account is created.
-            </ListItem>
-            <ListItem>
-              If the listing or unit is sold out, the option may be hidden or unclickable.
-            </ListItem>
-            <ListItem>
-              Choose either a payment plan or outright purchase:
-              <UnorderedList spacing={'2px'} pl={6} mt={2}>
-                <ListItem>
-                  <Text as="span" fontWeight="medium">
-                    Outright:
-                  </Text>{' '}
-                  Select this option if the full payment was made at once. Enter the amount paid and
-                  the date of payment. If the closing cost is already paid, input that as well and
-                  upload any related documents (e.g., signed contracts).
-                </ListItem>
-                <ListItem>
-                  <Text as="span" fontWeight="medium">
-                    Payment Plan:
-                  </Text>{' '}
-                  Select this option if the payment is being made or was made in multiple
-                  instalments over an agreed period. Enter the payment plan duration (in months).
-                  Input the initial deposit, then select “Add” to log past payments if any, ensuring
-                  the totals match the payment calculator.
-                </ListItem>
-              </UnorderedList>
-            </ListItem>
-          </OrderedList>
-        </Box>
-
-        <Box my={'25px'}>
-          <Text fontWeight="bold" fontSize="lg" mb={3}>
-            Method 2: Assign Property After Account Creation
-          </Text>
-
-          <Text>If you didn’t assign properties during the account creation process:</Text>
-
-          <OrderedList spacing={'2px'} pl={6}>
-            <ListItem>
-              Go to the{' '}
-              <Text as="span" fontWeight="medium">
-                Users
-              </Text>{' '}
-              section, locate the client, and click on the{' '}
-              <Text as="span" fontWeight="medium">
-                View
-              </Text>{' '}
-              button to open their profile.
-            </ListItem>
-            <ListItem>
-              Click on the{' '}
-              <Text as="span" fontWeight="medium">
-                More Options
-              </Text>{' '}
-              button to open the options drawer.
-            </ListItem>
-            <ListItem>
-              Select{' '}
-              <Text as="span" fontWeight="medium">
-                Assign Property
-              </Text>{' '}
-              and follow the same steps outlined above.
-            </ListItem>
-          </OrderedList>
-        </Box>
-
-        <Box w={'60px'} h={'4px'} bgColor={'#D4D4D8'} my={'40px'}></Box>
-      </Box> */}
+      <Box id="payment" ref={paymentRef}>
+        <Text className="content_head">Frequently Asked Questions(FAQs)</Text>
+      </Box>
     </BlogLayout>
   );
 };
